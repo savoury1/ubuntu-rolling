@@ -1,4 +1,4 @@
-# ubuntu-rolling
+# [ubuntu-rolling](https://github.com/savoury1/ubuntu-rolling)
 ### Ubuntu "Rolling Release" System
 
 To make a customized "hybrid" Ubuntu system with packages from newer Ubuntu series than the currently installed system. Note that this is a "work in progress" and it is useful to state an ordinary disclaimer up front:
@@ -32,3 +32,4 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 * Run ```base-enhancements``` script to install various PPAs and then do 1st "enhancement" run
 
 * Run ```enhance-bionic``` (and additionally ```enhance-cosmic``` if desired) to complete enhancements
+
