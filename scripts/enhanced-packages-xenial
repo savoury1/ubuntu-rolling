@@ -2,7 +2,7 @@
 
 # Xenial Enhanced -- Best of LTS Xenial & Bionic Ubuntu Versions
 #
-# Modifying just three packages and using just three PPAs allows proper
+# Modifying just three packages and using just five PPAs allows proper
 # installation of most Ubuntu Bionic packages on Ubuntu Xenial which
 # results in a highly compatible and flexible Ubuntu-based system due
 # being able to run (almost) all Xenial compatible software as well as
