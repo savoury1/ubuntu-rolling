@@ -16,7 +16,7 @@ KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5
 Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
 
 ![Serena Enhanced](https://github.com/savoury1/ubuntu-rolling/blob/master/images/Serena-Enhanced.png)
-*This screenshot is from the test system used for creating these procedures. As can be seen, there is a mix of packages from four Ubuntu "series" currently installed, including approximately 1/8th of the system being from the yet-to-be-released Eoan (shipping Oct 17th, 2019)!*
+*This screenshot is from the test system used for creating these procedures. As can be seen, there is a mix of packages from four Ubuntu "series" currently installed, including approximately 2/3rd Bionic, 1/10th Disco and 1/8th of the system being from the yet-to-be-released Eoan (shipping Oct 17th, 2019)!*
 
 Many new software packages especially require newer KDE/Qt libraries than can be installed from the Xenial repositories. For instance, digiKam (excellent photo management software) 5.9.0 (a very stable version) requires Qt 5.9 making it impossible to run a native version of this program on Xenial systems. An AppImage is provided on the digiKam website that works well, however, many programs that similarly require newer Qt libraries than in Xenial do not have an AppImage available, so being able to actually upgrade the system Qt libraries to a much newer version is very advantageous.
 
