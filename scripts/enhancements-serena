@@ -1,0 +1,153 @@
+#!/bin/bash
+
+path=~/Downloads
+
+pool=http://packages.linuxmint.com/pool
+lpln=http://launchpadlibrarian.net
+lprs=http://launchpad.net/~asbru-cm/+archive/ubuntu/releases/+files
+
+down=(
+$pool/main/m/mint-themes/mint-themes_1.7.8_all.deb
+$pool/main/m/mint-backgrounds-tina/mint-backgrounds-tina_1.2_all.deb
+$lpln/330848294/libgtk2-appindicator-perl_0.15-1build5_amd64.deb
+$lprs/libgnome2-vte-perl_0.11-2~ubuntu18.04.1_amd64.deb
+)
+
+pkgs=(
+serena-enhanced_0.1_all.deb
+python3_3.6.9-1+really3.5.1-3sav0_amd64.deb
+python3-dev_3.5.1-3sav0_amd64.deb
+perl-modules-5.22_5.22.1-9ubuntu0.6_all.deb
+dbus-x11_1.12.2-1ubuntu1.1~16.04.sav0_amd64.deb
+mint-info-mate_2016.11.02sav0_amd64.deb
+mint-artwork-common_2.1.0.1sav0_all.deb
+mint-artwork-mate_1.3.2sav0_all.deb
+)
+
+pushd /etc/apt/sources.list.d >/dev/null
+
+# good to have newer GCC (includes 5.5.0, 7.4.0, 8.3.0 & 9.1.0)
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/ppa
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+
+# good to have newer Mono and 4.8.0 is sufficiently high for all upgrades
+# (and higher than the 4.6.2 version shipped in both Bionic & Cosmic)
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D3D831EF
+echo "deb http://download.mono-project.com/repo/ubuntu wheezy/snapshots/4.8.0 main" | sudo tee /etc/apt/sources.list.d/mono-official-4.8.0-debian.list
+
+# upgrade/install packages included in jonathonf, ubuntu-toolchain & mono PPAs
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+sudo apt-get install gcc-8 gcc-8-base gcc-8-base:i386 gcc-8-multilib g++-8 g++-8-multilib
+sudo apt-get install gcc-9 gcc-9-base gcc-9-base:i386 gcc-9-multilib g++-9 g++-9-multilib
+sudo apt-get install dwz libgfortran4 libatomic1:i386
+sudo apt-get install mono-devel
+# then remove older mono version repository from being checked due a warning
+# (about a repo path conflict) that appears when using apt-get update commands
+sudo sed -i "s/^deb\ /#\ deb\ /" "/etc/apt/sources.list.d/mono-official-4.8.0-debian.list"
+
+# good to have Python dev files
+sudo apt-get install python3-dev
+
+# python 3.6.9 (includes distutils and lib2to3) is required for enhancement!
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+
+# curl 3+4 allows applications requiring libcurl3 or libcurl4 API to work --
+# major bug in Ubuntu Bionic that Canonical broke all libcurl3 dependencies!
+# (see https://bugs.launchpad.net/ubuntu/+source/curl/+bug/1754294)
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F575D16E
+echo "deb http://ppa.launchpad.net/xapienz/curl34/ubuntu bionic main" | sudo tee xapienz-curl34-bionic.list
+echo "deb-src http://ppa.launchpad.net/xapienz/curl34/ubuntu bionic main" | sudo tee -a xapienz-curl34-bionic.list
+
+# need Bionic Xapps as these will be installed after enhancement process
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DF90F255DE957EB6B762AD86EA1FE56966DFE684
+echo "deb http://ppa.launchpad.net/embrosyn/xapps/ubuntu bionic main" | sudo tee embrosyn-xapps-bionic.list
+echo "deb-src http://ppa.launchpad.net/embrosyn/xapps/ubuntu bionic main" | sudo tee -a embrosyn-xapps-bionic.list
+
+popd >/dev/null
+sudo apt-get update
+
+# install Python 3.6.9 from PPA
+sudo apt-get install python3.6 python3.6-dev
+
+# create new alternatives for Python (will initially set Python 3.6 as default,
+# use "sudo update-alternatives --config python3" to change if ever required)
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
+
+# create symbolic links for Python 3.6 from all Python 3.5 object libraries as
+# this means Python-based software still works fine (now that Python 3.6 is
+# default on the Xenial-based system, which ships with Python 3.5 as default)
+# -- this is purely in case something goes wrong during enhancement that needs
+# working Python to fix the situation, as all of these symbolic links will be
+# overwritten in the enhancement process by actual Python 3.6 Bionic libraries
+find /usr/lib/python3/dist-packages -name \*35m\* -type f -print0 | while IFS= read -r -d '' file; do
+  sudo ln -s $file ${file//35m/36m}
+done
+
+pushd /var/cache/apt/archives >/dev/null
+
+# check existence of seven custom packages and copy to apt/archives cache
+for deb in "${pkgs[@]}"; do
+  if [ ! -e "$path/$deb" ]; then exit; fi
+  sudo cp -p "$path/$deb" . && sudo chown root:root $deb
+done
+
+# install "serena-enhanced" package to add new Ubuntu repositories
+sudo dpkg -i "${pkgs[0]}"
+# pull in all new repositories installed by "serena-enhanced" package
+sudo apt-get update
+# install various dependencies that do not have a newer version than Xenial
+sudo apt-get install linux-libc-dev:i386 libgssglue1 libxml-sax-perl ttf-freefont ipcalc wakeonlan libbonobo2-0 libnetcf1 libjpeg8-dev libxinerama-dev libxext-dev libxss-dev libxxf86vm-dev libxft-dev libsm-dev libstreamanalyzer0v5 libogg-dev libvdpau1 libattica0.4 libntrack-qt4-1
+
+# remove various packages and their dependencies that cause conflicts/breakage
+# during Bionic enhancement upgrade -- newer Bionic (or same Xenial) packages
+# will be re-installed during (or after) the main enhancement process
+sudo apt-get purge libwebkitgtk-1.0-common libwebkitgtk-3.0-common libwebkit2gtk-3.0-25 hardening-includes python3-aptdaemon.pkcompat python3-xapian1.3 python3-cupshelpers libdouble-conversion1v5 libdfu1 libpng12-dev python-pyatspi2 gnome-themes-standard-data libpeas-1.0-0-python2loader libpeas-1.0-0-python3loader systemd-shim texinfo foomatic-filters libsnmp30 libsane libsane:i386 libmetacity-private3a xserver-xorg-input-vmmouse python-qt4 pulseaudio-module-x11 libsidplay2v5 gstreamer1.0-plugins-bad-faad gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-ugly-amr mint-meta-codecs-core libmagickcore-6.q16-2 vlc-plugin-base xviewer-plugins libpurple0
+
+# install modded Python & Perl packages to satisfy Bionic dependencies
+for (( i = 1; i <= 3; i++ )) do
+  sudo dpkg -i "${pkgs[$i]}"
+done
+
+# do enhancements 1st run (one command installs almost 3,000 Bionic packages!)
+. enhancements-1st-run
+
+# remove customized Perl package now that enhancement upgrades are done
+sudo apt-get purge perl-modules-5.22
+# re-install useful packages auto-removed by pre-enhancement package purge
+sudo apt-get install mdm mate-control-center mate-settings-daemon mate-user-guide mint-artwork-common mint-info-mate mint-user-guide-mate mintdesktop mintinstall mintsystem ubuntu-system-adjustments mint-meta-codecs-core blueberry
+sudo apt-get install icedtea-netx-common icedtea-netx icedtea-8-plugin icedtea-plugin
+# complete libdvd setup that cannot run while main apt-get is underway
+sudo dpkg-reconfigure libdvd-pkg
+# regenerate locales unarchived to prevent warnings with initramfs generation
+sudo locale-gen --purge --no-archive
+
+# first use of "apt-new" command to install Bionic compatible Xapps!
+apt-new bionic install pix xplayer xplayer-plugins-extra gir1.2-xplayer-plparser-1.0 xreader gir1.2-xreader xviewer
+# Serena packages have higher version due "+" so specify exact Bionic versions
+apt-new bionic install libxplayer-plparser18=1.0.2-1~bionic0 gir1.2-xplayer-plparser-1.0=1.0.2-1~bionic0
+# avoid xplayer parser files "upgrading" (really downgrade) to Serena versions
+echo "Package: *xplayer-plparser*" | sudo tee /etc/apt/preferences
+echo "Pin: release *" | sudo tee -a /etc/apt/preferences
+echo "Pin-Priority: -1" | sudo tee -a /etc/apt/preferences
+
+# install other four modded packages now that system is enhanced
+for (( i = 4; i <= 7; i++ )) do
+  sudo dpkg -i "${pkgs[$i]}"
+  echo
+done
+
+# download and install newer Mint themes (fixes GTK 3.20+ menu issues), newer
+# Mint backgrounds (from latest release "Tina"), as well as two GTK2 related
+# packages not available in default Bionic repos -- both of these packages are
+# required to successfully install newest PAC Manager (4.5.5.7), a great tool
+# that can manage many remote connections to many different types of systems
+# (PAC Manager is now replaced by Asbru CM -- see https://www.asbru-cm.net/)
+for deb in "${down[@]}"; do
+  pkg=${deb##*/}
+  if [ ! -e $pkg ]; then sudo wget $deb; fi
+  sudo dpkg -i $pkg
+  echo
+done
+popd >/dev/null
+

@@ -5,9 +5,7 @@ To make a customized "hybrid" Ubuntu system with packages from newer Ubuntu seri
 
 *The procedures contained on this site might break your system completely and should only be followed by people with appropriate technical backgrounds. This includes a good understanding of the Debian package management system (using "apt" commands), as well as at least a fair understanding of terminal commands and shell scripting. Any system breakage that occurs due carrying out any procedures on this site is entirely the responsibility of the person(s) carrying out those procedures.*
 
-With that out of the way, the purpose of the procedures on this site is to allow progressive and selective upgrading of a Ubuntu based operating system in a modular fashion. Critical dependencies must always be upgraded before higher level packages (ie. core C libraries are most critical, with KDE/Qt being higher level components that can only be installed after numerous other components of the system have already been upgraded) and this has resulted in categorizing packages in about three dozen distinct "modules" (or general sub-systems).
-
-For example, starting with Linux Mint Serena 18.1 MATE (a Xenial-based distribution) released in early 2017, one can upgrade many core components of the system with Ubuntu Bionic (and later) versions. This version table gives an idea of the newer versions that are possible through this modular upgrade process:
+With that out of the way, the purpose of the procedures on this site is to allow progressive and selective upgrading of a Ubuntu based operating system in a modular fashion. For example, starting with Linux Mint Serena 18.1 MATE (a Xenial-based distribution) released in early 2017, one can upgrade many core components of the system with Ubuntu Bionic (and later) versions. This version table gives an idea of the newer versions that are possible through this modular upgrade process:
 
 System component | Xenial version | Bionic upgrade | Cosmic upgrade
 ---------------- | -------------- | -------------- | --------------
@@ -27,9 +25,9 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 
 * Update Xenial packages to latest versions (eg. ```sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade```)
 
-* Run ```enhanced-packages``` script to create a handful of required custom packages
+* Run ```enhanced-packages-serena``` (or ```enhanced-packages-xenial``` if using straight Xenial) script to create a handful of useful custom packages that fix certain issues after enhancement
 
-* Run ```base-enhancements``` script to install various PPAs and then do 1st "enhancement" run
+* Run ```enhancements-serena``` (or ```enhancements-xenial```) script to install various PPAs, upgrade various system components with Xenial versions and then do first "enhancement" run
 
-* Run ```enhance-bionic``` (and additionally ```enhance-cosmic``` if desired) to complete enhancements
+* Run ```enhance-bionic``` (and additionally ```enhance-cosmic``` if desired) periodically (eg. put these scripts in ~/.local/bin) to install any updated packages (with any security patches & bugfixes) from the newer "series"
 

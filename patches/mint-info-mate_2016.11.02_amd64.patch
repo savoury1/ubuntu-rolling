@@ -1,0 +1,25 @@
+diff --git a/mint-info-mate_2016.11.02_amd64/DEBIAN/control b/mint-info-mate_2016.11.02sav0_amd64/DEBIAN/control
+index 4ab21b2..03f3581 100644
+--- a/mint-info-mate_2016.11.02_amd64/DEBIAN/control
++++ b/mint-info-mate_2016.11.02sav0_amd64/DEBIAN/control
+@@ -1,6 +1,6 @@
+ Package: mint-info-mate
+ Source: mint-info
+-Version: 2016.11.02
++Version: 2016.11.02sav0
+ Architecture: amd64
+ Maintainer: Clement Lefebvre <root@linuxmint.com>
+ Installed-Size: 12
+diff --git a/mint-info-mate_2016.11.02_amd64/etc/linuxmint/info b/mint-info-mate_2016.11.02sav0_amd64/etc/linuxmint/info
+index ad6eee3..bf8fe8f 100644
+--- a/mint-info-mate_2016.11.02_amd64/etc/linuxmint/info
++++ b/mint-info-mate_2016.11.02sav0_amd64/etc/linuxmint/info
+@@ -1,7 +1,7 @@
+ RELEASE=18.1
+ CODENAME=serena
+ EDITION="MATE 64-bit"
+-DESCRIPTION="Linux Mint 18.1 Serena"
++DESCRIPTION="Mint 18.1 ~ Serena Enhanced"
+ DESKTOP=MATE
+ TOOLKIT=GTK
+ NEW_FEATURES_URL=http://www.linuxmint.com/rel_serena_mate_whatsnew.php

@@ -1,0 +1,35 @@
+diff --git a/mint-artwork-common_2.1.0.1_all/DEBIAN/control b/mint-artwork-common_2.1.0.1sav0_all/DEBIAN/control
+index a93008d..ea293bf 100644
+--- a/mint-artwork-common_2.1.0.1_all/DEBIAN/control
++++ b/mint-artwork-common_2.1.0.1sav0_all/DEBIAN/control
+@@ -1,5 +1,5 @@
+ Package: mint-artwork-common
+-Version: 2.1.0.1
++Version: 2.1.0.1sav0
+ Architecture: all
+ Maintainer: Clement Lefebvre <clem@linuxmint.com>
+ Installed-Size: 13785
+diff --git a/mint-artwork-common_2.1.0.1_all/etc/X11/Xsession.d/99mint b/mint-artwork-common_2.1.0.1sav0_all/etc/X11/Xsession.d/99mint
+index 30b1a7b..3b47ba8 100644
+--- a/mint-artwork-common_2.1.0.1_all/etc/X11/Xsession.d/99mint
++++ b/mint-artwork-common_2.1.0.1sav0_all/etc/X11/Xsession.d/99mint
+@@ -4,9 +4,6 @@ if [ "x$DESKTOP_SESSION" = "xmate" ] || [ "x$XDG_SESSION_DESKTOP" = "xmate" ]; t
+     # Disable GTK3 overlay scrollbars
+     export GTK_OVERLAY_SCROLLING=0
+ 
+-    # QT apps to use GTK styling
+-    export QT_STYLE_OVERRIDE=gtk
+-
+     # Workaround clutter issue (LP: #1462445)
+     export CLUTTER_BACKEND=x11
+ fi
+@@ -15,9 +12,6 @@ if [ "x$DESKTOP_SESSION" = "xxfce" ] || [ "x$XDG_SESSION_DESKTOP" = "xxfce" ]; t
+     # Disable GTK3 overlay scrollbars
+     export GTK_OVERLAY_SCROLLING=0
+ 
+-    # QT apps to use GTK styling
+-    export QT_STYLE_OVERRIDE=gtk
+-
+     # Workaround clutter issue (LP: #1462445)
+     export CLUTTER_BACKEND=x11
+ fi

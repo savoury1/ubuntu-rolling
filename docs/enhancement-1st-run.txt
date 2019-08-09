@@ -1,0 +1,25 @@
+Enhancement 1st Run -- General Notes
+====================================
+
+* Almost 3,000 Bionic packages will be downloaded from Ubuntu repositories and
+  then installed, so have patience! On a dual-core i7 system with fast SSD it
+  took about 90 mins in a virtual machine for this 1st run. It is essentially
+  a full system upgrade, so takes a similar amount of time to complete.
+
+* Packages chosen are based on the test system the process was created on, so
+  you may well want additional packages. This enhancement will provide a solid
+  base for many tasks, including building various common software packages (a
+  number of dev packages are included) such as QEMU for instance.
+
+* Ignore warnings relating to /etc/ld.so.conf.d/ conf files (broken symbolic
+  links) during the upgrade process. These warnings are common with Xenial to
+  Bionic upgrades (and will be fixed later by deleting broken symbolic links).
+
+* Answer "Y" to any prompts about overwriting configuration files, unless you
+  know what you are doing and are going to manually ensure that the mentioned
+  files are up-to-date relative the new packages (and perhaps also include
+  custom changes you have made).
+
+* Accept the license that appears on screen during the upgrade if you want to
+  install common TrueType fonts from a known big corporation (very useful).
+
