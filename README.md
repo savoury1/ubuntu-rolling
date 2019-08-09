@@ -15,7 +15,7 @@ GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.8
 KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.60.0 (19.04.3)
 Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
 
-![Serena Enhanced](https://github.com/savoury1/ubuntu-rolling/blob/master/images/Serena-Enhanced.png)
+![Serena Enhanced](images/Serena-Enhanced.png)
 *This screenshot is from the test system used for creating these procedures. As can be seen, there is a mix of packages from four Ubuntu "series" currently installed, including approximately 2/3rd Bionic, 1/10th Disco and 1/8th of the system being from the yet-to-be-released Eoan (shipping Oct 17th, 2019)!*
 
 Many new software packages especially require newer KDE/Qt libraries than can be installed from the Xenial repositories. For instance, digiKam (excellent photo management software) 5.9.0 (a very stable version) requires Qt 5.9 making it impossible to run a native version of this program on Xenial systems. An AppImage is provided on the digiKam website that works well, however, many programs that similarly require newer Qt libraries than in Xenial do not have an AppImage available, so being able to actually upgrade the system Qt libraries to a much newer version is very advantageous.
@@ -26,11 +26,11 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 
 * Install Xenial-based system of choice (or backup existing install if wanting to enhance current system!)
 
-* Update Xenial packages to latest versions (eg. ```sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade```)
+* Update Xenial packages to latest versions (eg. `sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade`)
 
-* Run ```enhanced-packages-serena``` (or ```enhanced-packages-xenial``` if using straight Xenial) script to create a handful of useful custom packages that fix certain issues after enhancement
+* Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using straight Xenial) script to create a handful of useful custom packages that fix certain issues after enhancement
 
-* Run ```enhancements-serena``` (or ```enhancements-xenial```) script to install various PPAs, upgrade various system components with Xenial versions and then do first "enhancement" run
+* Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then do first "enhancement" run
 
-* Run ```enhance-bionic``` (and additionally ```enhance-cosmic``` if desired) periodically (eg. put these scripts in ~/.local/bin) to install any updated packages (with any security patches & bugfixes) from the newer "series"
+* Run `enhance-bionic` (and additionally `enhance-cosmic` if desired) periodically (eg. put these scripts in ~/.local/bin) to install any updated packages (with any security patches & bugfixes) from the newer "series"
 
