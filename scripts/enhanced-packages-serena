@@ -71,9 +71,9 @@ pkgs[4,0]="$serena/main/m/mint-info"
 pkgs[4,1]="mint-info-mate_2016.11.02"
 pkgs[4,2]="mint-info-mate_2016.11.02sav0"
 
-# Remove "export QT_STYLE_OVERRIDE=gtk" lines from X11 session file
-# /etc/X11/Xsession.d/99mint as this environment variable causes qt5ct
-# application used for Qt5 theming to complain and fail to start at all
+# Modify perl-modules-5.22 to remove "Conflicts" clause for "perl-modules"
+# as that virtual package is also provided by perl-modules-5.26 (in Bionic)
+# -- this allows the enhancement process to proceed much more easily
 
 pkgs[5,0]="$ubuntu/main/p/perl"
 pkgs[5,1]="perl-modules-5.22_5.22.1-9ubuntu0.6"
