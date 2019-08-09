@@ -63,7 +63,7 @@ pkgs[3,1]="dbus-x11_1.12.2-1ubuntu1.1"
 pkgs[3,2]="dbus-x11_1.12.2-1ubuntu1.2~16.04.sav0"
 
 # Modify description in /etc/linuxmint/info to reflect that this is no
-# longer "vanilla Serena" but is actually "Bionic Serena" with all the
+# longer "vanilla Serena" but is actually "Serena Enhanced" with all the
 # Ubuntu Bionic packages that are part of the install -- shows up as a
 # tooltip when pausing the mouse over the mintMenu Mate Panel widget
 
