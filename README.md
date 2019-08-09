@@ -7,13 +7,16 @@ To make a customized "hybrid" Ubuntu system with packages from newer Ubuntu seri
 
 With that out of the way, the purpose of the procedures on this site is to allow progressive and selective upgrading of a Ubuntu based operating system in a modular fashion. For example, starting with Linux Mint Serena 18.1 MATE (a Xenial-based distribution) released in early 2017, one can upgrade many core components of the system with Ubuntu Bionic (and later) versions. This version table gives an idea of the newer versions that are possible through this modular upgrade process:
 
-System component | Xenial version | Bionic upgrade | Cosmic upgrade
----------------- | -------------- | -------------- | --------------
-C libraries | 2.23 | 2.27 | 2.28
-systemd | 229 | 237 | 239
-GTK3 | 3.18.9 | 3.22.30 | 3.24.4
-KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3)
-Qt libraries | 5.5.1 | 5.9.5 | 5.11.1
+System component | Xenial version | Bionic upgrade | Cosmic upgrade | Disco upgrade | Eoan upgrade
+---------------- | -------------- | -------------- | -------------- | ------------- | ------------
+C libraries | 2.23 | 2.27 | 2.28 | 2.29 | 2.29
+systemd | 229 | 237 | 239 | 240 | 240
+GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.8
+KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.60.0 (19.04.3)
+Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
+
+![Serena Enhanced](https://github.com/savoury1/ubuntu-rolling/blob/master/images/Serena-Enhanced.png)
+*This screenshot is from the test system used for creating these procedures. As can be seen, there is a mix of packages from four Ubuntu "series" currently installed, including approximately 1/8th of the system being from the yet-to-be-released Eoan (shipping Oct 17th, 2019)!*
 
 Many new software packages especially require newer KDE/Qt libraries than can be installed from the Xenial repositories. For instance, digiKam (excellent photo management software) 5.9.0 (a very stable version) requires Qt 5.9 making it impossible to run a native version of this program on Xenial systems. An AppImage is provided on the digiKam website that works well, however, many programs that similarly require newer Qt libraries than in Xenial do not have an AppImage available, so being able to actually upgrade the system Qt libraries to a much newer version is very advantageous.
 
