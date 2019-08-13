@@ -4,7 +4,7 @@ To enhance your own Xenial-based distribution with packages from newer Ubuntu se
 
 * Copy scripts from "base-enhancement" directory and patches from "base-enhance-patches" directory into one location, eg. "~/Downloads"
 
-* Copy "serena-enhanced" deb package from "base-enhance-package" to same directory as above -- this package installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.1 adds Bionic/Cosmic, v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new` command that allows easy installation of packages from different series
+* Copy "serena-enhanced" deb package from "base-enhance-package" to same directory as above -- this package installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.1 adds Bionic/Cosmic, v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installat of packages from newer series
 
 * Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a different Xenial distribution than Mint Serena as the starting point) to create several custom packages used by the enhancement script in the next step
 
@@ -36,8 +36,8 @@ To create your own custom enhancement scripts based on your choices of packages 
 
 The format of the package list files is very simple. A space delimited text file with the first field being the single first letter (in uppercase specifically!) of the required series for the package (or one of two special characters being "-" to signify do not install and "~" to signify that a modded version of this package is needed) and the second field being the exact Ubuntu package name. For example, in the "applications.txt" file:
 
-D meld -- latest available version
-B 4pane
+`D meld -- latest available version`
+`B 4pane`
 
 This says to install meld from Disco and 4pane from Bionic. Note that any additional text after the package name becomes a third comments field (in this case with meld "-- latest available version") and is ignored by **`enhance-scripts-make`** though useful for putting notes in about inter-dependencies or other reasons that some package(s) comes from a specific series.
 
