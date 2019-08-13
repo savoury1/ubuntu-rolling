@@ -4,7 +4,7 @@ To enhance your own Xenial-based distribution with packages from newer Ubuntu se
 
 * Copy scripts from "base-enhancement" directory and patches from "base-enhance-patches" directory into one location, eg. "~/Downloads"
 
-* Copy "serena-enhanced" deb package from "base-enhance-package" to same directory as above -- this package installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.1 adds Bionic/Cosmic, v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installat of packages from newer series
+* Copy "xenial-enhanced" deb package from "base-enhance-package" to same directory as above -- this package installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.1 adds Bionic/Cosmic, v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installation of packages from newer series
 
 * Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a different Xenial distribution than Mint Serena as the starting point) to create several custom packages used by the enhancement script in the next step
 
@@ -12,7 +12,7 @@ To enhance your own Xenial-based distribution with packages from newer Ubuntu se
 
 * The **`enhancements-1st-run`** script will take some time! In testing, it took about 90 minutes in a virtual machine on an i7 processor with fast SSD.
 
-* Once **`enhancements-1st-run`** completes it will drop back to the **`enhancements-serena`** script to perform some final actions, including re-installing certain packages that had to be removed during the upgrade process (due version conflicts)
+* Once **`enhancements-1st-run`** completes it will drop back to the **`enhancements-serena`** (or **`enhancements-xenial`**) script for some final actions, including re-install of packages removed prior to the upgrade process (due version conflicts)
 
 * Reboot to your new "enhanced" Ubuntu "rolling release" distribution!
 
@@ -28,7 +28,7 @@ To create your own custom enhancement scripts based on your choices of packages 
 
 * Assuming the default location, the packages listed in "~/.enhance/pkg-lists/current" will be used to create the enhancement scripts **`enhance-all`** (one apt command per series, faster to run) and **`enhance-cat`** (one apt command per category per series, much slower to run though good for debugging purposes)
 
-* Run **`enhance-scripts-make`** to actually create the **`enhance-all`** and **`enhance-cat`** scripts, which will (by default) be created in "~/.local/bin" (again, this location can be changed if you prefer, by editing the "enhance_script_dir" variable in **`enhance-scripts-make`**)
+* Run **`enhance-scripts-make`** to actually create the **`enhance-all`** and **`enhance-cat`** scripts, which will (by default) be created in "~/.local/bin" (again, this location can be changed, by editing the "enhance_script_dir" variable in **`enhance-scripts-make`**)
 
 &nbsp;
 
