@@ -37,6 +37,7 @@ To create your own custom enhancement scripts based on your choices of packages 
 The format of the package list files is very simple. A space delimited text file with the first field being the single first letter (in uppercase specifically!) of the required series for the package (or one of two special characters being "-" to signify do not install and "~" to signify that a modded version of this package is needed) and the second field being the exact Ubuntu package name. For example, in the "applications.txt" file:
 
 `D meld -- latest available version`
+
 `B 4pane`
 
 This says to install meld from Disco and 4pane from Bionic. Note that any additional text after the package name becomes a third comments field (in this case with meld "-- latest available version") and is ignored by **`enhance-scripts-make`** though useful for putting notes in about inter-dependencies or other reasons that some package(s) comes from a specific series.
