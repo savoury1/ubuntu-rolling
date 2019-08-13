@@ -1,0 +1,6 @@
+deb http://mirror.os6.org/ubuntu disco main restricted universe multiverse
+deb http://mirror.os6.org/ubuntu disco-updates main restricted universe multiverse
+deb http://mirror.os6.org/ubuntu disco-backports main restricted universe multiverse
+
+deb http://security.ubuntu.com/ubuntu/ disco-security main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu/ disco partner

@@ -1,0 +1,6 @@
+deb http://mirror.os6.org/ubuntu bionic main restricted universe multiverse
+deb http://mirror.os6.org/ubuntu bionic-updates main restricted universe multiverse
+deb http://mirror.os6.org/ubuntu bionic-backports main restricted universe multiverse
+
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu/ bionic partner

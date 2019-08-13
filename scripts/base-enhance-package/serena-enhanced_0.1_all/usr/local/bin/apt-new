@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# catch break signal to ensure renaming of repository preference files,
+# otherwise newer repos will have priority for usual apt-get commands!
+function restore() {
+    sudo mv $file.pref $file.pref.save
+}
+
+path=/etc/apt/preferences.d
+file=$1-repositories-hi
+if [ ! -e $path/$file.pref.save ]; then
+    echo "Usage: apt-new SERIES COMMAND"
+    echo
+    echo "  where SERIES is an availalbe Ubuntu series (eg. bionic or cosmic)"
+    echo "  where COMMAND is the apt-get command (eg. "install meld")"
+    echo
+    echo "Example: apt-new bionic install meld"
+    echo
+    echo "apt-new is an enhanced apt-get to allow package installation from a"
+    echo "specified Ubuntu series that is newer than the current base system."
+    exit
+fi
+
+pushd $path >/dev/null
+# enable high priority (990) for packages from selected series
+sudo mv $file.pref.save $file.pref
+# enable trap for break
+trap restore SIGINT
+# shift arguments as $0 is apt-new which now becomes usual apt-get
+shift 1
+sudo apt-get "$@"
+restore
+# disable trap for break
+trap - SIGINT
+popd >/dev/null

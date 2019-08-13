@@ -1,0 +1,6 @@
+/etc/apt/preferences.d/bionic-repositories-hi.pref.save
+/etc/apt/preferences.d/bionic-repositories-lo.pref
+/etc/apt/preferences.d/cosmic-repositories-hi.pref.save
+/etc/apt/preferences.d/cosmic-repositories-lo.pref
+/etc/apt/sources.list.d/official-package-repos-bionic.list
+/etc/apt/sources.list.d/official-package-repos-cosmic.list
