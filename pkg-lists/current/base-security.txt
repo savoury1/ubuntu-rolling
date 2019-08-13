@@ -1,0 +1,65 @@
+D libkeyutils1
+D libkeyutils1:i386
+D keyutils
+D krb5-locales
+D libkrb5support0
+D libkrb5support0:i386
+D libk5crypto3
+D libk5crypto3:i386
+D libkrb5-3
+D libkrb5-3:i386
+D libgssapi-krb5-2
+D libgssapi-krb5-2:i386
+D libnettle6
+D libnettle6:i386
+D libhogweed4
+D libhogweed4:i386
+D nettle-dev
+D libp11-kit0
+D libp11-kit0:i386
+D libp11-kit-dev
+D p11-kit
+D p11-kit-modules
+D libopts25
+D libunbound2
+E libgnutls30 --
+E libgnutls30:i386 --
+E libgnutlsxx28 --
+E libgnutls-openssl27 --
+E libgnutls-dane0 --
+E libgnutls28-dev --
+D libsasl2-modules --
+D libsasl2-modules:i386 --
+D libsasl2-modules-db --
+D libsasl2-modules-db:i386 --
+D libsasl2-2 --
+D libsasl2-2:i386 --
+D libsasl2-dev --
+B libheimbase1-heimdal:i386
+B libheimbase1-heimdal
+B libroken18-heimdal
+B libroken18-heimdal:i386
+B libwind0-heimdal
+B libwind0-heimdal:i386
+B libasn1-8-heimdal
+B libasn1-8-heimdal:i386
+B libhcrypto4-heimdal
+B libhcrypto4-heimdal:i386
+B libhx509-5-heimdal
+B libhx509-5-heimdal:i386
+B libkrb5-26-heimdal
+B libkrb5-26-heimdal:i386
+B libheimntlm0-heimdal
+B libheimntlm0-heimdal:i386
+B libgssapi3-heimdal
+B libgssapi3-heimdal:i386
+B libldap-common
+B libldap-2.4-2
+B libldap-2.4-2:i386
+B libssl1.0.0
+B libssl1.0.0:i386
+B libssl1.1
+B libssl1.1:i386
+B libssl-dev
+B openssl
+B python-openssl

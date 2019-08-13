@@ -39,7 +39,7 @@ echo "deb http://download.mono-project.com/repo/ubuntu wheezy/snapshots/4.8.0 ma
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 sudo apt-get install gcc-8 gcc-8-base gcc-8-base:i386 gcc-8-multilib g++-8 g++-8-multilib
 sudo apt-get install gcc-9 gcc-9-base gcc-9-base:i386 gcc-9-multilib g++-9 g++-9-multilib
-sudo apt-get install dwz libgfortran4 libatomic1:i386
+sudo apt-get install dwz libgfortran4 libgfortran5 libatomic1:i386
 sudo apt-get install mono-devel
 # then remove older mono version repository from being checked due a warning
 # (about a repo path conflict) that appears when using apt-get update commands

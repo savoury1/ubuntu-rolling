@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# generate two scripts for different use situations
+# - one with all packages per series in separate single commands (faster)
+# - one with packages per category per series (much slower to run than the
+#   all script due many more apt-get commands, though useful for debugging)
+enhance_script_all="enhance-all"
+enhance_script_cat="enhance-cat"
+enhance_script_dir="$HOME/.local/bin"
+
+# input for series names and package "categories"
+enhance_make_series="enhance-scripts-make-series.txt"
+enhance_make_cats="enhance-scripts-make-cats.txt"
+package_lists_dir="$HOME/.enhance/pkg-lists/current"
+
+# populate an array with series info
+# allows easy addition of new series
+declare -A u_series
+series_num=0
+all_u_series=""
+while IFS='|' read -r s_letter s_fullname; do
+  series_num=$((series_num + 1))
+  all_u_series="$all_u_series $s_letter"
+  u_series[$series_num,0]="$s_letter"
+  u_series[$series_num,1]="$s_fullname"
+done < "$enhance_make_series"
+
+# populate an array with category info
+# allows easy re-ordering of categories
+declare -A category
+cat_num=0
+while IFS='|' read -r cat_file cat_name; do
+  cat_num=$((cat_num + 1))
+  category[$cat_num,0]="$cat_file"
+  category[$cat_num,1]="$cat_name"
+done < "$enhance_make_cats"
+
+if [ ! -e "$enhance_script_dir" ]; then
+  mkdir "$enhance_script_dir" || exit
+fi
+
+for script_name in $enhance_script_all $enhance_script_cat; do
+  # initialize enhancement script
+  echo "#!/bin/bash" > "$enhance_script_dir/$script_name"
+  echo "" >> "$enhance_script_dir/$script_name"
+  echo "echo" >> "$enhance_script_dir/$script_name"
+  echo "echo \">>> UBUNTU \\\"ROLLING\\\" ENHANCEMENTS <<<\"" >> "$enhance_script_dir/$script_name"
+  echo "echo" >> "$enhance_script_dir/$script_name"
+  # gain superuser authority prior to continuing
+  echo "sudo echo" >> "$enhance_script_dir/$script_name"
+  # give execute permissions to scripts
+  chmod +x "$enhance_script_dir/$script_name"
+done
+
+# initialize all package variable for each series
+for series_code in $all_u_series; do
+  declare pkg_all_$series_code=''
+done
+
+# main loop to construct apt-new commands
+for (( i = 1; i <= $cat_num; i++ )) do
+  cat_file=${category[$i,0]}
+  cat_name=${category[$i,1]}
+
+  echo "echo" >> "$enhance_script_dir/$enhance_script_cat"
+  echo "echo \">>> $cat_name <<<\"" >> "$enhance_script_dir/$enhance_script_cat"
+  echo "echo" >> "$enhance_script_dir/$enhance_script_cat"
+  
+  # initialize category package variable for each series
+  for series_code in $all_u_series; do
+    declare pkg_cat_$series_code=''
+  done
+
+  # collect package names for each series in category
+  # comments catches everything after space following package_name
+  while IFS=' ' read -r series_code package_name comments; do
+    case $series_code in
+    # remove spaces from all_u_series variable
+    [${all_u_series/ /}])
+      # add package to lists for both all and cat files
+      series_current_all="pkg_all_$series_code"
+      declare pkg_all_$series_code="${!series_current_all} $package_name"
+      series_current_cat="pkg_cat_$series_code"
+      declare pkg_cat_$series_code="${!series_current_cat} $package_name"
+      ;;
+    "-") # purge this package (superseded or redundant)
+      ;;
+    "~") # this package requires modded version to work
+      ;;
+    *)
+      echo "Invalid series detected in input!"
+      echo ""
+      echo "Category file name is: $cat_file.txt"
+      echo "Referenced package is: $package_name"
+      echo ""
+      echo "Fix input and run again. Exiting!"
+      echo ""
+      rm "$enhance_script_dir/"{"$enhance_script_all","$enhance_script_cat"}
+      exit
+      ;;
+    esac
+  done < "$package_lists_dir/$cat_file.txt"
+
+  for (( x = 1; x <= $series_num; x++ )) do
+    series_current_cat="pkg_cat_${u_series[$x,0]}"
+    series_name=${u_series[$x,1]}
+    if [ ! "${!series_current_cat}" == "" ]; then
+      echo "echo \"=== Series: ${series_name^} ===\"" >> "$enhance_script_dir/$enhance_script_cat"
+      echo apt-new $series_name install ${!series_current_cat} >> "$enhance_script_dir/$enhance_script_cat"
+      echo "echo" >> "$enhance_script_dir/$enhance_script_cat"
+    fi
+  done
+done
+
+for (( x = 1; x <= $series_num; x++ )) do
+  series_current_all="pkg_all_${u_series[$x,0]}"
+  series_name=${u_series[$x,1]}
+  if [ ! "${!series_current_all}" == "" ]; then
+    echo "echo \"=== Series: ${series_name^} ===\"" >> "$enhance_script_dir/$enhance_script_all"
+    echo apt-new $series_name install ${!series_current_all} >> "$enhance_script_dir/$enhance_script_all"
+    echo "echo" >> "$enhance_script_dir/$enhance_script_all"
+  fi
+done
+

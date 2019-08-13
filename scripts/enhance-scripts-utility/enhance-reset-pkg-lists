@@ -1,0 +1,7 @@
+#!/bin/bash
+
+package_lists_dir="../../pkg-lists/bionic"
+
+# removes comments & resets all packages to Bionic
+sed -i 's/ --.*//' $package_lists_dir/*.txt
+sed -i 's/[-~CDE] /B /' $package_lists_dir/*.txt

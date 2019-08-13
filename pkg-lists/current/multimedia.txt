@@ -1,0 +1,119 @@
+B libsdl1.2debian
+B libsdl1.2debian:i386
+B libsdl1.2-dev
+B libsdl-image1.2
+B libsdl-image1.2:i386
+B libsdl-ttf2.0-0
+B libsdl-ttf2.0-0:i386
+B libsdl-net1.2
+B libsdl-net1.2:i386
+B libsdl-sound1.2
+D libsdl2-2.0-0 -- required by melt (6.16.0-3) Eoan
+D libsdl2-2.0-0:i386 -- same series as libsdl2-2.0-0 (2.0.9+dfsg1-1ubuntu1) Disco
+D libsdl2-dev -- same series as libsdl2-2.0-0 (2.0.9+dfsg1-1ubuntu1) Disco
+D libsdl2-ttf-2.0-0 -- same series as libsdl2-2.0-0 (2.0.9+dfsg1-1ubuntu1) Disco
+B libvisual-0.4-0
+B libvisual-0.4-0:i386
+B libvisual-0.4-plugins
+B libmicrodns0
+B libtotem-plparser-common
+B libtotem-plparser18
+B libass9
+B libdv4
+B libdv4:i386
+B libv4lconvert0
+B libv4lconvert0:i386
+B libv4l-0
+B libv4l-0:i386
+B libgavl1
+B libquicktime2
+B libmjpegutils-2.1-0
+B libmpeg2encpp-2.1-0
+B libmplex2-2.1-0
+B liblavfile-2.1-0
+B liblavjpeg-2.1-0
+B liblavplay-2.1-0
+B mjpegtools
+B libmpeg2-4
+B libzvbi-common
+B libzvbi0
+B libzbar0
+B libaribb24-0
+B libuchardet0
+B libebml4v5
+B libmatroska6v5
+B libbasicusageenvironment1
+B libusageenvironment3
+B libgroupsock8
+B libx264-152
+B libx265-146
+B libde265-0
+B libheif1
+B libtheora0
+B libtheora0:i386
+B libvpx5 --
+B libvpx-dev --
+B libcrystalhd3
+B libcodec2-0.7
+B libxvidcore4
+B libavutil55
+B libswscale4
+B libswresample2
+B libpostproc54
+B libavcodec57
+B libavformat57
+B libavresample3
+B libavfilter6
+B libavdevice57
+E libmovit8 -- same series as libmlt6 (6.16.0-3) Eoan
+E libmlt-data -- required by melt (6.16.0-3) Eoan
+E libmlt++3 -- required by libmlt6 (6.16.0-3) Eoan
+E libmlt6 -- required by melt (6.16.0-3) Eoan
+E melt -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+B libmpv1
+B mpv
+B libflann1.9
+B libgslcblas0
+B libgsl23
+B libguvcview-2.0-2
+B guvcview
+B libsrtp0
+B libsrtp2-1
+D librtmp1 -- newer than ppa:sergey-dryabzhinsky/ffmpeg Bionic
+B libmms0
+B libzen0v5
+B libmediainfo0v5
+B mediainfo
+B mediainfo-gui
+B libnice10
+B gstreamer1.0-nice
+B libgstreamer1.0-0
+B libgstreamer1.0-0:i386
+B gir1.2-gstreamer-1.0
+B gstreamer1.0-tools
+B libgstreamer-gl1.0-0
+B libgstreamer-plugins-base1.0-0
+B libgstreamer-plugins-base1.0-0:i386
+B gir1.2-gst-plugins-base-1.0
+B gstreamer1.0-alsa
+B gstreamer1.0-x
+B libgstreamer-plugins-good1.0-0
+B gstreamer1.0-pulseaudio
+B libgstreamer-plugins-bad1.0-0
+B gstreamer1.0-libav
+B gstreamer1.0-plugins-base
+B gstreamer1.0-plugins-base-apps
+B gstreamer1.0-plugins-good
+B gstreamer1.0-plugins-bad
+B gstreamer1.0-plugins-ugly
+B libfarstream-0.2-5
+B libdmapsharing-3.0-2
+B libgrilo-0.3-0
+B liblirc-client0
+B liblircclient0
+B rhythmbox-data
+B librhythmbox-core10
+B gir1.2-rb-3.0
+B rhythmbox
+B rhythmbox-plugins
+B rhythmbox-plugin-cdrecorder

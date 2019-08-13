@@ -1,0 +1,4 @@
+C libcurl3-gnutls
+C libcurl4
+C libcurl4-gnutls-dev
+C curl

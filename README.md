@@ -1,22 +1,32 @@
 # [ubuntu-rolling](https://github.com/savoury1/ubuntu-rolling)
 ### Ubuntu "Rolling Release" System
 
-To make a customized "hybrid" Ubuntu system with packages from newer Ubuntu series than the currently installed system. Note that this is a "work in progress" and it is useful to state an ordinary disclaimer up front:
+To make a customized "hybrid" Ubuntu system that includes packages from newer Ubuntu series than the currently installed system. There are many reasons to want to do this including:
+
+* Maintain an up-to-date Ubuntu-based system without having to re-install or do full system upgrades periodically (a very time consuming process that often results in many software programs no longer working correctly)
+
+* Retain what is good from earlier Ubuntu-based distributions (ie. a fast and lightweight GTK2 based desktop such as in Linux Mint 18.1 Serena MATE, based on Ubuntu Xenial) while also being able to use what is good and useful from newer Ubuntu series
+
+* Learn about the system you are using by gaining an understanding of the various software "packages" installed and their inter-relationships, such that you are also better equipped to fix problems as and when they might occur
+
+These procedures have specifically been created using a starting point of Linux Mint Serena 18.1 MATE (a Xenial-based Ubuntu distribution), however it would be quite easy to modify the procedures to work with a newer than Xenial-based Ubuntu distribution. Also, note that this is a "work in progress" and it is useful to state an ordinary disclaimer up front:
 
 *The procedures contained on this site might break your system completely and should only be followed by people with appropriate technical backgrounds. This includes a good understanding of the Debian package management system (using "apt" commands), as well as at least a fair understanding of terminal commands and shell scripting. Any system breakage that occurs due carrying out any procedures on this site is entirely the responsibility of the person(s) carrying out those procedures.*
 
-With that out of the way, the purpose of the procedures on this site is to allow progressive and selective upgrading of a Ubuntu based operating system in a modular fashion. For example, starting with Linux Mint Serena 18.1 MATE (a Xenial-based distribution) released in early 2017, one can upgrade many core components of the system with Ubuntu Bionic (and later) versions. This version table gives an idea of the newer versions that are possible through this modular upgrade process:
+This version table gives an idea of the newer versions that can be installed on a Xenial-based distribution, through this modular upgrade process:
 
 System component | Xenial version | Bionic upgrade | Cosmic upgrade | Disco upgrade | Eoan upgrade
 ---------------- | -------------- | -------------- | -------------- | ------------- | ------------
 C libraries | 2.23 | 2.27 | 2.28 | 2.29 | 2.29
 systemd | 229 | 237 | 239 | 240 | 240
 GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.8
+GPG | 1.4.20 | 2.2.4 | 2.2.8 | 2.2.12 | 2.2.12
+X.Org X Server | 1.18.4 | 1.19.6 | 1.20.1 | 1.20.4 | 1.20.4
 KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.60.0 (19.04.3)
 Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
 
 ![Serena Enhanced](images/Serena-Enhanced.png)
-*This screenshot is from the test system used for creating these procedures. As can be seen, there is a mix of packages from four Ubuntu "series" currently installed, including approximately 2/3rd Bionic, 1/10th Disco and 1/8th of the system being from the yet-to-be-released Eoan (shipping Oct 17th, 2019)!*
+*This screenshot is from the test system used for creating these procedures (as at Aug 10th, 2019). As can be seen, there is a mix of packages from four Ubuntu "series" currently installed, including approximately 2/3rd Bionic, 1/10th Disco and 1/8th of the system being from the yet-to-be-released Eoan (shipping Oct 17th, 2019)!*
 
 Many new software packages especially require newer KDE/Qt libraries than can be installed from the Xenial repositories. For instance, digiKam (excellent photo management software) 5.9.0 (a very stable version) requires Qt 5.9 making it impossible to run a native version of this program on Xenial systems. An AppImage is provided on the digiKam website that works well, however, many programs that similarly require newer Qt libraries than in Xenial do not have an AppImage available, so being able to actually upgrade the system Qt libraries to a much newer version is very advantageous.
 
@@ -24,13 +34,16 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 
 #### Overall Procedure
 
-* Install Xenial-based system of choice (or backup existing install if wanting to enhance current system!)
+* Install Xenial-based system of choice (or backup existing install if wanting to enhance current system!), though Linux Mint 18.1 Serena MATE is recommended due these procedures being created on that distribution
 
-* Update Xenial packages to latest versions (eg. `sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade`)
+* Update all Xenial packages to latest versions (eg. `sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade`)
 
-* Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using straight Xenial) script to create a handful of useful custom packages that fix certain issues after enhancement
+* Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using straight Xenial) script to create a handful of useful custom packages that fix certain issues after the enhancement process
 
-* Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then do first "enhancement" run
+* Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then call `enhancements-1st-run` (which installs about 3,000 packages from Bionic with one apt command)
 
-* Run `enhance-bionic` (and additionally `enhance-cosmic` if desired) periodically (eg. put these scripts in ~/.local/bin) to install any updated packages (with any security patches & bugfixes) from the newer "series"
+* Customize and modify the plain text package list files when needed, to choose required packages from newer Ubuntu series (paying attention to package inter-dependencies)
 
+* After customizing the package list files, run `enhance-scripts-make` to create a script `enhance-all` that can then be run periodically to keep the selected packages from newer series up-to-date
+
+*See the readme files in the scripts and pkg-lists directories for more detailed information about exactly how to run these procedures on your own system.*

@@ -1,0 +1,34 @@
+c-libraries|C Libraries
+text-terminal|Text + Terminal
+gtk2-gtk3|GTK2 + GTK3
+core-network|Core Network
+base-security|Base Security
+curl-3-4|Curl (3 + 4)
+core-perl|Core Perl
+core-python|Core Python
+gcrypt-gnupg|GCrypt + GnuPG
+core-data|Core Data
+apt-build|Apt + Build
+python-ruby|Python + Ruby
+themes-assist|Themes + Assist
+core-desktop|Core Desktop
+core-security|Core Security
+core-hardware|Core Hardware
+core-disks|Core Disks
+core-startup|Core Startup
+networking|Networking
+core-system|Core System
+fonts-print|Fonts + Print
+data-types|Data Types
+core-graphics|Core Graphics
+media-devices|Media Devices
+core-display|Core Display
+x11-proto-xcb|X11 Proto + XCB
+x11-framework|X11 Framework
+xorg-xserver|X.Org X Server
+qt4-framework|Qt4 Framework
+qt5-framework|Qt5 Framework
+kde-framework|KDE Framework
+core-audio|Core Audio
+multimedia|Multimedia
+applications|Applications

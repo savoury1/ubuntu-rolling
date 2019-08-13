@@ -1,0 +1,67 @@
+B gnome-calculator
+B evolution-data-server-common
+B evolution-data-server
+B libcamel-1.2-61
+B gir1.2-camel-1.2
+B libedataserver-1.2-23
+B gir1.2-edataserver-1.2
+B libebackend-1.2-10
+B libebook-contacts-1.2-2
+B gir1.2-ebookcontacts-1.2
+B libedata-book-1.2-25
+B libebook-1.2-19
+B gir1.2-ebook-1.2
+B libecal-1.2-19
+B libedata-cal-1.2-28
+B tomboy
+B artha
+B libgtkhex-3-0
+B ghex
+B gthumb-data
+B gthumb
+B hugin-data
+B hugin-tools
+B hugin
+B libij-java
+B imagej
+D xscreensaver-data -- required by xscreensaver (5.42+dfsg1-1ubuntu1) Disco
+D xscreensaver-data-extra -- addition for xscreensaver (5.42+dfsg1-1ubuntu1) Disco
+D xscreensaver-gl -- required by xscreensaver-gl-data (5.42+dfsg1-1ubuntu1) Disco
+D xscreensaver-gl-extra -- addition for xscreensaver (5.42+dfsg1-1ubuntu1) Disco
+D xscreensaver -- latest available version
+E kleopatra -- latest available version
+E kolourpaint -- latest available version
+E kolourpaint4 -- latest available version
+E kipi-plugins-common -- latest available version
+E kipi-plugins -- latest available version
+E digikam-data -- latest available version
+E digikam-private-libs -- latest available version
+E digikam -- latest available version
+E librttr-core0.9.6 -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+E kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+E kdenlive -- latest available version
+E libk3b7 -- latest available version
+E libk3b7-extracodecs -- latest available version
+E k3b-i18n -- latest available version
+E k3b-data -- latest available version
+E k3b -- latest available version
+D meld -- latest available version
+B 4pane
+B hexchat-common
+B hexchat
+B pidgin-data
+B libpurple0
+B libpurple-bin
+B pidgin
+B pidgin-libnotify
+B deluge-common
+B deluge-gtk
+B deluge
+B transmission-common
+B transmission-gtk
+B amule-common
+B amule
+D tigervnc-common -- latest available version
+D tigervnc-viewer -- latest available version
+- chromium-browser -- latest version (v75) has broken printing
+- chromium-codecs-ffmpeg-extra -- latest version (v75) has broken printing
