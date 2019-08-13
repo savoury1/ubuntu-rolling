@@ -1,4 +1,4 @@
-Package: serena-enhanced
+Package: xenial-enhanced
 Version: 0.1
 Architecture: all
 Maintainer: Savoury Tech <noreply@savoury1.github.io>
@@ -6,6 +6,6 @@ Installed-Size: 1
 Depends: apt
 Section: admin
 Priority: optional
-Description: Serena Enhanced
+Description: Xenial Enhanced
  Installs additional repositories for newer Ubuntu series than Xenial
  as well as an "apt-new" command to install packages from newer series.

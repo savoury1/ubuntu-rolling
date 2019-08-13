@@ -8,7 +8,7 @@ To enhance your own Xenial-based distribution with packages from newer Ubuntu se
 
 * Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a different Xenial distribution than Mint Serena as the starting point) to create several custom packages used by the enhancement script in the next step
 
-* Run **`enhancements-serena`** (or **`enhancements-xenial`** -- coming soon) which installs the required PPAs, upgrades and installs required packages, then calls **`enhancements-1st-run`** to do the main work of upgrading almost 3,000 packages
+* Run **`enhancements-serena`** (or **`enhancements-xenial`**) which installs the required PPAs, upgrades and installs required packages, then calls **`enhancements-1st-run`** to do the main work of upgrading almost 3,000 packages
 
 * The **`enhancements-1st-run`** script will take some time! In testing, it took about 90 minutes in a virtual machine on an i7 processor with fast SSD.
 

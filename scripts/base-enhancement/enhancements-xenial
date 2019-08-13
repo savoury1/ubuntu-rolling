@@ -2,13 +2,10 @@
 
 path=~/Downloads
 
-pool=http://packages.linuxmint.com/pool
 lpln=http://launchpadlibrarian.net
 lprs=http://launchpad.net/~asbru-cm/+archive/ubuntu/releases/+files
 
 down=(
-$pool/main/m/mint-themes/mint-themes_1.7.8_all.deb
-$pool/main/m/mint-backgrounds-tina/mint-backgrounds-tina_1.2_all.deb
 $lpln/330848294/libgtk2-appindicator-perl_0.15-1build5_amd64.deb
 $lprs/libgnome2-vte-perl_0.11-2~ubuntu18.04.1_amd64.deb
 )
@@ -19,9 +16,6 @@ python3_3.6.9-1+really3.5.1-3sav0_amd64.deb
 python3-dev_3.5.1-3sav0_amd64.deb
 perl-modules-5.22_5.22.1-9ubuntu0.6_all.deb
 dbus-x11_1.12.2-1ubuntu1.1~16.04.sav0_amd64.deb
-mint-info-mate_2016.11.02sav0_amd64.deb
-mint-artwork-common_2.1.0.1sav0_all.deb
-mint-artwork-mate_1.3.2sav0_all.deb
 )
 
 pushd /etc/apt/sources.list.d >/dev/null
@@ -102,7 +96,7 @@ sudo apt-get install linux-libc-dev:i386 libgssglue1 libxml-sax-perl ttf-freefon
 # remove various packages and their dependencies that cause conflicts/breakage
 # during Bionic enhancement upgrade -- newer Bionic (or same Xenial) packages
 # will be re-installed during (or after) the main enhancement process
-sudo apt-get purge libwebkitgtk-1.0-common libwebkitgtk-3.0-common libwebkit2gtk-3.0-25 hardening-includes python3-aptdaemon.pkcompat python3-xapian1.3 python3-cupshelpers libdouble-conversion1v5 libdfu1 libpng12-dev python-pyatspi2 gnome-themes-standard-data libpeas-1.0-0-python2loader libpeas-1.0-0-python3loader systemd-shim texinfo foomatic-filters libsnmp30 libsane libsane:i386 libmetacity-private3a xserver-xorg-input-vmmouse python-qt4 pulseaudio-module-x11 libsidplay2v5 gstreamer1.0-plugins-bad-faad gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-ugly-amr mint-meta-codecs-core libmagickcore-6.q16-2 vlc-plugin-base xviewer-plugins libpurple0
+sudo apt-get purge libwebkitgtk-1.0-common libwebkitgtk-3.0-common libwebkit2gtk-3.0-25 hardening-includes python3-aptdaemon.pkcompat python3-xapian1.3 python3-cupshelpers libdouble-conversion1v5 libdfu1 libpng12-dev python-pyatspi2 gnome-themes-standard-data libpeas-1.0-0-python2loader libpeas-1.0-0-python3loader systemd-shim texinfo foomatic-filters libsnmp30 libsane libsane:i386 libmetacity-private3a xserver-xorg-input-vmmouse python-qt4 pulseaudio-module-x11 libsidplay2v5 gstreamer1.0-plugins-bad-faad gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-ugly-amr libmagickcore-6.q16-2 vlc-plugin-base xviewer-plugins libpurple0
 
 # install modded Python & Perl packages to satisfy Bionic dependencies
 for (( i = 1; i <= 3; i++ )) do
@@ -115,7 +109,7 @@ done
 # remove customized Perl package now that enhancement upgrades are done
 sudo apt-get purge perl-modules-5.22
 # re-install useful packages auto-removed by pre-enhancement package purge
-sudo apt-get install mdm mate-control-center mate-settings-daemon mate-user-guide mint-artwork-common mint-info-mate mint-user-guide-mate mintdesktop mintinstall mintsystem ubuntu-system-adjustments mint-meta-codecs-core blueberry
+sudo apt-get install mate-control-center mate-settings-daemon mate-user-guide
 sudo apt-get install icedtea-netx-common icedtea-netx icedtea-8-plugin icedtea-plugin
 # complete libdvd setup that cannot run while main apt-get is underway
 sudo dpkg-reconfigure libdvd-pkg
@@ -131,14 +125,14 @@ echo "Package: *xplayer-plparser*" | sudo tee /etc/apt/preferences
 echo "Pin: release *" | sudo tee -a /etc/apt/preferences
 echo "Pin-Priority: -1" | sudo tee -a /etc/apt/preferences
 
-# install other four modded packages now that system is enhanced
-for (( i = 4; i <= 7; i++ )) do
+# install other modded packages now that system is enhanced
+
+for (( i = 4; i <= 4; i++ )) do
   sudo dpkg -i "${pkgs[$i]}"
   echo
 done
 
-# download and install newer Mint themes (fixes GTK 3.20+ menu issues), newer
-# Mint backgrounds (from latest release "Tina"), as well as two GTK2 related
+# final step is to download and install two non-critical (useful) GTK2 related
 # packages not available in default Bionic repos -- both of these packages are
 # required to successfully install newest PAC Manager (4.5.5.7), a great tool
 # that can manage many remote connections to many different types of systems
