@@ -5,7 +5,7 @@ To make a customized "hybrid" Ubuntu Xenial-based system that includes selected 
 
 * Maintain an up-to-date Ubuntu-based system without having to do full system upgrades periodically (a time consuming process that often results in many software programs no longer working)
 
-* Retain what is good from earlier Ubuntu-based distributions (ie. a fast and lightweight GTK2 based desktop such as in Linux Mint 18.1 Serena MATE, based on Ubuntu Xenial) while also being able to use what is good and useful from newer Ubuntu series
+* Retain what is good from earlier Ubuntu-based distributions (ie. a fast and lightweight GTK2 based desktop such as in Linux Mint 18.1 Serena MATE) while also being able to use what is good and useful from newer Ubuntu series
 
 * Learn about the system you are using by gaining an understanding of the various software packages installed and their inter-relationships, such that you are also better equipped to fix problems as and when they might occur
 
@@ -17,15 +17,15 @@ These procedures have specifically been created using a starting point of Linux 
 
 Question: if GNOME 2 was the most popular desktop, **why** is it no longer available?
 
-Based on all testing of GNOME 3 it is overly complex, [bug-ridden](https://igurublog.wordpress.com/2012/11/05/gnome-et-al-rotting-in-threes/) [garbage](https://fosspost.org/opinions/are-gtk-developers-destroying-linux-desktop-with-their-plans) and yet this is the desktop base that Canonical have now chosen for Bionic and onwards! Even Clem (the main person behind Linux Mint), who was known to rant about the breakages caused by GNOME 3 and GTK3 a few years back, decided that from Mint 18.2 the MATE desktop would be based on GTK3?!
+Based on all testing of GNOME 3 it is overly complex, [bug-ridden](https://igurublog.wordpress.com/2012/11/05/gnome-et-al-rotting-in-threes/) [garbage](https://fosspost.org/opinions/are-gtk-developers-destroying-linux-desktop-with-their-plans) and yet this is the desktop base that Canonical have now chosen for Bionic and onwards! Even Clem (the main guy behind Linux Mint), who was known to rant about breakages caused by GNOME 3 and GTK3 a few years back, decided that from Mint 18.2 the MATE desktop would be based on GTK3!?!
 
-Also, the obvious arrogance of the GNOME 3 developers is indicative of trends within the entire software industry (both proprietary and "free"). Those trends for some years now (at least with a number of software development teams, though certainly not all) are to consistently ignore user feedback, strip features from newer releases, change paradigms about how the desktop environment has worked for years, all because "I'm the developer and say it's better!" This "dumbing down" in the name of "progress" and rapidly released new versions with "new features" is actually destroying the reliability of computer software.
+Also, the obvious arrogance of the GNOME 3 developers is indicative of trends within the entire software industry (both proprietary and "free"). Those trends for some years now (at least with a number of software development teams, though certainly not all) are to consistently ignore user feedback, strip features from newer releases, change paradigms about how core parts of the system (such as the desktop environment) has worked for years, all because "I'm the developer and say it's better!" This "dumbing down" in the name of "progress" with rapidly released new versions all about "new features" is actually destroying the reliability of computer software on the whole.
 
 This coming from someone who has done paid tech support work since his mid-teens in the late 1980s (DOS based systems) and for 30 years since. So this includes with all iterations of Windows (to the level of Server Engineer designing and installing web server farms hosting sites with millions of hits per day), many iterations of OS X, many iterations of Linux, and even some genuine UNIX systems.
 
 Personally, the long overdue switch from Windows to a Linux distribution as the day-to-day OS (prompted by the user-hostile, spyware ridden, forced updates garbage known as "Windows 10") happened at exactly the point when Mint 18.1 Serena had just been released. And it had a fast, usable GTK2 based desktop.
 
-This was serendipitous timing. With the release of Mint 18.2 and based on minimal testing, it was clear that Mint 18.1 was going to be the way forward for a long time. Thus, a procedure had to be created to allow upgrading core "modules" or sub-systems of the OS, without touching the great GTK2 based desktop. Hence, the Ubuntu (Xenial-based) "Rolling Release" system, specifically crafted on a Mint 18.1 Serena MATE installation.
+This was serendipitous timing. After Mint 18.2 MATE was released and having done some testing of that version (with the "new, improved" GTK3 based desktop garbage), it was clear that Mint 18.1 was going to be the way forward for a long time. Thus, a procedure had to be created to allow upgrading core "modules" or sub-systems of the OS, without touching the simple, fast, usable GTK2 based desktop. Hence, the Ubuntu (Xenial-based) "Rolling Release" system, specifically crafted on a Mint 18.1 Serena MATE installation.
 
 #### Friendly disclaimer
 
@@ -64,4 +64,4 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 
 * After customizing the package list files, run `enhance-scripts-make` to create a script `enhance-all` that can then be run periodically to keep all the selected packages from newer series up-to-date!
 
-*See the readme file in the script directory for more detailed information "how tos" relative running these procedures.*
+*See the readme file in the script directory for more detailed information and "how tos" relative running these procedures.*
