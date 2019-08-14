@@ -2,15 +2,15 @@
 
 To enhance your own Xenial-based distribution with packages from newer Ubuntu series:
 
-* Copy scripts from "base-enhancement" directory and patches from "base-enhance-patches" directory into one location, eg. "~/Downloads"
+* Copy all scripts from "base-enhancement" directory and all patches from "base-enhance-patches" directory into one location, eg. "~/Downloads"
 
-* Copy "xenial-enhanced" deb package from "base-enhance-package" to same directory as above -- this package installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.1 adds Bionic/Cosmic, v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installation of packages from newer series
+* Copy "xenial-enhanced_0.2_all.deb" package from "base-enhance-package" to same directory -- this package simply installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installation of packages from newer series
 
-* Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a different Xenial distribution than Mint Serena as the starting point) to create several custom packages used by the enhancement script in the next step
+* Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a non-Serena MATE Xenial distribution as the starting point) to create several custom packages used by the enhancement script in the next step
 
 * Run **`enhancements-serena`** (or **`enhancements-xenial`**) which installs the required PPAs, upgrades and installs required packages, then calls **`enhancements-1st-run`** to do the main work of upgrading almost 3,000 packages
 
-* The **`enhancements-1st-run`** script will take some time! In testing, it took about 90 minutes in a virtual machine on an i7 processor with fast SSD.
+* The **`enhancements-1st-run`** script will take some time! In testing, it took about 90 minutes in a virtual machine on an i7 processor with fast SSD. This is the one long part of these procedures and once done it is quick and easy to upgrade sub-components of the OS
 
 * Once **`enhancements-1st-run`** completes it will drop back to the **`enhancements-serena`** (or **`enhancements-xenial`**) script for some final actions, including re-install of packages removed prior to the upgrade process (due version conflicts)
 

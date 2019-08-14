@@ -3,7 +3,7 @@
 
 To make a customized "hybrid" Ubuntu Xenial-based system that includes selected packages from newer Ubuntu series. There are many reasons to want to do this including:
 
-* Maintain an up-to-date Ubuntu-based system without having to do full system upgrades periodically (a time consuming process that often results in many software programs no longer working)
+* Maintain an up-to-date Ubuntu-based system without having to do full system upgrades periodically (a process that often results in many software programs no longer working, due removal of dependencies in the new version)
 
 * Retain what is good from earlier Ubuntu-based distributions (ie. a fast and lightweight GTK2 based desktop such as in Linux Mint 18.1 Serena MATE) while also being able to use what is good and useful from newer Ubuntu series
 
