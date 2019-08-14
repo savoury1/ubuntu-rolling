@@ -4,7 +4,7 @@ To enhance your own Xenial-based distribution with packages from newer Ubuntu se
 
 * Copy all scripts from "base-enhancement" directory and all patches from "base-enhance-patches" directory into one location, eg. "~/Downloads" is a good choice.
 
-* Copy "xenial-enhanced_0.2_all.deb" package from "base-enhance-package" to same directory -- this package simply installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.2 adds Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installation of packages from newer series.
+* Copy "xenial-enhanced_0.2_all.deb" package from "base-enhance-package" to same directory -- this package simply installs text lists into /etc/apt/ path to make packages from the various Ubuntu series available (v0.2 adds four series, Bionic/Cosmic/Disco/Eoan) as well as an **`apt-new`** command allowing easy installation of packages from newer series.
 
 * Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a Xenial distribution other than Mint Serena MATE as the starting point) to create several custom packages used by the enhancement script in the next step.
 
@@ -15,6 +15,8 @@ To enhance your own Xenial-based distribution with packages from newer Ubuntu se
 * Once **`enhancements-1st-run`** completes it will drop back to the **`enhancements-serena`** (or **`enhancements-xenial`**) script for some final actions, including re-install of packages removed prior to the upgrade process (due version conflicts).
 
 * Reboot to your new "enhanced" Ubuntu "rolling release" distribution!
+
+* Run **`enhance-additional-ppas`** to add several additional useful PPAs that allow further upgrade of several more components of the system.
 
 &nbsp;
 
