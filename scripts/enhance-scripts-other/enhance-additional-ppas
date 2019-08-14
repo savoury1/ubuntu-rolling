@@ -1,8 +1,14 @@
 #!/bin/bash
 
-ppa:anton+/miscellaneous
+# latest NTFS-3G
+sudo add-apt-repository -y ppa:anton+/miscellaneous
 
-ppa:sergey-dryabzhinsky/ffmpeg
+# latest ffmpeg (v4.x) & dependencies
+sudo add-apt-repository -y ppa:sergey-dryabzhinsky/ffmpeg
 
-ppa:sergey-dryabzhinsky/packages
+# various useful package upgrades
+sudo add-apt-repository -y ppa:sergey-dryabzhinsky/packages
+
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+sudo apt-get install ntfs-3g ffmpeg
 

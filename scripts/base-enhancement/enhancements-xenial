@@ -86,9 +86,9 @@ for deb in "${pkgs[@]}"; do
   sudo cp -p "$path/$deb" . && sudo chown root:root $deb
 done
 
-# install "serena-enhanced" package to add new Ubuntu repositories
+# install "xenial-enhanced" package to add new Ubuntu repositories
 sudo dpkg -i "${pkgs[0]}"
-# pull in all new repositories installed by "serena-enhanced" package
+# pull in all new repositories installed by "xenial-enhanced" package
 sudo apt-get update
 # install various dependencies that do not have a newer version than Xenial
 sudo apt-get install linux-libc-dev:i386 libgssglue1 libxml-sax-perl ttf-freefont ipcalc wakeonlan libbonobo2-0 libnetcf1 libjpeg8-dev libxinerama-dev libxext-dev libxss-dev libxxf86vm-dev libxft-dev libsm-dev libstreamanalyzer0v5 libogg-dev libvdpau1 libattica0.4 libntrack-qt4-1
@@ -118,15 +118,8 @@ sudo locale-gen --purge --no-archive
 
 # first use of "apt-new" command to install Bionic compatible Xapps!
 apt-new bionic install pix xplayer xplayer-plugins-extra gir1.2-xplayer-plparser-1.0 xreader gir1.2-xreader xviewer
-# Serena packages have higher version due "+" so specify exact Bionic versions
-apt-new bionic install libxplayer-plparser18=1.0.2-1~bionic0 gir1.2-xplayer-plparser-1.0=1.0.2-1~bionic0
-# avoid xplayer parser files "upgrading" (really downgrade) to Serena versions
-echo "Package: *xplayer-plparser*" | sudo tee /etc/apt/preferences
-echo "Pin: release *" | sudo tee -a /etc/apt/preferences
-echo "Pin-Priority: -1" | sudo tee -a /etc/apt/preferences
 
 # install other modded packages now that system is enhanced
-
 for (( i = 4; i <= 4; i++ )) do
   sudo dpkg -i "${pkgs[$i]}"
   echo

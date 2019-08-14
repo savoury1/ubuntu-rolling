@@ -92,9 +92,9 @@ for deb in "${pkgs[@]}"; do
   sudo cp -p "$path/$deb" . && sudo chown root:root $deb
 done
 
-# install "serena-enhanced" package to add new Ubuntu repositories
+# install "xenial-enhanced" package to add new Ubuntu repositories
 sudo dpkg -i "${pkgs[0]}"
-# pull in all new repositories installed by "serena-enhanced" package
+# pull in all new repositories installed by "xenial-enhanced" package
 sudo apt-get update
 # install various dependencies that do not have a newer version than Xenial
 sudo apt-get install linux-libc-dev:i386 libgssglue1 libxml-sax-perl ttf-freefont ipcalc wakeonlan libbonobo2-0 libnetcf1 libjpeg8-dev libxinerama-dev libxext-dev libxss-dev libxxf86vm-dev libxft-dev libsm-dev libstreamanalyzer0v5 libogg-dev libvdpau1 libattica0.4 libntrack-qt4-1
