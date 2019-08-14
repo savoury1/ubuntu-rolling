@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ppa:anton+/miscellaneous
+
+ppa:sergey-dryabzhinsky/ffmpeg
+
+ppa:sergey-dryabzhinsky/packages
+
