@@ -3,11 +3,11 @@
 
 To make a customized "hybrid" Ubuntu Xenial-based system that includes selected packages from newer Ubuntu series. There are many reasons to want to do this including:
 
-* Maintain an up-to-date Ubuntu-based system without having to do full system upgrades periodically (a process that often results in many software programs no longer working, due removal of dependencies in the new version)
+* Maintain an up-to-date Ubuntu-based system without having to do full system upgrades periodically (a process that often results in many software programs no longer working, due removal of dependencies in the new version).
 
-* Retain what is good from earlier Ubuntu-based distributions (ie. a fast and lightweight GTK2 based desktop such as in Linux Mint 18.1 Serena MATE) while also being able to use what is good and useful from newer Ubuntu series
+* Retain what is good from earlier Ubuntu-based distributions (ie. a fast and lightweight GTK2 based desktop such as in Linux Mint 18.1 Serena MATE) while also being able to use what is good and useful from newer Ubuntu series.
 
-* Learn about the system you are using by gaining an understanding of the various software packages installed and their inter-relationships, such that you are also better equipped to fix problems as and when they might occur
+* Learn about the system you are using by gaining an understanding of the various software packages installed and their inter-relationships, such that you are also better equipped to fix problems as and when they might occur.
 
 #### Some Philosophical Background
 
@@ -54,13 +54,13 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 
 #### Overall Procedure
 
-* Install Xenial-based system of choice (or backup existing Xenial-based install if wanting to enhance current system), though Linux Mint 18.1 Serena MATE is a recommended starting point due these procedures being created on that distribution
+* Install Xenial-based system of choice (or backup existing Xenial-based install if wanting to enhance current system), though Linux Mint 18.1 Serena MATE is a recommended starting point due these procedures being created on that distribution.
 
-* Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using a Xenial-based distro other than Serena MATE) script to create a handful of useful custom packages that fix certain issues after the enhancement process
+* Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using a Xenial-based distro other than Serena MATE) script to create a handful of useful custom packages that fix certain issues after the enhancement process.
 
-* Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then call `enhancements-1st-run` (which installs about new 3,000 packages with one apt command)
+* Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then call `enhancements-1st-run` (which installs about new 3,000 packages with one apt command).
 
-* Customize and modify the plain text package list files when needed, to choose required packages from newer Ubuntu series (paying attention to package inter-dependencies)
+* Customize and modify the plain text package list files when needed, to choose required packages from newer Ubuntu series (paying attention to package inter-dependencies).
 
 * After customizing the package list files, run `enhance-scripts-make` to create a script `enhance-all` that can then be run periodically to keep all the selected packages from newer series up-to-date!
 
