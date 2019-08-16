@@ -48,7 +48,8 @@ D libxcb-present0
 D libxcb-present0:i386
 D libxcb-present-dev
 D libxcb-composite0
-D libxcb-xinput0 -- required by libqt5gui5 5.12.2+dfsg-4ubuntu1 (Disco)
+D libxcb-res0 -- required by libkf5windowsystem5 (5.61.0-0ubuntu1) Eoan
+D libxcb-xinput0 -- required by libqt5gui5 (5.12.2+dfsg-4ubuntu1) Disco
 D libxcb-xkb1
 D libxcb-xtest0
 D libxcb-xv0

@@ -13,6 +13,9 @@ enhance_make_series="enhance-scripts-make-series.txt"
 enhance_make_cats="enhance-scripts-make-cats.txt"
 package_lists_dir="$HOME/.enhance/pkg-lists/current"
 
+# change directory to location of script
+pushd "$(dirname "$(readlink -f "$0")")" >/dev/null
+
 # populate an array with series info
 # allows easy addition of new series
 declare -A u_series
@@ -122,3 +125,4 @@ for (( x = 1; x <= $series_num; x++ )) do
   fi
 done
 
+popd >/dev/null

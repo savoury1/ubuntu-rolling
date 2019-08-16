@@ -92,7 +92,9 @@ D libxshmfence-dev
 D libpixman-1-0
 D libpixman-1-0:i386
 D libpixman-1-dev
-B libxft-dev -- new packages required for Disco
+D libxft2
+D libxft2:i386
+D libxft-dev
 D libxfont2
 D xfonts-utils
 D xcalib
