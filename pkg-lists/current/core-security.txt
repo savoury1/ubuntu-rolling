@@ -56,8 +56,8 @@ B openssh-client
 B openssh-sftp-server
 B openssh-server
 B ssh-askpass-gnome
-D libssh-4 --
-D libssh-gcrypt-4 --
+D libssh-4 -- same series as libssh-gcrypt-4 (0.8.6-3) Disco
+D libssh-gcrypt-4 -- required by kde-runtime (4:17.08.3-2) Eoan
 B libssh2-1
 B libssh2-1-dev
 B libpkcs11-helper1

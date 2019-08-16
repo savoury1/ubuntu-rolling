@@ -74,23 +74,23 @@ E ipxe-qemu
 E ipxe-qemu-256k-compat-efi-roms
 E qemu-slof
 E seabios
-E qemu-user
-E qemu-block-extra
-E qemu-utils
-E qemu-system-common
-E qemu-system-data --
-E qemu-system-gui --
+E qemu-user -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-block-extra -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-utils -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-common -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-data -- required by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
+E qemu-system-gui -- recommended by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
 D libvirglrenderer0 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
-E qemu-system-x86
-E qemu-system-arm
-E qemu-system-ppc
-E qemu-system-s390x
-E qemu-system-mips
-E qemu-system-sparc
-E qemu-system-misc
-E qemu-system
-E qemu-kvm
-E qemu
+E qemu-system-x86 -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-arm -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-ppc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-s390x -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-mips -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-sparc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system-misc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-system -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu-kvm -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+E qemu -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
 E osinfo-db
 E libosinfo-1.0-0
 E gir1.2-libosinfo-1.0
@@ -100,7 +100,7 @@ D libvirt-daemon -- ppa:jacob/virtualisation
 D libvirt-daemon-system -- ppa:jacob/virtualisation
 - libvirt-bin -- obsolete by libvirt0 (4.0.0-1ubuntu8) Bionic
 D python-libvirt -- ppa:jacob/virtualisation
-~ python3-libvirt -- ppa:jacob/virtualisation
+~ python3-libvirt -- ppa:jacob/virtualisation (modded version required for Python 3.7)
 E libvirt-glib-1.0-0
 E gir1.2-libvirt-glib-1.0
 E libspice-protocol-dev

@@ -1,16 +1,16 @@
-D libc6
-D libc6:i386
-D libc6-x32
-D libc6-dbg
-D libc-bin
-D libc-dev-bin
-D libc6-dev
-D libc6-dev:i386
-D libc6-i386
-D libc6-dev-i386
-D libc6-dev-x32
-D multiarch-support
-D locales
+D libc6 -- required by libqt5core5a (5.12.2+dfsg-4ubuntu1)
+D libc6:i386 -- sames series as (2.29-0ubuntu2) Disco
+D libc6-x32 -- sames series as (2.29-0ubuntu2) Disco
+D libc6-dbg -- sames series as (2.29-0ubuntu2) Disco
+D libc-bin -- sames series as (2.29-0ubuntu2) Disco
+D libc-dev-bin -- sames series as (2.29-0ubuntu2) Disco
+D libc6-dev -- sames series as (2.29-0ubuntu2) Disco
+D libc6-dev:i386 -- sames series as (2.29-0ubuntu2) Disco
+D libc6-i386 -- sames series as (2.29-0ubuntu2) Disco
+D libc6-dev-i386 -- sames series as (2.29-0ubuntu2) Disco
+D libc6-dev-x32 -- sames series as (2.29-0ubuntu2) Disco
+D multiarch-support -- sames series as (2.29-0ubuntu2) Disco
+D locales -- sames series as (2.29-0ubuntu2) Disco
 D libglib2.0-data
 D libglib2.0-0
 D libglib2.0-0:i386
@@ -22,7 +22,7 @@ D libglibmm-2.4-dev
 B libgee-0.8-2
 B libicu60
 B libicu60:i386
-D libicu63 --
+D libicu63 -- required by libqt5core5a (5.12.2+dfsg-4ubuntu1) Disco
 B icu-devtools
 B libicu-le-hb0
 B libiculx60
@@ -37,12 +37,12 @@ B libboost-date-time1.65.1
 B libboost-regex1.65.1
 B libboost-python1.65.1
 B libboost-wave1.65.1
-D libboost-iostreams1.67.0 --
-D libboost-system1.67.0 --
-D libboost-filesystem1.67.0v
-D libboost-thread1.67.0 --
-D libboost-locale1.67.0 --
-D libboost-date-time1.67.0 --
-D libboost-regex1.67.0 --
-D libboost-python1.67.0 --
-D libboost-wave1.67.0 --
+D libboost-iostreams1.67.0 -- required by librados2 (14.2.1-0ubuntu3) Eoan
+D libboost-system1.67.0 -- required by librados2 (14.2.1-0ubuntu3) Eoan
+D libboost-filesystem1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
+D libboost-thread1.67.0 -- required by librados2 (14.2.1-0ubuntu3) Eoan
+D libboost-locale1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
+D libboost-date-time1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
+D libboost-regex1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
+D libboost-python1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
+D libboost-wave1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco

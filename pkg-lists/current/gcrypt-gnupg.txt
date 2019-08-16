@@ -23,7 +23,7 @@ D gnupg2 -- ppa:nephirus/ppa-gnupg
 D scdaemon -- ppa:nephirus/ppa-gnupg
 D libgpgme11 -- ppa:nephirus/ppa-gnupg
 D libgpgmepp6 -- ppa:nephirus/ppa-gnupg
-~ python3-gpg -- ppa:nephirus/ppa-gnupg
+~ python3-gpg -- ppa:nephirus/ppa-gnupg (modded version needed for Python 3.7)
 D gpa -- same series as ppa:nephirus/ppa-gnupg
 B libgck-1-0
 B libgck-1-0:i386

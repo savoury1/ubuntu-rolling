@@ -63,7 +63,7 @@ B samba
 B python-smbc
 B cifs-utils
 B rdesktop
-~ vino --
+~ vino -- modded version required (fix dconf schema error)
 B libsodium23
 B libsodium-dev
 B libnorm1

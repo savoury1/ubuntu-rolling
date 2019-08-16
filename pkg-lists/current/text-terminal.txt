@@ -15,22 +15,22 @@ B libunistring2:i386
 B readline-common
 B libreadline7
 B libreadline7:i386
-D libreadline8 --
-D libtinfo5 --
-D libtinfo5:i386 --
-D libncurses5 --
-D libncurses5:i386 --
-D libncursesw5 --
-D libncursesw5:i386 --
-D libtinfo6 --
-D libncurses6 --
-D libncursesw6 --
-D ncurses-base --
-D ncurses-bin --
-D libncurses-dev --
-D libtinfo-dev --
-D libncurses5-dev --
-D libncursesw5-dev --
+D libreadline8 -- required by gpg (2.2.12-1ubuntu3) Disco
+D libtinfo5 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libtinfo5:i386 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncurses5 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncurses5:i386 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncursesw5 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncursesw5:i386 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libtinfo6 -- required by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
+D libncurses6 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncursesw6 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D ncurses-base -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D ncurses-bin -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncurses-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libtinfo-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncurses5-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+D libncursesw5-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
 B dash
 B ash
 B bash
@@ -63,5 +63,5 @@ B libedit2:i386
 B dialog
 B libgpm2
 B libgpm2:i386
-- libre2-4
-D libre2-5 --
+- libre2-4 -- obsolete by libre2-5 (20190101+dfsg-2) Disco
+D libre2-5 -- required by libqt5webenginecore5 (5.12.2+dfsg-2ubuntu1) Disco

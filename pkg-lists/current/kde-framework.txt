@@ -186,8 +186,8 @@ E libkf5kirigami2-5
 E qml-module-org-kde-kirigami2
 E libkf5parts-data
 E libkf5parts5
-- libdmtx0a -- obsolete by libkf5prison5 (5.60.0-0ubuntu1) Eoan
-E libdmtx0b -- required by libkf5prison5 (5.60.0-0ubuntu1) Eoan
+- libdmtx0a -- obsolete by libkf5prison5 (5.61.0-0ubuntu1) Eoan
+E libdmtx0b -- required by libkf5prison5 (5.61.0-0ubuntu1) Eoan
 - libqrencode3 -- obsolete by libkf5prison5 (5.56.0-0ubuntu1) Disco
 E libqrencode4 -- required by libkf5prison5 (5.56.0-0ubuntu1) Disco
 E libkf5prison5

@@ -14,8 +14,8 @@ B liblzma5:i386
 B liblzma-dev
 B xz-utils
 B cpio
-D libzstd1 --
-D zstd --
+D libzstd1 -- latest available version
+D zstd -- latest available version
 B pigz
 B tar
 B gzip
@@ -91,7 +91,8 @@ B xsltproc
 B libexpat1
 B libexpat1:i386
 B libexpat1-dev
-- libtinyxml2-6 -- obsolete
+- libtinyxml2-6 -- obsolete by libtinyxml2-6a (6.2.0+dfsg-3) Cosmic
+D libtinyxml2-6a -- required by libmediainfo0v5 (18.03.1-1build1) Cosmic
 B libtinyxml2.6.2v5
 B libpugixml1v5
 B libraptor2-0

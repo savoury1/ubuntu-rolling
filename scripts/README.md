@@ -51,5 +51,5 @@ Looking into the package list files will quickly show how this works. There is c
 
 The "pkg-lists/current" directory contains the current configuration from the test system used to create the enhancement or "rolling release" procedures. The "pkg-lists/bionic" directory contains a baseline Bionic configuration, as is installed by **`enhancements-1st-run`** in the initial enhancement process.
 
-To create a new set of package lists is simple. In the "pkg-lists" directory copy either the "bionic" directory (starting from baseline) or the "current" directory (replicating original test system) to a new directory. Then, either rename the "current" directory to something else and the new directory to "current" OR edit the "package_lists_dir" variable in **`enhance-scripts-make`** to the new directory name.
+To create and use a new set of package lists is simple. In the "pkg-lists" directory copy either the "bionic" directory (starting from baseline) or the "current" directory (replicating original test system) to a new directory. Then, either rename the "current" directory to something else and the new directory to "current" OR edit the "package_lists_dir" variable in **`enhance-scripts-make`** to the new directory name.
 

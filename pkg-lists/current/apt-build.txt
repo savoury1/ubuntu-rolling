@@ -97,7 +97,7 @@ B debconf-utils
 B po-debconf
 B libdebconfclient0
 B python3-debconf
-D debootstrap --
+D debootstrap -- allow bootstrap of latest Eoan series
 B squashfs-tools
 B snapd
 B libconfig9
