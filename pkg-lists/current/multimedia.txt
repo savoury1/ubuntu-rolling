@@ -51,8 +51,8 @@ B libde265-0
 B libheif1
 B libtheora0
 B libtheora0:i386
-B libvpx5 --
-B libvpx-dev --
+B libvpx5=1.7.0-3 -- same version as libvpx-dev (1.7.0-3) Bionic
+B libvpx-dev=1.7.0-3 -- issue with rename to libvpx5-dev in ppa:sergey-dryabzhinsky/ffmpeg
 B libcrystalhd3
 B libcodec2-0.7
 B libxvidcore4
