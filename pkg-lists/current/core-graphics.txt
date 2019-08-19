@@ -36,9 +36,7 @@ B libwebp6:i386
 B libwebpmux3
 B libwebpdemux2
 B libilmbase12
-D libilmbase23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 B libopenexr22
-D libopenexr23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 B libvigraimpex6
 B libvigraimpex-dev
 B libfox-1.6-0
@@ -108,6 +106,7 @@ B libraw16
 B liblensfun-data-v1
 B liblensfun1
 B liblqr-1-0
+B dcraw
 B libgphoto2-l10n
 B libgphoto2-port12
 B libgphoto2-port12:i386

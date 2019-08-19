@@ -8,10 +8,10 @@ B libsdl-ttf2.0-0:i386
 B libsdl-net1.2
 B libsdl-net1.2:i386
 B libsdl-sound1.2
-D libsdl2-2.0-0 -- required by melt (6.16.0-3) Eoan
-D libsdl2-2.0-0:i386 -- same series as libsdl2-2.0-0 (2.0.9+dfsg1-1ubuntu1) Disco
-D libsdl2-dev -- same series as libsdl2-2.0-0 (2.0.9+dfsg1-1ubuntu1) Disco
-D libsdl2-ttf-2.0-0 -- same series as libsdl2-2.0-0 (2.0.9+dfsg1-1ubuntu1) Disco
+B libsdl2-2.0-0
+B libsdl2-2.0-0:i386
+B libsdl2-dev
+B libsdl2-ttf-2.0-0
 B libvisual-0.4-0
 B libvisual-0.4-0:i386
 B libvisual-0.4-plugins
@@ -51,8 +51,8 @@ B libde265-0
 B libheif1
 B libtheora0
 B libtheora0:i386
-B libvpx5=1.7.0-3 -- same version as libvpx-dev (1.7.0-3) Bionic
-B libvpx-dev=1.7.0-3 -- issue with rename to libvpx5-dev in ppa:sergey-dryabzhinsky/ffmpeg
+B libvpx5
+B libvpx-dev
 B libcrystalhd3
 B libcodec2-0.7
 B libxvidcore4
@@ -65,11 +65,11 @@ B libavformat57
 B libavresample3
 B libavfilter6
 B libavdevice57
-E libmovit8 -- same series as libmlt6 (6.16.0-3) Eoan
-E libmlt-data -- required by melt (6.16.0-3) Eoan
-E libmlt++3 -- required by libmlt6 (6.16.0-3) Eoan
-E libmlt6 -- required by melt (6.16.0-3) Eoan
-E melt -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+B libmovit8
+B libmlt-data
+B libmlt++3
+B libmlt6
+B melt
 B libmpv1
 B mpv
 B libflann1.9
@@ -79,7 +79,7 @@ B libguvcview-2.0-2
 B guvcview
 B libsrtp0
 B libsrtp2-1
-D librtmp1 -- newer than ppa:sergey-dryabzhinsky/ffmpeg Bionic
+B librtmp1
 B libmms0
 B libzen0v5
 B libmediainfo0v5

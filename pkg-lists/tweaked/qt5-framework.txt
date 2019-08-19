@@ -1,0 +1,91 @@
+E qtchooser
+E qt5-qmake-bin
+E qt5-qmake
+E libqt5core5a
+E libqt5concurrent5
+E libqt5dbus5
+E libqt5network5
+E libqt5sql5
+E libqt5sql5-sqlite
+E libqt5sql5-mysql
+E libqt5xml5
+E libqt5gui5
+E libqt5widgets5
+E libqt5opengl5
+E libqt5printsupport5
+E libqt5test5
+E qtbase5-dev-tools
+E qtbase5-dev
+E qt5-gtk-platformtheme
+E qt5-gtk2-platformtheme -- required by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Eoan
+E libqt5svg5
+E libqt5texttospeech5
+E libqt5xmlpatterns5
+E libqt5x11extras5
+E libqt5positioning5
+E libqt5script5
+E libqt5sensors5
+E libqt5qml5
+E libqt5quick5
+E libqt5quickwidgets5
+E libqt5quicktemplates2-5
+E libqt5quickcontrols2-5
+E qml-module-qtqml-models2
+E qml-module-qtquick2
+E qml-module-qtquick-layouts
+E qml-module-qtquick-window2
+E qml-module-qtquick-templates2
+E qml-module-qtquick-controls2
+E qml-module-qtgraphicaleffects
+E qml-module-qtquick-controls
+E qml-module-qtquick-privatewidgets
+E qml-module-qtquick-dialogs
+E libqt5webchannel5
+E libqt5webkit5
+E libqt5webengine-data
+E libqt5webenginecore5
+E libqt5webenginewidgets5
+E libqt5multimedia5
+- libqt5multimediaquick-p5 -- obsolete by qtmultimedia5-dev (5.11.1-1ubuntu1) Cosmic
+E libqt5multimediawidgets5
+E qt5-image-formats-plugins
+- libqgsttools-p1 -- obsolete by libqt5multimedia5-plugins (5.11.1-1ubuntu1) Cosmic
+E libqt5multimediagsttools5 -- required by libqt5multimedia5-plugins (5.11.1-1ubuntu1) Cosmic
+E libqt5multimedia5-plugins
+- qt5-style-plugin-blackberry -- obsolete by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Eoan
+E qt5-style-plugin-cleanlooks -- required by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Cosmic
+E qt5-style-plugin-plastique -- required by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Cosmic
+E qt5-style-plugin-motif -- required by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Cosmic
+- qt5-style-plugin-gtk2 -- obsolete by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Eoan
+- qt5-style-platform-gtk2 -- obsolete by qt5-style-plugins (5.0.0+git23.g335dbec-3ubuntu1) Eoan
+E qt5-style-plugins
+E qt5-default
+E libqt5designer5
+E libqt5designercomponents5
+E libqt5help5
+E qhelpgenerator-qt5 -- required by qttools5-dev-tools (5.12.4-1) Eoan
+E qtattributionsscanner-qt5 -- required by qttools5-dev-tools (5.12.4-1) Eoan
+E qt5-assistant
+E qttools5-dev-tools
+E qdoc-qt5 -- required by qttools5-dev-tools (5.12.2-1 (Disco)
+E qt5ct
+E libqtav1
+E libqtavwidgets1
+E libgrantlee-textdocument5
+D libqgpgme7 -- same series as gpg (2.2.17-3ubuntu4) Disco (ppa:nephirus/ppa-gnupg)
+E libqca-qt5-2
+E libqca-qt5-2-plugins
+E pinentry-qt
+E libpolkit-qt5-1-1
+E libaccounts-qt5-1
+E libsignon-glib1
+E gir1.2-signon-1.0
+E libsignon-qt5-1
+E libsignon-extension1
+E libsignon-plugins-common1
+E signond
+E signon-plugin-password
+E qml-module-ubuntu-onlineaccounts
+E signon-plugin-oauth2
+E signon-ui-service
+E signon-ui-x11

@@ -7,24 +7,24 @@ B libgcrypt20:i386
 B libgcrypt20-dev
 B libassuan0
 B libksba8
-D gpgconf -- ppa:nephirus/ppa-gnupg
-D gpg-agent -- ppa:nephirus/ppa-gnupg
-D gnupg-agent -- ppa:nephirus/ppa-gnupg
-D gnupg-utils -- ppa:nephirus/ppa-gnupg
-D dirmngr -- ppa:nephirus/ppa-gnupg
-D gpgsm -- ppa:nephirus/ppa-gnupg
-D gpgv -- ppa:nephirus/ppa-gnupg
-D gpg -- ppa:nephirus/ppa-gnupg
-D gpg-wks-client -- ppa:nephirus/ppa-gnupg
-D gpg-wks-server -- ppa:nephirus/ppa-gnupg
-D gnupg-l10n -- ppa:nephirus/ppa-gnupg
-D gnupg -- ppa:nephirus/ppa-gnupg
-D gnupg2 -- ppa:nephirus/ppa-gnupg
-D scdaemon -- ppa:nephirus/ppa-gnupg
-D libgpgme11 -- ppa:nephirus/ppa-gnupg
-D libgpgmepp6 -- ppa:nephirus/ppa-gnupg
-~ python3-gpg -- ppa:nephirus/ppa-gnupg (modded version needed for Python 3.7)
-D gpa -- same series as ppa:nephirus/ppa-gnupg
+B gpgconf
+B gpg-agent
+B gnupg-agent
+B gnupg-utils
+B dirmngr
+B gpgsm
+B gpgv
+B gpg
+B gpg-wks-client
+B gpg-wks-server
+B gnupg-l10n
+B gnupg
+B gnupg2
+B scdaemon
+B libgpgme11
+B libgpgmepp6
+B python3-gpg
+B gpa
 B libgck-1-0
 B libgck-1-0:i386
 B libgcr-base-3-1

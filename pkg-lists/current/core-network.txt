@@ -11,10 +11,10 @@ B libproxy1v5:i386
 B libproxy-tools
 B libproxy1-plugin-gsettings
 B libproxy1-plugin-networkmanager
-D glib-networking-common -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
-D glib-networking-services -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
-D glib-networking -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
-D glib-networking:i386 -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
+B glib-networking-common
+B glib-networking-services
+B glib-networking
+B glib-networking:i386
 B libsoup2.4-1
 B libsoup2.4-1:i386
 B libsoup-gnome2.4-1
@@ -26,9 +26,9 @@ B libpcap0.8:i386
 B libpcap0.8-dev
 B iftop
 B libevent-2.1-6
-E libtasn1-6 -- required by libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libtasn1-6:i386 -- required by libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libtasn1-6-dev -- required by libgnutls30 (3.6.9-3ubuntu1) Eoan
+B libtasn1-6
+B libtasn1-6:i386
+B libtasn1-6-dev
 B libidn11
 B libidn11:i386
 B libidn11-dev
@@ -50,7 +50,7 @@ B libip4tc0
 B libip6tc0
 B libxtables12
 B iptables
-D ebtables
+B ebtables
 B netbase
 B hostname
 B python-netifaces
@@ -93,7 +93,7 @@ B libasyncns0
 B libasyncns0:i386
 B libc-ares2
 B aria2
-E wget -- latest available version
+B wget
 B isc-dhcp-common
 B isc-dhcp-client
 B libsnmp-base

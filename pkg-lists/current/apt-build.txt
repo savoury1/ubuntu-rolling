@@ -39,7 +39,7 @@ B binutils-x86-64-linux-gnu
 B binutils
 B binutils-multiarch
 B libbinutils
-D nasm
+B nasm
 B sbsigntool
 B libelf1
 B libelf1:i386
@@ -97,7 +97,7 @@ B debconf-utils
 B po-debconf
 B libdebconfclient0
 B python3-debconf
-D debootstrap -- allow bootstrap of latest Eoan series
+B debootstrap
 B squashfs-tools
 B snapd
 B libconfig9

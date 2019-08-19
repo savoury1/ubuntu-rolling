@@ -14,8 +14,8 @@ B liblzma5:i386
 B liblzma-dev
 B xz-utils
 B cpio
-D libzstd1 -- latest available version
-D zstd -- latest available version
+B libzstd1
+B zstd
 B pigz
 B tar
 B gzip
@@ -76,6 +76,8 @@ B libhdf5-100
 B libhdf5-cpp-100
 B libhdf5-dev
 B libxapian30
+B libclucene-core1v5
+B libclucene-contribs1v5
 B libsynctex1
 B libkpathsea6
 B intltool
@@ -91,8 +93,7 @@ B xsltproc
 B libexpat1
 B libexpat1:i386
 B libexpat1-dev
-- libtinyxml2-6 -- obsolete by libtinyxml2-6a (6.2.0+dfsg-3) Cosmic
-D libtinyxml2-6a -- required by libmediainfo0v5 (18.03.1-1build1) Cosmic
+B libtinyxml2-6
 B libtinyxml2.6.2v5
 B libpugixml1v5
 B libraptor2-0

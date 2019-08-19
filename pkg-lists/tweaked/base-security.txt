@@ -1,0 +1,65 @@
+D libkeyutils1 -- same series as libkrb5-3 (1.17-1) Disco
+D libkeyutils1:i386 -- same series as libkrb5-3 (1.17-1) Disco
+D keyutils -- same series as libkrb5-3 (1.17-1) Disco
+D krb5-locales -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libkrb5support0 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libkrb5support0:i386 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libk5crypto3 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libk5crypto3:i386 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libkrb5-3 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libkrb5-3:i386 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libgssapi-krb5-2 -- required by kio (5.56.0-0ubuntu1) Disco
+D libgssapi-krb5-2:i386 -- same series as libgssapi-krb5-2 (1.17-1) Disco
+D libnettle6 -- required by libhogweed4 (3.4.1-1) Disco
+D libnettle6:i386 -- same series as libnettle6 (3.4.1-1) Disco
+D libhogweed4 -- required by libgnutls30 (3.6.5-2ubuntu1) Disco
+D libhogweed4:i386 -- same series as libhogweed4 (3.4.1-1) Disco
+D nettle-dev -- same series as libnettle6 (3.4.1-1) Disco
+D libp11-kit0 -- required by libgnutls30 (3.6.5-2ubuntu1) Disco
+D libp11-kit0:i386 -- same series as libp11-kit0 (0.23.15-2) Disco
+D libp11-kit-dev -- same series as libp11-kit0 (0.23.15-2) Disco
+D p11-kit -- same series as libp11-kit0 (0.23.15-2) Disco
+D p11-kit-modules -- same series as libp11-kit0 (0.23.15-2) Disco
+D libopts25
+D libunbound2 -- same series as libhogweed4 (3.4.1-1) Disco
+E libgnutls30 -- latest available version
+E libgnutls30:i386 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
+E libgnutlsxx28 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
+E libgnutls-openssl27 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
+E libgnutls-dane0 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
+E libgnutls28-dev -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
+D libsasl2-modules -- same series as libsasl2-2 (2.1.27+dfsg-1) Disco
+D libsasl2-modules:i386 -- same series as libsasl2-2 (2.1.27+dfsg-1) Disco
+D libsasl2-modules-db -- same series as libsasl2-2 (2.1.27+dfsg-1) Disco
+D libsasl2-modules-db:i386 -- same series as libsasl2-2 (2.1.27+dfsg-1) Disco
+D libsasl2-2 -- required by qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
+D libsasl2-2:i386 -- same series as libsasl2-2 (2.1.27+dfsg-1) Disco
+D libsasl2-dev -- same series as libsasl2-2 (2.1.27+dfsg-1) Disco
+B libheimbase1-heimdal:i386
+B libheimbase1-heimdal
+B libroken18-heimdal
+B libroken18-heimdal:i386
+B libwind0-heimdal
+B libwind0-heimdal:i386
+B libasn1-8-heimdal
+B libasn1-8-heimdal:i386
+B libhcrypto4-heimdal
+B libhcrypto4-heimdal:i386
+B libhx509-5-heimdal
+B libhx509-5-heimdal:i386
+B libkrb5-26-heimdal
+B libkrb5-26-heimdal:i386
+B libheimntlm0-heimdal
+B libheimntlm0-heimdal:i386
+B libgssapi3-heimdal
+B libgssapi3-heimdal:i386
+B libldap-common
+B libldap-2.4-2
+B libldap-2.4-2:i386
+B libssl1.0.0
+B libssl1.0.0:i386
+E libssl1.1 -- latest available version
+E libssl1.1:i386 -- same series as libssl1.1 (1.1.1c-1ubuntu3) Eoan
+E libssl-dev -- same series as libssl1.1 (1.1.1c-1ubuntu3) Eoan
+B openssl
+B python-openssl

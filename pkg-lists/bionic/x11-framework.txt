@@ -92,6 +92,8 @@ B libxshmfence-dev
 B libpixman-1-0
 B libpixman-1-0:i386
 B libpixman-1-dev
+B libxft2
+B libxft2:i386
 B libxft-dev
 B libxfont2
 B xfonts-utils

@@ -1,6 +1,6 @@
-B libx86-1
 B libvulkan1
 B libvulkan-dev
+B libx86-1
 B vbetool
 B libdrm-common
 B libdrm2
@@ -42,6 +42,8 @@ B libmirclient9
 B libmirclient-dev
 B libepoxy0
 B libepoxy-dev
+B ocl-icd-libopencl1
+B ocl-icd-libopencl1:i386
 B libxatracker2
 B libegl1-mesa
 B libgbm1

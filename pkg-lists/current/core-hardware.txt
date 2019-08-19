@@ -34,9 +34,9 @@ B inputattach
 B libpci3
 B libpci-dev
 B pciutils
-D libusb-1.0-0 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
-D libusb-1.0-0:i386 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
-D libusb-1.0-0-dev -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
+B libusb-1.0-0
+B libusb-1.0-0:i386
+B libusb-1.0-0-dev
 B libusb-0.1-4
 B libgusb2
 B libusbredirparser1
@@ -51,74 +51,71 @@ B pcmciautils
 B hwdata
 B ubuntu-drivers-common
 B python-cheetah
-E libfdt1
-E libfdt-dev
-E device-tree-compiler
-E libiscsi7
-E libiscsi-dev
-E libcacard0
-E libcacard-dev
-E libibverbs1
-E ibverbs-providers
-E libibverbs-dev
-E librdmacm1
-E librdmacm-dev
-E librados2
-E librados-dev
-E librbd1
-E librbd-dev
-E libxenstore3.0
-E libxen-4.9
-E libxen-dev
-E ipxe-qemu
-E ipxe-qemu-256k-compat-efi-roms
-E qemu-slof
-E seabios
-E qemu-user -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-block-extra -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-utils -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-common -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-data -- required by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
-E qemu-system-gui -- recommended by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
-D libvirglrenderer0 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
-E qemu-system-x86 -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-arm -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-ppc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-s390x -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-mips -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-sparc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system-misc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-system -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu-kvm -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E qemu -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E osinfo-db
-E libosinfo-1.0-0
-E gir1.2-libosinfo-1.0
-D libvirt0 -- ppa:jacob/virtualisation
-D libvirt-clients -- ppa:jacob/virtualisation
-D libvirt-daemon -- ppa:jacob/virtualisation
-D libvirt-daemon-system -- ppa:jacob/virtualisation
-- libvirt-bin -- obsolete by libvirt0 (4.0.0-1ubuntu8) Bionic
-D python-libvirt -- ppa:jacob/virtualisation
-~ python3-libvirt -- ppa:jacob/virtualisation (modded version required for Python 3.7)
-E libvirt-glib-1.0-0
-E gir1.2-libvirt-glib-1.0
-E libspice-protocol-dev
-E libspice-server1
-E libspice-server-dev
-E spice-client-glib-usb-acl-helper
-E libspice-client-glib-2.0-8
-E gir1.2-spiceclientglib-2.0
-E libspice-client-glib-2.0-dev
-E libspice-client-gtk-3.0-5
-E gir1.2-spiceclientgtk-3.0
-E libspice-client-gtk-3.0-dev
-E spice-client-gtk
-E libgvnc-1.0-0
-E libgtk-vnc-2.0-0
-E gir1.2-gtk-vnc-2.0
-E libgovirt-common
-E libgovirt2
-D virtinst -- ppa:jacob/virtualisation
-D virt-manager -- ppa:jacob/virtualisation
-E virt-viewer
+B libfdt1
+B libfdt-dev
+B device-tree-compiler
+B libiscsi7
+B libiscsi-dev
+B libcacard0
+B libcacard-dev
+B libibverbs1
+B ibverbs-providers
+B libibverbs-dev
+B librdmacm1
+B librdmacm-dev
+B librados2
+B librados-dev
+B librbd1
+B librbd-dev
+B libxenstore3.0
+B libxen-4.9
+B libxen-dev
+B ipxe-qemu
+B ipxe-qemu-256k-compat-efi-roms
+B qemu-slof
+B seabios
+B qemu-user
+B qemu-block-extra
+B qemu-utils
+B qemu-system-common
+B qemu-system-x86
+B qemu-system-arm
+B qemu-system-ppc
+B qemu-system-s390x
+B qemu-system-mips
+B qemu-system-sparc
+B qemu-system-misc
+B qemu-system
+B qemu-kvm
+B qemu
+B osinfo-db
+B libosinfo-1.0-0
+B gir1.2-libosinfo-1.0
+B libvirt0
+B libvirt-clients
+B libvirt-daemon
+B libvirt-daemon-system
+B libvirt-bin
+B python-libvirt
+B python3-libvirt
+B libvirt-glib-1.0-0
+B gir1.2-libvirt-glib-1.0
+B libspice-protocol-dev
+B libspice-server1
+B libspice-server-dev
+B spice-client-glib-usb-acl-helper
+B libspice-client-glib-2.0-8
+B gir1.2-spiceclientglib-2.0
+B libspice-client-glib-2.0-dev
+B libspice-client-gtk-3.0-5
+B gir1.2-spiceclientgtk-3.0
+B libspice-client-gtk-3.0-dev
+B spice-client-gtk
+B libgvnc-1.0-0
+B libgtk-vnc-2.0-0
+B gir1.2-gtk-vnc-2.0
+B libgovirt-common
+B libgovirt2
+B virtinst
+B virt-manager
+B virt-viewer

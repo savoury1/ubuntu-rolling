@@ -76,6 +76,8 @@ B libhdf5-100
 B libhdf5-cpp-100
 B libhdf5-dev
 B libxapian30
+B libclucene-core1v5
+B libclucene-contribs1v5
 B libsynctex1
 B libkpathsea6
 B intltool

@@ -1,0 +1,17 @@
+diff --git a/python3-gpg_1.13.0-2ubuntu3_amd64/DEBIAN/control b/python3-gpg_1.13.0-2ubuntu3~16.04.sav0_amd64/DEBIAN/control
+index f49ce65..f0703a1 100644
+--- a/python3-gpg_1.13.0-2ubuntu3_amd64/DEBIAN/control
++++ b/python3-gpg_1.13.0-2ubuntu3~16.04.sav0_amd64/DEBIAN/control
+@@ -1,10 +1,10 @@
+ Package: python3-gpg
+ Source: gpgme1.0
+-Version: 1.13.0-2ubuntu3
++Version: 1.13.0-2ubuntu3~16.04.sav0
+ Architecture: amd64
+ Maintainer: Jiri Kerestes (PPA key) <jiri@kerestes.cz>
+ Installed-Size: 1136
+-Depends: python3 (<< 3.8), python3 (>= 3.7~), python3:any, libc6 (>= 2.14), libgpgme11 (>= 1.12.0)
++Depends: python3 (<< 3.8), python3.7 (>= 3.7~), python3:any, libc6 (>= 2.14), libgpgme11 (>= 1.12.0)
+ Provides: python3.7-gpg
+ Section: python
+ Priority: optional

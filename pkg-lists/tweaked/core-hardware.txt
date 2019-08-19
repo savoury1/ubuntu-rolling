@@ -1,0 +1,124 @@
+B linux-firmware
+B libfwupd2
+B fwupd
+B lshw
+B powermgmt-base
+B pm-utils
+B libupower-glib3
+B upower
+B gir1.2-upowerglib-1.0
+B acpid
+B acpica-tools
+B iucode-tool
+B intel-microcode
+B libcpufreq0
+B cpufrequtils
+B time
+B thermald
+B hddtemp
+B hdparm
+B libsensors4
+B libsensors4:i386
+B lm-sensors
+B iio-sensor-proxy
+B libgtop2-common
+B libgtop-2.0-11
+B psensor-common
+B psensor
+B dmidecode
+B laptop-detect
+B radeontool
+B irqbalance
+B python-serial
+B inputattach
+B libpci3
+B libpci-dev
+B pciutils
+D libusb-1.0-0 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
+D libusb-1.0-0:i386 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
+D libusb-1.0-0-dev -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
+B libusb-0.1-4
+B libgusb2
+B libusbredirparser1
+B libusbredirparser-dev
+B libusbredirhost1
+B usbutils
+B usb-modeswitch-data
+B usb-modeswitch
+B libieee1284-3
+B libieee1284-3:i386
+B pcmciautils
+B hwdata
+B ubuntu-drivers-common
+B python-cheetah
+D libfdt1
+D libfdt-dev
+D device-tree-compiler
+D libiscsi7
+D libiscsi-dev
+D libcacard0
+D libcacard-dev
+D libibverbs1
+D ibverbs-providers
+D libibverbs-dev
+D librdmacm1
+D librdmacm-dev
+D librados2
+D librados-dev
+D librbd1
+D librbd-dev
+D libxenstore3.0
+D libxen-4.9
+D libxen-dev
+D ipxe-qemu
+D ipxe-qemu-256k-compat-efi-roms
+D qemu-slof
+D seabios
+D qemu-user -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-block-extra -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-utils -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-common -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-data -- required by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
+D qemu-system-gui -- recommended by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
+D libvirglrenderer0 -- required by qemu-system-x86 (1:3.1+dfsg-2ubuntu3) Disco
+D qemu-system-x86 -- switch to ppa:jacob/virtualisation due issues with version in Eoan
+D qemu-system-arm -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-ppc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-s390x -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-mips -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-sparc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system-misc -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-system -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+D qemu-kvm -- same series as qemu-system-x86 (1:4.0+dfsg-0ubuntu4~ppa0) Disco
+- qemu -- obsolete by qemu (1:2.12+dfsg-3ubuntu8) Cosmic
+D osinfo-db
+D libosinfo-1.0-0
+D gir1.2-libosinfo-1.0
+D libvirt0 -- ppa:jacob/virtualisation
+D libvirt-clients -- ppa:jacob/virtualisation
+D libvirt-daemon -- ppa:jacob/virtualisation
+D libvirt-daemon-system -- ppa:jacob/virtualisation
+- libvirt-bin -- obsolete by libvirt0 (4.0.0-1ubuntu8) Bionic
+D python-libvirt -- ppa:jacob/virtualisation
+~ python3-libvirt -- ppa:jacob/virtualisation (modded version required for Python 3.7)
+D libvirt-glib-1.0-0
+D gir1.2-libvirt-glib-1.0
+D libspice-protocol-dev
+D libspice-server1
+D libspice-server-dev
+D spice-client-glib-usb-acl-helper
+D libspice-client-glib-2.0-8
+D gir1.2-spiceclientglib-2.0
+D libspice-client-glib-2.0-dev
+D libspice-client-gtk-3.0-5
+D gir1.2-spiceclientgtk-3.0
+D libspice-client-gtk-3.0-dev
+D spice-client-gtk
+D libgvnc-1.0-0
+D libgtk-vnc-2.0-0
+D gir1.2-gtk-vnc-2.0
+D libgovirt-common
+D libgovirt2
+D virtinst -- ppa:jacob/virtualisation
+D virt-manager -- ppa:jacob/virtualisation
+D virt-viewer

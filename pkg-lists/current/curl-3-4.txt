@@ -1,4 +1,4 @@
-C libcurl3-gnutls -- ppa:xapienz/curl34
-C libcurl4 -- ppa:xapienz/curl34
-C libcurl4-gnutls-dev -- ppa:xapienz/curl34
-C curl -- ppa:xapienz/curl34
+B libcurl3-gnutls
+B libcurl4
+B libcurl4-gnutls-dev
+B curl

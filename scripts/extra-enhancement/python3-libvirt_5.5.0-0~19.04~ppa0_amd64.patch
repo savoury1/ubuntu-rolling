@@ -1,0 +1,17 @@
+diff --git a/python3-libvirt_5.5.0-0~19.04~ppa0_amd64/DEBIAN/control b/python3-libvirt_5.5.0-0~19.04~sav0_amd64/DEBIAN/control
+index 27bdc37..9996b30 100644
+--- a/python3-libvirt_5.5.0-0~19.04~ppa0_amd64/DEBIAN/control
++++ b/python3-libvirt_5.5.0-0~19.04~sav0_amd64/DEBIAN/control
+@@ -1,10 +1,10 @@
+ Package: python3-libvirt
+ Source: libvirt-python
+-Version: 5.5.0-0~19.04~ppa0
++Version: 5.5.0-0~19.04~sav0
+ Architecture: amd64
+ Maintainer: Jacob Zimmermann <ppa@jzimm.net>
+ Installed-Size: 730
+-Depends: libc6 (>= 2.4), libvirt0 (>= 4.10.0), python3 (<< 3.8), python3 (>= 3.7~), python3:any
++Depends: libc6 (>= 2.4), libvirt0 (>= 4.10.0), python3 (<< 3.8), python3.7 (>= 3.7~), python3:any
+ Recommends: libvirt-daemon
+ Section: python
+ Priority: optional

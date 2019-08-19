@@ -1,5 +1,5 @@
-D libpcre2-8-0 --
-D libpcre2-16-0 --
+B libpcre2-8-0
+B libpcre2-16-0
 B libpcre3
 B libpcre3:i386
 B libpcre16-3

@@ -104,9 +104,7 @@ B libportaudio2
 B librtaudio6
 B libsndio6.1
 B libsndio6.1:i386
-D libsndio7.0 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-D libsndio7.0:i386 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-D libsndio-dev -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
+B libsndio-dev
 B libopenal-data
 B libopenal1
 B libopenal1:i386

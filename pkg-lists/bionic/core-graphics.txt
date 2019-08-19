@@ -106,6 +106,7 @@ B libraw16
 B liblensfun-data-v1
 B liblensfun1
 B liblqr-1-0
+B dcraw
 B libgphoto2-l10n
 B libgphoto2-port12
 B libgphoto2-port12:i386
