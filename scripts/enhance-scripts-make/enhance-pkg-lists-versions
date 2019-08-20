@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# input for series names and package "categories"
+enhance_make_cats="enhance-scripts-make-cats.txt"
+package_lists_dir="$HOME/.enhance/pkg-lists/current"
+
+# change directory to location of script
+pushd "$(dirname "$(readlink -f "$0")")" >/dev/null
+
+# populate an array with category info
+# allows easy re-ordering of categories
+cat_num=0
+while IFS='|' read -r cat_file cat_name; do
+  cat_num=$((cat_num + 1))
+  category[$cat_num]="$cat_file"
+done < "$enhance_make_cats"
+
+# main loop to add versions to packages
+for (( i = 1; i <= $cat_num; i++ )) do
+  cat_file=${category[$i]}
+  cat_file_ver=${cat_file}_ver
+  echo rm "$package_lists_dir/$cat_file_ver.txt"
+  while IFS=' ' read -r series_code package_name comments; do
+    package_ver="=$(dpkg --status $package_name 2>/dev/null | grep ^Version | cut -d ' ' -f 2)"
+    if [ "$package_ver" == "=" ]; then package_ver=""; fi
+    echo $series_code $package_name$package_ver $comments >> "$package_lists_dir/$cat_file_ver.txt"
+  done < "$package_lists_dir/$cat_file.txt"
+done
+
+popd >/dev/null

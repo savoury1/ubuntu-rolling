@@ -44,6 +44,7 @@ E libqt5webchannel5
 E libqt5webkit5
 E libqt5webengine-data
 E libqt5webenginecore5
+E libqt5webengine5
 E libqt5webenginewidgets5
 E libqt5multimedia5
 - libqt5multimediaquick-p5 -- obsolete by qtmultimedia5-dev (5.11.1-1ubuntu1) Cosmic

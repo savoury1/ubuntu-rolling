@@ -51,6 +51,8 @@ The "pkg-lists/current" directory contains the current configuration from the te
 
 To create and use a new set of package lists is simple. In the "pkg-lists" directory copy either the "bionic" directory (starting from baseline) or the "current" directory (replicating original test system) to a new directory. Then, either rename the "current" directory to something else and the new directory to "current" OR edit the "package_lists_dir" variable in **`enhance-scripts-make`** to the new directory name.
 
+&nbsp;
+
 ## Extra enhancement
 
 For those wanting newest Ubuntu repo KDE/Qt as well as a selection of other newer useful packages (eg. critical security libraries) there is an enhancements extra script that adds additional PPAs and also upgrades many libraries to Disco/Eoan versions.

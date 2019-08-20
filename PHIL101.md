@@ -17,3 +17,4 @@ Personally, the long overdue switch from Windows to a Linux distribution as the 
 
 This was serendipitous timing. After Mint 18.2 MATE was released and having done some testing of that version (with the "new, improved" GTK3 based desktop garbage), it was clear that Mint 18.1 was going to be the way forward for a long time. Thus, a procedure had to be created to allow upgrading core "modules" or sub-systems of the OS, without touching the simple, fast, usable GTK2 based desktop. Hence, the Ubuntu (Xenial-based) "Rolling Release" system, specifically crafted on a Mint 18.1 Serena MATE installation.
 
+![Serena Enhanced](images/Serena-Enhanced.png)

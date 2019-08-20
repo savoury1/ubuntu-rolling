@@ -43,6 +43,7 @@ B libqt5webchannel5
 B libqt5webkit5
 B libqt5webengine-data
 B libqt5webenginecore5
+B libqt5webengine5
 B libqt5webenginewidgets5
 B libqt5multimedia5
 B libqt5multimediaquick-p5

@@ -9,7 +9,9 @@ To make a customized "hybrid" Ubuntu Xenial-based system that includes selected 
 
 * Learn about the system you are using by gaining an understanding of the various software packages installed and their inter-relationships, such that you are also better equipped to fix problems as and when they might occur.
 
-#### [Some philosophical background](PHIL101.md)
+#### [Philosophical background](PHIL101.md)
+
+For those interested in some background as to why this Xenial-based Ubuntu "rolling release" system came about.
 
 #### Friendly disclaimer
 
@@ -28,7 +30,7 @@ systemd | 229 | 237 | 239 | 240 | 240
 GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.8
 GPG | 1.4.20 | 2.2.4 | 2.2.8 | 2.2.12 | 2.2.12
 X.Org X Server | 1.18.4 | 1.19.6 | 1.20.1 | 1.20.4 | 1.20.4
-KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.60.0 (19.04.3)
+KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.61.0 (19.04.3) 
 Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
 
 ![Serena Enhanced](images/Serena-Enhanced.png)

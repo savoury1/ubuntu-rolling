@@ -5,6 +5,7 @@ B libaspell15
 B aspell
 B aspell-en
 B libhunspell-1.6-0
+D libhunspell-1.7-0 -- required by nixnote2 (2.1.2-1) Disco
 B libenchant1c2a
 B enchant
 B libgtkspell0
