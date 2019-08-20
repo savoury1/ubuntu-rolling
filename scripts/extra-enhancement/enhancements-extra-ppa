@@ -96,10 +96,14 @@ popd >/dev/null
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 sudo apt-get install ntfs-3g ffmpeg
 
+pushd /var/cache/apt/archives >/dev/null
 # install two modded Python packages to satisfy Disco dependencies
 for (( i = 1; i <= 2; i++ )) do
-  sudo dpkg -i "${pkgs[$i,2]_$kern.deb}"
+  deb=${pkgs[$i,2]}_$kern.deb
+  sudo cp -p "$path/$deb" . && sudo chown root:root $deb
+  sudo dpkg -i "$deb"
 done
+popd >/dev/null
 
 # create symbolic links to Python 3.6 from two (python3-gpg & python3-libvirt)
 # Python 3.7 object libraries as this means these newer Python3 libraries that
