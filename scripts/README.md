@@ -47,7 +47,7 @@ Looking into the package list files will quickly show how this works. There is c
 
 ## Package lists directories
 
-The "pkg-lists/current" directory contains the current configuration from the test system used to create the enhancement or "rolling release" procedures. The "pkg-lists/bionic" directory contains a baseline Bionic configuration, as is installed by **`enhancements-1st-run`** in the initial enhancement process.
+The "pkg-lists/bionic" directory contains a baseline Bionic configuration, as is installed by **`enhancements-1st-run`** in the initial enhancement process. The "pkg-lists/current" directory contains a duplicate of that base configuration (thus the Bionic copy is effectively the baseline backup). Then "pkg-lists/tweaked" contains the latest live package lists being used on the test system used to create these enhancement or "rolling release" procedures (see the next section for how to switch to the "tweaked" package lists).
 
 To create and use a new set of package lists is simple. In the "pkg-lists" directory copy either the "bionic" directory (starting from baseline) or the "current" directory (replicating original test system) to a new directory. Then, either rename the "current" directory to something else and the new directory to "current" OR edit the "package_lists_dir" variable in **`enhance-scripts-make`** to the new directory name.
 
@@ -58,7 +58,9 @@ To create and use a new set of package lists is simple. In the "pkg-lists" direc
 For those wanting newest Ubuntu repo KDE/Qt as well as a selection of other newer useful packages (eg. critical security libraries) there is an enhancements extra script that adds additional PPAs and also upgrades many libraries to Disco/Eoan versions.
 
 * Copy contents of "extra-enhancement" directory into one location, eg. "~/Downloads" is a good choice.
+
 * Run **`enhancements-extra-ppa`** to add several additional useful PPAs that allow further upgrade of several more components of the system. This script will also modify two PPA Python 3 packages to install successfully.
+
 * Then the following commands can be used to switch package lists to newer packages (this assumes that the package lists were copied to the recommended folder path), make the new enhance-all script and run that script to get newer packages:
 
 ```
