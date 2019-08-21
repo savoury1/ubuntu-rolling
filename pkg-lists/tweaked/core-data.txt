@@ -64,6 +64,7 @@ B libjson-c3
 B libjson-glib-1.0-common
 B libjson-glib-1.0-0
 B gir1.2-json-1.0
+B python-simplejson
 B libyajl2
 B libyaml-0-2
 B libyaml-cpp0.5v5

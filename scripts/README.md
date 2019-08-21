@@ -57,9 +57,10 @@ To create and use a new set of package lists is simple. In the "pkg-lists" direc
 
 For those wanting newest Ubuntu repo KDE/Qt as well as a selection of other newer useful packages (eg. critical security libraries) there is an enhancements extra script that adds additional PPAs and also upgrades many libraries to Disco/Eoan versions.
 
+* Copy contents of "extra-enhancement" directory into one location, eg. "~/Downloads" is a good choice.
 * Run **`enhancements-extra-ppa`** to add several additional useful PPAs that allow further upgrade of several more components of the system. This script will also modify two PPA Python 3 packages to install successfully.
-
 * Then the following commands can be used to switch package lists to newer packages (this assumes that the package lists were copied to the recommended folder path), make the new enhance-all script and run that script to get newer packages:
+
 ```
 mv "~/.enhance/pkg-lists/current" "~/.enhance/pkg-lists/regular"
 ln -s "~/.enhance/pkg-lists/tweaked" "~/.enhance/pkg-lists/current"

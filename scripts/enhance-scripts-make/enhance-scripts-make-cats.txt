@@ -8,11 +8,11 @@ core-perl|Core Perl
 core-python|Core Python
 gcrypt-gnupg|GCrypt + GnuPG
 core-data|Core Data
-apt-build|Apt + Build
 python-ruby|Python + Ruby
+core-security|Core Security
+apt-build|Apt + Build
 themes-assist|Themes + Assist
 core-desktop|Core Desktop
-core-security|Core Security
 core-hardware|Core Hardware
 core-disks|Core Disks
 core-startup|Core Startup
