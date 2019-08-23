@@ -67,6 +67,7 @@ B librsvg2-2
 B librsvg2-2:i386
 B librsvg2-common
 B librsvg2-common:i386
+B gir1.2-rsvg-2.0
 B libwmf0.2-7
 B libwmf0.2-7-gtk
 B icoutils

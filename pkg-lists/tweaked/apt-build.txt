@@ -42,7 +42,8 @@ B binutils-x86-64-linux-gnu
 B binutils
 B binutils-multiarch
 B libbinutils
-D nasm
+- nasm -- newer in ppa:sergey-dryabzhinsky/ffmpeg
+B yasm
 B sbsigntool
 B libelf1
 B libelf1:i386
@@ -76,6 +77,7 @@ B libfl-dev
 B libbison-dev
 B bison
 B autotools-dev
+B autoconf2.13
 B autoconf
 B autoconf-archive
 B automake
@@ -90,6 +92,7 @@ B archdetect-deb
 B libfile-stripnondeterminism-perl
 B dh-strip-nondeterminism
 B debhelper
+B dh-translations
 B dh-make
 B dput
 B deborphan
@@ -115,10 +118,13 @@ B libsubunit0
 B libsubunit-dev
 B check
 B libconfig9
+B gnome-common
+B python3-scour
+B scour
+B gnome-pkg-tools
 B librpmio8
 B librpm8
 B rpm-common
 B rpm2cpio
-B gnome-common
 B squashfs-tools
 B snapd

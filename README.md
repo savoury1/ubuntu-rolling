@@ -21,7 +21,7 @@ Please do note that this Ubuntu Xenial-based "Rolling Release" system is a "work
 
 #### System component upgrades
 
-This version table gives an idea of the newer versions that can be installed on a Xenial-based distribution, through this modular upgrade process (yes, GTK3 is mentioned, as new GTK3 libraries are unfortunately needed :-( to run much new software, even if the desktop itself is not based on GTK3!):
+This version table gives an idea of the newer versions that can be installed on a Xenial-based distribution, through this modular upgrade process:
 
 System component | Xenial version | Bionic upgrade | Cosmic upgrade | Disco upgrade | Eoan upgrade
 ---------------- | -------------- | -------------- | -------------- | ------------- | ------------

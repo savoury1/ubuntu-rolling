@@ -47,9 +47,9 @@ Looking into the package list files will quickly show how this works. There is c
 
 ## Package lists directories
 
-The "pkg-lists/bionic" directory contains a baseline Bionic configuration, as is installed by **`enhancements-1st-run`** in the initial enhancement process. The "pkg-lists/current" directory contains a duplicate of that base configuration (thus the Bionic copy is effectively the baseline backup). Then "pkg-lists/tweaked" contains the latest live package lists being used on the test system used to create these enhancement or "rolling release" procedures (see the next section for how to switch to the "tweaked" package lists).
+The "pkg-lists/bionic" directory contains a baseline Bionic configuration, as is installed by **`enhancements-1st-run`** in the initial enhancement process. The "pkg-lists/current" directory contains a duplicate of that base configuration (thus the Bionic copy is effectively the baseline backup). Then "pkg-lists/tweaked" contains the latest live package lists being used on the system used to create these enhancement or "rolling release" procedures (see the next section for how to switch to the "tweaked" package lists).
 
-To create and use a new set of package lists is simple. In the "pkg-lists" directory copy either the "bionic" directory (starting from baseline) or the "current" directory (replicating original test system) to a new directory. Then, either rename the "current" directory to something else and the new directory to "current" OR edit the "package_lists_dir" variable in **`enhance-scripts-make`** to the new directory name.
+To create and use a new set of package lists is simple. In the "pkg-lists" directory copy one of the existing directories (ie. the "bionic" directory, starting from baseline; or the "current" directory, replicating your own current package selections; or the "tweaked" directory, replicating the latest package selections on the test system) to a new directory. Then, either rename the "current" directory to something else and the new directory to "current" OR edit the "package_lists_dir" variable in **`enhance-scripts-make`** to point to the new directory name.
 
 &nbsp;
 

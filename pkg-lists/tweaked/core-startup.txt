@@ -5,6 +5,7 @@ B dbus
 ~ dbus-x11 -- modded version required for proper dbus/X11 startup
 B libdbus-glib-1-2
 B libdbus-glib-1-2:i386
+B libdbus-glib-1-dev
 B libatk1.0-data
 B libatk1.0-0
 B libatk1.0-0:i386

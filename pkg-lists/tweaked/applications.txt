@@ -45,6 +45,9 @@ E libk3b7-extracodecs -- latest available version
 E k3b-i18n -- latest available version
 E k3b-data -- latest available version
 E k3b -- latest available version
+D winff-data -- same series as winff (1.5.5-6) Disco
+D winff-qt -- same series as winff (1.5.5-6) Disco
+D winff -- required by ffmpeg (7:4.1.4-1sergeyd2.1~xenial1)
 D meld -- latest available version
 B 4pane
 B hexchat-common

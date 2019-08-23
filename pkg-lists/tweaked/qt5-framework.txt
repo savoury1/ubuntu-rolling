@@ -45,7 +45,7 @@ E libqt5webkit5
 E libqt5webengine-data
 E libqt5webenginecore5
 E libqt5webengine5
-E libqt5webenginewidgets5
+E libqt5webenginewidgets5x
 E libqt5multimedia5
 - libqt5multimediaquick-p5 -- obsolete by qtmultimedia5-dev (5.11.1-1ubuntu1) Cosmic
 E libqt5multimediawidgets5
@@ -74,6 +74,7 @@ E libqtav1
 E libqtavwidgets1
 E libgrantlee-textdocument5
 D libqgpgme7 -- same series as gpg (2.2.17-3ubuntu4) Disco (ppa:nephirus/ppa-gnupg)
+E libqt5pas1 -- required by winff-qt (1.5.5-4) Bionic
 E libqca-qt5-2
 E libqca-qt5-2-plugins
 E pinentry-qt

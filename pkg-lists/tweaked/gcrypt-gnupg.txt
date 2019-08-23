@@ -1,4 +1,5 @@
 B debian-keyring
+B debian-archive-keyring
 B ubuntu-keyring
 B libgpg-error0
 B libgpg-error0:i386
