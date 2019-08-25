@@ -24,6 +24,7 @@ B librhash0
 B libuv1
 B libbsd0
 B libbsd0:i386
+B libbsd-dev
 B bsdutils
 B bsdmainutils
 B libtool

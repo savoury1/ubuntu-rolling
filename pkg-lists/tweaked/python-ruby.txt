@@ -9,7 +9,6 @@ B python-automat
 B python-pyinotify
 B python-twodict
 B libshiboken1.2v5
-B python-twodict
 B python-zope.interface
 B python-blinker
 B python3-blinker

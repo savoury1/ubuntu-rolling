@@ -2,6 +2,7 @@ B libbz2-1.0
 B libbz2-1.0:i386
 B libbz2-dev
 B bzip2
+B pbzip2
 B zlib1g
 B zlib1g:i386
 B zlib1g-dev
