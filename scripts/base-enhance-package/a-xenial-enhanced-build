@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SIGNKEY=$DEBSIGN
+
+SERIES=xenial
+PACKAGE=xenial-enhanced
+VERSION=0.2sav0
+
+EXTRA_REPOS=""
+
+ALT_BUILD=N
+SRC_BUILD=Y
+BUILDINFO=N
+
+BUILD_TGZ=~/pbuilder/$SERIES-base.tgz
+
+. ~/.local/bin/pbuilder-all

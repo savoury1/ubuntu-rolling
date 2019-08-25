@@ -9,6 +9,16 @@ To make a customized "hybrid" Ubuntu Xenial-based system that includes selected 
 
 * Learn about the system you are using by gaining an understanding of the various software packages installed and their inter-relationships, such that you are also better equipped to fix problems as and when they might occur.
 
+#### Technical background
+
+Understand that this is more a "slow roll" release rather than a "fast roll" release! So there will certainly be some who say (quite accurately, based on the traditional term) that it is not a "true rolling release" (ie. such as Arch). However, with Ubuntu not having any such form of release (ie. akin to Debian unstable/sid) there is actually something of a need for one (or even many variations of such Ubuntu "rolling release" systems, depending on what newer software packages are needed by any particular user/organization).
+
+These procedures are manual in nature, so the upgrades to packages from newer series are done manually and based on specific user selection (see the "pkg-lists" folder). You as the user are effectively over-riding the default dpkg/apt setup that is (as shipped) not designed to get packages from a newer Ubuntu "series" (ie. no Bionic, Cosmic, Disco or and/or Eoan packages). For some further background technically (about the simple and easy technique used to gain access to packages from newer series) you can also see the description of the PPA here:
+
+https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced
+
+The source of the one package at that PPA is also in the (scripts/base-enhance-package)[scripts/base-enhance-package] directory. This folder (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script does the work of making a "PPA acceptable" package or PAP out of the various sub-folders under one of the numbered version source folders). There are currently two package versions in there, one that initially gave access to Bionic/Cosmic only (v0.1) and a later release (v0.2) that gives access to all four series (Bionic/Cosmic/Disco/Eoan) that are newer than Xenial.
+
 #### [Philosophical background](PHIL101.md)
 
 For those interested in some background as to why this Xenial-based Ubuntu "rolling release" system came about.

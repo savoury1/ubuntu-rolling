@@ -2,9 +2,7 @@
 
 # catch break signal to ensure renaming of repository preference files,
 # otherwise newer repos will have priority for usual apt-get commands!
-function restore() {
-    sudo mv $file.pref $file.pref.save
-}
+function restore() { sudo mv $file.pref $file.pref.save ; }
 
 path=/etc/apt/preferences.d
 file=$1-repositories-hi
@@ -27,8 +25,7 @@ sudo mv $file.pref.save $file.pref
 # enable trap for break
 trap restore SIGINT
 # shift arguments as $0 is apt-new which now becomes usual apt-get
-shift 1
-sudo apt-get "$@"
+shift 1 && sudo apt-get "$@"
 restore
 # disable trap for break
 trap - SIGINT
