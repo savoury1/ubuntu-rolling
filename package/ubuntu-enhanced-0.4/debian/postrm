@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -eu
+
+if [ "$1" = "remove" ]; then
+
+  # read in series from file created on installation
+  otherseries=`cat /etc/apt/otherseries`
+
+  # remove all config files created on package installation
+  for series in $otherseries; do
+    repofile="/etc/apt/preferences.d/$series-repositories"
+    rm "$repofile-"??.*
+    repofile="/etc/apt/sources.list.d/official-package-repos-$series.list"
+    rm "$repofile"
+  done
+  # remove otherseries config
+  rm /etc/apt/otherseries
+fi
+
+#DEBHELPER#

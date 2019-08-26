@@ -1,0 +1,48 @@
+#!/bin/sh
+
+set -eu
+
+if [ "$1" = "configure" ]; then
+
+  # get series codename from /etc/os-release -- works on Ubuntu derivatives
+  # (ie. Mint) provided the UBUNTU_CODENAME field exists in /etc/os-release
+  codename="$(sed -n 's|UBUNTU_CODENAME=||p' /etc/os-release)"
+
+  # space at end of everyseries var is significant for sub-string removal
+  everyseries="xenial bionic cosmic disco eoan "
+  otherseries="$(echo "$everyseries" | sed 's/'"$codename"' //')"
+
+  # if this is an unknown series then don't create any config files
+  if [ "$everyseries" = "$otherseries" ]; then exit; fi
+
+  # now strip that trailing space & export to new config file
+  otherseries="${otherseries% }"
+  echo "$otherseries" > /etc/apt/otherseries
+  
+  # get user selected mirror from primary Ubuntu package repository list file
+  # /etc/apt/sources.list.d/official-package-repositories.list
+  repofile="/etc/apt/sources.list.d/official-package-repositories.list"
+  mirror="$(sed -n 's|deb http://\(.*\)/ubuntu '"$codename"' main .*|\1|p' "$repofile")"
+  pockets="main restricted universe multiverse"
+
+  for series in $otherseries; do
+    # create two pin files (one low at 50, one high at 990) for each series
+    # and name hi value pin with .save extension so it is unused by default
+    repofile="/etc/apt/preferences.d/$series-repositories"
+    echo "Package: *" | tee "$repofile-lo.pref" "$repofile-hi.pref.save" >/dev/null
+    echo "Pin: release n=$series*" | tee -a "$repofile-lo.pref" "$repofile-hi.pref.save" >/dev/null
+    echo "Pin-Priority: 50" >> "$repofile-lo.pref"
+    echo "Pin-Priority: 990" >> "$repofile-hi.pref.save"
+
+    # also create standard repository lists for each of the other series
+    repofile="/etc/apt/sources.list.d/official-package-repos-$series.list"
+    echo "deb http://$mirror/ubuntu $series $pockets" > "$repofile"
+    echo "deb http://$mirror/ubuntu $series-updates $pockets" >> "$repofile"
+    echo "deb http://$mirror/ubuntu $series-backports $pockets" >> "$repofile"
+    echo "" >> "$repofile"
+    echo "deb http://$mirror/ubuntu/ $series-security $pockets" >> "$repofile"
+    echo "deb http://archive.canonical.com/ubuntu/ $series partner" >> "$repofile"
+  done
+fi
+
+#DEBHELPER#

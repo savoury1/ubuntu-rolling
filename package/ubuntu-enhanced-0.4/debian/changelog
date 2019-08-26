@@ -1,0 +1,25 @@
+ubuntu-enhanced (0.4-2sav0) xenial; urgency=low
+
+  * debian/postrm: Add scripted deletion of config files on pkg removal!
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Mon, 26 Aug 2019 15:11:44 -0700
+
+ubuntu-enhanced (0.4-1sav0) xenial; urgency=low
+
+  * Rename package to ubuntu-enhanced to reflect possible usage on any series
+
+  * Removed all static configuration files that were in /etc/apt sub-folders
+  
+  * debian/postinst: New code to generate config files from installed series
+  
+  * Rename apt-new to apt-all & update code to be usable on any of five series
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Mon, 26 Aug 2019 12:44:29 -0700
+
+xenial-enhanced (0.3-1sav0) xenial; urgency=low
+
+  * Initial release on Launchpad PPA.
+  
+  * Notable changes to apt-new script since v0.2 (eg. better error handling).
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Sun, 25 Aug 2019 21:26:12 -0700

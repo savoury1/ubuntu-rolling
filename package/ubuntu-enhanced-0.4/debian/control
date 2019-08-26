@@ -1,0 +1,43 @@
+Source: ubuntu-enhanced
+Section: misc
+Priority: extra
+Maintainer: Rob Savoury <savourytech@use.startmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/savoury1/ubuntu-rolling
+
+Package: ubuntu-enhanced
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Conflicts: xenial-enhanced
+Replaces: xenial-enhanced
+Description: Ubuntu Enhanced (includes apt-all)
+ Note that this is experimental software.
+ .
+ *** WARNING: EXPERIMENTAL SOFTWARE ***
+ .
+ *** WARNING: EXPERIMENTAL SOFTWARE ***
+ .
+ *** WARNING: EXPERIMENTAL SOFTWARE ***
+ .
+ Adds access to repositories for four other Ubuntu series to /etc/apt config
+ (with pref files used for pinning created in /etc/apt/preferences.d & list
+ files used to give access to newer repositories in /etc/apt/sources.list.d).
+ .
+ The default configuration is one with low pin priority (50) for all the other
+ Ubuntu series. Only during invocation of apt-all is a high pin priority (990)
+ set for one user specified series other than the installed series.
+ .
+ So apt-all (making use of the usual "sudo apt-get install" command) gives the
+ user simple access to packages from a selected Ubuntu series (any of Xenial,
+ Bionic, Cosmic, Disco or Eoan). REMINDER: BE CAREFUL!!!
+ .
+ Also enhances other commands such as apt-cache, ie. running "apt-cache policy
+ PACKAGES" will show all versions of the specified package(s) that are
+ currently available in five Ubuntu series (and all their "pockets").
+ .
+ See homepage for details:
+ .
+ https://github.com/savoury1/ubuntu-rolling
+

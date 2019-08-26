@@ -34,7 +34,7 @@ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 
 # good to have newer Mono and 4.8.0 is sufficiently high for all upgrades
 # (and higher than the 4.6.2 version shipped in both Bionic & Cosmic)
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D3D831EF
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/ubuntu wheezy/snapshots/4.8.0 main" | sudo tee /etc/apt/sources.list.d/mono-official-4.8.0-debian.list
 
 # upgrade/install packages included in jonathonf, ubuntu-toolchain & mono PPAs
@@ -43,9 +43,9 @@ sudo apt-get install gcc-8 gcc-8-base gcc-8-base:i386 gcc-8-multilib g++-8 g++-8
 sudo apt-get install gcc-9 gcc-9-base gcc-9-base:i386 gcc-9-multilib g++-9 g++-9-multilib
 sudo apt-get install dwz libgfortran4 libgfortran5 libatomic1:i386
 sudo apt-get install mono-devel
-# then remove older mono version repository from being checked due a warning
-# (about a repo path conflict) that appears when using apt-get update commands
-sudo sed -i "s/^deb\ /#\ deb\ /" "/etc/apt/sources.list.d/mono-official-4.8.0-debian.list"
+# then rename older mono version repo file to stop it from being checked due a
+# warning (repo path conflict) that appears when using apt-get update commands
+sudo mv mono-official-4.8.0-debian.list mono-official-4.8.0-debian.list.save
 
 # good to have Python dev files
 sudo apt-get install python3-dev
@@ -56,16 +56,17 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 # curl 3+4 allows applications requiring libcurl3 or libcurl4 API to work --
 # major bug in Ubuntu Bionic that Canonical broke all libcurl3 dependencies!
 # (see https://bugs.launchpad.net/ubuntu/+source/curl/+bug/1754294)
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F575D16E
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D1DAC98AF575D16E
 echo "deb http://ppa.launchpad.net/xapienz/curl34/ubuntu bionic main" | sudo tee xapienz-curl34-bionic.list
 echo "deb-src http://ppa.launchpad.net/xapienz/curl34/ubuntu bionic main" | sudo tee -a xapienz-curl34-bionic.list
 
 # need Bionic Xapps as these will be installed after enhancement process
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DF90F255DE957EB6B762AD86EA1FE56966DFE684
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EA1FE56966DFE684
 echo "deb http://ppa.launchpad.net/embrosyn/xapps/ubuntu bionic main" | sudo tee embrosyn-xapps-bionic.list
 echo "deb-src http://ppa.launchpad.net/embrosyn/xapps/ubuntu bionic main" | sudo tee -a embrosyn-xapps-bionic.list
 
 popd >/dev/null
+
 sudo apt-get update
 
 # install Python 3.6.9 from PPA
@@ -83,7 +84,7 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
 # working Python to fix the situation, as all of these symbolic links will be
 # overwritten in the enhancement process by actual Python 3.6 Bionic libraries
 find /usr/lib/python3/dist-packages -name \*35m\* -type f -print0 | while IFS= read -r -d '' file; do
-  sudo ln -s $file ${file//35m/36m}
+  sudo ln -s "$file" "${file//35m/36m}"
 done
 
 pushd /var/cache/apt/archives >/dev/null
@@ -91,7 +92,7 @@ pushd /var/cache/apt/archives >/dev/null
 # check existence of seven custom packages and copy to apt/archives cache
 for deb in "${pkgs[@]}"; do
   if [ ! -e "$path/$deb" ]; then exit; fi
-  sudo cp -p "$path/$deb" . && sudo chown root:root $deb
+  sudo cp -p "$path/$deb" . && sudo chown root:root "$deb"
 done
 
 # install "xenial-enhanced" package to add new Ubuntu repositories
@@ -124,10 +125,10 @@ sudo dpkg-reconfigure libdvd-pkg
 # regenerate locales unarchived to prevent warnings with initramfs generation
 sudo locale-gen --purge --no-archive
 
-# first use of "apt-new" command to install Bionic compatible Xapps!
-apt-new bionic install pix xplayer xplayer-plugins-extra gir1.2-xplayer-plparser-1.0 xreader gir1.2-xreader xviewer
+# first use of "apt-all" command to install Bionic compatible Xapps!
+apt-all bionic install pix xplayer xplayer-plugins-extra gir1.2-xplayer-plparser-1.0 xreader gir1.2-xreader xviewer
 # Serena packages have higher version due "+" so specify exact Bionic versions
-apt-new bionic install libxplayer-plparser18=1.0.2-1~bionic0 gir1.2-xplayer-plparser-1.0=1.0.2-1~bionic0
+apt-all bionic install libxplayer-plparser18=1.0.2-1~bionic0 gir1.2-xplayer-plparser-1.0=1.0.2-1~bionic0
 # avoid xplayer parser files "upgrading" (really downgrade) to Serena versions
 echo "Package: *xplayer-plparser*" | sudo tee /etc/apt/preferences
 echo "Pin: release *" | sudo tee -a /etc/apt/preferences
@@ -147,8 +148,8 @@ done
 # (PAC Manager is now replaced by Asbru CM -- see https://www.asbru-cm.net/)
 for deb in "${down[@]}"; do
   pkg=${deb##*/}
-  if [ ! -e $pkg ]; then sudo wget $deb; fi
-  sudo dpkg -i $pkg
+  if [ ! -e "$pkg" ]; then sudo wget "$deb"; fi
+  sudo dpkg -i "$pkg"
   echo
 done
 popd >/dev/null

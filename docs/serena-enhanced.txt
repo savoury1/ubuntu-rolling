@@ -1,8 +1,0 @@
-Serena Enhanced (aka "Ubuntu Rolling")
-======================================
-
-All system components appear to run reliably even on the latest 4.4 kernel:
-
-$ uname -rv
-4.4.0-157-generic #185-Ubuntu SMP Tue Jul 23 09:17:01 UTC 2019
-

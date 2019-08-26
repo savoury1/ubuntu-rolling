@@ -1,0 +1,2 @@
+#!/bin/bash
+dput ppa:xenial-enhanced ../ubuntu-enhanced-0.4-2sav0_result/ubuntu-enhanced_0.4-2sav0_source.changes

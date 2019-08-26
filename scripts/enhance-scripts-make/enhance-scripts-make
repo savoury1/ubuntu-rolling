@@ -60,7 +60,7 @@ for series_code in $all_u_series; do
   declare pkg_all_$series_code=''
 done
 
-# main loop to construct apt-new commands
+# main loop to construct apt-all commands
 for (( i = 1; i <= $cat_num; i++ )) do
   cat_file=${category[$i,0]}
   cat_name=${category[$i,1]}
@@ -109,7 +109,7 @@ for (( i = 1; i <= $cat_num; i++ )) do
     series_name=${u_series[$x,1]}
     if [ ! "${!series_current_cat}" == "" ]; then
       echo "echo \"=== Series: ${series_name^} ===\"" >> "$enhance_script_dir/$enhance_script_cat"
-      echo apt-new $series_name install ${!series_current_cat} >> "$enhance_script_dir/$enhance_script_cat"
+      echo apt-all $series_name install ${!series_current_cat} >> "$enhance_script_dir/$enhance_script_cat"
       echo "echo" >> "$enhance_script_dir/$enhance_script_cat"
     fi
   done
@@ -120,7 +120,7 @@ for (( x = 1; x <= $series_num; x++ )) do
   series_name=${u_series[$x,1]}
   if [ ! "${!series_current_all}" == "" ]; then
     echo "echo \"=== Series: ${series_name^} ===\"" >> "$enhance_script_dir/$enhance_script_all"
-    echo apt-new $series_name install ${!series_current_all} >> "$enhance_script_dir/$enhance_script_all"
+    echo apt-all $series_name install ${!series_current_all} >> "$enhance_script_dir/$enhance_script_all"
     echo "echo" >> "$enhance_script_dir/$enhance_script_all"
   fi
 done

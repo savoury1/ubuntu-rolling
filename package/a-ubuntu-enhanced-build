@@ -3,8 +3,8 @@
 SIGNKEY=$DEBSIGN
 
 SERIES=xenial
-PACKAGE=xenial-enhanced
-VERSION=0.3-1sav0
+PACKAGE=ubuntu-enhanced
+VERSION=0.4-2sav0
 
 EXTRA_REPOS=""
 

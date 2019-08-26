@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Mon, 26 Aug 2019 15:11:44 -0700
+Source: ubuntu-enhanced
+Binary: ubuntu-enhanced
+Architecture: source
+Version: 0.4-2sav0
+Distribution: xenial
+Urgency: low
+Maintainer: Rob Savoury <savourytech@use.startmail.com>
+Changed-By: Rob Savoury <savourytech@use.startmail.com>
+Description:
+ ubuntu-enhanced - Ubuntu Enhanced (includes apt-all)
+Changes:
+ ubuntu-enhanced (0.4-2sav0) xenial; urgency=low
+ .
+   * debian/postrm: Add scripted deletion of config files on pkg removal!
+Checksums-Sha1:
+ a5307610d6d1b5e864df24e43fa8d6335d6e0544 1159 ubuntu-enhanced_0.4-2sav0.dsc
+ 5aaf45e050d8188438adb90638c6280e6f34f447 1193 ubuntu-enhanced_0.4.orig.tar.gz
+ 5ea843cb026a045a2cc2a51fd812b039153178c5 833 ubuntu-enhanced_0.4.orig.tar.gz.asc
+ 7ce63468f77074312909c3158ac88d9a45c5c998 3048 ubuntu-enhanced_0.4-2sav0.debian.tar.xz
+ 10326dabdc24206bed81c880bd57b257845895e9 11553 ubuntu-enhanced_0.4-2sav0_source.buildinfo
+Checksums-Sha256:
+ 94169579f3e5556463021eb4c72ec004bc649da6cc911f7a220f8ff1ccf5d7b7 1159 ubuntu-enhanced_0.4-2sav0.dsc
+ ba023d072522a746ac439177039966980839b554a4e9db3939c43858912ee3f0 1193 ubuntu-enhanced_0.4.orig.tar.gz
+ c13492ecb8867bf4507d8fab077a4648a054605ef0893711b465d4d2bc6b0355 833 ubuntu-enhanced_0.4.orig.tar.gz.asc
+ 343b8eebc945eb895d74963767fe7b5358cceb95e4ed747e52adbb91e7529b0c 3048 ubuntu-enhanced_0.4-2sav0.debian.tar.xz
+ 6b3d8694362e7ae6b64b29881321806754476ee3a9a968152f4c094b11c0a206 11553 ubuntu-enhanced_0.4-2sav0_source.buildinfo
+Files:
+ d82fe514497fb4d5cdc4b2275413bc65 1159 misc extra ubuntu-enhanced_0.4-2sav0.dsc
+ 96fd4844b8d6c4e71aef4772087c1d12 1193 misc extra ubuntu-enhanced_0.4.orig.tar.gz
+ 0b92ddfbbd925126595b24e6a66033df 833 misc extra ubuntu-enhanced_0.4.orig.tar.gz.asc
+ d92989a4b74b19ade113e68da211b04d 3048 misc extra ubuntu-enhanced_0.4-2sav0.debian.tar.xz
+ 0d31b9c13ae84b50fe37c24de9a40f47 11553 misc extra ubuntu-enhanced_0.4-2sav0_source.buildinfo

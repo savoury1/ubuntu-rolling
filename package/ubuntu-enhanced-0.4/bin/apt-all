@@ -1,0 +1,68 @@
+#!/bin/bash
+
+function printargs() {
+  echo "Usage: apt-all (""${otherseries// /|}"") install PACKAGES"
+  echo ""
+  echo "Run \"sudo apt-get install\" with specified series having high priority."
+  echo ""
+  echo "Example: apt-all bionic install meld"
+  echo ""
+  echo "apt-all is an enhanced apt-get to allow package installation from a"
+  echo "specified Ubuntu series that is other than the current base system."
+  exit
+}
+
+# rename file for series used with apt-new invocation to default state
+function restore() { sudo mv "$pinpath/$pinfile" "$pinpath/$pinfile.save" ; }
+
+pinpath="/etc/apt/preferences.d"
+pinfile=""
+repo_hi="repositories-hi.pref"
+otherseries=("$(</etc/apt/otherseries)")
+series_num=0
+series_bad=N
+
+# sanity check on /etc/apt/otherseries input
+for series in ${otherseries[@]}; do
+  case "$series" in
+    xenial | bionic | cosmic | disco | eoan)
+      series_num=$((series_num + 1))
+      ;;
+    *)
+      series_bad=Y
+      ;;
+  esac
+done
+# must be exactly four (of five possible) series in /etc/apt/otherseries
+if [ "$series_bad" = "Y" -o "$series_num" != "4" ]; then 
+  echo "Invalid configuration file: /etc/apt/otherseries !"
+  exit
+fi
+
+for series in ${otherseries[@]}; do
+  # if first arg matches valid series then set pinfile name
+  if [ "$1" == "$series" ]; then pinfile="$1-$repo_hi"; fi
+  # ensure that no hi pin files for newer repos are in use before proceeeding
+  if [ -e "$pinpath/$series-$repo_hi" ]; then
+    sudo mv "$pinpath/$series-$repo_hi" "$pinpath/$series-$repo_hi.save"
+  fi
+done
+
+# if pinfile variable is not set (ie. not a valid series) or if second arg is
+# not exactly "install" (for safety, ie. no upgrade commands) show args & exit
+if [ "$pinfile" == "" -o "$2" != "install" ]; then printargs; fi
+
+# enable high priority (990) for packages from selected series
+sudo mv "$pinpath/$pinfile.save" "$pinpath/$pinfile"
+
+# catch break signal to (try) ensure renaming of repository preference files,
+# otherwise newer repos will then have priority for usual apt-get commands!
+trap restore SIGINT
+
+# shift args (as $1 is series and $2 is install) then invoke apt-get
+shift 2 && sudo apt-get install "$@"
+
+# restore used pin file to safe name and disable trap for break
+restore
+trap - SIGINT
+
