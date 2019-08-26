@@ -11,12 +11,14 @@ $lprs/libgnome2-vte-perl_0.11-2~ubuntu18.04.1_amd64.deb
 )
 
 pkgs=(
-xenial-enhanced_0.2_all.deb
 python3_3.6.9-1+really3.5.1-3sav0_amd64.deb
 python3-dev_3.5.1-3sav0_amd64.deb
 perl-modules-5.22_5.22.1-9ubuntu0.6_all.deb
 dbus-x11_1.12.2-1ubuntu1.1~16.04.sav0_amd64.deb
 )
+
+# check if xenial-enhanced package is installed & quit if not
+dpkg -s xenial-enhanced | grep -q "install ok installed" || exit
 
 pushd /etc/apt/sources.list.d >/dev/null
 
