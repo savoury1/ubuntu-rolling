@@ -17,8 +17,8 @@ perl-modules-5.22_5.22.1-9ubuntu0.6_all.deb
 dbus-x11_1.12.2-1ubuntu1.1~16.04.sav0_amd64.deb
 )
 
-# check if xenial-enhanced package is installed & quit if not
-dpkg -s xenial-enhanced | grep -q "install ok installed" || exit
+# check if ubuntu-enhanced package is installed & quit if not
+dpkg -s ubuntu-enhanced | grep -q "install ok installed" || exit
 
 pushd /etc/apt/sources.list.d >/dev/null
 

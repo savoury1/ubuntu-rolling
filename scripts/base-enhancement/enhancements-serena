@@ -23,8 +23,8 @@ mint-artwork-common_2.1.0.1sav0_all.deb
 mint-artwork-mate_1.3.2sav0_all.deb
 )
 
-# check if xenial-enhanced package is installed & quit if not
-dpkg -s xenial-enhanced | grep -q "install ok installed" || exit
+# check if ubuntu-enhanced package is installed & quit if not
+dpkg -s ubuntu-enhanced | grep -q "install ok installed" || exit
 
 pushd /etc/apt/sources.list.d >/dev/null
 

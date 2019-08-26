@@ -53,7 +53,7 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 #### Overall Procedure
 
 * Install Xenial-based system of choice (or backup existing Xenial-based install if wanting to enhance current system), though Linux Mint 18.1 Serena MATE is a recommended starting point due these procedures being created on that distribution.
-* Install xenial-enhanced package from https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced PPA.
+* Install **ubuntu-enhanced** package from https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced PPA.
 * Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using a Xenial-based distro other than Serena MATE) script to create a handful of useful custom packages that fix certain issues during/after the enhancement process.
 * Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then call `enhancements-1st-run` (which installs about 3,000 Bionic packages with one apt command).
 * Customize and modify the plain text package list files as & when needed, to choose required/desired packages from newer Ubuntu series (paying attention to package inter-dependencies).
