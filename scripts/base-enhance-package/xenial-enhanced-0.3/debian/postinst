@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -eu
+
+if [ "$1" = "configure" ]; then
+
+  # get series codename from /etc/os-release -- works on Ubuntu derivatives
+  # (ie. Mint) provided the UBUNTU_CODENAME field exists in /etc/os-release
+  codename=$(sed -n 's|UBUNTU_CODENAME=||p' /etc/os-release)
+
+  # get current main mirror from primary Ubuntu package repository list file
+  # /etc/apt/sources.list.d/official-package-repositories.list
+  mirror=$(sed -n 's|deb http://\(.*\)/ubuntu '$codename' main .*|\1|p' /etc/apt/sources.list.d/official-package-repositories.list)
+
+  # replace default mirror with current user mirror for four newer series
+  for series in bionic cosmic disco eoan; do
+    sed -i 's|archive.ubuntu.com|'$mirror'|g' /etc/apt/sources.list.d/official-package-repos-$series.list
+  done
+fi
+
+#DEBHELPER#

@@ -1,0 +1,40 @@
+Source: xenial-enhanced
+Section: misc
+Priority: extra
+Maintainer: Rob Savoury <savourytech@use.startmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/savoury1/ubuntu-rolling
+
+Package: xenial-enhanced
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Xenial Enhanced (includes apt-new)
+ Note that this is experimental software.
+ .
+ *** WARNING: EXPERIMENTAL SOFTWARE ***
+ .
+ *** WARNING: EXPERIMENTAL SOFTWARE ***
+ .
+ *** WARNING: EXPERIMENTAL SOFTWARE ***
+ .
+ Adds repositories for four new Ubuntu series to /etc/apt configuration (pref
+ files used for pinning into /etc/apt/preferences.d & list files used to give
+ access to newer repositories into /etc/apt/sources.list.d).
+ .
+ The default configuration is one with low pin priority (50) for all the newer
+ Ubuntu series. Only during invocation of apt-new is a high pin priority (990)
+ set for one user specified newer (than Xenial) series.
+ .
+ Thus, using apt-new gives the user easy access to packages from one selected
+ Ubuntu series newer than Xenial (ie. Bionic, Cosmic, Disco or Eoan) with all
+ the usual apt-get commands.
+ .
+ Also enhances other apt commands such as apt-cache, ie. apt-cache policy
+ will show all versions of a particular package from all five unique series.
+ .
+ See homepage for details:
+ .
+ https://github.com/savoury1/ubuntu-rolling
+

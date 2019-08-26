@@ -17,7 +17,7 @@ These procedures are manual in nature, so the upgrades to packages from newer se
 
 https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced
 
-The source of the one package at that PPA is also in the (scripts/base-enhance-package)[scripts/base-enhance-package] directory. This folder (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script does the work of making a "PPA acceptable" package or PAP out of the various sub-folders under one of the numbered version source folders). There are currently two package versions in there, one that initially gave access to Bionic/Cosmic only (v0.1) and a later release (v0.2) that gives access to all four series (Bionic/Cosmic/Disco/Eoan) that are newer than Xenial.
+The source of the one package at that PPA is also in the [scripts/base-enhance-package]([scripts/base-enhance-package) directory. This directory (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script that is called does the work of making a "PPA acceptable" package or PAP out of the numbered version source folder used). There are currently two package versions in there, one that initially gave access to Bionic/Cosmic only (v0.1) and was created by hand (ie. dpkg-deb) rather than "proper" packaging tools like pbuilder. Then a later release (v0.2) giving access to all four series (Bionic/Cosmic/Disco/Eoan) that are newer than Xenial.
 
 #### [Philosophical background](PHIL101.md)
 

@@ -1,0 +1,7 @@
+xenial-enhanced (0.3-1sav0) xenial; urgency=low
+
+  * Initial release on Launchpad PPA.
+  
+  * Notable changes to apt-new script since v0.2 (eg. better error handling).
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Sun, 25 Aug 2019 21:26:12 -0700

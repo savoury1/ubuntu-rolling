@@ -1,0 +1,92 @@
+See https://github.com/savoury1/ubuntu-rolling for detailed procedures relating to this package and how to (even significantly) upgrade your own Xenial-based system with packages from newer than Xenial series of Ubuntu.
+
+-----START EXPERIMENTAL WARNING-----
+
+This package is related to an experimental project and should be understood as not being necessarily useful (and even potentially highly dangerous, in terms of system stability/functionality) for regular users of Ubuntu and Ubuntu-based distributions.
+
+There is _intentionally_ a lot of text in this description to give anyone finding this page a moment of pause, before heading down to the bottom of the page to see the commands for adding this PPA to your own system (or to simply download the package deb file for manual installation).
+
+If you know at least some amount about Debian packages, Debian packaging (and manually running apt & dpkg commands, for instance) then you will likely be able to see and understand at least some of what this project is doing.
+
+If you know a good amount about Debian packages, Debian packaging and perhaps even write complex combinations of apt and/or dpkg(-deb) commands in arcane Bash scripts AND want a to-your-needs custom-built Ubuntu (sort of) "rolling release" system, then dive on in!
+
+For users whose knowledge (specifically relative Debian/Ubuntu packaging and/or any Linux based distribution packaging) lies in between (or experts with knowledge far beyond) those two above stated broad groups of user: it is up to you if you want to experiment with this package and/or the procedures at the website.
+
+*** The entire responsibility for any system breakage lies with the person(s) who use this package and/or the info/scripts given at the linked website. ***
+
+So it's on you if you break it folks! And if that (perhaps) unfortunately happens, it's also a chance to learn potentially plenty about how to fix it (a big part of this whole process for me, for sure).
+
+*** No warranty given, no liability whatsoever for me, so on, so forth. ***
+
+So we are all clear now about that, OK?
+
+-----END EXPERIMENTAL WARNING-----
+
+This is a small package that adds the full set of standard repositories for four new Ubuntu "series" to your Xenial-based system, as well as a very small bash script (about a dozen lines) called "apt-new" that allows you to use apt-get commands with a selected newer repository.
+
+New <series>-repositories-lo.pref & <series>-repositories-hi.pref.save files (for each of the four newer series) are added to /etc/apt/preferences.d (simple binary-switch pinning system) and new official-repos-<series>.list files are also added to /etc/apt/sources.list.d/ (simply copies of the default "official-package-repositories.list" file for each series, with renaming to "official-package-repos-<series>.list" so that all can co-exist on the one system). There is also a single new script called "apt-new" added to the /usr/local/bin path.
+
+Again, this is specifically intended for Xenial-based systems and if you install it without modification to a system with a series newer than Xenial installed the pinning by default will _break_ your own access to newer packages of your current series -- you could modify the package for a newer series if you want (and perhaps I'll do so at some point, with series-specific versions here on the PPA).
+
+* Scripted pinning
+
+The "apt-new" script is key and if you take away the shebang + comments + whitespace (and compress a couple of commands to easy one-liners) it is about a dozen lines of Bash script.
+
+All "apt-new" does is switch the names (using a ".save" filename extension trick) on the pair of pin files (in /etc/apt/preferences.d) for the selected newer series, giving that series priority (990) over Xenial (500 by default). Then "apt-new" runs a standard "sudo apt-get" command, thus giving the user access to all the packages in the single specified newer series.
+
+There are a few lines of code to monitor for a break signal to (try) ensure that the files pinning the newer (than Xenial) series end up with their default and usual filenames (ie. the four pairs of files with names of <series>-repositories-hi.pref.save & <series>-repositories-lo.pref) after apt-new completes execution. So as to ensure newer series have very low priority (50) which is the default "state" for the setup (safe, no real change to the system unless "apt-new" is invoked).
+
+* Power failures / why not sed / etc
+
+Yes, sed could certainly be used to change the pin priority for the specified newer series, but in the event of an entirely unexpected situation (ie. power failure, common in many parts of the world at least) you can end up with the newer series still having high priority (on system restart and/or whenever next running an apt-get command).
+
+This can then be highly not good, as one can unintentionally (eg. after power failure or an unexpected failure of the apt-new script) start installing _hundreds_ of packages from newer series, if not paying attention (ie. tired) when running the next regular apt-get command!!! You have been warned.
+
+So with a simple renaming trick ("everything's a file" -- in this case being the binary state of a "toggle" on the high pin preference for each of four newer series, as shown by a ".save" filename extension being present or not) one can quickly see the current status of apt/dpkg by doing a simple "ls /etc/apt/preferences.d" and checking the four pairs of "lo/hi" file names.
+
+If one simply invokes "apt-new" again (no arguments necessary) it will always automatically rename any current hi pins (ie. files in /etc/apt/preferences.d with name <series>-repositories-hi.pref) with ".save" extensions to clean-up previous failures after "apt-new" invocation (not much error handling in apt-new yet apart from that, so take care).
+
+* apt-cache becomes more powerful
+
+Even if you never use the "apt-new" script to grab packages from newer series than Xenial, having the additional newer repository pref files installed in the /etc/apt/preferences.d directory with low pin value (50) makes the apt-cache commands more powerful. For instance:
+
+  $ apt-cache policy meld
+  meld:
+    Installed: 3.20.0-2
+    Candidate: 3.20.0-2
+    Version table:
+   *** 3.20.0-2 100
+           50 http://mirror.os6.org/ubuntu disco/universe amd64 Packages
+           50 http://mirror.os6.org/ubuntu disco/universe i386 Packages
+           50 http://mirror.os6.org/ubuntu eoan/universe amd64 Packages
+           50 http://mirror.os6.org/ubuntu eoan/universe i386 Packages
+          100 /var/lib/dpkg/status
+       3.18.2-1 50
+           50 http://mirror.os6.org/ubuntu cosmic/universe amd64 Packages
+           50 http://mirror.os6.org/ubuntu cosmic/universe i386 Packages
+       3.18.0-6 50
+           50 http://mirror.os6.org/ubuntu bionic/universe amd64 Packages
+           50 http://mirror.os6.org/ubuntu bionic/universe i386 Packages
+       3.14.2-1 500
+          500 http://mirror.os6.org/ubuntu xenial/universe amd64 Packages
+          500 http://mirror.os6.org/ubuntu xenial/universe i386 Packages
+
+This shows all versions of meld from five official series, revealing that the currently installed package version is evidently 3.20.0-2 from Disco/Eoan series (the same package is used for both those series, as revealed by the output of the apt-cache command). It also shows that all repos newer than Xenial are currently pinned low (50) with Xenial having usual priority (500).
+
+It's often very handy to have a fast terminal way to check the versions of any package, simply with the apt-cache policy command. One can quickly and easily find out the current version of a particular package in five different Ubuntu series.
+
+*** Usage: apt-new ***
+
+The "apt-new" script takes one series name (ie. Bionic, Cosmic, Disco or Eoan) as the first argument (which the script ensures is all lowercase) and then the entire usual "sudo apt-get" command after that (ie. "install meld").
+
+Example: apt-new install bionic meld
+
+This invocation would do these tasks:
+
+=> Switch Bionic to have high priority
+
+=> $ sudo apt-get install meld
+
+=> Switch Bionic back to low priority as usual 
+
+So "apt-new" is simple to use and is all about giving a front-end for easy choice from all the packages of four newer (than Xenial) series of Ubuntu.

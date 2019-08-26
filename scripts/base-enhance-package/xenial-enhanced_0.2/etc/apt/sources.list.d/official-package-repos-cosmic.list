@@ -1,6 +1,0 @@
-deb http://mirror.os6.org/ubuntu cosmic main restricted universe multiverse
-deb http://mirror.os6.org/ubuntu cosmic-updates main restricted universe multiverse
-deb http://mirror.os6.org/ubuntu cosmic-backports main restricted universe multiverse
-
-deb http://security.ubuntu.com/ubuntu/ cosmic-security main restricted universe multiverse
-deb http://archive.canonical.com/ubuntu/ cosmic partner
