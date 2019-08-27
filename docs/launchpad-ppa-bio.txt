@@ -1,0 +1,15 @@
+As a new Launchpad user and PPA maintainer it is my initial intention to provide a small selection of software packages that have been extremely useful to me in recent years, since switching to a Ubuntu-based operating system for day-to-day use. Linux Mint 18.1 Serena MATE is my distro/desktop combo -- other distros are installed and in use also, but Serena has so far been rock solid and just great for my main daily use system.
+
+So there is an intention to give back some time and energy to the free software community, from which I have greatly benefited throughout now decades of life. Most packages are built for Xenial (so far) as that is the basis of my system, though see https://github.com/savoury1/ubuntu-rolling and the "Xenial/Ubuntu Enhanced (experimental)" PPA below to get an idea of the hybrid nature of the Ubuntu installation that I am using day-to-day.
+
+-
+
+-----USUAL DISCLAIMER-----
+
+There is no warranty offered / no liability assumed for any of the software packages that are published at this PPA. They have been created due me having had patched/home-build versions of some of these packages running on my own system for months if not years. They may work on your system or they may fail terribly and no resonsibility is taken or assumed by myself for anything that might happen due use of any of these packages.
+
+-----END USUAL DISCLAIMER-----
+
+-
+
+Please report any bugs with any of these packages to me as I'm very much on a learning curve and there may well be some issues here and there. However, so far what is published appears to work in the normal and correct fashion, at least on my own custom hybrid system. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository, pardon the pun, of just about every cryptic, obscure, convoluted acronym ever known (or unknown!) to humankind!  :-)

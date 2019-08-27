@@ -1,6 +1,6 @@
 See https://github.com/savoury1/ubuntu-rolling for detailed procedures relating to this package and how to (even significantly) upgrade your own Xenial-based system with packages from newer than Xenial series of Ubuntu.
 
-UPDATE (8/26/19): New package ubuntu-enhanced replaces xenial-enhanced and is compatible for installation on five different Ubuntu series (Xenial, Bionic, Cosmic, Disco and Eoan) giving access to packages (in all "pockets") in any of the repositories for these series.
+UPDATE (8/26/19): New package ubuntu-enhanced replaces xenial-enhanced and is compatible for installation on five different Ubuntu series (Xenial, Bionic, Cosmic, Disco and Eoan). Gives access to all packages (in all "pockets") in all of the repositories for these series, no matter what series is installed.
 
 -----START EXPERIMENTAL WARNING-----
 
@@ -20,7 +20,7 @@ So it's on you if you break it folks! And if that (perhaps) unfortunately happen
 
 *** No warranty given, no liability whatsoever for me, so on, so forth. ***
 
-So we are all clear now about that, OK?
+So we are all clear now about that, OK? Thanks!
 
 -----END EXPERIMENTAL WARNING-----
 
@@ -89,7 +89,7 @@ Example: apt-all install bionic meld
 
 This invocation would do these tasks:
 
-=> Switch Bionic to have high priority
+=> Switch Bionic to have temporary high priority
 
 => $ sudo apt-get install meld
 
@@ -97,4 +97,4 @@ This invocation would do these tasks:
 
 So "apt-all" is simple to use and is all about giving a front-end for easy choice from all the packages of four other series of Ubuntu than your own.
 
-FINAL WARNING: The "apt-all" script is also very powerful (due it allowing install of any/all packages from series other than current) and could destroy the reliability/functionality of an existing installation with careless usage (ie. upgrade/downgrade to newer/older packages without doing necessary homework about dependency/compatibility with other core packages, possibly causing unrecoverable system-breakage). PLEASE BE CAREFUL!!!
+FINAL WARNING: While easy to use, "apt-all" is also very powerful (due it allowing install of any/all packages from series other than current) and could destroy the reliability/functionality of an existing installation with careless usage (ie. upgrade/downgrade to newer/older packages without doing necessary homework about dependency/compatibility with other core packages, possibly causing unrecoverable system-breakage). PLEASE BE CAREFUL!!!

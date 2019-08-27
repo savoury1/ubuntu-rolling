@@ -1,3 +1,11 @@
+ubuntu-enhanced (0.4.1-1sav0) xenial; urgency=low
+
+  * Minor edit to one comment in /usr/bin/apt-all
+  
+  * Minor edit to copyright notice (xenial-enhanced to ubuntu-enhanced)
+
+ -- Rob Savoury <savourytech@use.startmail.com>  XXX
+
 ubuntu-enhanced (0.4-2sav0) xenial; urgency=low
 
   * debian/postrm: Add scripted deletion of config files on pkg removal!

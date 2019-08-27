@@ -13,11 +13,11 @@ Understand that this is more a "slow roll" release rather than a "fast roll" rel
 
 #### Technical background
 
-These procedures are manual in nature, so the upgrades to packages from newer series are done manually and based on specific user selection (see the "pkg-lists" folder). You as the user are effectively over-riding the default dpkg/apt setup that is (as shipped) not designed to get packages from a newer Ubuntu "series" (ie. no Bionic, Cosmic, Disco or Eoan packages). For some further background technically (about the simple and easy technique used to gain access to packages from newer series) you can also see the description of the PPA here:
+These procedures are manual in nature, so the upgrades to packages from newer series are done manually and based on specific user selection (see the [pkg-lists](pkg-lists) directory). You as the user are effectively over-riding the default dpkg/apt setup that is (as shipped) not designed to get packages from a newer Ubuntu "series" (ie. no Bionic, Cosmic, Disco or Eoan packages). For some further background technically (about the simple and easy technique used to gain access to packages from newer series) you can also see the description of the PPA here:
 
 https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced
 
-The source of the one package at that PPA is also in the [package](package) directory. This directory (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script that is called does the work of making a "PPA acceptable" package or PAP out of the numbered version source folder used). The current package version is 0.3 (earlier versions were created by hand, ie. with dpkg-deb, rather than with "proper" packaging tools, ie. debuild/pbuilder).
+The source of the one package at that PPA is also in the [package](package) directory. This directory (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script that is called does the work of making a "PPA acceptable" package or PAP out of the numbered version source directory used). The current package version is 0.4 (earlier versions were created by hand, ie. with dpkg-deb, rather than with "proper" packaging tools, ie. debuild/pbuilder) and the package is now compatible with these series: Xenial, Bionic, Cosmic, Disco and Eoan.
 
 #### [Philosophical background](PHIL101.md)
 

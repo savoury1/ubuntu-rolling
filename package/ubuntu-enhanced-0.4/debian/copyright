@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: xenial-enhanced
+Upstream-Name: ubuntu-enhanced
 Upstream-Contact: Rob Savoury <savourytech@use.startmail.com>
 Source: https://github.com/savoury1/ubuntu-rolling
   

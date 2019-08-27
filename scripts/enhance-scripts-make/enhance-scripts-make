@@ -42,8 +42,8 @@ if [ ! -e "$enhance_script_dir" ]; then
   mkdir "$enhance_script_dir" || exit
 fi
 
+# initialize enhancement script (same initial header for both scripts)
 for script_name in $enhance_script_all $enhance_script_cat; do
-  # initialize enhancement script
   echo "#!/bin/bash" > "$enhance_script_dir/$script_name"
   echo "" >> "$enhance_script_dir/$script_name"
   echo "echo" >> "$enhance_script_dir/$script_name"
@@ -65,6 +65,7 @@ for (( i = 1; i <= $cat_num; i++ )) do
   cat_file=${category[$i,0]}
   cat_name=${category[$i,1]}
 
+  # add category header prior to actual apt-get command per series
   echo "echo" >> "$enhance_script_dir/$enhance_script_cat"
   echo "echo \">>> $cat_name <<<\"" >> "$enhance_script_dir/$enhance_script_cat"
   echo "echo" >> "$enhance_script_dir/$enhance_script_cat"
@@ -78,7 +79,7 @@ for (( i = 1; i <= $cat_num; i++ )) do
   # comments catches everything after space following package_name
   while IFS=' ' read -r series_code package_name comments; do
     case $series_code in
-    # remove spaces from all_u_series variable
+    # remove spaces from all_u_series variable for case
     [${all_u_series/ /}])
       # add package to lists for both all and cat files
       series_current_all="pkg_all_$series_code"
@@ -86,9 +87,9 @@ for (( i = 1; i <= $cat_num; i++ )) do
       series_current_cat="pkg_cat_$series_code"
       declare pkg_cat_$series_code="${!series_current_cat} $package_name"
       ;;
-    "-") # purge this package (superseded or redundant)
+    "-") # purge this package (superseded or redundant) - commands to handle?
       ;;
-    "~") # this package requires modded version to work
+    "~") # this package requires modded version to work - commands to handle?
       ;;
     *)
       echo "Invalid series detected in input!"
@@ -104,6 +105,7 @@ for (( i = 1; i <= $cat_num; i++ )) do
     esac
   done < "$package_lists_dir/$cat_file.txt"
 
+  # apt-get command for each category/series with active packages (enhance-cat)
   for (( x = 1; x <= $series_num; x++ )) do
     series_current_cat="pkg_cat_${u_series[$x,0]}"
     series_name=${u_series[$x,1]}
@@ -115,6 +117,7 @@ for (( i = 1; i <= $cat_num; i++ )) do
   done
 done
 
+# single apt-get command for each series with active packages (enhance-all)
 for (( x = 1; x <= $series_num; x++ )) do
   series_current_all="pkg_all_${u_series[$x,0]}"
   series_name=${u_series[$x,1]}

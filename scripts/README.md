@@ -33,7 +33,7 @@ The format of the package list files is very simple. A space delimited text file
 D meld -- latest available version
 B 4pane
 ```
-This says to install meld from Disco and 4pane from Bionic. Note that any additional text after the package name becomes a third comments field (in this case with meld "-- latest available version") and is ignored by **`enhance-scripts-make`** though useful for putting notes in about inter-dependencies or other reasons that some package(s) comes from a specific series.
+This says to install meld from Disco and 4pane from Bionic. Note that any additional text following the space after the package name becomes a third comments field (in this case with meld the comment is "-- latest available version") and all comments are ignored by **`enhance-scripts-make`** though useful for putting notes in about inter-dependencies or other reasons that some package(s) comes from a specific series.
 
 Looking into the package list files will quickly show how this works. There is currently minimal sanity checking of the package lists by **`enhance-scripts-make`** (a basic check that the first field is either a valid series or the dash/tilde symbol) so take care with editing the text in these files.
 
