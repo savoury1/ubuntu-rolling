@@ -1,3 +1,4 @@
+B python-cliapp
 B python-funcsigs
 B python-pbr
 B python-mock
@@ -63,3 +64,6 @@ B ruby-atk
 B ruby-cairo-gobject
 B ruby-pango
 B ruby-gtk2
+B libjs-jquery
+B libjs-underscore
+B libjs-sphinxdoc

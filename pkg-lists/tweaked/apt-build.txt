@@ -105,6 +105,7 @@ B libdebconfclient0
 B python3-debconf
 B sensible-utils
 D debootstrap -- allow bootstrap of latest Eoan series
+B vmdebootstrap
 B pbuilder
 B python3-dateutil
 B git-buildpackage
@@ -114,6 +115,10 @@ B xdelta3
 B pristine-tar
 B dctrl-tools
 B devscripts
+B autodep8
+B autopkgtest
+B schroot-common
+B schroot
 B ubuntu-dev-tools
 B python-ubuntutools
 B python-lazr.uri

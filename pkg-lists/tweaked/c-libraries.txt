@@ -31,6 +31,7 @@ B libicu-le-hb-dev
 B libboost-iostreams1.65.1
 B libboost-system1.65.1
 B libboost-filesystem1.65.1
+B libboost-program-options1.65.1
 B libboost-thread1.65.1
 B libboost-locale1.65.1
 B libboost-date-time1.65.1
@@ -40,6 +41,7 @@ B libboost-wave1.65.1
 D libboost-iostreams1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
 D libboost-system1.67.0 -- latest available version
 D libboost-filesystem1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
+D libboost-program-options1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco 
 D libboost-thread1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
 D libboost-locale1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco
 D libboost-date-time1.67.0 -- same series as libboost-system1.67.0 (1.67.0-13) Disco

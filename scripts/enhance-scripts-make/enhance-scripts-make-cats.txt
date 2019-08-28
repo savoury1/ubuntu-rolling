@@ -8,7 +8,7 @@ core-perl|Core Perl
 core-python|Core Python
 gcrypt-gnupg|GCrypt + GnuPG
 core-data|Core Data
-python-ruby|Python + Ruby
+python-ruby-js|Python + Ruby + JS
 core-security|Core Security
 apt-build|Apt + Build
 themes-assist|Themes + Assist

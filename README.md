@@ -21,7 +21,7 @@ The source of the one package at that PPA is also in the [package](package) dire
 
 #### [Philosophical background](PHIL101.md)
 
-For those interested in some background as to why this Xenial-based Ubuntu "rolling release" system came about.
+For those interested in some deeper reasons as to why this Xenial-based Ubuntu "rolling release" system came about.
 
 #### Friendly disclaimer
 
