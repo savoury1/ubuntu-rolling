@@ -13,7 +13,7 @@ Understand that this is more a "slow roll" release rather than a "fast roll" rel
 
 #### Technical background
 
-These procedures are manual in nature, so the upgrades to packages from newer series are done manually and based on specific user selection (see the [pkg-lists](pkg-lists) directory). You as the user are effectively over-riding the default dpkg/apt setup that is (as shipped) not designed to get packages from a newer Ubuntu "series" (ie. no Bionic, Cosmic, Disco or Eoan packages). For some further background technically (about the simple and easy technique used to gain access to packages from newer series) you can also see the description of the PPA here:
+These procedures are manual in nature, so the upgrades to packages from newer series are done manually and based on specific user selection (see the [pkg-lists](pkg-lists) directory). You as the user are effectively over-riding the default dpkg/apt setup that is (as shipped) not designed to get packages from any other Ubuntu "series" (eg. no Bionic, Cosmic, Disco or Eoan packages from a Xenial installation). For some further background technically (about the simple and easy technique used to gain access to packages from newer series) you can also see the description of the PPA here:
 
 https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced
 
