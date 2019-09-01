@@ -34,7 +34,7 @@ To make the usefulness of accessing package lists from five possible series (ie.
 
 *** Scripted pinning -- apt/dpkg ***
 
-The "apt-all" script is key and if you take away the shebang + printargs + comments + whitespace (and compress a couple of commands to easy one-liners) it is about 30 lines of Bash script.
+The "apt-all" script is key and if you take away the shebang + printargs + comments + whitespace (and compress a couple of commands to easy one-liners) it is about 30 lines of Bash commands.
 
 All "apt-all" does is switch the name (using a ".save" filename extension) on the pin file (in /etc/apt/preferences.d) for the selected other series, giving that series temporary priority (990) over your own (500 by default). Then "apt-all" runs a standard "sudo apt-get install" command, thus giving the user access to all the packages in the single specified other series.
 
