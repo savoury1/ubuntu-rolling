@@ -1,6 +1,6 @@
 See https://github.com/savoury1/ubuntu-rolling for detailed procedures relating to this package and how to (even significantly) upgrade your own Xenial-based system with packages from newer than Xenial series of Ubuntu.
 
-UPDATE (8/26/19): New package ubuntu-enhanced replaces xenial-enhanced and is compatible for installation on five different Ubuntu series (Xenial, Bionic, Cosmic, Disco and Eoan). Gives access to all packages (in all "pockets") in all of the repositories for these series, no matter what series is installed.
+UPDATE (26/8/19): New package ubuntu-enhanced replaces xenial-enhanced and is compatible for installation on five different Ubuntu series (Xenial, Bionic, Cosmic, Disco and Eoan). Gives access to all packages (in all "pockets") in all of the repositories for these series, no matter what series is installed.
 
 -----START EXPERIMENTAL WARNING-----
 
@@ -19,8 +19,6 @@ For users whose knowledge (specifically relative Debian/Ubuntu packaging and/or 
 So it's on you if you break it folks! And if that (perhaps) unfortunately happens, it's also a chance to learn potentially plenty about how to fix it (a big part of this whole process for me, for sure).
 
 *** No warranty given, no liability whatsoever for me, so on, so forth. ***
-
-So we are all clear now about that, OK? Thanks!
 
 -----END EXPERIMENTAL WARNING-----
 
@@ -85,7 +83,7 @@ It's actually quite often very handy to have a fast terminal way to check the ve
 
 The "apt-all" script takes one series name (ie. Xenial, Bionic, Cosmic, Disco or Eoan) as the first argument (in lowercase) then exactly "install" as the second argument (safety, no accidental or even intentional "apt-get upgrade" commands are allowed with "apt-all"!) and then the package(s) that you want to install as the third argument.
 
-Example: apt-all install bionic meld
+Example: apt-all bionic install meld
 
 This invocation would do these tasks:
 

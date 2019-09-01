@@ -1,6 +1,6 @@
 ## Philosophical background
 
-These procedures have specifically been created using a starting point of Linux Mint Serena 18.1 MATE (a Ubuntu 16.04 Xenial-based distribution) as it has a GTK2 based desktop. Please take note of the quote in the center of the screenshot further below (within the MATE 1.16.2 "about" box):
+These procedures have specifically been created using a starting point of Linux Mint Serena 18.1 MATE (a Ubuntu 16.04 Xenial-based distribution) as it has a GTK2 based desktop. Please take note of the quote in the center of the screenshot further below (within the MATE 1.16.2 "About" box):
 
 > GNOME 2 was the most popular Linux desktop but it's no longer available...
 >

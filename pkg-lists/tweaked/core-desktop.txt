@@ -77,6 +77,9 @@ B libdbusmenu-glib4
 B gir1.2-dbusmenu-glib-0.4
 B libdbusmenu-gtk3-4
 B libdbusmenu-gtk4
+B libbamf3-2
+B gir1.2-bamf-3
+B bamfdaemon
 B libdee-1.0-4
 B gir1.2-dee-1.0
 B libindicator3-7

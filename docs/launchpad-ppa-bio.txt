@@ -2,14 +2,10 @@ As a new Launchpad user and PPA maintainer it is my initial intention to provide
 
 So there is an intention to give back some time and energy to the free software community, from which I have greatly benefited throughout now decades of life. Most packages are built for Xenial (so far) as that is the basis of my system, though see https://github.com/savoury1/ubuntu-rolling and the "Xenial/Ubuntu Enhanced (experimental)" PPA below to get an idea of the hybrid nature of the Ubuntu installation that I am using day-to-day.
 
--
-
------USUAL DISCLAIMER-----
+-----START USUAL DISCLAIMER-----
 
 There is no warranty offered / no liability assumed for any of the software packages that are published at this PPA. They have been created due me having had patched/home-build versions of some of these packages running on my own system for months if not years. They may work on your system or they may fail terribly and no resonsibility is taken or assumed by myself for anything that might happen due use of any of these packages.
 
 -----END USUAL DISCLAIMER-----
-
--
 
 Please report any bugs with any of these packages to me as I'm very much on a learning curve and there may well be some issues here and there. However, so far what is published appears to work in the normal and correct fashion, at least on my own custom hybrid system. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository, pardon the pun, of just about every cryptic, obscure, convoluted acronym ever known (or unknown!) to humankind!  :-)

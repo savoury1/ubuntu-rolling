@@ -107,6 +107,10 @@ B sensible-utils
 D debootstrap -- allow bootstrap of latest Eoan series
 B vmdebootstrap
 B pbuilder
+B cowdancer
+B cowbuilder
+B libeatmydata1
+B eatmydata
 B python3-dateutil
 B git-buildpackage
 B libxdelta2
@@ -132,6 +136,7 @@ B libconfig9
 B gnome-common
 B python3-scour
 B scour
+B cdbs
 B gnome-pkg-tools
 B librpmio8
 B librpm8
