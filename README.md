@@ -15,7 +15,7 @@ Understand that this is more a "slow roll" release rather than a "fast roll" rel
 
 These procedures are manual in nature, so the upgrades to packages from newer series are done manually and based on specific user selection (see the [pkg-lists](pkg-lists) directory). You as the user are effectively over-riding the default dpkg/apt setup that is (as shipped) not designed to get packages from any other Ubuntu "series" (eg. no Bionic, Cosmic, Disco or Eoan packages from a Xenial installation). For some further background technically (about the simple and easy technique used to gain access to packages from newer series) you can also see the description of the PPA here:
 
-https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced
+https://launchpad.net/~savoury1/+archive/ubuntu/ubuntu-enhanced
 
 The source of the one package at that PPA is also in the [package](package) directory. This directory (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script that is called does the work of making a "PPA acceptable" package or PAP out of the numbered version source directory used). The current package version is 0.4 (earlier versions were created by hand, ie. with dpkg-deb, rather than with "proper" packaging tools, ie. debuild/pbuilder) and the package is now compatible with these series: Xenial, Bionic, Cosmic, Disco and Eoan.
 
@@ -53,7 +53,7 @@ Additionally relative to Qt, the qt5ct tool that allows consistent theming of Qt
 #### Overall Procedure
 
 * Install Xenial-based system of choice (or backup existing Xenial-based install if wanting to enhance current system), though Linux Mint 18.1 Serena MATE is a recommended starting point due these procedures being created on that distribution.
-* Install **ubuntu-enhanced** package from https://launchpad.net/~savoury1/+archive/ubuntu/xenial-enhanced PPA.
+* Install **ubuntu-enhanced** package from https://launchpad.net/~savoury1/+archive/ubuntu/ubuntu-enhanced PPA.
 * Run `enhanced-packages-serena` (or `enhanced-packages-xenial` if using a Xenial-based distro other than Serena MATE) script to create a handful of useful custom packages that fix certain issues during/after the enhancement process.
 * Run `enhancements-serena` (or `enhancements-xenial`) script to install various PPAs, upgrade various system components with Xenial versions and then call `enhancements-1st-run` (which installs about 3,000 Bionic packages with one apt command).
 * Customize and modify the plain text package list files as & when needed, to choose required/desired packages from newer Ubuntu series (paying attention to package inter-dependencies).
