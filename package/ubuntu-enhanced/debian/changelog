@@ -1,10 +1,10 @@
-ubuntu-enhanced (0.4.1-1sav0) xenial; urgency=low
+ubuntu-enhanced (0.5-1sav0) xenial; urgency=low
 
-  * Minor edit to one comment in /usr/bin/apt-all
-  
-  * Minor edit to copyright notice (xenial-enhanced to ubuntu-enhanced)
+  * New version 0.5
 
- -- Rob Savoury <savourytech@use.startmail.com>  XXX
+  * debian/copyright: correct the license to GPL-3 to match whole project
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Sun, 01 Sep 2019 10:39:39 -0700
 
 ubuntu-enhanced (0.4-2sav0) xenial; urgency=low
 

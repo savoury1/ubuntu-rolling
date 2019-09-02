@@ -12,8 +12,12 @@ function printargs() {
   exit
 }
 
-# rename file for series used with apt-new invocation to default state
-function restore() { sudo mv "$pinpath/$pinfile" "$pinpath/$pinfile.save" ; }
+# rename pinfile for series used, disable trap and exit
+function restore() {
+  sudo mv "$pinpath/$pinfile" "$pinpath/$pinfile.save"
+  trap - SIGHUP SIGINT SIGTERM
+  exit
+}
 
 pinpath="/etc/apt/preferences.d"
 pinfile=""
@@ -26,7 +30,7 @@ series_bad=N
 for series in ${otherseries[@]}; do
   case "$series" in
     xenial | bionic | cosmic | disco | eoan)
-      series_num=$((series_num + 1))
+      ((series_num++))
       ;;
     *)
       series_bad=Y
@@ -34,9 +38,8 @@ for series in ${otherseries[@]}; do
   esac
 done
 # must be exactly four (of five possible) series in /etc/apt/otherseries
-if [ "$series_bad" = "Y" -o "$series_num" != "4" ]; then 
-  echo "Invalid configuration file: /etc/apt/otherseries !"
-  exit
+if [ "$series_bad" = "Y" ] || (( series_num != 4 )); then 
+  echo "Invalid configuration file: /etc/apt/otherseries !" ; exit
 fi
 
 for series in ${otherseries[@]}; do
@@ -44,25 +47,23 @@ for series in ${otherseries[@]}; do
   if [ "$1" == "$series" ]; then pinfile="$1-$repo_hi"; fi
   # ensure that no hi pin files for newer repos are in use before proceeeding
   if [ -e "$pinpath/$series-$repo_hi" ]; then
-    sudo mv "$pinpath/$series-$repo_hi" "$pinpath/$series-$repo_hi.save"
+    sudo mv "$pinpath/$series-$repo_hi" "$pinpath/$series-$repo_hi.save" || exit
   fi
 done
 
-# if pinfile variable is not set (ie. not a valid series) or if second arg is
-# not exactly "install" (for safety, ie. no upgrade commands) show args & exit
-if [ "$pinfile" == "" -o "$2" != "install" ]; then printargs; fi
+# if pinfile save file for selected series does not exist or if second arg is
+# not exactly "install" (safety, ie. no upgrade commands) show args and exit
+if [ ! -e "$pinpath/$pinfile.save" ] || [ "$2" != "install" ]; then printargs; fi
 
-# enable high priority (990) for packages from selected series
-sudo mv "$pinpath/$pinfile.save" "$pinpath/$pinfile"
+# attempt enable high priority (990) for selected series and exit on failure
+sudo mv "$pinpath/$pinfile.save" "$pinpath/$pinfile" || exit
 
-# catch break signal to (try) ensure renaming of repository preference files,
+# trap break signals to (try) ensure renaming of repository preference files
 # or the other series repo will have priority for usual apt-get commands!
-trap restore SIGINT
+trap restore SIGHUP SIGINT SIGTERM
 
 # shift args (as $1 is series and $2 is install) then invoke apt-get
 shift 2 && sudo apt-get install "$@"
 
-# restore used pin file to safe name and disable trap for break
+# all done
 restore
-trap - SIGINT
-

@@ -1,0 +1,36 @@
+0.5 / 2-Sep-2019
+
+  - Improvements to "apt-all" including better error handling and break
+    catching, as well as correction of duplicate pinfile rename attempt when
+    a break signal is caught (causing error due file already being renamed).
+
+0.4 / 26-Aug-2019
+
+  - Rename to "Ubuntu Enhanced" as package is now suitable for installation
+    on any of five series (Xenial, Bionic, Cosmic, Disco or Eoan).
+  - Significant update with key change being dynamic generation of all config
+    files in /etc/apt during package installation, to cater for the package
+    being installable on any of the five series.
+  - Codenames for the other four series are determined based on the codename
+    of the current installation found in /etc/osrelease and then config files
+    for those other four series are created under the /etc/apt directory.
+  - Renamed "apt-new" to "apt-all" to reflect possible use on any series,
+    including potentially getting older packages from a newer series.
+
+0.3 / 25-Aug-2019
+
+  - Initial proper package build released on Launchpad as "Xenial Enhanced".
+  - Added dynamic configuration of mirror for repository files, based on user
+    chosen mirror in "/etc/apt/sources.d/official-package-repositories.list".
+
+0.2 / 18-Oct-2018
+
+  - Update with new name "Xenial Enhanced" (private release only).
+  - Added config files also for Disco and Eoan repositories to /etc/apt.
+
+0.1 / 12-Jul-2018
+
+  - Created as "Bionic Enhanced Serena" (private release only).
+  - Initial hand built package with "apt-new" script and static configuration
+    files for Bionic and Cosmic repositories added to /etc/apt directories.
+
