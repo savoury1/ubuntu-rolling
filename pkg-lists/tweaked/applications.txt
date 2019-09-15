@@ -22,8 +22,8 @@ B gthumb
 B hugin-data
 B hugin-tools
 B hugin
-B libij-java
-B imagej
+E libij-java -- same version as imagej (1.52p-1) Eoan
+E imagej -- latest version
 D xscreensaver-data -- required by xscreensaver (5.42+dfsg1-1ubuntu1) Disco
 D xscreensaver-data-extra -- addition for xscreensaver (5.42+dfsg1-1ubuntu1) Disco
 D xscreensaver-gl -- required by xscreensaver-gl-data (5.42+dfsg1-1ubuntu1) Disco

@@ -205,4 +205,4 @@ E libkworkspace5-5
 E drkonqi
 E kdeconnect
 E kde-style-breeze
-- kde-style-breeze-qt4 -- version mismatch with kde-style-breeze (4:5.16.4-0ubuntu2) Eoan
+- kde-style-breeze-qt4 -- obsolete Eoan

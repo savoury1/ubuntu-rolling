@@ -97,6 +97,8 @@ B dh-make
 B dput
 B deborphan
 B pkg-config
+B pkg-kde-tools
+B chrpath
 B debconf
 B debconf-i18n
 B debconf-utils
@@ -104,6 +106,9 @@ B po-debconf
 B libdebconfclient0
 B python3-debconf
 B sensible-utils
+B maven-repo-helper
+B javahelper
+B ant
 D debootstrap -- allow bootstrap of latest Eoan series
 B vmdebootstrap
 B pbuilder

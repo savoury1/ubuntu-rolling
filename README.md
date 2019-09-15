@@ -17,7 +17,7 @@ These procedures are manual in nature, so the upgrades to packages from newer se
 
 https://launchpad.net/~savoury1/+archive/ubuntu/ubuntu-enhanced
 
-The source of the one package at that PPA is also in the [package](package) directory. This directory (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script that is called does the work of making a "PPA acceptable" package or PAP out of the numbered version source directory used). The current package version is 0.4 (earlier versions were created by hand, ie. with dpkg-deb, rather than with "proper" packaging tools, ie. debuild/pbuilder) and the package is now compatible with these series: Xenial, Bionic, Cosmic, Disco and Eoan.
+The source of the one package at that PPA is also in the [package](package) directory. This directory (on my own system, ie. my git clone of this project) is where I run all the debuild/pbuilder commands (the "pbuilder-all" script that is called does the work of making a "PPA acceptable" package or PAP out of the numbered version source directory used). The current package version is 0.5 and the package is now compatible with these series: Xenial, Bionic, Cosmic, Disco and Eoan.
 
 #### [Philosophical background](PHIL101.md)
 
@@ -40,7 +40,7 @@ systemd | 229 | 237 | 239 | 240 | 240
 GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.8
 GPG | 1.4.20 | 2.2.4 | 2.2.8 | 2.2.12 | 2.2.12
 X.Org X Server | 1.18.4 | 1.19.6 | 1.20.1 | 1.20.4 | 1.20.4
-KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.61.0 (19.04.3) 
+KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.62.0 (19.04.3)
 Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
 
 ![Serena Enhanced](images/Serena-Enhanced.png)
