@@ -35,11 +35,11 @@ This table shows newer versions that can be installed on a Xenial-based distribu
 
 System component | Xenial version | Bionic upgrade | Cosmic upgrade | Disco upgrade | Eoan upgrade
 ---------------- | -------------- | -------------- | -------------- | ------------- | ------------
-C libraries | 2.23 | 2.27 | 2.28 | 2.29 | 2.29
-systemd | 229 | 237 | 239 | 240 | 240
-GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.8
+C libraries | 2.23 | 2.27 | 2.28 | 2.29 | 2.30
+systemd | 229 | 237 | 239 | 240 | 242
+GTK3 | 3.18.9 | 3.22.30 | 3.24.4 | 3.24.8 | 3.24.11
 GPG | 1.4.20 | 2.2.4 | 2.2.8 | 2.2.12 | 2.2.12
-X.Org X Server | 1.18.4 | 1.19.6 | 1.20.1 | 1.20.4 | 1.20.4
+X.Org X Server | 1.18.4 | 1.19.6 | 1.20.1 | 1.20.4 | 1.20.5
 KDE libraries (apps) | 5.18.0 (2.0.3) | 5.44.0a (17.12.3) | 5.50.0 (18.04.3) | 5.56.0 (18.12.3) | 5.62.0 (19.04.3)
 Qt libraries | 5.5.1 | 5.9.5 | 5.11.1 | 5.12.2 | 5.12.4
 

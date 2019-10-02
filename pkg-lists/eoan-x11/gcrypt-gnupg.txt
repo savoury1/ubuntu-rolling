@@ -1,0 +1,42 @@
+B debian-keyring
+B debian-archive-keyring
+B ubuntu-keyring
+B libgpg-error0
+B libgpg-error0:i386
+B libgpg-error-dev
+B libgcrypt20
+B libgcrypt20:i386
+B libgcrypt20-dev
+B libassuan0
+B libksba8
+D gpgconf -- ppa:nephirus/ppa-gnupg
+D gpg-agent -- ppa:nephirus/ppa-gnupg
+D gnupg-agent -- ppa:nephirus/ppa-gnupg
+D gnupg-utils -- ppa:nephirus/ppa-gnupg
+D dirmngr -- ppa:nephirus/ppa-gnupg
+D gpgsm -- ppa:nephirus/ppa-gnupg
+D gpgv -- ppa:nephirus/ppa-gnupg
+D gpg -- ppa:nephirus/ppa-gnupg
+D gpg-wks-client -- ppa:nephirus/ppa-gnupg
+D gpg-wks-server -- ppa:nephirus/ppa-gnupg
+D gnupg-l10n -- ppa:nephirus/ppa-gnupg
+D gnupg -- ppa:nephirus/ppa-gnupg
+D gnupg2 -- ppa:nephirus/ppa-gnupg
+D scdaemon -- ppa:nephirus/ppa-gnupg
+D libgpgme11 -- ppa:nephirus/ppa-gnupg
+D libgpgmepp6 -- ppa:nephirus/ppa-gnupg
+~ python3-gpg -- ppa:nephirus/ppa-gnupg (modded version needed for Python 3.7)
+D gpa -- same series as ppa:nephirus/ppa-gnupg
+B libgck-1-0
+B libgck-1-0:i386
+B libgcr-base-3-1
+B libgcr-base-3-1:i386
+B libgcr-ui-3-1
+B gcr
+B pinentry-gnome3
+B gnome-keyring
+B libpam-gnome-keyring
+B gnome-keyring-pkcs11
+B libp11-kit-gnome-keyring
+B paperkey
+B seahorse
