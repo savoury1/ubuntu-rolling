@@ -102,4 +102,4 @@ FINAL WARNING: While easy to use, "apt-all" is also very powerful (due it allowi
 
 2/9/19 -- New PPA (now also called ubuntu-enhanced) and new release 0.5 with improvements to "apt-all" for better error handling.
 
-26/9/19 -- Fixed issue with post installation script on Bionic and newer due official-packages-repositories.list file no longer being used. Enhanced apt setup on series newer than Xenial is now configured correctly!
+26/9/19 -- Fixed issue with post installation script on Bionic and newer due official-packages-repositories.list file no longer being used. Enhanced apt setup on series newer than Xenial is now actually configured correctly!

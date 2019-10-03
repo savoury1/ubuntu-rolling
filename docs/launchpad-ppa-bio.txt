@@ -1,4 +1,4 @@
-The table below summarises the software that is published at this Launchpad site. Packages with their own PPA (eg. GParted) are also regularly copied to a collection PPA (eg. GParted => Utilities). This allows easy access to most software packages published here by simply adding a few collection PPAs. 
+The table below summarises the software that is published at this Launchpad site. Packages with their own PPA (eg. GParted) are also regularly copied to a collection PPA (eg. GParted -> Utilities). This allows easy access to most software packages published here by simply adding a few collection PPAs. 
 
 +============+==============================================================+
   Collection | Software includes
