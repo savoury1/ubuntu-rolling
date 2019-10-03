@@ -1,11 +1,37 @@
-As a new Launchpad user and PPA maintainer it is my initial intention to provide a small selection of software packages that have been extremely useful to me in recent years, since switching to a Ubuntu-based operating system for day-to-day use. Linux Mint 18.1 Serena MATE is my distro/desktop combo -- other distros are installed and in use also, but Serena has so far been rock solid and just great for my main daily use system.
+The table below summarises the software that is published at this Launchpad site. Packages with their own PPA (eg. GParted) are also regularly copied to a collection PPA (eg. GParted => Utilities). This allows easy access to most software packages published here by simply adding a few collection PPAs. 
 
-So there is an intention to give back time and energy to the free software community, from which I have greatly benefited throughout much of my life. Most packages here are built for Xenial (though will often work with newer series too) as Xenial is the basis of my system (however, for details of the unusual hybrid nature of my main daily use Ubuntu installation see this Github project page: https://github.com/savoury1/ubuntu-rolling).
++============+==============================================================+
+  Collection | Software includes
++============+==============================================================+
+
+   Backports = Bash, Curl, OpenSSL, MATE Dock Applet, brotli, f2fs-tools,
+               geoip, geoip-database, isync, keepass2, libidn2, libpsl,
+               libsodium, lighttpd, nghttp2, p7zip, publicsuffix, rar
+
+      Python = boto, httplib2, imaplib2
+
+     Android = boringssl, libselinux, libunwind, libnativehelper, system-core
+               (incl. adb), system-extras
+
+   Utilities = GParted, Meld, Métamorphose, Minisign, unrar, vnStat, Xfe
+
+    Graphics = Exiv2, ImageJ, XScreenSaver
+
+  Multimedia = SDL2, sndio, SOFA (audio)
+
+       Games = DOSBox, DBGL (DOSBox Game Launcher), Quakespasm (Quake) &
+               Yamagi Quake (Quake II) engines
+
++============+==============================================================+
+
+As a new Launchpad user and PPA maintainer it is my intention to provide a selection of software packages that have been useful to me in recent years, since switching to a Ubuntu-based operating system for day-to-day use. There is a desire to give back time and energy to the free software community, from which I have greatly benefited in a number of ways throughout my life.
+
+Linux Mint 18.1 Serena MATE (Xenial-based) is my main distro/desktop combo. Other distros are installed and in use (a quintuple-boot secondary computer and also in VMs), but Serena has been rock solid for my daily work. However, my main system is actually an unusual "Serena Enhanced" hybrid of packages & software from four distinct Ubuntu series (see this Github project page for more details about that: https://github.com/savoury1/ubuntu-rolling).
 
 -----START USUAL DISCLAIMER-----
 
-There is no warranty offered / no liability assumed for any of the software packages that are published at this PPA. They have been created due me having had patched/home-build versions of some of these packages running on my own system for months if not years. They may work on your system or they may fail terribly and no resonsibility is taken or assumed by myself for anything that might happen due use of any of these packages.
+There is no warranty offered / no liability assumed for any of the software packages that are published at this PPA. Some have been created due me having had patched/home-build versions running on my own system for months if not years, others are backports or new versions of software that have been on my list of desired upgrades for some time. They may work well on your system or they may not work at all and no responsibility is taken or assumed by myself for anything that might happen due use of any of these software packages.
 
 -----END USUAL DISCLAIMER-----
 
-Please report any bugs with any of these packages to me as I'm very much on a learning curve and there may well be some issues here and there. However, so far what is published appears to work in the normal and correct fashion, at least on my own custom hybrid system. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository, pardon the pun, of just about every cryptic, obscure, convoluted acronym ever known (or unknown!) to humankind!  :-)
+Please report any bugs with any of these packages to me as I am very much open to improvements. From testing of the packages here on my own system and some Ubuntu virtual machines, they seem to work well overall at least for me. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository (pardon the pun) of almost every cryptic, obscure, convoluted acronym ever known (or unknown) to humankind! ;-)

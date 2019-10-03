@@ -1,20 +1,14 @@
 See https://github.com/savoury1/ubuntu-rolling for detailed procedures relating to this package and how to (even significantly) upgrade your own Xenial-based system with packages from newer than Xenial series of Ubuntu.
 
-UPDATE (2/9/19): New PPA (now also called ubuntu-enhanced) and new release 0.5 with improvements to "apt-all" for better error handling.
-
-UPDATE (26/8/19): New package ubuntu-enhanced replaces xenial-enhanced and is compatible for installation on five different Ubuntu series (Xenial, Bionic, Cosmic, Disco and Eoan). Gives access to all packages (in all "pockets") in all of the repositories for these series, no matter what series is installed.
-
 -----START EXPERIMENTAL WARNING-----
 
 This package is related to an experimental project and should be understood as not being necessarily useful (and even potentially highly dangerous, in terms of system stability/functionality) for regular users of Ubuntu and Ubuntu-based distributions.
 
-There is _intentionally_ a lot of text in this description to give anyone arriving here a moment of pause, before heading down to the bottom of the page to grab the commands for adding this PPA to your own system (so if you tell readers the direct commands to add this PPA on your blog/site, please also firstly print a link to this exact description page and warn users to have a read before proceeding).
-
-If you know at least some amount about Debian packages, Debian packaging (and manually running apt & dpkg commands, for instance) then you will likely be able to see and understand at least some of what this project is doing.
+If you know at least some amount about Debian packages, Debian packaging (and manually running apt & dpkg commands, for instance) then you will likely be able to see and understand the uses of this project (enhancement to apt-cache for instance).
 
 If you know a good amount about Debian packages, Debian packaging and perhaps even write complex combinations of apt and/or dpkg(-deb) commands in arcane Bash scripts AND want a to-your-needs custom-built Xenial-based Ubuntu (sort of) "rolling release" system, then dive on in!
 
-For users whose knowledge (specifically relative Debian/Ubuntu packaging and/or any Linux based distribution packaging) lies in between (or experts with knowledge far beyond) those two above stated broad groups of user: it is up to you if you want to experiment with this package and/or the procedures at the website.
+For users whose knowledge (relative Debian/Ubuntu packaging and/or any Linux based distribution packaging) lies in between (or experts with knowledge far beyond) the two above stated broad groups of users: it is up to you if you want to experiment with this package and/or the procedures at the website.
 
 *** The entire responsibility for any system breakage lies with the person(s) who use this package and/or the info/scripts given at the linked website. ***
 
@@ -56,28 +50,31 @@ There is also some error handling in "apt-all" relative a critical config file /
 
 Even if you never use the "apt-all" script to grab packages from series other than your own, having the additional other repository pref files installed in the /etc/apt/preferences.d directory with low pin value (50) makes the apt-cache commands more powerful. For instance:
 
-  $ apt-cache policy meld
-  meld:
-    Installed: 3.20.0-2
-    Candidate: 3.20.0-2
-    Version table:
-   *** 3.20.0-2 100
-           50 http://archive.ubuntu.com/ubuntu disco/universe amd64 Packages
-           50 http://archive.ubuntu.com/ubuntu disco/universe i386 Packages
-           50 http://archive.ubuntu.com/ubuntu eoan/universe amd64 Packages
-           50 http://archive.ubuntu.com/ubuntu eoan/universe i386 Packages
-          100 /var/lib/dpkg/status
-       3.18.2-1 50
-           50 http://archive.ubuntu.com/ubuntu cosmic/universe amd64 Packages
-           50 http://archive.ubuntu.com/ubuntu cosmic/universe i386 Packages
-       3.18.0-6 50
-           50 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
-           50 http://archive.ubuntu.com/ubuntu bionic/universe i386 Packages
-       3.14.2-1 500
-          500 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
-          500 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+$ apt-cache policy meld
+meld:
+  Installed: 3.20.1-1sav0
+  Candidate: 3.20.1-1sav0
+  Version table:
+ *** 3.20.1-1sav0 500
+        500 http://ppa.launchpad.net/savoury1/meld/ubuntu bionic/main amd64 P
+        500 http://ppa.launchpad.net/savoury1/meld/ubuntu bionic/main i386 Pa
+        100 /var/lib/dpkg/status
+     3.20.0-2 50
+         50 http://mirror.os6.org/ubuntu disco/universe amd64 Packages
+         50 http://mirror.os6.org/ubuntu disco/universe i386 Packages
+         50 http://mirror.os6.org/ubuntu eoan/universe amd64 Packages
+         50 http://mirror.os6.org/ubuntu eoan/universe i386 Packages
+     3.18.2-1 50
+         50 http://mirror.os6.org/ubuntu cosmic/universe amd64 Packages
+         50 http://mirror.os6.org/ubuntu cosmic/universe i386 Packages
+     3.18.0-6 500
+        500 http://mirror.os6.org/ubuntu bionic/universe amd64 Packages
+        500 http://mirror.os6.org/ubuntu bionic/universe i386 Packages
+     3.14.2-1 50
+         50 http://mirror.os6.org/ubuntu xenial/universe amd64 Packages
+         50 http://mirror.os6.org/ubuntu xenial/universe i386 Packages
 
-This shows all versions of meld from five official series, revealing that the currently installed package version is evidently 3.20.0-2 from Disco/Eoan series (the same package is used for both those series, as revealed by the output of the apt-cache command). It also shows that all repos other than Xenial are currently pinned low (50) with Xenial having usual priority (500) as it is the installed series.
+This shows all versions of meld from five official series as well as from a Launchpad PPA. The currently installed package version is 3.20.1-1sav0 which (in this case) is also the highest version available and thus the "candidate" for the package. All repos other than Bionic are currently pinned low (50) with Bionic having usual priority (500) as it is the installed series.
 
 It's actually quite often very handy to have a fast terminal way to check the versions of any specified package(s) in the five different Ubuntu series in question. As shown, this can be done very simply with "apt-cache policy" (on any of the five series) after this ubuntu-enhanced package is installed.
 
@@ -98,3 +95,11 @@ This invocation would do these tasks:
 So "apt-all" is simple to use and is all about giving a front-end for easy choice from all the packages of four other series of Ubuntu than your own.
 
 FINAL WARNING: While easy to use, "apt-all" is also very powerful (due it allowing install of any/all packages from series other than current) and could destroy the reliability/functionality of an existing installation with careless usage (ie. upgrade/downgrade to newer/older packages without doing necessary homework about dependency/compatibility with other core packages, possibly causing unrecoverable system-breakage). PLEASE BE CAREFUL!!!
+
+*** Updates ***
+
+26/8/19 -- New package ubuntu-enhanced replaces xenial-enhanced and is compatible for installation on five different Ubuntu series (Xenial, Bionic, Cosmic, Disco and Eoan). Gives access to all packages (in all "pockets") in all of the repositories for these series, no matter what series is installed.
+
+2/9/19 -- New PPA (now also called ubuntu-enhanced) and new release 0.5 with improvements to "apt-all" for better error handling.
+
+26/9/19 -- Fixed issue with post installation script on Bionic and newer due official-packages-repositories.list file no longer being used. Enhanced apt setup on series newer than Xenial is now configured correctly!
