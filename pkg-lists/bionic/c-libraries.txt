@@ -11,28 +11,29 @@ B libc6-dev-i386
 B libc6-dev-x32
 B multiarch-support
 B locales
-B libglib2.0-data
-B libglib2.0-0
-B libglib2.0-0:i386
-B libglib2.0-bin
-B libglib2.0-dev-bin
-B libglib2.0-dev
+- libglib2.0-data -- ppa:savoury1/gtk-xenial
+- libglib2.0-0 -- ppa:savoury1/gtk-xenial
+- libglib2.0-0:i386 -- ppa:savoury1/gtk-xenial
+- libglib2.0-bin -- ppa:savoury1/gtk-xenial
+- libglib2.0-dev-bin -- ppa:savoury1/gtk-xenial
+- libglib2.0-dev -- ppa:savoury1/gtk-xenial
 B libglibmm-2.4-1v5
 B libglibmm-2.4-dev
 B libgee-0.8-2
-B libicu60
-B libicu60:i386
-B icu-devtools
-B libicu-le-hb0
-B libiculx60
-B libicu-dev
-B libicu-le-hb-dev
-B libboost-iostreams1.65.1
-B libboost-system1.65.1
-B libboost-filesystem1.65.1
-B libboost-thread1.65.1
-B libboost-locale1.65.1
-B libboost-date-time1.65.1
-B libboost-regex1.65.1
-B libboost-python1.65.1
-B libboost-wave1.65.1
+- libicu60 -- ppa:savoury1/backports
+- libicu60:i386 -- ppa:savoury1/backports
+- icu-devtools -- ppa:savoury1/backports
+- libicu-le-hb0 -- ppa:savoury1/backports
+- libiculx60 -- ppa:savoury1/backports
+- libicu-dev -- ppa:savoury1/backports
+- libicu-le-hb-dev -- ppa:savoury1/backports
+- libboost-iostreams1.65.1 -- ppa:savoury1/backports
+- libboost-system1.65.1 -- ppa:savoury1/backports
+- libboost-filesystem1.65.1 -- ppa:savoury1/backports
+- libboost-program-options1.65.1 -- ppa:savoury1/backports
+- libboost-thread1.65.1 -- ppa:savoury1/backports
+- libboost-locale1.65.1 -- ppa:savoury1/backports
+- libboost-date-time1.65.1 -- ppa:savoury1/backports
+- libboost-regex1.65.1 -- ppa:savoury1/backports
+- libboost-python1.65.1 -- ppa:savoury1/backports
+- libboost-wave1.65.1 -- ppa:savoury1/backports
