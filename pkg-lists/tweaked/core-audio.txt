@@ -1,8 +1,8 @@
-B libsamplerate0
-B libsamplerate0:i386
-B libjack-jackd2-0
-B libjack-jackd2-0:i386
-B libebur128-1
+- libsamplerate0 -- ppa:savoury1/multimedia
+- libsamplerate0:i386 -- ppa:savoury1/multimedia
+- libjack-jackd2-0 -- ppa:savoury1/multimedia
+- libjack-jackd2-0:i386 -- ppa:savoury1/multimedia
+- libebur128-1 -- ppa:savoury1/multimedia
 B libspeex1
 B libspeex1:i386
 B libspeexdsp1
@@ -15,55 +15,55 @@ B libgsm1
 B libspandsp2
 B libsoundtouch1
 B libmusicbrainz5cc2v5
-B libtag1v5-vanilla
-B libtag1v5-vanilla:i386
-B libtag1v5
-B libtag1v5:i386
+- libtag1v5-vanilla -- ppa:savoury1/multimedia
+- libtag1v5-vanilla:i386 -- ppa:savoury1/multimedia
+- libtag1v5 -- ppa:savoury1/multimedia
+- libtag1v5:i386 -- ppa:savoury1/multimedia
 B libid3tag0
 B python-mutagen
-B libwavpack1
-B libwavpack1:i386
-B libflac8
-B libflac8:i386
-B libflac++6v5
-B libvorbis0a
-B libvorbis0a:i386
-B libvorbisenc2
-B libvorbisenc2:i386
-B libvorbisfile3
-B libvorbisfile3:i386
-B libvorbis-dev
-B libsndfile1
-B libsndfile1:i386
-B libshout3
-B libshout3:i386
-B libmpg123-0
-B libmpg123-0:i386
-B libmp3lame0
-B lame
-B libtwolame0
-B twolame
+- libwavpack1 -- ppa:savoury1/multimedia
+- libwavpack1:i386 -- ppa:savoury1/multimedia
+- libflac8 -- ppa:savoury1/multimedia
+- libflac8:i386 -- ppa:savoury1/multimedia
+- libflac++6v5 -- ppa:savoury1/multimedia
+- libvorbis0a -- ppa:savoury1/multimedia
+- libvorbis0a:i386 -- ppa:savoury1/multimedia
+- libvorbisenc2 -- ppa:savoury1/multimedia
+- libvorbisenc2:i386 -- ppa:savoury1/multimedia
+- libvorbisfile3 -- ppa:savoury1/multimedia
+- libvorbisfile3:i386 -- ppa:savoury1/multimedia
+- libvorbis-dev -- ppa:savoury1/multimedia
+- libsndfile1 -- ppa:savoury1/multimedia
+- libsndfile1:i386 -- ppa:savoury1/multimedia
+- libshout3 -- ppa:savoury1/multimedia
+- libshout3:i386 -- ppa:savoury1/multimedia
+- libmpg123-0 -- ppa:savoury1/multimedia
+- libmpg123-0:i386 -- ppa:savoury1/multimedia
+- libmp3lame0 -- ppa:savoury1/multimedia
+- lame -- ppa:savoury1/multimedia
+- libtwolame0 -- ppa:savoury1/multimedia
+- twolame -- ppa:savoury1/multimedia
 B libmad0
 B libmad0:i386
-B libshine3
-B libfaad2
+- libshine3 -- ppa:savoury1/multimedia
+- libfaad2 -- ppa:savoury1/multimedia
 B libfaac0
-B libfdk-aac1
+- libfdk-aac1 -- ppa:savoury1/multimedia
 B liba52-0.7.4
 B libaften0
-B libopus0
-B libopusfile0
-B libmysofa0
-B libmpcdec6
-B libopenmpt0
-B libopenmpt-modplug1
+- libopus0 -- ppa:savoury1/multimedia
+- libopusfile0 -- ppa:savoury1/multimedia
+- libmysofa0 -- ppa:savoury1/multimedia
+- libmpcdec6 -- ppa:savoury1/multimedia
+- libopenmpt0 -- ppa:savoury1/multimedia
+- libopenmpt-modplug1 -- ppa:savoury1/multimedia
 B libdca0
-B libgme0
+- libgme0 -- ppa:savoury1/multimedia
 B libsidplay1v5
 B libsidplay2
 B libkate1
-B libmodplug1
-B libsoxr0
+- libmodplug1 -- ppa:savoury1/multimedia
+- libsoxr0 -- ppa:savoury1/multimedia
 B libsox3
 B libsox-fmt-alsa
 B libsox-fmt-base
@@ -74,54 +74,54 @@ B libserd-0-0
 B libsord-0-0
 B libsratom-0-0
 B liblilv-0-0
-B liborc-0.4-0
-B liborc-0.4-0:i386
+- liborc-0.4-0 -- ppa:savoury1/multimedia
+- liborc-0.4-0:i386 -- ppa:savoury1/multimedia
 B libaudio2
 B libaudio2:i386
 B libao-common
 B libao4
 B libao4:i386
-B libwebrtc-audio-processing1
-B libpulse0
-B libpulse0:i386
-B libpulsedsp
-B libpulsedsp:i386
-B libpulse-mainloop-glib0
-B libpulse-mainloop-glib0:i386
-B libpulse-dev
-B pulseaudio-utils
-B libasound2-data
-B libasound2
-B libasound2:i386
-B libasound2-dev
-B libasound2-plugins
-B libasound2-plugins:i386
+- libwebrtc-audio-processing1 -- ppa:savoury1/multimedia
+- libpulse0 -- ppa:savoury1/multimedia
+- libpulse0:i386 -- ppa:savoury1/multimedia
+- libpulsedsp -- ppa:savoury1/multimedia
+- libpulsedsp:i386 -- ppa:savoury1/multimedia
+- libpulse-mainloop-glib0 -- ppa:savoury1/multimedia
+- libpulse-mainloop-glib0:i386 -- ppa:savoury1/multimedia
+- libpulse-dev -- ppa:savoury1/multimedia
+- pulseaudio-utils -- ppa:savoury1/multimedia
+- libasound2-data -- ppa:savoury1/multimedia
+- libasound2 -- ppa:savoury1/multimedia
+- libasound2:i386 -- ppa:savoury1/multimedia
+- libasound2-dev -- ppa:savoury1/multimedia
+- libasound2-plugins -- ppa:savoury1/multimedia
+- libasound2-plugins:i386 -- ppa:savoury1/multimedia
 B alsa-utils
-B pulseaudio
-B pulseaudio-module-bluetooth
-B pulseaudio-esound-compat
-B libportaudio2
+- pulseaudio -- ppa:savoury1/multimedia
+- pulseaudio-module-bluetooth -- ppa:savoury1/multimedia
+- pulseaudio-esound-compat -- ppa:savoury1/multimedia
+- libportaudio2 -- ppa:savoury1/multimedia
 B librtaudio6
-B libsndio6.1
-B libsndio6.1:i386
-D libsndio7.0 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-D libsndio7.0:i386 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-D libsndio-dev -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-B libopenal-data
-B libopenal1
-B libopenal1:i386
-B libopenal-dev
-B libmikmod3
-B libmikmod3:i386
+- libsndio6.1 -- redundant due new libsndio7.0
+- libsndio6.1:i386 -- redundant due new libsndio7.0
+- libsndio7.0 -- ppa:savoury1/multimedia
+- libsndio7.0:i386 -- ppa:savoury1/multimedia
+- libsndio-dev -- ppa:savoury1/multimedia
+- libopenal-data -- ppa:savoury1/multimedia
+- libopenal1 -- ppa:savoury1/multimedia
+- libopenal1:i386 -- ppa:savoury1/multimedia
+- libopenal-dev -- ppa:savoury1/multimedia
+- libmikmod3 -- ppa:savoury1/multimedia
+- libmikmod3:i386 -- ppa:savoury1/multimedia
 B libportmidi0
 B libportsmf0v5
-B libwildmidi-config
-B libwildmidi2
-B libfluidsynth1
-B libfluidsynth1:i386
-B libflite1
+- libwildmidi-config -- ppa:savoury1/multimedia
+- libwildmidi2 -- ppa:savoury1/multimedia
+- libfluidsynth1 -- redundant due new libfluidsynth2
+- libfluidsynth1:i386 -- redundant due new libfluidsynth2:i386
+- libflite1 -- ppa:savoury1/multimedia
 B libofa0
-B libchromaprint1
-B librubberband2
+- libchromaprint1 -- ppa:savoury1/multimedia
+- librubberband2 -- ppa:savoury1/multimedia
 B libvamp-hostsdk3v5
 B libsuil-0-0
