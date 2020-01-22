@@ -1,28 +1,31 @@
 B lsb-base
 B lsb-release
-B distro-info-data
-B python3-distro-info
-B python3-distupgrade
+- distro-info-data -- ppa:savoury1/build-tools
+- distro-info -- ppa:savoury1/build-tools
+- libdistro-info-perl -- ppa:savoury1/build-tools
+- python-distro-info -- ppa:savoury1/build-tools
+- python3-distro-info -- ppa:savoury1/build-tools
+- python3-distupgrade -- ppa:savoury1/build-tools
 B ubuntu-release-upgrader-core
 B python3-update-manager
 B update-manager-core
 B update-notifier-common
 B libept1.5.0
-B aptitude-common
-B aptitude
-B apt
-B apt-utils
-B apt-transport-https
-B libpackagekit-glib2-18
-B gir1.2-packagekitglib-1.0
-B aptdaemon-data
-B python-aptdaemon
-B python-aptdaemon.gtk3widgets
-B python3-aptdaemon
-B python3-aptdaemon.gtk3widgets
-B aptdaemon
-B apt-file
-B apt-rdepends
+- aptitude-common -- ppa:savoury1/apt-xenial
+- aptitude -- ppa:savoury1/apt-xenial
+- apt -- ppa:savoury1/apt-xenial
+- apt-utils -- ppa:savoury1/apt-xenial
+- apt-transport-https -- ppa:savoury1/apt-xenial
+- libpackagekit-glib2-18 -- ppa:savoury1/qt-xenial
+- gir1.2-packagekitglib-1.0 -- ppa:savoury1/qt-xenial
+- aptdaemon-data -- ppa:savoury1/apt-xenial
+- python-aptdaemon -- ppa:savoury1/apt-xenial
+- python-aptdaemon.gtk3widgets -- ppa:savoury1/apt-xenial
+- python3-aptdaemon -- ppa:savoury1/apt-xenial
+- python3-aptdaemon.gtk3widgets -- ppa:savoury1/apt-xenial
+- aptdaemon -- ppa:savoury1/apt-xenial
+- apt-file -- ppa:savoury1/apt-xenial
+- apt-rdepends -- ppa:savoury1/apt-xenial
 B python-pkg-resources
 B python3-pkg-resources
 B python-setuptools
@@ -30,23 +33,24 @@ B python3-setuptools
 B libnih1
 B libnih-dbus1
 B ureadahead
-B dpkg
-B libdpkg-perl
-B dpkg-dev
+- dpkg -- ppa:savoury1/build-tools
+- libdpkg-perl -- ppa:savoury1/build-tools
+- dpkg-dev -- ppa:savoury1/build-tools
 B dpkg-repack
 B binutils-common
 B binutils-x86-64-linux-gnu
 B binutils
 B binutils-multiarch
 B libbinutils
-B nasm
+- nasm -- ppa:savoury1/backports
+B yasm
 B sbsigntool
-B libelf1
-B libelf1:i386
-B libelf-dev
-B libdw1
-B libdw-dev
-B dwz
+- libelf1 -- ppa:savoury1/backports
+- libelf1:i386 -- ppa:savoury1/backports
+- libelf-dev -- ppa:savoury1/backports
+- libdw1 -- ppa:savoury1/backports
+- libdw-dev -- ppa:savoury1/backports
+- dwz -- ppa:savoury1/build-tools
 B libdisasm0
 B libllvm4.0
 B libllvm4.0:i386
@@ -55,57 +59,109 @@ B libllvm6.0:i386
 B libllvm7
 B libllvm7:i386
 B libclang1-7
-B libllvm8
-B libllvm8:i386
-B libclang1-8
-B lintian
-B make
-B cmake-data
-B cmake
+- libllvm8 -- ppa:savoury1/llvm-toolchain
+- libllvm8:i386 -- ppa:savoury1/llvm-toolchain
+- libclang1-8 -- ppa:savoury1/llvm-toolchain
+- lintian -- ppa:savoury1/build-tools
+- make -- ppa:savoury1/build-tools
+- cmake-data -- ppa:savoury1/build-tools
+- cmake -- ppa:savoury1/build-tools
 B diffstat
 B diffutils
 B patchutils
-B quilt
-B m4
-B flex
-B libfl2
-B libfl-dev
+- quilt -- ppa:savoury1/build-tools
+- m4 -- ppa:savoury1/build-tools
+- flex -- ppa:savoury1/build-tools
+- libfl2 -- ppa:savoury1/build-tools
+- libfl-dev -- ppa:savoury1/build-tools
 B libbison-dev
 B bison
-B autotools-dev
-B autoconf
-B autoconf-archive
-B automake
+- autotools-dev -- ppa:savoury1/build-tools
+- autoconf2.13 -- ppa:savoury1/build-tools
+- autoconf -- ppa:savoury1/build-tools
+- autoconf-archive -- ppa:savoury1/build-tools
+- automake -- ppa:savoury1/build-tools
 B checkinstall
-B dh-autoreconf
-B dh-python
-B libfakeroot
-B fakeroot
+- dh-autoreconf -- ppa:savoury1/build-tools
+- dh-python -- ppa:savoury1/build-tools
+- libfakeroot -- ppa:savoury1/build-tools
+- fakeroot -- ppa:savoury1/build-tools
 B makedumpfile
 B libdebian-installer4
 B archdetect-deb
-B libfile-stripnondeterminism-perl
-B dh-strip-nondeterminism
-B debhelper
+B libsgmls-perl
+- po4a -- ppa:savoury1/build-tools
+- libfile-stripnondeterminism-perl -- ppa:savoury1/build-tools
+- dh-strip-nondeterminism -- ppa:savoury1/build-tools
+- debhelper -- ppa:savoury1/build-tools
+- dh-translations -- ppa:savoury1/build-tools
 B dh-make
 B dput
 B deborphan
 B pkg-config
+- pkg-kde-tools -- ppa:savoury1/build-tools
+B chrpath
 B debconf
 B debconf-i18n
 B debconf-utils
-B po-debconf
+- po-debconf -- ppa:savoury1/build-tools
 B libdebconfclient0
 B python3-debconf
-B debootstrap
-B squashfs-tools
-B snapd
+- sensible-utils -- ppa:savoury1/backports
+- maven-repo-helper -- ppa:savoury1/build-tools
+- javahelper -- ppa:savoury1/build-tools
+B ant
+- debootstrap -- ppa:savoury1/build-tools
+B vmdebootstrap
+- pbuilder -- ppa:savoury1/build-tools
+- cowdancer -- ppa:savoury1/build-tools
+- cowbuilder -- ppa:savoury1/build-tools
+B libeatmydata1
+B eatmydata
+- python3-dateutil -- ppa:savoury1/python
+- git-buildpackage -- ppa:savoury1/build-tools
+- libxdelta2 -- ppa:savoury1/build-tools
+- xdelta -- ppa:savoury1/build-tools
+B xdelta3
+- pristine-tar -- ppa:savoury1/build-tools
+B dctrl-tools
+- devscripts -- ppa:savoury1/build-tools
+B autodep8
+B autopkgtest
+B schroot-common
+B schroot
+B libfile-fnmatch-perl
+B debsums
+- python-lzma -- same version in Xenial and Bionic
+B piuparts-common
+B piuparts
+B python-bzrlib
+B bzr
+B bzr-builder
+B ubuntu-dev-tools
+B python-ubuntutools
+- python-lazr.uri -- same version in Xenial and Bionic
+B python-wadllib
+- python-lazr.restfulclient -- ppa:savoury1/build-tools
+- python-launchpadlib -- ppa:savoury1/build-tools
+B libsubunit0
+B libsubunit-dev
+B check
 B libconfig9
+- gnome-common -- ppa:savoury1/build-tools
+- cli-common-dev -- same version in Xenial and Bionic
+- python3-alabaster -- ppa:savoury1/python
+- python3-imagesize -- ppa:savoury1/python
+- sphinx-common -- ppa:savoury1/python
+- python3-sphinx -- ppa:savoury1/python
+- libjs-sphinxdoc -- ppa:savoury1/python
+- python3-scour -- ppa:savoury1/build-tools
+- scour -- ppa:savoury1/build-tools
+- cdbs -- ppa:savoury1/build-tools
+- gnome-pkg-tools -- ppa:savoury1/build-tools
 B librpmio8
 B librpm8
 B rpm-common
 B rpm2cpio
-B sensible-utils
-B dctrl-tools
-B devscripts
-B gnome-common
+B squashfs-tools
+B snapd
