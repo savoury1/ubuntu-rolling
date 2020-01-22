@@ -1,26 +1,145 @@
-The table below summarises the software that is published at this Launchpad site. Packages with their own PPA (eg. GParted) are also regularly copied to a collection PPA (eg. GParted -> Utilities). This allows easy access to most software packages published here by simply adding a few collection PPAs. 
+The table below shows most of the software published at this Launchpad site. Source packages with their own PPA (eg. GParted) are copied to a collection PPA (eg. GParted -> Utilities). Some software packages with the same name are in two different PPAs to give access to two distinct versions (eg. FFmpeg).
 
 +============+==============================================================+
-  Collection | Software includes
+  Collection | Packages include
 +============+==============================================================+
 
-   Backports = Bash, Curl, OpenSSL, MATE Dock Applet, brotli, f2fs-tools,
-               geoip, geoip-database, isync, keepass2, libidn2, libpsl,
-               libsodium, lighttpd, nghttp2, p7zip, publicsuffix, rar
+     digiKam = digikam, exiv2, gdal, imagemagick, jasper, lensfun,
+      (v6.4.0) libmediawiki, libpng1.6, opencv, qtav, vtk6
 
-      Python = boto, httplib2, imaplib2
+        GIMP = babl, fontconfig, freetype, gegl, gimp, glib2.0, harfbuzz,
+    (v2.10.14) libmypaint, mypaint-brushes, pango1.0, poppler
 
-     Android = boringssl, libselinux, libunwind, libnativehelper, system-core
-               (incl. adb), system-extras
+       VLC 3 = libmicrodns, libnfs, libplacebo, libspatialaudio, protobuf,
+      (v3.0.8) vlc
 
-   Utilities = GParted, Meld, Métamorphose, Minisign, unrar, vnStat, Xfe
+         mpv = mpv (v0.29.1 for Xenial & v0.31.0 for newer series)
 
-    Graphics = Exiv2, ImageJ, XScreenSaver
+       GPG 2 = gnupg2, gpa, gpgme1.0, libassuan, libgcrypt20, libgpg-error,
+     (v2.2.17) libksba
 
-  Multimedia = SDL2, sndio, SOFA (audio)
+  Encryption = cryptsetup, libgcrypt20, libgpg-error, systemd (Xenial only),
+               veracrypt (from ppa:unit193/encryption)
+
+    Graphics = cairo, exiv2, gdk-pixbuf, gexiv2, ghostscript, gl2ps, imagej,
+               imagemagick, jasper, jbig2dec, lcms2, lensfun, leptonlib,
+               libgd2, libheif, libjpeg-turbo, libpng1.6, libraw, libspiro,
+               libwebp, libwmf, libzstd, nasm, opencv, openjpeg2, sane-
+               backends, tesseract, tesseract-lang, tiff, vtk6, xscreensaver
+
+  Multimedia = alsa-lib, aom, aribb24, asm, chromaprint, codec2, fdk-aac,
+               flac, flite, frei0r, game-music-emu, graphene, gst-libav1.0,
+               gst-plugins-bad1.0, gst-plugins-base1.0, gst-plugins-good1.0,
+               gst-plugins-ugly1.0, gstreamer1.0, jack-audio-connection-kit,
+               jackd2, lame, libass, libbluray, libebml, libebur128,
+               libmediainfo, libmodplug, libmysofa, libnice, libogg,
+               libopenmpt, libsdl2, libsndfile, libsoxr, libsrtp2, libva,
+               libva-utils, libvidstab, libvorbis, libvpx, libwebp, libzen,
+               lirc, mediainfo, nasm, norm, opus, opus-tools, opusfile,
+               pulseaudio, readline, rtmpdump, rubberband, shine, snappy,
+               sndio, tinyxml2, v4l-utils, wavpack, webrtc-audio-processing,
+               wildmidi, x264, x265, xvidcore, zeromq3
+
+    FFmpeg 4 = ffmpeg (v4.2.2)
+
+    FFmpeg 3 = ffmpeg (v3.4.6 for Xenial only)
 
        Games = DOSBox, DBGL (DOSBox Game Launcher), Quakespasm (Quake) &
                Yamagi Quake (Quake II) engines
+
+   Utilities = gparted, meld, metamorphose2, minisign, psensor, rar, unrar,
+               vnstat, xfe
+
+   Backports = aria2, asm, bash, bash-completion, bcmwl, boost-defaults,
+               boost1.65.1, brotli, bzip2, ca-certificates, curl, e2fsprogs,
+               enca, expat, f2fs-tools, fontconfig, freetype, gdal, geoip,
+               geoip-database, gettext, googletest, gpsd, grep, gzip,
+               harfbuzz, hdf5, hicolor-icon-theme, htop, icu, icu-le-hb,
+               isync, keepass2, libarchive, libasyncns, libdap, libidn2,
+               libjsoncpp, libpng1.6, libpsl, libsodium, libsoup2.4, libssh,
+               libuv1, libva, libva-utils, libvpx, libxml2, libzstd,
+               lighttpd, lz4, mate-dock-applet, mysql-defaults, nano, nasm,
+               nghttp2, ogdi-dfsg, openssl, openssl1.0, p7zip, p7zip-rar,
+               perl, pigz, poppler, pps-tools, protobuf, publicsuffix, py*-
+               boto, py*-httplib2, py*-imaplib2, rar, readline, sed, snappy,
+               system-config-printer, tar, tinyxml, tinyxml2, unzip, wayland,
+               wayland-protocols, wget, woff2, xapian-core, xz-utils, zlib
+
+      Python = alabaster, dh-python, pygments, pysimplesoap, pytest, *attrs,
+               *boto, *coverage, *funcsigs, *httplib2, *hypothesis,
+               *imagesize, *imaplib2, *pluggy, *py, *typing, setuptools-scm,
+               sip4, sphinx, sphinx-rtd-theme, sphinxcontrib-websupport
+
+ Build Tools = asm, autoconf, autoconf-archive, autoconf-dickey,
+               automake-1.15, autotools-dev, binutils, binutils-mingw-w64,
+               cdbs, cmake, cowdancer, debhelper, debian-archive-keyring,
+               debian-keyring, debootstrap, desktop-file-utils, devscripts,
+               dh-autoreconf, dh-buildinfo, dh-python, distro-info, distro-
+               info-data, doxygen, dpatch, dpkg, dwz, gcc-mingw-w64, git-
+               buildpackage, gnome-pkg-tools, googletest, gtk-doc,
+               lazr.restfulclient, libarchive-cpio-perl, libdoxygen-filter-
+               perl, libjsoncpp, libsass, libtool, lintian, m4, make-dfsg,
+               maven-repo-helper, meson, mingw-w64, nasm, ninja-build,
+               pbuilder, pkg-kde-tools, po-debconf, po4a, pristine-tar,
+               py*-distro, py*-launchpadlib, py*-unidiff, quilt, sassc,
+               scons, scour, shellcheck, strip-nondeterminism, ubuntu-
+               keyring, xapian-core, xdelta
+
+  TeX / Live = poppler, tex-common, tex-gyre, texhyphj, texinfo, texinfo-
+ (Xenial only) doc-nonfree, texlive-base, texlive-bin, texlive-extra,
+               texlive-lang, texmaker, texstudio, texworks, texworks-manual
+
+     Android = *boringssl, *libselinux, *libunwind, *libnativehelper,
+ (Xenial only) *system-core (incl. adb), *system-extras, f2fs-tools, p7zip
+
+         APT = appstream, appstream-glib, apt, apt-file, aptdaemon, aptitude,
+ (Xenial only) autoconf-archive, bash, bash-completion, boost-defaults,
+               boost1.65.1, glib2.0, gobject-introspection, libapt-pkg-perl,
+               libzstd, packagekit, python-apt, python-debian, system-config-
+               printer, xapian-core
+
+   GTK 2 & 3 = adwaita-icon-theme, cairo, glib2.0, gobject-introspection,
+ (Xenial only) graphene, gtk+2.0, gtk+3.0, gtksourceview3, harfbuzz, hicolor-
+               icon-theme, indicator-sound-switcher, json-glib, meld, mint-
+               themes, mint-themes-gtk3, pango1.0, vala, wayland-protocols,
+               webkit2gtk
+
+    Qt 4 & 5 = accounts-qml-module, appstream, glib2.0, gobj*-introspection,
+ (Xenial only) libaccounts-glib, libaccounts-qt, libdbusmenu-qt, libqtpas,
+               libquazip, mint-artwork-common, openssl, packagekit,
+               packagekit-qt, polkit-qt-1, pyqt5, pysimplesoap, py*-httplib2,
+               python-qt4, qca2, qt3d*, qt4-x11, qt5ct, qtav, qtbase*,
+               qtcharts*, qtchooser, qtconnectivity*, qtdeclarative*, qtdoc*,
+               qtgraphicaleffects*, qtimageformats*, qtlocation*,
+               qtmultimedia*, qtpim*, qtquickcontrols*, qtquickcontrols2*,
+               qtscript*, qtsensors*, qtserialport*, qtspeech*,
+               qtstyleplugins*, qtsvg*, qttools*, qttranslations*,
+               qtvirtualkeyboard*, qtwayland*, qtwebchannel*, qtwebengine*,
+               qtwebkit-examples*, qtwebkit*, qtwebkit-source, qtwebsockets*,
+               qtwebview*, qtx11extras*, qtxmlpatterns*, signon, signon-
+               plugin-oauth2, signon-ui, sip4, sni-qt
+
+  KDE 5.44.0 = akonadi, akonadi-contacts, akonadi-mime, attica-kf5, breeze-
+ (Xenial only) icons, extra-cmake-modules, frameworkintegration, grantlee5,
+               kaccounts-integration, kactivities-kf5, karchive, kauth,
+               kbookmarks, kcalcore, kcmutils, kcodecs, kcompletion, kconfig,
+               kconfigwidgets, kcontacts, kcoreaddons, kcrash, kdbusaddons,
+               kdeclarative, kded, kdelibs4support, kdesignerplugin, kdesu,
+               kdewebkit, kdnssd-kf5, kdoctools, kemoticons, kfilemetadata-
+               kf5, kglobalaccel, kguiaddons, khtml, ki18n, kiconthemes,
+               kidletime, kinit, kio, kirigami, kirigami2, kitemmodels,
+               kitemviews, kjobwidgets, kjs, kmediaplayer, kmime, knewstuff,
+               knotifications, knotifyconfig, kpackage, kparts, kpimtextedit,
+               kplotting, kpty, kross, krunner, kservice, ksyntax-
+               highlighting, ktextwidgets, kunitconversion, kwallet-kf5,
+               kwayland, kwidgetsaddons, kwindowsystem, kxmlgui,
+               kxmlrpcclient, libical, libkcddb, libkf5kdcraw, libkf5kexiv2,
+               libkf5kipi, libkf5libkleo, libkf5sane, libmediawiki, marble,
+               networkmanager-qt, oxygen-icons5, plasma-framework, prison-
+               kf5, purpose, signon-kwallet-extension, solid, sonnet,
+               threadweaver
+
+  * denotes a shorthand package name with a common prefix or suffix removed
 
 +============+==============================================================+
 
@@ -34,4 +153,4 @@ There is no warranty offered / no liability assumed for any of the software pack
 
 -----END USUAL DISCLAIMER-----
 
-Please report any bugs with any of these packages to me as I am very much open to improvements. From testing of the packages here on my own system and some Ubuntu virtual machines, they seem to work well overall at least for me. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository (pardon the pun) of almost every cryptic, obscure, convoluted acronym ever known (or unknown) to humankind! ;-)
+Please report any bugs with any of these packages to me as I am very much open to improvements. From testing of the packages here on my own systems and some Ubuntu virtual machines they seem to work well overall, at least for me. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository (pardon the pun) of almost every cryptic, obscure, convoluted acronym ever known (or unknown) to humankind! ;-)

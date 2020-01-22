@@ -39,8 +39,8 @@ B libshout3
 B libshout3:i386
 B libmpg123-0
 B libmpg123-0:i386
-B libmp3lame0
-B lame
+- libmp3lame0 -- backport now in ppa:savoury1/multimedia
+- lame -- backport now in ppa:savoury1/multimedia
 B libtwolame0
 B twolame
 B libmad0
@@ -102,17 +102,17 @@ B pulseaudio-module-bluetooth
 B pulseaudio-esound-compat
 B libportaudio2
 B librtaudio6
-B libsndio6.1
-B libsndio6.1:i386
-D libsndio7.0 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-D libsndio7.0:i386 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-D libsndio-dev -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
-B libopenal-data
-B libopenal1
-B libopenal1:i386
-B libopenal-dev
-B libmikmod3
-B libmikmod3:i386
+- libsndio6.1
+- libsndio6.1:i386
+- libsndio7.0 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
+- libsndio7.0:i386 -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
+- libsndio-dev -- required by libsdl2-2.0-0 (2.0.8+dfsg1-4ubuntu1) Cosmic
+- libopenal-data
+- libopenal1
+- libopenal1:i386
+- libopenal-dev
+- libmikmod3
+- libmikmod3:i386
 B libportmidi0
 B libportsmf0v5
 B libwildmidi-config

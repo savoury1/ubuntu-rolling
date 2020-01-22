@@ -70,7 +70,7 @@ B libpwquality-common
 B libpwquality1
 B liboauth0
 B libcrypto++6
-B python-oauth
+- python-oauth -- superseded by python-oauthlib
 B python-oauthlib
 B python3-oauthlib
 B python-asn1crypto

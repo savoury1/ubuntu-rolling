@@ -4,7 +4,7 @@ See https://github.com/savoury1/ubuntu-rolling for detailed procedures relating 
 
 This package is related to an experimental project and should be understood as not being necessarily useful (and even potentially highly dangerous, in terms of system stability/functionality) for regular users of Ubuntu and Ubuntu-based distributions.
 
-If you know at least some amount about Debian packages, Debian packaging (and manually running apt & dpkg commands, for instance) then you will likely be able to see and understand the uses of this project (enhancement to apt-cache for instance).
+If you know at least some amount about Debian packages, Debian packaging (and manually running apt & dpkg commands, for instance) then you might well see the uses of this project (enhancement to the apt-cache command for instance).
 
 If you know a good amount about Debian packages, Debian packaging and perhaps even write complex combinations of apt and/or dpkg(-deb) commands in arcane Bash scripts AND want a to-your-needs custom-built Xenial-based Ubuntu (sort of) "rolling release" system, then dive on in!
 
@@ -26,7 +26,7 @@ This package was designed and created on a Xenial-based system (Linux Mint 18.1 
 
 Thus, it became important to be able to upgrade Serena (while keeping GTK2 based MATE 1.16) to Bionic-era (and newer) packages. The "ubuntu-enhanced" package in this PPA and this whole project is the result of that intention to make a Serena Enhanced (initially) and then more general Xenial Enhanced "rolling release" installation process.
 
-Having five series of packages and package information (specifically Xenial, Bionic, Cosmic, Disco and Eoan series) available can be very useful (ie. see the "apt-cache" section below). From ubuntu-enhanced v0.4 and higher it is compatible for installation on any of the five mentioned series. So no matter which series is running, the installation process of ubuntu-enhanced will determine the four other series to add to the apt/dpkg system (with low pin priority being default) such that one can access packages (and package info) from multiple series.
+Having five series of packages and package information (specifically Xenial, Bionic, Cosmic, Disco and Eoan series) available can be very useful (ie. see the "apt-cache" section below). From ubuntu-enhanced v0.5 and higher it is compatible for installation on any of the five mentioned series. So no matter which series is running, the installation process of ubuntu-enhanced will determine the four other series to add to the apt/dpkg system (with low pin priority being default) such that one can access packages (and package info) from multiple series.
 
 *** Scripted pinning -- apt/dpkg ***
 

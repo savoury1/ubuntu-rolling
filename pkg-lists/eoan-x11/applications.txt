@@ -32,11 +32,11 @@ D xscreensaver -- latest available version
 E kleopatra -- latest available version
 E kolourpaint -- latest available version
 E kolourpaint4 -- latest available version
-E kipi-plugins-common -- latest available version
-E kipi-plugins -- latest available version
-E digikam-data -- latest available version
-E digikam-private-libs -- latest available version
-E digikam -- latest available version
+- kipi-plugins-common -- no longer used by digiKam 6.x
+- kipi-plugins -- no longer used by digiKam 6.x
+- digikam-data -- latest version at ppa:savoury1/digikam
+- digikam-private-libs -- latest version at ppa:savoury1/digikam
+- digikam -- latest version at ppa:savoury1/digikam
 E librttr-core0.9.6 -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
 E kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
 E kdenlive -- latest available version

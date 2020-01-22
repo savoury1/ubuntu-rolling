@@ -89,6 +89,8 @@ B fakeroot
 B makedumpfile
 B libdebian-installer4
 B archdetect-deb
+B libsgmls-perl
+B po4a
 B libfile-stripnondeterminism-perl
 B dh-strip-nondeterminism
 B debhelper
@@ -148,6 +150,9 @@ B check
 B libconfig9
 B gnome-common
 B cli-common-dev
+B python3-alabaster
+B sphinx-common
+B python3-sphinx
 B python3-scour
 B scour
 B cdbs

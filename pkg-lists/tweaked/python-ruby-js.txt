@@ -27,6 +27,14 @@ B python3-cupshelpers
 B python3-requests-unixsocket
 B python3-problem-report
 B python3-apport
+B python3-tz
+B python-babel-localedata
+B python3-babel
+B python3-roman
+B docutils-common
+B python3-docutils
+B python3-jinja2
+B python3-pygments
 B python-jwt
 B python3-jwt
 B python-hyperlink

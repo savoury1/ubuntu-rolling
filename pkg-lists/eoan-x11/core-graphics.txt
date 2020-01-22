@@ -87,8 +87,8 @@ B libexif12:i386
 B libgdiplus
 B libpotrace0
 B libpano13-3
-B enblend
-B enfuse
+- enblend -- backported to ppa:savoury1/graphics
+- enfuse -- backported to ppa:savoury1/graphics
 B libgraphicsmagick-q16-3
 B imagemagick-6-common
 B imagemagick-common
@@ -117,14 +117,14 @@ E libgphoto2-6 -- latest available version
 E libgphoto2-6:i386 -- same series as libgphoto2-6 (2.5.23-2) Eoan
 E gphoto2 -- same series as libgphoto2-6 (2.5.23-2) Eoan
 B entangle
-B libsane-common
-B libsane1
-B libsane1:i386
-B sane-utils
+- libsane-common
+- libsane
+- libsane:i386
+- sane-utils
 B simple-scan
 B libplacebo4
-B libbabl-0.1-0
-B libgegl-0.3-0
-B libmypaint-common
-B libmypaint-1.3-0
-B mypaint-brushes
+- libbabl-0.1-0 -- ppa:savoury1/gimp
+- libgegl-0.3-0 -- ppa:savoury1/gimp
+- libmypaint-common -- ppa:savoury1/gimp
+- libmypaint-1.3-0 -- ppa:savoury1/gimp
+- mypaint-brushes -- ppa:savoury1/gimp
