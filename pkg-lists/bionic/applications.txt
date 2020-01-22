@@ -19,40 +19,40 @@ B libgtkhex-3-0
 B ghex
 B gthumb-data
 B gthumb
-B hugin-data
-B hugin-tools
-B hugin
-B libij-java
-B imagej
-B xscreensaver-data
-B xscreensaver-data-extra
-B xscreensaver-gl
-B xscreensaver-gl-extra
-B xscreensaver
+- hugin-data -- ppa:savoury1/graphics
+- hugin-tools -- ppa:savoury1/graphics
+- hugin -- ppa:savoury1/graphics
+- libij-java -- ppa:savoury1/graphics
+- imagej -- ppa:savoury1/graphics
+- xscreensaver-data -- ppa:savoury1/graphics
+- xscreensaver-data-extra -- ppa:savoury1/graphics
+- xscreensaver-gl -- ppa:savoury1/graphics
+- xscreensaver-gl-extra -- ppa:savoury1/graphics
+- xscreensaver -- ppa:savoury1/graphics
 B kleopatra
 B kolourpaint
 B kolourpaint4
-B kipi-plugins-common
-B kipi-plugins
-B digikam-data
-B digikam-private-libs
-B digikam
+- kipi-plugins-common -- no longer used by digiKam 6.x
+- kipi-plugins -- no longer used by digiKam 6.x
+- digikam-data -- ppa:savoury1/digikam
+- digikam-private-libs -- ppa:savoury1/digikam
+- digikam -- ppa:savoury1/digikam
 B kdenlive-data
 B kdenlive
-B libk3b7
-B libk3b7-extracodecs
-B k3b-i18n
-B k3b-data
-B k3b
-B meld
+- libk3b7 -- ppa:savoury1/multimedia 
+- libk3b7-extracodecs -- ppa:savoury1/multimedia
+- k3b-i18n -- ppa:savoury1/multimedia
+- k3b-data -- ppa:savoury1/multimedia
+- k3b -- ppa:savoury1/multimedia
+- meld -- ppa:savoury1/meld
 B 4pane
 B hexchat-common
 B hexchat
-B pidgin-data
-B libpurple0
-B libpurple-bin
-B pidgin
-B pidgin-libnotify
+- pidgin-data -- ppa:savoury1/backports
+- libpurple0 -- ppa:savoury1/backports
+- libpurple-bin -- ppa:savoury1/backports
+- pidgin -- ppa:savoury1/backports
+- pidgin-libnotify -- ppa:savoury1/backports
 B deluge-common
 B deluge-gtk
 B deluge

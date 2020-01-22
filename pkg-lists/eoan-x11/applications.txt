@@ -19,44 +19,44 @@ B libgtkhex-3-0
 B ghex
 B gthumb-data
 B gthumb
-B hugin-data
-B hugin-tools
-B hugin
-E libij-java -- same version as imagej (1.52p-1) Eoan
-E imagej -- latest version
-D xscreensaver-data -- required by xscreensaver (5.42+dfsg1-1ubuntu1) Disco
-D xscreensaver-data-extra -- addition for xscreensaver (5.42+dfsg1-1ubuntu1) Disco
-D xscreensaver-gl -- required by xscreensaver-gl-data (5.42+dfsg1-1ubuntu1) Disco
-D xscreensaver-gl-extra -- addition for xscreensaver (5.42+dfsg1-1ubuntu1) Disco
-D xscreensaver -- latest available version
+- hugin-data -- ppa:savoury1/graphics
+- hugin-tools -- ppa:savoury1/graphics
+- hugin -- ppa:savoury1/graphics
+- libij-java -- ppa:savoury1/graphics
+- imagej -- ppa:savoury1/graphics
+- xscreensaver-data -- ppa:savoury1/graphics
+- xscreensaver-data-extra -- ppa:savoury1/graphics
+- xscreensaver-gl -- ppa:savoury1/graphics
+- xscreensaver-gl-extra -- ppa:savoury1/graphics
+- xscreensaver -- ppa:savoury1/graphics
 E kleopatra -- latest available version
 E kolourpaint -- latest available version
 E kolourpaint4 -- latest available version
 - kipi-plugins-common -- no longer used by digiKam 6.x
 - kipi-plugins -- no longer used by digiKam 6.x
-- digikam-data -- latest version at ppa:savoury1/digikam
-- digikam-private-libs -- latest version at ppa:savoury1/digikam
-- digikam -- latest version at ppa:savoury1/digikam
+- digikam-data -- ppa:savoury1/digikam
+- digikam-private-libs -- ppa:savoury1/digikam
+- digikam -- ppa:savoury1/digikam
 E librttr-core0.9.6 -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
 E kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
 E kdenlive -- latest available version
-E libk3b7 -- latest available version
-E libk3b7-extracodecs -- latest available version
-E k3b-i18n -- latest available version
-E k3b-data -- latest available version
-E k3b -- latest available version
+- libk3b7 -- ppa:savoury1/multimedia 
+- libk3b7-extracodecs -- ppa:savoury1/multimedia
+- k3b-i18n -- ppa:savoury1/multimedia
+- k3b-data -- ppa:savoury1/multimedia
+- k3b -- ppa:savoury1/multimedia
 D winff-data -- same series as winff (1.5.5-6) Disco
 D winff-qt -- same series as winff (1.5.5-6) Disco
 D winff -- required by ffmpeg (7:4.1.4-1sergeyd2.1~xenial1)
-D meld -- latest available version
+- meld -- ppa:savoury1/meld
 B 4pane
 B hexchat-common
 B hexchat
-B pidgin-data
-B libpurple0
-B libpurple-bin
-B pidgin
-B pidgin-libnotify
+- pidgin-data -- ppa:savoury1/backports
+- libpurple0 -- ppa:savoury1/backports
+- libpurple-bin -- ppa:savoury1/backports
+- pidgin -- ppa:savoury1/backports
+- pidgin-libnotify -- ppa:savoury1/backports
 B deluge-common
 B deluge-gtk
 B deluge
