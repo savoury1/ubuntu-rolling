@@ -1,42 +1,42 @@
-B libbz2-1.0
-B libbz2-1.0:i386
-B libbz2-dev
-B bzip2
+- libbz2-1.0 -- ppa:savoury1/backports
+- libbz2-1.0:i386 -- ppa:savoury1/backports
+- libbz2-dev -- ppa:savoury1/backports
+- bzip2 -- ppa:savoury1/backports
 B pbzip2
-B zlib1g
-B zlib1g:i386
-B zlib1g-dev
-B zlib1g-dev:i386
-B lib32z1
-B liblz4-1
-B liblz4-1:i386
-B liblzma5
-B liblzma5:i386
-B liblzma-dev
-B xz-utils
+- zlib1g -- ppa:savoury1/backports
+- zlib1g:i386 -- ppa:savoury1/backports
+- zlib1g-dev -- ppa:savoury1/backports
+- zlib1g-dev:i386 -- ppa:savoury1/backports
+- lib32z1 -- ppa:savoury1/backports
+- liblz4-1 -- ppa:savoury1/backports
+- liblz4-1:i386 -- ppa:savoury1/backports
+- liblzma5 -- ppa:savoury1/backports
+- liblzma5:i386 -- ppa:savoury1/backports
+- liblzma-dev -- ppa:savoury1/backports
+- xz-utils -- ppa:savoury1/backports
 B cpio
-B libzstd1
-B zstd
-B pigz
-B tar
-B gzip
+- libzstd1 -- ppa:savoury1/backports
+- zstd -- ppa:savoury1/backports
+- pigz -- ppa:savoury1/backports
+- tar -- ppa:savoury1/backports
+- gzip -- ppa:savoury1/backports
 B zip
-B unzip
-B unrar
-B rar
-B p7zip
-B p7zip-full
-B p7zip-rar
+- unzip -- ppa:savoury1/backports
+- unrar -- ppa:savoury1/utilities
+- rar -- ppa:savoury1/utilities
+- p7zip -- ppa:savoury1/backports
+- p7zip-full -- ppa:savoury1/backports
+- p7zip-rar -- ppa:savoury1/backports
 B libzip4
 B libminizip1
-B libarchive13
-B libsnappy1v5
-B libsnappy-dev
+- libarchive13 -- ppa:savoury1/backports
+- libsnappy1v5 -- ppa:savoury1/backports
+- libsnappy-dev -- ppa:savoury1/backports
 B libblosc1
 B libaec0
 B libsz2
 B libaec-dev
-B libbrotli1
+- libbrotli1 -- ppa:savoury1/backports
 B libmagic-mgc
 B libmagic1
 B file
@@ -62,9 +62,10 @@ B libjsoncpp1
 B libfastjson4
 B libjansson4
 B libjson-c3
-B libjson-glib-1.0-common
-B libjson-glib-1.0-0
-B gir1.2-json-1.0
+- libjson-glib-1.0-common -- ppa:savoury1/gtk-xenial
+- libjson-glib-1.0-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-json-1.0 -- ppa:savoury1/gtk-xenial
+B python-simplejson
 B libyajl2
 B libyaml-0-2
 B libyaml-cpp0.5v5
@@ -72,48 +73,49 @@ B libestr0
 B libcroco3
 B libcroco3:i386
 B libhdf4-0-alt
-B hdf5-helpers
-B libhdf5-100
-B libhdf5-cpp-100
-B libhdf5-dev
-B libxapian30
+- hdf5-helpers -- ppa:savoury1/backports
+- libhdf5-100 -- ppa:savoury1/backports
+- libhdf5-cpp-100 -- ppa:savoury1/backports
+- libhdf5-dev -- ppa:savoury1/backports
+- libxapian30 -- ppa:savoury1/backports
 B libclucene-core1v5
 B libclucene-contribs1v5
-B libsynctex1
-B libkpathsea6
+- libsynctex1 -- ppa:savoury1/tex-xenial
+- libkpathsea6 -- ppa:savoury1/tex-xenial
 B intltool
 B libxerces-c3.2
-B xml-core
-B libxml2
-B libxml2:i386
-B libxml2-utils
-B libxml2-dev
-B libxslt1.1
-B libxslt1.1:i386
-B xsltproc
-B libexpat1
-B libexpat1:i386
-B libexpat1-dev
-B libtinyxml2-6
-B libtinyxml2.6.2v5
+- xml-core -- ppa:savoury1/build-tools
+- libxml2 -- ppa:savoury1/backports
+- libxml2:i386 -- ppa:savoury1/backports
+- libxml2-utils -- ppa:savoury1/backports
+- libxml2-dev -- ppa:savoury1/backports
+- libxslt1.1 -- ppa:savoury1/backports
+- libxslt1.1:i386 -- ppa:savoury1/backports
+- xsltproc -- ppa:savoury1/backports
+- libexpat1 -- ppa:savoury1/backports
+- libexpat1:i386 -- ppa:savoury1/backports
+- libexpat1-dev -- ppa:savoury1/backports
+- libtinyxml2-6 -- redundant due libtinyxml2-6a
+- libtinyxml2-6a -- ppa:savoury1/backports
+- libtinyxml2.6.2v5 -- ppa:savoury1/backports
 B libpugixml1v5
 B libraptor2-0
 B librasqal3
 B librdf0
 B doc-base
-B sgml-base
+- sgml-base -- ppa:savoury1/build-tools
 B libosp5
 B opensp
 B libostyle1c2
 B openjade
-B docbook
-B docbook-to-man
+- docbook -- identical version in Xenial and Bionic
+- docbook-to-man -- ppa:savoury1/build-tools
 B docbook-dsssl
-B docbook-xml
-B docbook-xsl
+- docbook-xml -- ppa:savoury1/build-tools
+- docbook-xsl -- ppa:savoury1/build-tools
 B highlight-common
 B highlight
-B gtk-doc-tools
+- gtk-doc-tools -- ppa:savoury1/build-tools
 B gnome-doc-utils
 B librarian0
 B rarian-compat
@@ -127,4 +129,4 @@ B libgmime-2.6-0
 B libgmime2.6-cil
 B libgmime-3.0-0
 B libdotconf0
-B libappstream-glib8
+- libappstream-glib8 -- ppa:savoury1/apt-xenial
