@@ -74,4 +74,3 @@ B ruby-pango
 B ruby-gtk2
 B libjs-jquery
 B libjs-underscore
-B libjs-sphinxdoc

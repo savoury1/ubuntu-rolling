@@ -3,16 +3,16 @@ B libaa1:i386
 B libcaca0
 B libcaca0:i386
 B libcaca-dev
-B libjpeg-turbo8
-B libjpeg-turbo8:i386
-B libjpeg-turbo8-dev
-B libturbojpeg
-B libjpeg8
-B libjpeg8:i386
-B libjpeg-dev
+- libjpeg-turbo8 -- ppa:savoury1/graphics
+- libjpeg-turbo8:i386 -- ppa:savoury1/graphics
+- libjpeg-turbo8-dev -- ppa:savoury1/graphics
+- libturbojpeg -- ppa:savoury1/graphics
+- libjpeg8 -- identical version in Xenial and Bionic
+- libjpeg8:i386 -- identical version in Xenial and Bionic
+- libjpeg-dev -- identical version in Xenial and Bionic
 B libjpeg9
-B libjpeg-turbo-progs
-B libopenjp2-7
+- libjpeg-turbo-progs -- ppa:savoury1/graphics
+- libopenjp2-7 -- ppa:savoury1/graphics
 B libcharls1
 B libgdcm2.8
 B libjbig0
@@ -20,32 +20,32 @@ B libjbig0:i386
 B libjbig-dev
 B libjbig2dec0
 B libgif7
-B libtiff5
-B libtiff5:i386
-B libtiffxx5
-B libtiff5-dev
-B libtiff-dev
-B libpng16-16
-B libpng16-16:i386
-B libpng-dev
-B libpng-dev:i386
+- libtiff5 -- ppa:savoury1/graphics
+- libtiff5:i386 -- ppa:savoury1/graphics
+- libtiffxx5 -- ppa:savoury1/graphics
+- libtiff5-dev -- ppa:savoury1/graphics
+- libtiff-dev -- ppa:savoury1/graphics
+- libpng16-16 -- ppa:savoury1/graphics
+- libpng16-16:i386 -- ppa:savoury1/graphics
+- libpng-dev -- ppa:savoury1/graphics
+- libpng-dev:i386 -- ppa:savoury1/graphics
 B libart-2.0-2
 B python-renderpm
-B libwebp6
-B libwebp6:i386
-B libwebpmux3
-B libwebpdemux2
-B libilmbase12
+- libwebp6 -- ppa:savoury1/graphics
+- libwebp6:i386 -- ppa:savoury1/graphics
+- libwebpmux3 -- ppa:savoury1/graphics
+- libwebpdemux2 -- ppa:savoury1/graphics
+- libilmbase12 -- identical version in Xenial and Bionic
 D libilmbase23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 B libopenexr22
 D libopenexr23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
-B libvigraimpex6
-B libvigraimpex-dev
+- libvigraimpex6 -- ppa:savoury1/graphics
+- libvigraimpex-dev -- ppa:savoury1/graphics
 B libfox-1.6-0
-B liblcms2-2
-B liblcms2-2:i386
-B liblcms2-utils
-B liblcms2-dev
+- liblcms2-2 -- ppa:savoury1/graphics
+- liblcms2-2:i386 -- ppa:savoury1/graphics
+- liblcms2-utils -- ppa:savoury1/graphics
+- liblcms2-dev -- ppa:savoury1/graphics
 B argyll-ref
 B argyll
 B libcolord2
@@ -55,12 +55,12 @@ B colord-data
 B colord
 B libopencolorio1v5
 B libopenimageio1.7
-B libcairo2
-B libcairo2:i386
-B libcairo-gobject2
-B libcairo-gobject2:i386
-B libcairo-script-interpreter2
-B libcairo2-dev
+- libcairo2 -- ppa:savoury1/graphics
+- libcairo2:i386 -- ppa:savoury1/graphics
+- libcairo-gobject2 -- ppa:savoury1/graphics
+- libcairo-gobject2:i386 -- ppa:savoury1/graphics
+- libcairo-script-interpreter2 -- ppa:savoury1/graphics
+- libcairo2-dev -- ppa:savoury1/graphics
 B libcairomm-1.0-1v5
 B libcairomm-1.0-dev
 B librsvg2-2
@@ -68,63 +68,63 @@ B librsvg2-2:i386
 B librsvg2-common
 B librsvg2-common:i386
 B gir1.2-rsvg-2.0
-B libwmf0.2-7
-B libwmf0.2-7-gtk
+- libwmf0.2-7 -- ppa:savoury1/graphics
+- libwmf0.2-7-gtk -- ppa:savoury1/graphics
 B icoutils
-B libgd3
-B libgd3:i386
-B libgd-dev
+- libgd3 -- ppa:savoury1/graphics
+- libgd3:i386 -- ppa:savoury1/graphics
+- libgd-dev -- ppa:savoury1/graphics
 B libcoin80v5
 B libnetpbm10
 B netpbm
-B libgdk-pixbuf2.0-common
-B libgdk-pixbuf2.0-0
-B libgdk-pixbuf2.0-0:i386
-B gir1.2-gdkpixbuf-2.0
-B libgdk-pixbuf2.0-dev
-B libexif12
-B libexif12:i386
+- libgdk-pixbuf2.0-common -- ppa:savoury1/graphics
+- libgdk-pixbuf2.0-0 -- ppa:savoury1/graphics
+- libgdk-pixbuf2.0-0:i386 -- ppa:savoury1/graphics
+- gir1.2-gdkpixbuf-2.0 -- ppa:savoury1/graphics
+- libgdk-pixbuf2.0-dev -- ppa:savoury1/graphics
+- libexif12 -- ppa:savoury1/graphics
+- libexif12:i386 -- ppa:savoury1/graphics
 B libgdiplus
 B libpotrace0
 B libpano13-3
-- enblend -- backported to ppa:savoury1/graphics
-- enfuse -- backported to ppa:savoury1/graphics
+- enblend -- ppa:savoury1/graphics
+- enfuse -- ppa:savoury1/graphics
 B libgraphicsmagick-q16-3
-B imagemagick-6-common
-B imagemagick-common
-B libmagickcore-6.q16-3
-B libmagickwand-6.q16-3
-B libmagick++-6.q16-7
-B imagemagick-6.q16
-B imagemagick
+- imagemagick-6-common -- ppa:savoury1/graphics
+- imagemagick-common -- ppa:savoury1/graphics
+- libmagickcore-6.q16-3 -- ppa:savoury1/graphics
+- libmagickwand-6.q16-3 -- ppa:savoury1/graphics
+- libmagick++-6.q16-7 -- ppa:savoury1/graphics
+- imagemagick-6.q16 -- ppa:savoury1/graphics
+- imagemagick -- ppa:savoury1/graphics
 B libopenobex2
 B obex-data-server
 B libexempi3
 B libexiv2-14
-B exiv2
-B libgexiv2-2
-B gir1.2-gexiv2-0.10
+- exiv2 -- ppa:savoury1/graphics
+- libgexiv2-2 -- ppa:savoury1/graphics
+- gir1.2-gexiv2-0.10 -- ppa:savoury1/graphics
 B python-pyexiv2
 B libraw16
-B liblensfun-data-v1
-B liblensfun1
+- liblensfun-data-v1 -- ppa:savoury1/graphics
+- liblensfun1 -- ppa:savoury1/graphics
 B liblqr-1-0
 D dcraw -- latest available version
-E libgphoto2-l10n -- same series as libgphoto2-6 (2.5.23-2) Eoan
-E libgphoto2-port12 -- same series as libgphoto2-6 (2.5.23-2) Eoan
-E libgphoto2-port12:i386 -- same series as libgphoto2-6 (2.5.23-2) Eoan
-E libgphoto2-6 -- latest available version
-E libgphoto2-6:i386 -- same series as libgphoto2-6 (2.5.23-2) Eoan
-E gphoto2 -- same series as libgphoto2-6 (2.5.23-2) Eoan
-B entangle
-- libsane-common
-- libsane
-- libsane:i386
-- sane-utils
+- libgphoto2-l10n -- ppa:savoury1/graphics
+- libgphoto2-port12 -- ppa:savoury1/graphics
+- libgphoto2-port12:i386 -- ppa:savoury1/graphics
+- libgphoto2-6 -- ppa:savoury1/graphics
+- libgphoto2-6:i386 -- ppa:savoury1/graphics
+- gphoto2 -- ppa:savoury1/graphics
+- entangle -- ppa:savoury1/graphics
+- libsane-common -- ppa:savoury1/graphics
+- libsane1 -- ppa:savoury1/graphics
+- libsane1:i386 -- ppa:savoury1/graphics
+- sane-utils -- ppa:savoury1/graphics
 B simple-scan
-B libplacebo4
+- libplacebo4 -- superseded by libplacebo7
 - libbabl-0.1-0 -- ppa:savoury1/gimp
-- libgegl-0.3-0 -- ppa:savoury1/gimp
+- libgegl-0.3-0 -- superseded by libgegl-0.4-0
 - libmypaint-common -- ppa:savoury1/gimp
-- libmypaint-1.3-0 -- ppa:savoury1/gimp
+- libmypaint-1.3-0 -- superseded by libmypaint-1.4-0
 - mypaint-brushes -- ppa:savoury1/gimp
