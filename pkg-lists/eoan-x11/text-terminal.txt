@@ -59,8 +59,8 @@ B xxd
 B vim-common
 B vim-tiny
 B ncdu
-- libcdk5 -- obsolete by libcdk5nc6 (5.0.20180306-3) Cosmic
-D libcdk5nc6 -- required by gphoto2 (2.5.17-1build1) Cosmic
+- libcdk5 -- ppa:savoury1/backports
+- libcdk5nc6 -- required by gphoto2 (2.5.17-1build1) Cosmic
 B libedit2
 B libedit2:i386
 B dialog
