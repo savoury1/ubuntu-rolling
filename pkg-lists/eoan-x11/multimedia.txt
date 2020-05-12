@@ -1,8 +1,8 @@
-B libsdl1.2debian
-B libsdl1.2debian:i386
-B libsdl1.2-dev
-B libsdl-image1.2
-B libsdl-image1.2:i386
+- libsdl1.2debian -- ppa:savoury1/multimedia
+- libsdl1.2debian:i386 -- ppa:savoury1/multimedia
+- libsdl1.2-dev -- ppa:savoury1/multimedia
+- libsdl-image1.2 -- ppa:savoury1/multimedia
+- libsdl-image1.2:i386 -- ppa:savoury1/multimedia
 B libsdl-ttf2.0-0
 B libsdl-ttf2.0-0:i386
 B libsdl-net1.2
@@ -12,10 +12,16 @@ B libsdl-sound1.2
 - libsdl2-2.0-0:i386 -- ppa:savoury1/multimedia
 - libsdl2-dev -- ppa:savoury1/multimedia
 - libsdl2-ttf-2.0-0 -- ppa:savoury1/multimedia
+- libva2 -- ppa:savoury1/multimedia
+- libva-drm2 -- ppa:savoury1/multimedia
+- libva-x11-2 -- ppa:savoury1/multimedia
+- libva-glx2 -- ppa:savoury1/multimedia
+- libva-wayland2 -- ppa:savoury1/multimedia
+- libgtkglext1 -- ppa:savoury1/multimedia
 B libvisual-0.4-0
 B libvisual-0.4-0:i386
 B libvisual-0.4-plugins
-- libmicrodns0 - ppa:savoury1/vlc3-mate
+- libmicrodns0 -- ppa:savoury1/vlc3{-mate}
 B libtotem-plparser-common
 B libtotem-plparser18
 - libass9 -- ppa:savoury1/multimedia
@@ -35,27 +41,30 @@ B libgavl1
 - liblavplay-2.1-0 -- ppa:savoury1/multimedia
 - mjpegtools -- ppa:savoury1/multimedia
 B libmpeg2-4
-B libzvbi-common
-B libzvbi0
+- libzvbi-common -- ppa:savoury1/multimedia
+- libzvbi0 -- ppa:savoury1/multimedia
 B libzbar0
-B libaribb24-0
+- libaribb24-0 -- ppa:savoury1/multimedia
 B libuchardet0
-B libebml4v5
-B libmatroska6v5
-B libbasicusageenvironment1
-B libusageenvironment3
-B libgroupsock8
-- libx264-152 -- superseded by libx265-155
+- libebml4v5 -- ppa:savoury1/multimedia
+- libmatroska6v5 -- ppa:savoury1/multimedia
+- libbasicusageenvironment1 -- ppa:savoury1/vlc3{-mate}
+- libusageenvironment3 -- ppa:savoury1/vlc3{-mate}
+- libgroupsock8 -- ppa:savoury1/vlc3{-mate}
+- libx264-152 -- superseded by libx264-155
+- libx264-155 -- ppa:savoury1/multimedia
 - libx265-146 -- superseded by libx265-179
+- libx264-155 -- ppa:savoury1/multimedia
 D libde265-0 -- latest available version
-B libheif1
+B libheif1 -- ppa:savoury1/multimedia
 B libtheora0
 B libtheora0:i386
 - libvpx5 -- ppa:savoury1/backports
 - libvpx6 -- ppa:savoury1/multimedia
 - libvpx-dev -- ppa:savoury1/multimedia
-B libcrystalhd3
+- libcrystalhd3 -- ppa:savoury1/multimedia
 - libcodec2-0.7 -- superseded by libcodec2-0.8.1
+- libcodec2-0.8.1 -- ppa:savoury1/multimedia
 - libxvidcore4 -- ppa:savoury1/multimedia
 - libavutil55 -- ppa:savoury1/multimedia
 - libswscale4 -- ppa:savoury1/multimedia
@@ -73,7 +82,7 @@ E libmlt6 -- required by melt (6.16.0-3) Eoan
 E melt -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
 - libmpv1 -- ppa:savoury1/mpv
 - mpv -- ppa:savoury1/mpv
-B libflann1.9
+- libflann1.9 -- ppa:savoury1/multimedia
 - libgslcblas0 -- ppa:savoury1/backports
 - libgsl23 -- ppa:savoury1/backports
 - libguvcview-2.0-2 -- ppa:savoury1/multimedia
@@ -107,11 +116,11 @@ B libmms0
 - gstreamer1.0-plugins-good -- ppa:savoury1/multimedia
 - gstreamer1.0-plugins-bad -- ppa:savoury1/multimedia
 - gstreamer1.0-plugins-ugly -- ppa:savoury1/multimedia
-B libfarstream-0.2-5
+- libfarstream-0.2-5 -- ppa:savoury1/multimedia
 B libdmapsharing-3.0-2
 B libgrilo-0.3-0
-B liblirc-client0
-B liblircclient0
+- liblirc-client0 -- ppa:savoury1/multimedia
+- liblircclient0 -- ppa:savoury1/multimedia
 B rhythmbox-data
 B librhythmbox-core10
 B gir1.2-rb-3.0

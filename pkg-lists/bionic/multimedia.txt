@@ -1,116 +1,126 @@
-B libsdl1.2debian
-B libsdl1.2debian:i386
-B libsdl1.2-dev
-B libsdl-image1.2
-B libsdl-image1.2:i386
+- libsdl1.2debian -- ppa:savoury1/multimedia
+- libsdl1.2debian:i386 -- ppa:savoury1/multimedia
+- libsdl1.2-dev -- ppa:savoury1/multimedia
+- libsdl-image1.2 -- ppa:savoury1/multimedia
+- libsdl-image1.2:i386 -- ppa:savoury1/multimedia
 B libsdl-ttf2.0-0
 B libsdl-ttf2.0-0:i386
 B libsdl-net1.2
 B libsdl-net1.2:i386
 B libsdl-sound1.2
-B libsdl2-2.0-0
-B libsdl2-2.0-0:i386
-B libsdl2-dev
-B libsdl2-ttf-2.0-0
+- libsdl2-2.0-0 -- ppa:savoury1/multimedia
+- libsdl2-2.0-0:i386 -- ppa:savoury1/multimedia
+- libsdl2-dev -- ppa:savoury1/multimedia
+- libsdl2-ttf-2.0-0 -- ppa:savoury1/multimedia
+- libva2 -- ppa:savoury1/multimedia
+- libva-drm2 -- ppa:savoury1/multimedia
+- libva-x11-2 -- ppa:savoury1/multimedia
+- libva-glx2 -- ppa:savoury1/multimedia
+- libva-wayland2 -- ppa:savoury1/multimedia
+- libgtkglext1 -- ppa:savoury1/multimedia
 B libvisual-0.4-0
 B libvisual-0.4-0:i386
 B libvisual-0.4-plugins
-B libmicrodns0
+- libmicrodns0 -- ppa:savoury1/vlc3{-mate}
 B libtotem-plparser-common
 B libtotem-plparser18
-B libass9
+- libass9 -- ppa:savoury1/multimedia
 B libdv4
 B libdv4:i386
-B libv4lconvert0
-B libv4lconvert0:i386
-B libv4l-0
-B libv4l-0:i386
+- libv4lconvert0 -- ppa:savoury1/multimedia
+- libv4lconvert0:i386 -- ppa:savoury1/multimedia
+- libv4l-0 -- ppa:savoury1/multimedia
+- libv4l-0:i386 -- ppa:savoury1/multimedia
 B libgavl1
-B libquicktime2
-B libmjpegutils-2.1-0
-B libmpeg2encpp-2.1-0
-B libmplex2-2.1-0
-B liblavfile-2.1-0
-B liblavjpeg-2.1-0
-B liblavplay-2.1-0
-B mjpegtools
+- libquicktime2 -- ppa:savoury1/multimedia
+- libmjpegutils-2.1-0 -- ppa:savoury1/multimedia
+- libmpeg2encpp-2.1-0 -- ppa:savoury1/multimedia
+- libmplex2-2.1-0 -- ppa:savoury1/multimedia
+- liblavfile-2.1-0 -- ppa:savoury1/multimedia
+- liblavjpeg-2.1-0 -- ppa:savoury1/multimedia
+- liblavplay-2.1-0 -- ppa:savoury1/multimedia
+- mjpegtools -- ppa:savoury1/multimedia
 B libmpeg2-4
-B libzvbi-common
-B libzvbi0
+- libzvbi-common -- ppa:savoury1/multimedia
+- libzvbi0 -- ppa:savoury1/multimedia
 B libzbar0
-B libaribb24-0
+- libaribb24-0 -- ppa:savoury1/multimedia
 B libuchardet0
-B libebml4v5
-B libmatroska6v5
-B libbasicusageenvironment1
-B libusageenvironment3
-B libgroupsock8
-B libx264-152
-B libx265-146
+- libebml4v5 -- ppa:savoury1/multimedia
+- libmatroska6v5 -- ppa:savoury1/multimedia
+- libbasicusageenvironment1 -- ppa:savoury1/vlc3{-mate}
+- libusageenvironment3 -- ppa:savoury1/vlc3{-mate}
+- libgroupsock8 -- ppa:savoury1/vlc3{-mate}
+- libx264-152 -- superseded by libx264-155
+- libx264-155 -- ppa:savoury1/multimedia
+- libx265-146 -- superseded by libx265-179
+- libx264-155 -- ppa:savoury1/multimedia
 B libde265-0
-B libheif1
+B libheif1 -- ppa:savoury1/multimedia
 B libtheora0
 B libtheora0:i386
-B libvpx5
-B libvpx-dev
-B libcrystalhd3
-B libcodec2-0.7
-B libxvidcore4
-B libavutil55
-B libswscale4
-B libswresample2
-B libpostproc54
-B libavcodec57
-B libavformat57
-B libavresample3
-B libavfilter6
-B libavdevice57
+- libvpx5 -- ppa:savoury1/backports
+- libvpx6 -- ppa:savoury1/multimedia
+- libvpx-dev -- ppa:savoury1/multimedia
+- libcrystalhd3 -- ppa:savoury1/multimedia
+- libcodec2-0.7 -- superseded by libcodec2-0.8.1
+- libcodec2-0.8.1 -- ppa:savoury1/multimedia
+- libxvidcore4 -- ppa:savoury1/multimedia
+- libavutil55 -- ppa:savoury1/multimedia
+- libswscale4 -- ppa:savoury1/multimedia
+- libswresample2 -- ppa:savoury1/multimedia
+- libpostproc54 -- ppa:savoury1/multimedia
+- libavcodec57 -- ppa:savoury1/multimedia
+- libavformat57 -- ppa:savoury1/multimedia
+- libavresample3 -- ppa:savoury1/multimedia
+- libavfilter6 -- ppa:savoury1/multimedia
+- libavdevice57 -- ppa:savoury1/multimedia
 B libmovit8
 B libmlt-data
 B libmlt++3
 B libmlt6
 B melt
-B libmpv1
-B mpv
-B libflann1.9
-B libgslcblas0
-B libgsl23
-B libguvcview-2.0-2
-B guvcview
-B libsrtp0
-B libsrtp2-1
-B librtmp1
+- libmpv1 -- ppa:savoury1/mpv
+- mpv -- ppa:savoury1/mpv
+- libflann1.9 -- ppa:savoury1/multimedia
+- libgslcblas0 -- ppa:savoury1/backports
+- libgsl23 -- ppa:savoury1/backports
+- libguvcview-2.0-2 -- ppa:savoury1/multimedia
+- guvcview -- ppa:savoury1/multimedia
+- libsrtp0 -- ppa:savoury1/multimedia
+- libsrtp2-1 -- ppa:savoury1/multimedia
+- librtmp1 -- ppa:savoury1/multimedia
 B libmms0
-B libzen0v5
-B libmediainfo0v5
-B mediainfo
-B mediainfo-gui
-B libnice10
-B gstreamer1.0-nice
-B libgstreamer1.0-0
-B libgstreamer1.0-0:i386
-B gir1.2-gstreamer-1.0
-B gstreamer1.0-tools
-B libgstreamer-gl1.0-0
-B libgstreamer-plugins-base1.0-0
-B libgstreamer-plugins-base1.0-0:i386
-B gir1.2-gst-plugins-base-1.0
-B gstreamer1.0-alsa
-B gstreamer1.0-x
-B libgstreamer-plugins-good1.0-0
-B gstreamer1.0-pulseaudio
-B libgstreamer-plugins-bad1.0-0
-B gstreamer1.0-libav
-B gstreamer1.0-plugins-base
-B gstreamer1.0-plugins-base-apps
-B gstreamer1.0-plugins-good
-B gstreamer1.0-plugins-bad
-B gstreamer1.0-plugins-ugly
-B libfarstream-0.2-5
+- libzen0v5 -- ppa:savoury1/multimedia
+- libmediainfo0v5 -- ppa:savoury1/multimedia
+- mediainfo -- ppa:savoury1/multimedia
+- mediainfo-gui -- ppa:savoury1/multimedia
+- libnice10 -- ppa:savoury1/multimedia
+- gstreamer1.0-nice -- ppa:savoury1/multimedia
+- libgstreamer1.0-0 -- ppa:savoury1/multimedia
+- libgstreamer1.0-0:i386 -- ppa:savoury1/multimedia
+- gir1.2-gstreamer-1.0 -- ppa:savoury1/multimedia
+- gstreamer1.0-tools -- ppa:savoury1/multimedia
+- libgstreamer-gl1.0-0 -- ppa:savoury1/multimedia
+- libgstreamer-plugins-base1.0-0 -- ppa:savoury1/multimedia
+- libgstreamer-plugins-base1.0-0:i386 -- ppa:savoury1/multimedia
+- gir1.2-gst-plugins-base-1.0 -- ppa:savoury1/multimedia
+- gstreamer1.0-alsa -- ppa:savoury1/multimedia
+- gstreamer1.0-x -- ppa:savoury1/multimedia
+- libgstreamer-plugins-good1.0-0 -- ppa:savoury1/multimedia
+- gstreamer1.0-pulseaudio -- ppa:savoury1/multimedia
+- libgstreamer-plugins-bad1.0-0 -- ppa:savoury1/multimedia
+- gstreamer1.0-libav -- ppa:savoury1/multimedia
+- gstreamer1.0-plugins-base -- ppa:savoury1/multimedia
+- gstreamer1.0-plugins-base-apps -- ppa:savoury1/multimedia
+- gstreamer1.0-plugins-good -- ppa:savoury1/multimedia
+- gstreamer1.0-plugins-bad -- ppa:savoury1/multimedia
+- gstreamer1.0-plugins-ugly -- ppa:savoury1/multimedia
+- libfarstream-0.2-5 -- ppa:savoury1/multimedia
 B libdmapsharing-3.0-2
 B libgrilo-0.3-0
-B liblirc-client0
-B liblircclient0
+- liblirc-client0 -- ppa:savoury1/multimedia
+- liblircclient0 -- ppa:savoury1/multimedia
 B rhythmbox-data
 B librhythmbox-core10
 B gir1.2-rb-3.0
