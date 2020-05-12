@@ -1,3 +1,6 @@
+- debian-keyring -- ppa:savoury1/build-tools
+- debian-archive-keyring -- ppa:savoury1/build-tools
+- ubuntu-keyring -- ppa:savoury1/build-tools
 B lsb-base
 B lsb-release
 - distro-info-data -- ppa:savoury1/build-tools
@@ -26,10 +29,10 @@ B libept1.5.0
 - aptdaemon -- ppa:savoury1/apt-xenial
 - apt-file -- ppa:savoury1/apt-xenial
 - apt-rdepends -- ppa:savoury1/apt-xenial
-B python-pkg-resources
-B python3-pkg-resources
-B python-setuptools
-B python3-setuptools
+- python-pkg-resources -- ppa:savoury1/python
+- python3-pkg-resources -- ppa:savoury1/python
+- python-setuptools -- ppa:savoury1/python
+- python3-setuptools -- ppa:savoury1/python
 B libnih1
 B libnih-dbus1
 B ureadahead
@@ -132,7 +135,7 @@ B schroot-common
 B schroot
 B libfile-fnmatch-perl
 B debsums
-- python-lzma -- same version in Xenial and Bionic
+- python-lzma -- Xenial has same version as Bionic
 B piuparts-common
 B piuparts
 B python-bzrlib
@@ -140,7 +143,7 @@ B bzr
 B bzr-builder
 B ubuntu-dev-tools
 B python-ubuntutools
-- python-lazr.uri -- same version in Xenial and Bionic
+- python-lazr.uri -- Xenial has same version as Bionic
 B python-wadllib
 - python-lazr.restfulclient -- ppa:savoury1/build-tools
 - python-launchpadlib -- ppa:savoury1/build-tools
@@ -149,7 +152,7 @@ B libsubunit-dev
 B check
 B libconfig9
 - gnome-common -- ppa:savoury1/build-tools
-- cli-common-dev -- same version in Xenial and Bionic
+- cli-common-dev -- Xenial has same version as Bionic
 - python3-alabaster -- ppa:savoury1/python
 - python3-imagesize -- ppa:savoury1/python
 - sphinx-common -- ppa:savoury1/python
