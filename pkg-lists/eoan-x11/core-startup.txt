@@ -68,5 +68,6 @@ B libsystemd0
 B libsystemd0:i386
 B systemd
 B systemd-sysv
+B systemd-container
 B libpam-systemd
 B friendly-recovery

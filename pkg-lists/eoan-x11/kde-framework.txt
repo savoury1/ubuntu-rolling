@@ -133,6 +133,8 @@ E libkf5wallet-data
 E libkwalletbackend5-5
 E libkf5wallet5
 E libkf5wallet-bin
+E libpam-kwallet-common
+E libpam-kwallet5
 - libkf5akonadiprivate5 -- obsolete by libkf5akonadicore5abi1 (4:18.04.3-0ubuntu2) Cosmic
 E libkf5akonadiprivate5abi2 -- required by libkf5akonadicore5abi1 (4:18.12.3-0ubuntu3) Disco
 E libkf5akonadicore5abi1
