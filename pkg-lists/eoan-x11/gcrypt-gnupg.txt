@@ -1,38 +1,35 @@
-B debian-keyring
-B debian-archive-keyring
-B ubuntu-keyring
-B libgpg-error0
-B libgpg-error0:i386
-B libgpg-error-dev
-B libgcrypt20
-B libgcrypt20:i386
-B libgcrypt20-dev
-B libassuan0
-B libksba8
-D gpgconf -- ppa:nephirus/ppa-gnupg
-D gpg-agent -- ppa:nephirus/ppa-gnupg
-D gnupg-agent -- ppa:nephirus/ppa-gnupg
-D gnupg-utils -- ppa:nephirus/ppa-gnupg
-D dirmngr -- ppa:nephirus/ppa-gnupg
-D gpgsm -- ppa:nephirus/ppa-gnupg
-D gpgv -- ppa:nephirus/ppa-gnupg
-D gpg -- ppa:nephirus/ppa-gnupg
-D gpg-wks-client -- ppa:nephirus/ppa-gnupg
-D gpg-wks-server -- ppa:nephirus/ppa-gnupg
-D gnupg-l10n -- ppa:nephirus/ppa-gnupg
-D gnupg -- ppa:nephirus/ppa-gnupg
-D gnupg2 -- ppa:nephirus/ppa-gnupg
-D scdaemon -- ppa:nephirus/ppa-gnupg
-D libgpgme11 -- ppa:nephirus/ppa-gnupg
-D libgpgmepp6 -- ppa:nephirus/ppa-gnupg
-~ python3-gpg -- ppa:nephirus/ppa-gnupg (modded version needed for Python 3.7)
-D gpa -- same series as ppa:nephirus/ppa-gnupg
-B libgck-1-0
-B libgck-1-0:i386
-B libgcr-base-3-1
-B libgcr-base-3-1:i386
-B libgcr-ui-3-1
-B gcr
+- libgpg-error0 -- ppa:savoury1/gpg
+- libgpg-error0:i386 -- ppa:savoury1/gpg
+- libgpg-error-dev -- ppa:savoury1/gpg
+- libgcrypt20 -- ppa:savoury1/gpg
+- libgcrypt20:i386 -- ppa:savoury1/gpg
+- libgcrypt20-dev -- ppa:savoury1/gpg
+- libassuan0 -- ppa:savoury1/gpg
+- libksba8 -- ppa:savoury1/gpg
+- gpgconf -- ppa:savoury1/gpg
+- gpg-agent -- ppa:savoury1/gpg
+- gnupg-agent -- ppa:savoury1/gpg
+- gnupg-utils -- ppa:savoury1/gpg
+- dirmngr -- ppa:savoury1/gpg
+- gpgsm -- ppa:savoury1/gpg
+- gpgv -- ppa:savoury1/gpg
+- gpg -- ppa:savoury1/gpg
+- gpg-wks-client -- ppa:savoury1/gpg
+- gpg-wks-server -- ppa:savoury1/gpg
+- gnupg-l10n -- ppa:savoury1/gpg
+- gnupg -- ppa:savoury1/gpg
+- gnupg2 -- ppa:savoury1/gpg
+- scdaemon -- ppa:savoury1/gpg
+- libgpgme11 -- ppa:savoury1/gpg
+- libgpgmepp6 -- ppa:savoury1/gpg
+- python3-gpg -- ppa:savoury1/gpg
+- gpa -- ppa:savoury1/gpg
+- libgck-1-0 -- ppa:savoury1/gtk-xenial
+- libgck-1-0:i386 -- ppa:savoury1/gtk-xenial
+- libgcr-base-3-1 -- ppa:savoury1/gtk-xenial
+- libgcr-base-3-1:i386 -- ppa:savoury1/gtk-xenial
+- libgcr-ui-3-1 -- ppa:savoury1/gtk-xenial
+- gcr -- ppa:savoury1/gtk-xenial
 B pinentry-gnome3
 B gnome-keyring
 B libpam-gnome-keyring
