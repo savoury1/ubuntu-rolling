@@ -2,3 +2,5 @@ B|bionic
 C|cosmic
 D|disco
 E|eoan
+F|focal
+G|groovy
