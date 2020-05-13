@@ -45,7 +45,7 @@ B kde-runtime
 B libkxmlrpcclient4
 B libgpgme++2v5
 B libkactivities6
-B libdlrestrictions1
+- libdlrestrictions1 -- ppa:savoury1/build-tools
 B breeze-icon-theme
 B oxygen5-icon-theme
 B oxygen-icon-theme
