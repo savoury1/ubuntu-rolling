@@ -1,6 +1,6 @@
-D libkeyutils1 -- same series as libkrb5-3 (1.17-1) Disco
-D libkeyutils1:i386 -- same series as libkrb5-3 (1.17-1) Disco
-D keyutils -- same series as libkrb5-3 (1.17-1) Disco
+- libkeyutils1 -- ppa:savoury1/virtualisation
+- libkeyutils1:i386 -- ppa:savoury1/virtualisation
+- keyutils -- ppa:savoury1/virtualisation
 D krb5-locales -- same series as libgssapi-krb5-2 (1.17-1) Disco
 D libkrb5support0 -- same series as libgssapi-krb5-2 (1.17-1) Disco
 D libkrb5support0:i386 -- same series as libgssapi-krb5-2 (1.17-1) Disco
@@ -20,7 +20,7 @@ D libp11-kit0:i386 -- same series as libp11-kit0 (0.23.15-2) Disco
 D libp11-kit-dev -- same series as libp11-kit0 (0.23.15-2) Disco
 D p11-kit -- same series as libp11-kit0 (0.23.15-2) Disco
 D p11-kit-modules -- same series as libp11-kit0 (0.23.15-2) Disco
-D libopts25
+- libopts25 -- ppa:savoury1/encryption
 D libunbound2 -- same series as libhogweed4 (3.4.1-1) Disco
 E libgnutls30 -- latest available version
 E libgnutls30:i386 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
@@ -56,10 +56,10 @@ B libgssapi3-heimdal:i386
 B libldap-common
 B libldap-2.4-2
 B libldap-2.4-2:i386
-B libssl1.0.0
-B libssl1.0.0:i386
-E libssl1.1 -- latest available version
-E libssl1.1:i386 -- same series as libssl1.1 (1.1.1c-1ubuntu3) Eoan
-E libssl-dev -- same series as libssl1.1 (1.1.1c-1ubuntu3) Eoan
-B openssl
+- libssl1.0.0 -- ppa:savoury1/backports
+- libssl1.0.0:i386 -- ppa:savoury1/backports
+- libssl1.1 -- ppa:savoury1/encryption
+- libssl1.1:i386 -- ppa:savoury1/encryption
+- libssl-dev -- ppa:savoury1/encryption
+- openssl -- ppa:savoury1/encryption
 B python-openssl

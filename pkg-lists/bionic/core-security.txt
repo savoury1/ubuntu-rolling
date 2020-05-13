@@ -56,8 +56,8 @@ B openssh-client
 B openssh-sftp-server
 B openssh-server
 B ssh-askpass-gnome
-B libssh-4
-B libssh-gcrypt-4
+- libssh-4 -- ppa:savoury1/encryption
+- libssh-gcrypt-4 -- ppa:savoury1/encryption
 B libssh2-1
 B libssh2-1-dev
 B libpkcs11-helper1

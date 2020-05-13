@@ -64,7 +64,6 @@ B qt5ct
 B libqtav1
 B libqtavwidgets1
 B libgrantlee-textdocument5
-B libqgpgme7
 B libqca-qt5-2
 B libqca-qt5-2-plugins
 B pinentry-qt

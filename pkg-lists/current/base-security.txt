@@ -1,6 +1,6 @@
-B libkeyutils1
-B libkeyutils1:i386
-B keyutils
+- libkeyutils1 -- ppa:savoury1/virtualisation
+- libkeyutils1:i386 -- ppa:savoury1/virtualisation
+- keyutils -- ppa:savoury1/virtualisation
 B krb5-locales
 B libkrb5support0
 B libkrb5support0:i386
@@ -10,24 +10,24 @@ B libkrb5-3
 B libkrb5-3:i386
 B libgssapi-krb5-2
 B libgssapi-krb5-2:i386
-B libnettle6
-B libnettle6:i386
-B libhogweed4
-B libhogweed4:i386
-B nettle-dev
-B libp11-kit0
-B libp11-kit0:i386
-B libp11-kit-dev
-B p11-kit
-B p11-kit-modules
-B libopts25
-B libunbound2
-B libgnutls30
-B libgnutls30:i386
-B libgnutlsxx28
-B libgnutls-openssl27
-B libgnutls-dane0
-B libgnutls28-dev
+- libnettle6 -- ppa:savoury1/encryption
+- libnettle6:i386 -- ppa:savoury1/encryption
+- libhogweed4 -- ppa:savoury1/encryption
+- libhogweed4:i386 -- ppa:savoury1/encryption
+- nettle-dev -- ppa:savoury1/encryption
+- libp11-kit0 -- ppa:savoury1/encryption
+- libp11-kit0:i386 -- ppa:savoury1/encryption
+- libp11-kit-dev -- ppa:savoury1/encryption
+- p11-kit -- ppa:savoury1/encryption
+- p11-kit-modules -- ppa:savoury1/encryption
+- libopts25 -- ppa:savoury1/encryption
+- libunbound2 -- ppa:savoury1/encryption
+- libgnutls30 -- ppa:savoury1/encryption
+- libgnutls30:i386 -- ppa:savoury1/encryption
+- libgnutlsxx28 -- ppa:savoury1/encryption
+- libgnutls-openssl27 -- ppa:savoury1/encryption
+- libgnutls-dane0 -- ppa:savoury1/encryption
+- libgnutls28-dev -- ppa:savoury1/encryption
 B libsasl2-modules
 B libsasl2-modules:i386
 B libsasl2-modules-db
@@ -56,10 +56,10 @@ B libgssapi3-heimdal:i386
 B libldap-common
 B libldap-2.4-2
 B libldap-2.4-2:i386
-B libssl1.0.0
-B libssl1.0.0:i386
-B libssl1.1
-B libssl1.1:i386
-B libssl-dev
-B openssl
+- libssl1.0.0 -- ppa:savoury1/backports
+- libssl1.0.0:i386 -- ppa:savoury1/backports
+- libssl1.1 -- ppa:savoury1/encryption
+- libssl1.1:i386 -- ppa:savoury1/encryption
+- libssl-dev -- ppa:savoury1/encryption
+- openssl -- ppa:savoury1/encryption
 B python-openssl
