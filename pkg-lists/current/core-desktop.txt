@@ -27,9 +27,9 @@ B libgnome2-0
 B libgnomeui-common
 B libgnomeui-0
 B python-gnome2
-B libwxbase3.0-0v5
-B libwxgtk3.0-0v5
-B libwxgtk3.0-gtk3-0v5
+- libwxbase3.0-0v5 -- ppa:savoury1/backports
+- libwxgtk3.0-0v5 -- ppa:savoury1/backports
+- libwxgtk3.0-gtk3-0v5 -- ppa:savoury1/backports
 B python-wxversion
 B python-wxgtk3.0
 B libfltk1.3
@@ -38,6 +38,7 @@ B libnewt0.52
 B libnewt-dev
 B whiptail
 B libgirepository-1.0-1
+B gobject-introspection
 B gir1.2-glib-2.0
 B gir1.2-freedesktop
 B d-feet
@@ -77,6 +78,9 @@ B libdbusmenu-glib4
 B gir1.2-dbusmenu-glib-0.4
 B libdbusmenu-gtk3-4
 B libdbusmenu-gtk4
+B libbamf3-2
+B gir1.2-bamf-3
+B bamfdaemon
 B libdee-1.0-4
 B gir1.2-dee-1.0
 B libindicator3-7

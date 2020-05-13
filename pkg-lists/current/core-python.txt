@@ -44,6 +44,7 @@ B python-pycurl
 B python3-pycurl
 B python-xapian
 B python3-xapian
+B python-yaml
 B python3-yaml
 B python-libxml2
 B python3-libxml2
@@ -60,9 +61,9 @@ B python-pip
 B python3-pip
 B libapt-pkg5.0
 B libapt-inst2.0
-B python-apt-common
-B python-apt
-B python3-apt
+- python-apt-common -- ppa:savoury1/apt-xenial
+- python-apt -- ppa:savoury1/apt-xenial
+- python3-apt -- ppa:savoury1/apt-xenial
 B apt-xapian-index
 B python3-brlapi
 B python-gobject-2

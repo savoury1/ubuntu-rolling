@@ -102,9 +102,11 @@ B alsa-utils
 - pulseaudio-esound-compat -- ppa:savoury1/multimedia
 - libportaudio2 -- ppa:savoury1/multimedia
 B librtaudio6
-B libsndio6.1
-B libsndio6.1:i386
-B libsndio-dev
+- libsndio6.1 -- redundant due new libsndio7.0
+- libsndio6.1:i386 -- redundant due new libsndio7.0
+- libsndio7.0 -- ppa:savoury1/multimedia
+- libsndio7.0:i386 -- ppa:savoury1/multimedia
+- libsndio-dev -- ppa:savoury1/multimedia
 - libopenal-data -- ppa:savoury1/multimedia
 - libopenal1 -- ppa:savoury1/multimedia
 - libopenal1:i386 -- ppa:savoury1/multimedia

@@ -1,54 +1,55 @@
-B x11proto-dev
-B x11proto-composite-dev
-B x11proto-core-dev
-B x11proto-damage-dev
-B x11proto-dri2-dev
-B x11proto-fixes-dev
-B x11proto-gl-dev
-B x11proto-input-dev
-B x11proto-kb-dev
-B x11proto-randr-dev
-B x11proto-record-dev
-B x11proto-render-dev
-B x11proto-scrnsaver-dev
-B x11proto-video-dev
-B x11proto-xext-dev
-B x11proto-xf86vidmode-dev
-B x11proto-xinerama-dev
-B libxcb1
-B libxcb1:i386
-B libxcb1-dev
-B libxcb-dri2-0
-B libxcb-dri2-0:i386
-B libxcb-dri2-0-dev
-B libxcb-dri3-0
-B libxcb-dri3-0:i386
-B libxcb-dri3-dev
-B libxcb-glx0
-B libxcb-glx0:i386
-B libxcb-glx0-dev
-B libxcb-render0
-B libxcb-render0:i386
-B libxcb-render0-dev
-B libxcb-xinerama0
-B libxcb-damage0
-B libxcb-randr0
-B libxcb-randr0-dev
-B libxcb-shape0
-B libxcb-shape0-dev
-B libxcb-xfixes0
-B libxcb-xfixes0-dev
-B libxcb-shm0
-B libxcb-shm0:i386
-B libxcb-shm0-dev
-B libxcb-sync1
-B libxcb-sync1:i386
-B libxcb-sync-dev
-B libxcb-present0
-B libxcb-present0:i386
-B libxcb-present-dev
-B libxcb-composite0
-B libxcb-xinput0
-B libxcb-xkb1
-B libxcb-xtest0
-B libxcb-xv0
+- x11proto-dev -- ppa:savoury1/display
+- x11proto-composite-dev -- ppa:savoury1/display
+- x11proto-core-dev -- ppa:savoury1/display
+- x11proto-damage-dev -- ppa:savoury1/display
+- x11proto-dri2-dev -- ppa:savoury1/display
+- x11proto-fixes-dev -- ppa:savoury1/display
+- x11proto-gl-dev -- ppa:savoury1/display
+- x11proto-input-dev -- ppa:savoury1/display
+- x11proto-kb-dev -- ppa:savoury1/display
+- x11proto-randr-dev -- ppa:savoury1/display
+- x11proto-record-dev -- ppa:savoury1/display
+- x11proto-render-dev -- ppa:savoury1/display
+- x11proto-scrnsaver-dev -- ppa:savoury1/display
+- x11proto-video-dev -- ppa:savoury1/display
+- x11proto-xext-dev -- ppa:savoury1/display
+- x11proto-xf86vidmode-dev -- ppa:savoury1/display
+- x11proto-xinerama-dev -- ppa:savoury1/display
+- libxcb1 -- ppa:savoury1/display
+- libxcb1:i386 -- ppa:savoury1/display
+- libxcb1-dev -- ppa:savoury1/display
+- libxcb-dri2-0 -- ppa:savoury1/display
+- libxcb-dri2-0:i386 -- ppa:savoury1/display
+- libxcb-dri2-0-dev -- ppa:savoury1/display
+- libxcb-dri3-0 -- ppa:savoury1/display
+- libxcb-dri3-0:i386 -- ppa:savoury1/display
+- libxcb-dri3-dev -- ppa:savoury1/display
+- libxcb-glx0 -- ppa:savoury1/display
+- libxcb-glx0:i386 -- ppa:savoury1/display
+- libxcb-glx0-dev -- ppa:savoury1/display
+- libxcb-render0 -- ppa:savoury1/display
+- libxcb-render0:i386 -- ppa:savoury1/display
+- libxcb-render0-dev -- ppa:savoury1/display
+- libxcb-xinerama0 -- ppa:savoury1/display
+- libxcb-damage0 -- ppa:savoury1/display
+- libxcb-randr0 -- ppa:savoury1/display
+- libxcb-randr0-dev -- ppa:savoury1/display
+- libxcb-shape0 -- ppa:savoury1/display
+- libxcb-shape0-dev -- ppa:savoury1/display
+- libxcb-xfixes0 -- ppa:savoury1/display
+- libxcb-xfixes0-dev -- ppa:savoury1/display
+- libxcb-shm0 -- ppa:savoury1/display
+- libxcb-shm0:i386 -- ppa:savoury1/display
+- libxcb-shm0-dev -- ppa:savoury1/display
+- libxcb-sync1 -- ppa:savoury1/display
+- libxcb-sync1:i386 -- ppa:savoury1/display
+- libxcb-sync-dev -- ppa:savoury1/display
+- libxcb-present0 -- ppa:savoury1/display
+- libxcb-present0:i386 -- ppa:savoury1/display
+- libxcb-present-dev -- ppa:savoury1/display
+- libxcb-composite0 -- ppa:savoury1/display
+- libxcb-res0 -- ppa:savoury1/display
+- libxcb-xinput0 -- ppa:savoury1/display
+- libxcb-xkb1 -- ppa:savoury1/display
+- libxcb-xtest0 -- ppa:savoury1/display
+- libxcb-xv0 -- ppa:savoury1/display
