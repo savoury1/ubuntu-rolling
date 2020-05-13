@@ -1,4 +1,10 @@
 # [ubuntu-rolling](https://github.com/savoury1/ubuntu-rolling)
+Update (13/5/2020): Over the past nine months since this project was first uploaded to Github it has evolved into something far more comprehensive and accessible. There are now extensive collections of backported packages for Xenial and also newer series (currently Bionic, Eoan and Focal) in a number of PPAs at the Launchpad site where the Ubuntu Enhanced PPA was published in August 2019. This allows regular users of Ubuntu-based systems (including Mint and other derivatives) to install a wide range of new software without having to do a full upgrade to a newer series.
+
+See here for a full list of available PPAs: https://launchpad.net/~savoury1/
+
+------
+
 ### Ubuntu "Rolling Release" System
 
 To make a customized "hybrid" Ubuntu Xenial-based system that includes selected packages from newer Ubuntu series. There are many reasons to want to do this including:

@@ -1,4 +1,9 @@
+ *** Current target series: Xenial LTS, Bionic LTS, Eoan, and Focal LTS ***
+
 The table below shows most of the software published at this Launchpad site. Source packages with their own PPA (eg. GParted) are copied to a collection PPA (eg. GParted -> Utilities). Some software packages with the same name are in two different PPAs to give access to two distinct versions (eg. FFmpeg).
+
+Note: LTS series are the focus at this site, with significantly more testing done for LTS than other short-lived interim series (ie. Eoan). Additionally,
+all Disco packages in PPAs at this site have now been deleted (25 Feb 2020).
 
 +============+==============================================================+
   Collection | Packages include
@@ -10,134 +15,159 @@ The table below shows most of the software published at this Launchpad site. Sou
         GIMP = babl, fontconfig, freetype, gegl, gimp, glib2.0, harfbuzz,
     (v2.10.14) libmypaint, mypaint-brushes, pango1.0, poppler
 
-       VLC 3 = libmicrodns, libnfs, libplacebo, libspatialaudio, protobuf,
-      (v3.0.8) vlc
+       VLC 3 = liblivemedia, libmicrodns, libnfs, libplacebo,
+      (v3.0.8) libspatialaudio, protobuf, vlc
 
-         mpv = mpv (v0.29.1 for Xenial & v0.31.0 for newer series)
+         mpv = mpv (v0.29.1 for Xenial & v0.32.0 for newer series)
 
-       GPG 2 = gnupg2, gpa, gpgme1.0, libassuan, libgcrypt20, libgpg-error,
-     (v2.2.17) libksba
+       GPG 2 = autogen, gnupg2, gnutls28, gpa, gpgme1.0, libassuan,
+     (v2.2.19) libgcrypt20, libgpg-error, libksba, libtasn1-6, libunistring,
+               nettle, p11-kit, python-gnupg, readline, unbound
 
-  Encryption = cryptsetup, libgcrypt20, libgpg-error, systemd (Xenial only),
-               veracrypt (from ppa:unit193/encryption)
+  Encryption = autogen, cryptsetup, gnutls28, libgcrypt20, libgpg-error,
+               libssh, libunistring, nettle, opencryptoki, openssl, p11-kit,
+               softhsm2, systemd (Xenial only), trousers, unbound, veracrypt
+               (copied from ppa:unit193/encryption)
 
-    Graphics = cairo, exiv2, gdk-pixbuf, gexiv2, ghostscript, gl2ps, imagej,
-               imagemagick, jasper, jbig2dec, lcms2, lensfun, leptonlib,
-               libgd2, libheif, libjpeg-turbo, libpng1.6, libraw, libspiro,
-               libwebp, libwmf, libzstd, nasm, opencv, openjpeg2, sane-
-               backends, tesseract, tesseract-lang, tiff, vtk6, xscreensaver
+    Graphics = assimp, boost1.65.1, cairo, enblend-enfuse, entangle, exiv2,
+               flann, gdk-pixbuf, gexiv2, ghostscript, gl2ps, glib2.0,
+               gobject-introspection, gphoto2, gphotofs, graphviz, hugin,
+               imagej, imagemagick, imlib2, jasper, jbig2dec, lcms2, lensfun,
+               leptonlib, libexif, libgd2, libgphoto2, libheif, libjpeg-
+               turbo, libmng, libopenraw, libpng1.6, libraw, librsvg,
+               libspiro, libvigraimpex, libwebp, libwmf, libzstd, nasm,
+               opencv, openjpeg2, optipng, pcl, perl (Xenial), php-imagick,
+               pycairo, python-gphoto2, sane-backends, tesseract, tesseract-
+               lang, tiff, vtk6, wxwidgets3.0, xscreensaver, zlib
 
-  Multimedia = alsa-lib, aom, aribb24, asm, chromaprint, codec2, fdk-aac,
-               flac, flite, frei0r, game-music-emu, graphene, gst-libav1.0,
-               gst-plugins-bad1.0, gst-plugins-base1.0, gst-plugins-good1.0,
-               gst-plugins-ugly1.0, gstreamer1.0, jack-audio-connection-kit,
-               jackd2, lame, libass, libbluray, libebml, libebur128,
-               libmediainfo, libmodplug, libmysofa, libnice, libogg,
-               libopenmpt, libsdl2, libsndfile, libsoxr, libsrtp2, libva,
-               libva-utils, libvidstab, libvorbis, libvpx, libwebp, libzen,
-               lirc, mediainfo, nasm, norm, opus, opus-tools, opusfile,
-               pulseaudio, readline, rtmpdump, rubberband, shine, snappy,
-               sndio, tinyxml2, v4l-utils, wavpack, webrtc-audio-processing,
-               wildmidi, x264, x265, xvidcore, zeromq3
+  Multimedia = alsa-lib, aom, aribb24, asm, chromaprint, codec2, crystalhd,
+               dvdauthor, faad2, farstream-0.2, fdk-aac, flac, flite,
+               fluidsynth, fontconfig, frei0r, game-music-emu, glew, glib2.0,
+               gobject-introspection, graphene, gst-libav1.0, gst-plugins-
+               bad1.0, gst-plugins-base1.0, gst-plugins-good1.0, gst-plugins-
+               ugly1.0, gstreamer-vaapi, gstreamer1.0, gtkglext, guvcview,
+               icu, icu-le-hb, jack-audio-connection-kit, jackd2, k3b, lame,
+               libass, libbluray, libcue, libdvd-pkg, libdvdnav, libdvdread,
+               libebml, libebur128, libgcrypt20, libgpg-error, libmatroska,
+               libmediainfo, libmikmod, libmodplug, libmpc, libmtp,
+               libmysofa, libnice, libogg, libopenmpt, libquicktime,
+               libsamplerate, libsdl1.2, libsdl2, libsdl2-gfx, libsdl2-image,
+               libsdl2-mixer, libsdl2-ttf, libshout, libsndfile, libsoxr,
+               libsrtp2, libusrsctp, libva, libva-utils, libvidstab,
+               libvorbis, libvpx, libwebp, libzen, lirc, mediainfo, mint-
+               meta-codecs, mjpegtools, mpg123, nasm, norm, openal-soft,
+               openssl, opus, opus-tools, opusfile, orc, portaudio19,
+               pulseaudio, pygame-sdl2, pysdl2, readline, rtmpdump,
+               rubberband, sdl-image1.2, sdl-kitchensink, sdl-mixer1.2,
+               shine, snappy, sndio, srt, taglib, timgm6mb-soundfont,
+               tinyxml2, twolame, v4l-utils, wavpack, wayland-protocols,
+               webrtc-audio-processing, wildmidi, wxwidgets3.0, x264, x265,
+               xvidcore, zeromq3
 
     FFmpeg 4 = ffmpeg (v4.2.2)
 
-    FFmpeg 3 = ffmpeg (v3.4.6 for Xenial only)
+    FFmpeg 3 = ffmpeg (v3.4.7 for Xenial and Bionic)
 
-       Games = DOSBox, DBGL (DOSBox Game Launcher), Quakespasm (Quake) &
-               Yamagi Quake (Quake II) engines
+       Games = dbgl, doomsday, dosbox, fizmo-console, fizmo-ncursesw, fizmo-
+               sdl2, libdrilbo, libfizmo, libmonospaceif, libpixelif,
+               libpng1.6, libsndifsdl2, quakespasm, yquake2
 
-   Utilities = gparted, meld, metamorphose2, minisign, psensor, rar, unrar,
-               vnstat, xfe
+     Display = egl-wayland, eglexternalplatform, evemu, glewmx, libclc,
+               libdmx, libdrm, libepoxy, libevdev, libfontenc, libglu,
+               libglvnd, libice, libinput, libpciaccess, libsm, libwacom,
+               libx11, libxau, libxcb, libxcomposite, libxcursor, libxdamage,
+               libxdmcp, libxext, libxfixes, libxfont, libxi, libxinerama,
+               libxkbfile, libxmu, libxpm, libxrandr, libxrender, libxres,
+               libxshmfence, libxss, libxt, libxtst, libxv, libxvmc, libxvmc,
+               libxxf86dga, llvm-toolchain-8, mesa, mir, mpv (Xenial only
+               v0.32.0), nux, pixman, wayland, wayland-protocols, wlcs,
+               x11-xkb-utils, xauth, xcb-proto, xcb-util-wm, xf86-input-
+               mtrack, *multitouch, *wacom, *xwiimote, xfonts-utils,
+               xkeyboard-config, xorg, xorg-server, xorgproto, xserver-xorg-
+               input-aiptek, *elographics, *evdev, *joystick, *keyboard,
+               *libinput, *mouse, *mutouch, *synaptics, *void, xserver-xorg-
+               video-amdgpu, *ast, *ati, *dummy, *fbdev, *geode, *intel,
+               *mach64, *mga, *neomagic, *nouveau, *openchrome, *qxl, *r128,
+               *savage, *siliconmotion, *sisusb, *tdfx, *trident, *vesa,
+               *vmware, xutils-dev
 
-   Backports = aria2, asm, bash, bash-completion, bcmwl, boost-defaults,
-               boost1.65.1, brotli, bzip2, ca-certificates, curl, e2fsprogs,
-               enca, expat, f2fs-tools, fontconfig, freetype, gdal, geoip,
-               geoip-database, gettext, googletest, gpsd, grep, gzip,
-               harfbuzz, hdf5, hicolor-icon-theme, htop, icu, icu-le-hb,
-               isync, keepass2, libarchive, libasyncns, libdap, libidn2,
-               libjsoncpp, libpng1.6, libpsl, libsodium, libsoup2.4, libssh,
-               libuv1, libva, libva-utils, libvpx, libxml2, libzstd,
-               lighttpd, lz4, mate-dock-applet, mysql-defaults, nano, nasm,
-               nghttp2, ogdi-dfsg, openssl, openssl1.0, p7zip, p7zip-rar,
-               perl, pigz, poppler, pps-tools, protobuf, publicsuffix, py*-
-               boto, py*-httplib2, py*-imaplib2, rar, readline, sed, snappy,
-               system-config-printer, tar, tinyxml, tinyxml2, unzip, wayland,
-               wayland-protocols, wget, woff2, xapian-core, xz-utils, zlib
+    Virtual- = acpica-unix, boost-defaults, boost1.67, ceph, device-tree-
+    isation .. compiler, glusterfs, google-perftools, gtk-vnc, icu,
+               infinipath-psm, iptables, ipxe, ipxe-qemu-256k-compat,
+               keyutils, leveldb, libcacard, libfabric, libgovirt, libisci,
+               libnftnl, libosinfo, libpsm2, libslirp, libsys-virt-perl,
+               libtirpc, libvirt, libvirt-dbus, libvirt-glib, libvirt-python,
+               lxc, lxc-templates, lxd, ndctl, nfs-utils, nftables, osinfo-
+               db, osinfo-db-tools, phodav, php-imagick, pmdk, python-
+               virualenv, python3-lxc, pyvirtualdisplay, qemu, quota, rdma-
+               core, rpcbind, ruby-fog-libvirt, ruby-libvirt, seabios, spice,
+               spice-gtk, spice-protocol, tox, virglrenderer, virt-manager,
+               virt-viewer, virt-what, virtualenv-clone, virtualenvwrapper,
+               xen, xfsprogs
 
-      Python = alabaster, dh-python, pygments, pysimplesoap, pytest, *attrs,
-               *boto, *coverage, *funcsigs, *httplib2, *hypothesis,
-               *imagesize, *imaplib2, *pluggy, *py, *typing, setuptools-scm,
-               sip4, sphinx, sphinx-rtd-theme, sphinxcontrib-websupport
+   Utilities = gparted, libsodium, meld, metamorphose2, minisign, psensor,
+               rar, unrar-nonfree, vnstat, xfe
 
- Build Tools = asm, autoconf, autoconf-archive, autoconf-dickey,
-               automake-1.15, autotools-dev, binutils, binutils-mingw-w64,
-               cdbs, cmake, cowdancer, debhelper, debian-archive-keyring,
-               debian-keyring, debootstrap, desktop-file-utils, devscripts,
-               dh-autoreconf, dh-buildinfo, dh-python, distro-info, distro-
-               info-data, doxygen, dpatch, dpkg, dwz, gcc-mingw-w64, git-
-               buildpackage, gnome-pkg-tools, googletest, gtk-doc,
-               lazr.restfulclient, libarchive-cpio-perl, libdoxygen-filter-
-               perl, libjsoncpp, libsass, libtool, lintian, m4, make-dfsg,
-               maven-repo-helper, meson, mingw-w64, nasm, ninja-build,
-               pbuilder, pkg-kde-tools, po-debconf, po4a, pristine-tar,
-               py*-distro, py*-launchpadlib, py*-unidiff, quilt, sassc,
-               scons, scour, shellcheck, strip-nondeterminism, ubuntu-
-               keyring, xapian-core, xdelta
+   Backports = argon2, aria2, asm, bash, bash-completion, bcmwl, boost-
+               defaults, boost1.65.1, brotli, bzip2, ca-certificates, cairo,
+               curl, dnprogs, e2fsprogs, elfutils, enca, expat, expect, f2fs-
+               tools, fontconfig, fonts-liberation2, fonttools, freerdp,
+               freerdp2, freetype, gawk, gdal, gdk-pixbuf, geoip, geoip-
+               database, gettext, glib2.0, gmp, gnutls28, gobject-
+               introspection, google-glog, googletest, gpsd, grep, graphite2,
+               grep, gsl, gzip, harfbuzz, hdf5, hicolor-icon-theme, htop,
+               hwloc, icu, icu-le-hb, ido, indicator-messages, isync,
+               keepass2, libarchive, libasyncns, libcdk5, libdap, libgadu,
+               libidn, libidn2, libindicator, libjsoncpp, libpng1.6, libpsl,
+               libsodium, libsoup2.4, libssh, libtasn1-6 libunistring,
+               liburcu, libuv1, libva, libva-utils, libvpx, libxml2, libxslt,
+               libzstd, lighttpd, lz4, mate-dock-applet, mathjax, meanwhile,
+               mpclib3, mpfr4, mysql-defaults, nano, nasm, ndiswrapper, net-
+               tools, netcdf, nettle, nghttp2, ogdi-dfsg, openssl,
+               openssl1.0, p11-kit, p7zip, p7zip-rar, perl (Xenial), pidgin,
+               pigz, poppler, popt, pps-tools, procps, proj, protobuf,
+               protobuf-c, publicsuffix, py*-boto, py*-httplib2, py*-
+               imaplib2, qhull, rar, readline, sed, sensible-utils, snappy,
+               system-config-printer, tar, tbb, tcl8.6, tinyxml, tinyxml2,
+               tk8.6, unbound, unzip, wayland, wayland-protocols, wget,
+               woff2, wxwidgets3.0, xapian-core, xz-utils, zlib
 
-  TeX / Live = poppler, tex-common, tex-gyre, texhyphj, texinfo, texinfo-
- (Xenial only) doc-nonfree, texlive-base, texlive-bin, texlive-extra,
-               texlive-lang, texmaker, texstudio, texworks, texworks-manual
+      Python = alabaster, backports.functools-lru-cache, colorspacious,
+               commonbmark-bkrs, cython, dh-python, fonttools, nose, ply,
+               pycparser, pygments, pysimplesoap, pytest, pytest-runner,
+               *attrs, *boto, *cffi, *coverage, *cycler, *dateutil,
+               *dbusmock, *defaults, *funcsigs, *httplib2, *hypothesis,
+               *imagesize, *imaplib2, *numpy, *oauthlib, *pluggy, *py,
+               *stdlib-extensions, *typing, python2.7, setuptools-scm,
+               sip4, sphinx, sphinx-gallery, sphinx-rtd-theme, sphinxcontrib-
+               websupport
 
-     Android = *boringssl, *libselinux, *libunwind, *libnativehelper,
- (Xenial only) *system-core (incl. adb), *system-extras, f2fs-tools, p7zip
+ Build Tools = asciidoc, asm, autoconf, autoconf-archive, autoconf-dickey,
+               autoconf2.13, autogen, automake-1.15, autotools-dev, binutils,
+               binutils-mingw-w64, camlp4, capnproto, cdbs, cmake, cowdancer,
+               cppo, cppunit, d-shlibs, datefudge, dblatex, debhelper,
+               debian-archive-keyring, debian-keyring, debootstrap, dejagnu,
+               desktop-file-utils, devscripts, dh-autoreconf, dh-buildinfo,
+               dh-ocaml, dh-python, distro-info, distro-info-data, doxygen,
+               docbook-to-man, docbook-utils, docbook-xml, docbook-xsl,
+               doxygen, dpatch, dpkg, dwz, fakeroot, fig2dev, findlib, flex,
+               gcc-mingw-w64, gcovr, gflags, git-buildpackage, glib2.0,
+               glslang, gnome-common, gnome-pkg-tools, gobject-introspection,
+               googletest, gperf, gtk-doc, guile-2.0, help2man, icmake,
+               javatools, lablgl, lablgtk2, labltk, lazr.restfulclient,
+               libarchive-cpio-perl, libdoxygen-filter-perl, libiberty,
+               libjsoncpp, libsass, libtool, libunwind, lintian, lwt, m4,
+               make-dfsg, maven-repo-helper, meson, mingw-w64, nasm, ninja-
+               build, ocaml, *ctypes, *fileutils, *result, *ssl, *text,
+               ocamlbuild, ounit, pbuilder, pkg-kde-tools, pkgbinarymangler,
+               po-debconf, po4a, ppx-tools, pristine-tar, py*-distro, py*-
+               launchpadlib, py*-unidiff, quilt, re2c, react, sassc, scons,
+               scour, sgml-base, shellcheck, spirv-headers, strip-
+               nondeterminism, stylebook, swig, systemtap, ubuntu-keyring,
+               umockdev, vala, xapian-core, xdelta, xml-core, yodl, yui-
+               compressor
 
-         APT = appstream, appstream-glib, apt, apt-file, aptdaemon, aptitude,
- (Xenial only) autoconf-archive, bash, bash-completion, boost-defaults,
-               boost1.65.1, glib2.0, gobject-introspection, libapt-pkg-perl,
-               libzstd, packagekit, python-apt, python-debian, system-config-
-               printer, xapian-core
-
-   GTK 2 & 3 = adwaita-icon-theme, cairo, glib2.0, gobject-introspection,
- (Xenial only) graphene, gtk+2.0, gtk+3.0, gtksourceview3, harfbuzz, hicolor-
-               icon-theme, indicator-sound-switcher, json-glib, meld, mint-
-               themes, mint-themes-gtk3, pango1.0, vala, wayland-protocols,
-               webkit2gtk
-
-    Qt 4 & 5 = accounts-qml-module, appstream, glib2.0, gobj*-introspection,
- (Xenial only) libaccounts-glib, libaccounts-qt, libdbusmenu-qt, libqtpas,
-               libquazip, mint-artwork-common, openssl, packagekit,
-               packagekit-qt, polkit-qt-1, pyqt5, pysimplesoap, py*-httplib2,
-               python-qt4, qca2, qt3d*, qt4-x11, qt5ct, qtav, qtbase*,
-               qtcharts*, qtchooser, qtconnectivity*, qtdeclarative*, qtdoc*,
-               qtgraphicaleffects*, qtimageformats*, qtlocation*,
-               qtmultimedia*, qtpim*, qtquickcontrols*, qtquickcontrols2*,
-               qtscript*, qtsensors*, qtserialport*, qtspeech*,
-               qtstyleplugins*, qtsvg*, qttools*, qttranslations*,
-               qtvirtualkeyboard*, qtwayland*, qtwebchannel*, qtwebengine*,
-               qtwebkit-examples*, qtwebkit*, qtwebkit-source, qtwebsockets*,
-               qtwebview*, qtx11extras*, qtxmlpatterns*, signon, signon-
-               plugin-oauth2, signon-ui, sip4, sni-qt
-
-  KDE 5.44.0 = akonadi, akonadi-contacts, akonadi-mime, attica-kf5, breeze-
- (Xenial only) icons, extra-cmake-modules, frameworkintegration, grantlee5,
-               kaccounts-integration, kactivities-kf5, karchive, kauth,
-               kbookmarks, kcalcore, kcmutils, kcodecs, kcompletion, kconfig,
-               kconfigwidgets, kcontacts, kcoreaddons, kcrash, kdbusaddons,
-               kdeclarative, kded, kdelibs4support, kdesignerplugin, kdesu,
-               kdewebkit, kdnssd-kf5, kdoctools, kemoticons, kfilemetadata-
-               kf5, kglobalaccel, kguiaddons, khtml, ki18n, kiconthemes,
-               kidletime, kinit, kio, kirigami, kirigami2, kitemmodels,
-               kitemviews, kjobwidgets, kjs, kmediaplayer, kmime, knewstuff,
-               knotifications, knotifyconfig, kpackage, kparts, kpimtextedit,
-               kplotting, kpty, kross, krunner, kservice, ksyntax-
-               highlighting, ktextwidgets, kunitconversion, kwallet-kf5,
-               kwayland, kwidgetsaddons, kwindowsystem, kxmlgui,
-               kxmlrpcclient, libical, libkcddb, libkf5kdcraw, libkf5kexiv2,
-               libkf5kipi, libkf5libkleo, libkf5sane, libmediawiki, marble,
-               networkmanager-qt, oxygen-icons5, plasma-framework, prison-
-               kf5, purpose, signon-kwallet-extension, solid, sonnet,
-               threadweaver
+ ## Package lists for Xenial only have been moved to their respective PPAs ##
 
   * denotes a shorthand package name with a common prefix or suffix removed
 
