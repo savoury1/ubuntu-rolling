@@ -99,6 +99,7 @@ B isc-dhcp-common
 B isc-dhcp-client
 B libsnmp-base
 B libsnmp30
+B libsnmp30:i386
 B libsmi2ldbl
 B libteamdctl0
 B libnetfilter-conntrack3

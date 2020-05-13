@@ -36,7 +36,7 @@ B wodim
 B libburn4
 B cdrskin
 B libdvd-pkg
-B libdvdread4
+- libdvdread4
 B libdvdnav4
 B libdvbpsi10
 B libasm-java
@@ -45,7 +45,7 @@ B libbluray-bin
 B libbluray-bdj
 B growisofs
 B dvd+rw-tools
-B dvdauthor
+- dvdauthor
 B brasero-common
 B libbrasero-media3-1
 B brasero-cdrkit
