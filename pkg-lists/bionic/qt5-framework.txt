@@ -1,82 +1,80 @@
-B qtchooser
-B qt5-qmake-bin
-B qt5-qmake
-B libqt5core5a
-B libqt5concurrent5
-B libqt5dbus5
-B libqt5network5
-B libqt5sql5
-B libqt5sql5-sqlite
-B libqt5sql5-mysql
-B libqt5xml5
-B libqt5gui5
-B libqt5widgets5
-B libqt5opengl5
-B libqt5printsupport5
-B libqt5test5
-B qtbase5-dev-tools
-B qtbase5-dev
-B qt5-gtk-platformtheme
-B libqt5svg5
-B libqt5texttospeech5
-B libqt5xmlpatterns5
-B libqt5x11extras5
-B libqt5positioning5
-B libqt5script5
-B libqt5sensors5
-B libqt5qml5
-B libqt5quick5
-B libqt5quickwidgets5
-B libqt5quicktemplates2-5
-B libqt5quickcontrols2-5
-B qml-module-qtqml-models2
-B qml-module-qtquick2
-B qml-module-qtquick-layouts
-B qml-module-qtquick-window2
-B qml-module-qtquick-templates2
-B qml-module-qtquick-controls2
-B qml-module-qtgraphicaleffects
-B qml-module-qtquick-controls
-B qml-module-qtquick-privatewidgets
-B qml-module-qtquick-dialogs
-B libqt5webchannel5
-B libqt5webkit5
-B libqt5webengine-data
-B libqt5webenginecore5
-B libqt5webengine5
-B libqt5webenginewidgets5
-B libqt5multimedia5
-B libqt5multimediaquick-p5
-B libqt5multimediawidgets5
-B qt5-image-formats-plugins
-B libqgsttools-p1
-B libqt5multimedia5-plugins
-B qt5-style-plugin-gtk2
-B qt5-style-platform-gtk2
-B qt5-style-plugins
-B qt5-default
-B libqt5designer5
-B libqt5designercomponents5
-B libqt5help5
-B qt5-assistant
-B qttools5-dev-tools
-B qt5ct
-B libqtav1
-B libqtavwidgets1
-B libgrantlee-textdocument5
-B libqca-qt5-2
-B libqca-qt5-2-plugins
+- qtchooser -- ppa:savoury1/qt-xenial
+- qt5-qmake-bin -- ppa:savoury1/qt-xenial
+- qt5-qmake -- ppa:savoury1/qt-xenial
+- libqt5core5a -- ppa:savoury1/qt-xenial
+- libqt5concurrent5 -- ppa:savoury1/qt-xenial
+- libqt5dbus5 -- ppa:savoury1/qt-xenial
+- libqt5network5 -- ppa:savoury1/qt-xenial
+- libqt5sql5 -- ppa:savoury1/qt-xenial
+- libqt5sql5-sqlite -- ppa:savoury1/qt-xenial
+- libqt5sql5-mysql -- ppa:savoury1/qt-xenial
+- libqt5xml5 -- ppa:savoury1/qt-xenial
+- libqt5gui5 -- ppa:savoury1/qt-xenial
+- libqt5widgets5 -- ppa:savoury1/qt-xenial
+- libqt5opengl5 -- ppa:savoury1/qt-xenial
+- libqt5printsupport5 -- ppa:savoury1/qt-xenial
+- libqt5test5 -- ppa:savoury1/qt-xenial
+- qtbase5-dev-tools -- ppa:savoury1/qt-xenial
+- qtbase5-dev -- ppa:savoury1/qt-xenial
+- qt5-gtk-platformtheme -- ppa:savoury1/qt-xenial
+- libqt5svg5 -- ppa:savoury1/qt-xenial
+- libqt5texttospeech5 -- ppa:savoury1/qt-xenial
+- libqt5xmlpatterns5 -- ppa:savoury1/qt-xenial
+- libqt5x11extras5 -- ppa:savoury1/qt-xenial
+- libqt5positioning5 -- ppa:savoury1/qt-xenial
+- libqt5script5 -- ppa:savoury1/qt-xenial
+- libqt5sensors5 -- ppa:savoury1/qt-xenial
+- libqt5qml5 -- ppa:savoury1/qt-xenial
+- libqt5quick5 -- ppa:savoury1/qt-xenial
+- libqt5quickwidgets5 -- ppa:savoury1/qt-xenial
+- libqt5quicktemplates2-5 -- ppa:savoury1/qt-xenial
+- libqt5quickcontrols2-5 -- ppa:savoury1/qt-xenial
+- qml-module-qtqml-models2 -- ppa:savoury1/qt-xenial
+- qml-module-qtquick2 -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-layouts -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-window2 -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-templates2 -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-controls2 -- ppa:savoury1/qt-xenial
+- qml-module-qtgraphicaleffects -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-controls -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-privatewidgets -- ppa:savoury1/qt-xenial
+- qml-module-qtquick-dialogs -- ppa:savoury1/qt-xenial
+- libqt5webchannel5 -- ppa:savoury1/qt-xenial
+- libqt5webkit5 -- ppa:savoury1/qt-xenial
+- libqt5webengine-data -- ppa:savoury1/qt-xenial
+- libqt5webenginecore5 -- ppa:savoury1/qt-xenial
+- libqt5webengine5 -- ppa:savoury1/qt-xenial
+- libqt5webenginewidgets5 -- ppa:savoury1/qt-xenial
+- libqt5multimedia5 -- ppa:savoury1/qt-xenial
+- libqt5multimediaquick-p5 -- ppa:savoury1/qt-xenial
+- libqt5multimediawidgets5 -- ppa:savoury1/qt-xenial
+- qt5-image-formats-plugins -- ppa:savoury1/qt-xenial
+- libqgsttools-p1 -- ppa:savoury1/qt-xenial
+- libqt5multimedia5-plugins -- ppa:savoury1/qt-xenial
+- qt5-style-plugins -- ppa:savoury1/qt-xenial
+- qt5-default -- ppa:savoury1/qt-xenial
+- libqt5designer5 -- ppa:savoury1/qt-xenial
+- libqt5designercomponents5 -- ppa:savoury1/qt-xenial
+- libqt5help5 -- ppa:savoury1/qt-xenial
+- qt5-assistant -- ppa:savoury1/qt-xenial
+- qttools5-dev-tools -- ppa:savoury1/qt-xenial
+- qt5ct -- ppa:savoury1/qt-xenial
+- libqtav1 -- ppa:savoury1/qt-xenial
+- libqtavwidgets1 -- ppa:savoury1/qt-xenial
+- libgrantlee-textdocument5 -- ppa:savoury1/qt-xenial
+- libqca-qt5-2 -- ppa:savoury1/qt-xenial
+- libqca-qt5-2-plugins -- ppa:savoury1/qt-xenial
 B pinentry-qt
-B libpolkit-qt5-1-1
-B libaccounts-qt5-1
+- libpolkit-qt5-1-1 -- ppa:savoury1/qt-xenial
+- libaccounts-qt5-1 -- ppa:savoury1/qt-xenial
 B libsignon-glib1
 B gir1.2-signon-1.0
-B libsignon-qt5-1
-B libsignon-extension1
-B libsignon-plugins-common1
-B signond
-B signon-plugin-password
-B qml-module-ubuntu-onlineaccounts
-B signon-plugin-oauth2
-B signon-ui-service
-B signon-ui-x11
+- libsignon-qt5-1 -- ppa:savoury1/qt-xenial
+- libsignon-extension1 -- ppa:savoury1/qt-xenial
+- libsignon-plugins-common1 -- ppa:savoury1/qt-xenial
+- signond -- ppa:savoury1/qt-xenial
+- signon-plugin-password -- ppa:savoury1/qt-xenial
+- qml-module-ubuntu-onlineaccounts -- ppa:savoury1/qt-xenial
+- signon-plugin-oauth2 -- ppa:savoury1/qt-xenial
+- signon-ui-service -- ppa:savoury1/qt-xenial
+- signon-ui-x11 -- ppa:savoury1/qt-xenial

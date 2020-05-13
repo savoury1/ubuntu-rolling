@@ -1,4 +1,4 @@
-B libdbusmenu-qt5-2
+- libdbusmenu-qt5-2 -- ppa:savoury1/qt-xenial
 B libphonon4
 B libphonon4qt5-4
 B phonon-backend-gstreamer-common
@@ -46,153 +46,153 @@ B libkxmlrpcclient4
 B libgpgme++2v5
 B libkactivities6
 - libdlrestrictions1 -- ppa:savoury1/build-tools
-B breeze-icon-theme
-B oxygen5-icon-theme
-B oxygen-icon-theme
-B libkf5attica5
-B libkf5threadweaver5
-B libkf5idletime5
-B libkf5itemmodels5
-B libkf5solid5-data
-B libkf5solid5
-B libkf5dbusaddons-data
-B libkf5dbusaddons5
-B libkf5i18n-data
-B libkf5i18n5
-B libkf5filemetadata-data
-B libkf5filemetadata3
-B libkf5codecs-data
-B libkf5codecs5
-B libkf5mime-data
-B libkf5mime5abi2
-B libkf5archive5
-B libkf5doctools5
-B libkf5globalaccel-data
-B libkf5globalaccel5
-B libkf5windowsystem-data
-B libkf5windowsystem5
-B kwayland-data
-B libkf5waylandclient5
-B libkf5coreaddons-data
-B libkf5coreaddons5
-B libkf5package-data
-B libkf5package5
-B kpackagetool5
-B libkf5crash5
-B libkf5auth-data
-B libkf5auth5
-B libkf5kiontlm5
-B libkf5pty-data
-B libkf5pty5
-B libkf5guiaddons5
-B libkf5config-data
-B libkf5configcore5
-B libkf5service-data
-B libkf5service5
-B libkf5service-bin
-B libkf5purpose5
-B libkf5purpose-bin
-B kded5
-B libkf5su-data
-B libkf5su5
-B libkf5su-bin
-B libkf5notifications-data
-B libkf5notifications5
-B libkf5syntaxhighlighting-data
-B libkf5syntaxhighlighting5
-B libkf5xmlgui-data
-B libkf5xmlgui5
-B libkf5xmlgui-bin
-B libkf5kipi-data
-B libkf5kipi32.0.0
-B libkf5kiocore5
-B libkf5configgui5
-B libkf5widgetsaddons-data
-B libkf5widgetsaddons5
-B libkf5configwidgets-data
-B libkf5configwidgets5
-B libkf5jobwidgets-data
-B libkf5jobwidgets5
-B libkf5completion-data
-B libkf5completion5
-B libkf5bookmarks-data
-B libkf5bookmarks5
-B libkf5itemviews-data
-B libkf5itemviews5
-B libkf5iconthemes-data
-B libkf5iconthemes5
-B libkf5kcmutils-data
-B libkf5kcmutils5
-B libkf5activities5
-B libkf5contacts-data
-B libkf5contacts5
-B libkf5calendarcore5abi1
-B libkf5wallet-data
-B libkwalletbackend5-5
-B libkf5wallet5
-B libkf5wallet-bin
-B libkf5akonadiprivate5
-B libkf5akonadicore5abi1
-B libkf5akonadiwidgets5
-B libkf5akonadicore-bin
-B libkf5sonnet5-data
-B libkf5sonnetcore5
-B libkf5sonnetui5
-B libkf5textwidgets-data
-B libkf5textwidgets5
-B libkf5kiowidgets5
-B libkf5kiofilewidgets5
+- breeze-icon-theme -- ppa:savoury1/kde-xenial
+- oxygen5-icon-theme -- ppa:savoury1/kde-xenial
+- oxygen-icon-theme -- ppa:savoury1/kde-xenial
+- libkf5attica5 -- ppa:savoury1/kde-xenial
+- libkf5threadweaver5 -- ppa:savoury1/kde-xenial
+- libkf5idletime5 -- ppa:savoury1/kde-xenial
+- libkf5itemmodels5 -- ppa:savoury1/kde-xenial
+- libkf5solid5-data -- ppa:savoury1/kde-xenial
+- libkf5solid5 -- ppa:savoury1/kde-xenial
+- libkf5dbusaddons-data -- ppa:savoury1/kde-xenial
+- libkf5dbusaddons5 -- ppa:savoury1/kde-xenial
+- libkf5i18n-data -- ppa:savoury1/kde-xenial
+- libkf5i18n5 -- ppa:savoury1/kde-xenial
+- libkf5filemetadata-data -- ppa:savoury1/kde-xenial
+- libkf5filemetadata3 -- ppa:savoury1/kde-xenial
+- libkf5codecs-data -- ppa:savoury1/kde-xenial
+- libkf5codecs5 -- ppa:savoury1/kde-xenial
+- libkf5mime-data -- ppa:savoury1/kde-xenial
+- libkf5mime5abi2 -- ppa:savoury1/kde-xenial
+- libkf5archive5 -- ppa:savoury1/kde-xenial
+- libkf5doctools5 -- ppa:savoury1/kde-xenial
+- libkf5globalaccel-data -- ppa:savoury1/kde-xenial
+- libkf5globalaccel5 -- ppa:savoury1/kde-xenial
+- libkf5windowsystem-data -- ppa:savoury1/kde-xenial
+- libkf5windowsystem5 -- ppa:savoury1/kde-xenial
+- kwayland-data -- ppa:savoury1/kde-xenial
+- libkf5waylandclient5 -- ppa:savoury1/kde-xenial
+- libkf5coreaddons-data -- ppa:savoury1/kde-xenial
+- libkf5coreaddons5 -- ppa:savoury1/kde-xenial
+- libkf5package-data -- ppa:savoury1/kde-xenial
+- libkf5package5 -- ppa:savoury1/kde-xenial
+- kpackagetool5 -- ppa:savoury1/kde-xenial
+- libkf5crash5 -- ppa:savoury1/kde-xenial
+- libkf5auth-data -- ppa:savoury1/kde-xenial
+- libkf5auth5 -- ppa:savoury1/kde-xenial
+- libkf5kiontlm5 -- ppa:savoury1/kde-xenial
+- libkf5pty-data -- ppa:savoury1/kde-xenial
+- libkf5pty5 -- ppa:savoury1/kde-xenial
+- libkf5guiaddons5 -- ppa:savoury1/kde-xenial
+- libkf5config-data -- ppa:savoury1/kde-xenial
+- libkf5configcore5 -- ppa:savoury1/kde-xenial
+- libkf5service-data -- ppa:savoury1/kde-xenial
+- libkf5service5 -- ppa:savoury1/kde-xenial
+- libkf5service-bin -- ppa:savoury1/kde-xenial
+- libkf5purpose5 -- ppa:savoury1/kde-xenial
+- libkf5purpose-bin -- ppa:savoury1/kde-xenial
+- kded5 -- ppa:savoury1/kde-xenial
+- libkf5su-data -- ppa:savoury1/kde-xenial
+- libkf5su5 -- ppa:savoury1/kde-xenial
+- libkf5su-bin -- ppa:savoury1/kde-xenial
+- libkf5notifications-data -- ppa:savoury1/kde-xenial
+- libkf5notifications5 -- ppa:savoury1/kde-xenial
+- libkf5syntaxhighlighting-data -- ppa:savoury1/kde-xenial
+- libkf5syntaxhighlighting5 -- ppa:savoury1/kde-xenial
+- libkf5xmlgui-data -- ppa:savoury1/kde-xenial
+- libkf5xmlgui5 -- ppa:savoury1/kde-xenial
+- libkf5xmlgui-bin -- ppa:savoury1/kde-xenial
+- libkf5kipi-data -- ppa:savoury1/kde-xenial
+- libkf5kipi32.0.0 -- ppa:savoury1/kde-xenial
+- libkf5kiocore5 -- ppa:savoury1/kde-xenial
+- libkf5configgui5 -- ppa:savoury1/kde-xenial
+- libkf5widgetsaddons-data -- ppa:savoury1/kde-xenial
+- libkf5widgetsaddons5 -- ppa:savoury1/kde-xenial
+- libkf5configwidgets-data -- ppa:savoury1/kde-xenial
+- libkf5configwidgets5 -- ppa:savoury1/kde-xenial
+- libkf5jobwidgets-data -- ppa:savoury1/kde-xenial
+- libkf5jobwidgets5 -- ppa:savoury1/kde-xenial
+- libkf5completion-data -- ppa:savoury1/kde-xenial
+- libkf5completion5 -- ppa:savoury1/kde-xenial
+- libkf5bookmarks-data -- ppa:savoury1/kde-xenial
+- libkf5bookmarks5 -- ppa:savoury1/kde-xenial
+- libkf5itemviews-data -- ppa:savoury1/kde-xenial
+- libkf5itemviews5 -- ppa:savoury1/kde-xenial
+- libkf5iconthemes-data -- ppa:savoury1/kde-xenial
+- libkf5iconthemes5 -- ppa:savoury1/kde-xenial
+- libkf5kcmutils-data -- ppa:savoury1/kde-xenial
+- libkf5kcmutils5 -- ppa:savoury1/kde-xenial
+- libkf5activities5 -- ppa:savoury1/kde-xenial
+- libkf5contacts-data -- ppa:savoury1/kde-xenial
+- libkf5contacts5 -- ppa:savoury1/kde-xenial
+- libkf5calendarcore5abi1 -- ppa:savoury1/kde-xenial
+- libkf5wallet-data -- ppa:savoury1/kde-xenial
+- libkwalletbackend5-5 -- ppa:savoury1/kde-xenial
+- libkf5wallet5 -- ppa:savoury1/kde-xenial
+- libkf5wallet-bin -- ppa:savoury1/kde-xenial
+- libkf5akonadiprivate5 -- ppa:savoury1/kde-xenial
+- libkf5akonadicore5abi1 -- ppa:savoury1/kde-xenial
+- libkf5akonadiwidgets5 -- ppa:savoury1/kde-xenial
+- libkf5akonadicore-bin -- ppa:savoury1/kde-xenial
+- libkf5sonnet5-data -- ppa:savoury1/kde-xenial
+- libkf5sonnetcore5 -- ppa:savoury1/kde-xenial
+- libkf5sonnetui5 -- ppa:savoury1/kde-xenial
+- libkf5textwidgets-data -- ppa:savoury1/kde-xenial
+- libkf5textwidgets5 -- ppa:savoury1/kde-xenial
+- libkf5kiowidgets5 -- ppa:savoury1/kde-xenial
+- libkf5kiofilewidgets5 -- ppa:savoury1/kde-xenial
 B kde-cli-tools-data
 B kde-cli-tools
-B libkf5newstuff-data
-B libkf5newstuffcore5
-B libkf5newstuff5
-B libkf5notifyconfig-data
-B libkf5notifyconfig5
-B libkf5cddb-data
-B libkf5cddb5
-B kde-config-cddb
-B libkf5sane-data
-B libkf5sane5
-B marble-data
-B libastro1
-B libmarblewidget-qt5-28
-B libkf5emoticons-data
-B libkf5emoticons5
-B libkf5emoticons-bin
-B libkf5pimtextedit-data
-B libkf5pimtextedit5abi2
-B libkf5libkleo5abi1
-B libkf5contacteditor-data
-B libkf5contacteditor5
-B libkf5akonadicontact-data
-B libkf5akonadicontact5abi1
-B libkf5activities5
-B libkf5calendarevents5
-B libkf5declarative-data
-B libkf5declarative5
-B libkf5quickaddons5
-B qml-module-org-kde-kquickcontrols
-B qml-module-org-kde-kquickcontrolsaddons
-B qml-module-org-kde-kconfig
-B libkaccounts1
-B libkf5kirigami2-5
-B qml-module-org-kde-kirigami2
-B libkf5parts-data
-B libkf5parts5
+- libkf5newstuff-data -- ppa:savoury1/kde-xenial
+- libkf5newstuffcore5 -- ppa:savoury1/kde-xenial
+- libkf5newstuff5 -- ppa:savoury1/kde-xenial
+- libkf5notifyconfig-data -- ppa:savoury1/kde-xenial
+- libkf5notifyconfig5 -- ppa:savoury1/kde-xenial
+- libkf5cddb-data -- ppa:savoury1/kde-xenial
+- libkf5cddb5 -- ppa:savoury1/kde-xenial
+- kde-config-cddb -- ppa:savoury1/kde-xenial
+- libkf5sane-data -- ppa:savoury1/kde-xenial
+- libkf5sane5 -- ppa:savoury1/kde-xenial
+- marble-data -- ppa:savoury1/kde-xenial
+- libastro1 -- ppa:savoury1/kde-xenial
+- libmarblewidget-qt5-28 -- ppa:savoury1/kde-xenial
+- libkf5emoticons-data -- ppa:savoury1/kde-xenial
+- libkf5emoticons5 -- ppa:savoury1/kde-xenial
+- libkf5emoticons-bin -- ppa:savoury1/kde-xenial
+- libkf5pimtextedit-data -- ppa:savoury1/kde-xenial
+- libkf5pimtextedit5abi2 -- ppa:savoury1/kde-xenial
+- libkf5libkleo5abi1 -- ppa:savoury1/kde-xenial
+- libkf5contacteditor-data -- ppa:savoury1/kde-xenial
+- libkf5contacteditor5 -- ppa:savoury1/kde-xenial
+- libkf5akonadicontact-data -- ppa:savoury1/kde-xenial
+- libkf5akonadicontact5abi1 -- ppa:savoury1/kde-xenial
+- libkf5activities5 -- ppa:savoury1/kde-xenial
+- libkf5calendarevents5 -- ppa:savoury1/kde-xenial
+- libkf5declarative-data -- ppa:savoury1/kde-xenial
+- libkf5declarative5 -- ppa:savoury1/kde-xenial
+- libkf5quickaddons5 -- ppa:savoury1/kde-xenial
+- qml-module-org-kde-kquickcontrols -- ppa:savoury1/kde-xenial
+- qml-module-org-kde-kquickcontrolsaddons -- ppa:savoury1/kde-xenial
+- qml-module-org-kde-kconfig -- ppa:savoury1/kde-xenial
+- libkaccounts1 -- ppa:savoury1/kde-xenial
+- libkf5kirigami2-5 -- ppa:savoury1/kde-xenial
+- qml-module-org-kde-kirigami2 -- ppa:savoury1/kde-xenial
+- libkf5parts-data -- ppa:savoury1/kde-xenial
+- libkf5parts5 -- ppa:savoury1/kde-xenial
 B libdmtx0a
 B libqrencode3
-B libkf5prison5
-B libkf5kdelibs4support-data
-B libkf5kdelibs4support5
-B kinit
-B kio
-B libkf5xmlrpcclient-data
-B libkf5xmlrpcclient5
-B libkf5style5
-B libkf5plasma5
-B libkf5plasmaquick5
-B plasma-framework
+- libkf5prison5 -- ppa:savoury1/kde-xenial
+- libkf5kdelibs4support-data -- ppa:savoury1/kde-xenial
+- libkf5kdelibs4support5 -- ppa:savoury1/kde-xenial
+- kinit -- ppa:savoury1/kde-xenial
+- kio -- ppa:savoury1/kde-xenial
+- libkf5xmlrpcclient-data -- ppa:savoury1/kde-xenial
+- libkf5xmlrpcclient5 -- ppa:savoury1/kde-xenial
+- libkf5style5 -- ppa:savoury1/kde-xenial
+- libkf5plasma5 -- ppa:savoury1/kde-xenial
+- libkf5plasmaquick5 -- ppa:savoury1/kde-xenial
+- plasma-framework -- ppa:savoury1/kde-xenial
 B libkworkspace5-5
 B drkonqi
 B kdeconnect
