@@ -22,6 +22,7 @@
 - scdaemon -- ppa:savoury1/gpg
 - libgpgme11 -- ppa:savoury1/gpg
 - libgpgmepp6 -- ppa:savoury1/gpg
+- libqgpgme7 -- ppa:savoury1/gpg
 - python3-gpg -- ppa:savoury1/gpg
 - gpa -- ppa:savoury1/gpg
 - libgck-1-0 -- ppa:savoury1/gtk-xenial

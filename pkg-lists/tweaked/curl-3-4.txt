@@ -1,4 +1,4 @@
-- libcurl3-gnutls -- new version built for Xenial (ppa:savoury1/curl34)
-- libcurl4 -- new version built for Xenial (ppa:savoury1/curl34)
-- libcurl4-gnutls-dev -- new version built for Xenial (ppa:savoury1/curl34)
-- curl -- new version built for Xenial (ppa:savoury1/curl34)
+- libcurl3-gnutls -- ppa:savoury1/curl34
+- libcurl4 -- ppa:savoury1/curl34
+- libcurl4-gnutls-dev -- ppa:savoury1/curl34
+- curl -- ppa:savoury1/curl34

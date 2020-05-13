@@ -1,5 +1,5 @@
-B exfat-fuse
-B exfat-utils
+- exfat-fuse -- ppa:savoury1/backports
+- exfat-utils -- ppa:savoury1/backports
 B media-player-info
 B libmtp-common
 B libmtp-runtime
@@ -36,16 +36,17 @@ B wodim
 B libburn4
 B cdrskin
 B libdvd-pkg
-- libdvdread4
-B libdvdnav4
+- libdvdread4 -- obsolete by libdvdread7
+- libdvdread7 -- ppa:savoury1/multimedia
+- libdvdnav4 -- ppa:savoury1/multimedia
 B libdvbpsi10
-B libasm-java
-B libbluray2
-B libbluray-bin
-B libbluray-bdj
+B libasm-java -- ppa:savoury1/backports
+- libbluray2 -- ppa:savoury1/multimedia
+- libbluray-bin -- ppa:savoury1/multimedia
+- libbluray-bdj -- ppa:savoury1/multimedia
 B growisofs
 B dvd+rw-tools
-- dvdauthor
+- dvdauthor -- ppa:savoury1/multimedia
 B brasero-common
 B libbrasero-media3-1
 B brasero-cdrkit

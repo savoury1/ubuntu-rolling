@@ -27,9 +27,9 @@ B libgnome2-0
 B libgnomeui-common
 B libgnomeui-0
 B python-gnome2
-B libwxbase3.0-0v5
-B libwxgtk3.0-0v5
-B libwxgtk3.0-gtk3-0v5
+- libwxbase3.0-0v5 -- ppa:savoury1/backports
+- libwxgtk3.0-0v5 -- ppa:savoury1/backports
+- libwxgtk3.0-gtk3-0v5 -- ppa:savoury1/backports
 B python-wxversion
 B python-wxgtk3.0
 B libfltk1.3

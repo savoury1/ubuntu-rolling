@@ -13,14 +13,14 @@ B libmount1:i386
 B libmount-dev
 B util-linux
 B mount
-B libcom-err2
-B libcomerr2
-B libcom-err2:i386
-B libcomerr2:i386
-B libss2
-B libext2fs2
-B e2fslibs
-B e2fsprogs
+- libcom-err2 -- ppa:savoury1/backports
+- libcomerr2 -- ppa:savoury1/backports
+- libcom-err2:i386 -- ppa:savoury1/backports
+- libcomerr2:i386 -- ppa:savoury1/backports
+- libss2 -- ppa:savoury1/backports
+- libext2fs2 -- ppa:savoury1/backports
+- e2fslibs -- ppa:savoury1/backports
+- e2fsprogs -- ppa:savoury1/backports
 B btrfs-progs
 B btrfs-tools
 B nilfs-tools
@@ -34,10 +34,10 @@ B dmeventd
 B lvm2
 B libdmraid1.0.0.rc16
 B dmraid
-B libparted2
-B libparted-dev
-B parted
-B libparted-fs-resize0
+- libparted2 -- ppa:savoury1/backports
+- libparted-dev -- ppa:savoury1/backports
+- parted -- ppa:savoury1/backports
+- libparted-fs-resize0 -- ppa:savoury1/backports
 B python-parted
 B libcryptsetup12
 B cryptsetup-bin
@@ -59,8 +59,8 @@ B dosfstools
 B jfsutils
 B hfsprogs
 B dmg2img
-B libfuse2
-B fuse
+- libfuse2 -- ppa:savoury1/backports
+- fuse -- ppa:savoury1/backports
 B sshfs
 B libatasmart4
 B libblockdev-utils2

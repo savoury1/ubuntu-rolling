@@ -1,3 +1,4 @@
+B python-cliapp
 B python-funcsigs
 B python-pbr
 B python-mock
@@ -16,8 +17,8 @@ B python-ptyprocess
 B python3-ptyprocess
 B python-pexpect
 B python3-pexpect
-B python-httplib2
-B python3-httplib2
+- python-httplib2 -- ppa:savoury1/python
+- python3-httplib2 -- ppa:savoury1/python
 B python-urllib3
 B python3-urllib3
 B python-requests
@@ -26,6 +27,14 @@ B python3-cupshelpers
 B python3-requests-unixsocket
 B python3-problem-report
 B python3-apport
+B python3-tz
+B python-babel-localedata
+B python3-babel
+B python3-roman
+B docutils-common
+B python3-docutils
+B python3-jinja2
+B python3-pygments
 B python-jwt
 B python3-jwt
 B python-hyperlink
@@ -63,3 +72,5 @@ B ruby-atk
 B ruby-cairo-gobject
 B ruby-pango
 B ruby-gtk2
+B libjs-jquery
+B libjs-underscore

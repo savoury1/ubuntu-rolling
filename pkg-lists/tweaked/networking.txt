@@ -64,8 +64,8 @@ B python-smbc
 B cifs-utils
 B rdesktop
 ~ vino -- modded version required (fix dconf schema error)
-D libsodium23 -- latest available version
-D libsodium-dev -- same series as libsodium23 (1.0.17-1) Disco
+- libsodium23 -- ppa:savoury1/backports
+- libsodium-dev -- ppa:savoury1/backports
 B libnorm1
 B libpgm-5.2-0
 B libzmq5

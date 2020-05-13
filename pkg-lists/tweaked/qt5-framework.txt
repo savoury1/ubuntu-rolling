@@ -73,7 +73,6 @@ E qt5ct
 E libqtav1
 E libqtavwidgets1
 E libgrantlee-textdocument5
-D libqgpgme7 -- same series as gpg (2.2.17-3ubuntu4) Disco (ppa:nephirus/ppa-gnupg)
 E libqt5pas1 -- required by winff-qt (1.5.5-4) Bionic
 E libqca-qt5-2
 E libqca-qt5-2-plugins

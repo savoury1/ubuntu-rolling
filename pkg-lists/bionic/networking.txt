@@ -64,8 +64,8 @@ B python-smbc
 B cifs-utils
 B rdesktop
 ~ vino -- modded version required (fix dconf schema error)
-B libsodium23
-B libsodium-dev
+- libsodium23 -- ppa:savoury1/backports
+- libsodium-dev -- ppa:savoury1/backports
 B libnorm1
 B libpgm-5.2-0
 B libzmq5
@@ -88,8 +88,8 @@ B libhttrack2
 B httrack
 B webhttrack-common
 B webhttrack
-B libphodav-2.0-common
-B libphodav-2.0-0
+- libphodav-2.0-common -- ppa:savoury1/virtualisation
+- libphodav-2.0-0 -- ppa:savoury1/virtualisation
 B libneon27-gnutls
 B libcmis-0.5-5v5
 B libgdata-common
@@ -101,22 +101,22 @@ B libgupnp-1.0-4
 B libgupnp-igd-1.0-4
 B libminiupnpc10
 B libnatpmp1
-B libdap25
-B libdapclient6v5
-B libcapnp-0.6.1
-B libprotobuf10
-B libprotobuf-lite10
-B libprotobuf-dev
-B libprotoc10
-B protobuf-compiler
-B python-protobuf
-B libprotobuf-c1
+- libdap25 -- ppa:savoury1/backports
+- libdapclient6v5 -- ppa:savoury1/backports
+- libcapnp-0.6.1 -- ppa:savoury1/build-tools
+- libprotobuf10 -- ppa:savoury1/backports
+- libprotobuf-lite10 -- ppa:savoury1/backports
+- libprotobuf-dev -- ppa:savoury1/backports
+- libprotoc10 -- ppa:savoury1/backports
+- protobuf-compiler -- ppa:savoury1/backports
+- python-protobuf -- ppa:savoury1/backports
+- libprotobuf-c1 -- ppa:savoury1/backports
 B libtorrent-rasterbar9
 B python-libtorrent
-B libgadu3
+- libgadu3 -- ppa:savoury1/backports
 B libmeanwhile1
-B geoip-bin
-B libgeoip1
+- geoip-bin -- ppa:savoury1/backports
+- libgeoip1 -- ppa:savoury1/backports
 B libgeoclue0
 B geoclue
 B geoclue-ubuntu-geoip

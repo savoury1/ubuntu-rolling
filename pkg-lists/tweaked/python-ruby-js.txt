@@ -17,8 +17,8 @@ B python-ptyprocess
 B python3-ptyprocess
 B python-pexpect
 B python3-pexpect
-D python-httplib2 -- older broken by libssl1.1 (1.1.1-1ubuntu2) Cosmic
-D python3-httplib2 -- same series as python-httplib2 (0.11.3-2) Disco
+- python-httplib2 -- ppa:savoury1/python
+- python3-httplib2 -- ppa:savoury1/python
 B python-urllib3
 B python3-urllib3
 B python-requests

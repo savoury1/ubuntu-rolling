@@ -55,7 +55,7 @@ B libuchardet0
 - libx264-155 -- ppa:savoury1/multimedia
 - libx265-146 -- superseded by libx265-179
 - libx264-155 -- ppa:savoury1/multimedia
-D libde265-0 -- latest available version
+F libde265-0 -- latest available version
 B libheif1 -- ppa:savoury1/multimedia
 B libtheora0
 B libtheora0:i386

@@ -24,6 +24,7 @@ B librhash0
 B libuv1
 B libbsd0
 B libbsd0:i386
+B libbsd-dev
 B bsdutils
 B bsdmainutils
 B libtool
@@ -32,14 +33,14 @@ B libltdl7:i386
 B libdb5.3
 B libdb5.3:i386
 B db5.3-util
-B iso-codes
+- iso-codes -- ppa:savoury1/backports
 B isoquery
 B localechooser-data
 B tzdata
-B libtcl8.6
-B tcl8.6
-B libtk8.6
-B tk8.6
+- libtcl8.6 -- ppa:savoury1/backports
+- tcl8.6 -- ppa:savoury1/backports
+- libtk8.6 -- ppa:savoury1/backports
+- tk8.6 -- ppa:savoury1/backports
 B tk8.6-blt2.5
 B blt
 B libslang2
@@ -51,12 +52,12 @@ B uuid
 B liblua5.2-0
 B liblua5.3-0
 B java-common
-B libunwind8
-B libunwind-dev
+- libunwind8 -- ppa:savoury1/build-tools
+- libunwind-dev -- ppa:savoury1/build-tools
 B strace
 B ltrace
 B libsocket++1
-B libtbb2
+- libtbb2 -- ppa:savoury1/backports
 B libfftw3-single3
 B libfftw3-double3
 B libfftw3-long3
@@ -69,13 +70,13 @@ B liblapack3
 B libarpack2
 B libsuperlu5
 B libarmadillo8
-B libgmp10
-B libgmp10:i386
-B libgmpxx4ldbl
-B libgmp-dev
+- libgmp10 -- ppa:savoury1/backports
+- libgmp10:i386 -- ppa:savoury1/backports
+- libgmpxx4ldbl -- ppa:savoury1/backports
+- libgmp-dev -- ppa:savoury1/backports
 B libisl15
-B libmpfr6
-B libmpc3
+- libmpfr6 -- ppa:savoury1/backports
+- libmpc3 -- ppa:savoury1/backports
 B libmpdec2
 B bc
 B dc
@@ -106,24 +107,24 @@ B libsigsegv2
 B libcwidget3v5
 B libasprintf0v5
 B libasprintf-dev
-B gettext-base
-B gettext
-B libgettextpo0
-B libgettextpo0:i386
-B libgettextpo-dev
-B autopoint
+- gettext-base -- ppa:savoury1/backports
+- gettext -- ppa:savoury1/backports
+- libgettextpo0 -- ppa:savoury1/backports
+- libgettextpo0:i386 -- ppa:savoury1/backports
+- libgettextpo-dev -- ppa:savoury1/backports
+- autopoint -- ppa:savoury1/backports
 B mawk
-B gawk
+- gawk -- ppa:savoury1/backports
 B liblockfile-bin
 B liblockfile1
 B lockfile-progs
 B python-lockfile
 B librsync1
-B rsync
+- rsync -- ppa:savoury1/backports
 B duplicity
 B libdbi1
-B htop
+- htop -- ppa:savoury1/backports
 B iotop
-B w3m
+- w3m -- ppa:savoury1/backports
 B gt5
 B libfam0

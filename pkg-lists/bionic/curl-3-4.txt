@@ -1,4 +1,4 @@
-B libcurl3-gnutls
-B libcurl4
-B libcurl4-gnutls-dev
-B curl
+- libcurl3-gnutls -- ppa:savoury1/curl34
+- libcurl4 -- ppa:savoury1/curl34
+- libcurl4-gnutls-dev -- ppa:savoury1/curl34
+- curl -- ppa:savoury1/curl34

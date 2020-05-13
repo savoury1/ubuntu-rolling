@@ -19,9 +19,10 @@ B locales
 - libglib2.0-dev -- ppa:savoury1/gtk-xenial
 B libglibmm-2.4-1v5
 B libglibmm-2.4-dev
-B libgee-0.8-2
+- libgee-0.8-2 -- ppa:savoury1/gtk-xenial
 - libicu60 -- ppa:savoury1/backports
 - libicu60:i386 -- ppa:savoury1/backports
+- libicu63 -- ppa:savoury1/virtualisation
 - icu-devtools -- ppa:savoury1/backports
 - libicu-le-hb0 -- ppa:savoury1/backports
 - libiculx60 -- ppa:savoury1/backports
@@ -37,3 +38,13 @@ B libgee-0.8-2
 - libboost-regex1.65.1 -- ppa:savoury1/backports
 - libboost-python1.65.1 -- ppa:savoury1/backports
 - libboost-wave1.65.1 -- ppa:savoury1/backports
+- libboost-iostreams1.67.0 -- ppa:savoury1/virtualisation
+- libboost-system1.67.0 -- ppa:savoury1/virtualisation
+- libboost-filesystem1.67.0 -- ppa:savoury1/virtualisation
+- libboost-program-options1.67.0 -- ppa:savoury1/virtualisation
+- libboost-thread1.67.0 -- ppa:savoury1/virtualisation
+- libboost-locale1.67.0 -- ppa:savoury1/virtualisation
+- libboost-date-time1.67.0 -- ppa:savoury1/virtualisation
+- libboost-regex1.67.0 -- ppa:savoury1/virtualisation
+- libboost-python1.67.0 -- ppa:savoury1/virtualisation
+- libboost-wave1.67.0 -- ppa:savoury1/virtualisation

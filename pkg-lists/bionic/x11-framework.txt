@@ -1,75 +1,75 @@
-B libpciaccess0
-B libpciaccess0:i386
-B libevdev2
+- libpciaccess0 -- ppa:savoury1/display
+- libpciaccess0:i386 -- ppa:savoury1/display
+- libevdev2 -- ppa:savoury1/display
 B libmtdev1
-B libwacom-common
-B libwacom2
-B libinput-bin
-B libinput10
-B xkb-data
+- libwacom-common -- ppa:savoury1/display
+- libwacom2 -- ppa:savoury1/display
+- libinput-bin -- ppa:savoury1/display
+- libinput10 -- ppa:savoury1/display
+- xkb-data -- ppa:savoury1/display
 B kbd
 B keyboard-configuration
 B console-setup-linux
 B console-setup
-B libnux-4.0-common
-B nux-tools
-B x11-common
+- libnux-4.0-common -- ppa:savoury1/display
+- nux-tools -- ppa:savoury1/display
+- x11-common -- ppa:savoury1/display
 B xorg-docs-core
-B libxdmcp6
-B libxdmcp6:i386
-B libxdmcp-dev
-B libx11-xcb1
-B libx11-xcb1:i386
-B libx11-xcb-dev
-B libx11-data
-B libx11-6
-B libx11-6:i386
-B libx11-dev
-B libxres1
-B libxrender1
-B libxrender1:i386
-B libxrender-dev
-B libxrandr2
-B libxrandr2:i386
-B libxrandr-dev
-B libxv1
-B libxv1:i386
-B libxv-dev
-B libxvmc1
-B libxfixes3
-B libxfixes3:i386
-B libxfixes-dev
-B libxdamage1
-B libxdamage1:i386
-B libxdamage-dev
-B libxcomposite1
-B libxcomposite1:i386
-B libxcomposite-dev
-B libxcursor1
-B libxcursor1:i386
-B libxcursor-dev
-B libxi6
-B libxi6:i386
-B libxi-dev
-B libxtst6
-B libxtst6:i386
-B libxtst-dev
+- libxdmcp6 -- ppa:savoury1/display
+- libxdmcp6:i386 -- ppa:savoury1/display
+- libxdmcp-dev -- ppa:savoury1/display
+- libx11-xcb1 -- ppa:savoury1/display
+- libx11-xcb1:i386 -- ppa:savoury1/display
+- libx11-xcb-dev -- ppa:savoury1/display
+- libx11-data -- ppa:savoury1/display
+- libx11-6 -- ppa:savoury1/display
+- libx11-6:i386 -- ppa:savoury1/display
+- libx11-dev -- ppa:savoury1/display
+- libxres1 -- ppa:savoury1/display
+- libxrender1 -- ppa:savoury1/display
+- libxrender1:i386 -- ppa:savoury1/display
+- libxrender-dev -- ppa:savoury1/display
+- libxrandr2 -- ppa:savoury1/display
+- libxrandr2:i386 -- ppa:savoury1/display
+- libxrandr-dev -- ppa:savoury1/display
+- libxv1 -- ppa:savoury1/display
+- libxv1:i386 -- ppa:savoury1/display
+- libxv-dev -- ppa:savoury1/display
+- libxvmc1 -- ppa:savoury1/display
+- libxfixes3 -- ppa:savoury1/display
+- libxfixes3:i386 -- ppa:savoury1/display
+- libxfixes-dev -- ppa:savoury1/display
+- libxdamage1 -- ppa:savoury1/display
+- libxdamage1:i386 -- ppa:savoury1/display
+- libxdamage-dev -- ppa:savoury1/display
+- libxcomposite1 -- ppa:savoury1/display
+- libxcomposite1:i386 -- ppa:savoury1/display
+- libxcomposite-dev -- ppa:savoury1/display
+- libxcursor1 -- ppa:savoury1/display
+- libxcursor1:i386 -- ppa:savoury1/display
+- libxcursor-dev -- ppa:savoury1/display
+- libxi6 -- ppa:savoury1/display
+- libxi6:i386 -- ppa:savoury1/display
+- libxi-dev -- ppa:savoury1/display
+- libxtst6 -- ppa:savoury1/display
+- libxtst6:i386 -- ppa:savoury1/display
+- libxtst-dev -- ppa:savoury1/display
 B libfakekey0
 B xinput
-B libxkbfile1
-B libice6
-B libice6:i386
-B libice-dev
-B libxt6
-B libxt6:i386
-B libxt-dev
-B libxpm4
-B libxpm4:i386
-B libxpm-dev
-B xauth
+- libxkbfile1 -- ppa:savoury1/display
+- libice6 -- ppa:savoury1/display
+- libice6:i386 -- ppa:savoury1/display
+- libice-dev -- ppa:savoury1/display
+- libxt6 -- ppa:savoury1/display
+- libxt6:i386 -- ppa:savoury1/display
+- libxt-dev -- ppa:savoury1/display
+- libxpm4 -- ppa:savoury1/display
+- libxpm4:i386 -- ppa:savoury1/display
+- libxpm-dev -- ppa:savoury1/display
+- xauth -- ppa:savoury1/display
 B xinit
 B xautomation
-B xutils-dev
+- xutils-dev -- ppa:savoury1/display
 B xapps-common
 B libxapp1
 B x11-apps
@@ -77,26 +77,26 @@ B x11-utils
 B x11-session-utils
 B x11-xserver-utils
 B x11-xfs-utils
-B x11-xkb-utils
-B libxkbcommon0
-B libxkbcommon0:i386
-B libxkbcommon-dev
-B libxkbcommon-x11-0
+- x11-xkb-utils -- ppa:savoury1/display
+- libxkbcommon0 -- ppa:savoury1/display
+- libxkbcommon0:i386 -- ppa:savoury1/display
+- libxkbcommon-dev -- ppa:savoury1/display
+- libxkbcommon-x11-0 -- ppa:savoury1/display
 B libxklavier16
 B gir1.2-xkl-1.0
 B libxdo3
 B xdotool
-B libxshmfence1
-B libxshmfence1:i386
-B libxshmfence-dev
-B libpixman-1-0
-B libpixman-1-0:i386
-B libpixman-1-dev
+- libxshmfence1 -- ppa:savoury1/display
+- libxshmfence1:i386 -- ppa:savoury1/display
+- libxshmfence-dev -- ppa:savoury1/display
+- libpixman-1-0 -- ppa:savoury1/display
+- libpixman-1-0:i386 -- ppa:savoury1/display
+- libpixman-1-dev -- ppa:savoury1/display
 B libxft2
 B libxft2:i386
 B libxft-dev
-B libxfont2
-B xfonts-utils
+- libxfont2 -- ppa:savoury1/display
+- xfonts-utils -- ppa:savoury1/display
 B xcalib
 B wmctrl
 B xaw3dg:i386

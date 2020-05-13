@@ -44,6 +44,7 @@ B python-pycurl
 B python3-pycurl
 B python-xapian
 B python3-xapian
+B python-yaml
 B python3-yaml
 B python-libxml2
 B python3-libxml2

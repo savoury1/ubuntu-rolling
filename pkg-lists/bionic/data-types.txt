@@ -63,15 +63,15 @@ B liburiparser1
 B libkmlbase1
 B libkmldom1
 B libkmlengine1
-B gdal-data
-B libgdal20
-B opencv-data
-B libopencv-core3.2
-B libopencv-ml3.2
-B libopencv-imgproc3.2
-B libopencv-imgcodecs3.2
-B libopencv-video3.2
-B libopencv-videoio3.2
-B libopencv-highgui3.2
-B libopencv-objdetect3.2
-B frei0r-plugins
+- gdal-data -- ppa:savoury1/backports
+- libgdal20 -- ppa:savoury1/backports
+- opencv-data -- ppa:savoury1/graphics
+- libopencv-core3.2 -- ppa:savoury1/graphics
+- libopencv-ml3.2 -- ppa:savoury1/graphics
+- libopencv-imgproc3.2 -- ppa:savoury1/graphics
+- libopencv-imgcodecs3.2 -- ppa:savoury1/graphics
+- libopencv-video3.2 -- ppa:savoury1/graphics
+- libopencv-videoio3.2 -- ppa:savoury1/graphics
+- libopencv-highgui3.2 -- ppa:savoury1/graphics
+- libopencv-objdetect3.2 -- ppa:savoury1/graphics
+- frei0r-plugins -- ppa:savoury1/multimedia

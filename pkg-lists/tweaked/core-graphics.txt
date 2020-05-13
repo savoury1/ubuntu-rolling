@@ -36,9 +36,9 @@ B python-renderpm
 - libwebpmux3 -- ppa:savoury1/graphics
 - libwebpdemux2 -- ppa:savoury1/graphics
 - libilmbase12 -- identical version in Xenial and Bionic
-D libilmbase23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
+E libilmbase23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 B libopenexr22
-D libopenexr23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
+E libopenexr23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 - libvigraimpex6 -- ppa:savoury1/graphics
 - libvigraimpex-dev -- ppa:savoury1/graphics
 B libfox-1.6-0
@@ -109,7 +109,7 @@ B libraw16
 - liblensfun-data-v1 -- ppa:savoury1/graphics
 - liblensfun1 -- ppa:savoury1/graphics
 B liblqr-1-0
-D dcraw -- latest available version
+E dcraw -- latest available version
 - libgphoto2-l10n -- ppa:savoury1/graphics
 - libgphoto2-port12 -- ppa:savoury1/graphics
 - libgphoto2-port12:i386 -- ppa:savoury1/graphics

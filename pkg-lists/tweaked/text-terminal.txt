@@ -1,44 +1,45 @@
-B libpango-1.0-0
-B libpango-1.0-0:i386
-B libpangoft2-1.0-0
-B libpangoft2-1.0-0:i386
-B libpangocairo-1.0-0
-B libpangocairo-1.0-0:i386
-B libpangoxft-1.0-0
-B gir1.2-pango-1.0
-B libpango1.0-dev
-B libpango1.0-0
+- libpango-1.0-0 -- ppa:savoury1/gtk-xenial
+- libpango-1.0-0:i386 -- ppa:savoury1/gtk-xenial
+- libpangoft2-1.0-0 -- ppa:savoury1/gtk-xenial
+- libpangoft2-1.0-0:i386 -- ppa:savoury1/gtk-xenial
+- libpangocairo-1.0-0 -- ppa:savoury1/gtk-xenial
+- libpangocairo-1.0-0:i386 -- ppa:savoury1/gtk-xenial
+- libpangoxft-1.0-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-pango-1.0 -- ppa:savoury1/gtk-xenial
+- libpango1.0-dev -- ppa:savoury1/gtk-xenial
+- libpango1.0-0 -- ppa:savoury1/gtk-xenial
 B libpangomm-1.4-1v5
 B libpangomm-1.4-dev
-B libunistring2
-B libunistring2:i386
-B readline-common
-B libreadline7
-B libreadline7:i386
-D libreadline8 -- required by gpg (2.2.12-1ubuntu3) Disco
-D libtinfo5 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libtinfo5:i386 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncurses5 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncurses5:i386 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncursesw5 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncursesw5:i386 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libtinfo6 -- required by qemu-system-x86 (1:2.12+dfsg-3ubuntu8) Cosmic
-D libncurses6 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncursesw6 -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D ncurses-base -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D ncurses-bin -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncurses-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libtinfo-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncurses5-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
-D libncursesw5-dev -- same series as libtinfo6 (6.1+20181013-2ubuntu2) Disco
+- libunistring2 -- ppa:savoury1/backports
+- libunistring2:i386 -- ppa:savoury1/backports
+- readline-common -- ppa:savoury1/backports
+- libreadline7 -- ppa:savoury1/backports
+- libreadline7:i386 -- ppa:savoury1/backports
+F libreadline8
+F libreadline8:i386
+F libtinfo5
+F libtinfo5:i386
+F libncurses5
+F libncurses5:i386
+F libncursesw5
+F libncursesw5:i386
+F libtinfo6
+F libncurses6
+F libncursesw6
+F ncurses-base
+F ncurses-bin
+F libncurses-dev
+F libtinfo-dev
+F libncurses5-dev
+F libncursesw5-dev
 B dash
 B ash
-B bash
-B bash-completion
+- bash -- ppa:savoury1/backports
+- bash-completion -- ppa:savoury1/backports
 B command-not-found-data
 B python3-commandnotfound
 B command-not-found
-B libpopt0
+- libpopt0 -- ppa:savoury1/backports
 B groff-base
 B libpipeline1
 B binfmt-support
@@ -50,8 +51,8 @@ B manpages
 B manpages-dev
 B man-db
 B ed
-B sed
-B grep
+- sed -- ppa:savoury1/backports
+- grep -- ppa:savoury1/backports
 B less
 B findutils
 B mlocate
@@ -67,4 +68,4 @@ B dialog
 B libgpm2
 B libgpm2:i386
 - libre2-4 -- obsolete by libre2-5 (20190101+dfsg-2) Disco
-D libre2-5 -- required by libqt5webenginecore5 (5.12.2+dfsg-2ubuntu1) Disco
+E libre2-5 -- required by libqt5webenginecore5 (5.12.2+dfsg-2ubuntu1) Disco

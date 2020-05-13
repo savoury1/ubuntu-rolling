@@ -45,9 +45,9 @@ E kdenlive -- latest available version
 - k3b-i18n -- ppa:savoury1/multimedia
 - k3b-data -- ppa:savoury1/multimedia
 - k3b -- ppa:savoury1/multimedia
-D winff-data -- same series as winff (1.5.5-6) Disco
-D winff-qt -- same series as winff (1.5.5-6) Disco
-D winff -- required by ffmpeg (7:4.1.4-1sergeyd2.1~xenial1)
+E winff-data -- same series as winff (1.5.5-6) Eoan
+E winff-qt -- same series as winff (1.5.5-6) Eoan
+E winff -- latest available version
 - meld -- ppa:savoury1/meld
 B 4pane
 B hexchat-common
