@@ -9,7 +9,7 @@ if [ "$1" = "configure" ]; then
   codename="$(sed -n 's|UBUNTU_CODENAME=||p' /etc/os-release)"
 
   # space at end of everyseries var is significant for sub-string removal
-  everyseries="xenial bionic cosmic disco eoan "
+  everyseries="xenial bionic cosmic disco eoan focal groovy "
   otherseries="$(echo "$everyseries" | sed 's/'"$codename"' //')"
 
   # if this is an unknown series then don't create any config files
@@ -22,7 +22,10 @@ if [ "$1" = "configure" ]; then
   # get user selected mirror from primary Ubuntu package repository list file
   # /etc/apt/sources.list.d/official-package-repositories.list
   repofile="/etc/apt/sources.list.d/official-package-repositories.list"
-  mirror="$(sed -n 's|deb http://\(.*\)/ubuntu '"$codename"' main .*|\1|p' "$repofile")"
+  # Bionic (and newer?) don't seem to have the old official repo file
+  if [ ! -e "$repofile" ]; then repofile="/etc/apt/sources.list"; fi
+  mirror="$(sed -n 's|deb http://\(.*\)/ubuntu\(/*\) '"$codename"' main .*|\1|p' "$repofile")"
+  oldrel=old-releases.ubuntu.com
   pockets="main restricted universe multiverse"
 
   for series in $otherseries; do
@@ -34,13 +37,23 @@ if [ "$1" = "configure" ]; then
     echo "Pin-Priority: 50" >> "$repofile-lo.pref"
     echo "Pin-Priority: 990" >> "$repofile-hi.pref.save"
 
+    # Use old releases server for series past end of support
+    case "$series" in
+    cosmic | disco)
+      server=$oldrel
+      ;;
+    *)
+      server=$mirror
+      ;;
+    esac
+
     # also create standard repository lists for each of the other series
     repofile="/etc/apt/sources.list.d/official-package-repos-$series.list"
-    echo "deb http://$mirror/ubuntu $series $pockets" > "$repofile"
-    echo "deb http://$mirror/ubuntu $series-updates $pockets" >> "$repofile"
-    echo "deb http://$mirror/ubuntu $series-backports $pockets" >> "$repofile"
+    echo "deb http://$server/ubuntu/ $series $pockets" > "$repofile"
+    echo "deb http://$server/ubuntu/ $series-updates $pockets" >> "$repofile"
+    echo "deb http://$server/ubuntu/ $series-backports $pockets" >> "$repofile"
     echo "" >> "$repofile"
-    echo "deb http://$mirror/ubuntu/ $series-security $pockets" >> "$repofile"
+    echo "deb http://$server/ubuntu/ $series-security $pockets" >> "$repofile"
     echo "deb http://archive.canonical.com/ubuntu/ $series partner" >> "$repofile"
   done
 fi

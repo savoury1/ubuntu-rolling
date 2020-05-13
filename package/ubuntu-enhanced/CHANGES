@@ -1,3 +1,16 @@
+0.7 / 12-May-2020
+
+  - Add new Groovy Gorilla series to configuration
+  - Use correct server for series past end of support
+
+0.6.1 / 13-Dec-2019
+
+  - Fix "apt-all" script for five alternate series
+
+0.6 / 31-Oct-2019
+
+  - Add new Focal Fossa series to "apt-all" script
+
 0.5 / 2-Sep-2019
 
   - Improvements to "apt-all" including better error handling and break

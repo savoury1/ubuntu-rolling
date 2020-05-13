@@ -1,10 +1,10 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ubuntu-enhanced
-Upstream-Contact: Rob Savoury <savourytech@use.startmail.com>
+Upstream-Contact: Rob Savoury <savoury@savos.tech>
 Source: https://github.com/savoury1/ubuntu-rolling
   
 Files: *
-Copyright: Copyright (c) 2018-2019 Rob Savoury <savourytech@use.startmail.com>
+Copyright: Copyright (c) 2018-2020 Rob Savoury <savoury@savos.tech>
 License: GPL-3
 
 License: GPL-3
@@ -24,4 +24,3 @@ License: GPL-3
  On Debian systems, the complete text of the GNU General Public
  License version 3 can be found in the file
  `/usr/share/common-licenses/GPL-3'.
-

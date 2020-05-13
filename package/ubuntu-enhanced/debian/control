@@ -1,7 +1,7 @@
 Source: ubuntu-enhanced
 Section: misc
 Priority: extra
-Maintainer: Rob Savoury <savourytech@use.startmail.com>
+Maintainer: Rob Savoury <savoury@savos.tech>
 Build-Depends: debhelper (>=9)
 Standards-Version: 3.9.8
 Homepage: https://github.com/savoury1/ubuntu-rolling

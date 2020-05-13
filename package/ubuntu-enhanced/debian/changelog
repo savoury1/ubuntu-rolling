@@ -1,3 +1,39 @@
+ubuntu-enhanced (0.7-2~20.10.sav0) groovy; urgency=low
+
+  * debian/control,copyright: Update Maintainer and copyright contact details
+
+ -- Rob Savoury <savoury@savos.tech>  Tue, 12 May 2020 13:08:15 -0700
+
+ubuntu-enhanced (0.7-1~20.10.sav0) groovy; urgency=low
+
+  * New release adding Groovy Gorilla and using correct server for old series
+  * debian/postinst: Add groovy to everyseries var for new groovy repositories
+    + Add case statement in loop creating repo files to use correct server for
+    all series that are past end of support (currently Cosmic and Disco)
+  * debian/copyright: Update copyright years and upstream email address
+
+ -- Rob Savoury <savoury@savos.tech>  Tue, 12 May 2020 12:37:17 -0700
+
+ubuntu-enhanced (0.6.1-1sav0) xenial; urgency=low
+
+  * Fix apt-all script for five additional series
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Fri, 13 Dec 2019 08:31:12 -0800
+
+ubuntu-enhanced (0.6-1sav0) xenial; urgency=low
+
+  * debian/postinst: add Focal Fossa to everyseries var for new repositories
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Thu, 31 Oct 2019 12:04:01 -0700
+
+ubuntu-enhanced (0.5-2sav0) xenial; urgency=low
+
+  * debian/postinst: fix for Bionic and newer which no longer appear to have an
+    official-packages-repositories.list file in /etc/apt/sources.list.d
+    + include optional trailing slash for sed match of chosen mirror server
+
+ -- Rob Savoury <savourytech@use.startmail.com>  Thu, 26 Sep 2019 15:51:19 -0700
+
 ubuntu-enhanced (0.5-1sav0) xenial; urgency=low
 
   * New version 0.5
