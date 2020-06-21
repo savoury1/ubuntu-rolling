@@ -13,7 +13,7 @@ B vbetool
 - libdrm-amdgpu1:i386 -- ppa:savoury1/display
 - libdrm-radeon1 -- ppa:savoury1/display
 - libdrm-radeon1:i386 -- ppa:savoury1/display
-B libdrm-dev
+- libdrm-dev -- ppa:savoury1/display
 B intel-gpu-tools
 B libwayland-bin
 B libwayland-client0

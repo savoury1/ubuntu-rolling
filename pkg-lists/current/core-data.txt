@@ -61,7 +61,7 @@ B libqjson0
 B libjsoncpp1
 B libfastjson4
 B libjansson4
-B libjson-c3
+- libjson-c3 -- ppa:savoury1/backports
 - libjson-glib-1.0-common -- ppa:savoury1/gtk-xenial
 - libjson-glib-1.0-0 -- ppa:savoury1/gtk-xenial
 - gir1.2-json-1.0 -- ppa:savoury1/gtk-xenial
