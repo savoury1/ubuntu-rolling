@@ -57,11 +57,11 @@ B sbsigntool
 B libdisasm0
 B libllvm4.0
 B libllvm4.0:i386
-B libllvm6.0
-B libllvm6.0:i386
-B libllvm7
-B libllvm7:i386
-B libclang1-7
+- libllvm6.0 -- superseded
+- libllvm6.0:i386 -- superseded
+- libllvm7 -- superseded
+- libllvm7:i386 -- superseded
+- libclang1-7 -- superseded
 - libllvm8 -- ppa:savoury1/llvm-toolchain
 - libllvm8:i386 -- ppa:savoury1/llvm-toolchain
 - libclang1-8 -- ppa:savoury1/llvm-toolchain
