@@ -20,6 +20,19 @@ all Disco packages in PPAs at this site have now been deleted (25 Feb 2020).
 
          mpv = mpv (v0.29.1 for Xenial & v0.32.0 for newer series)
 
+    FFmpeg 4 = aom, aribb24, autogenm, chromaprint, codec2, dav1d, ffmpeg,
+        (v4.3) fontconfig, freetype, gnutls28, intel-gmmlib, intel-media-
+               driver, intel-media-driver-non-free, intel-mediasdk, lame,
+               lensfun, leptonlib, libass, libbluray, libmysofa, libopenmpt,
+               librabbitmq, libsdl2, libssh, libtasn1-6, libunistring, libva,
+               libva-utils, libvidstab, libvpx, libwebp, nettle, norm, nv-
+               codec-headers, p11-kit, rubberband, sndio, srt, tesseract,
+               unbound, x264, x265
+
+    FFmpeg 3 = chromaprint, ffmpeg, lame, leptonlib, libass, libbluray,
+      (v3.4.7) libmysofa, libopenmpt, libsdl2, libva, libva-utils, libvpx,
+               libwebp, librubberband, sndio, tesseract, x264, x265
+
        GPG 2 = autogen, gnupg2, gnutls28, gpa, gpgme1.0, libassuan,
      (v2.2.20) libgcrypt20, libgpg-error, libksba, libtasn1-6, libunistring,
                nettle, p11-kit, python-gnupg, readline, unbound
@@ -70,10 +83,6 @@ all Disco packages in PPAs at this site have now been deleted (25 Feb 2020).
                timgm6mb-soundfont, tinyxml2, twolame, v4l-utils, wavpack,
                wayland, wayland-protocols, webrtc-audio-processing, wildmidi,
                wxwidgets3.0, x264, x265, xvidcore, zeromq3, zvbi
-
-    FFmpeg 4 = ffmpeg (v4.3)
-
-    FFmpeg 3 = ffmpeg (v3.4.7 for Xenial and Bionic)
 
        Games = dbgl, doomsday, dosbox, fizmo-console, fizmo-ncursesw, fizmo-
                sdl2, libdrilbo, libfizmo, libmonospaceif, libpixelif,
