@@ -78,9 +78,9 @@ B liblilv-0-0
 - liborc-0.4-0:i386 -- ppa:savoury1/multimedia
 B libaudio2
 B libaudio2:i386
-B libao-common
-B libao4
-B libao4:i386
+- libao-common -- ppa:savoury1/multimedia
+- libao4 -- ppa:savoury1/multimedia
+- libao4:i386 -- ppa:savoury1/multimedia
 - libwebrtc-audio-processing1 -- ppa:savoury1/multimedia
 - libpulse0 -- ppa:savoury1/multimedia
 - libpulse0:i386 -- ppa:savoury1/multimedia
