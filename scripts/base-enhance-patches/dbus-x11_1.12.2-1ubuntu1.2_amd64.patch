@@ -1,5 +1,4 @@
 diff --git a/dbus-x11_1.12.2-1ubuntu1.2_amd64/DEBIAN/control b/dbus-x11_1.12.2-1ubuntu1.2+16.04.sav0_amd64/DEBIAN/control
-index 1718d22..3900bfa 100644
 --- a/dbus-x11_1.12.2-1ubuntu1.2_amd64/DEBIAN/control
 +++ b/dbus-x11_1.12.2-1ubuntu1.2+16.04.sav0_amd64/DEBIAN/control
 @@ -1,6 +1,6 @@
@@ -12,7 +11,6 @@ index 1718d22..3900bfa 100644
  Installed-Size: 147
 diff --git a/dbus-x11_1.12.2-1ubuntu1.2_amd64/etc/X11/Xsession.d/99vw_dbus_upd-activation-env b/dbus-x11_1.12.2-1ubuntu1.2+16.04.sav0_amd64/etc/X11/Xsession.d/99vw_dbus_upd-activation-env
 new file mode 100644
-index 0000000..1626e74
 --- /dev/null
 +++ b/dbus-x11_1.12.2-1ubuntu1.2_amd64/etc/X11/Xsession.d/99vw_dbus_upd-activation-env
 @@ -0,0 +1,17 @@

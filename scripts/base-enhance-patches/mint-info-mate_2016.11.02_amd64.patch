@@ -1,5 +1,4 @@
 diff --git a/mint-info-mate_2016.11.02_amd64/DEBIAN/control b/mint-info-mate_2016.11.02sav0_amd64/DEBIAN/control
-index 4ab21b2..03f3581 100644
 --- a/mint-info-mate_2016.11.02_amd64/DEBIAN/control
 +++ b/mint-info-mate_2016.11.02sav0_amd64/DEBIAN/control
 @@ -1,6 +1,6 @@
@@ -11,7 +10,6 @@ index 4ab21b2..03f3581 100644
  Maintainer: Clement Lefebvre <root@linuxmint.com>
  Installed-Size: 12
 diff --git a/mint-info-mate_2016.11.02_amd64/etc/linuxmint/info b/mint-info-mate_2016.11.02sav0_amd64/etc/linuxmint/info
-index ad6eee3..bf8fe8f 100644
 --- a/mint-info-mate_2016.11.02_amd64/etc/linuxmint/info
 +++ b/mint-info-mate_2016.11.02sav0_amd64/etc/linuxmint/info
 @@ -1,7 +1,7 @@

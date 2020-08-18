@@ -1,5 +1,4 @@
 diff --git a/perl-modules-5.22_5.22.1-9ubuntu0.6_all/DEBIAN/control b/perl-modules-5.22_5.22.1-9ubuntu0.6_all/DEBIAN/control
-index 937c313..78b4bcd 100644
 --- a/perl-modules-5.22_5.22.1-9ubuntu0.6_all/DEBIAN/control
 +++ b/perl-modules-5.22_5.22.1-9ubuntu0.6_all/DEBIAN/control
 @@ -7,7 +7,7 @@ Installed-Size: 17264

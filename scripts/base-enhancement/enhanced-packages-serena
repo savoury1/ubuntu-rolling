@@ -2,13 +2,13 @@
 
 # Serena Enhanced -- Minty Best of LTS Xenial & Bionic Ubuntu Versions
 #
-# Modifying just seven packages and using just six PPAs allows proper
+# Modifying just seven packages and using just three PPAs allows proper
 # installation of most Ubuntu Bionic packages on Mint 18.1 Serena which
 # results in a highly compatible and flexible Ubuntu-based system due
 # being able to run (almost) all Xenial compatible software as well as
 # (almost) all Bionic compatible software (with a few rare exceptions)
 #
-# Software requiring any of new Python (3.6.9), GTK2 (upgraded from
+# Software requiring any of new Python (3.6.12), GTK2 (upgraded from
 # 2.24.30 to 2.24.32), GTK3 (from 3.18.9 to 3.22.30) or Qt5 (5.5.1 to
 # 5.9.5) libraries will install and run as expected after enhancement
 #
@@ -28,20 +28,20 @@ pkg_num=7
 
 declare -A pkgs
 
-# Modify python3 package to fake version 3.6.9-1 and also include the
-# dependencies for actual Python 3.6.9-1 (obtainable from a PPA source)
+# Modify python3 package to fake version 3.6.12-1 and also include the
+# dependencies for actual Python 3.6.12-1 (obtainable from a PPA source)
 # as well as modify the "Provides" clause to add distutils and lib2to3
 #
 # All of which means that any/all Ubuntu Bionic python3 packages can be
-# installed successfully on Ubuntu Xenial (with Python 3.6.9 from PPA)
+# installed successfully on Ubuntu Xenial (with Python 3.6.12 from PPA)
 # and all software requiring Python >= 3.6 can be installed and used
 
 pkgs[1,0]="$ubuntu/main/p/python3-defaults"
 pkgs[1,1]="python3_3.5.1-3"
-pkgs[1,2]="python3_3.6.9-1+really3.5.1-3sav0"
+pkgs[1,2]="python3_3.6.12-1+really3.5.1-3sav0"
 
 # Modify python3-dev explicit dependency on python3 version to reflect
-# new version number of python3 package (3.6.9-1+really3.5.1-3sav0)
+# new version number of python3 package (3.6.12-1+really3.5.1-3sav0)
 
 pkgs[2,0]="$ubuntu/main/p/python3-defaults"
 pkgs[2,1]="python3-dev_3.5.1-3"
@@ -59,11 +59,11 @@ pkgs[2,2]="python3-dev_3.5.1-3sav0"
 # handled by settings made by using qt5ct (Qt5 Configuration Tool)
 
 pkgs[3,0]="$ubuntu/main/d/dbus"
-pkgs[3,1]="dbus-x11_1.12.2-1ubuntu1.1"
-pkgs[3,2]="dbus-x11_1.12.2-1ubuntu1.2~16.04.sav0"
+pkgs[3,1]="dbus-x11_1.12.2-1ubuntu1.2"
+pkgs[3,2]="dbus-x11_1.12.2-1ubuntu1.2+16.04.sav0"
 
 # Modify description in /etc/linuxmint/info to reflect that this is no
-# longer "vanilla Serena" but is actually "Serena Enhanced" with all the
+# longer "vanilla Serena" but is actually "Bionic Serena" with all the
 # Ubuntu Bionic packages that are part of the install -- shows up as a
 # tooltip when pausing the mouse over the mintMenu Mate Panel widget
 
@@ -71,9 +71,9 @@ pkgs[4,0]="$serena/main/m/mint-info"
 pkgs[4,1]="mint-info-mate_2016.11.02"
 pkgs[4,2]="mint-info-mate_2016.11.02sav0"
 
-# Modify perl-modules-5.22 to remove "Conflicts" clause for "perl-modules"
-# as that virtual package is also provided by perl-modules-5.26 (in Bionic)
-# -- this allows the enhancement process to proceed much more easily
+# Remove "export QT_STYLE_OVERRIDE=gtk" lines from X11 session file
+# /etc/X11/Xsession.d/99mint as this environment variable causes qt5ct
+# application used for Qt5 theming to complain and fail to start at all
 
 pkgs[5,0]="$ubuntu/main/p/perl"
 pkgs[5,1]="perl-modules-5.22_5.22.1-9ubuntu0.6"
@@ -116,8 +116,7 @@ for (( i = 1; i <= $pkg_num; i++ )) do
   if [ ! -e $pkg_src.patch ]; then break; fi
 
   # get source package from pool
-  rm $pkg_src.deb
-  wget ${pkgs[$i,0]}/$pkg_src.deb
+  [[ ! -e $pkg_src.deb ]] && wget ${pkgs[$i,0]}/$pkg_src.deb
 
   # extract source package
   dpkg-deb -R $pkg_src.deb $pkg_src
