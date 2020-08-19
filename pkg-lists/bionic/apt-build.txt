@@ -141,12 +141,17 @@ B piuparts
 B python-bzrlib
 B bzr
 B bzr-builder
-B ubuntu-dev-tools
-B python-ubuntutools
+- python-wadllib -- Xenial has same version as Bionic
+- python3-wadllib -- Xenial has same version as Bionic
+- python3-keyring
 - python-lazr.uri -- Xenial has same version as Bionic
-B python-wadllib
+- python3-lazr.uri -- Xenial has same version as Bionic
 - python-lazr.restfulclient -- ppa:savoury1/build-tools
+- python3-lazr.restfulclient -- ppa:savoury1/build-tools
 - python-launchpadlib -- ppa:savoury1/build-tools
+- python3-launchpadlib -- ppa:savoury1/build-tools
+- ubuntu-dev-tools
+- python-ubuntutools
 B libsubunit0
 B libsubunit-dev
 B check
