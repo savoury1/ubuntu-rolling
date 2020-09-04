@@ -14,17 +14,17 @@ B vbetool
 - libdrm-radeon1 -- ppa:savoury1/display
 - libdrm-radeon1:i386 -- ppa:savoury1/display
 - libdrm-dev -- ppa:savoury1/display
-B intel-gpu-tools
-B libwayland-bin
-B libwayland-client0
-B libwayland-client0:i386
-B libwayland-cursor0
-B libwayland-cursor0:i386
-B libwayland-server0
-B libwayland-egl1
-B libwayland-egl1:i386
-B libwayland-dev
-B i965-va-driver
+- intel-gpu-tools -- ppa:savoury1/display
+- libwayland-bin -- ppa:savoury1/display
+- libwayland-client0 -- ppa:savoury1/display
+- libwayland-client0:i386 -- ppa:savoury1/display
+- libwayland-cursor0 -- ppa:savoury1/display
+- libwayland-cursor0:i386 -- ppa:savoury1/display
+- libwayland-server0 -- ppa:savoury1/display
+- libwayland-egl1 -- ppa:savoury1/display
+- libwayland-egl1:i386 -- ppa:savoury1/display
+- libwayland-dev -- ppa:savoury1/display
+- i965-va-driver -- ppa:savoury1/display
 B vdpau-va-driver
 - libmirprotobuf3 -- ppa:savoury1/display
 - libmircore1 -- ppa:savoury1/display
@@ -37,8 +37,8 @@ B vdpau-va-driver
 - libmirclient-dev -- ppa:savoury1/display
 - libepoxy0 -- ppa:savoury1/display
 - libepoxy-dev -- ppa:savoury1/display
-B ocl-icd-libopencl1
-B ocl-icd-libopencl1:i386
+- ocl-icd-libopencl1 -- ppa:savoury1/display
+- ocl-icd-libopencl1:i386 -- ppa:savoury1/display
 - libxatracker2 -- ppa:savoury1/display
 - libegl1-mesa -- ppa:savoury1/display
 - libgbm1 -- ppa:savoury1/display
@@ -59,7 +59,7 @@ B ocl-icd-libopencl1:i386
 - libglu1-mesa -- ppa:savoury1/display
 - libglu1-mesa:i386 -- ppa:savoury1/display
 - libglu1-mesa-dev -- ppa:savoury1/display
-B libglew2.0
+- libglew2.0 -- ppa:savoury1/multimedia
 B freeglut3
 B libgle3
 B libgle3-dev
