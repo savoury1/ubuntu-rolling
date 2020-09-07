@@ -28,7 +28,7 @@ B mscompress
 B libmspack0
 B cabextract
 B libgcab-1.0-0
-B libnetcdf13
+- libnetcdf13 -- superseded by ppa:savoury1/backports
 B valgrind
 B librevenge-0.0-0
 B libodfgen-0.1-1
@@ -48,13 +48,13 @@ B libe-book-0.1-1
 B libfreehand-0.1-1
 B snap
 B libstemmer0d
-B libtracker-sparql-2.0-0
-B proj-data
-B libproj12
-B libogdi3.2
+- libtracker-sparql-2.0-0 -- ppa:savoury1/backports
+- proj-data -- ppa:savoury1/backports
+- libproj12 -- superseded by ppa:savoury1/backports
+- libogdi3.2 -- superseded by ppa:savoury1/backports
 B libqhull7
-B libgeos-3.6.2
-B libgeos-c1v5
+- libgeos-3.6.2 -- superseded by ppa:savoury1/backports
+- libgeos-c1v5 -- superseded by ppa:savoury1/backports
 B libfyba0
 B libgeotiff2
 B libspatialite7
@@ -64,14 +64,14 @@ B libkmlbase1
 B libkmldom1
 B libkmlengine1
 - gdal-data -- ppa:savoury1/backports
-- libgdal20 -- ppa:savoury1/backports
+- libgdal20 -- superseded by ppa:savoury1/backports
 - opencv-data -- ppa:savoury1/graphics
-- libopencv-core3.2 -- ppa:savoury1/graphics
-- libopencv-ml3.2 -- ppa:savoury1/graphics
-- libopencv-imgproc3.2 -- ppa:savoury1/graphics
-- libopencv-imgcodecs3.2 -- ppa:savoury1/graphics
-- libopencv-video3.2 -- ppa:savoury1/graphics
-- libopencv-videoio3.2 -- ppa:savoury1/graphics
-- libopencv-highgui3.2 -- ppa:savoury1/graphics
-- libopencv-objdetect3.2 -- ppa:savoury1/graphics
+- libopencv-core3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-ml3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-imgproc3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-imgcodecs3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-video3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-videoio3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-highgui3.2 -- superseded by ppa:savoury1/graphics
+- libopencv-objdetect3.2 -- superseded by ppa:savoury1/graphics
 - frei0r-plugins -- ppa:savoury1/multimedia
