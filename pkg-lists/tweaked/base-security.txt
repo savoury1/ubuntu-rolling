@@ -10,11 +10,11 @@ E libkrb5-3 -- same series as libgssapi-krb5-2 (1.17-6) Eoan
 E libkrb5-3:i386 -- same series as libgssapi-krb5-2 (1.17-6) Eoan
 E libgssapi-krb5-2 -- required by kio (5.56.0-0ubuntu1) Disco
 E libgssapi-krb5-2:i386 -- same series as libgssapi-krb5-2 (1.17-6) Eoan
-E libnettle6 -- required by libhogweed4 (3.4.1-1) Eoan
-E libnettle6:i386 -- same series as libnettle6 (3.4.1-1) Eoan
-E libhogweed4 -- required by libgnutls30 (3.6.5-2ubuntu1) Disco
-E libhogweed4:i386 -- same series as libhogweed4 (3.4.1-1) Eoan
-E nettle-dev -- same series as libnettle6 (3.4.1-1) Eoan
+- libnettle6 -- ppa:savoury1/encryption
+- libnettle6:i386 -- ppa:savoury1/encryption
+- libhogweed4 -- ppa:savoury1/encryption
+- libhogweed4:i386 -- ppa:savoury1/encryption
+- nettle-dev -- ppa:savoury1/encryption
 - libp11-kit0 -- ppa:savoury1/encryption
 - libp11-kit0:i386 -- ppa:savoury1/encryption
 - libp11-kit-dev -- ppa:savoury1/encryption
@@ -22,19 +22,19 @@ E nettle-dev -- same series as libnettle6 (3.4.1-1) Eoan
 - p11-kit-modules -- ppa:savoury1/encryption
 - libopts25 -- ppa:savoury1/encryption
 - libunbound2 -- ppa:savoury1/encryption
-E libgnutls30 -- latest available version
-E libgnutls30:i386 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libgnutlsxx28 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libgnutls-openssl27 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libgnutls-dane0 -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libgnutls28-dev -- same series as libgnutls30 (3.6.9-3ubuntu1) Eoan
-E libsasl2-modules -- same series as libsasl2-2 (2.1.27+dfsg-1ubuntu0.1) Eoan
-E libsasl2-modules:i386 -- same series as libsasl2-2 (2.1.27+dfsg-1ubuntu0.1) Eoan
-E libsasl2-modules-db -- same series as libsasl2-2 (2.1.27+dfsg-1ubuntu0.1) Eoan
-E libsasl2-modules-db:i386 -- same series as libsasl2-2 (2.1.27+dfsg-1ubuntu0.1) Eoan
-E libsasl2-2 -- required by qemu-system-x86 (1:4.0+dfsg-0ubuntu5) Eoan
-E libsasl2-2:i386 -- same series as libsasl2-2 (2.1.27+dfsg-1ubuntu0.1) Eoan
-E libsasl2-dev -- same series as libsasl2-2 (2.1.27+dfsg-1ubuntu0.1) Eoan
+F libgnutls30 -- latest available version
+F libgnutls30:i386 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
+F libgnutlsxx28 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
+F libgnutls-openssl27 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
+F libgnutls-dane0 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
+F libgnutls28-dev -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
+F libsasl2-modules -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
+F libsasl2-modules:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
+F libsasl2-modules-db -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
+F libsasl2-modules-db:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
+F libsasl2-2 -- latest available version
+F libsasl2-2:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
+F libsasl2-dev -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
 B libheimbase1-heimdal:i386
 B libheimbase1-heimdal
 B libroken18-heimdal
@@ -62,4 +62,4 @@ B libldap-2.4-2:i386
 - libssl1.1:i386 -- ppa:savoury1/encryption
 - libssl-dev -- ppa:savoury1/encryption
 - openssl -- ppa:savoury1/encryption
-B python-openssl
+- python-openssl -- ppa:savoury1/python

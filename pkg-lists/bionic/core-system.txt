@@ -4,7 +4,7 @@ B tex-common
 B texinfo
 B coreutils
 B debianutils
-B ubuntu-minimal
+- ubuntu-minimal -- keep original version for series
 B ucf
 B base-passwd
 B makedev
