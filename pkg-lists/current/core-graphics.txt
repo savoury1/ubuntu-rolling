@@ -51,8 +51,8 @@ B libcolorhug2
 B libcolord-gtk1
 B colord-data
 B colord
-B libopencolorio1v5
-B libopenimageio1.7
+- libopencolorio1v5 -- superseded by coming backport
+- libopenimageio1.7 -- superseded by coming backport
 - libcairo2 -- ppa:savoury1/graphics
 - libcairo2:i386 -- ppa:savoury1/graphics
 - libcairo-gobject2 -- ppa:savoury1/graphics
