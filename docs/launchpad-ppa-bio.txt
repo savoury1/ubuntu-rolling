@@ -1,17 +1,21 @@
- *** Current target series: Xenial LTS, Bionic LTS, Eoan, and Focal LTS ***
+      *** Current target series: Xenial LTS, Bionic LTS & Focal LTS ***
+
+  *** Donate to support this Launchpad site: https://ko-fi.com/savoury1 ***
+
+If you find any software published at this Launchpad site useful then please consider a donation. Similar to others who contribute significant time and energy [*] to free software projects I will not answer any specific requests (apart from bug fixes) without at least a token contribution being offered.
+
+     *** Highlights of packages found in PPAs at this Launchpad site ***
 
 The table below shows highlights of the software published at this Launchpad site. Source packages with their own PPA (eg. GParted) are also copied to a collection PPA (eg. GParted -> Utilities). Some packages with the same name are in two different PPAs to provide two distinct versions (eg. FFmpeg 3/4).
 
-LTS series are the main focus at this site, with significantly more testing done for LTS than other short-lived interim series (ie. Eoan). Additionally, all Disco packages in PPAs at this site have now been deleted (25 Feb 2020).
-
-Regarding Eoan (official support ended 17 Jul 2020), all backports are still being uploaded also for Eoan (until Launchpad is updated to prevent) and all packages will remain at this PPA site indefinitely for these notable reasons:
+LTS series are the main focus at this site, with significantly more testing done for LTS than other short-lived interim series (ie. Eoan). Regarding Eoan (official support ended 17 Jul 2020) there will be no more uploads (Launchpad has been updated to prevent any Eoan uploads as of 18 Aug 2020), however all packages will remain at this PPA site indefinitely for these notable reasons:
 
   * Eoan is the final series with essentially complete i386 binary support.
   * Eoan is the final series with most Python 2.7 packages still available.
   * This makes all binaries for Eoan valuable, eg. for sideloading into newer
     series (ie. Focal) with very limited i386 support, so they will remain.
 
-Note on version numbers: The dash symbol (right-most dash if more than one) divides the "source version" (upstream) from the "package version" (Ubuntu). If the package version starts with "0ubuntu1~" it shows the package was not in Debian or Ubuntu when built for this PPA site, whereas if it starts with "1ubuntu0~" it shows the package was in Debian but not Ubuntu when built.
+Note on version numbers: The dash symbol (right-most dash if more than one) divides the "source version" (upstream) from the "package version" (Ubuntu). If the package version begins with "0ubuntu1~" it can show the package wasn't in Debian (also possibly not in Ubuntu) when built, whereas a package version starting with "Xubuntu0~" shows the package was in Debian but not in Ubuntu.
 
 +============+==============================================================+
   Collection | Highlights of packages included
@@ -24,7 +28,7 @@ Note on version numbers: The dash symbol (right-most dash if more than one) divi
     (v2.10.20) libspiro, mypaint-brushes, openexr, poppler, suitesparse
 
        VLC 3 = dav1d, fluidsynth, libdvdnav, libdvdread, liblivemedia,
-     (v3.0.11) libmatroska, libnfs, libplacebo, libspatialaudio, vlc
+   (v3.0.11.1) libmatroska, libnfs, libplacebo, libspatialaudio, vlc
 
          mpv = mpv (v0.29.1 for Xenial & v0.32.0 for all newer series)
 
@@ -33,29 +37,29 @@ Note on version numbers: The dash symbol (right-most dash if more than one) divi
                mediasdk, lensfun, libass, libbluray (1.2.0), libmysofa (1.0),
                libopenmpt (0.4.11), libsdl2 (2.0.10), libva{-utils} (2.7.1),
                libvidstab, libvpx, nv-codec-headers (9.1.23.1), rubberband,
-               sndio (1.6.0), srt, x264 (libx264-159), x265 (libx265-192)
+               sndio (1.6.0), srt, x264 (libx264-160), x265 (libx265-192)
 
     FFmpeg 3 = chromaprint, ffmpeg, lame, libass, libbluray, libmysofa,
       (v3.4.8) libopenmpt, libsdl2, libva, libvpx, rubberband, sndio,
                tesseract (4.1.1), x264 (libx264-159), x265 (libx265-192)
 
        GPG 2 = gnupg2, gnutls28, gpa, gpgme1.0, libassuan, libgcrypt20,
-     (v2.2.21) libgpg-error, libksba, nettle, p11-kit, python-gnupg
+     (v2.2.23) libgpg-error, libksba, nettle, p11-kit, python-gnupg
 
   Encryption = cryptsetup, gnutls28, libgcrypt20, libgpg-error, libssh,
                nettle, opencryptoki, openssl, p11-kit, softhsm2, trousers,
                veracrypt (copied from ppa:unit193/encryption)
 
     Graphics = cairo, enblend-enfuse, entangle, exiv2, gdk-pixbuf, gexiv2,
-               ghostscript, giflib, gphoto2, graphviz, hugin, imagej,
+               ghostscript, giflib, gphoto2, graphviz, hugin, imagej (1.53d),
                imagemagick, jasper, lcms2, lensfun, libexif, libgphoto2,
-               libjpeg-turbo, libopenraw, libpng1.6, libraw, librsvg,
-               libspiro, libwebp, libwmf, opencv, openexr, openjpeg2,
+               libjpeg-turbo (2.0.3), libopenraw, libpng1.6, libraw, librsvg,
+               libspiro, libwebp, libwmf, opencv (4.2.0), openexr, openjpeg2,
                optipng, sane-backends, tesseract, tiff, vtk6, xscreensaver
 
   Multimedia = alsa-lib (& other alsa), aom, chromaprint, codec2, dav1d,
                faad2, fdk-aac (2.0.1), flac, fluidsynth (2.1.2), frei0r, gst-
-               libav1.0 (1.16.2 for all gst), gst-plugins-{bad,good,ugly}1.0,
+               libav1.0 (1.16.2), gst-plugins-{bad,good,ugly}1.0 (1.16.2),
                gstreamer{-vaapi,1.0}, intel-media-driver{-non-free}, lame
                (3.100), libbluray, libdvd{nav,read} (6.1.x), libebml (1.4.0),
                libmatroska (1.6.0), libmtp (1.1.17), libmysofa, libnice,
@@ -63,8 +67,8 @@ Note on version numbers: The dash symbol (right-most dash if more than one) divi
                sdl 1.2 and 2), libsrtp2 (2.3.0), libusrsctp, libva{-utils},
                libvdpau (1.3), libvidstab, libvpx, libzen, mediainfo (20.03),
                mpg123 (1.26.3), mplayer, pocketsphinx, rubberband (1.8.2),
-               sndio, srt (1.4.1), taglib (1.11.1), twolame (0.4.0), v4l-
-               utils, wavpack, wildmidi, x264 (160), x265 (192), xvidcore
+               sndio (1.7.0), srt (1.4.1), taglib (1.11.1), twolame (0.4.0),
+               v4l-utils, wavpack, wildmidi, x264 (160), x265 (192), xvidcore
 
        Games = dbgl, doomsday, dosbox (0.74-3), fizmo-{console,ncursesw,sdl2}
                (Z-Machine interpret), mame (0.222), quakespasm, yquake2, zlib
@@ -103,9 +107,9 @@ Note on version numbers: The dash symbol (right-most dash if more than one) divi
 
  Build Tools = cmake (3.16.8), debian-keyring, debootstrap (1.0.123), distro-
                info-data, git-buildpackage (0.9.20), glslang, googletest,
-               meson (0.55.0), nasm, ninja-build (1.10.0), pkg-js-tools,
+               meson (0.55.1), nasm, ninja-build (1.10.0), pkg-js-tools,
                pristine-tar (1.48), shellcheck (0.71), spirv-{headers,tools},
-               ubuntu-keyring, umockdev, vala (0.48.7), xapian-core (1.4.15)
+               ubuntu-keyring, umockdev, vala (0.48.9), xapian-core (1.4.15)
 
   * denotes a shorthand package name with a common prefix or suffix removed
 
@@ -113,14 +117,18 @@ Note on version numbers: The dash symbol (right-most dash if more than one) divi
 
 +============+==============================================================+
 
-Significant uploads to this Launchpad site began about one year ago, as a way to provide similar upgrades to other users of various useful software that I run on my own systems through local builds. In the past year the project has since grown into one of backporting significant amounts of both useful and sometimes security critical software for Ubuntu series spanning back 4 years.
+Background: Major uploads to this Launchpad site began in the last months of 2019 to make similar upgrades of various useful software I run on my systems (through local builds) available to a wide audience. This project has grown into one of backporting significant amounts of popular, useful and sometimes security critical software for Ubuntu series dating back at least 4-5 years.
 
 The intention is to bring the same set of highly used software (such as media players/tools, photo management, graphics/multimedia libraries, core security libraries, display drivers, and various assorted other useful software) to at least the past 4-5 years of Ubuntu series. This project has become a positive way for me to give back time and energy back to the free software community, from which I have greatly benefited in a number of ways throughout my life.
 
+[*] Note for intro: For instance, Jonathon F has made real contributions to the Ubuntu community (see https://launchpad.net/~jonathonf) and his comments about the need for people to support the free software movement are spot on.
+
 -----START USUAL DISCLAIMER-----
 
-There is no warranty offered / no liability assumed for any of the software packages that are published at this PPA. Some have been created due me having had patched/home-build versions running on my own system for months if not years, others are backports or new versions of software that have been on my list of desired upgrades for some time. They may work well on your system or they may not work at all and no responsibility is taken or assumed by myself for anything that might happen due use of any of these software packages.
+There is no warranty offered / no liability assumed for any of the software packages that are published at this PPA. Some have been created due me having had patched/home-build versions running on my own system for months if not years, others are backports or new versions of software that are useful to me and perhaps others. The software published here may work well on your system or it may not work at all and no responsibility is taken or assumed by myself for anything that might happen due use of any of these software packages.
 
 -----END USUAL DISCLAIMER-----
 
-Please report any bugs with any of these packages to me as I am very much open to improvements. From testing of the packages here on my own systems and some Ubuntu virtual machines they seem to work well overall, at least for me. YMMV, as is said in this 21st century of acronym-speak, with the computer field being a central repository (pardon the pun) of almost every cryptic, obscure, convoluted acronym ever known (or unknown) to humankind! ;-)
+Bugs: Please report any bugs you find with any of these packages to me, as I am very much open to improvements. The available packages work well for me on my systems, as well as in various Ubuntu virtual machines setup for testing.
+
+YMMV as is said in 21st century acronym-speak, with the computer field being a truly significant repository (pardon the pun) holding many of the cryptic, obscure, and convoluted acronyms ever known (or unknown) to humankind! ;-)
