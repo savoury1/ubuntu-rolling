@@ -1,7 +1,7 @@
 B install-info
 B info
-B tex-common
-B texinfo
+- tex-common -- ppa:savoury1/tex-2019
+- texinfo -- ppa:savoury1/tex-2019
 B coreutils
 B debianutils
 - ubuntu-minimal -- keep original version for series
@@ -16,7 +16,7 @@ B libustr-1.0-1
 B libffi6
 B libffi6:i386
 B libffi-dev
-B libfribidi0
+- libfribidi0 -- ppa:savoury1/fonts
 B libnuma1
 B libnuma-dev
 B libnpth0
@@ -27,9 +27,9 @@ B libbsd0:i386
 B libbsd-dev
 B bsdutils
 B bsdmainutils
-B libtool
-B libltdl7
-B libltdl7:i386
+- libtool -- ppa:savoury1/build-tools
+- libltdl7 -- ppa:savoury1/build-tools
+- libltdl7:i386 -- ppa:savoury1/build-tools
 B libdb5.3
 B libdb5.3:i386
 B db5.3-util
@@ -58,23 +58,23 @@ B strace
 B ltrace
 B libsocket++1
 - libtbb2 -- ppa:savoury1/backports
-B libfftw3-single3
-B libfftw3-double3
-B libfftw3-long3
-B libfftw3-quad3
-B libfftw3-bin
-B libfftw3-dev
+- libfftw3-single3 -- ppa:savoury1/backports
+- libfftw3-double3 -- ppa:savoury1/backports
+- libfftw3-long3 -- ppa:savoury1/backports
+- libfftw3-quad3 -- ppa:savoury1/backports
+- libfftw3-bin -- ppa:savoury1/backports
+- libfftw3-dev -- ppa:savoury1/backports
 B libdouble-conversion1
-B libblas3
-B liblapack3
-B libarpack2
-B libsuperlu5
+- libblas3 -- ppa:savoury1/backports
+- liblapack3 -- ppa:savoury1/backports
+- libarpack2 -- ppa:savoury1/backports
+- libsuperlu5 -- ppa:savoury1/backports
 B libarmadillo8
 - libgmp10 -- ppa:savoury1/backports
 - libgmp10:i386 -- ppa:savoury1/backports
 - libgmpxx4ldbl -- ppa:savoury1/backports
 - libgmp-dev -- ppa:savoury1/backports
-B libisl15
+- libisl15 -- superseded by ppa:savoury1/backports
 - libmpfr6 -- ppa:savoury1/backports
 - libmpc3 -- ppa:savoury1/backports
 B libmpdec2
@@ -82,13 +82,13 @@ B bc
 B dc
 B libmetis5
 B sparse
-B libsuitesparseconfig5
-B libamd2
-B libcamd2
-B libccolamd2
-B libcolamd2
-B libcholmod3
-B libumfpack5
+- libsuitesparseconfig5 -- ppa:savoury1/backports
+- libamd2 -- ppa:savoury1/backports
+- libcamd2 -- ppa:savoury1/backports
+- libccolamd2 -- ppa:savoury1/backports
+- libcolamd2 -- ppa:savoury1/backports
+- libcholmod3 -- ppa:savoury1/backports
+- libumfpack5 -- ppa:savoury1/backports
 B lp-solve
 B libcap2
 B libcap2:i386
@@ -101,8 +101,8 @@ B bubblewrap
 B libgc1c2
 B libjemalloc1
 B libstdc++5:i386
-B libsigc++-2.0-0v5
-B libsigc++-2.0-dev
+- libsigc++-2.0-0v5 -- ppa:savoury1/gtk-xenial
+- libsigc++-2.0-dev -- ppa:savoury1/gtk-xenial
 B libsigsegv2
 B libcwidget3v5
 B libasprintf0v5
