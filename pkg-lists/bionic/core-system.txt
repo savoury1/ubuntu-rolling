@@ -36,7 +36,7 @@ B db5.3-util
 - iso-codes -- ppa:savoury1/backports
 B isoquery
 B localechooser-data
-B tzdata
+- tzdata -- already officially backported
 - libtcl8.6 -- ppa:savoury1/backports
 - tcl8.6 -- ppa:savoury1/backports
 - libtk8.6 -- ppa:savoury1/backports
