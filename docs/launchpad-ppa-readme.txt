@@ -94,7 +94,7 @@ It's actually quite often very handy to have a fast terminal way to check the ve
 
 *** Usage: apt-all ***
 
-The "apt-all" script takes one series name (Xenial, Bionic, Cosmic, Disco, Eoan, Focal, or Groovy) as the first argument (in lowercase) then exactly "install" as the second argument (safety, no accidental or even intentional "apt-get upgrade" commands are allowed with a different series via "apt-all") and then the package(s) that you want to install as the third argument.
+The "apt-all" script takes one series name (Xenial, Bionic, Cosmic, Disco, Eoan, Focal, Groovy, or Hirsute) as the first argument (lowercase), exactly "install" as the second argument (safety, no accidental or even intentional "apt-get upgrade" commands are allowed with a different series via "apt-all") and then the package(s) you want to install as the third and final argument.
 
 Example: apt-all bionic install meld
 
@@ -108,7 +108,7 @@ This invocation would do these tasks:
 
 Thus "apt-all" is simple to use and is all about giving a front-end for easy choice from all the packages of seven other series of Ubuntu than your own.
 
-FINAL WARNING: While easy to use, "apt-all" is also very powerful (due it allowing install of any/all packages from series other than that installed) and could destroy the reliability/functionality of an existing install with careless usage (ie. upgrade/downgrade to newer/older packages without doing necessary homework about dependency/compatibility with all related packages, possibly causing unrecoverable system-breakage). So, PLEASE BE CAREFUL!!!
+FINAL WARNING: While easy to use, "apt-all" is also very powerful (due it allowing install of any/all packages from series other than that installed) and could destroy the reliability/functionality of an existing install with careless usage (ie. upgrade/downgrade to newer/older packages without doing necessary homework about dependency/compatibility with all related packages, possibly causing unrecoverable system-breakage). So, PLEASE DO BE CAREFUL!!!
 
 *** Updates ***
 
