@@ -64,7 +64,7 @@ B libsocket++1
 - libfftw3-quad3 -- ppa:savoury1/backports
 - libfftw3-bin -- ppa:savoury1/backports
 - libfftw3-dev -- ppa:savoury1/backports
-B libdouble-conversion1
+- libdouble-conversion1 -- not needed
 - libblas3 -- ppa:savoury1/backports
 - liblapack3 -- ppa:savoury1/backports
 - libarpack2 -- ppa:savoury1/backports

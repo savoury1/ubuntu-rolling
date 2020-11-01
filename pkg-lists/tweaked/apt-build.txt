@@ -172,4 +172,4 @@ B librpm8
 B rpm-common
 B rpm2cpio
 B squashfs-tools
-B snapd
+- snapd -- already officially backported
