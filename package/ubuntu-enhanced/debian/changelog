@@ -1,3 +1,14 @@
+ubuntu-enhanced (0.8-1~21.04.sav0) hirsute; urgency=low
+
+  * New release adding Hirsute Hippo
+  * d/postinst: Add hirsute to everyseries var for new Hirsute Hippo repos
+  * d/compat,control: Use debhelper-compat compat notation, remove d/compat
+  * d/control: Change Priority to optional from deprecated extra
+    + Bump debhelper-compat to 10 (9 now deprecated with dh >= 13)
+    + Update package description with full list of now eight series
+
+ -- Rob Savoury <savoury@savos.tech>  Sat, 31 Oct 2020 17:09:02 -0700
+
 ubuntu-enhanced (0.7-2~20.10.sav0) groovy; urgency=low
 
   * debian/control,copyright: Update Maintainer and copyright contact details

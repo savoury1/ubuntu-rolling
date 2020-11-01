@@ -29,7 +29,7 @@ series_bad=N
 # sanity check on /etc/apt/otherseries input
 for series in ${otherseries[@]}; do
   case "$series" in
-    xenial | bionic | cosmic | disco | eoan | focal | groovy)
+    xenial | bionic | cosmic | disco | eoan | focal | groovy | hirsute)
       ((series_num++))
       ;;
     *)
@@ -37,8 +37,8 @@ for series in ${otherseries[@]}; do
       ;;
   esac
 done
-# must be exactly six (of seven possible) series in /etc/apt/otherseries
-if [ "$series_bad" = "Y" ] || (( series_num != 6 )); then 
+# must be exactly seven (of eight possible) series in /etc/apt/otherseries
+if [ "$series_bad" = "Y" ] || (( series_num != 7 )); then 
   echo "Invalid configuration file: /etc/apt/otherseries !" ; exit
 fi
 

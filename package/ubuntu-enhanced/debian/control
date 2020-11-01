@@ -1,8 +1,8 @@
 Source: ubuntu-enhanced
 Section: misc
-Priority: extra
+Priority: optional
 Maintainer: Rob Savoury <savoury@savos.tech>
-Build-Depends: debhelper (>=9)
+Build-Depends: debhelper-compat (= 10)
 Standards-Version: 3.9.8
 Homepage: https://github.com/savoury1/ubuntu-rolling
 
@@ -21,23 +21,22 @@ Description: Ubuntu Enhanced (includes apt-all)
  .
  *** WARNING: EXPERIMENTAL SOFTWARE ***
  .
- Adds access to repositories for four other Ubuntu series to /etc/apt config
- (with pref files used for pinning created in /etc/apt/preferences.d & list
+ Adds access to repositories for seven other Ubuntu series to /etc/apt config
+ (with pref files used for pinning created in /etc/apt/preferences.d and list
  files used to give access to newer repositories in /etc/apt/sources.list.d).
  .
  The default configuration is one with low pin priority (50) for all the other
  Ubuntu series. Only during invocation of apt-all is a high pin priority (990)
- set for one user specified series other than the installed series.
+ set for one user specified series other than the currently installed series.
  .
  So apt-all (making use of the usual "sudo apt-get install" command) gives the
- user simple access to packages from a selected Ubuntu series (any of Xenial,
- Bionic, Cosmic, Disco or Eoan). REMINDER: BE CAREFUL!!!
+ user easy access to packages from any of eight Ubuntu series (Xenial, Bionic,
+ Cosmic, Disco, Eoan, Focal, Groovy, or Hirsute). REMINDER: DO BE CAREFUL!!!
  .
- Also enhances other commands such as apt-cache, ie. running "apt-cache policy
- PACKAGES" will show all versions of the specified package(s) that are
- currently available in five Ubuntu series (and all their "pockets").
+ Also enhances other commands most especially apt-cache, as running "apt-cache
+ policy PACKAGE(S)" will show all versions of the specified package(s) that are
+ currently available in the eight Ubuntu series (and all of their "pockets").
  .
  See homepage for details:
  .
  https://github.com/savoury1/ubuntu-rolling
-
