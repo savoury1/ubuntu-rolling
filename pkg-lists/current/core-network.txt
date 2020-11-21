@@ -103,8 +103,8 @@ B libsnmp30:i386
 B libsmi2ldbl
 B libteamdctl0
 B libnetfilter-conntrack3
-B dnsmasq-base
-B dnsmasq
+- dnsmasq-base -- ppa:savoury1/backports
+- dnsmasq -- ppa:savoury1/backports
 B resolvconf
 B ethtool
 B wireless-regdb
