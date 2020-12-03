@@ -57,6 +57,7 @@ B libibus-1.0-5:i386
 B gir1.2-ibus-1.0
 B libibus-1.0-dev
 B ibus-gtk:i386
+B ibus
 B libstartup-notification0
 B libnotify4
 B libnotify-bin
