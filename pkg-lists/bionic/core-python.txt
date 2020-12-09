@@ -59,12 +59,6 @@ B python3-debian
 B python-pip-whl
 B python-pip
 B python3-pip
-B libapt-pkg5.0
-B libapt-inst2.0
-- python-apt-common -- ppa:savoury1/apt-xenial
-- python-apt -- ppa:savoury1/apt-xenial
-- python3-apt -- ppa:savoury1/apt-xenial
-B apt-xapian-index
 B python3-brlapi
 B python-gobject-2
 B python-gobject

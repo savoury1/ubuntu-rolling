@@ -16,9 +16,15 @@ B update-notifier-common
 B libept1.5.0
 - aptitude-common -- ppa:savoury1/apt-xenial
 - aptitude -- ppa:savoury1/apt-xenial
+- libapt-pkg5.0 -- ppa:savoury1/apt-xenial
+- libapt-inst2.0 -- ppa:savoury1/apt-xenial
+- python-apt-common -- ppa:savoury1/apt-xenial
+- python-apt -- ppa:savoury1/apt-xenial
+- python3-apt -- ppa:savoury1/apt-xenial
 - apt -- ppa:savoury1/apt-xenial
 - apt-utils -- ppa:savoury1/apt-xenial
 - apt-transport-https -- ppa:savoury1/apt-xenial
+B apt-xapian-index
 - libpackagekit-glib2-18 -- ppa:savoury1/qt-xenial
 - gir1.2-packagekitglib-1.0 -- ppa:savoury1/qt-xenial
 - aptdaemon-data -- ppa:savoury1/apt-xenial
