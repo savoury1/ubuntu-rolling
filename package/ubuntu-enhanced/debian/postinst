@@ -39,7 +39,7 @@ if [ "$1" = "configure" ]; then
 
     # Use old releases server for series past end of support
     case "$series" in
-    cosmic | disco)
+    cosmic | disco | eoan)
       server=$oldrel
       ;;
     *)
