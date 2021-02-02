@@ -47,7 +47,7 @@ B libpq5
 B libsqlite3-0
 B libsqlite3-0:i386
 B mysql-common
-B libmysqlclient20
+- libmysqlclient20 -- official xenial-updates
 B libodbc1
 B libodbc1:i386
 B odbcinst1debian2
