@@ -4,7 +4,7 @@ For Xenial users backports of GTK, Qt, KDE, and other software stacks from Bioni
 
    *** Current target series: Xenial / Bionic / Focal LTS, and Groovy ***
 
-LTS series are the main focus at this site, with significantly more testing done for LTS than other short-lived interim series (ie. Eoan). Regarding Eoan (official support ended 17 Jul 2020) there will be no more uploads (Launchpad has been updated to prevent any Eoan uploads as of 18 Aug 2020), however all packages will remain at this PPA site indefinitely for these notable reasons:
+LTS series are the main focus at this site, with significantly more testing done for LTS than other short-lived interim series (ie. Eoan). Regarding Eoan all packages will remain at this site indefinitely for these notable reasons:
 
   * Eoan is the final series with essentially complete i386 binary support.
   * Eoan is the final series with most Python 2.7 packages still available.
@@ -25,19 +25,19 @@ If you find any software published at this Launchpad site useful then please con
   Collection | Highlights of packages included
 +============+==============================================================+
 
-     Blender = alembic-io (1.7.15), blender, blender-git (2.91.0 Beta),
-     (v2.90.1) collada-dom (2.5.0), embree (3.11.0), opencollada (1.6.68),
-               opencolorio (1.1.1), openimagedenoise (1.2.3), openimageio
-               (2.1.19.0), openscenegraph (3.6.5), openshadinglanguage
-               (1.11.7.3), opensubdiv (3.4.3), openvdb (7.0.0), ptex (2.3.2),
-               robin-map (0.6.3), usd (20.08)
+     Blender = alembic-io (1.7.16), blender, blender-git (2.93.0 Alpha),
+     (v2.92.0) collada-dom (2.5.0), embree (3.12.1), opencollada (1.6.68),
+               opencolorio1 (1.1.1), opencolorio (2.0.0), openimagedenoise
+               (1.3.0), openimageio (2.2.11.1), openscenegraph (3.6.5),
+               openshadinglanguage (1.11.11.0), opensubdiv (3.4.3), openvdb
+               (8.0.1), ptex (2.3.2), robin-map (0.6.3), usd (20.08)
 
-     digiKam = digikam, exiv2 (0.27.3), jasper (2.0.22), lensfun (0.3.2),
-      (v7.1.0) opencv (4.2.0), openexr (2.3.0), qtav (1.13.0), vtk6 (6.3.0)
+     digiKam = digikam, exiv2 (0.27.3), jasper (2.0.25), lensfun (0.3.2),
+   (v7.2.0-rc) opencv (4.2.0), openexr (2.3.0), qtav (1.13.0), vtk6 (6.3.0)
 
-        GIMP = babl (0.1.80), exiv2, gegl (0.4.26), gimp, libde265 (1.0.7),
-    (v2.10.22) libheif (1.9.1), libmypaint (1.6.0), libraw (0.20.0), libspiro
-               (20200505), mypaint-brushes, openexr (2.3.0), suitesparse
+        GIMP = babl (0.1.82), exiv2, gegl (0.4.26), gimp, libde265 (1.0.8),
+    (v2.10.22) libheif (1.11.0), libmypaint (1.6.0), libraw (0.20.0),
+               libspiro (20200505), mypaint-brushes, openexr (2.3.0)
 
     Inkscape = cairo, harfbuzz (2.6.4), inkscape (v1.0.1 / v0.92.5 Xenial,
       (v1.0.1) for v1.0.1 on Xenial use ppa:savoury1/gtk-xenial for required
@@ -62,31 +62,31 @@ If you find any software published at this Launchpad site useful then please con
    Handbrake = handbrake (v1.3.3 / v1.1.2 Xenial, for v1.3.3 on Xenial use
                ppa:savoury1/gtk-xenial for required upgrades)
 
-         mpv = glslang (8.13.3743+git20200501), libplacebo (1.29.1), mpv
-               (v0.32.0+git20201014 / v0.29.1 Xenial, for v0.32.0+ on Xenial
-               use ppa:savoury1/display for required upgrades), mujs (1.0.7),
-               shaderc (2020.3), spirv-tools (2020.4), zimg
+         mpv = glslang (8.13.3763), libplacebo (1.29.1), mpv (v0.29.1 Xenial,
+     (v0.33.0+ for v0.33.0+git on Xenial upgrade with ppa:savoury1/display),
+  git20210216) mujs (1.0.9), shaderc (2020.3), spirv-tools (2020.4), zimg
 
        VLC 3 = dav1d, fluidsynth (2.1.2), glslang, libdvd{nav,read} (6.1.x),
-   (v3.0.11.1) libebml (1.4.0), liblivemedia (2020.01.19), libmatroska
+     (v3.0.12) libebml (1.4.0), liblivemedia (2020.01.19), libmatroska
                (1.6.0), libmicrodns (0.1.0), libnfs (4.0.0), libplacebo,
                libspatialaudio (0.3.0+git20180730), lirc (0.10.1), protobuf,
                shaderc, spirv-tools, vlc, vulkan-{loader,tools} (1.2.131.x)
 
-       GPG 2 = gnupg2, gpa, gpgme1.0, libassuan, libgcrypt20 (1.8.6),
-     (v2.2.23) libgpg-error (1.39), libksba, nettle, p11-kit, python-gnupg
+       GPG 2 = gnupg2, gpa, gpgme1.0, libassuan, libgcrypt20 (1.8.7),
+     (v2.2.27) libgpg-error (1.41), libksba, nettle, p11-kit, python-gnupg
 
   Encryption = cryptsetup, libsodium (1.0.18+git20201013), libssh (0.9.5),
-               minisign, nettle (3.4.1), opencryptoki, openssl (1.1.1h),
+               minisign, nettle (3.4.1), opencryptoki, openssl (1.1.1i),
                p11-kit, veracrypt (1.24 from ppa:unit193/encryption)
 
     Graphics = cairo, enblend-enfuse (4.2), entangle (3.0), exiv2 (0.27.3),
                gdk-pixbuf, gexiv2 (0.12.1), ghostscript (9.50), giflib,
-               gphoto2, graphviz (2.42.2), hugin (2019.2.0), imagej (1.53d),
-               jasper (2.0.22), lcms2, lensfun, leptonlib (1.79.0), libexif,
-               libgphoto2, libheif (1.9.1), libjpeg-turbo, libopenraw,
-               libpng1.6, libraw (0.20.0), librsvg, libvigraimpex (1.11.1),
-               libwebp, libwmf, opencv (4.2.0), openexr (2.3.0), openjpeg2,
+               gphoto2, graphviz (2.42.2), hugin (2019.2.0), ilmbase24
+               (2.3.0), ilmbase (2.5.4), imagej (1.53h), jasper (2.0.25),
+               lcms2, lensfun, leptonlib (1.79.0), libexif, libgphoto2,
+               libheif (1.11.0), libjpeg-turbo, libopenraw, libpng1.6, libraw
+               (0.20.0), librsvg, libvigraimpex (1.11.1), libwebp, libwmf,
+               opencv (4.2.0), openexr24 (2.3.0), openexr (2.5.4), openjpeg2,
                sane-backends (1.0.27), tesseract (4.1.1), tiff (4.1.0+git),
                vtk6 (6.3.0), vtk7 (7.1.1), xscreensaver (5.44)
 
@@ -95,20 +95,21 @@ If you find any software published at this Launchpad site useful then please con
                dav1d (0.7.1), faad2 (2.9.1), fdk-aac (2.0.1), flac (1.3.3),
                fluidsynth (2.1.2), frei0r (1.7.0+git20200525), gst-libav1.0
                (1.16.2), gst-plugins-{bad,good,ugly}1.0, gstreamer-vaapi,
-               intel-media-driver{-non-free}, intel-mediasdk} (20.1.1),
+               intel-media-driver{-non-free}, intel-mediasdk (20.1.1),
                libbluray (1.2.0), libde265 (1.0.7), libdvd{nav,read} (6.1.x),
                libebml (1.4.0), libmatroska (1.6.0), libmtp (1.1.17),
                libmysofa (1.0), libnice, libogg{z}, libopenmpt, libquicktime,
                libsdl{1.2,2} (& other sdl 1.2 and 2), libsrtp2 (2.3.0),
                libusrsctp, libva{-utils} (2.7.1), libvdpau (1.3), libvidstab,
-               libvpx (1.8.2), libzen (0.4.38), mediainfo (20.08), mpg123
+               libvpx (1.8.2), libzen (0.4.38), mediainfo (20.09), mpg123
                (1.26.3), mplayer (1.3.0), pocketsphinx, rubberband (1.8.2),
                sndio (1.7.0), srt (1.4.2), taglib (1.11.1), twolame (0.4.0),
                v4l-utils (1.20.0), wavpack (5.3.0), wildmidi, x264 (0.160),
                x265 (3.4), xvidcore (1.3.7), zeromq3 (4.3.3), zimg (3.0.1)
 
        Games = dbgl, doomsday, dosbox (0.74-3), fizmo-{console,ncursesw,sdl2}
-               (Z-Machine interpreter), mame (0.224), quakespasm, yquake2
+               (Z-Machine interpreter), mame (0.226), openttd (Open Transport
+               Tycoon Deluxe), quakespasm (0.93.2-git), yquake2 (7.45)
 
      Display = intel-{gpu-tools,graphics-compiler,opencl-clang}, intel-vaapi-
                driver{-shaders}, libclc, libdrm, libepoxy, libevdev, libglu,
@@ -127,30 +128,32 @@ If you find any software published at this Launchpad site useful then please con
                spice{-gtk,-protocol}, virglrenderer, virt-{manager,viewer},
                virtualenv-clone, virtualenvwrapper, vmem, xen, xfsprogs
 
-   Backports = aria2 (1.35.0), bash (5.0-6), bcmwl (kernel 5.6 fix), bzip2
-               (1.0.8), clonezilla (3.35.2), curl (7.72.0), drbl, e2fsprogs
-               (1.45.5), exfat-utils, exfatprogs, expat, f2fs-tools (1.14.0),
-               fuse{-exfat}, gawk (5.1.0), geoip{-database}, git (2.28.0),
-               grep (3.5), htop, hwloc, keepass2 (2.4.5), libarchive, libdap,
-               libidn2, libjsoncpp (1.7.6), libpsl, librabbitmq, libxml2,
-               libzstd (1.4.5), lighttpd, mate-dock-applet (20.04), mujs,
-               nano (4.9.3), nasm (2.15.04), nghttp2 (1.41.0), p7zip{-rar},
-               partclone, parted (3.3), poppler (0.86.1), remmina (1.4.8),
-               rsync (3.1.3), sed (4.8), tar (1.32), tigervnc (1.10.1),
-               tinyxml2 (8.0.0), wxwidgets3.0 (3.0.4), xapian-core (1.4.17)
+   Backports = aria2 (1.35.0+git20200624), bash (5.1), bcmwl (kernel 5.6
+               fix), bzip2 (1.0.8), clonezilla (3.35.2), curl (7.75.0), drbl,
+               e2fsprogs (1.45.5), exfat-utils (1.3.0), exfatprogs (1.0.4),
+               expat, f2fs-tools (1.14.0), filezilla (3.52.2), fuse{-exfat},
+               gawk (5.1.0), geoip, git (2.30.1), grep (3.6), htop, hwloc,
+               keepass2 (2.4.5), libarchive (3.4.3), libdap, libidn2,
+               libjsoncpp (1.7.6), libpsl, librabbitmq, libxml2 (2.9.10),
+               libzstd (1.4.8), lighttpd (1.4.55), lz4 (1.9.3), mate-dock-
+               applet (20.04), mujs, nano (5.4), nasm, nghttp2 (1.41.0),
+               p7zip{-rar} (16.02), partclone, parted, poppler (0.86.1),
+               remmina (1.4.8), rsync (3.2.3), sed (4.8), tar (1.34),
+               tigervnc (1.10.1), tinyxml2 (8.0.0), wxwidgets3.0 (3.0.4),
+               xapian-core (1.4.17), xxhash (0.8.0)
 
-   Utilities = gparted (1.1.0), meld (3.20.2), metamorphose2, minisign (0.9),
-               psensor (1.2.0), {un}rar (5.9.x), ukuu (18.9.3), vnstat (2.6),
-               xfe (1.43.2)
+   Utilities = gparted (1.1.0), meld (3.20.2), metamorphose2 (0.9.0~beta),
+               minisign (0.9), psensor (1.2.0), {un}rar (5.9.x), ukuu
+               (18.9.3 patched), vnstat (2.6), xfe (1.43.2)
 
- Build Tools = cmake (3.16.9), cmocka (1.1.5), cppunit (1.15.1), debhelper
+ Build Tools = cmake (3.18.6), cmocka (1.1.5), cppunit (1.15.1), debhelper
                (11.3.5 Xenial & Bionic patched for no dbgsym), debian-keyring
                (2020.09.24), debootstrap (1.0.123), distro-info-data (0.44),
-               git-buildpackage (0.9.20), glslang (8.13.3743+git20200501),
-               googletest (1.10.0), javatools (0.72.10), meson (0.55.1),
-               nasm, ninja-build (1.10.0), pkg-js-tools, pristine-tar (1.49),
+               git-buildpackage (0.9.20), glslang (8.13.3763), googletest
+               (1.10.0), javatools (0.72.10), meson (0.55.1), nasm (2.15.05),
+               ninja-build (1.10.0), pkg-js-tools, pristine-tar (1.49),
                shaderc (2020.3), shellcheck (0.71), spirv-headers (1.5.3+1),
-               spirv-tools (2020.4), ubuntu-keyring, umockdev, vala (0.48.11)
+               spirv-tools (2020.4), ubuntu-keyring, umockdev, vala (0.48.13)
 
   * denotes a shorthand package name with a common prefix or suffix removed
 
