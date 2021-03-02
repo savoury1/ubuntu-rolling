@@ -97,7 +97,7 @@ B libcap-dev
 B libpam-cap
 B libcap-ng0
 B libcap-ng-dev
-B bubblewrap
+- bubblewrap -- ppa:savoury1/backports
 B libgc1c2
 B libjemalloc1
 B libstdc++5:i386
