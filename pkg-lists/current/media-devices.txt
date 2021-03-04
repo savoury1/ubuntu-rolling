@@ -57,7 +57,7 @@ B libavc1394-0
 B libavc1394-0:i386
 B libiec61883-0
 B libiec61883-0:i386
-B libdc1394-22
+- libdc1394-22 -- ppa:savoury1/multimedia
 B libbluetooth3
 B bluetooth
 B libbluetooth-dev
