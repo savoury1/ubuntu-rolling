@@ -17,33 +17,33 @@ B time
 B thermald
 B hddtemp
 B hdparm
-B libsensors4
-B libsensors4:i386
-B lm-sensors
+- libsensors4 -- ppa:savoury1/backports
+- libsensors4:i386 -- ppa:savoury1/backports
+- lm-sensors -- ppa:savoury1/backports
 B iio-sensor-proxy
 B libgtop2-common
 B libgtop-2.0-11
 - psensor-common -- ppa:savoury1/utilities
 - psensor -- ppa:savoury1/utilities
-B dmidecode
+- dmidecode -- ppa:savoury1/backports
 B laptop-detect
 B radeontool
 B irqbalance
 B python-serial
 B inputattach
-B libpci3
-B libpci3:i386
-B libpci-dev
-B pciutils
+- libpci3 -- ppa:savoury1/virtualisation
+- libpci3:i386 -- ppa:savoury1/virtualisation
+- libpci-dev -- ppa:savoury1/virtualisation
+- pciutils -- ppa:savoury1/virtualisation
 - libusb-1.0-0 -- ppa:savoury1/virtualisation
 - libusb-1.0-0:i386 -- ppa:savoury1/virtualisation
 - libusb-1.0-0-dev -- ppa:savoury1/virtualisation
 B libusb-0.1-4
 B libgusb2
-- libusbredirparser1 -- Xenial has same version as Bionic
-- libusbredirparser-dev -- Xenial has same version as Bionic
-- libusbredirhost1 -- Xenial has same version as Bionic
-B usbutils
+- libusbredirparser1 -- ppa:savoury1/virtualisation
+- libusbredirparser-dev -- ppa:savoury1/virtualisation
+- libusbredirhost1 -- ppa:savoury1/virtualisation
+- usbutils -- ppa:savoury1/virtualisation
 B usb-modeswitch-data
 B usb-modeswitch
 B libieee1284-3
@@ -64,16 +64,16 @@ B python-cheetah
 - libibverbs-dev -- ppa:savoury1/virtualisation
 - librdmacm1 -- ppa:savoury1/virtualisation
 - librdmacm-dev -- ppa:savoury1/virtualisation
-B librados2
-B librados-dev
-B librbd1
-B librbd-dev
+- librados2 -- ppa:savoury1/virtualisation
+- librados-dev -- ppa:savoury1/virtualisation
+- librbd1 -- ppa:savoury1/virtualisation
+- librbd-dev -- ppa:savoury1/virtualisation
 - libxenstore3.0 -- ppa:savoury1/virtualisation
 - libxen-4.9 -- ppa:savoury1/virtualisation
 - libxen-dev -- ppa:savoury1/virtualisation
 - ipxe-qemu -- ppa:savoury1/virtualisation
 - ipxe-qemu-256k-compat-efi-roms
-B qemu-slof
+- qemu-slof -- obsolete by qemu >= 5.0
 - seabios -- ppa:savoury1/virtualisation
 - qemu-user -- ppa:savoury1/virtualisation
 - qemu-block-extra -- ppa:savoury1/virtualisation
