@@ -1,0 +1,53 @@
+Build tools (cmake 3.18.6, meson 0.56.2, vala 0.48.15) for Xenial & newer.
+
+=============================================================================
+                   Build tools - backports (Xenial & newer)
+=============================================================================
+
+autoconf, cmake (3.18.6), cowdancer (0.89), d-shlibs (0.98), debian-keyring (2020.12.24), debootstrap (1.0.123), distro-info (1.0), distro-info-data (0.46), dwz (0.14), git-buildpackage (0.9.20), glslang (11.2.0), googletest (1.10.0.20201025), help2man (1.47.16), meson (0.56.2), nasm (2.15.05), ninja-build (1.10.2), pbuilder (0.231), pristine-tar (1.49), pystring (1.1.3+git20200203), scons (3.1.2), scour (0.38.2), shaderc (2020.5), shellcheck (0.71), spirv-headers (1.5.4.git20210219), spirv-tools (2020.7), umockdev (0.14.1), vala (0.48.15), xapian-core (1.4.18)
+
+Focal & Groovy: samba (4.11.6 Focal / 4.12.5 Groovy, rebuild with fix for other software FTBFS when using libsmbclient, ie. FFmpeg with smbclient)
+
+Bionic & Focal: qtbase-opensource-src (5.9.5/5.12.8 with patched qopenglext.h to match official Khronos GL headers fixing builds of certain other software, ie. i386 arch gst-plugins-good1.0 built against qt5base-dev and libgles-dev)
+
+Bionic only: libhttp-tiny-multipart-perl (0.08), libgitlab-api-v4-perl (0.13) (these two packages are found at ppa:savoury1/perl-xenial for Xenial sysetms)
+
+Xenial & Bionic: asciidoc, bzr (2.7.0+bzr6622), cfortran, cmocka (1.1.5), cppunit (1.15.1), debhelper (11.3.5 patched for no dbgsym), debian-archive-keyring, devscripts (2.20.2), dh-cargo, *fortran-mod (0.12), *golang, *python (3.20190308), *r (20200104), *runit, *sysuser, *virtualenv, doxygen (1.8.17), dpkg-repack (1.46), fig2dev, flex, gflags, git-build-recipe (0.3.6), go-md2man, golang-1.13 (1.13 defaults), guile-2.2 (2.2.7+1), icmake, javatools (0.72.10), jdupes, lazr.restfulclient, libtool, make-dfsg, mdocml, meliae, node-normalize.css, openstack-pkg-tools (99), optipng, pkg-js-tools (0.9.31), python-distro (1.3.0), *launchpadlib (1.10.7), quilt (0.65), ubuntu-keyring (2020.02.11), xdelta, yodl (4.02.02)
+
+Xenial only: asm (6.0), autoconf{-archive,-dickey,2.13,2.64}, autogen, automake-1.15, autotools-dev, binutils (2.28), binutils-mingw-w64, camlp4, capnproto, cdbs, cppo, datefudge, dblatex, dejagnu, desktop-file-utils, dh-autoreconf, *buildinfo, *linktree, *ocaml, *php, docbook-to-man, *utils, *xml, *xsl, dpatch, dpkg (1.19.0.5), fakeroot (1.22), findlib, gcc-mingw-w64 (20.2), gcovr, glib2.0, gnome-common, *pkg-tools, gobject-introspection, gperf, gtk-doc (1.27), guile-2.0 (2.0.13), hevea, lablgl, lablgtk2, labltk, lcov, libarchive-cpio-perl, libdoxygen-filter*, libiberty, libsass, libsys-cpuaffinity-perl, libunwind, lintian (2.5.81), llvm-defaults (0.41~exp4 for LLVM 6.0), log4cplus, lptools, lwt, m4, maven-repo-helper, mingw-w64 (5.0.3), mozilla-devscripts (0.53), node-source-map, ocaml, ocaml-ctypes, *fileutils, *result, *ssl, *text, ocamlbuild, ounit, pcre-ocaml, peg, pkg-kde-tools, pkgbinarymangler (144), po-debconf, po4a, ppx-tools, re2c, react, sassc, sgml-base, strip-nondeterminism, stylebook, swig, systemtap, ubuntu-dev-tools (0.172), xml-core, yui-compressor, zzuf
+
+  * denotes a shorthand package name with a common prefix or suffix removed
+
+=============================================================================
+
+*** Install ***
+
+For Xenial: To install gcc-mingw-w64 20.2 and mingw-w64 5.0.3 (both depend on GCC >= 7) an additional PPA is required. For those packages do these steps:
+
+  sudo add-apt-repository ppa:savoury1/toolchain
+  sudo add-apt-repository ppa:savoury1/build-tools
+  sudo apt-get update
+  
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/fonts
+
+Additionally, for Xenial & Bionic:
+
+  ppa:savoury1/haskell-build
+  ppa:savoury1/tex-2019
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/toolchain
+  ppa:savoury1/perl-xenial
+  ppa:savoury1/apt-xenial
+  ppa:savoury1/gpg
+
+The referenced toolchain PPA provides a build of GCC 7.5.0 for Xenial, which allows backporting of both gcc-mingw-w64 20.2 and mingw-w64 5.0.3 to Xenial.
+
+Note: Only devscripts uses ppa:savoury1/apt-xenial and ppa:savoury1/gpg for GPG tests that require gpgconf (only found in GPG >= 2.2). Newer APT packages are also required by newer than Xenial GPG packages, hence both dependencies.

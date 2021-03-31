@@ -1,0 +1,69 @@
+Scribus 1.5.6~svn24069 for Focal/Groovy & 1.4.8/1.5.5(NG) for Xenial/Bionic.
+
+Scribus 1.4.8 stable and Scribus NG 1.5.5 "development" for Xenial & Bionic, as well as Scribus 1.5.6~svn24069 for Focal & Groovy (from upstream SVN). As Scribus 1.5.6~svn requires Qt 5.11 there will be no builds for Xenial/Bionic.
+
+=============================================================================
+               Scribus - stable & development (Xenial & newer)
+=============================================================================
+
+Focal & Groovy only: scribus (1.5.6~svn24069)
+
+Xenial & Bionic only: fontconfig (2.13.1), freetype (2.10.4), hunspell (1.7.0), libcdr (0.1.6), libpng1.6 (1.6.37), libpodofo (0.9.6), libqxp (0.0.2), libvisio (0.1.7), libwpd (0.10.3), libwpg (0.3.3), scribus (1.4.8 stable), scribus-ng (1.5.5 development), zlib
+
+Xenial only: libfreehand (0.1.2), libmspub (0.1.4), libpagemaker (0.0.4), librevenge (0.0.4), libunistring (0.9.10), libzmf (0.0.2), openssl (1.1.1i), pysimplesoap, python-{boto,httplib2,imaplib2} (compat with new openssl)
+
+=============================================================================
+
+*** Install ***
+
+Notes for Xenial & Bionic: There are two versions of Scribus offered here for these series, inspired by the "Scribus friends" PPA [*] that has existed for several years. Scribus 1.4.8 "stable" & 1.5.5 "development" with that version packaged as scribus-ng so that both can be co-installed if desired. Install of 1.4.8 should only require this PPA whereas 1.5.5 requires additional PPAs.
+
+*** Notes for Scribus 1.5+ for all series: The "development" version (though considered to be stable regardless of that designation) has dependencies on additional multimedia packages, with a large chain of dependencies starting with openscenegraph (which depends on GDAL and all of the GDAL depedencies).
+
+To keep this PPA cleaner for Xenial & Bionic users only wanting Scribus 1.4.8 the additional dependencies for Scribus 1.5+ are available at the Blender PPA on this Launchpad site. Why Blender? Due that PPA having openscenegraph (also used by Blender) and all the many dependencies of openscenegraph. Adding the Blender PPA simply gives access to the specific set of packages used by the Scribus 1.5+ "development" version installation. Here are the required steps:
+
+ONLY for Xenial (Scribus 1.5.5 requires Qt >= 5.7)
+
+  sudo add-apt-repository ppa:savoury1/qt-xenial
+
+NOW for ALL series
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/blender
+  sudo add-apt-repository ppa:savoury1/scribus
+  sudo apt-get update
+
+THEN for Xenial & Bionic
+
+  sudo apt-get install scribus-ng
+
+OR for Focal & Groovy
+
+  sudo apt-get install scribus
+
+Scribus 1.4.8 is based on Qt 4 (not shipped in Focal & newer), so Scribus 1.5 series is simply packaged as scribus instead of scribus-ng for Focal & newer.
+
+*** As is also strongly stated on the Scribus friends PPA, files created by Scribus 1.5 series are NOT compatible with the older Scribus 1.4 series. YOU WILL NOT BE ABLE TO OPEN FILES WITH SCRIBUS 1.4.x CREATED BY SCRIBUS 1.5.x!!!
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/ffmpeg4
+  ppa:savoury1/blender
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/qt-xenial
+
+*** Credits ***
+
+- Creators of Scribus: the Scribus Team
+  https://www.scribus.net/category/about/
+
+- Package code: Mattia Rizzolo
+  https://tracker.debian.org/pkg/scribus
+
+[*] https://launchpad.net/~scribus/+archive/ubuntu/ppa

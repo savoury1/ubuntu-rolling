@@ -1,0 +1,33 @@
+Backports of APT packages (includes apt, python-apt) from Bionic to Xenial.
+
+=============================================================================
+                        APT - backports (Xenial only)
+=============================================================================
+
+appstream (0.10.6), appstream-glib, apt (1.6.12), apt-file, apt-rdepends, aptdaemon (1.1.1+bzr982), aptitude (0.8.10), autoconf-archive, bash (5.1), bash-completion, boost-defaults, boost1.65.1, fontconfig, freetype, glib2.0, gobject-introspection, libapt-pkg-perl, libzstd (1.4.8), packagekit (1.1.6), python-apt (1.6.5), python-debian, system-config-printer, xapian-core
+
+=============================================================================
+
+*** Install ***
+
+Extra packages required to install some backported APT packages are copied here (from ppa:savoury1/backports & gtk-xenial) for easy installation. These steps are needed for a successful upgrade on Xenial of APT related packages:
+
+  sudo add-apt-repository ppa:savoury1/apt-xenial
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+Note: Backports of bash and bash-completion are here due a dpkg file conflict (/usr/share/bash-completion/completions/apt) between apt 1.6.12 and the old bash-completion 2.1 from Xenial (causes sbuild failure). So a bash upgrade is a needed part of the APT upgrade for Xenial systems to ensure no dpkg errors.
+
+A backport of system-config-printer is also here due a PD conflict with the Xenial version (requires packagekit-system-interface, a virtual package no longer provided by the newer than Xenial backported packagekit found here).
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/gcc-defaults-7
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/qt-xenial
+
+Building aptitude uses packages from ppa:savoury1/backports plus newer meson and debhelper (from ppa:savoury1/build-tools) are needed for appstream-glib. Also, libapt-pkg-perl uses GCC > 6 due build failures with GCC 5.x (Xenial).

@@ -1,0 +1,10 @@
+Backports of GNU R 3.6.3 and related dependency packages for Xenial & Bionic.
+
+Required for backporting various packages published at this Launchpad site.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports

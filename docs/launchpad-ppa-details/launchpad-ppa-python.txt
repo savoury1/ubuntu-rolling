@@ -1,0 +1,43 @@
+Backports of Python packages (many restoring Python 2.7) for Xenial & newer.
+
+A fairly comprehensive set of Python backports (and new upstream versions) to bring the Python stack to a more consistent base for the past few releases.
+
+=============================================================================
+                     Python - backports (Xenial & newer)
+=============================================================================
+
+alembic (1.1.0), apport (2.20.11), archmage, automat, beautifulsoup4 (4.8.2), c-blosc, cython (0.29.14), defused-xml, dulwich, fonts-urw-base35, genshi, hyperlink (19.0.0), jinja2, lazy-object-proxy, lxml (4.5.0), lzo2, mako, mutagen (1.44.0), pep8, pillow (7.0.0 Py3), pillow-python2 (6.2.2 Py2), pybind11 (2.6.2), pychm, pydoctor (19.11.0), pyhamcrest, pyopengl (3.1.5), pypy (7.3.1), pysodium (0.7.5), python-astor, *bcrypt (3.1.7), *cachecontrol, *certifi, *cryptography (2.8), *cryptography-vectors, *dbusmock, *decorator, *docutils, *exif (2.3.1), *flake8 (3.7.9), *fs (2.4.11), *httplib2 (0.14.0), *idna (2.8), *imagesize, *importlib-metadata, *iso8601, *msgpack, *pathlib2 (2.3.5), *pluggy (0.13.0), *reportlab (3.5.34), *tz (2019.3), *tzlocal, *zipp (1.0.0), pyyaml (5.3.1), requests (2.22.0), rst2pdf (0.96), setuptools-scm (3.4.3), sgmllib3k (1.0.0), soupsieve (1.9.5), sphinx (1.8.5), sphinx-tabs (1.1.13), tox (3.21.4), traitlets (4.3.3), twisted (18.9.0), wcwidth, zope.event, zope.interface
+
+Focal only: pyside2 (5.14.0+really5.13.2 downgrade from default, due various use cases being broken by pyside2 5.14 with Qt 5.12, eg. missing pyside2-uic)
+
+OpenStack Train stack (for Xenial & Bionic): python-keystoneauth1 (3.18.0), *keystoneclient (3.22.0), *openstackdocstheme, *openstacksdk (0.36.4), *os-api-ref, *os-client-config (1.33.0), *os-service-types (1.7.0), *os-testr, *oslo.concurrency, *oslo.config (6.11.2), *oslo.context (2.23.1), *oslo.db, *oslo.i18n, *oslo.log (3.44.3), *oslo.serialization, *oslo.utils (3.41.6), *oslotest, stevedore (1.31.0), tempest (22.1.0)
+
+Xenial & Bionic: astroid (2.3.3), astroid2 (1.6.6), backports.functools-lru-cache, bandit, betamax, bottleneck, breathe, cairocffi, cftime, chardet, cloudpickle, configparser, contextlib2, curl (7.75.0), dask (1.2.2), dask-sphinx-theme, dask.distributed, dh-python, dnspython, easyprocess, entrypoints, execnet (1.7.1), fiona, flask, fonttools (3.44.0), h5py (2.8.0), heapdict, html5lib, impacket, ipykernel, ipython, isort, joblib, jupyter-client, jupyter-core, jupyter-notebook, keyrings.alt, khal, kiwisolver, libimagequant, libpng1.6, locket, logilab-common, lxml (4.5.0), markupsafe, matplotlib (3.0.3 Py3), matplotlib2 (2.2.5 Py2), mistune, more-itertools, mpmath, nbconvert, nbsphinx, netcdf4-python, nose2, numexpr, olefile, owslib, pandas (0.23.3), paramiko, partd, paste, path.py, patsy, pdfrw, pexpect, pickleshare, psycopg2, ptyprocess, py-ubjson, pybind11 (2.4.3), pycodestyle, pycparser, pycryptodome (3.6.1), pycurl, pydocstyle, pyflakes, pygments, pykdtree, pylint (2.3.1), pylint2 (1.9.5), pymongo, pyopenssl (19.0.0), pyparsing (2.4.6), pyshp, pysimplesoap, pytest (3.10.1), pytest-forked, *localserver, *mock, python-affine, *atomicwrites, *attrs (19.3.0), *autobahn, *babel, *backports.os, *bleach, *blosc, *boto (2.49.0), *boto3 (1.9.253), *bottle, *cartopy, *cffi, *click-plugins, *cligj, *concurrent.futures, *cookies, *coverage (4.5.2), *cpuinfo, *dateutil, *ddt, *debtcollector, *deprecation, *descartes, *distro, *doc8, *docs-theme, *docpile.cache, *ecdsa, *editor, *eventlet, *fastimport, *feather-format, *filelock, *flaky, *future, *gevent, *git, *gitdb, *glanceclient, *gmpy2, *greenlet, *hacking, *hypothesis (4.36.2), *icalendar, *imaplib2 (2.57), *itsdangerous, *jmespasth, *json-patch, *jsonschema, *keyring (18.0.1), *launchpadlib, *libnacl, *lz4, *memcache, *mock, *monotonic, *mox3, *munch, *nacl, *numpy (1.16.6), *oauthlib, *pbr (5.1.1), *pkgconfig, *prometheus-client, *psutil (5.5.1), *py, *pyftpdlib, *pymysql, *pyperclip, *pysaml2 (4.8.0), *pytest-cov, *pytest-timeout, *redis, *reno, *requests-mock, *requestsexceptions, *rfc3986, *scandir, *scipy (1.2.2), *service-identity, *setuptools (44.0.0), *shapely, *smmap, *snappy, *snuggs, *sphinx-issues, *sphinxcontrib.apidoc, *spur, *statsd, *stestr (2.3.1), *subunit2sql (1.10.0), *tblib, *testscenarios, *toml, *tornado, *txaio, *typed-ast, *typing, *unidiff, *urllib3 (1.24.1), *vobject, *webencodings, *werkzeug, *wrapt, *xarray (0.12.3 Py3), *xarray2 (0.11.3 Py2), pyzmq, rasterio, responses, rpy2 (3.0.5 Py3), rpy2-python2 (2.8.6 Py2), seaborn, send2trash, simplejson, six (1.14.0), sortedcollections, sortedcontainers, sphinx-bootstrap-theme, *gallery, *paramlinks, *rtd-theme, *testing, sphinxcontrib-autoprogram, *bibtex, *programoutput, *spelling, *svg2pdfconverter, *websupport, sqlalchemy (1.3.12), statsmodels (0.10.2), subunit (1.3.0), sympy, terminado, testpath, tidy-html5, toolz, utidylib, vdirsyncer, voluptuous, wheel (0.32.3), xlsxwriter, xlwt, zict, zlib, zzzeeksphinx
+
+Xenial only: alabaster, appdirs, asn1crypto, autopep8, blinker, cmd2, colorspacious, constantly, cssmin, cvxopt, enum34, faulthandler, feedparser, flake8-docstrings, flake8-polyfill, fonts-font-awesome, *lato, *roboto-slab, imagemagick, incremental, ipython-genutils, ipywidgets, jdcal, jquery-throttle-debounce, jupyter-console, jupyter-sphinx-theme, libidn2, libpsl, migrate, nbformat, nghttp2, nose, nosexcover, numpydoc, openpyxl, openssl, oslo-sphinx, ply, prompt-toolkit, pyasn1, pybtex, pybtex-docutils, pycxx, pyenchant, pykerberos, pylibmc, pyparsing, pypdf2, pyqt5 (5.10.1), pyrex, pytest-runner, python-argcomplete, *backports-abc, *backports-shutil-get-terminal-size, *botocore, *cbor, *click-log, *click-threading, *cycler, *debian, *debianbts, *defaults (2.7.14), *et-xmlfile, *extras, *fixtures, *funcsigs, *gssapi, *ipaddress, *json-pointer, *latexcodec, *ldap, *ldap3, *magic, *mccabe, *mimeparse, *mode, *mysqldb, *netaddr, *packaging, *positional, *pyasn1-modules, *pyepsg, *pyqrcode, *pyscss, *repoze.sphinx.autointerface, *requests-kerberos, *requests-toolbelt, *s3transfer, *secretstorage, *snowballstemmer, *stdlib-extensions (2.7.17), *swiftclient, *tempest-lib, *testtools, *trie, *virtualenv, *warlock, *wsaccel, *xlrd, python2.7 (2.7.17), qtwebchannel-opensource-src (5.5.1), readline (7.0), sip4 (4.19.7), smartypants, sphinx-issuetracker, sqlparse, testresources, u-msgpack-python, urwid, vcversioner, webassets, xcffib
+
+  * denotes a shorthand package name with a common prefix or suffix removed
+
+=============================================================================
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/fonts
+  ppa:savoury1/inkscape
+
+Additionally, for Xenial & Bionic:
+
+  ppa:savoury1/gnu-r
+  ppa:savoury1/haskell-build
+  ppa:savoury1/tex-2019
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/node-xenial
+
+Note: Only sphinxcontrib-svg2pdfconverter requires ppa:savoury1/inkscape.

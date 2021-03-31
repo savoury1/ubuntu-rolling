@@ -1,0 +1,22 @@
+Backport of DOSBox SVN trunk patched build (thanks i30817!) for Xenial only.
+
+Source of build recipe is ppa:i30817/dosbox-patched (until June 2019 i30817 was publishing Xenial packages, but is no longer doing so with new releases). See the linked PPA for more details about this patched version of DOSBox.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+
+*** Credits ***
+
+- Creators of DOSBox: Peter Veenstra, Sjoerd, Tommy Frössman, Ulf Wohlers
+  https://www.dosbox.com/
+  https://sourceforge.net/p/dosbox/code-0/HEAD/tree/dosbox/trunk/
+
+- Patched SVN trunk recipe: i30817
+  https://launchpad.net/~i30817/+archive/ubuntu/dosbox-patched
+  https://code.launchpad.net/~i30817/+recipe/dosbox-daily

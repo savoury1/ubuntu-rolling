@@ -1,0 +1,32 @@
+Build of Handbrake 1.3.3+git for Bionic & newer (1.1.2 for older GTK Xenial).
+
+A PPA for Xenial with backported Bionic GTK 3 (and associated packages) [*] makes it possible to run the latest Handbrake (and latest of other programs) on an upgraded Xenial system (GTK PPA has Handbrake 1.3.3+git for Xenial).
+
+[*] https://launchpad.net/~savoury1/+archive/ubuntu/gtk-xenial
+
+*** Install ***
+
+Handbrake requires FFmpeg 4.x so do these steps for a successful install (not strictly required for Focal and newer, but the PPA has latest FFmpeg 4.3.x):
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/handbrake
+  sudo apt-get update
+  sudo apt-get install handbrake
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+*** Credits ***
+
+- Creators of Handbrake: the Handbrake team
+  https://handbrake.fr/
+
+- Package code: Debian Multimedia Maintainers
+  https://tracker.debian.org/pkg/handbrake

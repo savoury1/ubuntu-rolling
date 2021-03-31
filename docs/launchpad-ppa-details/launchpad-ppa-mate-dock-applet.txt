@@ -1,0 +1,23 @@
+Rebuild of MATE Dock Applet for GTK2 based desktops [1] (eg. Mint 18.1 Serena MATE) with code for various "modern enhancements" (ie. scaling for icons on HiDPI screens) removed, due such code breaking the dock on GTK2 desktops.
+
+MATE Dock Applet provides an excellent, functional and simple dock for MATE desktop users. Earlier versions were more compatible with GTK2, with later versions (especially from around 0.85-0.86 [2] when icon scaling for HiDPI screens was introduced) breaking the applet on GTK2 based desktops (ie. no icons, even pinned ones, visible when dock launches). However, numerous useful fixes/improvements have also been made to MATE Dock Applet since 0.86 so this PPA is to provide builds of a forked version specifically for GTK2 that includes useful fixes and removes GTK2 incompatible code.
+
+There are still many of us who use and depend upon GTK2 based desktops for a variety of reasons. Such desktops are typically fast, light weight and easy to customise. While GTK3 based desktops do introduce all manner of extra possible configuration and theming, it is highly complex (far too much so for regular users) to even create such configurations and themes for GTK3. Also, newer GTK3 releases often break existing themes due a lack of interest on the part of the developers in maintaining backwards compatibility (which is actually a very important part of any good and reliable computer software).
+
+[1] https://github.com/savoury1/mate-dock-applet/tree/gtk2-build
+[2] https://github.com/ubuntu-mate/mate-dock-applet/compare/V0.85...master
+
+*** Technical details ***
+
+The source code used is V0.87 plus Github commit 2886976 [3] on 4 Nov 2018, with various GTK2 incompatible code reverted or removed. Commit 2886976 was chosen as the start point due it being prior to introduction of various Unity based desktop changes (with those changes also breaking the applet for GTK2 based desktops). Further updates to the package here will include applicable cherry-picked commits from upstream source for fixes/improvements, while maintaining compatibility with GTK2 based desktops.
+
+[3] https://github.com/ubuntu-mate/mate-dock-applet/commit/2886976
+
+*** Credits ***
+
+- Creator of MATE Dock Applet: Robin Thompson
+  https://github.com/robint99
+  https://github.com/ubuntu-mate/mate-dock-applet
+
+- Initial package code: Debian+Ubuntu MATE Packaging Team
+  https://tracker.debian.org/pkg/mate-desktop

@@ -1,0 +1,46 @@
+New build of Métamorphose2 0.90~beta (fixing a few bugs) for Xenial & newer.
+
+See https://github.com/savoury1/metamorphose2 (forked project) for details.
+
+Update (22 Feb 2021): Focal bug with launch script failure due calling python rather than python2 has been fixed at last (thanks Jim for the report!).
+
+Update (31 Oct 2020 Halloween Special): New builds with Focal compatibility, through adding python2 as an alternate dependency (no "python" package in Focal). Also, the Focal build depends on rebuilds of mutagen and python-exif restoring Python 2 support (published at ppa:savoury1/python & copied here).
+
+*** Intro ***
+
+A developer friend wrote me saying devs usually use scripted tools for mass file renaming, so he figured that's why Métamorphose was not in the Ubuntu repos. Here's a (slightly) edited response that I wrote him, which gives a clear use case for an excellent GUI renaming tool such as Métamorphose.
+
+*** Why Metamorphose? ***
+
+Yes, scripting tools are great when the original filenames are guaranteed to follow some kind of convention and when all necessary data for the final filename is either in the existing filename or can be determined by whatever set of rules are being applied. However, there are at least some situations where it is quicker and easier to use an excellent GUI tool like Métamorphose (even for "Linux developers" who are also only one small subset of the people who are actually using Ubuntu and the software repos -- remember that many regular folk, ie. non-devs, also use Ubuntu!).
+
+Here's one such use case where a GUI file renamer like Métamorphose shines:
+
+* Input is a bunch of media files (ie. music/video) that have all kinds of varying names.
+
+* Particular data (ie. year of movie release) is desired in the output filename, but might not even be present in the input filename.
+
+* Thus, certain data might need to be sourced elsewhere (ie. online) first, then manually added to the particular filename(s) that don't even have the required info in the existing filename(s).
+
+* Such data cannot be determined by any scripted algorithm (OK, at least not easily -- unless you're going to do something like build a script or program that goes away, parses different potential websites for the movie title, extracts the year from the webpage found and so on -- which would be getting overly complex for just a quick batch of file renames and still might not work in all cases, ie. what if the movie is not even found on the site/s that the script/program checks?!).
+
+* With Métamorphose, standard rules (using complex regular expressions and various other techniques) can be applied to all the input filenames (media files in this case).
+
+* Those standard rules can breakdown and reassemble the input filenames with all the data that _is_ available in those input filenames.
+
+* After such standard rules are applied, a quick check through the list of output filenames can be made, with manual edits for missing info (ie. year) made by hand.
+
+* Finally, actually do the rename operation, which is now based on a combination of numerous standard rules and also whatever manual edits have just been made!
+
+This is actually the single most efficient way for renaming a large number of media files (based on the various techniques I've used over the years) when at least _most_ are expected to be following some kind of convention (ie. title of song/movie included at least), though with all kinds of potential variations in those conventions (and sometimes with desired data, ie. year, missing altogether).
+
+So the GUI tool (in this case, Métamorphose2) really does have a place (as do many GUI tools that replicate or give front-ends to tasks that can also be scripted -- in some situations, it is clear that a GUI tool can be quicker with fewer keystrokes involved in terms of completing a particular task).
+
+*** Credits ***
+
+- Creator of Métamorphose2: Ianaré Sévi
+  https://github.com/ianare
+  https://github.com/metamorphose/metamorphose2/
+
+- Initial package source: Alin Andrei
+  https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8

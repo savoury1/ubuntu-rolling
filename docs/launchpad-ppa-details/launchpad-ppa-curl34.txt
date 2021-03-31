@@ -1,0 +1,24 @@
+Build of Curl 7.75.0 (providing both libcurl3 & libcurl4) for Xenial & newer.
+
+Both libcurl3 and libcurl4 ABIs are provided with the one package through addition of symbols (to key source files and symbols package file). This is done with a helper script and patch created by Evgeny Brazgin (aka xapienz).
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/encryption
+
+*** Credits ***
+
+- Creators of Curl: Daniel Stenberg and all contributors
+  https://curl.haxx.se/
+
+- Package code: Alessandro Ghedini
+  https://tracker.debian.org/pkg/curl
+
+- Curl 3 & 4 mod: Evgeny Brazgin (aka xapienz)
+  https://github.com/xapienz/curl-debian-scripts
+  https://launchpad.net/~xapienz/+archive/ubuntu/curl34

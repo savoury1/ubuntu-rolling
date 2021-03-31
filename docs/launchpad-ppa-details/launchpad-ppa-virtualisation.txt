@@ -1,0 +1,51 @@
+Virtualisation (incl. libvirt 7.0.0, qemu 5.2, lxc/lxd) for Xenial & newer.
+
+=============================================================================
+                  Virtualisation - various (Xenial & newer)
+=============================================================================
+
+acpica-unix (20200925), augeas (1.12.0), device-tree-compiler (1.6.0), dmidecode (3.3), keyutils, libnftnl, libosinfo (1.8.0), libpsm2 (12.2.86), libslirp (4.1.0), libtirpc (1.2.5), libvirt (7.0.0), libvirt-dbus (1.4.0), *python (7.0.0), ndctl (67), nftables (0.9.7), osinfo-db (20210215), pci.ids (0.0~2021.02.08), pmdk (1.8), qemu (5.2 / 5.0 Xenial due new Python 3.6 dep), rdma-core (28.0), rpcbind (1.2.5), seabios (1.14.0), spice (0.14.3), spice-gtk (0.38), spice-protocol (0.14.3), tox (3.21.4), usb.ids (2021.01.29), virglrenderer (0.8.2), virt-manager (3.2.0), vmem (1.8), xen (4.11.3+24-g14b62ab3e5), xfsprogs (5.4.0)
+
+Xenial & Bionic only: boost-defaults, boost1.67, dh-sysuser, glusterfs (6.5), gtk-vnc (0.9.0), icu (63.2), infinipath-psm, iptables (1.8.3), ipxe, leveldb, libcacard, libfabric (1.6.2), libisci (1.18.0), libsys-virt-perl, libvirt-glib (3.0.0), *php (0.5.5), lxc (3.0.4), lxc-templates, lxd (3.0.4 bug fix release), nfs-utils (1.3.4), phodav (2.4), python3-lxc (3.0.4), quota (4.05), ruby-fog-libvirt, ruby-libvirt, virt-viewer (7.0), virt-what, virtualenv-clone, virtualenvwrapper
+
+Xenial only: ceph (12.2.13), google-perftools, ipxe-qemu-256k-compat, libgovirt, osinfo-db-tools, php-imagick, python-virtualenv, pyvirtualdisplay, sanlock
+
+  * denotes a shorthand package name with a common prefix or suffix removed
+
+=============================================================================
+
+Note: This is an advanced PPA for those who want the latest virtualisation software. Adding this PPA and upgrading the system will install many changes, especially for Xenial and Bionic era systems. So be sure you want this before proceeding and as always do a full system backup before such a major upgrade!
+
+Update (17 Mar 2021): A workaround for a long-standing issue with the libvirt backport (currently 7.0.0) on Xenial systems is now included with the latest package revision. The issue was that the libvirtd service was consistently failing to start on boot due a "start request repeated too quickly" error.
+
+The latest libvirtd package for Xenial adds a libvirtd.timer unit, with a 30 second delay before starting libvirtd on boot. This has fixed the issue for Xenial with libvirtd now starting successfully on boot after the added delay. If you are using this PPA for Bionic series (or newer) and are encountering the same issue then please report this to me and I will update the libvirtd package for the series in question by adding the same libvirtd.timer unit.
+
+*** Install ***
+
+For Xenial: This PPA depends on ppa:savoury1/display for newer than default display drivers, which the newer virtualisation software here requires. Thus, for installation on Xenial-based systems follow these steps (the FFmpeg 4 PPA provides newer GStreamer and GCC 7.5.0 for Xenial, needed by other packages):
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/display
+  sudo add-apt-repository ppa:savoury1/virtualisation
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+  ppa:savoury1/display
+
+Additionally, for Xenial & Bionic:
+
+  ppa:savoury1/tex-2019
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/gtk-xenial
+  ppa:savoury1/gcc-defaults-7

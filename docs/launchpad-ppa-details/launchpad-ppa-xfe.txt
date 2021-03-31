@@ -1,0 +1,32 @@
+Backport of Xfe (X File Explorer) 1.43.2 (plus fox1.6) for Xenial & newer.
+
+README
+
+ XFE, X File Explorer File Manager
+
+ Description
+ =-=-=-=-=-=
+ 
+  X File Explorer (Xfe) is a lightweight file manager for X11, written using
+    the FOX toolkit.
+  It is desktop independent and can easily be customized.
+  It has Commander or Explorer styles and it is very fast and small.
+  Xfe is based on the popular, but discontinued X Win Commander, originally
+    written by Maxim Baranov.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+*** Credits ***
+
+- Creator of Xfe: Roland Baudin
+  http://roland65.free.fr/xfe
+  http://sourceforge.net/projects/xfe
+
+- Initial package code: Joachim Wiedorn
+  https://tracker.debian.org/pkg/xfe
+  https://salsa.debian.org/joowie-guest/maintain_xfe

@@ -1,0 +1,63 @@
+Multimedia PPA (incl. GStreamer 1.18.3, x264 0.160, x265 3.4) Xenial & newer.
+
+A set of multimedia software packages bringing notably newer versions of many well-used libraries to the past few years of Ubuntu-based releases or series.
+
+=============================================================================
+                    Multimedia - various (Xenial & newer)
+=============================================================================
+
+alsa-lib (1.2.2 for alsa-*), alsa-plugins, alsa-tools, alsa-topology-conf, alsa-ucm-conf, alsa-utils, alsaequal, aom (1.0.0-errata1-avif), chromaprint (1.5.0), codec2 (0.9.2), dav1d (0.8.2), dvdauthor (0.7.2), faad2 (2.10.0), farstream-0.2, fdk-aac (2.0.1), flac (1.3.3), fluidsynth (2.1.7), fontconfig (2.13.1), freetype (2.10.2), frei0r (1.7.0+git20200525), gst-libav1.0 (1.18.3 for gst*), gst-plugins-{bad,base,good,ugly}1.0, gstreamer{-vaapi,1.0}, intel-gmmlib (20.1.1 for intel*), intel-media-driver, intel-media-driver-non-free, intel-mediasdk, k3b, libbluray (1.2.1), libdca (0.0.7), libde265 (1.0.8), libdvdnav (6.1.0), libdvdread (6.1.0), libebml (1.4.2), libinstpatch (1.1.2), libmatroska (1.6.2), libmediainfo (20.09), libmtp (1.1.18), libmysofa (1.2), libnice, libopenmpt (0.4.11), libquicktime, libsdl2 (2.0.14), libsdl2-image, libshout (2.4.5), libsodium (1.0.18+git20201013), libsoxr, libsrtp2, libudfread (1.1.1), libusrsctp (0.9.3.0+20201102), libva (2.7.1), libva-utils, libvdpau (1.3), libvorbis (1.3.7), libvpx (1.9.0), libzen (0.4.38), mediainfo (20.09), mpg123 (1.26.3), mplayer (1.4), nasm (2.15.05), obs-studio (26.1.2), openal-soft, orc, pocketsphinx, pocketsphinx-python, pysdl2, rubberband (1.9.0), sdl-kitchensink (1.0.8), sdl-mixer1.2, sndio (1.7.0), sphinxbase, srt (1.4.2), taglib (1.11.1), tinyxml2 (8.0.0), twolame (0.4.0), v4l-utils (1.20.0), wavpack (5.4.0), wxwidgets3.0 (3.0.4), x264 (0.160.3011 = libx264-160), x265 (3.4 = libx265-192), xine-lib-1.2, xvidcore (1.3.7), zeromq3 (4.3.4)
+
+Xenial & Bionic only: alsa-oss (1.1.8), alsa-plugins-extra (1.1.0), apulse, bubblewrap (0.4.0), caps, coin3 (4.0.0), collada2gltf, fftw3 (3.3.8), flite (2.1), glew (2.1.0), glfw3 (3.3.2), graphene (1.8.4), grilo, grilo-plugins, guvcview (2.0.6), ladspa-sdk, libcue, libdc1934-22 (2.2.5), libgcrypt20, libgpg-error, libmikmod, libogg, liboggz, libquvi (0.9.4), libsdl1.2, libsdl2-gfx, libsdl2-mixer, libsdl2-ttf, libvidstab (1.1.0), libwpe (1.6.0), lirc (0.10.1), mjpegtools, norm (1.5.8), opencollada (0.1.0), opus (1.3.1), pyalsaaudio, pygame-sdl2, python-pyalsa, rtmpdump, sdl-image1.2, timgm6mb-soundfont, timidity, vorbis-tools, wildmidi, wpebackend-fdo (1.6.0), xdg-dbus-proxy (0.1.2), zvbi
+
+Bionic only: wayland-protocols (1.17)
+
+Xenial only: alsamixergui, alsaplayer, aribb24, asm, collada-dom (2.4.4), crystalhd, game-music-emu, glib2.0, gobject-introspection, gtkglext, icu (60.2), icu-le-hb, jack-audio-connection-kit, jackd2, lame (3.100), lib3ds, libao, libass, libdrm (2.4.99), libdvd-pkg, libebur128, libmodplug, libmpc, libquvi-scripts, libsamplerate, libsndfile, libsquish (1.15), libwebp, mint-meta-codecs (Linux Mint 18.1 Serena), openssl, opus-tools, opusfile, portaudio19, pulseaudio (11.1), pysimplesoap, python-{boto,httplib2,imaplib2} (compat with new openssl), quvi, readline, shine, snappy, vokoscreen (2.5.0), wayland (1.14.0), wayland-protocols (1.15), webrtc-audio-processing
+
+=============================================================================
+
+*** Install ***
+
+Note for Xenial/Bionic: Some packages here (alsa-plugins-extra, chromaprint, gstreamer1.0-libav, libquicktime, mplayer, obs-studio) are built with FFmpeg 4.x and depend on FFmpeg 4.x to install and run. To install any such packages that depend upon FFmpeg 4.x do these steps first for successful installation:
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/multimedia
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+Notes for Xenial: Intel-MediaSDK 20.1.1 requires GCC >= 7 (default Xenial GCC is 5.4.0). So GCC 7.5.0 has been built at ppa:savoury1/toolchain for Xenial and copied to ppa:savoury1/ffmpeg4 thus making it easier to install libmfx1.
+
+Also, gstreamer1.0-qt5 & obs-studio do not build with older Qt 5.5.1 (Xenial default) so they are built with Qt 5.9.5 and require Qt >= 5.9 to install. If you wish to install gstreamer1.0-qt5 or obs-studio on Xenial then these steps are necessary first (Qt/KDE upgrades go together due incompatibility issues):
+
+  sudo add-apt-repository ppa:savoury1/qt-xenial
+  sudo add-apt-repository ppa:savoury1/kde-xenial
+  sudo add-apt-repository ppa:savoury1/multimedia
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+Finally, obs-studio requires a newer display driver stack than Xenial so for this package only one additional PPA beyond all of the above is required. To install on Xenial add the next command at the start of the qt/kde list above:
+
+  sudo add-apt-repository ppa:savoury1/display
+
+This will upgrade the entire display stack on Xenial including Mesa, Xserver, and many more, so be sure you want this before proceeding. As always, ensure you do a full backup prior to such extensive upgrading of the current system!
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/fonts
+  ppa:savoury1/graphics
+  ppa:savoury1/ffmpeg4
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/tex-xenial
+  ppa:savoury1/gcc-defaults-7
+  ppa:savoury1/qt-xenial
+  ppa:savoury1/display
+  ppa:savoury1/vlc3
+
+Note: qt-xenial is only required for gstreamer1.0-qt5 & obs-studio and the final two PPAs (display & vlc3) are only required for building obs-studio.

@@ -1,0 +1,71 @@
+GTK 2.24.32 & GTK 3.22.30 plus various supporting libraries for Xenial only.
+
+Backported GTK from Bionic to Xenial allowing the running of almost all newer than Xenial software that makes use of GTK. There are also newer versions of various applications here that are published at other PPAs on this Launchpad site, applications requiring GTK >= 3.20 for latest versions (ie. inkscape).
+
+=============================================================================
+                           GTK 2 & 3 (Xenial only)
+=============================================================================
+
+adwaita-icon-theme, atk1.0, atkmm1.6, cairo (1.16.0), cairomm (1.12.2), cheese (3.28.0), clutter-1.0 (1.26.2), clutter-gtk (1.8.4), clutter-gst-3.0 (3.0.26), cogl (1.22.4), fontconfig (2.13.1), freetype (2.10.4), gcr (3.28.0), gdk-pixbuf (2.36.12), gdl, glade (3.22.1), glib2.0 (2.56.4), glibmm2.4 (2.56.0), gnome-video-effects, gobject-introspection (1.56.1), graphene (1.8.0), gspell, gtk+2.0 (2.24.32), gtk+3.0 (3.22.30), gtkmm3.0 (3.22.2), gtksourceview3 (3.24.11), gtksourceview4 (4.4.0), harfbuzz (1.7.6), hicolor-icon-theme, json-glib, jsonrpc-glib, libdazzle (3.28.1), libgcrypt20, libgee-0.8, libgit2-glib, libglib-object-introspection-perl, libglib-perl, libgpg-error, libpeas, libpng1.6, libsecret, libsigc++-2.0 (2.10.0), libwebp (0.6.1), p11-kit (0.23.20), pango1.0 (1.40.14), pygobject (3.26.1), simple-scan (3.28.0), sysprof (3.28.1), template-glib (3.28.0), vala (0.40.17), vte2.9.1 (0.52.2), wayland-protocols (1.15), webkit2gtk (2.30.5), zlib (1.2.11)
+
+Linux Mint 18.1 Serena: mint-themes, mint-themes-gtk3 (upgrading these two themes packages is required for full compatibility with GTK >= 3.20 theming)
+
+Applications (requiring GTK >= 3.20): entangle (3.0), handbrake (1.3.3+git), indicator-sound-switcher (2.2.2), inkscape (1.0.1), meld (3.20.3), pix (2.4.11), remmina (1.4.12), xapp (1.4.9), xed (2.6.2), xreader (2.6.4)
+
+=============================================================================
+
+Earlier versions of applications found here (see "Applications" section in table) are also available for Xenial at other PPAs (eg. Meld 3.18.3 is found at ppa:savoury1/utilities). Due various common software requiring GTK >= 3.22 for more recent versions (Xenial ships with GTK 3.18) these newer application versions are here for Xenial users who upgrade their system using this PPA.
+
+Linux Mint 18.1 Serena (Xenial-based) systems are also supported by this PPA.
+The mint-themes package backport provides GTK >= 3.20 compatible Mint themes.
+
+NOTE: This will upgrade core GTK 2 & 3 packages on Xenial which can possibly cause unexpected issues with the desktop environment and/or software that is dependent on particular GTK versions (however, no such real issues have yet been observed in well over a year of testing these packages). So please be sure you do really want the newer GTK versions (allowing newer applications) found here and always remember: backup first before such a major upgrade!
+
+*** Install ***
+
+To successfully install these newer GTK packages on a Xenial-based system:
+
+  sudo add-apt-repository ppa:savoury1/toolchain
+  sudo add-apt-repository ppa:savoury1/backports
+  sudo add-apt-repository ppa:savoury1/gtk-xenial
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+Note that webkit2gtk requires the updated toolchain PPA as GCC >= 6 is needed to build and also to successfully install and run packages from this source.
+
+Install of Handbrake requires FFmpeg 4.x so do this before update/upgrade:
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+
+Install of Inkscape requires various deps so do this before update/upgrade:
+
+  sudo add-apt-repository ppa:savoury1/inkscape
+
+For other X-Apps see https://launchpad.net/~embrosyn/+archive/ubuntu/xapps/
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/toolchain
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/apt-xenial
+  ppa:savoury1/encryption
+  ppa:savoury1/gpg
+  ppa:savoury1/fonts
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+To build GTK 3.22.30 requires debhelper >= 10.3 (ppa:savoury1/build-tools), as unresolvable build failures occur on earlier debhelper versions. A newer debhelper requires backports of newer (than Xenial) associated build tools, all of which are found at ppa:savoury1/build-tools (not required to install).
+
+A newer GCC (>= 6) than in Xenial (GCC 5.4.0) is needed to build webkit2gtk (GCC 7.4.0 from ppa:ubuntu-toolchain-r/test was used) and libgstreamer1.0-dev (>= 1.13.1) is needed (ppa:savoury1/multimedia), plus libgcrypt20 (>= 1.7.0) as well (ppa:savoury1/gpg). Backported fontconfig and freetype (copied here from ppa:savoury1/fonts) are also used to build some parts of the GTK stack.
+
+*** Credits ***
+
+- Creators of GTK: Peter Mattis and the entire GTK team
+  https://www.gtk.org/overview.php
+
+- Package code: Debian GNOME Maintainers
+  https://tracker.debian.org/pkg/gtk+3.0

@@ -1,0 +1,53 @@
+Android backports (android-platform-system-core with adb) for Xenial & newer.
+
+=============================================================================
+                    Android - backports (Xenial & newer)
+=============================================================================
+
+
+*external-boringssl, *external-libselinux, *external-libunwind, *libnativehelper, *system-core, *system-extras, f2fs-tools, p7zip
+
+  * = "android-platform-" common package name prefix
+
++===========================================================================+
+
+Backports of various Android (version 10.0.0+r36) related packages for adb.
+
+*** Install ***
+
+To install adb (from android-platform-system-core) requires GCC >= 9 (Xenial default is 5.4.0, Bionic is 7.5.0) so a PPA with GCC 9.3.0 needs to be added.
+
+* Xenial: The Ubuntu Toolchain PPA has GCC 9.3.0 and does not make it the new system default, or there is a PPA at this site to make GCC 9.3.0 the default.
+
+* Bionic: As above, the Ubuntu Toolchain PPA has GCC 9.3.0 and does not make it the new default, but that PPA has gcc-10 built with shared common packages (ie. libgcc1 & libgcc1-s1) that can bring an unwanted dependency (libgcc1-s1 only found in GCC >= 10) for local package builds. Or use the same PPA as for Xenial making GCC 9.3.0 the default (and with no GCC 10 libgcc1-s1 package).
+
+* Xenial & Bionic - After reading the above, choose which PPA for GCC 9.3.0:
+
+  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+
+OR
+
+  sudo add-apt-repository ppa:savoury1/gcc-defaults-9
+
+THEN
+
+  sudo apt-get update
+  sudo apt-get install adb
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+Additionally for Xenial, Bionic, and Focal builds:
+
+  ppa:savoury1/llvm-defaults-11
+
+Additional for Xenial and Bionic builds only:
+
+  ppa:savoury1/haskell-build
+  ppa:savoury1/gcc-defaults-9
+
+These Android packages were built with GCC 9.3.0 as builds fail with GCC < 9 and GCC 9.3.0 (Focal default) is a good version used for builds at this site.

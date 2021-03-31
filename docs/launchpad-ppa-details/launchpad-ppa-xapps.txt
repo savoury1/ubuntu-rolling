@@ -1,0 +1,28 @@
+Backports of X-Apps (pix, xed, xplayer, xreader, xviewer) for Xenial & newer.
+
++===========================================================================+
+                     X-Apps - backports (Xenial & newer)
++===========================================================================+
+
+exiv2 (0.27.3), libgcrypt20, libgpg-error, pix (2.4.11 / 2.4.5 Xenial), xed (2.6.2 / 1.6.3 Xenial), xplayer (2.2.8), xplayer-pl-parser (1.0.2+updated), xreader (2.6.4 / 2.0.2 Xenial), xviewer (2.4.3), xviewer-plugins (1.2.0)
+
+Xenial & Bionic only: grilo (0.3.12), grilo-plugins (0.3.11), libgom, libpng1.6 (1.6.37), libquvi (0.9.4), tracker (2.3.4), zlib
+
+Xenial only: libquvi-scripts, libwebp, sqlite3 (3.22.0), totem-pl-parser
+
++===========================================================================+
+
+*** Install ***
+
+Note for Xenial: Several of the newest X-Apps packages require GTK3 >= 3.20.0 (pix >= 2.4.6, xapp >= 1.4.9, and xreader >= 2.2.3). Xenial has GTK3 3.18.9 so this PPA has pix 2.4.5, xapp 1.2.2, and xreader 2.0.2 (highest possible with GTK3 3.18.9). For the newer apps on Xenial see the PPA with Bionic GTK 3 backports (and related packages) [*] which includes latest X-Apps for Xenial.
+
+[*] https://launchpad.net/~savoury1/+archive/ubuntu/gtk-xenial
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia

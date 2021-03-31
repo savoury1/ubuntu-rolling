@@ -1,0 +1,55 @@
+Builds of FFmpeg 4.3.2 (and required multimedia packages) for Xenial & newer.
+
+Update (3 Mar 2021): New FFmpeg 4.3.2 uploads today are built with several additional libraries: glslang (shader support), zimg (scaling, colorspace conversion, dithering), and Vulkan (GPU acceleration on supported hardware).
+
+=============================================================================
+                    FFmpeg 4 - media tool (Xenial & newer)
+=============================================================================
+
+aom (1.0.0-errata1-avif), aribb24 (1.0.3+git20160115), chromaprint (1.5.0), codec2 (0.9.2), dav1d (0.8.2), ffmpeg (4.3.2), fluidsynth (2.1.7), fontconfig (2.13.1), freetype (2.10.4), gst-libav1.0 (1.18.3 for gst*), gst-plugins-{bad,base,good,ugly}1.0, gstreamer{-vaapi,1.0}, ilmbase (2.5.4), intel-gmmlib (20.1.1 for intel*), intel-media-driver, intel-media-driver-non-free, intel-mediasdk, lensfun (0.3.2), libbluray (1.2.1), libdvdnav (6.1.0), libdvdread (6.1.1), libmysofa (1.2), libopenmpt (0.4.11), librabbitmq (0.10.0), libsdl2 (2.0.14), libva (2.7.1), libva-utils, libvpx (1.9.0), nv-codec-headers (9.1.23.1), openexr (2.5.4), rubberband (1.9.0), sndio (1.7.0), srt (1.4.2), tesseract (4.1.1), x264 (0.160 = libx264-160), x265 (3.4 = libx265-192), zimg (3.0.1)
+
+Xenial and Bionic only: fftw3 (3.3.8), lcms2 (2.9), leptonlib (1.79.0), libgsm (1.0.18), libinstpatch (1.1.2), libnice (0.1.16), libpng1.6 (1.6.37), libsrtp2 (2.3.0), libssh (0.9.5), libvidstab (1.1.0), nettle, norm (1.5.8), openjpeg2 (2.3.1),  timgm6mb-soundfont, vulkan-loader (1.2.131.2), vulkan-tools (1.2.131.1), wildmidi (0.4.3), zlib
+
+Xenial only: autogen, curl, gcc-7 (7.5.0), glib2.0 (2.56.4), gnutls28, gobject-introspection, lame (3.100), libass (0.14.0), libidn2, libpsl, nghttp2, libtasn1-6, libunistring, libwebp (0.6.1), openssl, p11-kit, pysimplesoap, python-{boto,httplib2,imaplib2} (compat with newer openssl), readline (7.0), unbound, webrtc-audio-processing (0.3)
+
+=============================================================================
+
+ *** Donations: https://ko-fi.com/savoury1 or https://paypal.me/Savoury1 ***
+
+If you find this PPA useful then please consider a donation (above links). It  will help me continue the efforts maintaining an up-to-date FFmpeg 4 for all!
+
+*** Install ***
+
+FFmpeg can be installed from this PPA alone, as the minimum set of required packages to satisfy all version dependencies have been copied here. However, if _all_ newest versions of graphics and multimedia dependencies are desired then two additional PPAs can be added before installing FFmpeg, as follows:
+
+  sudo add-apt-repository ppa:savoury1/graphics
+  sudo add-apt-repository ppa:savoury1/multimedia
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+  sudo apt-get install ffmpeg
+
+Note: GStreamer 1.18.3 packages are copied here from ppa:savoury1/multimedia, as FFmpeg and GStreamer must both be built against the new Debian SRT package version (with renamed libsrt1.4-gnutls package) to be co-installed. GStreamer is on almost every Ubuntu-based system so this makes it necessary to upgrade GStreamer at the same time as FFmpeg to ensure installation without problems.
+
+* nVidia display hardware: FFmpeg at this PPA is built with nv-codec-headers allowing hardware-accelerated video encoding and decoding using recent enough nVidia GPUs. The version of nv-codec-headers used (9.1.23) requires at least version 435.21 or newer of the nVidia proprietary display drivers. For newer nVidia drivers than official Ubuntu repos see the Ubuntu "Graphics Drivers" team PPA here: https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
+
+* Xenial systems: As of FFmpeg 4.3 the installation requires GCC >= 7 as the Intel-MediaSDK is enabled, with libmfx1 requiring GCC >= 7 (package fails to build with GCC 5.4.0). So GCC 7.5.0 has been built at ppa:savoury1/toolchain for Xenial and copied here, making it easier to install FFmpeg 4.x on Xenial (adding this PPA will bring various GCC 7.5.0 upgrades for Xenial systems).
+
+* Focal systems: New builds of FFmpeg 4.3.x are now also available for i386 whereas they weren't available at first. Launchpad has been configured to not build most i386 packages for Focal (Launchpad only builds i386 packages on a whitelist managed by the Launchpad team) including for dav1d and pocketsphinx so these two features are not enabled for all Focal i386 FFmpeg 4.3.x builds.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+
+*** Credits ***
+
+- Creators of FFmpeg: Michael Niedermayer and the entire FFmpeg team
+  https://github.com/FFmpeg/FFmpeg/graphs/contributors
+
+- Package code: Debian Multimedia Maintainers
+  https://tracker.debian.org/pkg/ffmpeg

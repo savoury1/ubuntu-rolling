@@ -1,0 +1,13 @@
+Rebuild of Perl 5.22 and backports of various Perl packages for Xenial only.
+
+* perl rebuild is against pkgbinarymangler 144 to resolve a file conflict when both amd64 and i386 libperl5.22 packages are installed (LP: #1574351). This problem occurs with certain upgrades, eg. when installing newer scanner drivers (sane-backends 1.0.29 in ppa:savoury1/graphics) that can install for both amd64 and i386, which then requires both libperl5.22 amd64 and i386.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/fonts
+  ppa:savoury1/graphics

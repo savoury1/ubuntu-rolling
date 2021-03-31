@@ -1,0 +1,77 @@
+Backports (Bash 5.1, Curl 7.75.0, SSL 1.1.1j & many more) for Xenial & newer.
+
+A fairly comprehensive collection of backports, bringing upgrades to numerous parts of the operating system to the past few years of Ubuntu-based releases.
+
+=============================================================================
+                     Backports - various (Xenial & newer)
+=============================================================================
+
+aria2 (1.35.0+git20200624), bash (5.1.4), bash-completion (2.11), bcmwl (with kernel 5.6 fix), brotli (1.0.9), bzip2 (1.0.8), c-blosc (1.17.1), curl (7.75.0), dmidecode (3.3), dnscrypt-proxy (2.0.44), e2fsprogs (1.45.7), exfat-utils (1.3.0), exfatprogs (1.1.0), expat (2.2.10), f2fs-tools (1.14.0), filezilla (3.52.2), fontconfig (2.13.1), freerdp2 (2.3.1), freetype (2.10.4), gawk (5.0.1), git (2.31.1), google-glog, grep (3.6), gzip (1.10 bugfix), htop (3.0.5), hwloc (2.4.1), jansson (2.13.1), keepass2 (2.47), lapack (3.9.0), libarchive (3.4.3), libdap (3.20.5), libdeflate (1.7), libevent (2.1.11-stable), libfilezilla (0.26.0), libgcrypt20 (1.8.7), libgpg-error (1.41), libidn2 (2.3.0), libjsoncpp (1.7.6), libmicrohttpd (0.9.72), libpng1.6 (1.6.37), libpsl (0.21.0), libpsm2 (11.2.185), librabbitmq (0.10.0), libsodium (1.0.18+git20201013), libssh (0.9.5), libunistring (0.9.10), libvncserver (0.9.13), libwmf, libxml2 (2.9.10), libxslt, libzstd (1.4.8), lighttpd (1.4.55), lz4 (1.9.3), mat2 (0.12.0), mate-dock-applet (20.04.0), mpich (3.3.2), mujs (1.1.0), nano (5.4), nasm (2.15.05), ndiswrapper, nghttp2 (1.43.0), openssl (1.1.1j), partclone (0.3.13), protobuf (3.12.3), protobuf-c, publicsuffix (20210108), remmina (1.4.12 / 1.4.10 Xenial, use ppa:savoury1/gtk-xenial for 1.4.12), robin-map (0.6.3), rsync (3.2.3), sed (4.8), smartmontools (7.2), suitesparse (5.7.1), tar (1.34), tbb (2020.3), tigervnc (1.11.0), tinyxml2 (8.0.0), unzip (6.0 bugfix), w3m (0.5.3+git20210102), websocketpp (0.8.2), wget (1.21), winetricks (20210206), xapian-core (1.4.18), xxhash (0.8.0 bugfix), xz-utils (5.2.5), yaml-cpp (0.6.3)
+
+Bionic only (these two packages can also be found at ppa:savoury1/gtk-xenial for Xenial-based systems): gtksourceview3 (3.24.11), gtksourceview4 (4.4.0)
+
+Xenial & Bionic: alglib, apr (1.6.5), apr-util, argon2, armadillo, arpack, aspell (0.60.8), atlas, basemap (1.2.0), boost1.65.1, bubblewrap, c-ares (1.15.0), cairo (1.16.0), cfitsio, clonezilla (3.35.2), cpio (2.12), drbl (2.30.5), eigen3 (3.3.7), emacs (26.3+1), enchant (1.6.0), enchant-2 (2.2.8), ensmallen, fftw3 (3.3.8), fmtlib, fonts-liberation2, fox1.6 (1.6.57), fuse (2.9.9), fuse-exfat (1.3.0), gdal (3.0.4), geoip (1.6.12), geoip-database (20191224), geos (3.8.0), glpk, gpsd (3.20), gsl (2.5), gtkspell3 (3.0.10), http-parser (2.9.2), hunspell (1.7.0), isync (1.3.0), jemalloc (5.2.1), json-c4 (0.13.1 renamed json-c), laszip (3.4.3), lbfgsb, libaec, libcdr, libgeotiff (1.5.1), libgom, libgtop2 (2.40.0), libhdf4 (4.2.14), libidn, libimagequant, libnetfilter-conntrack, libnl3, libpodofo (0.9.6), libquazip (0.7.6), libqxp, librest (0.8.1), libsodium23 (1.0.18 renamed libsodium), libuv1, libvisio, libwpd, libwpe, libwpg, libyaml (0.2.2), libzip (1.5.1), lzo2 (2.10), lm-sensors (3.6.0), mesa (rebuild with new lm-sensors), mpi-defaults, mpi4py, net-tools, netcdf (4.6.2), netcdf-cxx-legacy, nettle (3.4.1), ntfs-3g (2017.3.23AR.3), numactl (2.0.12), ogdi-dfsg (4.1.0), openblas, openmpi (4.0.3), p11-kit (0.23.20), p7zip (16.02), p7zip-rar, parted (3.3), pmix (3.1.5), poppler (0.86.1),  pidgin (2.13.0), playonlinux (4.3.4), proj, pugixml (1.10), pysimplesoap, python-{boto,httplib2,imaplib2} (compat with newer openssl), quota, r-base (3.6.3), re2, rpm (4.14.2.1), rttr (0.9.6), screenruler, serf, sg3-utils (1.44), snappy, socat, spatialite, squashfuse, subversion (1.13.0), superlu (5.2.1), tidy-html5 (5.6.0), tracker (2.3.6), unicode-data (13.0.0), uriparser (0.9.3), vte2.91, wayland-protocols (1.17 Bionic / 1.15 Xenial), wpebackend-fdo, wxwidgets3.0 (3.0.4), xdg-dbus-proxy (0.1.2), xerces-c (3.2.2), xmlsec1, zlib (1.2.11)
+
+Xenial only: asm, autogen, boost-defaults (1.65.1), dnprogs, dsdp, elfutils, enca, expect, fdupes, file, fonttools (3.21.2), freerdp, freexl, gdk-pixbuf (2.36.12), gettext (0.19.8.1), glib2.0 (2.56.4), glm, gmime, gmime2.6, gmp, gnupg2 (2.1.23), gnutls28 (3.5.18), gobject-introspection (1.56.1), gpgme1.0 (1.8.0), graphite2 (1.3.12), gsfonts, harfbuzz (1.7.6), hdf5 (1.10.0-patch1), hicolor-icon-theme (0.17), hunspell1.6 (1.6.2), icu (60.2), icu-le-hb, ido, indicator-messages, infinitpath-psm, iso-codes (3.79), jquery (3.2.1), jqueryui (1.12.1), json-c3 (0.12.1 renamed json-c), libappindicator, libassuan (2.4.3), libasyncns, libcdk5, libepoxy (1.4.3), libfabric (1.5.3), libfcgi, libfreehand, libgadu, libgit2, libimage-exiftool-perl (10.80), libindicator, libkml, libksba (1.3.4), libmnl, libmspub, libpagemaker, librevenge, libsoup2.4 (2.62.1), libtasn1-6 (4.13), liburcu, libva (1.8.3), libva-utils, libvpx (1.7.0), libzmf, mathjax, meanwhile, motif, mpclib3, mpfr4, mysql-defaults, netpbm-free, openssl1.0, perl (5.22.1 rebuild), pigz, popt, pps-tools, procps, pycairo (1.16.2), python-magic (0.4.15), qhull, qtwebchannel-opensource-src (5.5.1), rapidjson, rar (5.5.0), rdma-core (17.1), readline (7.0), sensible-utils, sqlite3 (3.22.0), system-config-printer, tcl8.6, tinyxml, tk8.6, unar, unbound, vte2.91 (0.42.5), wayland (1.14.0), woff2, wxpython3.0 (3.0.2.0), x264 (0.148.2795)
+
+=============================================================================
+
+ *** Donations: https://ko-fi.com/savoury1 or https://paypal.me/Savoury1 ***
+
+If you find this PPA useful then please consider a donation (above links). It will help me continue these efforts maintaining up-to-date backports for all!
+
+   *** Current target series: Xenial / Bionic / Focal LTS, and Groovy ***
+
+Note about Curl: Version here is a specialised one containing both Curl 3 & 4 symbols and providing the libcurl3 package dependency, allowing installation of software explicitly depending on libcurl3 even on Bionic and newer. Please see https://launchpad.net/~savoury1/+archive/ubuntu/curl34 for more details.
+
+Notes for Xenial systems:
+
+* libva 1.8.3 with libva1 is here (Xenial era software uses libva1), whereas libva 2.7.1 with libva2 (Bionic and newer) is in ppa:savoury1/multimedia and this allows Xenial users to install both libva1 and libva2 (if required).
+
+* libvpx 1.7.0 with libvpx5 (used by Bionic era software) is here for Xenial (which ships with libvpx3), whereas libvpx 1.8.2 with libvpx6 is published in ppa:savoury1/multimedia again allowing Xenial users access to both versions.
+
+* mate-dock-applet 0.90.gtk2 is based on a new fork of MATE Dock Applet for GTK2 desktops, though is essentially a backport of 0.88 with various patches for GTK2 use (https://github.com/savoury1/mate-dock-applet/tree/gtk2-build).
+
+* perl rebuild is against pkgbinarymangler 144 to resolve a file conflict when both amd64 and i386 libperl5.22 packages are installed (LP: #1574351).   This problem occurs with certain upgrades, eg. when installing newer scanner  drivers (sane-backends 1.0.29 in ppa:savoury1/graphics) that can install for both amd64 and i386, which then requires both libperl5.22 amd64 and i386.
+
+*** Install ***
+
+Xenial & GNUPG: Backported GNUPG 2.1.23 here replaces 2.1.11 (default) and makes backport processes and upgrades easier, due notable packaging changes between the two versions. However, it forces a requirement on newer APT for Xenial also, which is actually a positive due many improvements and bugfixes. This means Xenial users wanting to run gnupg2 2.1.23 need to do these steps:
+
+  sudo add-apt-repository ppa:savoury1/apt-xenial
+  sudo add-apt-repository ppa:savoury1/backports
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+Xenial & GCC 7.5.0 (FileZilla & nghttp2): Certain backports require GCC >= 7 to install and run, due new source code using features found in more modern GCC than 5.4.0 (Xenial default). FileZilla >= 3.50.0 and nghttp2 >= 1.41.0 are two examples of such software. For GCC 7.5.0 on Xenial at this Launchpad site: use ppa:savoury1/toolchain for all required GCC packages while keeping GCC 5.4.0 as system default, OR to set GCC 7.5.0 as the system default use ppa:savoury1/gcc-defaults-7 instead. So do this for GCC 7.5.0 on Xenial:
+
+  sudo add-apt-repository ppa:savoury1/toolchain
+
+OR
+
+  sudo add-apt-repository ppa:savoury1/gcc-defaults-7
+
+THEN
+  
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/python
+  ppa:savoury1/fonts
+  ppa:savoury1/graphics
+
+Additionally, for Xenial & Bionic:
+
+  ppa:savoury1/haskell-build
+  ppa:savoury1/tex-2019
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/apt-xenial
+  ppa:savoury1/perl-xenial
+  ppa:savoury1/gcc-defaults-7

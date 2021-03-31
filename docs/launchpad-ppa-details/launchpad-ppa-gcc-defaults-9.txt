@@ -1,0 +1,9 @@
+Backport of gcc 9.3.0 and gcc-defaults 1.185.1ubuntu2 for Xenial & Bionic.
+
+*** Install ***
+
+Note well: This PPA will install GCC 9.3.0 and set the system GCC defaults to version 9.3.0 also! You have been informed. Do these steps if you want this:
+
+  sudo add-apt-repository ppa:savoury1/gcc-defaults-9
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade

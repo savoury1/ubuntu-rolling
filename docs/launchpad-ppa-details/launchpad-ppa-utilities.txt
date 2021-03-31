@@ -1,0 +1,41 @@
+Utilities (incl. Meld, Métamorphose2, Ukuu, vnStat, Xfe) for Xenial & newer.
+
+A collection of various useful utilities: diff tool (Meld), mass file renamer (Métamorphose2), kernel downloader (Ukuu), network traffic monitor (vnStat), file manager (Xfe), critical command line tools (gawk, grep, nano, sed, tar), {un}archivers, downloaders, disk managers (partitions, cloning), flash drive tools, hardware monitoring, remote desktop access, and version control tools.
+
+=============================================================================
+                     Utilities - various (Xenial & newer)
+=============================================================================
+
+aria2 (1.35.0+git20200624), brotli (1.0.9), bzip2 (1.0.8), curl (7.75.0), exfat-utils (1.3.0), exfatprogs (1.1.0), f2fs-tools (1.14.0), filezilla (3.52.2), fontconfig (2.13.1), freerdp2 (2.3.1), freetype (2.10.4), gawk (5.1.0), git (2.31.1), gparted (1.1.0), grep (3.6), gzip (1.10 bugfix), htop (3.0.5), keepass2 (2.4.7), libfilezilla (0.26.0), libgcrypt20 (1.8.7), libgpg-error (1.41), libidn2 (2.3.0), libmicrohttpd (0.9.71), libpsl (0.21.0), libsodium (1.0.18+git20201013), libssh (0.9.5), libvncserver (0.9.13), libzstd (1.4.8), meld (3.20.3), metamorphose2 (0.9.0~beta), minisign (0.9), mutagen (1.4.4), nano (5.4), nghttp2 (1.41.0), openssl (1.1.1j), pillow-python2 (6.2.2), psensor (1.2.2~git20200717), python-exif (2.3.1), rar (6.0.1b1), remmina (1.4.12 / 1.4.10 Xenial, use ppa:savoury1/gtk-xenial for 1.4.12), rsync (3.2.3), sed (4.8), tar (1.34), tigervnc (1.11.0), ukuu (18.9.3 patched), unrar-nonfree (6.0.4), unzip (6.0 bugfix), vnstat (2.6), wget (1.21), xarchiver (0.5.4.17), xfe (1.43.2), xxhash (0.8.0 bugfix), xz-utils (5.2.5)
+
+Note: mutagen, pillow-python2, and python-exif are required by metamorphose2
+
+Xenial and Bionic only: clonezilla (3.35.2), drbl (2.30.5), fox1.6 (1.6.57), libgtop2 (2.40.0), json-c4 (0.13.1 renamed json-c), libpng1.6, lm-sensors (3.6.0), p7zip{-rar} (16.02), partclone (0.3.13), parted (3.3), pugixml (1.10), pysimplesoap, python-{boto,httplib2,imaplib2} (compat with new openssl), screenruler (0.960+bzr41+deb10), sg3-utils (1.44), subversion (1.13.0), wxwidgets3.0, zlib (1.2.11)
+
+Xenial only: autogen, glib2.0 (2.56.4), gnutls28 (3.5.18), icu (60.2), icu-le-hb, libtasn1-6, libunistring, mainline, nettle, p11-kit, pigz (2.4), smartmontools (7.0), unar, unbound, wxpython3.0
+
+=============================================================================
+
+Note about Curl: Version here is a specialised one containing both Curl 3 & 4 symbols and providing the libcurl3 package dependency, allowing installation of software explicitly depending on libcurl3 even on Bionic and newer. Please see https://launchpad.net/~savoury1/+archive/ubuntu/curl34 for more details.
+
+Note about Ukuu: Final freely licensed version (18.9.3) is found here, which has been patched to build with recent vala (>= 0.44.1) and also patched for the notable changes made by the Ubuntu kernel team to the directory structure on kernel.ubuntu.com for all mainline kernel versions built after 7 Jun 2020.
+
+Xenial & GCC 7.5.0 (FileZilla & nghttp2): Certain backports require GCC >= 7 to install and run, due new source code using features found in more modern GCC than 5.4.0 (Xenial default). FileZilla 3.50.0 and nghttp2 1.41.0 are two examples of such software. There are two choices at this Launchpad site for GCC 7.5.0 on Xenial: use ppa:savoury1/toolchain for all required GCC packages while keeping GCC 5.4.0 as system default, OR for GCC 7.5.0 as system default use ppa:savoury1/gcc-defaults-7 instead. So do this for GCC 7.5.0 on Xenial:
+
+  sudo add-apt-repository ppa:savoury1/toolchain
+
+OR
+
+  sudo add-apt-repository ppa:savoury1/gcc-defaults-7
+
+THEN
+  
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports

@@ -1,0 +1,8 @@
+New build of GParted (partition editor) 1.1.0 for Xenial & newer.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/backports
+  ppa:savoury1/build-tools

@@ -1,0 +1,36 @@
+New build of Wine 2.0.5 (from official WineHQ source) for Xenial only.
+
+Update (Mar 2021): After finally getting to doing some testing of Wine 5.0.3 on Xenial it seems all issues observed with Wine 3.x and 4.x are now resolved (including with older XP and earlier software). Thus, it is now recommended to install Wine 5.0.3 from official WineHQ on Xenial-era systems and although the information has been removed from WineHQ (https://wiki.winehq.org/Ubuntu) it can still be installed using the following commands to add the repository:
+
+  wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+
+  echo "deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main" | \
+  sudo tee /etc/apt/sources.list.d/winehq-wine-xenial.list
+
+  echo "deb-src https://dl.winehq.org/wine-builds/ubuntu/ xenial main" | \
+  sudo tee -a /etc/apt/sources.list.d/winehq-wine-xenial.list
+
+  sudo apt-get update
+  sudo apt-get install wine
+
+Note that the two echo commands above with the backslash are due the command continuing on the next line (with "sudo tee"). So, in each case paste both of the lines to terminal together before pressing ENTER for the desired result.
+
+*** Background ***
+
+Wine 2.x can be more reliable for certain situations, such as running XP (and earlier) software. Based on personal experience and particular programs used by me, XP (and earlier) software can (sometimes) be buggier on newer Wine versions (ie. Wine 3.x and 4.x). An official build of Wine 2.0.5 was never created by WineHQ, with their final 2.x build being 2.0.4 (and 2.0.5 source was released months later on 18/3/2018). So here's an unofficial build of Wine 2.0.5 for Xenial users (may work on newer series too, though untested).
+
+*** Technical Details ***
+
+This build was created from official WineHQ 2.0.5 source code and official WineHQ 3.0.5 package code (ie. "debian" folder and its contents, used in "proper" package creation for Debian/Ubuntu systems). Minor changes were made to package code -- ie. set debian/source/format to "3.0 (quilt)" -- with zero changes/patches applied to the source code (ie. anything outside "debian").
+
+Source code:
+
+https://dl.winehq.org/wine/source/2.0/wine-2.0.5.tar.xz
+
+Package code:
+
+https://dl.winehq.org/wine-builds/ubuntu/dists/xenial/main/source/wine_3.0.5~xenial.diff.gz
+
+*** Credits ***
+
+WineHQ team: https://www.winehq.org/

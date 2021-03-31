@@ -1,0 +1,29 @@
+FFmpeg 4.3.2+git20210303 (built on ppa:savoury1/ffmpeg4) for Xenial & newer.
+
+*** Install ***
+
+This build of FFmpeg from upstream git source requires ppa:savoury1/ffmpeg4 (which has the stable FFmpeg 4.x release). Do this for a successful install:
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/ffmpeg-git
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+  sudo apt-get install ffmpeg
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+*** Credits ***
+
+- Creators of FFmpeg: Michael Niedermayer and the entire FFmpeg team
+  https://github.com/FFmpeg/FFmpeg/graphs/contributors
+
+- Package code: Debian Multimedia Maintainers
+  https://tracker.debian.org/pkg/ffmpeg

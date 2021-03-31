@@ -1,0 +1,28 @@
+Backports of TeX 6.x & TeX Live 2017.* packages from Bionic to Xenial (only).
+
+=============================================================================
+                           TeX / Live (Xenial only)
+=============================================================================
+
+poppler (0.62.0 as needed for builds here), tex-common, tex-gyre, texhyphj, texinfo, texinfo-doc-nonfree, texlive-base, texlive-bin, texlive-extra, texlive-lang, texmaker, texstudio, texworks, texworks-manual
+
+=============================================================================
+
+*** Install ***
+
+Backported texlive-bin is built against other newer than Xenial backported libraries. For a successful install of new TeX binaries follow these steps:
+
+  sudo add-apt-repository ppa:savoury1/backports
+  sudo add-apt-repository ppa:savoury1/tex-xenial
+  sudo apt-get update
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/qt-xenial
+
+Note: Only two source packages use ppa:savoury1/qt-xenial for building, which are texmaker (requires Qt >= 5.7) and texstudio (needs libquazip5-dev 0.7.3).

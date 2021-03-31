@@ -1,0 +1,16 @@
+Build of Node.js 8.17.0 and backports of Node.js stack from Bionic to Xenial.
+
+This PPA contains a new build of Node.js 8.17.0, the final version in the 8.x LTS series. It contains many security and bug fixes beyond version 8.10.0 that is in Bionic. There is also a PPA with a handful of critical Node.js upgrades for Bionic, including Node.js 8.17.0 (see ppa:savoury1/node-bionic).
+
+In particular, Node.js 8.11.x (largely 8.11.4) introduced critical fixes in the area of cryptography. Previous to that version, the node-diffie-hellman 5.0.2 package from Bionic would consistently FTBFS with the final three tests to do with prime numbers always failing. With Node.js 8.17.0 those DH prime tests work fine and the DH package builds successfully with tests enabled.
+
+Also, along with Node.js 8.17.0 much of the Bionic era Node.js 8.10 stack is backported here for Xenial. This brings a much more recent Node.js and also Node.js stack to Xenial than the old version 4.2.6 in the official repos.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/perl-xenial

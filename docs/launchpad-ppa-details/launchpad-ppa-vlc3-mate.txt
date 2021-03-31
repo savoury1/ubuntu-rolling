@@ -1,0 +1,81 @@
+Patched build of VLC 3.0.12 (fix fullscreen with MATE) for Xenial & newer.
+
+This PPA contains a patched version of VLC in which one commit relative to Qt is reverted, due that commit causing various issues in fullscreen mode when using MATE and Unity (and possibly other) desktop environments. See the links below for more details about this Qt related issue in VLC 3.0.4 and higher.
+
+Due the version string for this VLC build (+mate added to Debian pkg version) it will supersede the regular VLC build also published on this Launchpad site (at ppa:savoury1/vlc). Thus, only add this PPA to your system if you are sure you need the patch for the fullscreen bug that affects MATE (and other) DEs!
+
+=============================================================================
+                     VLC - media player (Xenial & newer)
+=============================================================================
+
+dav1d (0.8.2), fluidsynth (2.1.7), glslang (11.2.0), libdvdnav (6.1.0), libdvdread (6.1.1), libebml (1.4.2), liblivemedia (2020.01.19), libmatroska (1.6.2), libmicrodns, libnfs (4.0.0), libplacebo (2.72.2), libspatialaudio (0.3.0), protobuf (3.12.3), shaderc (2020.5), spirv-tools (2020.7), srt (1.4.2), vlc (3.0.12), vulkan-loader (1.2.141.0), vulkan-tools (1.2.141.0)
+
+Xenial & Bionic only: libgcrypt20, libgpg-error, lirc (0.10.1)
+
+Xenial only: libepoxy (1.4.3)
+
+=============================================================================
+
+ *** Donations: https://ko-fi.com/savoury1 or https://paypal.me/Savoury1 ***
+
+If you find this PPA useful then please consider a donation (above links). It  will help me to continue these efforts maintaining an up-to-date VLC for all!
+
+*** Install ***
+
+VLC >= 3 requires FFmpeg 4.x so do these steps for a successful install (not strictly required for Focal and newer, but the PPA has latest FFmpeg 4.3.x):
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/vlc3
+  sudo apt-get update
+  sudo apt-get install vlc
+
+For _all_ latest dependencies (beyond minimum set needed for VLC and FFmpeg):
+
+  sudo add-apt-repository ppa:savoury1/graphics
+  sudo add-apt-repository ppa:savoury1/multimedia
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/vlc3
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+  sudo apt-get install vlc
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+Note: With backported protobuf >= 3 chromecast support builds on Xenial! :-)
+
+*** Fullscreen ***
+
+VideoLAN Forums: VLC 3.0.4 fullscreen bug (Ubuntu 18.04)
+
+https://forum.videolan.org/viewtopic.php?t=147281
+
+According to Rémi Denis-Courmont (lead VLC developer) it is not a VLC bug:
+
+https://forum.videolan.org/viewtopic.php?t=147281#p486323
+
+It appears to be an unresolved issue between Qt and certain desktop managers. If using MATE or Unity (or another affected desktop manger) reverting this commit fixes the issue:
+
+http://git.videolan.org/?p=vlc.git;a=commitdiff;h=d60312d3ad4c4e27f3455b4f579999b826d3948c
+
+Other links referencing a fullscreen bug in VLC 3.0.4 and higher:
+
+https://github.com/linuxmint/mint19.2-beta/issues/74
+https://github.com/mate-desktop/marco/issues/514
+https://bugs.launchpad.net/ubuntu-mate/+bug/1813203
+https://askubuntu.com/questions/1098732/vlc-3-0-4-fullscreen-bug-ubuntu-18-04
+
+*** Credits ***
+
+- Creators of VLC: Rémi Denis-Courmont and the entire VLC team
+  https://www.videolan.org/videolan/team/
+
+- Package code: Debian Multimedia Maintainers
+  https://tracker.debian.org/pkg/vlc

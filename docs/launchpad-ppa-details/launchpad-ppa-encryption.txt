@@ -1,0 +1,40 @@
+Encryption software (ssh 0.9.5, ssl 1.1.1j, veracrypt 1.24) Xenial & newer.
+
+=============================================================================
+                         Encryption (Xenial & newer)
+=============================================================================
+
+libgcrypt20 (1.8.6), libgpg-error (1.39), libsodium (1.0.18+git20201013), libssh (0.9.5), libunistring, minisign (0.9), opencryptoki, openssl (1.1.1j), openvpn (2.4.9), p11-kit (0.23.20), pyopenssl (19.0.0), python-cryptography (2.8), veracrypt (1.24-Update7)
+
+Xenial & Bionic: libpng1.6, nettle (3.4.1), openvpn-systemd-resolved (1.3.0), pyopenssl (19.0.0), pysimplesoap, python-{boto,httplib2,imaplib2} (compat with new openssl), softhsm2 (2.5.0), wxwidgets3.0 (3.0.4), zlib
+
+Xenial only: autogen, cryptsetup (1.7.5), gnutls28 (3.5.18), libtasn1-6, systemd (v229 patched for VeraCrypt in crypttab), trousers, unbound (1.6.7)
+
+=============================================================================
+
+Note: VeraCrypt packages are copied here from an encryption PPA maintained by Unit 193 (see https://launchpad.net/~unit193/+archive/ubuntu/encryption) for all but Xenial systems, as Unit 193 no longer appears to be putting out more Xenial builds. So the Xenial package is uploaded and built here at this PPA.
+
+*** Install ***
+
+For Xenial systems a patched systemd 229 is here with one cherrypicked commit (52028838) that enables a new tcrypt-veracrypt type in /etc/crypttab to allow auto-mounting of VeraCrypt volumes in the same manner as TrueCrypt volumes.
+
+Due the version string for the patched systemd 229 (including +veracrypt) it will supersede the default systemd in Xenial, so be sure you want this patch! Always remember: do a full system backup before such a critical upgrade.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/tex-2019
+  ppa:savoury1/gpg
+  ppa:savoury1/perl-xenial
+
+*** Credits ***
+
+- Creators of TrueCrypt: the TrueCrypt Foundation
+
+- Creators of VeraCrypt: Mounir Idrassi and the team at IDRIX
+
+- Packaging of VeraCrypt: Unit 193
+  https://launchpad.net/~unit193/+archive/ubuntu/encryption

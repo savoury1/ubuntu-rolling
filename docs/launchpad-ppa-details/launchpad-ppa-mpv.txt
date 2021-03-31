@@ -1,0 +1,42 @@
+New mpv 0.33.0+git20210311 (libplacebo, shaderc, vulkan) for Bionic & newer.
+
+Almost all supported features are now enabled on this build of mpv, including libplacebo, shaderc, vulkan, and zimg (vapoursynth support still to come!).
+
+=============================================================================
+                      mpv - new builds (Xenial & newer)
+=============================================================================
+
+glslang (11.2.0), libplacebo (2.72.2), mpv (0.33.0+git20210311 or 0.29.1 Xenial), mujs (1.1.0), shaderc (2020.5), spirv-tools (2020.7), vulkan-loader (1.2.141.0), vulkan-tools (1.2.141.0), zimg (3.0.1)
+
+=============================================================================
+
+Note for Xenial: Due Debian/Ubuntu version of mpv >= 0.30.0 building against wayland >= 1.15 (which needs newer Mesa drivers and is thus a major upgrade) mpv version 0.29.1 is here for Xenial. A new PPA with backported Mesa 20.0.8, Wayland 1.16, and associated packages [*] now means the latest mpv can be run on an upgraded Xenial system (display PPA includes mpv 0.33.0+git for 16.04).
+
+[*] https://launchpad.net/~savoury1/+archive/ubuntu/display
+
+*** Install ***
+
+For a successful install FFmpeg 4.x is required, so follow these steps (not strictly required for Focal, which has FFmpeg 4.2.x, PPA has FFmpeg 4.3.x):
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/mpv
+  sudo apt-get update
+  sudo apt-get install libmpv1 mpv
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+*** Credits ***
+
+- Creators of mpv: the entire team of mpv contributors
+  https://github.com/mpv-player/mpv/graphs/contributors
+
+- Package code: Debian Multimedia Maintainers
+  https://tracker.debian.org/pkg/mpv

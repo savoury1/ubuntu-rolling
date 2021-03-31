@@ -1,0 +1,36 @@
+Build of FFmpeg 3.4.8 (latest release in 3.4.x series) for Xenial & Bionic.
+
+=============================================================================
+                   FFmpeg 3 - media tool (Xenial & Bionic)
+=============================================================================
+
+chromaprint (1.5.0), ffmpeg (3.4.8), fftw3 (3.3.8), fontconfig (2.13.1), freetype (2.10.4), leptonlib (1.79.0), libbluray (1.2.1), libmysofa (1.2), libopenmpt (0.4.11), libpng1.6 (1.6.37), libsdl2 (2.0.14), libssh (0.9.5), libva (2.7.1), libva-utils, libvidstab (1.1.0), libvpx (1.9.0), nettle, rubberband (1.9.0), sndio (1.7.0), tesseract (4.1.1), x264 (0.160 = libx264-160), x265 (3.4 = libx265-192), zimg (3.0.1)
+
+Xenial only: autogen, gnutls28, lame (3.100), libass (0.14.0), libwebp (0.6.1), unbound
+
+=============================================================================
+
+*** Install ***
+
+FFmpeg can be installed from this PPA alone, as the minimum required packages to satisfy dependencies have been copied here. However, if upgrades of _all_ FFmpeg 3.x dependency packages are desired then an additional PPA is needed:
+
+  sudo add-apt-repository ppa:savoury1/multimedia
+  sudo add-apt-repository ppa:savoury1/ffmpeg3
+  sudo apt-get update
+  sudo apt-get install ffmpeg
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/multimedia
+
+*** Credits ***
+
+- Creators of FFmpeg: Michael Niedermayer and the entire FFmpeg team
+  https://github.com/FFmpeg/FFmpeg/graphs/contributors
+
+- Package code: Debian Multimedia Maintainers
+  https://tracker.debian.org/pkg/ffmpeg

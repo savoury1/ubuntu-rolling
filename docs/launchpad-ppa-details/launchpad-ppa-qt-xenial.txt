@@ -1,0 +1,52 @@
+Backports of Qt 4.8.7+dfsg-7ubuntu2 & Qt 5.9.5+dfsg-0ubuntu2.5 for Xenial.
+
+Qt 4 & 5 packages backported from Bionic providing a newer, more compatible version of Qt to Xenial users than is officially available (Xenial ships with an old version 5.5.1 which is incompatible with a variety of newer software).
+
+=============================================================================
+                Qt 5.9.5 - backport from Bionic (Xenial only)
+=============================================================================
+
+accounts-qml-module, appstream (0.12.0), libaccounts-glib, libaccounts-qt, libdbusmenu-qt, libqtpas, libquazip (0.7.6), packagekit (1.1.9), packagekit-qt, polkit-qt-1, pyqt5 (5.10.1), python-qt4 (4.12.1), qca2, qt3d*, qt4-x11, qt5ct (0.34), qtav (1.13.0), qtbase*, qtcharts*, qtchooser, qtconnectivity*, qtdeclarative*, qtdoc*, qtgraphicaleffects*, qtimageformats*, qtlocation*, qtmultimedia*, qtpim*, qtquickcontrols*, qtquickcontrols2*, qtscript*, qtsensors*, qtserialport*, qtspeech*, qtstyleplugins*, qtsvg*, qttools*, qttranslations*, qtvirtualkeyboard*, qtwayland*, qtwebchannel*, qtwebengine*, qtwebkit-examples*, qtwebkit*, qtwebkit-source, qtwebsockets*, qtwebview*, qtx11extras*, qtxmlpatterns*, signon, signon-plugin-oauth2, signon-ui, sni-qt
+
+Additional packages (compatibility and dependencies): fontconfig (2.13.1), freetype (2.10.4), glib2.0 (2.56.4), gobject-introspection, icu (60.2), icu-le-hb, libpng1.6, libwebp (0.6.1), mint-artwork-common, openssl, pysimplesoap (1.16.2), python-{boto,httplib2,imaplib2} (for compat with new openssl), sip4 (4.19.7), zlib1g (1.2.11)
+
+  * denotes a shorthand package name with a common prefix or suffix removed
+
+=============================================================================
+
+*** Install ***
+
+Additional PPAs are required for full installation of Qt 5.9.5 on Xenial-era systems. A newer APT is required for PackageKit backports and FFMpeg >= 4.2 is required for Qt multimedia packages. Do these steps for full installation:
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/apt-xenial
+  sudo add-apt-repository ppa:savoury1/qt-xenial
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+*** Note about Qt styles: To get full customisation of Qt 5 styles, do this:
+
+  sudo apt-get install qt5ct qt5-style-plugins
+
+Then launch qt5ct ("Qt5 Settings" in application menu) and customise away.
+
+*** Note for Mint 18.1 Serena: An environment variable set in an Xsession startup file installed by mint-artwork-common causes an issue with qt5ct (the Qt 5 configuration tool). Thus, a modified version of mint-artwork-common is provided here which does not set the environment variable and that requires the installation of qt5ct (to ensure that Qt 5 styles function correctly).
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/apt-xenial
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+*** Credits ***
+
+- Creators of Qt: Haavard Nord, Eirik Chambe-Eng and the entire Qt team
+  https://wiki.qt.io/About_Qt
+
+- Package code: Debian Qt/KDE Maintainers
+  https://tracker.debian.org/pkg/qtbase-opensource-src

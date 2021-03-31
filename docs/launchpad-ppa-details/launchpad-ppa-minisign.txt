@@ -1,0 +1,20 @@
+Builds of Minisign 0.9 (sign files and verify signatures) for Xenial & newer.
+
+Minisign is a dead simple tool to sign files and verify signatures.
+
+It is portable, lightweight, and uses the highly secure Ed25519 public-key signature system.
+
+For more information, please refer to the Minisign documentation
+(see https://jedisct1.github.io/minisign/).
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+*** Credits ***
+
+- Creator of Minisign - Frank Denis
+  https://github.com/jedisct1/minisign

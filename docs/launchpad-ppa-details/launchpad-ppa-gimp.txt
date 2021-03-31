@@ -1,0 +1,53 @@
+Backport of GIMP 2.10.22 (BABL 0.1.86 and GEGL 0.4.28) for Xenial & newer.
+
+=============================================================================
+                  GIMP - image manipulation (Xenial & newer)
+=============================================================================
+
+babl (0.1.86), exiv2 (0.27.3), fontconfig (2.13.1), freetype (2.10.4), gegl (0.4.28), gexiv2 (0.12.1), gimp (2.10.22), ilmbase (2.5.4), libde265 (1.0.8), libheif (1.11.0), libmypaint (1.6.0), libraw (0.20.2), libspiro (20200505), mypaint-brushes (2.0.2), openexr (2.5.4), poppler (0.86.1), suitesparse (5.7.1)
+
+Xenial & Bionic only: json-c4 (renamed json-c 0.13.1 package), lcms2 (2.9), libpng1.6 (1.6.37), zlib (1.2.11)
+
+Xenial only: glib2.0 (2.56.4), harfbuzz (1.7.6), pango1.0 (1.40.14)
+
+=============================================================================
+
+ *** Donations: https://ko-fi.com/savoury1 or https://paypal.me/Savoury1 ***
+
+If you find this PPA useful then please consider a donation (above links). It  will help me continue these efforts maintaining an up-to-date GIMP for all!
+
+*** Install ***
+
+This version of GIMP requires FFmpeg >= 4.2 so do these steps to install (not strictly necessary on Focal & newer, though gives latest FFmpeg builds):
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/gimp
+  sudo apt-get update
+  sudo apt-get install gimp
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/fonts
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+
+Additionally, for Xenial systems only:
+
+  ppa:savoury1/gtk-xenial
+
+Note: The build of GIMP requires GTK 2 version 2.24.32 which is newer than the Xenial version (2.24.30) though this newer GTK 2 is not required to run. Also, GLib >= 2.56.2 is required to build and run, so a backported GLib for Xenial is copied here from ppa:savoury1/gtk-xenial for ease of installation.
+
+For Xenial users who want newer GTK 2 (2.24.32) & GTK 3 (3.22.30) as well as various other newer (than Xenial) GTK software packages, see the GTK 2 & 3 (Xenial) archive: https://launchpad.net/~savoury1/+archive/ubuntu/gtk-xenial
+
+*** Credits ***
+
+- Creators of GIMP: Spencer Kimball, Peter Mattis and the entire GIMP team
+  https://www.gimp.org/about/authors.html
+
+- Package code: Debian GNOME Maintainers
+  https://tracker.debian.org/pkg/gimp

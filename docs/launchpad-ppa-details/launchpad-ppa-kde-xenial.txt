@@ -1,0 +1,38 @@
+Backports of KDE 5.44.0 / 17.12.3 packages from Bionic to Xenial (only).
+
+=============================================================================
+               KDE 5.44.0 - backport from Bionic (Xenial only)
+=============================================================================
+
+akonadi, akonadi-contacts, akonadi-mime, attica-kf5, breeze-icons, extra-cmake-modules, frameworkintegration, grantlee5, kaccounts-integration, kactivities-kf5, karchive, kauth, kbookmarks, kcalcore, kcmutils, kcodecs, kcompletion, kconfig, kconfigwidgets, kcontacts, kcoreaddons, kcrash, kdbusaddons, kdeclarative, kded, kdelibs4support, kdesignerplugin, kdesu, kdewebkit, kdnssd-kf5, kdoctools, kemoticons, kfilemetadata-kf5, kglobalaccel, kguiaddons, khtml, ki18n, kiconthemes, kidletime, kinit, kio, kirigami, kirigami2, kitemmodels, kitemviews, kjobwidgets, kjs, kmediaplayer, kmime, knewstuff, knotifications, knotifyconfig, kpackage, kparts, kpimtextedit, kplotting, kpty, kross, krunner, kservice, ksyntax-highlighting, ktextwidgets, kunitconversion, kwallet-kf5, kwayland, kwidgetsaddons, kwindowsystem, kxmlgui, kxmlrpcclient, libical, libkcddb, libkf5kdcraw, libkf5kexiv2, libkf5kipi, libkf5libkleo, libkf5sane, libmediawiki, marble, networkmanager-qt, oxygen-icons5, plasma-framework, prison-kf5, purpose, signon-kwallet-extension, solid, sonnet, threadweaver
+
+=============================================================================
+
+Update (14 Dec 2019): This is a good set of KDE packages backported from Bionic to Xenial. There are more to add and these will appear here over time.
+
+*** Install ***
+
+Newer Qt than Xenial is required for these KDE packages. Also, a successful install of libkf5wallet-bin and libkwalletbackend5-5 requires a newer GPG than in Xenial. So these steps are required for a full KDE/Qt upgrade:
+
+  sudo add-apt-repository ppa:savoury1/graphics
+  sudo add-apt-repository ppa:savoury1/multimedia
+  sudo add-apt-repository ppa:savoury1/ffmpeg3
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/gpg
+  sudo add-apt-repository ppa:savoury1/qt-xenial
+  sudo add-apt-repository ppa:savoury1/kde-xenial
+  sudo apt-get update
+
+Note: The kwallet-kf5 packages are required by kio (a core KDE package).
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/backports
+  ppa:savoury1/build-tools
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg3
+  ppa:savoury1/gpg
+  ppa:savoury1/qt-xenial

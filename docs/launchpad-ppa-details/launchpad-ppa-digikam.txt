@@ -1,0 +1,70 @@
+Build of digiKam 7.2.0 (incl. Exiv2 0.27.3, OpenCV 4.2.0) for Xenial & newer.
+
+Fresh build of digiKam 7.2.0 final now with Libraw 0.20 (for better Canon CR3 metadata support, plus better support for many additional RAW file formats).
+
+=============================================================================
+                   digiKam - fresh build (Xenial & newer)
+=============================================================================
+
+digikam (7.2.0), exiv2 (0.27.3), jasper (2.0.27), lensfun (0.3.2), libdeflate (1.7), protobuf (3.12.3), tiff (4.2.0), x265 (3.4)
+
+Xenial & Bionic only (many of these comprise a dependency chain involving gdal, opencv, and openmpi): cfitsio, charls, gdal (3.0.4), gdcm, geos, hwloc, ilmbase (2.3.0), json-c4, libdap, libevent, libgeotiff, libgphoto2 (2.5.25), libidn2, libjsoncpp, libpng1.6, libpsl5, ogdi-dfsg, opencv (4.2.0), openexr (2.3.0), openjpeg2 (2.3.1), openmpi (4.0.3), poppler (0.86.1), proj (6.3.1), qtav (1.13.0), superlu, vtk6 (6.3.0), zlib
+
+Bionic only: libmediawiki (5.37.0 also at ppa:savoury1/kde-xenial)
+
+Xenial only: curl, hdf5 (1.10.0), imagemagick (6.9.7.4), libfabric (1.5.3), libwebp (0.6.1), nghttp2
+
+=============================================================================
+
+ *** Donations: https://ko-fi.com/savoury1 or https://paypal.me/Savoury1 ***
+
+If you find this PPA useful then please consider a donation (above links). It  will help me continue the efforts maintaining an up-to-date digiKam for all!
+
+*** Install ***
+
+Note for Xenial & Bionic: A successful install requires FFmpeg >= 4.2 so one additional PPA is required (also for Focal users who want to upgrade FFmpeg 4.2.x to 4.3.x provided at ppa:savoury1/ffmpeg4). Do these steps to install:
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo add-apt-repository ppa:savoury1/digikam
+  sudo apt-get update
+  sudo apt-get install digikam
+
+Note for Xenial: Installation requires additional PPAs as Qt >= 5.9 is needed (and a newer KDE to match the newer Qt stack is best). Also, newer APT/GPG is required for various backports of the Qt and KDE stacks, so that is why these two PPAs must also be added. Follow these steps first before the above steps:
+
+  sudo add-apt-repository ppa:savoury1/apt-xenial
+  sudo add-apt-repository ppa:savoury1/gpg
+  sudo add-apt-repository ppa:savoury1/qt-xenial
+  sudo add-apt-repository ppa:savoury1/kde-xenial
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+Update (4 Sep 2020): Xenial and Bionic users who installed digiKam prior to this date may have issues upgrading to new builds against OpenCV 4.2.0, due a complex chain of package dependencies (involving OpenCV, GDAL, and OGDI). For a successful upgrade this command should work on Xenial & Bionic systems:
+
+  sudo apt-get install digikam gdal-data libogdi4.1
+
+This will result in the removal of libgdal20 (incompatible with libgdal26) plus various libopencv-*3.2 packages (due to libopencv-imgcodecs3.2 being dependent on libgdal20), so if other software on your system requires these packages (libgdal20 and libopencv-*3.2) then you will not be able to install this latest digiKam build without removing such software. If you experience such an issue please let me know what software is preventing the upgrade.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/ffmpeg4
+  ppa:savoury1/gpg
+
+Additionally, for Xenial only:
+
+  ppa:savoury1/gcc-defaults-7
+  ppa:savoury1/qt-xenial
+  ppa:savoury1/kde-xenial
+
+*** Credits ***
+
+- Creators of digiKam: the digiKam team
+  https://www.digikam.org/about/
+
+- Package code: Debian KDE Extras Team
+  https://tracker.debian.org/pkg/digikam

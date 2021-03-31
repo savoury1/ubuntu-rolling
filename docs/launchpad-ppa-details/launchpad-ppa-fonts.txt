@@ -1,0 +1,45 @@
+Backports of fonts and related software (eg. fontforge) for Xenial & newer.
+
+=============================================================================
+                     Fonts - backports (Xenial & newer)
+=============================================================================
+
+fontconfig (2.13.1), fontforge (20190801), fonts-urw-base35, freetype (2.10.4), fribidi (1.0.8), harfbuzz (2.6.4), libspiro (20200505), raqm
+
+Xenial & Bionic only: cairo (1.16.0), fonts-freefont, fonts-liberation2 (2.00.5), fonts-noto (20200323), ftgl, libdatrie, libotf, libpng1.6, libthai, libuninameslist (20190701), lmodern, pango1.0 (1.42.4), zlib
+
+Xenial only: fonts-font-aweso, fonts-lato, fonts-roboto-slab, fonttools, gsfonts, lyx, nototools, readline
+
+=============================================================================
+
+Note (27 Mar 2021): With various systems freetype 2.10.4 can render TrueType fonts less clearly (a user-specific subjective view, based on preferences for font readability) in some applications than in freetype 2.10.2, which seems to be due subpixel rendering being enabled by default (freetype >= 2.10.3).
+
+For instance, this issue has been seen when running applications through the Wine compatibility layer. If this issue is observed with the latest freetype it may help to use an earlier TrueType interpreter. Simply add the following environment var export to a startup file (ie. ~/.bash_profile or ~/.profile):
+
+  export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
+
+In some situations it may also help to add two additional config properties (see the last two links below) which would make the string look as follows:
+
+truetype:interpreter-version=35 cff:no-stem-darkening=1 autofitter:warping=1
+
+Links referencing this type of issue seen with the latest freetype versions:
+
+https://www.reddit.com/r/archlinux/comments/jawi0a/fix_broken_font_rendering_in_latest_freetype2/
+
+https://www.reddit.com/r/ManjaroLinux/comments/jglbkz/no_nice_font_rendering_since_last_freetype2_update/
+
+https://www.mail-archive.com/freetype@nongnu.org/msg05579.html
+https://www.mail-archive.com/freetype@nongnu.org/msg05586.html
+
+https://bugs.launchpad.net/ubuntu/+source/freetype/+bug/1722508/comments/36
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/graphics
+  ppa:savoury1/tex-xenial
+  ppa:savoury1/gtk-xenial

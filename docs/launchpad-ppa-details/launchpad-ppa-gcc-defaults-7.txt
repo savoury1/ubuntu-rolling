@@ -1,0 +1,3 @@
+Updated gcc-defaults 1.176ubuntu2.3 (GCC 7.5.0 & 8.4.0) for Xenial & Bionic.
+
+Note for Xenial: This package sets all GCC defaults to version 7.5.0 & 8.4.0 and will upgrade the system GCC packages and defaults to these GCC versions. This gives essentially the same default GCC config on Xenial as for Bionic.

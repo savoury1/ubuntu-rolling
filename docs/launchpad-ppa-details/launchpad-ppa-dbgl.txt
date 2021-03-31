@@ -1,0 +1,19 @@
+New build of DBGL (DOSBox Game Launcher) 0.83 (Java 8) for Xenial & newer.
+
+INTRODUCTION
+
+An open-source, free, multi-platform frontend for DOSBox. DBGL is a Java frontend for DOSBox, based largely upon the proven interface of D-Fend.
+
+DBGL serves as a frontend / Graphical User Interface to DOSBox. It tries to make creating DOSBox configuration files a little easier by offering a relatively simple interface, some shortcuts and a little bit of intelligence. Once your DOS games are configured in DBGL, its very easy to setup or start them, or alter their configuration or associated DOSBox version.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+*** Credits ***
+
+- Creator of DOSBox Game Launcher: Ronald Blankendaal
+  http://members.quicknet.nl/blankendaalr/dbgl/

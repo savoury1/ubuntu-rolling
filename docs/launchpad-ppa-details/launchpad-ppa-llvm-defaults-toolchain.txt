@@ -1,0 +1,23 @@
+Builds of LLVM Toolchain 6.0.1, 8.0.1, 9.0.1, and 10.0.0 for Xenial & Bionic.
+
+*** Install ***
+
+Note for Xenial & Bionic: To make LLVM 10.0 the system default you can add an additional PPA with a backported llvm-defaults from Focal (Bionic systems do not need to run the second command below, adding ppa:savoury1/llvm-toolchain, as LLVM 10.0 is already available in the official bionic-updates repository):
+
+  sudo add-apt-repository ppa:savoury1/llvm-defaults-10
+  sudo add-apt-repository ppa:savoury1/llvm-toolchain
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+*** Build ***
+
+This PPA has build dependencies on (not for LLVM 6.0.1):
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+Additionally, for Xenial LLVM backports (8.0.1 and higher):
+
+  ppa:savoury1/toolchain
+  ppa:savoury1/build-tools-test
+  ppa:savoury1/gcc-defaults-7

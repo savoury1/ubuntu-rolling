@@ -1,0 +1,22 @@
+Backports of Meld 3.20.3 (Bionic & newer) & 3.18.3 (Xenial, due GTK < 3.20).
+
+For standard Xenial (without upgraded GTK components) Meld 3.18.3 is the highest possible version, due a GTK 3.20 requirement for Meld 3.19 and higher (Xenial ships with GTK 3.18.9). A new PPA for Xenial with backported Bionic GTK 3 (and associated packages) [*] now makes it possible to run the latest Meld on an upgraded Xenial system (GTK PPA includes Meld 3.20.1 for Xenial).
+
+[*] https://launchpad.net/~savoury1/+archive/ubuntu/gtk-xenial
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+*** Credits ***
+
+- Creators of Meld: Stephen Kennedy and Kai Willadsen
+  https://meldmerge.org/
+  https://gitlab.gnome.org/GNOME/meld
+
+- Initial package code: Balint Reczey
+  https://tracker.debian.org/pkg/meld
+  https://salsa.debian.org/gnome-team/meld

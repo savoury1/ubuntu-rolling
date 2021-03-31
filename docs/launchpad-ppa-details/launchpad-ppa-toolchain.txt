@@ -1,0 +1,9 @@
+Builds of Ubuntu toolchain (= GCC 7.5.0 for Xenial and GCC 9.3.0 for Bionic).
+
+The builds here of GCC 7.5.0 for Xenial and GCC 9.3.0 for Bionic include all common files that have the same package name regardless of GCC version in use (ie. libstdc++6). Thus, these "full builds" are able to be used to build and install any software requiring the mentioned GCC versions for the two series.
+
+*** Build ***
+
+This PPA has a build dependency on:
+
+  ppa:ubuntu-toolchain-r/test

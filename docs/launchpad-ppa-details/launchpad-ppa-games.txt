@@ -1,0 +1,43 @@
+Games (incl DBGL, DOSBox 0.74-3, MAME 0.229, Quake ports) for Xenial & newer.
+
+=============================================================================
+                       Games - various (Xenial & newer)
+=============================================================================
+
+dbgl (0.83 DOSBox Game Launcher), doomsday (2.3.1), dosbox (0.74-3), libsdl2 (2.0.14), mame (0.229), quakespasm (0.93.2+git20200910 Quake port), yquake2 (7.45+ctf1.07.git Quake II port)
+
+Transport Tycoon Deluxe: grfcodec, nml, openttd (1.10.3), openttd-opengfx
+
+Xenial & Bionic only: fontconfig, libpng1.6, zlib
+
+Xenial only (Z-Machine interpreter packages): fizmo-console, fizmo-ncursesw, fizmo-sdl2, libdrilbo, libfizmo, libmonospaceif, libpixelif, libsndifsdl2
+
+=============================================================================
+
+*** Install ***
+
+Note for Xenial: Latest MAME requires GCC >= 7 to install and run. Therefore,
+add the toolchain PPA (with GCC 7.5.0 backport) for successful installation:
+
+  sudo add-apt-repository ppa:savoury1/toolchain
+  sudo add-apt-repository ppa:savoury1/games
+  sudo apt-get update
+  sudo apt-get install mame
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/fonts
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+  ppa:savoury1/inkscape
+
+Additionally, for Xenial builds only:
+
+  ppa:savoury1/gcc-defaults-7
+
+Note: The ppa:savoury1/{python,inkscape} PPAs are for MAME builds only, due a BD on python3-sphinxcontrib.svg2pdfconverter to create documentation and this Python 3 package has a BD on inkscape (neither PPA is required for install).

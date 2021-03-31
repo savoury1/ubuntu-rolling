@@ -1,0 +1,55 @@
+Display PPA (incl. libdrm, mesa, xserver, wayland, mir) for Xenial & newer.
+
+=============================================================================
+                      Display - various (Xenial & newer)
+=============================================================================
+
+glslang (11.2.0), libva (2.7.1), shaderc (2020.5), spirv-headers (1.5.4.git20210219), spirv-tools (2020.7), vulkan-{loader,tools} (1.2.141.0), xserver-xorg-video-intel (2.99.917+git20200714)
+
+Xenial & Bionic only: directfb (1.7.7), egl-wayland, eglexternalplatform, evemu, glew (2.1.0), glewmx (1.13.0), glfw3 (3.3.2), intel-compute-runtime (20.13.16352), intel-gpu-tools (1.25), intel-graphics-compiler (1.0.3627), intel-opencl-clang (10.0.0), intel-vaapi-driver (2.4.0), intel-vaapi-driver-shaders (2.4.0), khronos-opencl-clhpp, khronos-opencl-headers, libclc (0.2.0), libdmx, libdrm (2.4.101), libepoxy (1.5.4), libevdev, libfontenc, libglu (9.0.1), libglvnd (1.3.1), libice, libinput (1.15.4), libpciaccess, libsm, libva-utils (2.7.1), libvdpau, libwacom (1.3), libx11 (1.6.9), libxau, libxcb (1.14), libxcomposite, libxcursor, libxdamage, libxdmcp, libxext, libxi, libxinerama, libxkbcommon, libxkbfile, libxmu, libxrandr (1.5.2), libxss, libxvmc, libxxf86dga, libzstd, mesa (20.0.8), mir (1.7.1), nux, pixman (0.38.4), spirv-llvm-translator (10.0.0), wayland-protocols (1.17), wlcs, x11-xkb-utils, xauth, xcb-proto (1.14), xcb-util-wm, xf86-input-multitouch, xf86-input-wacom, xkeyboard-config, xorg (7.7+19), xorg-server (1.20.9), xorgproto, xserver-xorg-input-evdev, *libinput, *mouse, *synaptics, xserver-xorg-video-amdgpu (19.1.0), *ati (19.1.0), *ast, *dummy, *fbdev, *mach64, *mga, *neomagic, *nouveau, *openchrome, *qxl (0.1.5+git20200331), *r128, *savage, *siliconmotion, *sisusb, *tdfx, *trident, *vesa, *vmware (13.3.0), xtrans
+
+Xenial only: boost1.65.1, capnproto (0.6.1), cogl (1.22.4), libgcrypt20, libgpg-error, libxfixes, libxfont, libxpm, libxrender, libxres, libxshmfence, libxt, libxtst, libxv, llvm-toolchain-10 (10.0.0), ocl-icd, procps (3.3.12), protobuf (3.0.0), wayland (1.16.0), xf86-input-mtrack, *xwiimote, xfonts-utils, xserver-xorg-input-aiptek, *elographics, *joystick, *keyboard, *mutouch, *void, xserver-xorg-video-geode, xutils-dev
+
+Xenial mpv (see ppa:savoury1/mpv for other series): libarchive (3.4.3), libplacebo (2.72.2), mpv (0.33.0+git20210311), mujs (1.1.0), xz-utils (5.2.5), zimg (3.0.1)
+
+  * denotes a shorthand package name with a common prefix or suffix removed
+
+=============================================================================
+
+*** Install ***
+
+Note for nVidia display hardware: Versions of the proprietary drivers prior to 340.107 (available in official {xenial,bionic}-updates repositories) are not compatible with X.Org xserver 1.20 found at this PPA. Thus don't add this PPA if you are using older nVidia hardware (NV4x and G7x GPUs) that depends on the legacy 304.* driver series! For newer proprietary nVidia drivers than in the official Ubuntu repositories, please see the Ubuntu "Graphics Drivers" team PPA here: https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa
+
+Note for Xenial: Backported Mesa 20.0.8 requires LLVM 10 which is built with GCC 7.4.0 (default Xenial repos have GCC 5.4.0) and new Mir is built against new Mesa. To install new Mesa and Mir requires at least GCC >= 6 (libstdc++6) and GCC 7.5.0 is now provided at a toolchain PPA. So to install the display drivers from this PPA with GCC 7.5.0 libraries do the following steps:
+
+  sudo add-apt-repository ppa:savoury1/toolchain
+  sudo add-apt-repository ppa:savoury1/display
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+The Mesa 20.0.8 build for Xenial here on Launchpad has several test failures for Intel ANV drivers due the old sbuild kernel version (4.4) used. Doing the build locally (dpkg-buildpackage) with a newer kernel (eg. 4.19) all tests pass fine, so it is highly advisable to run a newer kernel than 4.4 if you want to install the new Mesa drivers for Intel GPUs running under Xenial.
+
+Newer kernels can be easily installed with Ukuu 18.9.3 (Ubuntu kernel update utility, also patched for recent changes with kernel.ubuntu.com and available at ppa:savoury1/utilities). Based on consistent testing since mid-2019 kernel 4.19, a Super Long-Term Service (SLTS) kernel to be supported for many years, is a good choice for Xenial systems installing upgrades from my various PPAs.
+
+Finally, with the upgraded Mesa 20.0.8 and Wayland 1.16, Xenial systems can install the latest mpv 0.33.0+git which is provided here at the Display PPA. To install this version of mpv requires FFmpeg 4.x so an extra PPA is needed:
+
+  sudo add-apt-repository ppa:savoury1/ffmpeg4
+  sudo apt-get update
+  sudo apt-get install mpv
+
+*** mpv (Bionic & newer): Please see the mpv PPA for latest mpv builds on all series newer than Xenial https://launchpad.net/~savoury1/+archive/ubuntu/mpv
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+  ppa:savoury1/python
+  ppa:savoury1/graphics
+  ppa:savoury1/multimedia
+
+Additionally, for Xenial builds only:
+
+  ppa:savoury1/gcc-defaults-7
+  ppa:savoury1/ffmpeg4 (for mpv)

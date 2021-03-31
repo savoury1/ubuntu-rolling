@@ -1,0 +1,8 @@
+Backport of Exiv2 0.27.3-3 (image metadata library/tools) for Xenial & newer.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports

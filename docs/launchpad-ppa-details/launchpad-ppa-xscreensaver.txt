@@ -1,0 +1,18 @@
+XScreenSaver 5.45 (standard X11 screen saver collection) for Xenial & newer.
+
+XScreenSaver is the standard screen saver collection shipped on most Linux and Unix systems running the X11 Window System.
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+*** Credits ***
+
+- Creators of XScreenSaver: Jamie Zawinski and many others
+  https://www.jwz.org/xscreensaver/
+
+- Package code: Tormod Volden
+  https://tracker.debian.org/pkg/xscreensaver

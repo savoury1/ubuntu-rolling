@@ -1,0 +1,44 @@
+New build of GnuPG 2.2.27 (gcrypt 1.8.7, gpg-error 1.41) for Xenial & newer.
+
+=============================================================================
+                   GPG - GNU Privacy Guard (Xenial & newer)
+=============================================================================
+
+gnupg2 (2.2.27), gpgme1.0 (1.15.0), libassuan (2.5.4), libgcrypt20 (1.8.7), libgpg-error (1.41), libksba (1.5.0), p11-kit (0.23.20), python-gnupg (0.4.6)
+
+Xenial & Bionic only: gpa (0.10.0), libunistring (0.9.10), nettle (3.4.1)
+
+Xenial only: autogen, gnutls28 (3.5.18), libtasn1-6, readline (7.0), unbound
+
+=============================================================================
+
+*** Install ***
+
+To install this new GnuPG (needs newer APT) on Xenial systems do these steps:
+
+  sudo add-apt-repository ppa:savoury1/apt-xenial
+  sudo add-apt-repository ppa:savoury1/gpg
+  sudo apt-get update
+  sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+*** Build ***
+
+This PPA has build dependencies on:
+
+  ppa:savoury1/build-tools
+  ppa:savoury1/backports
+
+Additionally, for Xenial builds only:
+
+  ppa:savoury1/gcc-defaults-7
+  ppa:savoury1/tex-xenial
+
+Building GnuPG 2.2.x requires GCC > 6 (due build failures with GCC 5.4.0) and also mingw-w64 >= 5.0 (found at ppa:savoury1/build-tools for Xenial systems).
+
+*** Credits ***
+
+- Creators of GnuPG: Werner Koch and the entire GnuPG team
+  https://www.gnupg.org/people/index.html
+
+- Package code: Debian GnuPG Maintainers
+  https://tracker.debian.org/pkg/gnupg2
