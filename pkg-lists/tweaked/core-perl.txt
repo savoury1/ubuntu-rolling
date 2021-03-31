@@ -103,3 +103,6 @@ B libcairo-perl
 B libcairo-gobject-perl
 - libimage-exiftool-perl -- ppa:savoury1/backports
 B libx11-guitest-perl
+B libdevel-callchecker-perl
+B libb-hooks-op-check-perl
+B libdynaloader-functions-perl
