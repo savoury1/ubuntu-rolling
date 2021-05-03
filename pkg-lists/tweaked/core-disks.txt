@@ -85,7 +85,7 @@ B gvfs:i386
 B gvfs-fuse
 B libgnomevfs2-common
 B libgnomevfs2-0
-B gnome-disk-utility
+- gnome-disk-utility -- ppa:savoury1/gtk-xenial
 B f3
 B smartmontools
 B gsmartcontrol
