@@ -40,7 +40,7 @@ B libdvd-pkg
 - libdvdread7 -- ppa:savoury1/multimedia
 - libdvdnav4 -- ppa:savoury1/multimedia
 B libdvbpsi10
-B libasm-java -- ppa:savoury1/backports
+- libasm-java -- ppa:savoury1/backports
 - libbluray2 -- ppa:savoury1/multimedia
 - libbluray-bin -- ppa:savoury1/multimedia
 - libbluray-bdj -- ppa:savoury1/multimedia
