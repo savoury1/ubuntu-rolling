@@ -9,7 +9,7 @@ if [ "$1" = "configure" ]; then
   codename="$(sed -n 's|UBUNTU_CODENAME=||p' /etc/os-release)"
 
   # space at end of everyseries var is significant for sub-string removal
-  everyseries="xenial bionic cosmic disco eoan focal groovy hirsute "
+  everyseries="xenial bionic cosmic disco eoan focal groovy hirsute impish "
   otherseries="$(echo "$everyseries" | sed 's/'"$codename"' //')"
 
   # if this is an unknown series then don't create any config files
@@ -54,7 +54,9 @@ if [ "$1" = "configure" ]; then
     echo "deb http://$server/ubuntu/ $series-backports $pockets" >> "$repofile"
     echo "" >> "$repofile"
     echo "deb http://$server/ubuntu/ $series-security $pockets" >> "$repofile"
-    echo "deb http://archive.canonical.com/ubuntu/ $series partner" >> "$repofile"
+    if [ ! "$server" = "$oldrel" ]; then
+      echo "deb http://archive.canonical.com/ubuntu/ $series partner" >> "$repofile"
+    fi
   done
 fi
 

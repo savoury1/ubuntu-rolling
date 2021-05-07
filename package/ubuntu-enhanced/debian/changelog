@@ -1,10 +1,24 @@
-ubuntu-enhanced (0.8-2~21.04.sav0) hirsute; urgency=low
+ubuntu-enhanced (0.9-1~16.04.sav0) xenial; urgency=low
+
+  * New release adding Impish Indri
+  * d/postinst: Add impish to everyseries var for new Impish Indri repos
+  * bin/apt-all: Add impish to otherseries sanity check case statement
+
+ -- Rob Savoury <savoury@savos.tech>  Fri, 07 May 2021 08:19:43 -0700
+
+ubuntu-enhanced (0.8-3~16.04.sav0) xenial; urgency=low
+
+  * d/postinst: Do not add partner repos for old releases
+
+ -- Rob Savoury <savoury@savos.tech>  Fri, 15 Jan 2021 16:18:51 -0800
+
+ubuntu-enhanced (0.8-2~16.04.sav0) xenial; urgency=low
 
   * d/postinst: Switch Eoan to old releases server
 
  -- Rob Savoury <savoury@savos.tech>  Wed, 09 Dec 2020 21:32:26 -0800
 
-ubuntu-enhanced (0.8-1~21.04.sav0) hirsute; urgency=low
+ubuntu-enhanced (0.8-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Hirsute Hippo
   * d/postinst: Add hirsute to everyseries var for new Hirsute Hippo repos
@@ -15,13 +29,13 @@ ubuntu-enhanced (0.8-1~21.04.sav0) hirsute; urgency=low
 
  -- Rob Savoury <savoury@savos.tech>  Sat, 31 Oct 2020 17:09:02 -0700
 
-ubuntu-enhanced (0.7-2~20.10.sav0) groovy; urgency=low
+ubuntu-enhanced (0.7-2~16.04.sav0) xenial; urgency=low
 
   * debian/control,copyright: Update Maintainer and copyright contact details
 
  -- Rob Savoury <savoury@savos.tech>  Tue, 12 May 2020 13:08:15 -0700
 
-ubuntu-enhanced (0.7-1~20.10.sav0) groovy; urgency=low
+ubuntu-enhanced (0.7-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Groovy Gorilla and using correct server for old series
   * debian/postinst: Add groovy to everyseries var for new groovy repositories

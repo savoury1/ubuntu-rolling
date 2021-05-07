@@ -29,7 +29,7 @@ series_bad=N
 # sanity check on /etc/apt/otherseries input
 for series in ${otherseries[@]}; do
   case "$series" in
-    xenial | bionic | cosmic | disco | eoan | focal | groovy | hirsute)
+    xenial | bionic | cosmic | disco | eoan | focal | groovy | hirsute | impish)
       ((series_num++))
       ;;
     *)
