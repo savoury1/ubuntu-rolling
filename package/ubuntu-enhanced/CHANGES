@@ -1,3 +1,7 @@
+0.9.1 / 07-May-2021
+
+  - Fix "apt-all" script for eight alternate series
+
 0.9 / 07-May-2021
 
   - Add new Impish Indri series to configuration

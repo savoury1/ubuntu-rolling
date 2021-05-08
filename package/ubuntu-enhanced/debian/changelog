@@ -1,3 +1,9 @@
+ubuntu-enhanced (0.9.1-1~16.04.sav0) xenial; urgency=low
+
+  * Fix apt-all script for eight additional series
+
+ -- Rob Savoury <savoury@savos.tech>  Fri, 07 May 2021 21:34:04 -0700
+
 ubuntu-enhanced (0.9-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Impish Indri
