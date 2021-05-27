@@ -1,13 +1,13 @@
 B dictionaries-common
 B wbritish
 B wamerican
-B libaspell15
-B aspell
-B aspell-en
-B libhunspell-1.6-0
-E libhunspell-1.7-0 -- required by nixnote2 (2.1.2-1) Disco
-B libenchant1c2a
-B enchant
+- libaspell15 -- ppa:savoury1/backports
+- aspell -- ppa:savoury1/backports
+- aspell-en -- ppa:savoury1/backports
+- libhunspell-1.6-0 -- ppa:savoury1/backports
+- libhunspell-1.7-0 -- ppa:savoury1/{backports,scribus}
+- libenchant1c2a -- ppa:savoury1/backports
+- enchant -- ppa:savoury1/backports
 B libgtkspell0
 B libhyphen0
 B hyphen-en-us
@@ -31,39 +31,39 @@ B cabextract
 B libgcab-1.0-0
 - libnetcdf13 -- superseded by ppa:savoury1/backports
 B valgrind
-B librevenge-0.0-0
-B libodfgen-0.1-1
-B libwpd-0.10-10
-B libwpg-0.3-3
-B libwps-0.4-4
-B libcdr-0.1-1
-B libmspub-0.1-1
-B libvisio-0.1-1
-B libpagemaker-0.0-0
-B libqxp-0.0-0
-B libzmf-0.0-0
-B libmwaw-0.3-3
-B libetonyek-0.1-1
-B libfreexl1
+- librevenge-0.0-0 -- ppa:savoury1/{backports,scribus}
+- libodfgen-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
+- libwpd-0.10-10 -- ppa:savoury1/libreoffice{-6-4,-7-1}
+- libwpg-0.3-3 -- ppa:savoury1/libreoffice{-6-4,-7-1}
+- libwps-0.4-4 -- ppa:savoury1/libreoffice{-6-4,-7-1}
+- libcdr-0.1-1 -- ppa:savoury1/{backports,scribus}
+- libmspub-0.1-1 -- ppa:savoury1/{backports,scribus}
+- libvisio-0.1-1 -- ppa:savoury1/{backports,libreoffice,scribus}
+- libpagemaker-0.0-0 -- ppa:savoury1/{backports,scribus}
+- libqxp-0.0-0 -- ppa:savoury1/{backports,scribus}
+- libzmf-0.0-0 -- ppa:savoury1/{backports,scribus}
+- libmwaw-0.3-3 -- ppa:savoury1/libreoffice{-6-4,-7-1}
+- libetonyek-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
+- libfreexl1 -- ppa:savoury1/backports
 B libe-book-0.1-1
-B libfreehand-0.1-1
+- libfreehand-0.1-1 -- ppa:savoury1/{backports,scribus}
 B snap
 B libstemmer0d
 - libtracker-sparql-2.0-0 -- ppa:savoury1/backports
 - proj-data -- ppa:savoury1/backports
 - libproj12 -- superseded by ppa:savoury1/backports
 - libogdi3.2 -- superseded by ppa:savoury1/backports
-B libqhull7
+- libqhull7 -- ppa:savoury1/backports
 - libgeos-3.6.2 -- superseded by ppa:savoury1/backports
 - libgeos-c1v5 -- superseded by ppa:savoury1/backports
 B libfyba0
 B libgeotiff2
-B libspatialite7
+- libspatialite7 -- ppa:savoury1/backports
 B libepsilon1
-B liburiparser1
-B libkmlbase1
-B libkmldom1
-B libkmlengine1
+- liburiparser1 -- ppa:savoury1/backports
+- libkmlbase1 -- ppa:savoury1/backports
+- libkmldom1 -- ppa:savoury1/backports
+- libkmlengine1 -- ppa:savoury1/backports
 - gdal-data -- ppa:savoury1/backports
 - libgdal20 -- superseded by ppa:savoury1/backports
 - opencv-data -- ppa:savoury1/graphics
