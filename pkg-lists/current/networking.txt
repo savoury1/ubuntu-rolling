@@ -38,14 +38,14 @@ B libtdb1
 B libtdb1:i386
 B tdb-tools
 B python-tdb
-B python-pyasn1
-B python3-pyasn1
-B python-pyasn1-modules
-B python3-pyasn1-modules
-B python-service-identity
-B python-dnspython
+- python-pyasn1 -- ppa:savoury1/python
+- python3-pyasn1 -- ppa:savoury1/python
+- python-pyasn1-modules -- ppa:savoury1/python
+- python3-pyasn1-modules -- ppa:savoury1/python
+- python-service-identity -- ppa:savoury1/python
+- python-dnspython -- ppa:savoury1/python
 B python-ipaddr
-B python-ipaddress
+- python-ipaddress -- ppa:savoury1/python
 B libtalloc2
 B python-talloc
 B libtevent0
@@ -66,9 +66,9 @@ B rdesktop
 ~ vino -- modded version required (fix dconf schema error)
 - libsodium23 -- ppa:savoury1/backports
 - libsodium-dev -- ppa:savoury1/backports
-B libnorm1
+- libnorm1 -- ppa:savoury1/multimedia
 B libpgm-5.2-0
-B libzmq5
+- libzmq5 -- ppa:savoury1/multimedia
 B librest-0.7-0
 B libnspr4
 B libnspr4:i386
@@ -80,8 +80,8 @@ B libnss-mdns
 B libapr1
 B libaprutil1
 B libserf-1-1
-B libsvn1
-B subversion
+- libsvn1 -- ppa:savoury1/backports
+- subversion -- ppa:savoury1/backports
 B cvs
 B gist
 B libhttrack2
@@ -90,8 +90,8 @@ B webhttrack-common
 B webhttrack
 - libphodav-2.0-common -- ppa:savoury1/virtualisation
 - libphodav-2.0-0 -- ppa:savoury1/virtualisation
-B libneon27-gnutls
-B libcmis-0.5-5v5
+- libneon27-gnutls -- ppa:savoury1/backports
+- libcmis-0.5-5v5 -- ppa:savoury1/libreoffice{-6-4,-7-1}
 B libgdata-common
 B libgdata22
 B gir1.2-gdata-0.0
