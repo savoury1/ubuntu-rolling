@@ -8,11 +8,6 @@ B lsb-release
 - libdistro-info-perl -- ppa:savoury1/build-tools
 - python-distro-info -- ppa:savoury1/build-tools
 - python3-distro-info -- ppa:savoury1/build-tools
-- python3-distupgrade -- ppa:savoury1/build-tools
-B ubuntu-release-upgrader-core
-B python3-update-manager
-B update-manager-core
-B update-notifier-common
 B libept1.5.0
 - aptitude-common -- ppa:savoury1/apt-xenial
 - aptitude -- ppa:savoury1/apt-xenial
@@ -63,8 +58,8 @@ B sbsigntool
 B libdisasm0
 B libllvm4.0
 B libllvm4.0:i386
-- libllvm6.0 -- superseded
-- libllvm6.0:i386 -- superseded
+- libllvm6.0 -- ppa:savoury1/llvm-toolchain
+- libllvm6.0:i386 -- ppa:savoury1/llvm-toolchain
 - libllvm7 -- superseded
 - libllvm7:i386 -- superseded
 - libclang1-7 -- superseded

@@ -122,8 +122,13 @@ B session-migration
 B system-tools-backends
 B liboobs-1-5
 B gnome-system-tools
-B ubuntu-system-service
-B ubuntu-advantage-tools
+- python3-distupgrade -- leave at default version
+- ubuntu-release-upgrader-core -- leave at default version
+- python3-update-manager -- leave at default version
+- update-manager-core -- leave at default version
+- update-notifier-common -- leave at default version
+- ubuntu-system-service -- leave at default version
+- ubuntu-advantage-tools -- leave at default version
 B libzeitgeist-2.0-0
 B folks-common
 B libvte-common
