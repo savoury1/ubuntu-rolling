@@ -1,16 +1,16 @@
 D libc6 -- required by libqt5core5a (5.12.2+dfsg-4ubuntu1)
-D libc6:i386 -- sames series as (2.29-0ubuntu2) Disco
-D libc6-x32 -- sames series as (2.29-0ubuntu2) Disco
-D libc6-dbg -- sames series as (2.29-0ubuntu2) Disco
-D libc-bin -- sames series as (2.29-0ubuntu2) Disco
-D libc-dev-bin -- sames series as (2.29-0ubuntu2) Disco
-D libc6-dev -- sames series as (2.29-0ubuntu2) Disco
-D libc6-dev:i386 -- sames series as (2.29-0ubuntu2) Disco
-D libc6-i386 -- sames series as (2.29-0ubuntu2) Disco
-D libc6-dev-i386 -- sames series as (2.29-0ubuntu2) Disco
-D libc6-dev-x32 -- sames series as (2.29-0ubuntu2) Disco
-D multiarch-support -- sames series as (2.29-0ubuntu2) Disco
-D locales -- sames series as (2.29-0ubuntu2) Disco
+D libc6:i386 -- same series as (2.29-0ubuntu2) Disco
+D libc6-x32 -- same series as (2.29-0ubuntu2) Disco
+D libc6-dbg -- same series as (2.29-0ubuntu2) Disco
+D libc-bin -- same series as (2.29-0ubuntu2) Disco
+D libc-dev-bin -- same series as (2.29-0ubuntu2) Disco
+D libc6-dev -- same series as (2.29-0ubuntu2) Disco
+- libc6-dev:i386 -- conflict with earlier linux-libc-dev
+D libc6-i386 -- same series as (2.29-0ubuntu2) Disco
+D libc6-dev-i386 -- same series as (2.29-0ubuntu2) Disco
+D libc6-dev-x32 -- same series as (2.29-0ubuntu2) Disco
+D multiarch-support -- same series as (2.29-0ubuntu2) Disco
+D locales -- same series as (2.29-0ubuntu2) Disco
 D libglib2.0-data
 D libglib2.0-0
 D libglib2.0-0:i386

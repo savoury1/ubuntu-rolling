@@ -1,24 +1,24 @@
-B libc6
-B libc6:i386
-B libc6-x32
-B libc6-dbg
-B libc-bin
-B libc-dev-bin
-B libc6-dev
-B libc6-dev:i386
-B libc6-i386
-B libc6-dev-i386
-B libc6-dev-x32
-B multiarch-support
-B locales
+- libc6 -- leave at default version
+- libc6:i386 -- leave at default version
+- libc6-x32 -- leave at default version
+- libc6-dbg -- leave at default version
+- libc-bin -- leave at default version
+- libc-dev-bin -- leave at default version
+- libc6-dev -- leave at default version
+- libc6-dev:i386 -- leave at default version
+- libc6-i386 -- leave at default version
+- libc6-dev-i386 -- leave at default version
+- libc6-dev-x32 -- leave at default version
+- multiarch-support -- leave at default version
+- locales -- leave at default version
 - libglib2.0-data -- ppa:savoury1/gtk-xenial
 - libglib2.0-0 -- ppa:savoury1/gtk-xenial
 - libglib2.0-0:i386 -- ppa:savoury1/gtk-xenial
 - libglib2.0-bin -- ppa:savoury1/gtk-xenial
 - libglib2.0-dev-bin -- ppa:savoury1/gtk-xenial
 - libglib2.0-dev -- ppa:savoury1/gtk-xenial
-B libglibmm-2.4-1v5
-B libglibmm-2.4-dev
+- libglibmm-2.4-1v5 -- ppa:savoury1/gtk-xenial
+- libglibmm-2.4-dev -- ppa:savoury1/gtk-xenial
 - libgee-0.8-2 -- ppa:savoury1/gtk-xenial
 - libicu60 -- ppa:savoury1/backports
 - libicu60:i386 -- ppa:savoury1/backports
