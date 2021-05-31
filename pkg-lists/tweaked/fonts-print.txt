@@ -1,60 +1,60 @@
-B fonts-freefont-ttf
+- fonts-freefont-ttf - ppa:savoury1/fonts
 B fonts-ubuntu
 B ttf-ubuntu-font-family
 B fonts-liberation
 B fonts-dejavu
 B fonts-dejavu-core
 B fonts-dejavu-extra
-B fonts-mathjax
-B libjs-mathjax
+- fonts-mathjax -- ppa:savoury1/backports
+- libjs-mathjax -- ppa:savoury1/backports
 B fonts-orya-extra
 B fonts-noto-cjk
-B ttf-mscorefonts-installer
+- ttf-mscorefonts-installer -- leave at default version
 B fonts-symbola
 B ttf-ancient-fonts-symbola
 B font-manager
 B libgucharmap-2-90-7
 B gucharmap
 B t1utils
-- libfreetype6 -- ppa:savoury1/backports
-- libfreetype6:i386 -- ppa:savoury1/backports
-- libfreetype6-dev -- ppa:savoury1/backports
-- libfreetype6-dev:i386 -- ppa:savoury1/backports
-- fontconfig-config -- ppa:savoury1/backports
-- libfontconfig1 -- ppa:savoury1/backports
-- libfontconfig1:i386 -- ppa:savoury1/backports
-- libfontconfig1-dev -- ppa:savoury1/backports
-- fontconfig -- ppa:savoury1/backports
-B libwoff1
-B libgraphite2-3
-B libgraphite2-3:i386
-B libgraphite2-dev
-B libgraphite2-dev:i386
-B libharfbuzz0b
-B libharfbuzz0b:i386
-B gir1.2-harfbuzz-0.0
-B libharfbuzz-gobject0
-B libharfbuzz-icu0
-B libharfbuzz-dev
+- libfreetype6 -- ppa:savoury1/fonts
+- libfreetype6:i386 -- ppa:savoury1/fonts
+- libfreetype6-dev -- ppa:savoury1/fonts
+- libfreetype6-dev:i386 -- ppa:savoury1/fonts
+- fontconfig-config -- ppa:savoury1/fonts
+- libfontconfig1 -- ppa:savoury1/fonts
+- libfontconfig1:i386 -- ppa:savoury1/fonts
+- libfontconfig1-dev -- ppa:savoury1/fonts
+- fontconfig -- ppa:savoury1/fonts
+- libwoff1 -- ppa:savoury1/backports
+- libgraphite2-3 -- ppa:savoury1/backports
+- libgraphite2-3:i386 -- ppa:savoury1/backports
+- libgraphite2-dev -- ppa:savoury1/backports
+- libgraphite2-dev:i386 -- ppa:savoury1/backports
+- libharfbuzz0b -- ppa:savoury1/fonts
+- libharfbuzz0b:i386 -- ppa:savoury1/fonts
+- gir1.2-harfbuzz-0.0 -- ppa:savoury1/fonts
+- libharfbuzz-gobject0 -- ppa:savoury1/fonts
+- libharfbuzz-icu0 -- ppa:savoury1/fonts
+- libharfbuzz-dev -- ppa:savoury1/fonts
 B libeot0
 B libijs-0.35
 B libfontembed1
 B libpaper1
 B libpaper-utils
-B gsfonts
-B libgs9-common
-B libgs9
-B ghostscript
-B ghostscript-x
+- gsfonts -- ppa:savoury1/graphics
+- libgs9-common -- ppa:savoury1/graphics
+- libgs9 -- ppa:savoury1/graphics
+- ghostscript -- ppa:savoury1/graphics
+- ghostscript-x -- ppa:savoury1/graphics
 B libspectre1
 B libqpdf21
 B qpdf
-B libdjvulibre-text
-B libdjvulibre21
-B libpoppler73
-B libpoppler-glib8
-B poppler-utils
-B libpoppler-qt5-1
+- libdjvulibre-text -- ppa:savoury1/graphics
+- libdjvulibre21 -- ppa:savoury1/graphics
+- libpoppler73 -- superseded by ppa:savoury1/backports
+- libpoppler-glib8 -- ppa:savoury1/backports
+- poppler-utils -- ppa:savoury1/backports
+- libpoppler-qt5-1 -- ppa:savoury1/backports
 B poppler-data
 B zathura-pdf-poppler
 B zathura
