@@ -1,108 +1,86 @@
-B libpcre2-8-0
-B libpcre2-16-0
+- libpcre2-8-0 -- ppa:savoury1/backports
+- libpcre2-16-0 -- ppa:savoury1/backports
 B libpcre3
 B libpcre3:i386
 B libpcre16-3
 B libpcre32-3
 B libpcrecpp0v5
 B libpcre3-dev
-B perl-base
-B perl-modules-5.26
-B libperl5.26
-B libperl5.26:i386
-B perl
-B liblocale-gettext-perl
-B libglib-perl
-B libclone-perl
-B libfreezethaw-perl
-B libexporter-tiny-perl
-B liblist-moreutils-perl
-B libfile-listing-perl
-B libfile-copy-recursive-perl
-B rename
-B libpango-perl
-B libtext-unidecode-perl
-B libio-pty-perl
-B libio-stty-perl
-B libipc-run-perl
-B libregexp-assemble-perl
-B libcapture-tiny-perl
-B libexpect-perl
-B libtext-iconv-perl
-B libtext-charwidth-perl
-B libcrypt-blowfish-perl
-B libcrypt-rijndael-perl
-B libcrypt-cbc-perl
-B perl-openssl-defaults
-B libnet-ssleay-perl
-B libperlio-gzip-perl
-B libarchive-zip-perl
-B libdbi-perl
+- libglib-perl -- ppa:savoury1/gtk-xenial
+- libclone-perl -- ppa:savoury1/perl-xenial
+- libfreezethaw-perl -- Xenial has same version as Bionic
+- libexporter-tiny-perl -- ppa:savoury1/perl-xenial
+B liblist-moreutils-perl -- ppa:savoury1/perl-xenial
+- libfile-listing-perl -- Xenial has same version as Bionic
+- libfile-copy-recursive-perl -- ppa:savoury1/perl-xenial
+- rename -- ppa:savoury1/perl-xenial
+- libtext-unidecode-perl -- Xenial has same version as Bionic
+- libio-stty-perl -- Xenial has same version as Bionic
+- libipc-run-perl -- ppa:savoury1/perl-xenial
+- libregexp-assemble-perl -- Xenial has same version as Bionic
+- libcapture-tiny-perl -- ppa:savoury1/perl-xenial
+- libexpect-perl -- Xenial has same version as Bionic
+- libcrypt-cbc-perl -- Xenial has same version as Bionic
+- perl-openssl-defaults -- ppa:savoury1/perl-xenial
+- libnet-ssleay-perl -- ppa:savoury1/perl-xenial
+- libarchive-zip-perl -- ppa:savoury1/perl-xenial
+B libdbi-perl -- ppa:savoury1/perl-xenial
 B libdbd-pg-perl
-B libdbd-sqlite3-perl
-B libyaml-perl
-B libyaml-libyaml-perl
-B libyaml-tiny-perl
-B liburi-perl
-B libnet-http-perl
-B libhttp-message-perl
-B libhttp-cookies-perl
-B libhtml-tagset-perl
-B libhtml-parser-perl
-B libhtml-tree-perl
-B libhtml-format-perl
-B libxml-perl
-B libxml-dom-perl
-B libxml-regexp-perl
-B libxml-namespacesupport-perl
-B libxml-sax-base-perl
-B libxml-libxml-perl
-B libxml-parser-perl
-B libxml-simple-perl
-B libxml-xpathengine-perl
-B libxml-twig-perl
-B libfile-mimeinfo-perl
-B libapt-pkg-perl
-B libextutils-depends-perl
-B libextutils-pkgconfig-perl
-B libfile-which-perl
-B libfile-homedir-perl
-B libgnome2-gconf-perl
-B libglib-object-introspection-perl
+- libdbd-sqlite3-perl -- ppa:savoury1/perl-xenial
+- libyaml-perl -- ppa:savoury1/perl-xenial
+- libyaml-libyaml-perl -- ppa:savoury1/perl-xenial
+- libyaml-tiny-perl -- ppa:savoury1/perl-xenial
+- liburi-perl -- ppa:savoury1/perl-xenial
+- libnet-http-perl -- ppa:savoury1/perl-xenial
+- libhttp-message-perl -- ppa:savoury1/perl-xenial
+- libhttp-cookies-perl -- ppa:savoury1/perl-xenial
+- libhtml-tagset-perl -- ppa:savoury1/perl-xenial
+- libhtml-tree-perl -- ppa:savoury1/perl-xenial
+- libhtml-format-perl -- ppa:savoury1/perl-xenial
+- libxml-perl -- Xenial has same version as Bionic
+- libxml-dom-perl -- Xenial has same version as Bionic
+- libxml-regexp-perl -- Xenial has same version as Bionic
+- libxml-namespacesupport-perl -- ppa:savoury1/perl-xenial
+- libxml-sax-base-perl -- ppa:savoury1/perl-xenial
+- libxml-libxml-perl -- ppa:savoury1/perl-xenial
+- libxml-simple-perl -- ppa:savoury1/perl-xenial
+- libxml-xpathengine-perl -- ppa:savoury1/perl-xenial
+- libxml-twig-perl -- ppa:savoury1/perl-xenial
+- libfile-mimeinfo-perl -- ppa:savoury1/perl-xenial
+- libapt-pkg-perl -- ppa:savoury1/apt-xenial
+- libextutils-depends-perl -- Xenial has same version as Bionic
+- libextutils-pkgconfig-perl -- ppa:savoury1/perl-xenial
+- libfile-which-perl -- ppa:savoury1/perl-xenial
+- libfile-homedir-perl -- ppa:savoury1/perl-xenial
+- libglib-object-introspection-perl -- ppa:savoury1/gtk-xenial
 B libgtk2-perl
 B libgtk2-unique-perl
-B libgtk2-ex-simple-list-perl
-B libgtk2-gladexml-perl
-B libipc-system-simple-perl
+- libgtk2-ex-simple-list-perl -- Xenial has same version as Bionic
 B libuuid-perl
-B libnet-dbus-perl
-B libnet-domain-tld-perl
-B libnet-libidn-perl
-B libnet-arp-perl
-B libnet-dns-perl
-B libsocket6-perl
-B libio-socket-ssl-perl
-B libnet-smtp-ssl-perl
-B libmailtools-perl
-B libemail-valid-perl
-B libwww-perl
-B liblwp-protocol-https-perl
-B libnet-proxy-perl
-B libcgi-pm-perl
-B libossp-uuid-perl
+- libnet-domain-tld-perl -- ppa:savoury1/perl-xenial
+- libnet-dns-perl -- ppa:savoury1/perl-xenial
+- libsocket6-perl -- ppa:savoury1/perl-xenial
+- libio-socket-ssl-perl -- ppa:savoury1/perl-xenial
+- libnet-smtp-ssl-perl -- ppa:savoury1/perl-xenial
+- libmailtools-perl -- ppa:savoury1/perl-xenial
+- libemail-valid-perl -- ppa:savoury1/perl-xenial
+- libwww-perl -- ppa:savoury1/perl-xenial
+- liblwp-protocol-https-perl -- ppa:savoury1/perl-xenial
+- libnet-proxy-perl -- Xenial has same version as Bionic
+- libcgi-pm-perl -- ppa:savoury1/perl-xenial
 B libdata-alias-perl
-B libsub-identify-perl
-B libsub-name-perl
-B libtry-tiny-perl
-B libclass-accessor-perl
-B libparse-debianchangelog-perl
-B liberror-perl
-B libfile-fcntllock-perl
-B libfont-afm-perl
-B libcairo-perl
-B libcairo-gobject-perl
+- libsub-identify-perl -- ppa:savoury1/perl-xenial
+- libsub-name-perl -- ppa:savoury1/perl-xenial
+- libtry-tiny-perl -- ppa:savoury1/perl-xenial
+- libclass-accessor-perl -- ppa:savoury1/perl-xenial
+- libcpanel-json-xs-perl -- ppa:savoury1/perl-xenial
+- libdevel-size-perl -- ppa:savoury1/perl-xenial
+- libparse-debianchangelog-perl -- ppa:savoury1/perl-xenial
+- libsereal-decoder-perl -- ppa:savoury1/perl-xenial
+- libsereal-encoder-perl -- ppa:savoury1/perl-xenial
+- libvariable-magic-perl -- ppa:savoury1/perl-xenial
+- liberror-perl -- ppa:savoury1/perl-xenial
+- libfont-afm-perl -- ppa:savoury1/perl-xenial
 - libimage-exiftool-perl -- ppa:savoury1/backports
-B libx11-guitest-perl
-B libdevel-callchecker-perl
-B libb-hooks-op-check-perl
-B libdynaloader-functions-perl
+- libb-hooks-op-check-perl -- ppa:savoury1/perl-xenial
+- libdynaloader-functions-perl -- ppa:savoury1/perl-xenial
