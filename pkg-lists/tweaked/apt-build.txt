@@ -40,7 +40,7 @@ B ureadahead
 - dpkg -- ppa:savoury1/build-tools
 - libdpkg-perl -- ppa:savoury1/build-tools
 - dpkg-dev -- ppa:savoury1/build-tools
-B dpkg-repack
+- dpkg-repack -- ppa:savoury1/build-tools
 B binutils-common
 B binutils-x86-64-linux-gnu
 B binutils
@@ -70,16 +70,15 @@ B libllvm4.0:i386
 - make -- ppa:savoury1/build-tools
 - cmake-data -- ppa:savoury1/build-tools
 - cmake -- ppa:savoury1/build-tools
-B diffstat
 B diffutils
-B patchutils
+- patchutils -- ppa:savoury1/build-tools
 - quilt -- ppa:savoury1/build-tools
 - m4 -- ppa:savoury1/build-tools
 - flex -- ppa:savoury1/build-tools
 - libfl2 -- ppa:savoury1/build-tools
 - libfl-dev -- ppa:savoury1/build-tools
-B libbison-dev
-B bison
+- libbison-dev -- ppa:savoury1/build-tools
+- bison -- ppa:savoury1/build-tools
 - autotools-dev -- ppa:savoury1/build-tools
 - autoconf2.13 -- ppa:savoury1/build-tools
 - autoconf -- ppa:savoury1/build-tools
@@ -134,14 +133,14 @@ B autodep8
 B autopkgtest
 B schroot-common
 B schroot
-B libfile-fnmatch-perl
+B libfile-fnmatch-perl -- newer Perl rebuild
 B debsums
 - python-lzma -- Xenial has same version as Bionic
 B piuparts-common
 B piuparts
-B python-bzrlib
-B bzr
-B bzr-builder
+- python-bzrlib -- ppa:savoury1/build-tools
+- bzr -- ppa:savoury1/build-tools
+- bzr-builder -- Xenial has same version as Bionic
 - python-wadllib -- Xenial has same version as Bionic
 - python3-wadllib -- Xenial has same version as Bionic
 - python3-keyring
@@ -151,11 +150,11 @@ B bzr-builder
 - python3-lazr.restfulclient -- ppa:savoury1/build-tools
 - python-launchpadlib -- ppa:savoury1/build-tools
 - python3-launchpadlib -- ppa:savoury1/build-tools
-- ubuntu-dev-tools
-- python-ubuntutools
-B libsubunit0
-B libsubunit-dev
-B check
+- ubuntu-dev-tools -- ppa:savoury1/build-tools
+- python-ubuntutools -- ppa:savoury1/build-tools
+- libsubunit0 -- ppa:savoury1/python
+- libsubunit-dev -- ppa:savoury1/python
+B check -- rebuild with PIE
 B libconfig9
 - gnome-common -- ppa:savoury1/build-tools
 - cli-common-dev -- Xenial has same version as Bionic
@@ -168,9 +167,9 @@ B libconfig9
 - scour -- ppa:savoury1/build-tools
 - cdbs -- ppa:savoury1/build-tools
 - gnome-pkg-tools -- ppa:savoury1/build-tools
-B librpmio8
-B librpm8
-B rpm-common
-B rpm2cpio
+- librpmio8 -- ppa:savoury1/backports
+- librpm8 -- ppa:savoury1/backports
+- rpm-common -- ppa:savoury1/backports
+- rpm2cpio -- ppa:savoury1/backports
 B squashfs-tools
 - snapd -- already officially backported
