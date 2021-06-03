@@ -53,7 +53,7 @@ B man-db
 B ed
 - sed -- ppa:savoury1/backports
 - grep -- ppa:savoury1/backports
-B less
+- less -- ppa:savoury1/backports
 B findutils
 B mlocate
 - xxd -- ppa:savoury1/backports
