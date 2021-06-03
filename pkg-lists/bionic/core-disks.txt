@@ -40,8 +40,8 @@ B dmraid
 - libparted-fs-resize0 -- ppa:savoury1/backports
 B python-parted
 B libcryptsetup12
-B cryptsetup-bin
-B cryptsetup
+- cryptsetup-bin -- ppa:savoury1/encryption
+- cryptsetup -- ppa:savoury1/encryption
 B libvolume-key1
 B libecryptfs1
 B ecryptfs-utils
@@ -52,8 +52,8 @@ B syslinux-legacy
 B syslinux-utils
 B extlinux
 B gdisk
-B xfsprogs
-B xfslibs-dev
+- xfsprogs -- ppa:savoury1/virtualisation
+- xfslibs-dev -- ppa:savoury1/virtualisation
 B reiserfsprogs
 B dosfstools
 B jfsutils
@@ -87,6 +87,6 @@ B libgnomevfs2-common
 B libgnomevfs2-0
 - gnome-disk-utility -- ppa:savoury1/gtk-xenial
 B f3
-B smartmontools
+- smartmontools -- ppa:savoury1/{backports,utilities}
 B gsmartcontrol
 B iozone3
