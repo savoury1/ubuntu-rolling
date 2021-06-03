@@ -8,8 +8,8 @@
 - gir1.2-pango-1.0 -- ppa:savoury1/gtk-xenial
 - libpango1.0-dev -- ppa:savoury1/gtk-xenial
 - libpango1.0-0 -- ppa:savoury1/gtk-xenial
-B libpangomm-1.4-1v5
-B libpangomm-1.4-dev
+- libpangomm-1.4-1v5 -- ppa:savoury1/gtk-xenial
+- libpangomm-1.4-dev -- ppa:savoury1/gtk-xenial
 - libunistring2 -- ppa:savoury1/backports
 - libunistring2:i386 -- ppa:savoury1/backports
 - readline-common -- ppa:savoury1/backports
@@ -56,16 +56,16 @@ B ed
 B less
 B findutils
 B mlocate
-B xxd
-B vim-common
-B vim-tiny
+- xxd -- ppa:savoury1/backports
+- vim-common -- ppa:savoury1/backports
+- vim-tiny -- ppa:savoury1/backports
 B ncdu
 - libcdk5 -- ppa:savoury1/backports
 - libcdk5nc6 -- required by gphoto2 (2.5.17-1build1) Cosmic
 B libedit2
 B libedit2:i386
 B dialog
-B libgpm2
-B libgpm2:i386
+- libgpm2 -- ppa:savoury1/backports
+- libgpm2:i386 -- ppa:savoury1/backports
 - libre2-4 -- obsolete by libre2-5 (20190101+dfsg-2) Disco
-E libre2-5 -- required by libqt5webenginecore5 (5.12.2+dfsg-2ubuntu1) Disco
+- libre2-5 -- ppa:savoury1/backports

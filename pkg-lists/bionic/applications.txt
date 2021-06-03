@@ -29,7 +29,7 @@ B gthumb
 - xscreensaver-gl -- ppa:savoury1/graphics
 - xscreensaver-gl-extra -- ppa:savoury1/graphics
 - xscreensaver -- ppa:savoury1/graphics
-B kleopatra
+- kleopatra -- ppa:savoury1/kde-xenial
 B kolourpaint
 B kolourpaint4
 - kipi-plugins-common -- no longer used by digiKam 6.x
@@ -37,8 +37,9 @@ B kolourpaint4
 - digikam-data -- ppa:savoury1/digikam
 - digikam-private-libs -- ppa:savoury1/digikam
 - digikam -- ppa:savoury1/digikam
-B kdenlive-data
-B kdenlive
+- librttr-core0.9.6 -- ppa:savoury1/backports
+- kdenlive-data -- ppa:savoury1/kde-xenial
+- kdenlive -- ppa:savoury1/kde-xenial
 - libk3b7 -- ppa:savoury1/multimedia 
 - libk3b7-extracodecs -- ppa:savoury1/multimedia
 - k3b-i18n -- ppa:savoury1/multimedia
@@ -60,5 +61,5 @@ B transmission-common
 B transmission-gtk
 B amule-common
 B amule
-B tigervnc-common
-B tigervnc-viewer
+- tigervnc-common -- ppa:savoury1/backports
+- tigervnc-viewer -- ppa:savoury1/backports

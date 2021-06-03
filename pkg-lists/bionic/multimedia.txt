@@ -22,8 +22,8 @@ B libvisual-0.4-0
 B libvisual-0.4-0:i386
 B libvisual-0.4-plugins
 - libmicrodns0 -- ppa:savoury1/vlc3{-mate}
-B libtotem-plparser-common
-B libtotem-plparser18
+- libtotem-plparser-common -- ppa:savoury1/multimedia
+- libtotem-plparser18 -- ppa:savoury1/multimedia
 - libass9 -- ppa:savoury1/multimedia
 B libdv4
 B libdv4:i386
@@ -56,7 +56,7 @@ B libuchardet0
 - libx265-146 -- superseded by libx265-179
 - libx264-155 -- ppa:savoury1/multimedia
 - libde265-0 -- ppa:savoury1/multimedia
-B libheif1 -- ppa:savoury1/multimedia
+- libheif1 -- ppa:savoury1/multimedia
 B libtheora0
 B libtheora0:i386
 - libvpx5 -- ppa:savoury1/backports
@@ -75,11 +75,11 @@ B libtheora0:i386
 - libavresample3 -- ppa:savoury1/multimedia
 - libavfilter6 -- ppa:savoury1/multimedia
 - libavdevice57 -- ppa:savoury1/multimedia
-B libmovit8
-B libmlt-data
-B libmlt++3
-B libmlt6
-B melt
+- libmovit8 -- ppa:savoury1/multimedia
+- libmlt-data -- ppa:savoury1/multimedia
+- libmlt++3 -- ppa:savoury1/multimedia
+- libmlt6 -- ppa:savoury1/multimedia
+- melt -- ppa:savoury1/multimedia
 - libmpv1 -- ppa:savoury1/mpv
 - mpv -- ppa:savoury1/mpv
 - libflann1.9 -- ppa:savoury1/multimedia

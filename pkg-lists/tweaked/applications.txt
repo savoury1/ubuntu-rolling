@@ -29,17 +29,17 @@ B gthumb
 - xscreensaver-gl -- ppa:savoury1/graphics
 - xscreensaver-gl-extra -- ppa:savoury1/graphics
 - xscreensaver -- ppa:savoury1/graphics
-E kleopatra -- latest available version
-E kolourpaint -- latest available version
-E kolourpaint4 -- latest available version
+E kleopatra -- match kde version (4:19.04.3-0ubuntu1) Eoan
+E kolourpaint -- match kde version (4:19.04.3-0ubuntu1) Eoan
+E kolourpaint4 -- match kde version (4:19.04.3-0ubuntu1) Eoan
 - kipi-plugins-common -- no longer used by digiKam 6.x
 - kipi-plugins -- no longer used by digiKam 6.x
 - digikam-data -- ppa:savoury1/digikam
 - digikam-private-libs -- ppa:savoury1/digikam
 - digikam -- ppa:savoury1/digikam
-E librttr-core0.9.6 -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+- librttr-core0.9.6 -- ppa:savoury1/backports
 E kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
-E kdenlive -- latest available version
+E kdenlive -- match kde version (4:19.04.3-0ubuntu1) Eoan
 - libk3b7 -- ppa:savoury1/multimedia 
 - libk3b7-extracodecs -- ppa:savoury1/multimedia
 - k3b-i18n -- ppa:savoury1/multimedia
@@ -64,7 +64,7 @@ B transmission-common
 B transmission-gtk
 - amule-common -- newer git version
 - amule -- newer git version
-E tigervnc-common
-E tigervnc-viewer
-- chromium-browser -- broken printing in v73+ (https://support.google.com/chrome/thread/3770176)
-- chromium-codecs-ffmpeg-extra -- broken printing in v73+ (https://support.google.com/chrome/thread/4092279)
+- tigervnc-common -- ppa:savoury1/backports
+- tigervnc-viewer -- ppa:savoury1/backports
+- chromium-browser -- ppa:canonical-chromium-builds/stage
+- chromium-codecs-ffmpeg-extra -- ppa:canonical-chromium-builds/stage
