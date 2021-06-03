@@ -9,9 +9,9 @@ B libspeexdsp1
 B libspeexdsp1:i386
 B libsonic0
 B libsbc1
-B libopencore-amrnb0
-B libopencore-amrwb0
-B libgsm1
+- libopencore-amrnb0 -- ppa:savoury1/multimedia
+- libopencore-amrwb0 -- ppa:savoury1/multimedia
+- libgsm1 -- ppa:savoury1/multimedia
 B libspandsp2
 B libsoundtouch1
 B libmusicbrainz5cc2v5
@@ -19,8 +19,8 @@ B libmusicbrainz5cc2v5
 - libtag1v5-vanilla:i386 -- ppa:savoury1/multimedia
 - libtag1v5 -- ppa:savoury1/multimedia
 - libtag1v5:i386 -- ppa:savoury1/multimedia
-B libid3tag0
-B python-mutagen
+- libid3tag0 -- ppa:savoury1/multimedia
+- python-mutagen -- ppa:savoury1/{python,utilities}
 - libwavpack1 -- ppa:savoury1/multimedia
 - libwavpack1:i386 -- ppa:savoury1/multimedia
 - libflac8 -- ppa:savoury1/multimedia
@@ -57,17 +57,17 @@ B libaften0
 - libmpcdec6 -- ppa:savoury1/multimedia
 - libopenmpt0 -- ppa:savoury1/multimedia
 - libopenmpt-modplug1 -- ppa:savoury1/multimedia
-B libdca0
+- libdca0 -- ppa:savoury1/multimedia
 - libgme0 -- ppa:savoury1/multimedia
 B libsidplay1v5
 B libsidplay2
 B libkate1
 - libmodplug1 -- ppa:savoury1/multimedia
 - libsoxr0 -- ppa:savoury1/multimedia
-B libsox3
-B libsox-fmt-alsa
-B libsox-fmt-base
-B sox
+- libsox3 -- ppa:savoury1/multimedia
+- libsox-fmt-alsa -- ppa:savoury1/multimedia
+- libsox-fmt-base -- ppa:savoury1/multimedia
+- sox -- ppa:savoury1/multimedia
 B libaudiofile1
 B libaudiofile1:i386
 B libserd-0-0
@@ -96,12 +96,12 @@ B libaudio2:i386
 - libasound2-dev -- ppa:savoury1/multimedia
 - libasound2-plugins -- ppa:savoury1/multimedia
 - libasound2-plugins:i386 -- ppa:savoury1/multimedia
-B alsa-utils
+- alsa-utils -- ppa:savoury1/multimedia
 - pulseaudio -- ppa:savoury1/multimedia
 - pulseaudio-module-bluetooth -- ppa:savoury1/multimedia
 - pulseaudio-esound-compat -- ppa:savoury1/multimedia
 - libportaudio2 -- ppa:savoury1/multimedia
-B librtaudio6
+- librtaudio6 -- ppa:savoury1/multimedia
 - libsndio6.1 -- redundant due new libsndio7.0
 - libsndio6.1:i386 -- redundant due new libsndio7.0
 - libsndio7.0 -- ppa:savoury1/multimedia
