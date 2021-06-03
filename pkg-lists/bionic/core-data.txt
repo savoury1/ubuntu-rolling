@@ -14,7 +14,7 @@ B pbzip2
 - liblzma5:i386 -- ppa:savoury1/backports
 - liblzma-dev -- ppa:savoury1/backports
 - xz-utils -- ppa:savoury1/backports
-B cpio
+- cpio -- ppa:savoury1/backports
 - libzstd1 -- ppa:savoury1/backports
 - zstd -- ppa:savoury1/backports
 - pigz -- ppa:savoury1/backports
@@ -32,14 +32,14 @@ B libminizip1
 - libarchive13 -- ppa:savoury1/backports
 - libsnappy1v5 -- ppa:savoury1/backports
 - libsnappy-dev -- ppa:savoury1/backports
-B libblosc1
-B libaec0
-B libsz2
-B libaec-dev
+- libblosc1 -- ppa:savoury1/backports
+- libaec0 -- ppa:savoury1/backports
+- libsz2 -- ppa:savoury1/backports
+- libaec-dev -- ppa:savoury1/backports
 - libbrotli1 -- ppa:savoury1/backports
-B libmagic-mgc
-B libmagic1
-B file
+- libmagic-mgc -- ppa:savoury1/backports
+- libmagic1 -- ppa:savoury1/backports
+- file -- ppa:savoury1/backports
 B libaio1
 B libaio1:i386
 B libaio-dev
@@ -47,7 +47,7 @@ B libpq5
 B libsqlite3-0
 B libsqlite3-0:i386
 B mysql-common
-- libmysqlclient20 -- official xenial-updates
+- libmysqlclient20 -- ppa:savoury1/backports
 B libodbc1
 B libodbc1:i386
 B odbcinst1debian2
@@ -58,32 +58,32 @@ B libonig4
 B libjq1
 B jq
 B libqjson0
-B libjsoncpp1
+- libjsoncpp1 -- ppa:savoury1/backports
 B libfastjson4
-B libjansson4
+- libjansson4 -- ppa:savoury1/backports
 - libjson-c3 -- ppa:savoury1/backports
 - libjson-glib-1.0-common -- ppa:savoury1/gtk-xenial
 - libjson-glib-1.0-0 -- ppa:savoury1/gtk-xenial
 - gir1.2-json-1.0 -- ppa:savoury1/gtk-xenial
-B python-simplejson
+- python-simplejson -- ppa:savoury1/python
 B libyajl2
-B libyaml-0-2
+- libyaml-0-2 -- ppa:savoury1/backports
 B libyaml-cpp0.5v5
 B libestr0
 B libcroco3
 B libcroco3:i386
-B libhdf4-0-alt
+- libhdf4-0-alt -- ppa:savoury1/backports
 - hdf5-helpers -- ppa:savoury1/backports
 - libhdf5-100 -- ppa:savoury1/backports
 - libhdf5-cpp-100 -- ppa:savoury1/backports
 - libhdf5-dev -- ppa:savoury1/backports
 - libxapian30 -- ppa:savoury1/backports
-B libclucene-core1v5
-B libclucene-contribs1v5
+- libclucene-core1v5 -- ppa:savoury1/backports
+- libclucene-contribs1v5 -- ppa:savoury1/backports
 - libsynctex1 -- ppa:savoury1/tex-xenial
 - libkpathsea6 -- ppa:savoury1/tex-xenial
 B intltool
-B libxerces-c3.2
+- libxerces-c3.2 -- ppa:savoury1/backports
 - xml-core -- ppa:savoury1/build-tools
 - libxml2 -- ppa:savoury1/backports
 - libxml2:i386 -- ppa:savoury1/backports
@@ -98,8 +98,8 @@ B libxerces-c3.2
 - libtinyxml2-6 -- redundant due libtinyxml2-6a
 - libtinyxml2-6a -- ppa:savoury1/backports
 - libtinyxml2.6.2v5 -- ppa:savoury1/backports
-B libpugixml1v5
-B libraptor2-0
+- libpugixml1v5 -- ppa:savoury1/backports
+- libraptor2-0 -- official Xenial updates
 B librasqal3
 B librdf0
 B doc-base
@@ -121,12 +121,12 @@ B librarian0
 B rarian-compat
 B scrollkeeper
 B libtidy5
-B tidy
-B python-utidylib
+- tidy -- ppa:savoury1/{backports,python}
+- python-utidylib -- ppa:savoury1/python
 B mime-support
 B shared-mime-info
-B libgmime-2.6-0
-B libgmime2.6-cil
+- libgmime-2.6-0 -- ppa:savoury1/backports
+- libgmime2.6-cil -- ppa:savoury1/backports
 B libgmime-3.0-0
 B libdotconf0
 - libappstream-glib8 -- ppa:savoury1/apt-xenial
