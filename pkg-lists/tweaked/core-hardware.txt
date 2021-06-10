@@ -10,7 +10,7 @@ B gir1.2-upowerglib-1.0
 B acpid
 B acpica-tools
 - iucode-tool -- ppa:savoury1/virtualisation
-B intel-microcode
+- intel-microcode -- official xenial-infra-security (ESM)
 B libcpufreq0
 B cpufrequtils
 B time
