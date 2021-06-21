@@ -23,7 +23,7 @@ B language-pack-gnome-en-base
 B language-pack-gnome-en
 B libexttextcat-data
 B libexttextcat-2.0-0
-B libphonenumber7
+- libphonenumber7 -- ppa:savoury1/backports
 B libgxps2
 B mscompress
 B libmspack0
