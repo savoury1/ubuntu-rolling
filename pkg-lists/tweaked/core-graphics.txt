@@ -1,8 +1,8 @@
 B libaa1
 B libaa1:i386
-B libcaca0
-B libcaca0:i386
-B libcaca-dev
+- libcaca0 -- patched version already in Xenial
+- libcaca0:i386 -- patched version already in Xenial
+- libcaca-dev -- patched version already in Xenial
 - libjpeg-turbo8 -- ppa:savoury1/graphics
 - libjpeg-turbo8:i386 -- ppa:savoury1/graphics
 - libjpeg-turbo8-dev -- ppa:savoury1/graphics
@@ -13,13 +13,13 @@ B libcaca-dev
 B libjpeg9
 - libjpeg-turbo-progs -- ppa:savoury1/graphics
 - libopenjp2-7 -- ppa:savoury1/graphics
-B libcharls1
-B libgdcm2.8
+- libcharls1 -- superseded by libcharls2
+- libgdcm2.8 -- superseded by libgdcm3.0
 B libjbig0
 B libjbig0:i386
 B libjbig-dev
-B libjbig2dec0
-B libgif7
+- libjbig2dec0 -- ppa:savoury1/graphics
+- libgif7 -- ppa:savoury1/graphics
 - libtiff5 -- ppa:savoury1/graphics
 - libtiff5:i386 -- ppa:savoury1/graphics
 - libtiffxx5 -- ppa:savoury1/graphics
@@ -30,53 +30,53 @@ B libgif7
 - libpng-dev -- ppa:savoury1/graphics
 - libpng-dev:i386 -- ppa:savoury1/graphics
 B libart-2.0-2
-B python-renderpm
+- python-renderpm -- ppa:savoury1/python
 - libwebp6 -- ppa:savoury1/graphics
 - libwebp6:i386 -- ppa:savoury1/graphics
 - libwebpmux3 -- ppa:savoury1/graphics
 - libwebpdemux2 -- ppa:savoury1/graphics
 - libilmbase12 -- identical version in Xenial and Bionic
 E libilmbase23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
-B libopenexr22
+- libopenexr22 -- patched version for Xenial from ESM
 E libopenexr23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 - libvigraimpex6 -- ppa:savoury1/graphics
 - libvigraimpex-dev -- ppa:savoury1/graphics
-B libfox-1.6-0
+- libfox-1.6-0 -- ppa:savoury1/backports
 - liblcms2-2 -- ppa:savoury1/graphics
 - liblcms2-2:i386 -- ppa:savoury1/graphics
 - liblcms2-utils -- ppa:savoury1/graphics
 - liblcms2-dev -- ppa:savoury1/graphics
 B argyll-ref
 B argyll
-B libcolord2
-B libcolorhug2
+- libcolord2 -- ppa:savoury1/graphics
+- libcolorhug2 -- ppa:savoury1/graphics
 B libcolord-gtk1
-B colord-data
-B colord
-- libopencolorio1v5 -- superseded by coming backport
-- libopenimageio1.7 -- superseded by coming backport
+- colord-data -- ppa:savoury1/graphics
+- colord -- ppa:savoury1/graphics
+- libopencolorio1v5 -- ppa:savoury1/blender
+- libopenimageio1.7 -- superseded by libopenimageio2.2
 - libcairo2 -- ppa:savoury1/graphics
 - libcairo2:i386 -- ppa:savoury1/graphics
 - libcairo-gobject2 -- ppa:savoury1/graphics
 - libcairo-gobject2:i386 -- ppa:savoury1/graphics
 - libcairo-script-interpreter2 -- ppa:savoury1/graphics
 - libcairo2-dev -- ppa:savoury1/graphics
-B libcairomm-1.0-1v5
-B libcairomm-1.0-dev
-B librsvg2-2
-B librsvg2-2:i386
-B librsvg2-common
-B librsvg2-common:i386
-B gir1.2-rsvg-2.0
+- libcairomm-1.0-1v5 -- ppa:savoury1/gtk-xenial
+- libcairomm-1.0-dev -- ppa:savoury1/gtk-xenial
+- librsvg2-2 -- ppa:savoury1/graphics
+- librsvg2-2:i386 -- ppa:savoury1/graphics
+- librsvg2-common -- ppa:savoury1/graphics
+- librsvg2-common:i386 -- ppa:savoury1/graphics
+- gir1.2-rsvg-2.0 -- ppa:savoury1/graphics
 - libwmf0.2-7 -- ppa:savoury1/graphics
 - libwmf0.2-7-gtk -- ppa:savoury1/graphics
-B icoutils
+- icoutils -- ppa:savoury1/graphics
 - libgd3 -- ppa:savoury1/graphics
 - libgd3:i386 -- ppa:savoury1/graphics
 - libgd-dev -- ppa:savoury1/graphics
-B libcoin80v5
-B libnetpbm10
-B netpbm
+- libcoin80v5 -- superseded by libcoin80c
+- libnetpbm10 -- ppa:savoury1/graphics
+- netpbm -- ppa:savoury1/graphics
 - libgdk-pixbuf2.0-common -- ppa:savoury1/graphics
 - libgdk-pixbuf2.0-0 -- ppa:savoury1/graphics
 - libgdk-pixbuf2.0-0:i386 -- ppa:savoury1/graphics
@@ -89,7 +89,7 @@ B libpotrace0
 B libpano13-3
 - enblend -- ppa:savoury1/graphics
 - enfuse -- ppa:savoury1/graphics
-B libgraphicsmagick-q16-3
+- libgraphicsmagick-q16-3 -- ppa:savoury1/graphics
 - imagemagick-6-common -- ppa:savoury1/graphics
 - imagemagick-common -- ppa:savoury1/graphics
 - libmagickcore-6.q16-3 -- ppa:savoury1/graphics
@@ -100,7 +100,7 @@ B libgraphicsmagick-q16-3
 B libopenobex2
 B obex-data-server
 B libexempi3
-B libexiv2-14
+- libexiv2-14 -- ppa:savoury1/graphics
 - exiv2 -- ppa:savoury1/graphics
 - libgexiv2-2 -- ppa:savoury1/graphics
 - gir1.2-gexiv2-0.10 -- ppa:savoury1/graphics
@@ -121,7 +121,7 @@ E dcraw -- latest available version
 - libsane1 -- ppa:savoury1/graphics
 - libsane1:i386 -- ppa:savoury1/graphics
 - sane-utils -- ppa:savoury1/graphics
-B simple-scan
+- simple-scan -- ppa:savoury1/gtk-xenial
 - libplacebo4 -- superseded by libplacebo7
 - libbabl-0.1-0 -- ppa:savoury1/gimp
 - libgegl-0.3-0 -- superseded by libgegl-0.4-0
