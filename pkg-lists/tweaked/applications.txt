@@ -1,18 +1,18 @@
 B gnome-calculator
-B evolution-data-server-common
-B evolution-data-server
-B libcamel-1.2-61
-B gir1.2-camel-1.2
-B libedataserver-1.2-23
-B gir1.2-edataserver-1.2
-B libebackend-1.2-10
-B libebook-contacts-1.2-2
-B gir1.2-ebookcontacts-1.2
-B libedata-book-1.2-25
-B libebook-1.2-19
-B gir1.2-ebook-1.2
-B libecal-1.2-19
-B libedata-cal-1.2-28
+- evolution-data-server-common -- ppa:savoury1/gtk-xenial
+- evolution-data-server -- ppa:savoury1/gtk-xenial
+- libcamel-1.2-61 -- ppa:savoury1/gtk-xenial
+- gir1.2-camel-1.2 -- ppa:savoury1/gtk-xenial
+- libedataserver-1.2-23 -- ppa:savoury1/gtk-xenial
+- gir1.2-edataserver-1.2 -- ppa:savoury1/gtk-xenial
+- libebackend-1.2-10 -- ppa:savoury1/gtk-xenial
+- libebook-contacts-1.2-2 -- ppa:savoury1/gtk-xenial
+- gir1.2-ebookcontacts-1.2 -- ppa:savoury1/gtk-xenial
+- libedata-book-1.2-25 -- ppa:savoury1/gtk-xenial
+- libebook-1.2-19 -- ppa:savoury1/gtk-xenial
+- gir1.2-ebook-1.2 -- ppa:savoury1/gtk-xenial
+- libecal-1.2-19 -- ppa:savoury1/gtk-xenial
+- libedata-cal-1.2-28 -- ppa:savoury1/gtk-xenial
 B tomboy
 B artha
 B libgtkhex-3-0
@@ -48,18 +48,18 @@ E kdenlive -- match kde version (4:19.04.3-0ubuntu1) Eoan
 E winff-data -- same series as winff (1.5.5-6) Eoan
 E winff-qt -- same series as winff (1.5.5-6) Eoan
 E winff -- latest available version
-- meld -- ppa:savoury1/meld
-B 4pane
-B hexchat-common
-B hexchat
+- meld -- ppa:savoury1/{meld,utilities}
+- 4pane -- ppa:savoury1/utilities
+- hexchat-common -- ppa:savoury1/backports
+- hexchat -- ppa:savoury1/backports
 - pidgin-data -- ppa:savoury1/backports
 - libpurple0 -- ppa:savoury1/backports
 - libpurple-bin -- ppa:savoury1/backports
 - pidgin -- ppa:savoury1/backports
 - pidgin-libnotify -- ppa:savoury1/backports
-B deluge-common
-B deluge-gtk
-B deluge
+- deluge-common -- ppa:savoury1/backports
+- deluge-gtk -- ppa:savoury1/backports
+- deluge -- ppa:savoury1/backports
 B transmission-common
 B transmission-gtk
 - amule-common -- newer git version
