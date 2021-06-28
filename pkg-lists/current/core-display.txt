@@ -64,7 +64,7 @@ B freeglut3
 B libgle3
 B libgle3-dev
 - libgles2-mesa -- ppa:savoury1/display
-B mesa-utils
+- mesa-utils -- ppa:savoury1/display
 - libglvnd0 -- ppa:savoury1/display
 - libglvnd0:i386 -- ppa:savoury1/display
 - libgles1 -- ppa:savoury1/display
@@ -83,22 +83,22 @@ B mesa-utils
 - gir1.2-cogl-1.0 -- ppa:savoury1/display
 - libcogl-pango20 -- ppa:savoury1/display
 - gir1.2-coglpango-1.0 -- ppa:savoury1/display
-B libclutter-1.0-0
-B gir1.2-clutter-1.0
-B libclutter-gst-3.0-0
-B libclutter-gtk-1.0-0
-B gir1.2-gtkclutter-1.0
+- libclutter-1.0-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-clutter-1.0 -- ppa:savoury1/gtk-xenial
+- libclutter-gst-3.0-0 -- ppa:savoury1/gtk-xenial
+- libclutter-gtk-1.0-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-gtkclutter-1.0 -- ppa:savoury1/gtk-xenial
 B libchamplain-0.12-0
 B libchamplain-gtk-0.12-0
-B metacity-common
-B libmetacity1
-B metacity
-B compiz-core
-B libcompizconfig0
-B python-compizconfig
-B compizconfig-settings-manager
-B libdecoration0
-B compiz-plugins-default
-B compiz-plugins
-B compiz-gnome
-B compiz
+- metacity-common -- ppa:savoury1/gtk-xenial
+- libmetacity1 -- ppa:savoury1/gtk-xenial
+- metacity -- ppa:savoury1/gtk-xenial
+- compiz-core -- ppa:savoury1/display
+- libcompizconfig0 -- ppa:savoury1/display
+- python-compizconfig -- ppa:savoury1/display
+- compizconfig-settings-manager -- ppa:savoury1/display
+- libdecoration0 -- ppa:savoury1/display
+- compiz-plugins-default -- ppa:savoury1/display
+- compiz-plugins -- ppa:savoury1/display
+- compiz-gnome -- ppa:savoury1/display
+- compiz -- ppa:savoury1/display
