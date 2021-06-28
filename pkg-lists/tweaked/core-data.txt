@@ -27,7 +27,7 @@ B zip
 - p7zip -- ppa:savoury1/backports
 - p7zip-full -- ppa:savoury1/backports
 - p7zip-rar -- ppa:savoury1/backports
-B libzip4
+- libzip4 -- ppa:savoury1/backports
 B libminizip1
 - libarchive13 -- ppa:savoury1/backports
 - libsnappy1v5 -- ppa:savoury1/backports
@@ -44,8 +44,8 @@ B libaio1
 B libaio1:i386
 B libaio-dev
 B libpq5
-B libsqlite3-0
-B libsqlite3-0:i386
+- libsqlite3-0 -- ppa:savoury1/backports
+- libsqlite3-0:i386 -- ppa:savoury1/backports
 B mysql-common
 - libmysqlclient20 -- ppa:savoury1/backports
 B libodbc1
@@ -124,9 +124,9 @@ B libtidy5
 - tidy -- ppa:savoury1/{backports,python}
 - python-utidylib -- ppa:savoury1/python
 B mime-support
-B shared-mime-info
+- shared-mime-info -- ppa:savoury1/backports
 - libgmime-2.6-0 -- ppa:savoury1/backports
 - libgmime2.6-cil -- ppa:savoury1/backports
-B libgmime-3.0-0
+- libgmime-3.0-0 -- ppa:savoury1/backports
 B libdotconf0
 - libappstream-glib8 -- ppa:savoury1/apt-xenial
