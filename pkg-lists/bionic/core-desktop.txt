@@ -13,7 +13,7 @@ B gconf-service-backend
 B gconf2
 B gconf-editor
 B python-gconf
-B libidl-2-0
+- libidl-2-0 -- Xenial has same version as Bionic
 B liborbit2
 B liborbit-2-0
 B libgnomecanvas2-common
@@ -30,27 +30,27 @@ B python-gnome2
 - libwxbase3.0-0v5 -- ppa:savoury1/backports
 - libwxgtk3.0-0v5 -- ppa:savoury1/backports
 - libwxgtk3.0-gtk3-0v5 -- ppa:savoury1/backports
-B python-wxversion
-B python-wxgtk3.0
+- python-wxversion -- ppa:savoury1/backports
+- python-wxgtk3.0 -- ppa:savoury1/backports
 B libfltk1.3
 B libfltk-images1.3
 B libnewt0.52
 B libnewt-dev
 B whiptail
-B libgirepository-1.0-1
-B gobject-introspection
-B gir1.2-glib-2.0
-B gir1.2-freedesktop
+- libgirepository-1.0-1 -- ppa:savoury1/gtk-xenial
+- gobject-introspection -- ppa:savoury1/gtk-xenial
+- gir1.2-glib-2.0 -- ppa:savoury1/gtk-xenial
+- gir1.2-freedesktop -- ppa:savoury1/gtk-xenial
 B d-feet
-B libpeas-common
-B libpeas-1.0-0
-B gir1.2-peas-1.0
-B libpeas-1.0-python2loader
+- libpeas-common -- ppa:savoury1/gtk-xenial
+- libpeas-1.0-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-peas-1.0 -- ppa:savoury1/gtk-xenial
+- libpeas-1.0-python2loader -- ppa:savoury1/gtk-xenial
 B libglib2.0-cil
 B libgtk2.0-cil
 B libglade2.0-cil
-B python-glade2
-B python-gtk2
+- python-glade2 -- ppa:savoury1/python
+- python-gtk2 -- ppa:savoury1/python
 B python-gtksourceview2
 B libibus-1.0-5
 B libibus-1.0-5:i386
@@ -61,8 +61,8 @@ B ibus
 B libstartup-notification0
 B libnotify4
 B libnotify-bin
-B zenity-common
-B zenity
+- zenity-common -- ppa:savoury1/gtk-xenial
+- zenity -- ppa:savoury1/gtk-xenial
 B libgirara-gtk3-3
 B gir1.2-notify-0.7
 B libwnck-common
@@ -82,42 +82,42 @@ B libdbusmenu-gtk4
 B libbamf3-2
 B gir1.2-bamf-3
 B bamfdaemon
-B libdee-1.0-4
-B gir1.2-dee-1.0
-B libindicator3-7
-B libappindicator3-1
-B gir1.2-appindicator3-0.1
-B indicator-common
-B libindicator7
-B libappindicator1
-B libappindicator0.1-cil
-B python-appindicator
+- libdee-1.0-4 -- ppa:savoury1/gtk-xenial
+- gir1.2-dee-1.0 -- ppa:savoury1/gtk-xenial
+- libindicator3-7 -- ppa:savoury1/backports
+- libappindicator3-1 -- ppa:savoury1/backports
+- gir1.2-appindicator3-0.1 -- ppa:savoury1/backports
+- indicator-common -- ppa:savoury1/backports
+- libindicator7 -- ppa:savoury1/backports
+- libappindicator1 -- ppa:savoury1/backports
+- libappindicator0.1-cil -- ppa:savoury1/backports
+- python-appindicator -- ppa:savoury1/backports
 B indicator-application
-B libmessaging-menu0
-B gir1.2-messagingmenu-1.0
+- libmessaging-menu0 -- ppa:savoury1/gtk-xenial
+- gir1.2-messagingmenu-1.0 -- ppa:savoury1/gtk-xenial
 B libzephyr4
-B libtelepathy-glib0
+- libtelepathy-glib0 -- ppa:savoury1/gtk-xenial
 B gnome-color-manager
 B libgweather-common
 B libgweather-3-15
-B gsettings-desktop-schemas
+- gsettings-desktop-schemas -- ppa:savoury1/gtk-xenial
 B gnome-settings-daemon-schemas
-B gnome-desktop3-data
-B libgnome-desktop-3-17
+- gnome-desktop3-data -- ppa:savoury1/gtk-xenial
+- libgnome-desktop-3-17 -- ppa:savoury1/gtk-xenial
 B gnome-session-bin
-B desktop-file-utils
+- desktop-file-utils -- ppa:savoury1/build-tools
 B libnautilus-extension1a
 B libnemo-extension1
 B im-config
-B libgnomekbd-common
-B libgnomekbd8
-B gir1.2-gkbd-3.0
-B gkbd-capplet
+- libgnomekbd-common -- ppa:savoury1/gtk-xenial
+- libgnomekbd8 -- ppa:savoury1/gtk-xenial
+- gir1.2-gkbd-3.0 -- ppa:savoury1/gtk-xenial
+- gkbd-capplet -- ppa:savoury1/gtk-xenial
 B xdg-utils
 B xdg-user-dirs
 B xdg-user-dirs-gtk
-B python-xdg
-B python3-xdg
+- python-xdg -- ppa:savoury1/python
+- python3-xdg -- ppa:savoury1/python
 B session-migration
 B system-tools-backends
 B liboobs-1-5
@@ -129,14 +129,14 @@ B gnome-system-tools
 - update-notifier-common -- leave at default version
 - ubuntu-system-service -- leave at default version
 - ubuntu-advantage-tools -- leave at default version
-B libzeitgeist-2.0-0
+- libzeitgeist-2.0-0 -- ppa:savoury1/gtk-xenial
 B folks-common
 B libvte-common
 B libvte9
 B python-vte
-B libvte-2.91-common
-B libvte-2.91-0
-B gir1.2-vte-2.91
+- libvte-2.91-common -- ppa:savoury1/gtk-xenial
+- libvte-2.91-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-vte-2.91 -- ppa:savoury1/gtk-xenial
 B yelp-xsl
 B libyelp0
 B yelp
