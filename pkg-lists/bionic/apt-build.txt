@@ -99,7 +99,7 @@ B libsgmls-perl
 - debhelper -- ppa:savoury1/build-tools
 - dh-translations -- ppa:savoury1/build-tools
 B dh-make
-B dput
+- dput -- ppa:savoury1/build-tools
 B deborphan
 B pkg-config
 - pkg-kde-tools -- ppa:savoury1/build-tools
@@ -113,14 +113,14 @@ B python3-debconf
 - sensible-utils -- ppa:savoury1/backports
 - maven-repo-helper -- ppa:savoury1/build-tools
 - javahelper -- ppa:savoury1/build-tools
-B ant
+- ant -- ppa:savoury1/java-xenial
 - debootstrap -- ppa:savoury1/build-tools
 B vmdebootstrap
 - pbuilder -- ppa:savoury1/build-tools
 - cowdancer -- ppa:savoury1/build-tools
 - cowbuilder -- ppa:savoury1/build-tools
-B libeatmydata1
-B eatmydata
+- libeatmydata1 -- ppa:savoury1/build-tools
+- eatmydata -- ppa:savoury1/build-tools
 - python3-dateutil -- ppa:savoury1/python
 - git-buildpackage -- ppa:savoury1/build-tools
 - libxdelta2 -- ppa:savoury1/build-tools
@@ -130,9 +130,9 @@ B xdelta3
 B dctrl-tools
 - devscripts -- ppa:savoury1/build-tools
 B autodep8
-B autopkgtest
-B schroot-common
-B schroot
+- autopkgtest -- ppa:savoury1/build-tools
+- schroot-common -- ppa:savoury1/build-tools
+- schroot -- ppa:savoury1/build-tools
 B debsums
 - python-lzma -- Xenial has same version as Bionic
 B piuparts-common
@@ -142,7 +142,7 @@ B piuparts
 - bzr-builder -- Xenial has same version as Bionic
 - python-wadllib -- Xenial has same version as Bionic
 - python3-wadllib -- Xenial has same version as Bionic
-- python3-keyring
+- python3-keyring -- ppa:savoury1/python
 - python-lazr.uri -- Xenial has same version as Bionic
 - python3-lazr.uri -- Xenial has same version as Bionic
 - python-lazr.restfulclient -- ppa:savoury1/build-tools
