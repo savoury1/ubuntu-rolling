@@ -8,7 +8,7 @@ B libspeex1:i386
 B libspeexdsp1
 B libspeexdsp1:i386
 B libsonic0
-B libsbc1
+- libsbc1 -- ppa:savoury1/multimedia
 - libopencore-amrnb0 -- ppa:savoury1/multimedia
 - libopencore-amrwb0 -- ppa:savoury1/multimedia
 - libgsm1 -- ppa:savoury1/multimedia
@@ -70,10 +70,10 @@ B libkate1
 - sox -- ppa:savoury1/multimedia
 B libaudiofile1
 B libaudiofile1:i386
-B libserd-0-0
-B libsord-0-0
-B libsratom-0-0
-B liblilv-0-0
+- libserd-0-0 -- ppa:savoury1/multimedia
+- libsord-0-0 -- ppa:savoury1/multimedia
+- libsratom-0-0 -- ppa:savoury1/multimedia
+- liblilv-0-0 -- ppa:savoury1/multimedia
 - liborc-0.4-0 -- ppa:savoury1/multimedia
 - liborc-0.4-0:i386 -- ppa:savoury1/multimedia
 B libaudio2
@@ -124,4 +124,4 @@ B libofa0
 - libchromaprint1 -- ppa:savoury1/multimedia
 - librubberband2 -- ppa:savoury1/multimedia
 B libvamp-hostsdk3v5
-B libsuil-0-0
+- libsuil-0-0 -- ppa:savoury1/multimedia
