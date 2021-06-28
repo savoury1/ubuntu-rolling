@@ -8,21 +8,21 @@ B libupower-glib3
 B upower
 B gir1.2-upowerglib-1.0
 B acpid
-B acpica-tools
+- acpica-tools -- ppa:savoury1/virtualisation
 - iucode-tool -- ppa:savoury1/virtualisation
 - intel-microcode -- official xenial-infra-security (ESM)
 B libcpufreq0
 B cpufrequtils
 B time
-B thermald
+- thermald -- ppa:savoury1/backports
 B hddtemp
 B hdparm
 - libsensors4 -- ppa:savoury1/backports
 - libsensors4:i386 -- ppa:savoury1/backports
 - lm-sensors -- ppa:savoury1/backports
 B iio-sensor-proxy
-B libgtop2-common
-B libgtop-2.0-11
+- libgtop2-common -- ppa:savoury1/backports
+- libgtop-2.0-11 -- ppa:savoury1/backports
 - psensor-common -- ppa:savoury1/utilities
 - psensor -- ppa:savoury1/utilities
 - dmidecode -- ppa:savoury1/backports
