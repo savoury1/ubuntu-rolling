@@ -64,7 +64,7 @@
 - libgrantlee-textdocument5 -- ppa:savoury1/qt-xenial
 - libqca-qt5-2 -- ppa:savoury1/qt-xenial
 - libqca-qt5-2-plugins -- ppa:savoury1/qt-xenial
-B pinentry-qt
+- pinentry-qt -- ppa:savoury1/qt-xenial
 - libpolkit-qt5-1-1 -- ppa:savoury1/qt-xenial
 - libaccounts-qt5-1 -- ppa:savoury1/qt-xenial
 B libsignon-glib1

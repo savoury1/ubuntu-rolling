@@ -105,6 +105,7 @@ B libkactivities6
 - libkf5xmlgui-bin -- ppa:savoury1/kde-xenial
 - libkf5kipi-data -- ppa:savoury1/kde-xenial
 - libkf5kipi32.0.0 -- ppa:savoury1/kde-xenial
+- libkf5mediawiki5 -- ppa:savoury1/kde-xenial
 - libkf5kiocore5 -- ppa:savoury1/kde-xenial
 - libkf5configgui5 -- ppa:savoury1/kde-xenial
 - libkf5widgetsaddons-data -- ppa:savoury1/kde-xenial
