@@ -13,7 +13,7 @@ B libimobiledevice6
 B libimobiledevice-utils
 B ideviceinstaller
 B libical2
-B libical3
+- libical3 -- ppa:savoury1/backports
 B libsgutils2-2
 B libgpod4
 B libgpod-common
@@ -36,8 +36,8 @@ B wodim
 B libburn4
 B cdrskin
 B libdvd-pkg
-- libdvdread4 -- obsolete by libdvdread7
-- libdvdread7 -- ppa:savoury1/multimedia
+- libdvdread4 -- obsolete by libdvdread8
+- libdvdread8 -- ppa:savoury1/multimedia
 - libdvdnav4 -- ppa:savoury1/multimedia
 B libdvbpsi10
 - libasm-java -- ppa:savoury1/backports
@@ -47,10 +47,10 @@ B libdvbpsi10
 B growisofs
 B dvd+rw-tools
 - dvdauthor -- ppa:savoury1/multimedia
-B brasero-common
-B libbrasero-media3-1
-B brasero-cdrkit
-B brasero
+- brasero-common -- ppa:savoury1/multimedia
+- libbrasero-media3-1 -- ppa:savoury1/multimedia
+- brasero-cdrkit -- ppa:savoury1/multimedia
+- brasero -- ppa:savoury1/multimedia
 B libraw1394-11
 B libraw1394-11:i386
 B libavc1394-0
