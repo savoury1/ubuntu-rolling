@@ -6,44 +6,44 @@ B phonon-backend-gstreamer
 B phonon4qt5-backend-gstreamer
 B phonon
 B phonon4qt5
-B libthreadweaver4
-B libsolid4
-B kdelibs5-data
-B libkdecore5
-B libkjsapi4
-B libkjsembed4
-B libkpty4
-B libkdesu5
-B libkdeui5
-B libkntlm4
-B libkdnssd4
-B libkrosscore4
-B kdelibs-bin
-B libkio5
-B kdoctools
-B libkfile4
-B libkparts4
-B libkprintutils4
-B libkde3support4
-B libknotifyconfig4
-B libkmediaplayer4
-B libkdewebkit5
-B libktexteditor4
-B libkhtml5
-B libkemoticons4
-B libkcmutils4
-B libkdeclarative5
-B libknewstuff3-4
-B kdelibs5-plugins
-B libplasma3
-B libkatepartinterfaces4
-B kate-data
-B katepart
-B plasma-scriptengine-javascript
-B kde-runtime-data
-B kde-runtime
-B libkxmlrpcclient4
-B libgpgme++2v5
+- libthreadweaver4 -- ppa:savoury1/kde-xenial
+- libsolid4 -- ppa:savoury1/kde-xenial
+- kdelibs5-data -- ppa:savoury1/kde-xenial
+- libkdecore5 -- ppa:savoury1/kde-xenial
+- libkjsapi4 -- ppa:savoury1/kde-xenial
+- libkjsembed4 -- ppa:savoury1/kde-xenial
+- libkpty4 -- ppa:savoury1/kde-xenial
+- libkdesu5 -- ppa:savoury1/kde-xenial
+- libkdeui5 -- ppa:savoury1/kde-xenial
+- libkntlm4 -- ppa:savoury1/kde-xenial
+- libkdnssd4 -- ppa:savoury1/kde-xenial
+- libkrosscore4 -- ppa:savoury1/kde-xenial
+- kdelibs-bin -- ppa:savoury1/kde-xenial
+- libkio5 -- ppa:savoury1/kde-xenial
+- kdoctools -- ppa:savoury1/kde-xenial
+- libkfile4 -- ppa:savoury1/kde-xenial
+- libkparts4 -- ppa:savoury1/kde-xenial
+- libkprintutils4 -- ppa:savoury1/kde-xenial
+- libkde3support4 -- ppa:savoury1/kde-xenial
+- libknotifyconfig4 -- ppa:savoury1/kde-xenial
+- libkmediaplayer4 -- ppa:savoury1/kde-xenial
+- libkdewebkit5 -- ppa:savoury1/kde-xenial
+- libktexteditor4 -- ppa:savoury1/kde-xenial
+- libkhtml5 -- ppa:savoury1/kde-xenial
+- libkemoticons4 -- ppa:savoury1/kde-xenial
+- libkcmutils4 -- ppa:savoury1/kde-xenial
+- libkdeclarative5 -- ppa:savoury1/kde-xenial
+- libknewstuff3-4 -- ppa:savoury1/kde-xenial
+- kdelibs5-plugins -- ppa:savoury1/kde-xenial
+- libplasma3 -- ppa:savoury1/kde-xenial
+- libkatepartinterfaces4 -- ppa:savoury1/kde-xenial
+- kate-data -- ppa:savoury1/kde-xenial
+- katepart -- ppa:savoury1/kde-xenial
+- plasma-scriptengine-javascript -- ppa:savoury1/kde-xenial
+- kde-runtime-data -- ppa:savoury1/kde-xenial
+- kde-runtime -- ppa:savoury1/kde-xenial
+- libkxmlrpcclient4 -- ppa:savoury1/kde-xenial
+- libgpgme++2v5 -- ppa:savoury1/kde-xenial
 B libkactivities6
 - libdlrestrictions1 -- ppa:savoury1/build-tools
 - breeze-icon-theme -- ppa:savoury1/kde-xenial
@@ -180,7 +180,7 @@ B kde-cli-tools
 - qml-module-org-kde-kirigami2 -- ppa:savoury1/kde-xenial
 - libkf5parts-data -- ppa:savoury1/kde-xenial
 - libkf5parts5 -- ppa:savoury1/kde-xenial
-B libdmtx0a
+- libdmtx0a -- Xenial has same version as Bionic
 B libqrencode3
 - libkf5prison5 -- ppa:savoury1/kde-xenial
 - libkf5kdelibs4support-data -- ppa:savoury1/kde-xenial
@@ -194,7 +194,7 @@ B libqrencode3
 - libkf5plasmaquick5 -- ppa:savoury1/kde-xenial
 - plasma-framework -- ppa:savoury1/kde-xenial
 B libkworkspace5-5
-B drkonqi
+- drkonqi -- ppa:savoury1/kde-xenial
 B kdeconnect
-B kde-style-breeze
-B kde-style-breeze-qt4
+- kde-style-breeze -- ppa:savoury1/kde-xenial
+- kde-style-breeze-qt4 -- ppa:savoury1/kde-xenial
