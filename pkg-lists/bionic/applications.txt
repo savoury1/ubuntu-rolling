@@ -17,8 +17,8 @@ B tomboy
 B artha
 B libgtkhex-3-0
 B ghex
-B gthumb-data
-B gthumb
+- gthumb-data -- ppa:savoury1/{graphics,gtk-xenial}
+- gthumb -- ppa:savoury1/{graphics,gtk-xenial}
 - hugin-data -- ppa:savoury1/graphics
 - hugin-tools -- ppa:savoury1/graphics
 - hugin -- ppa:savoury1/graphics
@@ -30,16 +30,16 @@ B gthumb
 - xscreensaver-gl-extra -- ppa:savoury1/graphics
 - xscreensaver -- ppa:savoury1/graphics
 - kleopatra -- ppa:savoury1/kde-xenial
-B kolourpaint
-B kolourpaint4
+- kolourpaint -- ppa:savoury1/kde-xenial
+- kolourpaint4 -- ppa:savoury1/kde-xenial
 - kipi-plugins-common -- no longer used by digiKam 6.x
 - kipi-plugins -- no longer used by digiKam 6.x
 - digikam-data -- ppa:savoury1/digikam
 - digikam-private-libs -- ppa:savoury1/digikam
 - digikam -- ppa:savoury1/digikam
 - librttr-core0.9.6 -- ppa:savoury1/backports
-- kdenlive-data -- ppa:savoury1/kde-xenial
-- kdenlive -- ppa:savoury1/kde-xenial
+- kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+- kdenlive -- match kde version (4:19.04.3-0ubuntu1) Eoan
 - libk3b7 -- ppa:savoury1/multimedia 
 - libk3b7-extracodecs -- ppa:savoury1/multimedia
 - k3b-i18n -- ppa:savoury1/multimedia

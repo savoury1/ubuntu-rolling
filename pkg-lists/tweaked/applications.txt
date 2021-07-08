@@ -17,8 +17,8 @@ B tomboy
 B artha
 B libgtkhex-3-0
 B ghex
-B gthumb-data
-B gthumb
+- gthumb-data -- ppa:savoury1/{graphics,gtk-xenial}
+- gthumb -- ppa:savoury1/{graphics,gtk-xenial}
 - hugin-data -- ppa:savoury1/graphics
 - hugin-tools -- ppa:savoury1/graphics
 - hugin -- ppa:savoury1/graphics
@@ -29,25 +29,25 @@ B gthumb
 - xscreensaver-gl -- ppa:savoury1/graphics
 - xscreensaver-gl-extra -- ppa:savoury1/graphics
 - xscreensaver -- ppa:savoury1/graphics
-E kleopatra -- match kde version (4:19.04.3-0ubuntu1) Eoan
-E kolourpaint -- match kde version (4:19.04.3-0ubuntu1) Eoan
-E kolourpaint4 -- match kde version (4:19.04.3-0ubuntu1) Eoan
+- kleopatra -- ppa:savoury1/kde-xenial
+- kolourpaint -- ppa:savoury1/kde-xenial
+- kolourpaint4 -- ppa:savoury1/kde-xenial
 - kipi-plugins-common -- no longer used by digiKam 6.x
 - kipi-plugins -- no longer used by digiKam 6.x
 - digikam-data -- ppa:savoury1/digikam
 - digikam-private-libs -- ppa:savoury1/digikam
 - digikam -- ppa:savoury1/digikam
 - librttr-core0.9.6 -- ppa:savoury1/backports
-E kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
-E kdenlive -- match kde version (4:19.04.3-0ubuntu1) Eoan
+- kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
+- kdenlive -- match kde version (4:19.04.3-0ubuntu1) Eoan
 - libk3b7 -- ppa:savoury1/multimedia 
 - libk3b7-extracodecs -- ppa:savoury1/multimedia
 - k3b-i18n -- ppa:savoury1/multimedia
 - k3b-data -- ppa:savoury1/multimedia
 - k3b -- ppa:savoury1/multimedia
-E winff-data -- same series as winff (1.5.5-6) Eoan
-E winff-qt -- same series as winff (1.5.5-6) Eoan
-E winff -- latest available version
+B winff-data
+B winff-qt
+B winff
 - meld -- ppa:savoury1/{meld,utilities}
 - 4pane -- ppa:savoury1/utilities
 - hexchat-common -- ppa:savoury1/backports
