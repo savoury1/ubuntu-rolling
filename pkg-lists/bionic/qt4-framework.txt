@@ -1,4 +1,4 @@
-B qtchooser
+- qtchooser -- ppa:savoury1/qt-xenial
 B qt4-qmake
 B qtcore4-l10n
 B libqtcore4

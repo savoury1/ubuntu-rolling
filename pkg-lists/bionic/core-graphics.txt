@@ -48,7 +48,7 @@ B argyll-ref
 B argyll
 - libcolord2 -- ppa:savoury1/graphics
 - libcolorhug2 -- ppa:savoury1/graphics
-B libcolord-gtk1
+- libcolord-gtk1 -- ppa:savoury1/gtk-xenial
 - colord-data -- ppa:savoury1/graphics
 - colord -- ppa:savoury1/graphics
 - libopencolorio1v5 -- ppa:savoury1/blender
@@ -107,7 +107,7 @@ B libraw16
 - liblensfun-data-v1 -- ppa:savoury1/graphics
 - liblensfun1 -- ppa:savoury1/graphics
 B liblqr-1-0
-B dcraw
+- dcraw -- ppa:savoury1/graphics
 - libgphoto2-l10n -- ppa:savoury1/graphics
 - libgphoto2-port12 -- ppa:savoury1/graphics
 - libgphoto2-port12:i386 -- ppa:savoury1/graphics

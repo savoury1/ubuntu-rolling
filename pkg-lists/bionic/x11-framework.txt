@@ -1,7 +1,7 @@
 - libpciaccess0 -- ppa:savoury1/display
 - libpciaccess0:i386 -- ppa:savoury1/display
 - libevdev2 -- ppa:savoury1/display
-B libmtdev1
+- libmtdev1 -- ppa:savoury1/display
 - libwacom-common -- ppa:savoury1/display
 - libwacom2 -- ppa:savoury1/display
 - libinput-bin -- ppa:savoury1/display
@@ -70,8 +70,6 @@ B xinput
 B xinit
 B xautomation
 - xutils-dev -- ppa:savoury1/display
-B xapps-common
-B libxapp1
 B x11-apps
 B x11-utils
 B x11-session-utils

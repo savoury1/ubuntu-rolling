@@ -1,11 +1,11 @@
 - libdbusmenu-qt5-2 -- ppa:savoury1/qt-xenial
-E libphonon4
-E libphonon4qt5-4
-E phonon-backend-gstreamer-common
-E phonon-backend-gstreamer
-E phonon4qt5-backend-gstreamer
-E phonon
-E phonon4qt5
+B libphonon4
+B libphonon4qt5-4
+B phonon-backend-gstreamer-common
+B phonon-backend-gstreamer
+B phonon4qt5-backend-gstreamer
+B phonon
+B phonon4qt5
 - libthreadweaver4 -- ppa:savoury1/kde-xenial
 - libsolid4 -- ppa:savoury1/kde-xenial
 - kdelibs5-data -- ppa:savoury1/kde-xenial

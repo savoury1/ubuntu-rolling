@@ -3,7 +3,6 @@ text-terminal|Text + Terminal
 gtk2-gtk3|GTK2 + GTK3
 core-network|Core Network
 base-security|Base Security
-curl-3-4|Curl (3 + 4)
 core-perl|Core Perl
 core-python|Core Python
 gcrypt-gnupg|GCrypt + GnuPG

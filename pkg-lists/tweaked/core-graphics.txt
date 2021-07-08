@@ -48,7 +48,7 @@ B argyll-ref
 B argyll
 - libcolord2 -- ppa:savoury1/graphics
 - libcolorhug2 -- ppa:savoury1/graphics
-B libcolord-gtk1
+- libcolord-gtk1 -- ppa:savoury1/gtk-xenial
 - colord-data -- ppa:savoury1/graphics
 - colord -- ppa:savoury1/graphics
 - libopencolorio1v5 -- ppa:savoury1/blender
