@@ -15,6 +15,8 @@ B gnome-calculator
 - libedata-cal-1.2-28 -- ppa:savoury1/gtk-xenial
 B tomboy
 B artha
+- xapps-common -- ppa:savoury1/gtk-xenial
+- libxapp1 -- ppa:savoury1/gtk-xenial
 B libgtkhex-3-0
 B ghex
 - gthumb-data -- ppa:savoury1/{graphics,gtk-xenial}
@@ -45,9 +47,6 @@ B ghex
 - k3b-i18n -- ppa:savoury1/multimedia
 - k3b-data -- ppa:savoury1/multimedia
 - k3b -- ppa:savoury1/multimedia
-B winff-data
-B winff-qt
-B winff
 - meld -- ppa:savoury1/{meld,utilities}
 - 4pane -- ppa:savoury1/utilities
 - hexchat-common -- ppa:savoury1/backports

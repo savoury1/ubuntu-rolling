@@ -1,7 +1,7 @@
 - libpciaccess0 -- ppa:savoury1/display
 - libpciaccess0:i386 -- ppa:savoury1/display
 - libevdev2 -- ppa:savoury1/display
-E libmtdev1
+- libmtdev1 -- ppa:savoury1/display
 - libwacom-common -- ppa:savoury1/display
 - libwacom2 -- ppa:savoury1/display
 - libinput-bin -- ppa:savoury1/display
@@ -14,7 +14,7 @@ E console-setup
 - libnux-4.0-common -- ppa:savoury1/display
 - nux-tools -- ppa:savoury1/display
 - x11-common -- ppa:savoury1/display
-E xorg-docs-core
+B xorg-docs-core
 - libxdmcp6 -- ppa:savoury1/display
 - libxdmcp6:i386 -- ppa:savoury1/display
 - libxdmcp-dev -- ppa:savoury1/display
@@ -70,8 +70,6 @@ E xinput
 E xinit
 E xautomation
 - xutils-dev -- ppa:savoury1/display
-E xapps-common
-E libxapp1
 E x11-apps
 E x11-utils
 E x11-session-utils

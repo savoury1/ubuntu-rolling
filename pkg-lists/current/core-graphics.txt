@@ -107,7 +107,7 @@ B libraw16
 - liblensfun-data-v1 -- ppa:savoury1/graphics
 - liblensfun1 -- ppa:savoury1/graphics
 B liblqr-1-0
-B dcraw
+- dcraw -- ppa:savoury1/graphics
 - libgphoto2-l10n -- ppa:savoury1/graphics
 - libgphoto2-port12 -- ppa:savoury1/graphics
 - libgphoto2-port12:i386 -- ppa:savoury1/graphics

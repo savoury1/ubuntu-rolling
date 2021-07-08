@@ -1,5 +1,5 @@
-E libpcre2-8-0 -- same series as libpcre2-16-0 (10.32-5) Disco
-E libpcre2-16-0 -- required by libqt5core5a (5.12.2+dfsg-4ubuntu1) Disco
+- libpcre2-8-0 -- ppa:savoury1/backports
+- libpcre2-16-0 -- ppa:savoury1/backports
 B libpcre3
 B libpcre3:i386
 B libpcre16-3

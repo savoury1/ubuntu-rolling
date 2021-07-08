@@ -36,9 +36,7 @@ B libart-2.0-2
 - libwebpmux3 -- ppa:savoury1/graphics
 - libwebpdemux2 -- ppa:savoury1/graphics
 - libilmbase12 -- identical version in Xenial and Bionic
-E libilmbase23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 - libopenexr22 -- patched version for Xenial from ESM
-E libopenexr23 -- required by kde-runtime (4:17.08.3-0ubuntu2) Cosmic
 - libvigraimpex6 -- ppa:savoury1/graphics
 - libvigraimpex-dev -- ppa:savoury1/graphics
 - libfox-1.6-0 -- ppa:savoury1/backports
@@ -109,7 +107,7 @@ B libraw16
 - liblensfun-data-v1 -- ppa:savoury1/graphics
 - liblensfun1 -- ppa:savoury1/graphics
 B liblqr-1-0
-E dcraw -- latest available version
+- dcraw -- ppa:savoury1/graphics
 - libgphoto2-l10n -- ppa:savoury1/graphics
 - libgphoto2-port12 -- ppa:savoury1/graphics
 - libgphoto2-port12:i386 -- ppa:savoury1/graphics

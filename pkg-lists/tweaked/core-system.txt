@@ -97,7 +97,7 @@ B libcap-dev
 B libpam-cap
 E libcap-ng0 -- required by qemu-system-common (1:3.1+dfsg-2ubuntu3) Disco
 E libcap-ng-dev -- same series as libcap-ng0 (0.7.9-2) Eoan
-- bubblewrap
+- bubblewrap -- ppa:savoury1/backports
 B libgc1c2
 B libjemalloc1
 B libstdc++5:i386
