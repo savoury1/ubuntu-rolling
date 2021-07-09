@@ -47,21 +47,21 @@ B libpaper-utils
 - ghostscript -- ppa:savoury1/graphics
 - ghostscript-x -- ppa:savoury1/graphics
 B libspectre1
-B libqpdf21
-B qpdf
+- libqpdf21 -- Xenial has same version as Bionic
+- qpdf -- Xenial has same version as Bionic
 - libdjvulibre-text -- ppa:savoury1/graphics
 - libdjvulibre21 -- ppa:savoury1/graphics
 - libpoppler73 -- superseded by ppa:savoury1/backports
 - libpoppler-glib8 -- ppa:savoury1/backports
 - poppler-utils -- ppa:savoury1/backports
 - libpoppler-qt5-1 -- ppa:savoury1/backports
-B poppler-data
-B zathura-pdf-poppler
-B zathura
+- poppler-data -- ppa:savoury1/backports
+- zathura-pdf-poppler -- ppa:savoury1/backports
+- zathura -- ppa:savoury1/backports
 B qpdfview
 B qpdfview-ps-plugin
 B qpdfview-djvu-plugin
-B mupdf
+- mupdf -- ppa:savoury1/backports
 B libcups2
 B libcups2:i386
 B libcupsmime1
@@ -104,7 +104,7 @@ B printer-driver-brlaser
 B printer-driver-ptouch
 B printer-driver-c2esp
 B printer-driver-sag-gdi
-B system-config-printer-udev
-B system-config-printer-common
-B system-config-printer
-B system-config-printer-gnome
+- system-config-printer-udev -- ppa:savoury1/backports
+- system-config-printer-common -- ppa:savoury1/backports
+- system-config-printer -- ppa:savoury1/backports
+- system-config-printer-gnome -- ppa:savoury1/backports
