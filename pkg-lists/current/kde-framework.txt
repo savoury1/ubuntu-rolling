@@ -1,11 +1,11 @@
 - libdbusmenu-qt5-2 -- ppa:savoury1/qt-xenial
-B libphonon4
-B libphonon4qt5-4
-B phonon-backend-gstreamer-common
-B phonon-backend-gstreamer
-B phonon4qt5-backend-gstreamer
-B phonon
-B phonon4qt5
+- libphonon4 -- ppa:savoury1/kde-xenial
+- libphonon4qt5-4 -- ppa:savoury1/kde-xenial
+- phonon-backend-gstreamer-common -- ppa:savoury1/kde-xenial
+- phonon-backend-gstreamer -- ppa:savoury1/kde-xenial
+- phonon4qt5-backend-gstreamer -- ppa:savoury1/kde-xenial
+- phonon -- ppa:savoury1/kde-xenial
+- phonon4qt5 -- ppa:savoury1/kde-xenial
 - libthreadweaver4 -- ppa:savoury1/kde-xenial
 - libsolid4 -- ppa:savoury1/kde-xenial
 - kdelibs5-data -- ppa:savoury1/kde-xenial
@@ -143,8 +143,8 @@ B libkactivities6
 - libkf5textwidgets5 -- ppa:savoury1/kde-xenial
 - libkf5kiowidgets5 -- ppa:savoury1/kde-xenial
 - libkf5kiofilewidgets5 -- ppa:savoury1/kde-xenial
-B kde-cli-tools-data
-B kde-cli-tools
+- kde-cli-tools-data -- ppa:savoury1/kde-xenial
+- kde-cli-tools -- ppa:savoury1/kde-xenial
 - libkf5newstuff-data -- ppa:savoury1/kde-xenial
 - libkf5newstuffcore5 -- ppa:savoury1/kde-xenial
 - libkf5newstuff5 -- ppa:savoury1/kde-xenial
@@ -194,8 +194,8 @@ B libqrencode3
 - libkf5plasma5 -- ppa:savoury1/kde-xenial
 - libkf5plasmaquick5 -- ppa:savoury1/kde-xenial
 - plasma-framework -- ppa:savoury1/kde-xenial
-B libkworkspace5-5
+- libkworkspace5-5 -- ppa:savoury1/kde-xenial
 - drkonqi -- ppa:savoury1/kde-xenial
-B kdeconnect
+- kdeconnect -- ppa:savoury1/kde-xenial
 - kde-style-breeze -- ppa:savoury1/kde-xenial
 - kde-style-breeze-qt4 -- ppa:savoury1/kde-xenial
