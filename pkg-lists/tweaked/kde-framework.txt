@@ -44,7 +44,7 @@
 - kde-runtime -- ppa:savoury1/kde-xenial
 - libkxmlrpcclient4 -- ppa:savoury1/kde-xenial
 - libgpgme++2v5 -- ppa:savoury1/kde-xenial
-B libkactivities6
+- libkactivities6 -- ppa:savoury1/kde-xenial
 - libdlrestrictions1 -- ppa:savoury1/build-tools
 - breeze-icon-theme -- ppa:savoury1/kde-xenial
 - oxygen5-icon-theme -- ppa:savoury1/kde-xenial
@@ -182,7 +182,7 @@ B libkactivities6
 - libkf5parts-data -- ppa:savoury1/kde-xenial
 - libkf5parts5 -- ppa:savoury1/kde-xenial
 - libdmtx0a -- Xenial has same version as Bionic
-B libqrencode3
+- libqrencode3 -- Xenial has same version as Bionic
 - libkf5prison5 -- ppa:savoury1/kde-xenial
 - libkf5kdelibs4support-data -- ppa:savoury1/kde-xenial
 - libkf5kdelibs4support5 -- ppa:savoury1/kde-xenial
