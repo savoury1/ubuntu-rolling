@@ -1,0 +1,15 @@
+                                                                      SavOS ~ "Be Human"
+
+"SavOS" is a modern inline upgrade for supported Ubuntu-based releases spanning the past five years (at least), with a focus on LTS-based versions. SavOS is not a unique "distribution" as such, rather, it is an enhancement to a supported Ubuntu-based installation (ie. Linux Mint and other direct derivatives of Ubuntu) where much of the core system is identical.
+
+A key aim of SavOS is that anyone using supported Ubuntu-based releases can easily upgrade their current systems with a wide range of the latest popular audio/video, graphics, productivity, and security software. Thus, millions of people using the various Ubuntu-based operating systems can enjoy access to the same curated suite of modern and popular software with minimal fuss.
+
+So SavOS brings modern and quality software to human beings who want to get on with their work and their creativity, without having to very often deal with the quite technical process of a full system upgrade (once every five years is more than enough!). SavOS is summarised by the tagline: "Be Human". SavOS is about the human beings who are the "end-users" and working to get much modern quality software to more of those human beings in a simple and direct manner.
+
+Anyone using a supported Ubuntu-based release can do an "inline upgrade" of their Ubuntu-based system by adding various of the Launchpad PPAs that host SavOS packages. This is currently done via APT commands to add the various PPAs (more instructions to come soon, when the new site https://savos.tech finally gets a home page!), easily bringing latest versions of popular software.
+
+At present the SavOS project can be described as being in "alpha" testing phase, where many people around the world are simply adding various Launchpad PPAs to upgrade their supported Ubuntu-based systems. These PPAs are all found at the current primary hosting site for SavOS packages (the site and all PPAs at this link are maintained by Rob Savoury, creator of SavOS):
+
+                                                           https://launchpad.net/~savoury1
+
+"SavOS enhanced" is one way to describe Ubuntu-based systems with upgrades from a number of the SavOS Launchpad PPAs (found at the above linked Launchpad site). Or "SavOS empowered" or similar. To reiterate: "SavOS" is not a unique new "distribution" but a major inline upgrade bringing the "SavOS" flavour to supported Ubuntu-based systems from at least the past five years.
