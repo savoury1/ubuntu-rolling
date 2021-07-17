@@ -1,10 +1,10 @@
-- fonts-freefont-ttf - ppa:savoury1/fonts
-B fonts-ubuntu
-B ttf-ubuntu-font-family
-B fonts-liberation
-B fonts-dejavu
-B fonts-dejavu-core
-B fonts-dejavu-extra
+- fonts-freefont-ttf -- ppa:savoury1/fonts
+- fonts-ubuntu - ppa:savoury1/fonts
+- ttf-ubuntu-font-family -- ppa:savoury1/fonts
+- fonts-liberation -- ppa:savoury1/fonts
+- fonts-dejavu -- ppa:savoury1/fonts
+- fonts-dejavu-core -- ppa:savoury1/fonts
+- fonts-dejavu-extra -- ppa:savoury1/fonts
 - fonts-mathjax -- ppa:savoury1/backports
 - libjs-mathjax -- ppa:savoury1/backports
 B fonts-orya-extra
@@ -13,8 +13,8 @@ B fonts-noto-cjk
 B fonts-symbola
 B ttf-ancient-fonts-symbola
 B font-manager
-B libgucharmap-2-90-7
-B gucharmap
+- libgucharmap-2-90-7 -- ppa:savoury1/fonts
+- gucharmap -- ppa:savoury1/fonts
 B t1utils
 - libfreetype6 -- ppa:savoury1/fonts
 - libfreetype6:i386 -- ppa:savoury1/fonts
