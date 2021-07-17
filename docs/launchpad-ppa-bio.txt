@@ -145,7 +145,7 @@ LibreOffice = libreoffice (6.4.7 for Xenial/Bionic & 7.1.4 for all series)
               vulkan-{loader,tools}, wayland{-protocols}, xf86-input-*,
               xorg, xorg-server (1.20.9), xserver-xorg-{input-*,video-*}
 
-   Virtual- = acpica-unix (20200925), augeaus (1.12.0), ceph (12.2.13 for 
+   Virtual- = acpica-unix (20200925), augeaus (1.12.0), ceph (12.2.13 for
    isation .. Xenial only), device-tree-compiler (1.6.0), dmidecode (3.3),
               gfs2-utils (3.3.0), glusterfs (6.5), infinipath-psm, ipxe,
               libfabric (1.6.2), libisci (1.18.0), libnftnl (1.1.9),
