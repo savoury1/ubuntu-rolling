@@ -12,7 +12,7 @@ B fonts-noto-cjk
 - ttf-mscorefonts-installer -- leave at default version
 B fonts-symbola
 B ttf-ancient-fonts-symbola
-B font-manager
+- font-manager -- ppa:savoury1/gtk-xenial
 - libgucharmap-2-90-7 -- ppa:savoury1/fonts
 - gucharmap -- ppa:savoury1/fonts
 B t1utils
@@ -46,7 +46,7 @@ B libpaper-utils
 - libgs9 -- ppa:savoury1/graphics
 - ghostscript -- ppa:savoury1/graphics
 - ghostscript-x -- ppa:savoury1/graphics
-B libspectre1
+- libspectre1 -- ppa:savoury1/backports
 - libqpdf21 -- Xenial has same version as Bionic
 - qpdf -- Xenial has same version as Bionic
 - libdjvulibre-text -- ppa:savoury1/graphics

@@ -50,7 +50,7 @@ B libip4tc0
 B libip6tc0
 B libxtables12
 B iptables
-E ebtables
+B ebtables
 B netbase
 B hostname
 B python-netifaces
