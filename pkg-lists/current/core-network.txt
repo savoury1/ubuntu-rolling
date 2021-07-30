@@ -4,8 +4,8 @@ B dns-root-data
 - ca-certificates -- ppa:savoury1/backports
 B ca-certificates-java
 B ssl-cert
-B python-certifi
-B python3-certifi
+- python-certifi -- ppa:savoury1/python
+- python3-certifi -- ppa:savoury1/python
 B libproxy1v5
 B libproxy1v5:i386
 B libproxy-tools
@@ -36,8 +36,8 @@ B libevent-2.1-6
 - libidn2-0:i386 -- ppa:savoury1/backports
 - libidn2-dev -- ppa:savoury1/backports
 - libidn2-0-dev -- ppa:savoury1/backports
-B python-idna
-B python3-idna
+- python-idna -- ppa:savoury1/python
+- python3-idna -- ppa:savoury1/python
 B libmnl0
 B libnl-3-200
 B libnl-3-dev
