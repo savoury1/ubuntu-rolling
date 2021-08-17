@@ -6,12 +6,12 @@ B libmtp-runtime
 B libmtp9
 B jmtpfs
 B gmtp
-B libplist3
-B libusbmuxd4
-B usbmuxd
-B libimobiledevice6
-B libimobiledevice-utils
-B ideviceinstaller
+- libplist3 -- ppa:savoury1/backports
+- libusbmuxd4 -- superseded by libusbmuxd6
+- usbmuxd -- ppa:savoury1/backports
+- libimobiledevice6 -- ppa:savoury1/backports
+- libimobiledevice-utils -- ppa:savoury1/backports
+- ideviceinstaller -- ppa:savoury1/backports
 B libical2
 - libical3 -- ppa:savoury1/backports
 B libsgutils2-2
@@ -36,7 +36,7 @@ B wodim
 B libburn4
 B cdrskin
 B libdvd-pkg
-- libdvdread4 -- obsolete by libdvdread8
+- libdvdread4 -- superseded by libdvdread8
 - libdvdread8 -- ppa:savoury1/multimedia
 - libdvdnav4 -- ppa:savoury1/multimedia
 B libdvbpsi10
