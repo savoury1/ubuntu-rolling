@@ -1,9 +1,9 @@
-B libnm-util2
-B libnm-glib4
-B libnm-glib-vpn1
-B gir1.2-networkmanager-1.0
-B libnm0
-B network-manager
+- libnm-util2 -- ppa:savoury1/gtk-xenial
+- libnm-glib4 -- ppa:savoury1/gtk-xenial
+- libnm-glib-vpn1 -- ppa:savoury1/gtk-xenial
+- gir1.2-networkmanager-1.0 -- ppa:savoury1/gtk-xenial
+- libnm0 -- ppa:savoury1/gtk-xenial
+- network-manager -- ppa:savoury1/gtk-xenial
 B libnma0
 B libnm-gtk0
 B network-manager-gnome

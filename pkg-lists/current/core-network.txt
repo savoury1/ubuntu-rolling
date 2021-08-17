@@ -11,10 +11,10 @@ B libproxy1v5:i386
 B libproxy-tools
 B libproxy1-plugin-gsettings
 B libproxy1-plugin-networkmanager
-B glib-networking-common
-B glib-networking-services
-B glib-networking
-B glib-networking:i386
+- glib-networking-common -- ppa:savoury1/gtk-xenial
+- glib-networking-services -- ppa:savoury1/gtk-xenial
+- glib-networking -- ppa:savoury1/gtk-xenial
+- glib-networking:i386 -- ppa:savoury1/gtk-xenial
 - libsoup2.4-1 -- ppa:savoury1/backports
 - libsoup2.4-1:i386 -- ppa:savoury1/backports
 - libsoup-gnome2.4-1 -- ppa:savoury1/backports
@@ -38,19 +38,19 @@ B libevent-2.1-6
 - libidn2-0-dev -- ppa:savoury1/backports
 - python-idna -- ppa:savoury1/python
 - python3-idna -- ppa:savoury1/python
-B libmnl0
-B libnl-3-200
-B libnl-3-dev
-B libnl-genl-3-200
-B libnl-route-3-200
-B libnl-route-3-dev
-B libndp0
-B libiptc0
+- libmnl0 -- ppa:savoury1/backports
+- libnl-3-200 -- ppa:savoury1/backports
+- libnl-3-dev -- ppa:savoury1/backports
+- libnl-genl-3-200 -- ppa:savoury1/backports
+- libnl-route-3-200 -- ppa:savoury1/backports
+- libnl-route-3-dev -- ppa:savoury1/backports
+- libndp0 -- ppa:savoury1/virtualisation
+- libiptc0 -- ppa:savoury1/virtualisation
 B libip4tc0
 B libip6tc0
-B libxtables12
-B iptables
-B ebtables
+- libxtables12 -- ppa:savoury1/virtualisation
+- iptables -- ppa:savoury1/virtualisation
+- ebtables -- ppa:savoury1/virtualisation
 B netbase
 B hostname
 B python-netifaces
@@ -61,7 +61,7 @@ B ntp
 B ntpdate
 B telnet
 B netcat-openbsd
-B net-tools
+- net-tools -- ppa:savoury1/backports
 B iputils-arping
 B iputils-ping
 B iputils-tracepath
@@ -72,7 +72,7 @@ B libwrap0:i386
 B tcpd
 B tcpdump
 B ftp
-B socat
+- socat -- ppa:savoury1/backports
 B libatm1
 B iproute2
 B ifupdown
@@ -102,7 +102,7 @@ B libsnmp30
 B libsnmp30:i386
 B libsmi2ldbl
 B libteamdctl0
-B libnetfilter-conntrack3
+- libnetfilter-conntrack3 -- ppa:savoury1/backports
 - dnsmasq-base -- ppa:savoury1/backports
 - dnsmasq -- ppa:savoury1/backports
 B resolvconf
@@ -112,20 +112,20 @@ B iw
 B crda
 B wpasupplicant
 B rfkill
-B libiw30
-B wireless-tools
+- libiw30 -- ppa:savoury1/backports
+- wireless-tools -- ppa:savoury1/backports
 B b43-fwcutter
 - ndiswrapper -- ppa:savoury1/backports
 - ndiswrapper-dkms -- ppa:savoury1/backports
 B libpcsclite1
-B ppp
+- ppp -- ppa:savoury1/gtk-xenial
 B pppconfig
 B pppoeconf
-B pptp-linux
+- pptp-linux -- ppa:savoury1/gtk-xenial
 B mobile-broadband-provider-info
-B libmbim-glib4
-B libmbim-proxy
-B libqmi-glib5
-B libqmi-proxy
-B libmm-glib0
-B modemmanager
+- libmbim-glib4 -- ppa:savoury1/gtk-xenial
+- libmbim-proxy -- ppa:savoury1/gtk-xenial
+- libqmi-glib5 -- ppa:savoury1/gtk-xenial
+- libqmi-proxy -- ppa:savoury1/gtk-xenial
+- libmm-glib0 -- ppa:savoury1/gtk-xenial
+- modemmanager -- ppa:savoury1/gtk-xenial
