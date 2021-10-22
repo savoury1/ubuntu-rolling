@@ -7,8 +7,8 @@
 B libnma0
 B libnm-gtk0
 B network-manager-gnome
-B network-manager-pptp
-B network-manager-pptp-gnome
+- network-manager-pptp -- ppa:savoury1/gtk-xenial
+- network-manager-pptp-gnome -- ppa:savoury1/gtk-xenial
 B network-manager-openvpn
 B network-manager-openvpn-gnome
 B libgoa-1.0-common
