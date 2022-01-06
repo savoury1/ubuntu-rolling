@@ -8,7 +8,7 @@ F libk5crypto3 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
 F libk5crypto3:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
 F libkrb5-3 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
 F libkrb5-3:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libgssapi-krb5-2 -- required by kio (5.56.0-0ubuntu1) Disco
+F libgssapi-krb5-2 -- latest available LTS version
 F libgssapi-krb5-2:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
 - libnettle6 -- ppa:savoury1/encryption
 - libnettle6:i386 -- ppa:savoury1/encryption
@@ -22,17 +22,17 @@ F libgssapi-krb5-2:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Foc
 - p11-kit-modules -- ppa:savoury1/encryption
 - libopts25 -- ppa:savoury1/encryption
 - libunbound2 -- ppa:savoury1/encryption
-F libgnutls30 -- latest available version
-F libgnutls30:i386 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
-F libgnutlsxx28 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
-F libgnutls-openssl27 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
-F libgnutls-dane0 -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
-F libgnutls28-dev -- same series as libgnutls30 (3.6.13-2ubuntu1.2) Focal
+- libgnutls30 -- ppa:savoury1/encryption
+- libgnutls30:i386 -- ppa:savoury1/encryption
+- libgnutlsxx28 -- ppa:savoury1/encryption
+- libgnutls-openssl27 -- ppa:savoury1/encryption
+- libgnutls-dane0 -- ppa:savoury1/encryption
+- libgnutls28-dev -- ppa:savoury1/encryption
 F libsasl2-modules -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
 F libsasl2-modules:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
 F libsasl2-modules-db -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
 F libsasl2-modules-db:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
-F libsasl2-2 -- latest available version
+F libsasl2-2 -- latest available LTS version
 F libsasl2-2:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
 F libsasl2-dev -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
 B libheimbase1-heimdal:i386
