@@ -1,21 +1,21 @@
-- xvfb
-- xserver-common
-- xserver-xorg-core
-- xserver-xorg-input-libinput
-- xserver-xorg-input-wacom
-- xserver-xorg-input-evdev
-- xserver-xorg-input-synaptics
-- xserver-xorg-input-all
-- xserver-xorg
-- xorg
-- xserver-xorg-video-vesa
-- xserver-xorg-video-fbdev
-- xserver-xorg-video-qxl
-- xserver-xorg-video-vmware
-- xserver-xorg-video-intel
-- xserver-xorg-video-nouveau
-- xserver-xorg-video-amdgpu
-- xserver-xorg-video-radeon
-- xserver-xorg-video-ati
+- xvfb -- ppa:savoury1/display
+- xserver-common -- ppa:savoury1/display
+- xserver-xorg-core -- ppa:savoury1/display
+- xserver-xorg-input-libinput -- ppa:savoury1/display
+- xserver-xorg-input-wacom -- ppa:savoury1/display
+- xserver-xorg-input-evdev -- ppa:savoury1/display
+- xserver-xorg-input-synaptics -- ppa:savoury1/display
+- xserver-xorg-input-all -- ppa:savoury1/display
+- xserver-xorg -- ppa:savoury1/display
+- xorg -- ppa:savoury1/display
+- xserver-xorg-video-vesa -- ppa:savoury1/display
+- xserver-xorg-video-fbdev -- ppa:savoury1/display
+- xserver-xorg-video-qxl -- ppa:savoury1/display
+- xserver-xorg-video-vmware -- ppa:savoury1/display
+- xserver-xorg-video-intel -- ppa:savoury1/display
+- xserver-xorg-video-nouveau -- ppa:savoury1/display
+- xserver-xorg-video-amdgpu -- ppa:savoury1/display
+- xserver-xorg-video-radeon -- ppa:savoury1/display
+- xserver-xorg-video-ati -- ppa:savoury1/display
 B libxnvctrl0
-- xserver-xorg-video-all
+- xserver-xorg-video-all -- ppa:savoury1/display
