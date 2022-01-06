@@ -64,10 +64,10 @@ B python-cheetah
 - libibverbs-dev -- ppa:savoury1/virtualisation
 - librdmacm1 -- ppa:savoury1/virtualisation
 - librdmacm-dev -- ppa:savoury1/virtualisation
-E librados2
-E librados-dev
-E librbd1
-E librbd-dev
+F librados2
+F librados-dev
+F librbd1
+F librbd-dev
 - libxenstore3.0 -- ppa:savoury1/virtualisation
 - libxen-4.9 -- ppa:savoury1/virtualisation
 - libxen-dev -- ppa:savoury1/virtualisation
