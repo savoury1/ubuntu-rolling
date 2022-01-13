@@ -61,11 +61,10 @@ B mlocate
 - vim-tiny -- ppa:savoury1/backports
 B ncdu
 - libcdk5 -- ppa:savoury1/backports
-- libcdk5nc6 -- required by gphoto2 (2.5.17-1build1) Cosmic
 B libedit2
 B libedit2:i386
 B dialog
 - libgpm2 -- ppa:savoury1/backports
 - libgpm2:i386 -- ppa:savoury1/backports
-- libre2-4 -- obsolete by libre2-5 (20190101+dfsg-2) Disco
+- libre2-4 -- obsolete by libre2-5
 - libre2-5 -- ppa:savoury1/backports
