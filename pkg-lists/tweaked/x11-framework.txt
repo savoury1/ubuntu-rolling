@@ -54,7 +54,7 @@ B xorg-docs-core
 - libxtst6 -- ppa:savoury1/display
 - libxtst6:i386 -- ppa:savoury1/display
 - libxtst-dev -- ppa:savoury1/display
-F libfakekey0
+- libfakekey0 -- ppa:savoury1/{virtualisation,kde-5-80}
 F xinput
 - libxkbfile1 -- ppa:savoury1/display
 - libice6 -- ppa:savoury1/display
