@@ -1,49 +1,49 @@
-- qtchooser -- ppa:savoury1/qt-xenial
-B qt4-qmake
-B qtcore4-l10n
-B libqtcore4
-B libqtcore4:i386
-B libqt4-test
-B libqt4-test:i386
-B libqt4-sql
-B libqt4-sql:i386
-B libqt4-xml
-B libqt4-xml:i386
-B libqtdbus4
-B libqtdbus4:i386
-B qdbus
-B libqt4-dbus
-B libqt4-dbus:i386
-B libqt4-script
-B libqt4-script:i386
-B libqt4-network
-B libqt4-network:i386
-B libqt4-xmlpatterns
-B libqt4-xmlpatterns:i386
-B libqt4-declarative
-B libqt4-declarative:i386
-B libqtgui4
-B libqtgui4:i386
-B libqt4-scripttools
-B libqt4-scripttools:i386
-B libqt4-svg
-B libqt4-svg:i386
-B libqt4-opengl
-B libqt4-opengl:i386
-B libqt4-designer
-B libqt4-designer:i386
-B libqt4-qt3support
-B libqt4-qt3support:i386
-B libqt4-help
-B libqt4-dev-bin
-B qt4-linguist-tools
-B libqt4-dev
-B libqtassistantclient4
-B libpolkit-qt-1-1
-B libqtwebkit4
-B libqtwebkit4:i386
-B qt-at-spi
-B libdbusmenu-qt2
-B python-qt4-dbus
-B sni-qt
-B libqca2
+- qtchooser -- ppa:savoury1/{qt-xenial,qt-5-15}
+- qt4-qmake -- ppa:savoury1/{qt-xenial,qt-5-15}
+- qtcore4-l10n -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtcore4 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtcore4:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-test -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-test:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-sql -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-sql:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-xml -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-xml:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtdbus4 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtdbus4:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- qdbus -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-dbus -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-dbus:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-script -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-script:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-network -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-network:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-xmlpatterns -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-xmlpatterns:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-declarative -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-declarative:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtgui4 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtgui4:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-scripttools -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-scripttools:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-svg -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-svg:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-opengl -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-opengl:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-designer -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-designer:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-qt3support -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-qt3support:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-help -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-dev-bin -- ppa:savoury1/{qt-xenial,qt-5-15}
+- qt4-linguist-tools -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqt4-dev -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtassistantclient4 -- unneeded (rebuild only)
+- libpolkit-qt-1-1 -- ppa:savoury1/qt-xenial
+- libqtwebkit4 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- libqtwebkit4:i386 -- ppa:savoury1/{qt-xenial,qt-5-15}
+- qt-at-spi -- unneeded (packaging changes reverted)
+- libdbusmenu-qt2 -- ppa:savoury1/qt-xenial
+- python-qt4-dbus -- ppa:savoury1/{python,qt-xenial}
+- sni-qt -- ppa:savoury1/qt-xenial
+- libqca2 -- ppa:savoury1/{qt-xenial,qt-5-15}
