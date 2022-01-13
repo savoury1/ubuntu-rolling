@@ -1,67 +1,67 @@
 B python-cliapp
-B python-funcsigs
-B python-pbr
-B python-mock
-B python-monotonic
-B python-fasteners
-B python-incremental
-B python-constantly
-B python-automat
-B python-pyinotify
-B python-twodict
-B libshiboken1.2v5
-B python-zope.interface
-B python-blinker
-B python3-blinker
-B python-ptyprocess
-B python3-ptyprocess
-B python-pexpect
-B python3-pexpect
+- python-funcsigs -- ppa:savoury1/python
+- python-pbr -- ppa:savoury1/python
+- python-mock -- ppa:savoury1/python
+- python-monotonic -- ppa:savoury1/python
+- python-fasteners -- unneeded (minor packaging changes)
+- python-incremental -- ppa:savoury1/python
+- python-constantly -- ppa:savoury1/python
+- python-automat -- ppa:savoury1/python
+- python-pyinotify -- unneeded (minor packaging changes)
+- python-twodict -- ppa:savoury1/python
+- libshiboken1.2v5 -- unneeded (minor packaging changes)
+- python-zope.interface -- ppa:savoury1/python
+- python-blinker -- ppa:savoury1/python
+- python3-blinker -- ppa:savoury1/python
+- python-ptyprocess -- ppa:savoury1/python
+- python3-ptyprocess -- ppa:savoury1/python
+- python-pexpect -- ppa:savoury1/python
+- python3-pexpect -- ppa:savoury1/python
 - python-httplib2 -- ppa:savoury1/python
 - python3-httplib2 -- ppa:savoury1/python
-B python-urllib3
-B python3-urllib3
-B python-requests
-B python3-requests
-B python3-cupshelpers
-B python3-requests-unixsocket
-B python3-problem-report
-B python3-apport
-B python3-tz
-B python-babel-localedata
-B python3-babel
-B python3-roman
-B docutils-common
-B python3-docutils
-B python3-jinja2
-B python3-pygments
+- python-urllib3 -- ppa:savoury1/python
+- python3-urllib3 -- ppa:savoury1/python
+- python-requests -- ppa:savoury1/python
+- python3-requests -- ppa:savoury1/python
+- python3-cupshelpers -- ppa:savoury1/{apt-xenial,backports}
+- python3-requests-unixsocket -- unneeded (minor packaging changes)
+- python3-problem-report -- ppa:savoury1/python
+- python3-apport -- ppa:savoury1/python
+- python3-tz -- ppa:savoury1/python
+- python-babel-localedata -- ppa:savoury1/python
+- python3-babel -- ppa:savoury1/python
+- python3-roman -- unneeded (minor packaging changes)
+- docutils-common -- ppa:savoury1/python
+- python3-docutils -- ppa:savoury1/python
+- python3-jinja2
+- python3-pygments -- ppa:savoury1/python
 B python-jwt
 B python3-jwt
-B python-hyperlink
-B python-twisted-bin
-B python-twisted-core
-B python-twisted-names
-B python-twisted-web
-B python-feedparser
-B python-rencode
+- python-hyperlink
+- python-twisted-bin -- ppa:savoury1/python
+- python-twisted-core -- ppa:savoury1/python
+- python-twisted-names -- ppa:savoury1/python
+- python-twisted-web -- ppa:savoury1/python
+- python-feedparser -- ppa:savoury1/python
+- python-rencode -- ppa:savoury1/python
 B python-piston-mini-client
 B python3-piston-mini-client
-B python-xlib
-B python3-xlib
-B rubygems-integration
-B ruby-did-you-mean
-B ruby-minitest
-B ruby-net-telnet
-B ruby-power-assert
-B ruby-test-unit
-B libruby2.5
-B ruby2.5
-B ruby2.5-dev
-B ruby
-B ruby-dev
-B ruby-locale
-B ruby-text
-B ruby-gettext
+- python-xlib -- ppa:savoury1/python
+- python3-xlib -- ppa:savoury1/python
+- rubygems-integration -- ppa:savoury1/ruby-xenial
+- ruby-did-you-mean -- ppa:savoury1/ruby-xenial
+- ruby-minitest -- ppa:savoury1/ruby-xenial
+- ruby-net-telnet -- Xenial has same version as Bionic
+- ruby-power-assert -- ppa:savoury1/ruby-xenial
+- ruby-test-unit -- ppa:savoury1/ruby-xenial
+- libruby2.5 -- ppa:savoury1/ruby-xenial
+- ruby2.5 -- ppa:savoury1/ruby-xenial
+- ruby2.5-dev -- ppa:savoury1/ruby-xenial
+- ruby -- ppa:savoury1/ruby-xenial
+- ruby-dev -- ppa:savoury1/ruby-xenial
+- ruby-locale -- Xenial has same version as Bionic
+- ruby-text -- Xenial has same version as Bionic
+- ruby-gettext -- ppa:savoury1/ruby-xenial
 B ruby-json
 B ruby-cairo
 B ruby-glib2
@@ -72,5 +72,5 @@ B ruby-atk
 B ruby-cairo-gobject
 B ruby-pango
 B ruby-gtk2
-B libjs-jquery
-B libjs-underscore
+- libjs-jquery -- ppa:savoury1/{backports,node-xenial,perl-xenial}
+- libjs-underscore -- ppa:savoury1/node-xenial
