@@ -11,10 +11,10 @@ B libproxy1v5:i386
 B libproxy-tools
 B libproxy1-plugin-gsettings
 B libproxy1-plugin-networkmanager
-D glib-networking-common -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
-D glib-networking-services -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
-D glib-networking -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
-D glib-networking:i386 -- same series as libglib2.0-0 (2.60.4-0ubuntu0.19.04.1) Disco
+- glib-networking-common -- ppa:savoury1/gtk-xenial
+- glib-networking-services -- ppa:savoury1/gtk-xenial
+- glib-networking -- ppa:savoury1/gtk-xenial
+- glib-networking:i386 -- ppa:savoury1/gtk-xenial
 - libsoup2.4-1 -- ppa:savoury1/backports
 - libsoup2.4-1:i386 -- ppa:savoury1/backports
 - libsoup-gnome2.4-1 -- ppa:savoury1/backports
@@ -26,9 +26,9 @@ B libpcap0.8:i386
 B libpcap0.8-dev
 B iftop
 B libevent-2.1-6
-F libtasn1-6 -- latest available LTS version
-F libtasn1-6:i386 -- same version as libtasn1-6 (4.16.0-2) Focal
-F libtasn1-6-dev -- same version as libtasn1-6 (4.16.0-2) Focal
+- libtasn1-6 -- ppa:savoury1/backports
+- libtasn1-6:i386 -- ppa:savoury1/backports
+- libtasn1-6-dev -- ppa:savoury1/backports
 - libidn11 -- ppa:savoury1/backports
 - libidn11:i386 -- ppa:savoury1/backports
 - libidn11-dev -- ppa:savoury1/backports
