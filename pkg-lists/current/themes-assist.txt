@@ -1,14 +1,14 @@
 B sound-theme-freedesktop
-B libcanberra0
-B libcanberra0:i386
-B libcanberra-pulse
-B libcanberra-gtk0
-B libcanberra-gtk0:i386
-B libcanberra-gtk-module
-B libcanberra-gtk-module:i386
-B libcanberra-gtk3-0
-B libcanberra-gtk3-module
-B gnome-session-canberra
+- libcanberra0 -- ppa:savoury1/gtk-xenial
+- libcanberra0:i386 -- ppa:savoury1/gtk-xenial
+- libcanberra-pulse -- ppa:savoury1/gtk-xenial
+- libcanberra-gtk0 -- ppa:savoury1/gtk-xenial
+- libcanberra-gtk0:i386 -- ppa:savoury1/gtk-xenial
+- libcanberra-gtk-module -- ppa:savoury1/gtk-xenial
+- libcanberra-gtk-module:i386 -- ppa:savoury1/gtk-xenial
+- libcanberra-gtk3-0 -- ppa:savoury1/gtk-xenial
+- libcanberra-gtk3-module -- ppa:savoury1/gtk-xenial
+- gnome-session-canberra -- ppa:savoury1/gtk-xenial
 B dmz-cursor-theme
 B hicolor-icon-theme
 B lubuntu-icon-theme
@@ -18,13 +18,13 @@ B gnome-themes-extra
 B gnome-themes-extra-data
 B gnome-accessibility-themes
 B mousetweaks
-B libspeechd2
-B speech-dispatcher-audio-plugins
-B speech-dispatcher
-B python3-speechd
-B espeak-data
-B libespeak1
-B espeak
+- libspeechd2 -- ppa:savoury1/multimedia
+- speech-dispatcher-audio-plugins -- ppa:savoury1/multimedia
+- speech-dispatcher -- ppa:savoury1/multimedia
+- python3-speechd -- ppa:savoury1/multimedia
+- espeak-data -- ppa:savoury1/multimedia
+- libespeak1 -- ppa:savoury1/multimedia
+- espeak -- ppa:savoury1/multimedia
 B cowsay
 B fortunes-min
 B fortune-mod
