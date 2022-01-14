@@ -5,7 +5,7 @@
 - libgtk2.0-0 -- ppa:savoury1/gtk-xenial
 - libgtk2.0-0:i386 -- ppa:savoury1/gtk-xenial
 - libgtk2.0-bin -- ppa:savoury1/gtk-xenial
-- gir1.2-gtk-2.0v
+- gir1.2-gtk-2.0 -- ppa:savoury1/gtk-xenial
 - libgtk2.0-dev -- ppa:savoury1/gtk-xenial
 - libgail18 -- ppa:savoury1/gtk-xenial
 - libgail18:i386 -- ppa:savoury1/gtk-xenial
@@ -13,8 +13,8 @@
 - libgail-common:i386 -- ppa:savoury1/gtk-xenial
 - libgtkmm-2.4-1v5 -- ppa:savoury1/gtk-xenial
 - libgtkmm-2.4-dev -- ppa:savoury1/gtk-xenial
-B libgtksourceview2.0-common
-B libgtksourceview2.0-0
+- libgtksourceview2.0-common -- unneeded (minor packaging changes)
+- libgtksourceview2.0-0 -- unneeded (minor packaging changes)
 - libjavascriptcoregtk-1.0-0 -- ppa:savoury1/gtk-xenial
 - libwebkitgtk-1.0-0 -- ppa:savoury1/gtk-xenial
 - libgtk-3-common -- ppa:savoury1/gtk-xenial
