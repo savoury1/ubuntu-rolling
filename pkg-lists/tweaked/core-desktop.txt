@@ -52,12 +52,12 @@ B libglade2.0-cil
 - python-glade2 -- ppa:savoury1/python
 - python-gtk2 -- ppa:savoury1/python
 B python-gtksourceview2
-B libibus-1.0-5
-B libibus-1.0-5:i386
-B gir1.2-ibus-1.0
-B libibus-1.0-dev
-B ibus-gtk:i386
-B ibus
+- libibus-1.0-5 -- ppa:savoury1/gtk-xenial
+- libibus-1.0-5:i386 -- ppa:savoury1/gtk-xenial
+- gir1.2-ibus-1.0 -- ppa:savoury1/gtk-xenial
+- libibus-1.0-dev -- ppa:savoury1/gtk-xenial
+- ibus-gtk:i386 -- ppa:savoury1/gtk-xenial
+- ibus -- ppa:savoury1/gtk-xenial
 B libstartup-notification0
 B libnotify4
 B libnotify-bin
