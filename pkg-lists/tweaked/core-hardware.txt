@@ -51,7 +51,6 @@ B libieee1284-3:i386
 B pcmciautils
 B hwdata
 B ubuntu-drivers-common
-B python-cheetah
 - libfdt1 -- ppa:savoury1/virtualisation
 - libfdt-dev -- ppa:savoury1/virtualisation
 - device-tree-compiler -- ppa:savoury1/virtualisation

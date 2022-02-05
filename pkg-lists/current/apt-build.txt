@@ -70,6 +70,7 @@ B libllvm4.0:i386
 - make -- ppa:savoury1/build-tools
 - cmake-data -- ppa:savoury1/build-tools
 - cmake -- ppa:savoury1/build-tools
+- scons -- ppa:savoury1/build-tools
 B diffutils
 - patchutils -- ppa:savoury1/build-tools
 - quilt -- ppa:savoury1/build-tools

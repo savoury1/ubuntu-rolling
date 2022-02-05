@@ -1,19 +1,19 @@
-B python-sip
-B python3-sip
+- python-sip -- ppa:savoury1/python
+- python3-sip -- ppa:savoury1/python
 B python3-gdbm
-B libpython2.7-minimal
-B libpython2.7-stdlib
-B libpython2.7
-B libpython2.7-dev
-B libpython-stdlib
-B libpython-dev
-B python2.7-minimal
-B python2.7
-B python2.7-dev
-B python-minimal
-B python
-B python-dev
-B python-tk
+- libpython2.7-minimal -- ppa:savoury1/python
+- libpython2.7-stdlib -- ppa:savoury1/python
+- libpython2.7 -- ppa:savoury1/python
+- libpython2.7-dev -- ppa:savoury1/python
+- libpython-stdlib -- ppa:savoury1/python
+- libpython-dev -- ppa:savoury1/python
+- python2.7-minimal -- ppa:savoury1/python
+- python2.7 -- ppa:savoury1/python
+- python2.7-dev -- ppa:savoury1/python
+- python-minimal -- ppa:savoury1/python
+- python -- ppa:savoury1/python
+- python-dev -- ppa:savoury1/python
+- python-tk -- ppa:savoury1/python
 B libpyside1.2
 B python-pyside.qtcore
 B python-pyside.qtnetwork
@@ -30,64 +30,64 @@ B python-pyside.qtopengl
 B python-pyside.phonon
 B python-pyside.qtuitools
 B python-pyside
-B scons
-B python-enum34
-B python-six
-B python3-six
-B python-configobj
-B python3-configobj
+- python-enum34 -- ppa:savoury1/python
+- python-six -- ppa:savoury1/python
+- python3-six -- ppa:savoury1/python
+- python-configobj -- Xenial has same version as Bionic
+- python3-configobj -- Xenial has same version as Bionic
 B python3-icu
-B python3-decorator
-B python-chardet
-B python3-chardet
-B python-pycurl
-B python3-pycurl
+- python3-decorator -- ppa:savoury1/python
+- python-chardet -- ppa:savoury1/python
+- python3-chardet -- ppa:savoury1/python
+- python-pycurl -- ppa:savoury1/python
+- python3-pycurl -- ppa:savoury1/python
 B python-xapian
 B python3-xapian
-B python-yaml
-B python3-yaml
-B python-libxml2
-B python3-libxml2
-B python-lxml
-B python3-lxml
-B python-markupsafe
-B python3-markupsafe
-B python-mako
-B python3-mako
-B python-debian
-B python3-debian
+- python-yaml -- ppa:savoury1/python
+- python3-yaml -- ppa:savoury1/python
+- python-libxml2 -- ppa:savoury1/backports
+- python3-libxml2 -- ppa:savoury1/backports
+- python-lxml -- ppa:savoury1/python
+- python3-lxml -- ppa:savoury1/python
+- python-markupsafe -- ppa:savoury1/python
+- python3-markupsafe -- ppa:savoury1/python
+- python-mako -- ppa:savoury1/python
+- python3-mako -- ppa:savoury1/python
+- python-debian -- ppa:savoury1/python
+- python3-debian -- ppa:savoury1/python
 B python-pip-whl
 B python-pip
 B python3-pip
 B python3-brlapi
 B python-gobject-2
-B python-gobject
-B python-gi
-B python3-gi
+- python-gobject -- ppa:savoury1/python
+- python-gi -- ppa:savoury1/python
+- python3-gi -- ppa:savoury1/python
 B python-crypto
 B python3-crypto
 B python-dbus
 B python-dbus-dev
 B python3-dbus
-B python-cffi-backend
-B python3-cffi-backend
-B python-numpy
-B python3-numpy
-B python3-scipy
-B python3-psutil
-B python-setproctitle
-B python3-setproctitle
+- python-cffi-backend -- ppa:savoury1/python
+- python3-cffi-backend -- ppa:savoury1/python
+- python-numpy -- ppa:savoury1/python
+- python3-numpy -- ppa:savoury1/python
+- python3-scipy -- ppa:savoury1/python
+- python3-psutil -- ppa:savoury1/python
+- python-setproctitle -- ppa:savoury1/python
+- python3-setproctitle -- ppa:savoury1/python
 B python3-virtkey
-B python-cairo
-B python3-cairo
-B python-gi-cairo
-B python3-gi-cairo
+- python-cairo -- ppa:savoury1/python
+- python3-cairo -- ppa:savoury1/python
+- python-gi-cairo -- ppa:savoury1/python
+- python3-gi-cairo -- ppa:savoury1/python
 B python-cups
 B python3-cups
-B python-pil
-B python3-pil
-B python-reportlab-accel
-B python3-reportlab-accel
-B python-reportlab
-B python3-reportlab
-B python-renderpm
+- python-pil -- ppa:savoury1/python
+- python3-pil -- ppa:savoury1/python
+- python-reportlab-accel -- ppa:savoury1/python
+- python3-reportlab-accel -- ppa:savoury1/python
+- python-reportlab -- ppa:savoury1/python
+- python3-reportlab -- ppa:savoury1/python
+- python-renderpm -- ppa:savoury1/python
+- python-cheetah -- ppa:savoury1/python
