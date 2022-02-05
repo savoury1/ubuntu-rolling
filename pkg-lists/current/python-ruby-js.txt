@@ -1,4 +1,4 @@
-B python-cliapp
+- python-cliapp -- ppa:savoury1/python
 - python-funcsigs -- ppa:savoury1/python
 - python-pbr -- ppa:savoury1/python
 - python-mock -- ppa:savoury1/python
@@ -33,19 +33,19 @@ B python-cliapp
 - python3-roman -- unneeded (minor packaging changes)
 - docutils-common -- ppa:savoury1/python
 - python3-docutils -- ppa:savoury1/python
-- python3-jinja2
+- python3-jinja2 -- ppa:savoury1/python
 - python3-pygments -- ppa:savoury1/python
-B python-jwt
-B python3-jwt
-- python-hyperlink
+- python-jwt -- ppa:savoury1/python
+- python3-jwt -- ppa:savoury1/python
+- python-hyperlink -- ppa:savoury1/python
 - python-twisted-bin -- ppa:savoury1/python
 - python-twisted-core -- ppa:savoury1/python
 - python-twisted-names -- ppa:savoury1/python
 - python-twisted-web -- ppa:savoury1/python
 - python-feedparser -- ppa:savoury1/python
 - python-rencode -- ppa:savoury1/python
-B python-piston-mini-client
-B python3-piston-mini-client
+- python-piston-mini-client -- ppa:savoury1/python
+- python3-piston-mini-client -- ppa:savoury1/python
 - python-xlib -- ppa:savoury1/python
 - python3-xlib -- ppa:savoury1/python
 - rubygems-integration -- ppa:savoury1/ruby-xenial
