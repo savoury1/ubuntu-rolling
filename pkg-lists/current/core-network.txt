@@ -122,7 +122,7 @@ B libpcsclite1
 B pppconfig
 B pppoeconf
 - pptp-linux -- ppa:savoury1/gtk-xenial
-B mobile-broadband-provider-info
+- mobile-broadband-provider-info -- ppa:savoury1/backports
 - libmbim-glib4 -- ppa:savoury1/gtk-xenial
 - libmbim-proxy -- ppa:savoury1/gtk-xenial
 - libqmi-glib5 -- ppa:savoury1/gtk-xenial

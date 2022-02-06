@@ -77,8 +77,8 @@ B libnss3
 B libnss3:i386
 B libnss3-dev
 B libnss-mdns
-B libapr1
-B libaprutil1
+- libapr1 -- ppa:savoury1/backports
+- libaprutil1 -- ppa:savoury1/backports
 B libserf-1-1
 - libsvn1 -- ppa:savoury1/backports
 - subversion -- ppa:savoury1/backports
