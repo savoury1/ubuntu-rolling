@@ -11,8 +11,8 @@ B wamerican
 B libgtkspell0
 B libhyphen0
 B hyphen-en-us
-B wordnet-base
-B wordnet
+- wordnet-base -- ppa:savoury1/backports
+- wordnet -- ppa:savoury1/backports
 B libmythes-1.2-0
 B mythes-en-us
 B liblangtag-common
@@ -30,7 +30,6 @@ B libmspack0
 B cabextract
 B libgcab-1.0-0
 - libnetcdf13 -- superseded by ppa:savoury1/backports
-B valgrind
 - librevenge-0.0-0 -- ppa:savoury1/{backports,scribus}
 - libodfgen-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
 - libwpd-0.10-10 -- ppa:savoury1/libreoffice{-6-4,-7-1}
