@@ -13,8 +13,8 @@ B libsonic0
 - libopencore-amrwb0 -- ppa:savoury1/multimedia
 - libgsm1 -- ppa:savoury1/multimedia
 B libspandsp2
-B libsoundtouch1
-B libmusicbrainz5cc2v5
+- libsoundtouch1 -- ppa:savoury1/multimedia
+- libmusicbrainz5cc2v5 -- ppa:savoury1/multimedia
 - libtag1v5-vanilla -- ppa:savoury1/multimedia
 - libtag1v5-vanilla:i386 -- ppa:savoury1/multimedia
 - libtag1v5 -- ppa:savoury1/multimedia
@@ -113,7 +113,7 @@ B libaudio2:i386
 - libopenal-dev -- ppa:savoury1/multimedia
 - libmikmod3 -- ppa:savoury1/multimedia
 - libmikmod3:i386 -- ppa:savoury1/multimedia
-B libportmidi0
+- libportmidi0 -- ppa:savoury1/multimedia
 B libportsmf0v5
 - libwildmidi-config -- ppa:savoury1/multimedia
 - libwildmidi2 -- ppa:savoury1/multimedia
@@ -123,5 +123,5 @@ B libportsmf0v5
 B libofa0
 - libchromaprint1 -- ppa:savoury1/multimedia
 - librubberband2 -- ppa:savoury1/multimedia
-B libvamp-hostsdk3v5
+- libvamp-hostsdk3v5 -- ppa:savoury1/multimedia
 - libsuil-0-0 -- ppa:savoury1/multimedia
