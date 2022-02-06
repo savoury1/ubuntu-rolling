@@ -91,7 +91,7 @@ B libisc-export169
 B libdns-export1100
 - libasyncns0 -- ppa:savoury1/backports
 - libasyncns0:i386 -- ppa:savoury1/backports
-B libc-ares2
+- libc-ares2 -- ppa:savoury1/{backports,node-xenial}
 - libaria2-0 -- ppa:savoury1/backports
 - aria2 -- ppa:savoury1/backports
 - wget -- ppa:savoury1/backports
@@ -117,7 +117,7 @@ B rfkill
 B b43-fwcutter
 - ndiswrapper -- ppa:savoury1/backports
 - ndiswrapper-dkms -- ppa:savoury1/backports
-B libpcsclite1
+- libpcsclite1 -- ppa:savoury1/encryption
 - ppp -- ppa:savoury1/gtk-xenial
 B pppconfig
 B pppoeconf

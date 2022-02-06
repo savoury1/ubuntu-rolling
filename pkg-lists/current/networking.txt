@@ -67,7 +67,7 @@ B rdesktop
 - libsodium23 -- ppa:savoury1/backports
 - libsodium-dev -- ppa:savoury1/backports
 - libnorm1 -- ppa:savoury1/multimedia
-B libpgm-5.2-0
+- libpgm-5.2-0 -- Xenial has same version as Bionic
 - libzmq5 -- ppa:savoury1/multimedia
 - librest-0.7-0 -- ppa:savoury1/backports
 B libnspr4
@@ -79,7 +79,7 @@ B libnss3-dev
 B libnss-mdns
 - libapr1 -- ppa:savoury1/backports
 - libaprutil1 -- ppa:savoury1/backports
-B libserf-1-1
+- libserf-1-1 -- ppa:savoury1/backports
 - libsvn1 -- ppa:savoury1/backports
 - subversion -- ppa:savoury1/backports
 B cvs
