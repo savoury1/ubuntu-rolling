@@ -118,7 +118,7 @@ B libmms0
 - gstreamer1.0-plugins-ugly -- ppa:savoury1/multimedia
 - libfarstream-0.2-5 -- ppa:savoury1/multimedia
 B libdmapsharing-3.0-2
-B libgrilo-0.3-0
+- libgrilo-0.3-0 -- ppa:savoury1/{multimedia,xapps}
 - liblirc-client0 -- ppa:savoury1/multimedia
 - liblircclient0 -- ppa:savoury1/multimedia
 B rhythmbox-data
