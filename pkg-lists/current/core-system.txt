@@ -1,5 +1,5 @@
-B install-info
-B info
+- install-info -- ppa:savoury1/tex-2019
+- info -- ppa:savoury1/tex-2019
 - tex-common -- ppa:savoury1/tex-2019
 - texinfo -- ppa:savoury1/tex-2019
 B coreutils
@@ -9,7 +9,7 @@ B ucf
 B base-passwd
 B makedev
 B cron
-B anacron
+- anacron -- ppa:savoury1/backports
 B rsyslog
 B logrotate
 B libustr-1.0-1
@@ -17,11 +17,11 @@ B libffi6
 B libffi6:i386
 B libffi-dev
 - libfribidi0 -- ppa:savoury1/fonts
-B libnuma1
-B libnuma-dev
+- libnuma1 -- ppa:savoury1/backports
+- libnuma-dev -- ppa:savoury1/backports
 B libnpth0
 B librhash0
-B libuv1
+- libuv1 -- ppa:savoury1/{backports,build-tools-node-xenial}
 B libbsd0
 B libbsd0:i386
 B libbsd-dev
@@ -50,7 +50,7 @@ B libunique-1.0-0
 B libossp-uuid16
 B uuid
 B liblua5.2-0
-B liblua5.3-0
+- liblua5.3-0 -- ppa:savoury1/backports
 B java-common
 - libunwind8 -- ppa:savoury1/build-tools
 - libunwind-dev -- ppa:savoury1/build-tools
@@ -77,7 +77,7 @@ B libarmadillo8
 - libisl15 -- superseded by ppa:savoury1/backports
 - libmpfr6 -- ppa:savoury1/backports
 - libmpc3 -- ppa:savoury1/backports
-B libmpdec2
+- libmpdec2 -- ppa:savoury1/backports
 B bc
 B dc
 B libmetis5
@@ -105,8 +105,8 @@ B libstdc++5:i386
 - libsigc++-2.0-dev -- ppa:savoury1/gtk-xenial
 B libsigsegv2
 B libcwidget3v5
-B libasprintf0v5
-B libasprintf-dev
+- libasprintf0v5 -- ppa:savoury1/backports
+- libasprintf-dev -- ppa:savoury1/backports
 - gettext-base -- ppa:savoury1/backports
 - gettext -- ppa:savoury1/backports
 - libgettextpo0 -- ppa:savoury1/backports
@@ -115,8 +115,8 @@ B libasprintf-dev
 - autopoint -- ppa:savoury1/backports
 B mawk
 - gawk -- ppa:savoury1/backports
-B liblockfile-bin
-B liblockfile1
+- liblockfile-bin -- ppa:savoury1/backports
+- liblockfile1 -- ppa:savoury1/backports
 B lockfile-progs
 B python-lockfile
 B librsync1
