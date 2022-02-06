@@ -10,7 +10,7 @@ B libaa1:i386
 - libjpeg8 -- identical version in Xenial and Bionic
 - libjpeg8:i386 -- identical version in Xenial and Bionic
 - libjpeg-dev -- identical version in Xenial and Bionic
-B libjpeg9
+- libjpeg9 -- ppa:savoury1/graphics
 - libjpeg-turbo-progs -- ppa:savoury1/graphics
 - libopenjp2-7 -- ppa:savoury1/graphics
 - libcharls1 -- superseded by libcharls2
@@ -103,7 +103,7 @@ B libexempi3
 - libgexiv2-2 -- ppa:savoury1/graphics
 - gir1.2-gexiv2-0.10 -- ppa:savoury1/graphics
 B python-pyexiv2
-B libraw16
+- libraw16 -- superseded by libraw20
 - liblensfun-data-v1 -- ppa:savoury1/graphics
 - liblensfun1 -- ppa:savoury1/graphics
 B liblqr-1-0
