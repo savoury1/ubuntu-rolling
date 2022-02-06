@@ -1,9 +1,9 @@
 - exfat-fuse -- ppa:savoury1/backports
 - exfat-utils -- ppa:savoury1/backports
 B media-player-info
-B libmtp-common
-B libmtp-runtime
-B libmtp9
+- libmtp-common -- ppa:savoury1/multimedia
+- libmtp-runtime -- ppa:savoury1/multimedia
+- libmtp9 -- ppa:savoury1/multimedia
 B jmtpfs
 B gmtp
 - libplist3 -- ppa:savoury1/backports
@@ -14,7 +14,7 @@ B gmtp
 - ideviceinstaller -- ppa:savoury1/backports
 B libical2
 - libical3 -- ppa:savoury1/backports
-B libsgutils2-2
+- libsgutils2-2 -- ppa:savoury1/{backports,utilities}
 B libgpod4
 B libgpod-common
 B ifuse
@@ -30,7 +30,7 @@ B cdparanoia
 B libjte1
 B genisoimage
 B libisofs6
-B bchunk
+- bchunk -- ppa:savoury1/multimedia
 B cdrdao
 B wodim
 B libburn4
