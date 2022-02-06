@@ -63,7 +63,7 @@ B libnotify4
 B libnotify-bin
 - zenity-common -- ppa:savoury1/gtk-xenial
 - zenity -- ppa:savoury1/gtk-xenial
-B libgirara-gtk3-3
+- libgirara-gtk3-3 -- ppa:savoury1/gtk-xenial
 B gir1.2-notify-0.7
 B libwnck-common
 B libwnck22
@@ -98,8 +98,8 @@ B indicator-application
 B libzephyr4
 - libtelepathy-glib0 -- ppa:savoury1/gtk-xenial
 B gnome-color-manager
-B libgweather-common
-B libgweather-3-15
+- libgweather-common -- ppa:savoury1/gtk-xenial
+- libgweather-3-15 -- ppa:savoury1/gtk-xenial
 - gsettings-desktop-schemas -- ppa:savoury1/gtk-xenial
 B gnome-settings-daemon-schemas
 - gnome-desktop3-data -- ppa:savoury1/gtk-xenial
@@ -137,6 +137,6 @@ B python-vte
 - libvte-2.91-common -- ppa:savoury1/gtk-xenial
 - libvte-2.91-0 -- ppa:savoury1/gtk-xenial
 - gir1.2-vte-2.91 -- ppa:savoury1/gtk-xenial
-B yelp-xsl
-B libyelp0
-B yelp
+- yelp-xsl -- ppa:savoury1/backports
+- libyelp0 -- ppa:savoury1/backports
+- yelp -- ppa:savoury1/backports
