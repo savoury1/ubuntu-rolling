@@ -14,10 +14,10 @@ B acl
 B libaudit-common
 B libaudit1
 B libaudit-dev
-B libsecret-common
-B libsecret-1-0
-B libsecret-1-0:i386
-B gir1.2-secret-1
+- libsecret-common -- ppa:savoury1/gtk-xenial
+- libsecret-1-0 -- ppa:savoury1/gtk-xenial
+- libsecret-1-0:i386 -- ppa:savoury1/gtk-xenial
+- gir1.2-secret-1 -- ppa:savoury1/gtk-xenial
 B libpam0g
 B libpam0g-dev
 B python-pam
@@ -43,8 +43,8 @@ B libuser1
 B python-libuser
 B libapparmor1
 B apparmor
-B libseccomp2
-B libseccomp-dev
+- libseccomp2 -- ppa:savoury1/{backports,kde-5-80}
+- libseccomp-dev -- ppa:savoury1/{backports,kde-5-80}
 B libsepol1
 B libsepol1-dev
 B libselinux1
@@ -61,22 +61,22 @@ B ssh-askpass-gnome
 B libssh2-1
 B libssh2-1-dev
 B libpkcs11-helper1
-B libargon2-0
-B libmhash2
-B keepass2
-B libcrack2
-B cracklib-runtime
+- libargon2-0 -- ppa:savoury1/{backports,utilities}
+- libmhash2 -- Xenial has same version as Bionic
+- keepass2 -- ppa:savoury1/backports
+- libcrack2 -- ppa:savoury1/backports
+- cracklib-runtime -- ppa:savoury1/backports
 B libpwquality-common
 B libpwquality1
 B liboauth0
-B libcrypto++6
+- libcrypto++6 -- ppa:savoury1/backports
 - python-oauth -- superseded by python-oauthlib
-B python-oauthlib
-B python3-oauthlib
-B python-asn1crypto
-B python3-asn1crypto
-B python-cryptography
-B python3-cryptography
-B python-secretstorage
-B python-keyring
-B python-paramiko
+- python-oauthlib -- ppa:savoury1/python
+- python3-oauthlib -- ppa:savoury1/python
+- python-asn1crypto -- ppa:savoury1/python
+- python3-asn1crypto -- ppa:savoury1/python
+- python-cryptography -- ppa:savoury1/{encryption,python}
+- python3-cryptography -- ppa:savoury1/{encryption,python}
+- python-secretstorage -- ppa:savoury1/python
+- python-keyring -- ppa:savoury1/python
+- python-paramiko -- ppa:savoury1/python
