@@ -11,9 +11,9 @@ B network-manager-gnome
 - network-manager-pptp-gnome -- ppa:savoury1/gtk-xenial
 B network-manager-openvpn
 B network-manager-openvpn-gnome
-B libgoa-1.0-common
-B libgoa-1.0-0b
-B gir1.2-goa-1.0
+- libgoa-1.0-common -- ppa:savoury1/gtk-xenial
+- libgoa-1.0-0b -- ppa:savoury1/gtk-xenial
+- gir1.2-goa-1.0 -- ppa:savoury1/gtk-xenial
 B libcapi20-3:i386
 B libvde0
 B libvde-dev
@@ -44,7 +44,7 @@ B python-tdb
 - python3-pyasn1-modules -- ppa:savoury1/python
 - python-service-identity -- ppa:savoury1/python
 - python-dnspython -- ppa:savoury1/python
-B python-ipaddr
+- python-ipaddr -- ppa:savoury1/python
 - python-ipaddress -- ppa:savoury1/python
 B libtalloc2
 B python-talloc
@@ -69,7 +69,7 @@ B rdesktop
 - libnorm1 -- ppa:savoury1/multimedia
 B libpgm-5.2-0
 - libzmq5 -- ppa:savoury1/multimedia
-B librest-0.7-0
+- librest-0.7-0 -- ppa:savoury1/backports
 B libnspr4
 B libnspr4:i386
 B libnspr4-dev
@@ -120,6 +120,6 @@ B libmeanwhile1
 B libgeoclue0
 B geoclue
 B geoclue-ubuntu-geoip
-B libgeoclue-2-0
-B geoclue-2.0
-B libgeocode-glib0
+- libgeoclue-2-0 -- ppa:savoury1/{backports,kde-5-80}
+- geoclue-2.0 -- ppa:savoury1/{backports,kde-5-80}
+- libgeocode-glib0 -- ppa:savoury1/gtk-xenial
