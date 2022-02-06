@@ -43,16 +43,16 @@ B libminizip1
 B libaio1
 B libaio1:i386
 B libaio-dev
-B libpq5
+- libpq5 -- ppa:savoury1/backports
 - libsqlite3-0 -- ppa:savoury1/backports
 - libsqlite3-0:i386 -- ppa:savoury1/backports
-B mysql-common
+- mysql-common -- ppa:savoury1/backports
 - libmysqlclient20 -- ppa:savoury1/backports
-B libodbc1
-B libodbc1:i386
-B odbcinst1debian2
-B odbcinst1debian2:i386
-B odbcinst
+- libodbc1 -- ppa:savoury1/backports
+- libodbc1:i386 -- ppa:savoury1/backports
+- odbcinst1debian2 -- ppa:savoury1/backports
+- odbcinst1debian2:i386 -- ppa:savoury1/backports
+- odbcinst -- ppa:savoury1/backports
 B librecode0
 B libonig4
 B libjq1
@@ -68,7 +68,7 @@ B libfastjson4
 - python-simplejson -- ppa:savoury1/python
 B libyajl2
 - libyaml-0-2 -- ppa:savoury1/backports
-B libyaml-cpp0.5v5
+- libyaml-cpp0.5v5 -- Xenial has same version as bionic
 B libestr0
 B libcroco3
 B libcroco3:i386
@@ -110,7 +110,7 @@ B libostyle1c2
 B openjade
 - docbook -- identical version in Xenial and Bionic
 - docbook-to-man -- ppa:savoury1/build-tools
-B docbook-dsssl
+- docbook-dsssl -- ppa:savoury1/build-tools
 - docbook-xml -- ppa:savoury1/build-tools
 - docbook-xsl -- ppa:savoury1/build-tools
 B highlight-common
