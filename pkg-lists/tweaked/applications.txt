@@ -14,7 +14,7 @@ B gnome-calculator
 - libecal-1.2-19 -- ppa:savoury1/gtk-xenial
 - libedata-cal-1.2-28 -- ppa:savoury1/gtk-xenial
 B tomboy
-B artha
+- artha -- ppa:savoury1/backports
 - xapps-common -- ppa:savoury1/gtk-xenial
 - libxapp1 -- ppa:savoury1/gtk-xenial
 B libgtkhex-3-0
@@ -65,5 +65,5 @@ B transmission-gtk
 - amule -- newer git version
 - tigervnc-common -- ppa:savoury1/backports
 - tigervnc-viewer -- ppa:savoury1/backports
-- chromium-browser -- ppa:canonical-chromium-builds/stage
-- chromium-codecs-ffmpeg-extra -- ppa:canonical-chromium-builds/stage
+- chromium-browser -- ppa:savoury1/chromium
+- chromium-codecs-ffmpeg-extra -- ppa:savoury1/chromium
