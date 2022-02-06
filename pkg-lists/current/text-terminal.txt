@@ -34,7 +34,7 @@ B command-not-found-data
 B python3-commandnotfound
 B command-not-found
 - libpopt0 -- ppa:savoury1/backports
-B groff-base
+- groff-base -- ppa:savoury1/backports
 B libpipeline1
 B binfmt-support
 B libgdbm5
@@ -55,10 +55,10 @@ B mlocate
 - vim-tiny -- ppa:savoury1/backports
 B ncdu
 - libcdk5 -- ppa:savoury1/backports
-B libedit2
-B libedit2:i386
+- libedit2 -- ppa:savoury1/backports
+- libedit2:i386 -- ppa:savoury1/backports
 B dialog
 - libgpm2 -- ppa:savoury1/backports
 - libgpm2:i386 -- ppa:savoury1/backports
-B libre2-4
+- libre2-4 -- obsolete by libre2-5
 - libre2-5 -- ppa:savoury1/backports
