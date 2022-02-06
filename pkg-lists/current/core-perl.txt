@@ -10,7 +10,7 @@ B libpcre3-dev
 - libclone-perl -- ppa:savoury1/perl-xenial
 - libfreezethaw-perl -- Xenial has same version as Bionic
 - libexporter-tiny-perl -- ppa:savoury1/perl-xenial
-B liblist-moreutils-perl -- ppa:savoury1/perl-xenial
+- liblist-moreutils-perl -- ppa:savoury1/perl-xenial
 - libfile-listing-perl -- Xenial has same version as Bionic
 - libfile-copy-recursive-perl -- ppa:savoury1/perl-xenial
 - rename -- ppa:savoury1/perl-xenial
@@ -24,7 +24,7 @@ B liblist-moreutils-perl -- ppa:savoury1/perl-xenial
 - perl-openssl-defaults -- ppa:savoury1/perl-xenial
 - libnet-ssleay-perl -- ppa:savoury1/perl-xenial
 - libarchive-zip-perl -- ppa:savoury1/perl-xenial
-B libdbi-perl -- ppa:savoury1/perl-xenial
+- libdbi-perl -- ppa:savoury1/perl-xenial
 B libdbd-pg-perl
 - libdbd-sqlite3-perl -- ppa:savoury1/perl-xenial
 - libyaml-perl -- ppa:savoury1/perl-xenial

@@ -34,7 +34,7 @@ B libcrypt-blowfish-perl -- newer Perl rebuild
 B libcrypt-rijndael-perl -- newer Perl rebuild
 - libcrypt-cbc-perl -- Xenial has same version as Bionic
 - perl-openssl-defaults -- ppa:savoury1/perl-xenial
-B libnet-ssleay-perl -- newer Perl rebuild
+- libnet-ssleay-perl -- ppa:savoury1/backports (Bionic version)
 B libperlio-gzip-perl -- newer Perl rebuild
 - libarchive-zip-perl -- ppa:savoury1/perl-xenial
 B libdbi-perl -- newer Perl rebuild
@@ -57,7 +57,7 @@ B libhtml-parser-perl -- newer Perl rebuild
 - libxml-namespacesupport-perl -- ppa:savoury1/perl-xenial
 - libxml-sax-base-perl -- ppa:savoury1/perl-xenial
 B libxml-libxml-perl -- newer Perl rebuild
-B libxml-parser-perl -- newer Perl rebuild
+- libxml-parser-perl -- ppa:savoury1/backports (Bionic version)
 - libxml-simple-perl -- ppa:savoury1/perl-xenial
 - libxml-xpathengine-perl -- ppa:savoury1/perl-xenial
 - libxml-twig-perl -- ppa:savoury1/perl-xenial
