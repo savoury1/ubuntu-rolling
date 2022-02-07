@@ -6,13 +6,13 @@ B dbus
 B libdbus-glib-1-2
 B libdbus-glib-1-2:i386
 B libdbus-glib-1-dev
-B libatk1.0-data
-B libatk1.0-0
-B libatk1.0-0:i386
-B gir1.2-atk-1.0
-B libatk1.0-dev
-B libatkmm-1.6-1v5
-B libatkmm-1.6-dev
+- libatk1.0-data -- ppa:savoury1/gtk-xenial
+- libatk1.0-0 -- ppa:savoury1/gtk-xenial
+- libatk1.0-0:i386 -- ppa:savoury1/gtk-xenial
+- gir1.2-atk-1.0 -- ppa:savoury1/gtk-xenial
+- libatk1.0-dev -- ppa:savoury1/gtk-xenial
+- libatkmm-1.6-1v5 -- ppa:savoury1/gtk-xenial
+- libatkmm-1.6-dev -- ppa:savoury1/gtk-xenial
 B libatspi2.0-0
 B libatspi2.0-0:i386
 B gir1.2-atspi-2.0
@@ -34,10 +34,10 @@ B initramfs-tools-bin
 B initramfs-tools-core
 B initramfs-tools
 B watershed
-B libprocps6
-B procps
+- libprocps6 -- ppa:savoury1/{backports,display}
+- procps -- ppa:savoury1/{backports,display}
 B psmisc
-B drbl
+- drbl -- ppa:savoury1/{backports,utilities}
 B libsmbios-c2
 B libefivar1
 B libefiboot1
@@ -61,9 +61,9 @@ B libudev1
 B libudev1:i386
 B libudev-dev
 B udev
-B libgudev-1.0-0
-B libgudev-1.0-0:i386
-B gir1.2-gudev-1.0
+- libgudev-1.0-0 -- ppa:savoury1/gtk-xenial
+- libgudev-1.0-0:i386 -- ppa:savoury1/gtk-xenial
+- gir1.2-gudev-1.0 -- ppa:savoury1/gtk-xenial
 B libsystemd0
 B libsystemd0:i386
 B systemd
