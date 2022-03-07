@@ -1,4 +1,4 @@
-B linux-firmware
+- linux-firmware -- ppa:savoury1/backports
 B libfwupd2
 B fwupd
 B lshw
