@@ -7,10 +7,10 @@
 - libinput-bin -- ppa:savoury1/display
 - libinput10 -- ppa:savoury1/display
 - xkb-data -- ppa:savoury1/display
-F kbd
-F keyboard-configuration
-F console-setup-linux
-F console-setup
+B kbd
+B keyboard-configuration
+B console-setup-linux
+B console-setup
 - libnux-4.0-common -- ppa:savoury1/display
 - nux-tools -- ppa:savoury1/display
 - x11-common -- ppa:savoury1/display
@@ -55,7 +55,7 @@ B xorg-docs-core
 - libxtst6:i386 -- ppa:savoury1/display
 - libxtst-dev -- ppa:savoury1/display
 - libfakekey0 -- ppa:savoury1/{virtualisation,kde-5-80}
-F xinput
+B xinput
 - libxkbfile1 -- ppa:savoury1/display
 - libice6 -- ppa:savoury1/display
 - libice6:i386 -- ppa:savoury1/display
@@ -67,35 +67,35 @@ F xinput
 - libxpm4:i386 -- ppa:savoury1/display
 - libxpm-dev -- ppa:savoury1/display
 - xauth -- ppa:savoury1/display
-F xinit
-F xautomation
+B xinit
+B xautomation
 - xutils-dev -- ppa:savoury1/display
-F x11-apps
-F x11-utils
-F x11-session-utils
-F x11-xserver-utils
-F x11-xfs-utils
+B x11-apps
+B x11-utils
+B x11-session-utils
+B x11-xserver-utils
+B x11-xfs-utils
 - x11-xkb-utils -- ppa:savoury1/display
 - libxkbcommon0 -- ppa:savoury1/display
 - libxkbcommon0:i386 -- ppa:savoury1/display
 - libxkbcommon-dev -- ppa:savoury1/display
 - libxkbcommon-x11-0 -- ppa:savoury1/display
-F libxklavier16
-F gir1.2-xkl-1.0
-F libxdo3
-F xdotool
+B libxklavier16
+B gir1.2-xkl-1.0
+B libxdo3
+B xdotool
 - libxshmfence1 -- ppa:savoury1/display
 - libxshmfence1:i386 -- ppa:savoury1/display
 - libxshmfence-dev -- ppa:savoury1/display
 - libpixman-1-0 -- ppa:savoury1/display
 - libpixman-1-0:i386 -- ppa:savoury1/display
 - libpixman-1-dev -- ppa:savoury1/display
-F libxft2
-F libxft2:i386
-F libxft-dev
+- libxft2 -- Xenial has same version as Bionic
+- libxft2:i386 -- Xenial has same version as Bionic
+- libxft-dev -- Xenial has same version as Bionic
 - libxfont2 -- ppa:savoury1/display
 - xfonts-utils -- ppa:savoury1/display
-F xcalib
-F wmctrl
-F xaw3dg:i386
-F compton
+B xcalib
+B wmctrl
+B xaw3dg:i386
+B compton

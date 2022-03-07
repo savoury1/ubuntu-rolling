@@ -90,9 +90,9 @@ B xdotool
 - libpixman-1-0 -- ppa:savoury1/display
 - libpixman-1-0:i386 -- ppa:savoury1/display
 - libpixman-1-dev -- ppa:savoury1/display
-B libxft2
-B libxft2:i386
-B libxft-dev
+- libxft2 -- Xenial has same version as Bionic
+- libxft2:i386 -- Xenial has same version as Bionic
+- libxft-dev -- Xenial has same version as Bionic
 - libxfont2 -- ppa:savoury1/display
 - xfonts-utils -- ppa:savoury1/display
 B xcalib
