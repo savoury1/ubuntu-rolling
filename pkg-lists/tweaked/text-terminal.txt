@@ -15,21 +15,17 @@
 - readline-common -- ppa:savoury1/backports
 - libreadline7 -- ppa:savoury1/backports
 - libreadline7:i386 -- ppa:savoury1/backports
-F libtinfo5
-F libtinfo5:i386
-F libncurses5
-F libncurses5:i386
-F libncursesw5
-F libncursesw5:i386
-F libtinfo6
-F libncurses6
-F libncursesw6
-F ncurses-base
-F ncurses-bin
-F libncurses-dev
-F libtinfo-dev
-F libncurses5-dev
-F libncursesw5-dev
+B libtinfo5
+B libtinfo5:i386
+B libncurses5
+B libncurses5:i386
+B libncursesw5
+B libncursesw5:i386
+B ncurses-base
+B ncurses-bin
+B libtinfo-dev
+B libncurses5-dev
+B libncursesw5-dev
 B dash
 B ash
 - bash -- ppa:savoury1/backports
