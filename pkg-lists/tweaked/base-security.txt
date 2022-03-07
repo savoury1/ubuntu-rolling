@@ -1,15 +1,15 @@
 - libkeyutils1 -- ppa:savoury1/virtualisation
 - libkeyutils1:i386 -- ppa:savoury1/virtualisation
 - keyutils -- ppa:savoury1/virtualisation
-F krb5-locales -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libkrb5support0 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libkrb5support0:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libk5crypto3 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libk5crypto3:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libkrb5-3 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libkrb5-3:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
-F libgssapi-krb5-2 -- latest available LTS version
-F libgssapi-krb5-2:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Focal
+B krb5-locales
+B libkrb5support0
+B libkrb5support0:i386
+B libk5crypto3
+B libk5crypto3:i386
+B libkrb5-3
+B libkrb5-3:i386
+B libgssapi-krb5-2
+B libgssapi-krb5-2:i386
 - libnettle6 -- ppa:savoury1/encryption
 - libnettle6:i386 -- ppa:savoury1/encryption
 - libhogweed4 -- ppa:savoury1/encryption
@@ -28,13 +28,13 @@ F libgssapi-krb5-2:i386 -- same series as libgssapi-krb5-2 (1.17-6ubuntu4.1) Foc
 - libgnutls-openssl27 -- ppa:savoury1/encryption
 - libgnutls-dane0 -- ppa:savoury1/encryption
 - libgnutls28-dev -- ppa:savoury1/encryption
-F libsasl2-modules -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
-F libsasl2-modules:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
-F libsasl2-modules-db -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
-F libsasl2-modules-db:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
-F libsasl2-2 -- latest available LTS version
-F libsasl2-2:i386 -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
-F libsasl2-dev -- same series as libsasl2-2 (2.1.27+dfsg-2) Focal
+B libsasl2-modules
+B libsasl2-modules:i386
+B libsasl2-modules-db
+B libsasl2-modules-db:i386
+B libsasl2-2
+B libsasl2-2:i386
+B libsasl2-dev
 B libheimbase1-heimdal:i386
 B libheimbase1-heimdal
 B libroken18-heimdal
