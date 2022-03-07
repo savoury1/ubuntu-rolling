@@ -35,7 +35,7 @@ B python-pyside
 - python3-six -- ppa:savoury1/python
 - python-configobj -- Xenial has same version as Bionic
 - python3-configobj -- Xenial has same version as Bionic
-B python3-icu
+- python3-icu -- ppa:savoury1/python
 - python3-decorator -- ppa:savoury1/python
 - python-chardet -- ppa:savoury1/python
 - python3-chardet -- ppa:savoury1/python
