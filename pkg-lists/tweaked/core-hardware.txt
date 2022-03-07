@@ -63,10 +63,10 @@ B ubuntu-drivers-common
 - libibverbs-dev -- ppa:savoury1/virtualisation
 - librdmacm1 -- ppa:savoury1/virtualisation
 - librdmacm-dev -- ppa:savoury1/virtualisation
-F librados2
-F librados-dev
-F librbd1
-F librbd-dev
+- librados2 -- ppa:savoury1/virtualisation
+- librados-dev -- ppa:savoury1/virtualisation
+- librbd1 -- ppa:savoury1/virtualisation
+- librbd-dev -- ppa:savoury1/virtualisation
 - libxenstore3.0 -- ppa:savoury1/virtualisation
 - libxen-4.9 -- ppa:savoury1/virtualisation
 - libxen-dev -- ppa:savoury1/virtualisation
