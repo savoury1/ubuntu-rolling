@@ -15,8 +15,6 @@
 - readline-common -- ppa:savoury1/backports
 - libreadline7 -- ppa:savoury1/backports
 - libreadline7:i386 -- ppa:savoury1/backports
-F libreadline8
-F libreadline8:i386
 F libtinfo5
 F libtinfo5:i386
 F libncurses5
