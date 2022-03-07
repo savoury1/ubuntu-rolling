@@ -120,7 +120,7 @@ B libportsmf0v5
 - libfluidsynth1 -- redundant due new libfluidsynth2
 - libfluidsynth1:i386 -- redundant due new libfluidsynth2:i386
 - libflite1 -- ppa:savoury1/multimedia
-B libofa0
+- libofa0 -- ppa:savoury1/multimedia
 - libchromaprint1 -- ppa:savoury1/multimedia
 - librubberband2 -- ppa:savoury1/multimedia
 - libvamp-hostsdk3v5 -- ppa:savoury1/multimedia
