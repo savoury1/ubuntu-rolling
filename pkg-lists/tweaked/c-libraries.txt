@@ -1,16 +1,16 @@
-D libc6 -- required by libqt5core5a (5.12.2+dfsg-4ubuntu1)
-D libc6:i386 -- same series as (2.29-0ubuntu2) Disco
-D libc6-x32 -- same series as (2.29-0ubuntu2) Disco
-D libc6-dbg -- same series as (2.29-0ubuntu2) Disco
-D libc-bin -- same series as (2.29-0ubuntu2) Disco
-D libc-dev-bin -- same series as (2.29-0ubuntu2) Disco
-D libc6-dev -- same series as (2.29-0ubuntu2) Disco
+B libc6
+B libc6:i386
+B libc6-x32
+B libc6-dbg
+B libc-bin
+B libc-dev-bin
+B libc6-dev
 - libc6-dev:i386 -- conflict with earlier linux-libc-dev
-D libc6-i386 -- same series as (2.29-0ubuntu2) Disco
-D libc6-dev-i386 -- same series as (2.29-0ubuntu2) Disco
-D libc6-dev-x32 -- same series as (2.29-0ubuntu2) Disco
-D multiarch-support -- same series as (2.29-0ubuntu2) Disco
-D locales -- same series as (2.29-0ubuntu2) Disco
+B libc6-i386
+B libc6-dev-i386
+B libc6-dev-x32
+B multiarch-support
+B locales
 - libglib2.0-data -- ppa:savoury1/gtk-xenial
 - libglib2.0-0 -- ppa:savoury1/gtk-xenial
 - libglib2.0-0:i386 -- ppa:savoury1/gtk-xenial
