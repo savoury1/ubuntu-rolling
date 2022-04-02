@@ -35,7 +35,7 @@ B cdrdao
 B wodim
 B libburn4
 B cdrskin
-B libdvd-pkg
+- libdvd-pkg -- ppa:savoury1/multimedia
 - libdvdread4 -- superseded by libdvdread8
 - libdvdread8 -- ppa:savoury1/multimedia
 - libdvdnav4 -- ppa:savoury1/multimedia
