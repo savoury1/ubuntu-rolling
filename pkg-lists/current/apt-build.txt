@@ -117,7 +117,7 @@ B python3-debconf
 - javahelper -- ppa:savoury1/build-tools
 - ant -- ppa:savoury1/java-xenial
 - debootstrap -- ppa:savoury1/build-tools
-B vmdebootstrap
+- vmdebootstrap -- ppa:savoury1/build-tools
 - pbuilder -- ppa:savoury1/build-tools
 - cowdancer -- ppa:savoury1/build-tools
 - cowbuilder -- ppa:savoury1/build-tools
