@@ -111,10 +111,10 @@ B libnatpmp1
 - protobuf-compiler -- ppa:savoury1/backports
 - python-protobuf -- ppa:savoury1/backports
 - libprotobuf-c1 -- ppa:savoury1/backports
-B libtorrent-rasterbar9
-B python-libtorrent
+- libtorrent-rasterbar9 -- superseded by ppa:savoury1/backports
+- python-libtorrent -- ppa:savoury1/backports
 - libgadu3 -- ppa:savoury1/backports
-B libmeanwhile1
+- libmeanwhile1 -- ppa:savoury1/backports
 - geoip-bin -- ppa:savoury1/backports
 - libgeoip1 -- ppa:savoury1/backports
 B libgeoclue0
