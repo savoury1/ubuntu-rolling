@@ -64,6 +64,6 @@ B libbluetooth-dev
 B bluez
 B bluez-obexd
 B bluez-cups
-B libgnome-bluetooth13
-B gir1.2-gnomebluetooth-1.0
-B gnome-bluetooth
+- libgnome-bluetooth13 -- ppa:savoury1/gtk-xenial
+- gir1.2-gnomebluetooth-1.0 -- ppa:savoury1/gtk-xenial
+- gnome-bluetooth -- ppa:savoury1/gtk-xenial
