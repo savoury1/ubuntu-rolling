@@ -70,8 +70,8 @@ B libyajl2
 - libyaml-0-2 -- ppa:savoury1/backports
 - libyaml-cpp0.5v5 -- Xenial has same version as bionic
 B libestr0
-B libcroco3
-B libcroco3:i386
+- libcroco3 -- ppa:savoury1/backports
+- libcroco3:i386 -- ppa:savoury1/backports
 - libhdf4-0-alt -- ppa:savoury1/backports
 - hdf5-helpers -- ppa:savoury1/backports
 - libhdf5-100 -- ppa:savoury1/backports
