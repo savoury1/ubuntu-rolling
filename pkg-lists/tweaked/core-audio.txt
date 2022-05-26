@@ -3,10 +3,10 @@
 - libjack-jackd2-0 -- ppa:savoury1/multimedia
 - libjack-jackd2-0:i386 -- ppa:savoury1/multimedia
 - libebur128-1 -- ppa:savoury1/multimedia
-B libspeex1
-B libspeex1:i386
-B libspeexdsp1
-B libspeexdsp1:i386
+- libspeex1 -- ppa:savoury1/multimedia
+- libspeex1:i386 -- ppa:savoury1/multimedia
+- libspeexdsp1 -- ppa:savoury1/multimedia
+- libspeexdsp1:i386 -- ppa:savoury1/multimedia
 B libsonic0
 - libsbc1 -- ppa:savoury1/multimedia
 - libopencore-amrnb0 -- ppa:savoury1/multimedia
