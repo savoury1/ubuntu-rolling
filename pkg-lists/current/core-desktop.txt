@@ -59,12 +59,12 @@ B python-gtksourceview2
 - ibus-gtk:i386 -- ppa:savoury1/gtk-xenial
 - ibus -- ppa:savoury1/gtk-xenial
 B libstartup-notification0
-B libnotify4
-B libnotify-bin
+- libnotify4 -- ppa:savoury1/gtk-xenial
+- libnotify-bin -- ppa:savoury1/gtk-xenial
 - zenity-common -- ppa:savoury1/gtk-xenial
 - zenity -- ppa:savoury1/gtk-xenial
 - libgirara-gtk3-3 -- ppa:savoury1/gtk-xenial
-B gir1.2-notify-0.7
+- gir1.2-notify-0.7 -- ppa:savoury1/gtk-xenial
 B libwnck-common
 B libwnck22
 B gir1.2-wnck-1.0
