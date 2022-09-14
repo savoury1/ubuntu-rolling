@@ -113,7 +113,7 @@ B libcwidget3v5
 - libgettextpo0:i386 -- ppa:savoury1/backports
 - libgettextpo-dev -- ppa:savoury1/backports
 - autopoint -- ppa:savoury1/backports
-B mawk
+- mawk -- ppa:savoury1/backports
 - gawk -- ppa:savoury1/backports
 - liblockfile-bin -- ppa:savoury1/backports
 - liblockfile1 -- ppa:savoury1/backports
