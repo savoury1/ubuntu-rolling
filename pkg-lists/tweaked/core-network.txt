@@ -21,11 +21,11 @@ B libproxy1-plugin-networkmanager
 - libsoup-gnome2.4-1:i386 -- ppa:savoury1/backports
 - gir1.2-soup-2.4 -- ppa:savoury1/backports
 - libnghttp2-14 -- ppa:savoury1/backports
-B libpcap0.8
-B libpcap0.8:i386
-B libpcap0.8-dev
+- libpcap0.8 -- ppa:savoury1/{backports,virtualisation}
+- libpcap0.8:i386 -- ppa:savoury1/{backports,virtualisation}
+- libpcap0.8-dev -- ppa:savoury1/{backports,virtualisation}
 B iftop
-B libevent-2.1-6
+- libevent-2.1-6 -- superseded by libevent-2.1-7
 - libtasn1-6 -- ppa:savoury1/backports
 - libtasn1-6:i386 -- ppa:savoury1/backports
 - libtasn1-6-dev -- ppa:savoury1/backports
@@ -62,15 +62,15 @@ B ntpdate
 B telnet
 B netcat-openbsd
 - net-tools -- ppa:savoury1/backports
-B iputils-arping
-B iputils-ping
-B iputils-tracepath
+- iputils-arping -- ppa:savoury1/backports
+- iputils-ping -- ppa:savoury1/backports
+- iputils-tracepath -- ppa:savoury1/backports
 B traceroute
 B mtr-tiny
 B libwrap0
 B libwrap0:i386
 B tcpd
-B tcpdump
+- tcpdump -- xenial-infra-security
 B ftp
 - socat -- ppa:savoury1/backports
 B libatm1
@@ -107,7 +107,7 @@ B libteamdctl0
 - dnsmasq -- ppa:savoury1/backports
 B resolvconf
 B ethtool
-B wireless-regdb
+- wireless-regdb -- ppa:savoury1/backports
 B iw
 B crda
 B wpasupplicant
