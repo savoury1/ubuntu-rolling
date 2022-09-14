@@ -155,7 +155,7 @@ B piuparts
 - python-ubuntutools -- ppa:savoury1/build-tools
 - libsubunit0 -- ppa:savoury1/python
 - libsubunit-dev -- ppa:savoury1/python
-B check -- rebuild with PIE
+- check -- ppa:savoury1/build-tools
 B libconfig9
 - gnome-common -- ppa:savoury1/build-tools
 - cli-common-dev -- Xenial has same version as Bionic
