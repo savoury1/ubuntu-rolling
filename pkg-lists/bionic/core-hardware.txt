@@ -39,7 +39,7 @@ B inputattach
 - libusb-1.0-0:i386 -- ppa:savoury1/virtualisation
 - libusb-1.0-0-dev -- ppa:savoury1/virtualisation
 B libusb-0.1-4
-B libgusb2
+- libgusb2 -- ppa:savoury1/gtk-xenial
 - libusbredirparser1 -- ppa:savoury1/virtualisation
 - libusbredirparser-dev -- ppa:savoury1/virtualisation
 - libusbredirhost1 -- ppa:savoury1/virtualisation
