@@ -29,12 +29,12 @@ B libcdparanoia0:i386
 B cdparanoia
 B libjte1
 B genisoimage
-B libisofs6
+- libisofs6 -- ppa:savoury1/multimedia
 - bchunk -- ppa:savoury1/multimedia
 B cdrdao
 B wodim
-B libburn4
-B cdrskin
+- libburn4 -- ppa:savoury1/multimedia
+- cdrskin -- ppa:savoury1/multimedia
 - libdvd-pkg -- ppa:savoury1/multimedia
 - libdvdread4 -- superseded by libdvdread8
 - libdvdread8 -- ppa:savoury1/multimedia
