@@ -62,15 +62,15 @@
 - ruby-locale -- Xenial has same version as Bionic
 - ruby-text -- Xenial has same version as Bionic
 - ruby-gettext -- ppa:savoury1/ruby-xenial
-B ruby-json
-B ruby-cairo
-B ruby-glib2
-B ruby-gobject-introspection
-B ruby-gio2
-B ruby-gdk-pixbuf2
-B ruby-atk
-B ruby-cairo-gobject
-B ruby-pango
-B ruby-gtk2
+- ruby-json -- ppa:savoury1/ruby-xenial
+- ruby-cairo -- ppa:savoury1/ruby-xenial
+- ruby-glib2 -- ppa:savoury1/ruby-xenial
+- ruby-gobject-introspection -- ppa:savoury1/ruby-xenial
+- ruby-gio2 -- ppa:savoury1/ruby-xenial
+- ruby-gdk-pixbuf2 -- ppa:savoury1/ruby-xenial
+- ruby-atk -- ppa:savoury1/ruby-xenial
+- ruby-cairo-gobject -- ppa:savoury1/ruby-xenial
+- ruby-pango -- ppa:savoury1/ruby-xenial
+- ruby-gtk2 -- ppa:savoury1/ruby-xenial
 - libjs-jquery -- ppa:savoury1/{backports,node-xenial,perl-xenial}
 - libjs-underscore -- ppa:savoury1/node-xenial
