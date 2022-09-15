@@ -1,4 +1,4 @@
-B dictionaries-common
+- dictionaries-common -- ppa:savoury1/backports
 B wbritish
 B wamerican
 - libaspell15 -- ppa:savoury1/backports
@@ -8,8 +8,8 @@ B wamerican
 - libhunspell-1.7-0 -- ppa:savoury1/{backports,scribus}
 - libenchant1c2a -- ppa:savoury1/backports
 - enchant -- ppa:savoury1/backports
-B libgtkspell0
-B libhyphen0
+- libgtkspell0 -- ppa:savoury1/backports
+- libhyphen0 -- ppa:savoury1/backports
 B hyphen-en-us
 - wordnet-base -- ppa:savoury1/backports
 - wordnet -- ppa:savoury1/backports
@@ -24,11 +24,11 @@ B language-pack-gnome-en
 B libexttextcat-data
 B libexttextcat-2.0-0
 - libphonenumber7 -- ppa:savoury1/backports
-B libgxps2
-B mscompress
-B libmspack0
-B cabextract
-B libgcab-1.0-0
+- libgxps2 -- ppa:savoury1/backports
+- mscompress -- ppa:savoury1/backports
+- libmspack0 -- ppa:savoury1/backports
+- cabextract -- ppa:savoury1/backports
+- libgcab-1.0-0 -- ppa:savoury1/backports
 - libnetcdf13 -- superseded by ppa:savoury1/backports
 - librevenge-0.0-0 -- ppa:savoury1/{backports,scribus}
 - libodfgen-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
@@ -44,7 +44,7 @@ B libgcab-1.0-0
 - libmwaw-0.3-3 -- ppa:savoury1/libreoffice{-6-4,-7-1}
 - libetonyek-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
 - libfreexl1 -- ppa:savoury1/backports
-B libe-book-0.1-1
+- libe-book-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
 - libfreehand-0.1-1 -- ppa:savoury1/{backports,scribus}
 B snap
 B libstemmer0d
@@ -58,7 +58,7 @@ B libstemmer0d
 B libfyba0
 B libgeotiff2
 - libspatialite7 -- ppa:savoury1/backports
-B libepsilon1
+- libepsilon1 -- ppa:savoury1/backports
 - liburiparser1 -- ppa:savoury1/backports
 - libkmlbase1 -- ppa:savoury1/backports
 - libkmldom1 -- ppa:savoury1/backports
