@@ -1,4 +1,4 @@
-B gnome-calculator
+- gnome-calculator -- ppa:savoury1/gtk-xenial
 - evolution-data-server-common -- ppa:savoury1/gtk-xenial
 - evolution-data-server -- ppa:savoury1/gtk-xenial
 - libcamel-1.2-61 -- ppa:savoury1/gtk-xenial
@@ -13,12 +13,12 @@ B gnome-calculator
 - gir1.2-ebook-1.2 -- ppa:savoury1/gtk-xenial
 - libecal-1.2-19 -- ppa:savoury1/gtk-xenial
 - libedata-cal-1.2-28 -- ppa:savoury1/gtk-xenial
-B tomboy
+- tomboy -- ppa:savoury1/backports
 - artha -- ppa:savoury1/backports
 - xapps-common -- ppa:savoury1/gtk-xenial
 - libxapp1 -- ppa:savoury1/gtk-xenial
-B libgtkhex-3-0
-B ghex
+- libgtkhex-3-0 -- ppa:savoury1/utilities
+- ghex -- ppa:savoury1/utilities
 - gthumb-data -- ppa:savoury1/{graphics,gtk-xenial}
 - gthumb -- ppa:savoury1/{graphics,gtk-xenial}
 - hugin-data -- ppa:savoury1/graphics
@@ -40,8 +40,8 @@ B ghex
 - digikam-private-libs -- ppa:savoury1/digikam
 - digikam -- ppa:savoury1/digikam
 - librttr-core0.9.6 -- ppa:savoury1/backports
-- kdenlive-data -- required by kdenlive (4:19.04.3-0ubuntu1) Eoan
-- kdenlive -- match kde version (4:19.04.3-0ubuntu1) Eoan
+- kdenlive-data -- ppa:savoury1/kde-{5-80,xenial}
+- kdenlive -- ppa:savoury1/kde-{5-80,xenial}
 - libk3b7 -- ppa:savoury1/multimedia 
 - libk3b7-extracodecs -- ppa:savoury1/multimedia
 - k3b-i18n -- ppa:savoury1/multimedia
@@ -59,10 +59,10 @@ B ghex
 - deluge-common -- ppa:savoury1/backports
 - deluge-gtk -- ppa:savoury1/backports
 - deluge -- ppa:savoury1/backports
-B transmission-common
-B transmission-gtk
-B amule-common
-B amule
+- transmission-common -- ppa:savoury1/{backports,utilities}
+- transmission-gtk -- ppa:savoury1/{backports,utilities}
+- amule-common -- ppa:savoury1/{backports,utilities}
+- amule -- ppa:savoury1/{backports,utilities}
 - tigervnc-common -- ppa:savoury1/backports
 - tigervnc-viewer -- ppa:savoury1/backports
 - chromium-browser -- ppa:savoury1/chromium
