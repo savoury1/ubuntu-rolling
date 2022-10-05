@@ -41,11 +41,11 @@ B ureadahead
 - libdpkg-perl -- ppa:savoury1/build-tools
 - dpkg-dev -- ppa:savoury1/build-tools
 - dpkg-repack -- ppa:savoury1/build-tools
-B binutils-common
-B binutils-x86-64-linux-gnu
-B binutils
-B binutils-multiarch
-B libbinutils
+- binutils-common -- ppa:savoury1/build-tools
+- binutils-x86-64-linux-gnu -- ppa:savoury1/build-tools
+- binutils -- ppa:savoury1/build-tools
+- binutils-multiarch -- ppa:savoury1/build-tools
+- libbinutils -- ppa:savoury1/build-tools
 - nasm -- ppa:savoury1/backports
 B yasm
 - valgrind -- ppa:savoury1/build-tools
