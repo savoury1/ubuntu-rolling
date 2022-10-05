@@ -58,8 +58,8 @@ B openssh-server
 B ssh-askpass-gnome
 - libssh-4 -- ppa:savoury1/encryption
 - libssh-gcrypt-4 -- ppa:savoury1/encryption
-B libssh2-1
-B libssh2-1-dev
+- libssh2-1 -- ppa:savoury1/encryption
+- libssh2-1-dev -- ppa:savoury1/encryption
 B libpkcs11-helper1
 - libargon2-0 -- ppa:savoury1/{backports,utilities}
 - libmhash2 -- Xenial has same version as Bionic
