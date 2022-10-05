@@ -118,10 +118,10 @@ B libcwidget3v5
 - liblockfile-bin -- ppa:savoury1/backports
 - liblockfile1 -- ppa:savoury1/backports
 B lockfile-progs
-B python-lockfile
-B librsync1
+- python-lockfile -- ppa:savoury1/python
+- librsync1 -- superseded by librsync2
 - rsync -- ppa:savoury1/backports
-B duplicity
+- duplicity -- ppa:savoury1/python
 B libdbi1
 - htop -- ppa:savoury1/backports
 B iotop
