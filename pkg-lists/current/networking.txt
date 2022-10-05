@@ -83,7 +83,7 @@ B libnss-mdns
 - libsvn1 -- ppa:savoury1/backports
 - subversion -- ppa:savoury1/backports
 B cvs
-B gist
+- gist -- ppa:savoury1/backports
 B libhttrack2
 B httrack
 B webhttrack-common
@@ -100,7 +100,7 @@ B libgssdp-1.0-3
 B libgupnp-1.0-4
 B libgupnp-igd-1.0-4
 B libminiupnpc10
-B libnatpmp1
+- libnatpmp1 --  ppa:savoury1/{backports,utilities}
 - libdap25 -- ppa:savoury1/backports
 - libdapclient6v5 -- ppa:savoury1/backports
 - libcapnp-0.6.1 -- ppa:savoury1/build-tools
