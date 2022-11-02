@@ -1,32 +1,32 @@
-B libdconf1
-B dconf-cli
-B dconf-service
-B dconf-gsettings-backend
-B gconf2-common
-B libgconf-2-4
-B libgconf-2-4:i386
-B gir1.2-gconf-2.0
-B libgconf2-4
-B gconf-service
-B gconf-defaults-service
-B gconf-service-backend
-B gconf2
-B gconf-editor
-B python-gconf
+- libdconf1 -- ppa:savoury1/gtk-xenial
+- dconf-cli -- ppa:savoury1/gtk-xenial
+- dconf-service -- ppa:savoury1/gtk-xenial
+- dconf-gsettings-backend -- ppa:savoury1/gtk-xenial
+- gconf2-common -- ppa:savoury1/gtk-xenial
+- libgconf-2-4 -- ppa:savoury1/gtk-xenial
+- libgconf-2-4:i386 -- ppa:savoury1/gtk-xenial
+- gir1.2-gconf-2.0 -- ppa:savoury1/gtk-xenial
+- libgconf2-4 -- ppa:savoury1/gtk-xenial
+- gconf-service -- ppa:savoury1/gtk-xenial
+- gconf-defaults-service -- ppa:savoury1/gtk-xenial
+- gconf-service-backend -- ppa:savoury1/gtk-xenial
+- gconf2 -- ppa:savoury1/gtk-xenial
+- gconf-editor -- ppa:savoury1/gtk-xenial
+- python-gconf -- ppa:savoury1/gtk-xenial
 - libidl-2-0 -- Xenial has same version as Bionic
 B liborbit2
 B liborbit-2-0
-B libgnomecanvas2-common
-B libgnomecanvas2-0
-B libbonoboui2-common
-B libbonoboui2-0
-B libgnome2-common
-B libgnome-2-0
-B libgnome2-bin
-B libgnome2-0
-B libgnomeui-common
-B libgnomeui-0
-B python-gnome2
+- libgnomecanvas2-common -- ppa:savoury1/gtk-xenial
+- libgnomecanvas2-0 -- ppa:savoury1/gtk-xenial
+- libbonoboui2-common -- ppa:savoury1/gtk-xenial
+- libbonoboui2-0 -- ppa:savoury1/gtk-xenial
+- libgnome2-common -- ppa:savoury1/gtk-xenial
+- libgnome-2-0 -- ppa:savoury1/gtk-xenial
+- libgnome2-bin -- ppa:savoury1/gtk-xenial
+- libgnome2-0 -- ppa:savoury1/gtk-xenial
+- libgnomeui-common -- ppa:savoury1/gtk-xenial
+- libgnomeui-0 -- ppa:savoury1/gtk-xenial
+- python-gnome2 -- ppa:savoury1/gtk-xenial
 - libwxbase3.0-0v5 -- ppa:savoury1/backports
 - libwxgtk3.0-0v5 -- ppa:savoury1/backports
 - libwxgtk3.0-gtk3-0v5 -- ppa:savoury1/backports
@@ -46,9 +46,9 @@ B d-feet
 - libpeas-1.0-0 -- ppa:savoury1/gtk-xenial
 - gir1.2-peas-1.0 -- ppa:savoury1/gtk-xenial
 - libpeas-1.0-python2loader -- ppa:savoury1/gtk-xenial
-B libglib2.0-cil
-B libgtk2.0-cil
-B libglade2.0-cil
+- libglib2.0-cil -- ppa:savoury1/gtk-xenial
+- libgtk2.0-cil -- ppa:savoury1/gtk-xenial
+- libglade2.0-cil -- ppa:savoury1/gtk-xenial
 - python-glade2 -- ppa:savoury1/python
 - python-gtk2 -- ppa:savoury1/python
 B python-gtksourceview2
