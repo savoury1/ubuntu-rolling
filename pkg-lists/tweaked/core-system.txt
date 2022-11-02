@@ -19,7 +19,7 @@ B libffi-dev
 - libfribidi0 -- ppa:savoury1/fonts
 - libnuma1 -- ppa:savoury1/backports
 - libnuma-dev -- ppa:savoury1/backports
-B libnpth0
+- libnpth0 -- ppa:savoury1/gpg
 B librhash0
 - libuv1 -- ppa:savoury1/{backports,build-tools-node-xenial}
 B libbsd0
@@ -69,7 +69,7 @@ B libsocket++1
 - liblapack3 -- ppa:savoury1/backports
 - libarpack2 -- ppa:savoury1/backports
 - libsuperlu5 -- ppa:savoury1/backports
-B libarmadillo8
+- libarmadillo8 -- superseded by libarmadillo10
 - libgmp10 -- ppa:savoury1/backports
 - libgmp10:i386 -- ppa:savoury1/backports
 - libgmpxx4ldbl -- ppa:savoury1/backports
@@ -81,7 +81,7 @@ B libarmadillo8
 B bc
 B dc
 B libmetis5
-B sparse
+- sparse -- ppa:savoury1/build-tools
 - libsuitesparseconfig5 -- ppa:savoury1/backports
 - libamd2 -- ppa:savoury1/backports
 - libcamd2 -- ppa:savoury1/backports
@@ -89,7 +89,7 @@ B sparse
 - libcolamd2 -- ppa:savoury1/backports
 - libcholmod3 -- ppa:savoury1/backports
 - libumfpack5 -- ppa:savoury1/backports
-B lp-solve
+- lp-solve -- ppa:savoury1/libreoffice-7-{1,4}
 B libcap2
 B libcap2:i386
 B libcap2-bin
