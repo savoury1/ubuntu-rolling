@@ -5,25 +5,25 @@ B media-player-info
 - libmtp-runtime -- ppa:savoury1/multimedia
 - libmtp9 -- ppa:savoury1/multimedia
 B jmtpfs
-B gmtp
+- gmtp -- ppa:savoury1/multimedia
 - libplist3 -- ppa:savoury1/backports
 - libusbmuxd4 -- superseded by libusbmuxd6
 - usbmuxd -- ppa:savoury1/backports
 - libimobiledevice6 -- ppa:savoury1/backports
 - libimobiledevice-utils -- ppa:savoury1/backports
 - ideviceinstaller -- ppa:savoury1/backports
-B libical2
+- libical2 -- ppa:savoury1/kde-xenial
 - libical3 -- ppa:savoury1/backports
 - libsgutils2-2 -- ppa:savoury1/{backports,utilities}
 B libgpod4
 B libgpod-common
 B ifuse
 B eject
-B libcdio17
-B libiso9660-10
-B libvcdinfo0
-B libcdio-cdda2
-B libcdio-paranoia2
+- libcdio17 -- superseded by libcdio19
+- libiso9660-10 -- superseded by libiso9660-11
+- libvcdinfo0 -- ppa:savoury1/multimedia
+- libcdio-cdda2 -- ppa:savoury1/{ffmpeg4,multimedia}
+- libcdio-paranoia2 -- ppa:savoury1/{ffmpeg4,multimedia}
 B libcdparanoia0
 B libcdparanoia0:i386
 B cdparanoia
