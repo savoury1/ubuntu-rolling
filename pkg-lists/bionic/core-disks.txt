@@ -51,7 +51,7 @@ B syslinux-common
 B syslinux-legacy
 B syslinux-utils
 B extlinux
-B gdisk
+- gdisk -- ppa:savoury1/{backports,virtualisation}
 - xfsprogs -- ppa:savoury1/virtualisation
 - xfslibs-dev -- ppa:savoury1/virtualisation
 B reiserfsprogs
@@ -74,19 +74,19 @@ B libblockdev-crypto2
 B libudisks2-0
 B gir1.2-udisks-2.0
 B udisks2
-B gvfs-common
-B gvfs-bin
-B gvfs-libs
-B gvfs-libs:i386
-B gvfs-backends
-B gvfs-daemons
-B gvfs
-B gvfs:i386
-B gvfs-fuse
-B libgnomevfs2-common
-B libgnomevfs2-0
+- gvfs-common -- ppa:savoury1/gtk-xenial
+- gvfs-bin -- ppa:savoury1/gtk-xenial
+- gvfs-libs -- ppa:savoury1/gtk-xenial
+- gvfs-libs:i386 -- ppa:savoury1/gtk-xenial
+- gvfs-backends -- ppa:savoury1/gtk-xenial
+- gvfs-daemons -- ppa:savoury1/gtk-xenial
+- gvfs -- ppa:savoury1/gtk-xenial
+- gvfs:i386 -- ppa:savoury1/gtk-xenial
+- gvfs-fuse -- ppa:savoury1/gtk-xenial
+- libgnomevfs2-common -- ppa:savoury1/gtk-xenial
+- libgnomevfs2-0 -- ppa:savoury1/gtk-xenial
 - gnome-disk-utility -- ppa:savoury1/gtk-xenial
 B f3
 - smartmontools -- ppa:savoury1/{backports,utilities}
-B gsmartcontrol
+- gsmartcontrol -- ppa:savoury1/gtk-xenial
 B iozone3
