@@ -43,8 +43,8 @@ B libspandsp2
 - lame -- ppa:savoury1/multimedia
 - libtwolame0 -- ppa:savoury1/multimedia
 - twolame -- ppa:savoury1/multimedia
-B libmad0
-B libmad0:i386
+- libmad0 -- Xenial has same version as Bionic
+- libmad0:i386 -- Xenial has same version as Bionic
 - libshine3 -- ppa:savoury1/multimedia
 - libfaad2 -- ppa:savoury1/multimedia
 B libfaac0
@@ -68,8 +68,8 @@ B libkate1
 - libsox-fmt-alsa -- ppa:savoury1/multimedia
 - libsox-fmt-base -- ppa:savoury1/multimedia
 - sox -- ppa:savoury1/multimedia
-B libaudiofile1
-B libaudiofile1:i386
+- libaudiofile1 -- ppa:savoury1/multimedia
+- libaudiofile1:i386 -- ppa:savoury1/multimedia
 - libserd-0-0 -- ppa:savoury1/multimedia
 - libsord-0-0 -- ppa:savoury1/multimedia
 - libsratom-0-0 -- ppa:savoury1/multimedia
