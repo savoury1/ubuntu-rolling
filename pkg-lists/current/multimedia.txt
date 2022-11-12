@@ -3,11 +3,11 @@
 - libsdl1.2-dev -- ppa:savoury1/multimedia
 - libsdl-image1.2 -- ppa:savoury1/multimedia
 - libsdl-image1.2:i386 -- ppa:savoury1/multimedia
-B libsdl-ttf2.0-0
-B libsdl-ttf2.0-0:i386
+- libsdl-ttf2.0-0 -- ppa:savoury1/multimedia
+- libsdl-ttf2.0-0:i386 -- ppa:savoury1/multimedia
 B libsdl-net1.2
 B libsdl-net1.2:i386
-B libsdl-sound1.2
+- libsdl-sound1.2 -- ppa:savoury1/multimedia
 - libsdl2-2.0-0 -- ppa:savoury1/multimedia
 - libsdl2-2.0-0:i386 -- ppa:savoury1/multimedia
 - libsdl2-dev -- ppa:savoury1/multimedia
@@ -18,9 +18,9 @@ B libsdl-sound1.2
 - libva-glx2 -- ppa:savoury1/multimedia
 - libva-wayland2 -- ppa:savoury1/multimedia
 - libgtkglext1 -- ppa:savoury1/multimedia
-B libvisual-0.4-0
-B libvisual-0.4-0:i386
-B libvisual-0.4-plugins
+- libvisual-0.4-0 -- ppa:savoury1/multimedia
+- libvisual-0.4-0:i386 -- ppa:savoury1/multimedia
+- libvisual-0.4-plugins -- ppa:savoury1/multimedia
 - libmicrodns0 -- ppa:savoury1/vlc3{-mate}
 - libtotem-plparser-common -- ppa:savoury1/multimedia
 - libtotem-plparser18 -- ppa:savoury1/multimedia
@@ -31,7 +31,7 @@ B libdv4:i386
 - libv4lconvert0:i386 -- ppa:savoury1/multimedia
 - libv4l-0 -- ppa:savoury1/multimedia
 - libv4l-0:i386 -- ppa:savoury1/multimedia
-B libgavl1
+- libgavl1 -- superseded by libgavl2
 - libquicktime2 -- ppa:savoury1/multimedia
 - libmjpegutils-2.1-0 -- ppa:savoury1/multimedia
 - libmpeg2encpp-2.1-0 -- ppa:savoury1/multimedia
@@ -43,7 +43,7 @@ B libgavl1
 B libmpeg2-4
 - libzvbi-common -- ppa:savoury1/multimedia
 - libzvbi0 -- ppa:savoury1/multimedia
-B libzbar0
+- libzbar0 -- ppa:savoury1/graphics
 - libaribb24-0 -- ppa:savoury1/multimedia
 B libuchardet0
 - libebml4v5 -- ppa:savoury1/multimedia
@@ -117,13 +117,13 @@ B libmms0
 - gstreamer1.0-plugins-bad -- ppa:savoury1/multimedia
 - gstreamer1.0-plugins-ugly -- ppa:savoury1/multimedia
 - libfarstream-0.2-5 -- ppa:savoury1/multimedia
-B libdmapsharing-3.0-2
+- libdmapsharing-3.0-2 -- ppa:savoury1/multimedia
 - libgrilo-0.3-0 -- ppa:savoury1/{multimedia,xapps}
 - liblirc-client0 -- ppa:savoury1/multimedia
 - liblircclient0 -- ppa:savoury1/multimedia
-B rhythmbox-data
-B librhythmbox-core10
-B gir1.2-rb-3.0
-B rhythmbox
-B rhythmbox-plugins
-B rhythmbox-plugin-cdrecorder
+- rhythmbox-data -- ppa:savoury1/multimedia
+- librhythmbox-core10 -- ppa:savoury1/multimedia
+- gir1.2-rb-3.0 -- ppa:savoury1/multimedia
+- rhythmbox -- ppa:savoury1/multimedia
+- rhythmbox-plugins -- ppa:savoury1/multimedia
+- rhythmbox-plugin-cdrecorder -- ppa:savoury1/multimedia
