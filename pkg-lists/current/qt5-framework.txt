@@ -67,8 +67,8 @@
 - pinentry-qt -- ppa:savoury1/qt-xenial
 - libpolkit-qt5-1-1 -- ppa:savoury1/qt-xenial
 - libaccounts-qt5-1 -- ppa:savoury1/qt-xenial
-B libsignon-glib1
-B gir1.2-signon-1.0
+- libsignon-glib1 -- ppa:savoury1/gtk-xenial
+- gir1.2-signon-1.0 -- ppa:savoury1/gtk-xenial
 - libsignon-qt5-1 -- ppa:savoury1/qt-xenial
 - libsignon-extension1 -- ppa:savoury1/qt-xenial
 - libsignon-plugins-common1 -- ppa:savoury1/qt-xenial
