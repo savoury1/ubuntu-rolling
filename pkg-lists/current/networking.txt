@@ -62,7 +62,7 @@ B smbclient
 B samba
 B python-smbc
 B cifs-utils
-B rdesktop
+- rdesktop -- ppa:savoury1/backports
 ~ vino -- modded version required (fix dconf schema error)
 - libsodium23 -- ppa:savoury1/backports
 - libsodium-dev -- ppa:savoury1/backports
@@ -92,10 +92,10 @@ B webhttrack
 - libphodav-2.0-0 -- ppa:savoury1/virtualisation
 - libneon27-gnutls -- ppa:savoury1/backports
 - libcmis-0.5-5v5 -- ppa:savoury1/libreoffice{-6-4,-7-1}
-B libgdata-common
-B libgdata22
-B gir1.2-gdata-0.0
-B libupnp6
+- libgdata-common -- ppa:savoury1/gtk-xenial
+- libgdata22 -- ppa:savoury1/gtk-xenial
+- gir1.2-gdata-0.0 -- ppa:savoury1/gtk-xenial
+- libupnp6 -- ppa:savoury1/backports
 B libgssdp-1.0-3
 B libgupnp-1.0-4
 B libgupnp-igd-1.0-4
