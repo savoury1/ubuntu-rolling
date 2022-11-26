@@ -1,9 +1,9 @@
 B sudo
 B adduser
 B passwd
-B apg
+- apg -- ppa:savoury1/backports
 B user-setup
-B pwgen
+- pwgen -- ppa:savoury1/backports
 B libattr1
 B libattr1:i386
 B libattr1-dev
@@ -37,8 +37,8 @@ B rtkit
 B libaccountsservice0
 B accountsservice
 B gir1.2-accountsservice-1.0
-B libaccounts-glib0
-B gir1.2-accounts-1.0
+- libaccounts-glib0 -- ppa:savoury1/gtk-xenial
+- gir1.2-accounts-1.0 -- ppa:savoury1/gtk-xenial
 B libuser1
 B python-libuser
 B libapparmor1
@@ -60,15 +60,15 @@ B ssh-askpass-gnome
 - libssh-gcrypt-4 -- ppa:savoury1/encryption
 - libssh2-1 -- ppa:savoury1/encryption
 - libssh2-1-dev -- ppa:savoury1/encryption
-B libpkcs11-helper1
+- libpkcs11-helper1 -- ppa:savoury1/encryption
 - libargon2-0 -- ppa:savoury1/{backports,utilities}
 - libmhash2 -- Xenial has same version as Bionic
 - keepass2 -- ppa:savoury1/backports
 - libcrack2 -- ppa:savoury1/backports
 - cracklib-runtime -- ppa:savoury1/backports
-B libpwquality-common
-B libpwquality1
-B liboauth0
+- libpwquality-common -- ppa:savoury1/backports
+- libpwquality1 -- ppa:savoury1/backports
+- liboauth0 -- ppa:savoury1/backports
 - libcrypto++6 -- ppa:savoury1/backports
 - python-oauth -- superseded by python-oauthlib
 - python-oauthlib -- ppa:savoury1/python
