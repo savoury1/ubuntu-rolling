@@ -15,9 +15,9 @@ B libaa1:i386
 - libopenjp2-7 -- ppa:savoury1/graphics
 - libcharls1 -- superseded by libcharls2
 - libgdcm2.8 -- superseded by libgdcm3.0
-B libjbig0
-B libjbig0:i386
-B libjbig-dev
+- libjbig0 -- updated version now in Xenial
+- libjbig0:i386 -- updated version now in Xenial
+- libjbig-dev -- updated version now in Xenial
 - libjbig2dec0 -- ppa:savoury1/graphics
 - libgif7 -- ppa:savoury1/graphics
 - libtiff5 -- ppa:savoury1/graphics
@@ -82,7 +82,7 @@ B argyll
 - libgdk-pixbuf2.0-dev -- ppa:savoury1/graphics
 - libexif12 -- ppa:savoury1/graphics
 - libexif12:i386 -- ppa:savoury1/graphics
-B libgdiplus
+- libgdiplus -- ppa:savoury1/graphics
 B libpotrace0
 B libpano13-3
 - enblend -- ppa:savoury1/graphics
