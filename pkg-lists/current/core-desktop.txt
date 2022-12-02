@@ -106,16 +106,16 @@ B gnome-color-manager
 - libgnome-desktop-3-17 -- ppa:savoury1/gtk-xenial
 B gnome-session-bin
 - desktop-file-utils -- ppa:savoury1/build-tools
-B libnautilus-extension1a
+- libnautilus-extension1a -- ppa:savoury1/gtk-xenial
 B libnemo-extension1
 B im-config
 - libgnomekbd-common -- ppa:savoury1/gtk-xenial
 - libgnomekbd8 -- ppa:savoury1/gtk-xenial
 - gir1.2-gkbd-3.0 -- ppa:savoury1/gtk-xenial
 - gkbd-capplet -- ppa:savoury1/gtk-xenial
-B xdg-utils
-B xdg-user-dirs
-B xdg-user-dirs-gtk
+- xdg-utils -- ppa:savoury1/backports
+- xdg-user-dirs -- ppa:savoury1/backports
+- xdg-user-dirs-gtk -- ppa:savoury1/backports
 - python-xdg -- ppa:savoury1/python
 - python3-xdg -- ppa:savoury1/python
 B session-migration
