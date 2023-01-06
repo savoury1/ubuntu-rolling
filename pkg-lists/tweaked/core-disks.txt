@@ -21,9 +21,9 @@ B mount
 - libext2fs2 -- ppa:savoury1/backports
 - e2fslibs -- ppa:savoury1/backports
 - e2fsprogs -- ppa:savoury1/backports
-B btrfs-progs
-B btrfs-tools
-B nilfs-tools
+- btrfs-progs -- ppa:savoury1/virtualisation
+- btrfs-tools -- ppa:savoury1/virtualisation
+- nilfs-tools -- ppa:savoury1/virtualisation
 B libdevmapper1.02.1
 B libdevmapper-event1.02.1
 B libdevmapper-dev
@@ -38,14 +38,14 @@ B dmraid
 - libparted-dev -- ppa:savoury1/backports
 - parted -- ppa:savoury1/backports
 - libparted-fs-resize0 -- ppa:savoury1/backports
-B python-parted
+- python-parted -- ppa:savoury1/{backports,python,utilities,virtualisation}
 B libcryptsetup12
 B cryptsetup-bin
 B cryptsetup
-B libvolume-key1
-B libecryptfs1
-B ecryptfs-utils
-B mtools
+- libvolume-key1 -- ppa:savoury1/encryption
+- libecryptfs1 -- ppa:savoury1/encryption
+- ecryptfs-utils -- ppa:savoury1/encryption
+- mtools -- ppa:savoury1/{utilities,virtualisation}
 B syslinux
 B syslinux-common
 B syslinux-legacy
@@ -54,15 +54,15 @@ B extlinux
 - gdisk -- ppa:savoury1/{backports,virtualisation}
 - xfsprogs -- ppa:savoury1/virtualisation
 - xfslibs-dev -- ppa:savoury1/virtualisation
-B reiserfsprogs
-B dosfstools
-B jfsutils
-B hfsprogs
-B dmg2img
+- reiserfsprogs -- ppa:savoury1/virtualisation
+- dosfstools -- ppa:savoury1/{backports,utilities,virtualisation}
+- jfsutils -- ppa:savoury1/virtualisation
+- hfsprogs -- ppa:savoury1/backports
+- dmg2img -- ppa:savoury1/{backports,utilities}
 - libfuse2 -- ppa:savoury1/backports
 - fuse -- ppa:savoury1/backports
-B sshfs
-B libatasmart4
+- sshfs -- ppa:savoury1/{backports,encryption}
+- libatasmart4 -- ppa:savoury1/{backports,utilities}
 B libblockdev-utils2
 B libblockdev2
 B libblockdev-part-err2
@@ -86,7 +86,7 @@ B udisks2
 - libgnomevfs2-common -- ppa:savoury1/gtk-xenial
 - libgnomevfs2-0 -- ppa:savoury1/gtk-xenial
 - gnome-disk-utility -- ppa:savoury1/gtk-xenial
-B f3
+- f3 -- ppa:savoury1/{backports,utilities}
 - smartmontools -- ppa:savoury1/{backports,utilities}
 - gsmartcontrol -- ppa:savoury1/gtk-xenial
-B iozone3
+- iozone3 -- ppa:savoury1/{backports,utilities}
