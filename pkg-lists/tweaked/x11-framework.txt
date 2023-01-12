@@ -68,7 +68,7 @@ B xinput
 - libxpm-dev -- ppa:savoury1/display
 - xauth -- ppa:savoury1/display
 B xinit
-B xautomation
+- xautomation -- ppa:savoury1/utilities
 - xutils-dev -- ppa:savoury1/display
 B x11-apps
 B x11-utils
@@ -82,8 +82,8 @@ B x11-xfs-utils
 - libxkbcommon-x11-0 -- ppa:savoury1/display
 B libxklavier16
 B gir1.2-xkl-1.0
-B libxdo3
-B xdotool
+- libxdo3 -- ppa:savoury1/utilities
+- xdotool -- ppa:savoury1/utilities
 - libxshmfence1 -- ppa:savoury1/display
 - libxshmfence1:i386 -- ppa:savoury1/display
 - libxshmfence-dev -- ppa:savoury1/display
@@ -97,5 +97,5 @@ B xdotool
 - xfonts-utils -- ppa:savoury1/display
 B xcalib
 B wmctrl
-B xaw3dg:i386
+- xaw3dg:i386 -- unneeded
 B compton
