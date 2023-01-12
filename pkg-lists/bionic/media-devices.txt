@@ -1,6 +1,6 @@
 - exfat-fuse -- ppa:savoury1/backports
 - exfat-utils -- ppa:savoury1/backports
-B media-player-info
+- media-player-info -- ppa:savoury1/multimedia
 - libmtp-common -- ppa:savoury1/multimedia
 - libmtp-runtime -- ppa:savoury1/multimedia
 - libmtp9 -- ppa:savoury1/multimedia

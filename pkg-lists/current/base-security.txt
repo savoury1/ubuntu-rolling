@@ -28,13 +28,13 @@ B libgssapi-krb5-2:i386
 - libgnutls-openssl27 -- ppa:savoury1/encryption
 - libgnutls-dane0 -- ppa:savoury1/encryption
 - libgnutls28-dev -- ppa:savoury1/encryption
-B libsasl2-modules -- ppa:savoury1/{encryption,virtualisation}
-B libsasl2-modules:i386 -- ppa:savoury1/{encryption,virtualisation}
-B libsasl2-modules-db -- ppa:savoury1/{encryption,virtualisation}
-B libsasl2-modules-db:i386 -- ppa:savoury1/{encryption,virtualisation}
-B libsasl2-2 -- ppa:savoury1/{encryption,virtualisation}
-B libsasl2-2:i386 -- ppa:savoury1/{encryption,virtualisation}
-B libsasl2-dev -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-modules -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-modules:i386 -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-modules-db -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-modules-db:i386 -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-2 -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-2:i386 -- ppa:savoury1/{encryption,virtualisation}
+- libsasl2-dev -- ppa:savoury1/{encryption,virtualisation}
 B libheimbase1-heimdal:i386
 B libheimbase1-heimdal
 B libroken18-heimdal
