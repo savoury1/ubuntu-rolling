@@ -43,9 +43,9 @@ B localechooser-data
 - tk8.6 -- ppa:savoury1/backports
 B tk8.6-blt2.5
 B blt
-B libslang2
-B libslang2:i386
-B libslang2-dev
+- libslang2 -- ppa:savoury1/backports
+- libslang2:i386 -- ppa:savoury1/backports
+- libslang2-dev -- ppa:savoury1/backports
 B libunique-1.0-0
 B libossp-uuid16
 B uuid
@@ -54,7 +54,7 @@ B liblua5.2-0
 B java-common
 - libunwind8 -- ppa:savoury1/build-tools
 - libunwind-dev -- ppa:savoury1/build-tools
-B strace
+- strace -- ppa:savoury1/build-tools
 B ltrace
 B libsocket++1
 - libtbb2 -- ppa:savoury1/backports
@@ -126,5 +126,5 @@ B libdbi1
 - htop -- ppa:savoury1/backports
 B iotop
 - w3m -- ppa:savoury1/backports
-B gt5
+- gt5 -- ppa:savoury1/utilities
 B libfam0
