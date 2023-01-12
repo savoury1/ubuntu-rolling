@@ -31,10 +31,10 @@
 - libgcr-base-3-1:i386 -- ppa:savoury1/gtk-xenial
 - libgcr-ui-3-1 -- ppa:savoury1/gtk-xenial
 - gcr -- ppa:savoury1/gtk-xenial
-B pinentry-gnome3
-B gnome-keyring
-B libpam-gnome-keyring
-B gnome-keyring-pkcs11
-B libp11-kit-gnome-keyring
-B paperkey
-B seahorse
+- pinentry-gnome3 -- ppa:savoury1/qt-xenial
+- gnome-keyring -- ppa:savoury1/gtk-xenial
+- libpam-gnome-keyring -- ppa:savoury1/gtk-xenial
+- gnome-keyring-pkcs11 -- ppa:savoury1/gtk-xenial
+- libp11-kit-gnome-keyring -- ppa:savoury1/gtk-xenial
+- paperkey -- ppa:savoury1/encryption
+- seahorse -- ppa:savoury1/gtk-xenial
