@@ -68,9 +68,9 @@ B libstartup-notification0
 B libwnck-common
 B libwnck22
 B gir1.2-wnck-1.0
-B libwnck-3-common
-B libwnck-3-0
-B gir1.2-wnck-3.0
+- libwnck-3-common -- ppa:savoury1/gtk-xenial
+- libwnck-3-0 -- ppa:savoury1/gtk-xenial
+- gir1.2-wnck-3.0 -- ppa:savoury1/gtk-xenial
 B devilspie
 B menu
 B libgnome-menu-3-0
