@@ -55,8 +55,8 @@ B casper
 B lupin-casper
 B lupin-support
 B sysvinit-utils
-B init
-B init-system-helpers
+- init -- ppa:savoury1/backports
+- init-system-helpers -- ppa:savoury1/backports
 B libudev1
 B libudev1:i386
 B libudev-dev
