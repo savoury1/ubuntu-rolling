@@ -1,16 +1,16 @@
-B libc6
-B libc6:i386
-B libc6-x32
-B libc6-dbg
-B libc-bin
-B libc-dev-bin
-B libc6-dev
+F libc6
+F libc6:i386
+F libc6-x32
+F libc6-dbg
+F libc-bin
+F libc-dev-bin
+F libc6-dev
 - libc6-dev:i386 -- conflict with earlier linux-libc-dev
-B libc6-i386
-B libc6-dev-i386
-B libc6-dev-x32
-B multiarch-support
-B locales
+F libc6-i386
+F libc6-dev-i386
+F libc6-dev-x32
+- multiarch-support
+F locales
 - libglib2.0-data -- ppa:savoury1/gtk-xenial
 - libglib2.0-0 -- ppa:savoury1/gtk-xenial
 - libglib2.0-0:i386 -- ppa:savoury1/gtk-xenial
