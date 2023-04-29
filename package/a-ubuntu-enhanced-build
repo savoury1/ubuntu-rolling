@@ -5,7 +5,7 @@ SIGNKEY=$DEBSIGN
 SERIES="$1"
 PACKAGE=ubuntu-enhanced
 VER_SRC=0.10.0
-VER_PKG=1~16.04.sav0
+VER_PKG=2~16.04.sav0
 DEB_STD=3.9.8
 
 DPUT_HOST=ppa:ubuntu-enhanced
@@ -17,6 +17,7 @@ ALT_BUILD=Y
 DO_PBUILD=N
 SRC_BUILD=Y
 BUILDINFO=N
+LINTCHECK=N
 
 BUILD_TGZ=~/pbuilder/$SERIES-base.tgz
 

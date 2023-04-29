@@ -1,3 +1,9 @@
+ubuntu-enhanced (0.10.0-2~16.04.sav0) xenial; urgency=low
+
+  * d/postinst: Switch Groovy to old releases server
+
+ -- Rob Savoury <savoury@savos.tech>  Wed, 22 Dec 2021 13:23:57 -0800
+
 ubuntu-enhanced (0.10.0-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Jammy Jellyfish
