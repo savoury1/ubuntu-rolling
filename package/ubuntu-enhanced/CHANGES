@@ -1,3 +1,7 @@
+0.11.1 / 24-Jul-2022
+
+  - Fix comment in "apt-all" script (10 of 11 series)
+
 0.11.0 / 30-Apr-2022
 
   - Add new Kinetic Kudu series to configuration

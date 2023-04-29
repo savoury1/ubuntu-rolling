@@ -37,7 +37,7 @@ for series in ${otherseries[@]}; do
       ;;
   esac
 done
-# must be exactly nine (of ten possible) series in /etc/apt/otherseries
+# must be exactly 10 (of 11 possible) series in /etc/apt/otherseries
 if [ "$series_bad" = "Y" ] || (( series_num != 10 )); then 
   echo "Invalid configuration file: /etc/apt/otherseries !" ; exit
 fi
