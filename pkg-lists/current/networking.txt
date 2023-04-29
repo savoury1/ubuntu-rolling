@@ -73,9 +73,9 @@ B cifs-utils
 B libnspr4
 B libnspr4:i386
 B libnspr4-dev
-B libnss3
-B libnss3:i386
-B libnss3-dev
+- libnss3 -- ppa:savoury1/encryption
+- libnss3:i386 -- ppa:savoury1/encryption
+- libnss3-dev -- ppa:savoury1/encryption
 B libnss-mdns
 - libapr1 -- ppa:savoury1/backports
 - libaprutil1 -- ppa:savoury1/backports
