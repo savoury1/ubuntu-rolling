@@ -1,3 +1,10 @@
+ubuntu-enhanced (0.13.0-1~16.04.sav0) xenial; urgency=low
+
+  * New release adding Mantic Minotaur
+  * d/control: Update package description
+
+ -- Rob Savoury <savoury@savos.tech>  Sat, 29 Apr 2023 10:16:56 -0700
+
 ubuntu-enhanced (0.12.0-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Lunar Lobster
