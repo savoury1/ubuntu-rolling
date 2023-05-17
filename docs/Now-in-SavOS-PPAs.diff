@@ -1,0 +1,1558 @@
+From: Rob Savoury <savoury@savos.tech>
+Date: Tue, 16 May 2023 19:28:27 -0700
+Subject: Now in SavOS PPAs
+
+All 876 of the packages removed from the list (more than 50% of the 1,610
+found on the previous list that was uploaded to GitHub on 3 June 2021) are
+now found at SavOS (= ppa:savoury1/*) PPAs (https://launchpad.net/~savoury1)
+for Ubuntu 16.04 Xenial systems. Also, enhancements-1st-run script is now a
+symlink to scripts/enhance-scripts-initial/enhance-all due to src:nss 3.35
+from 18.04 Bionic being backported to 16.04 Xenial (ppa:savoury1/encryption).
+---
+ enhance-all | 876 ---------------------------------------------------
+ 1 file changed, 876 deletions(-)
+
+diff --git a/enhance-all b/enhance-all
+index 83bfcb6..f455d83 100755
+--- a/enhance-all
++++ b/enhance-all
+@@ -1,26 +1,16 @@
+-4pane
+ accountsservice
+ acl
+-acpica-tools
+ acpid
+ adduser
+-alsa-utils
+-amule
+-amule-common
+-anacron
+-ant
+-apg
+ apparmor
+ apt-xapian-index
+ archdetect-deb
+ argyll
+ argyll-ref
+-artha
+ ash
+ at-spi2-core
+ attr
+ autodep8
+-autopkgtest
+ avahi-autoipd
+ avahi-daemon
+ avahi-utils
+@@ -28,64 +18,36 @@ b43-fwcutter
+ bamfdaemon
+ base-passwd
+ bc
+-bchunk
+ bind9-host
+ binfmt-support
+-binutils
+-binutils-common
+-binutils-multiarch
+-binutils-x86-64-linux-gnu
+-bison
+ blt
+ bluetooth
+ bluez
+ bluez-cups
+ bluez-obexd
+-brasero
+-brasero-cdrkit
+-brasero-common
+ bridge-utils
+ brltty
+ bsdmainutils
+ bsdutils
+-btrfs-progs
+-btrfs-tools
+ busybox-initramfs
+ busybox-static
+-bzr
+-bzr-builder
+-cabextract
+ ca-certificates-java
+ casper
+ cdparanoia
+ cdrdao
+-cdrskin
+-check
+ checkinstall
+ chrpath
+ cifs-utils
+-colord
+-colord-data
+ command-not-found
+ command-not-found-data
+-compiz
+-compizconfig-settings-manager
+-compiz-core
+-compiz-gnome
+-compiz-plugins
+-compiz-plugins-default
+ compton
+ console-setup
+ console-setup-linux
+ coreutils
+ cowsay
+-cpio
+ cpufrequtils
+-cracklib-runtime
+ crda
+ cron
+-cryptsetup
+-cryptsetup-bin
+ cu
+ cups
+ cups-browsed
+@@ -106,10 +68,6 @@ db5.3-util
+ dbus
+ dbus-x11
+ dc
+-dconf-cli
+-dconf-gsettings-backend
+-dconf-service
+-dcraw
+ dctrl-tools
+ debconf
+ debconf-i18n
+@@ -117,61 +75,31 @@ debconf-utils
+ debianutils
+ deborphan
+ debsums
+-deluge
+-deluge-common
+-deluge-gtk
+-desktop-file-utils
+ devilspie
+ d-feet
+ dh-make
+ dialog
+-dictionaries-common
+-diffstat
+ diffutils
+ dkms
+ dmeventd
+-dmg2img
+ dmraid
+ dmsetup
+ dmz-cursor-theme
+ dns-root-data
+ dnsutils
+ doc-base
+-docbook-dsssl
+-docutils-common
+-dosfstools
+-dpkg-repack
+-dput
+-drbl
+-drkonqi
+-duplicity
+ dvd+rw-tools
+-eatmydata
+-ebtables
+-ecryptfs-utils
+ ed
+ efibootmgr
+ eject
+-espeak
+-espeak-data
+ ethtool
+-evolution-data-server
+-evolution-data-server-common
+ extlinux
+-f3
+ fdisk
+-file
+ findutils
+ folks-common
+-font-manager
+-fonts-dejavu
+-fonts-dejavu-core
+-fonts-dejavu-extra
+-fonts-liberation
+ fonts-noto-cjk
+ fonts-orya-extra
+ fonts-symbola
+-fonts-ubuntu
+ foomatic-db-compressed-ppds
+ fortune-mod
+ fortunes-min
+@@ -180,110 +108,36 @@ friendly-recovery
+ ftp
+ fwupd
+ fwupdate
+-gconf2
+-gconf2-common
+-gconf-defaults-service
+-gconf-editor
+-gconf-service
+-gconf-service-backend
+-gdisk
+ genisoimage
+ geoclue
+-geoclue-2.0
+ geoclue-ubuntu-geoip
+-ghex
+-gir1.2-accounts-1.0
+ gir1.2-accountsservice-1.0
+-gir1.2-appindicator3-0.1
+-gir1.2-atk-1.0
+ gir1.2-atspi-2.0
+ gir1.2-bamf-3
+-gir1.2-camel-1.2
+-gir1.2-clutter-1.0
+ gir1.2-dbusmenu-glib-0.4
+-gir1.2-dee-1.0
+-gir1.2-ebook-1.2
+-gir1.2-ebookcontacts-1.2
+-gir1.2-edataserver-1.2
+-gir1.2-freedesktop
+-gir1.2-gconf-2.0
+-gir1.2-gdata-0.0
+-gir1.2-gkbd-3.0
+-gir1.2-glib-2.0
+ gir1.2-gmenu-3.0
+-gir1.2-gnomebluetooth-1.0
+-gir1.2-goa-1.0
+-gir1.2-gtkclutter-1.0
+-gir1.2-gudev-1.0
+-gir1.2-ibus-1.0
+-gir1.2-javascriptcoregtk-3.0
+-gir1.2-messagingmenu-1.0
+-gir1.2-networkmanager-1.0
+-gir1.2-notify-0.7
+-gir1.2-peas-1.0
+ gir1.2-polkit-1.0
+-gir1.2-rb-3.0
+-gir1.2-rsvg-2.0
+-gir1.2-secret-1
+-gir1.2-signon-1.0
+ gir1.2-udisks-2.0
+ gir1.2-upowerglib-1.0
+-gir1.2-vte-2.91
+-gir1.2-webkit-3.0
+ gir1.2-wnck-1.0
+-gir1.2-wnck-3.0
+ gir1.2-xkl-1.0
+-gist
+-gkbd-capplet
+-glib-networking
+-glib-networking-common
+-glib-networking:i386
+-glib-networking-services
+-gmtp
+ gnome-accessibility-themes
+-gnome-bluetooth
+-gnome-calculator
+ gnome-color-manager
+-gnome-desktop3-data
+ gnome-doc-utils
+ gnome-icon-theme
+-gnome-keyring
+-gnome-keyring-pkcs11
+ gnome-orca
+ gnome-session-bin
+-gnome-session-canberra
+-gnome-settings-daemon-schemas
+ gnome-system-tools
+ gnome-themes-extra
+ gnome-themes-extra-data
+ gnome-themes-standard
+-gobject-introspection
+-groff-base
+ growisofs
+ grub2-common
+ grub-common
+ grub-pc
+ grub-pc-bin
+-gsettings-desktop-schemas
+-gsmartcontrol
+-gt5
+-gthumb
+-gthumb-data
+-gucharmap
+-gvfs
+-gvfs-backends
+-gvfs-bin
+-gvfs-common
+-gvfs-daemons
+-gvfs-fuse
+-gvfs:i386
+-gvfs-libs
+-gvfs-libs:i386
+ hddtemp
+ hdparm
+-hexchat
+-hexchat-common
+-hfsprogs
+ hicolor-icon-theme
+ highlight
+ highlight-common
+@@ -293,67 +147,32 @@ hplip-data
+ httrack
+ hwdata
+ hyphen-en-us
+-ibus
+-ibus-gtk:i386
+-icoutils
+-ideviceinstaller
+ iftop
+ ifupdown
+ ifuse
+ iio-sensor-proxy
+ im-config
+ indicator-application
+-indicator-common
+-info
+-init
+ initramfs-tools
+ initramfs-tools-bin
+ initramfs-tools-core
+-init-system-helpers
+ inputattach
+-install-info
+-intel-microcode
+ intltool
+ iotop
+-iozone3
+ ippusbxd
+ iproute2
+-iptables
+-iputils-arping
+-iputils-ping
+-iputils-tracepath
+ irqbalance
+ isc-dhcp-client
+ isc-dhcp-common
+ isoquery
+ iw
+ java-common
+-jfsutils
+ jmtpfs
+ jq
+-kate-data
+-katepart
+ kbd
+-kde-cli-tools
+-kde-cli-tools-data
+-kdeconnect
+-kdelibs5-data
+-kdelibs5-plugins
+-kdelibs-bin
+-kdenlive
+-kdenlive-data
+-kde-runtime
+-kde-runtime-data
+-kde-style-breeze
+-kde-style-breeze-qt4
+-kdoctools
+-keepass2
+ keyboard-configuration
+-kleopatra
+ klibc-utils
+ kmod
+-kolourpaint
+-kolourpaint4
+ kpartx
+ kpartx-boot
+ krb5-locales
+@@ -362,45 +181,25 @@ language-pack-en-base
+ language-pack-gnome-en
+ language-pack-gnome-en-base
+ laptop-detect
+-less
+ liba52-0.7.4
+ libaa1
+ libaa1:i386
+-libaccounts-glib0
+ libaccountsservice0
+ libacl1
+ libacl1:i386
+-libaec0
+-libaec-dev
+ libaften0
+ libaio1
+ libaio1:i386
+ libaio-dev
+ libapparmor1
+-libappindicator0.1-cil
+-libappindicator1
+-libappindicator3-1
+-libapr1
+-libaprutil1
+-libargon2-0
+-libarmadillo8
+ libart-2.0-2
+ libasn1-8-heimdal
+ libasn1-8-heimdal:i386
+-libasprintf0v5
+-libasprintf-dev
+-libatasmart4
+-libatk1.0-0
+-libatk1.0-0:i386
+-libatk1.0-data
+-libatk1.0-dev
+ libatk-adaptor
+ libatk-adaptor:i386
+ libatk-bridge2.0-0
+ libatk-bridge2.0-0:i386
+ libatk-bridge2.0-dev
+-libatkmm-1.6-1v5
+-libatkmm-1.6-dev
+ libatm1
+ libatspi2.0-0
+ libatspi2.0-0:i386
+@@ -410,8 +209,6 @@ libattr1-dev
+ libattr1:i386
+ libaudio2
+ libaudio2:i386
+-libaudiofile1
+-libaudiofile1:i386
+ libaudit1
+ libaudit-common
+ libaudit-dev
+@@ -427,8 +224,6 @@ libavc1394-0
+ libavc1394-0:i386
+ libbamf3-2
+ libbind9-160
+-libbinutils
+-libbison-dev
+ libblkid1
+ libblkid1:i386
+ libblkid-dev
+@@ -440,33 +235,13 @@ libblockdev-part2
+ libblockdev-part-err2
+ libblockdev-swap2
+ libblockdev-utils2
+-libblosc1
+ libbluetooth3
+ libbluetooth-dev
+-libbonoboui2-0
+-libbonoboui2-common
+-libbrasero-media3-1
+ libbrlapi0.6
+ libbrlapi-dev
+ libbsd0
+ libbsd0:i386
+ libbsd-dev
+-libburn4
+-libcaca0
+-libcaca0:i386
+-libcaca-dev
+-libcairomm-1.0-1v5
+-libcairomm-1.0-dev
+-libcamel-1.2-61
+-libcanberra0
+-libcanberra0:i386
+-libcanberra-gtk0
+-libcanberra-gtk0:i386
+-libcanberra-gtk3-0
+-libcanberra-gtk3-module
+-libcanberra-gtk-module
+-libcanberra-gtk-module:i386
+-libcanberra-pulse
+ libcap2
+ libcap2-bin
+ libcap2:i386
+@@ -474,32 +249,12 @@ libcap-dev
+ libcapi20-3:i386
+ libcap-ng0
+ libcap-ng-dev
+-libc-ares2
+-libcdio17
+-libcdio-cdda2
+-libcdio-paranoia2
+ libcdparanoia0
+ libcdparanoia0:i386
+ libchamplain-0.12-0
+ libchamplain-gtk-0.12-0
+-libcharls1
+-libclucene-contribs1v5
+-libclucene-core1v5
+-libclutter-1.0-0
+-libclutter-gst-3.0-0
+-libclutter-gtk-1.0-0
+-libcoin80v5
+-libcolord2
+-libcolord-gtk1
+-libcolorhug2
+-libcompizconfig0
+ libconfig9
+ libcpufreq0
+-libcrack2
+-libcroco3
+-libcroco3:i386
+-libcrypto++6
+-libcryptsetup12
+ libcups2
+ libcups2:i386
+ libcupscgi1
+@@ -515,7 +270,6 @@ libdb5.3
+ libdb5.3:i386
+ libdbd-pg-perl
+ libdbi1
+-libdbi-perl
+ libdbus-1-3
+ libdbus-1-3:i386
+ libdbus-1-dev
+@@ -525,49 +279,25 @@ libdbus-glib-1-dev
+ libdbusmenu-glib4
+ libdbusmenu-gtk3-4
+ libdbusmenu-gtk4
+-libdbusmenu-qt2
+-libdca0
+-libdconf1
+ libdebconfclient0
+ libdebian-installer4
+-libdecoration0
+-libdee-1.0-4
+ libdevmapper1.02.1
+ libdevmapper-dev
+ libdevmapper-event1.02.1
+ libdisasm0
+-libdmapsharing-3.0-2
+ libdmraid1.0.0.rc16
+-libdmtx0a
+ libdns1100
+ libdns-export1100
+ libdotconf0
+ libdv4
+ libdv4:i386
+ libdvbpsi10
+-libdvd-pkg
+-libeatmydata1
+-libebackend-1.2-10
+-libe-book-0.1-1
+-libebook-1.2-19
+-libebook-contacts-1.2-2
+-libecal-1.2-19
+-libecryptfs1
+-libedata-book-1.2-25
+-libedata-cal-1.2-28
+-libedataserver-1.2-23
+-libedit2
+-libedit2:i386
+ libefiboot1
+ libefivar1
+ libeot0
+-libepsilon1
+ libept1.5.0
+-libespeak1
+ libestr0
+-libevent-2.1-6
+ libexempi3
+-libexiv2-14
+ libexttextcat-2.0-0
+ libexttextcat-data
+ libfaac0
+@@ -578,99 +308,36 @@ libfdisk1
+ libffi6
+ libffi6:i386
+ libffi-dev
+-libfile-fnmatch-perl
+ libfltk1.3
+ libfltk-images1.3
+ libfontembed1
+-libfox-1.6-0
+ libfwup1
+ libfwupd2
+ libfyba0
+-libgavl1
+ libgc1c2
+-libgcab-1.0-0
+-libgconf-2-4
+-libgconf2-4
+-libgconf-2-4:i386
+-libgdata22
+-libgdata-common
+ libgdbm5
+ libgdbm5:i386
+ libgdbm-compat4
+ libgdbm-compat4:i386
+-libgdcm2.8
+-libgdiplus
+ libgeoclue0
+-libgeoclue-2-0
+-libgeocode-glib0
+ libgeotiff2
+-libgif7
+-libgirara-gtk3-3
+-libgirepository-1.0-1
+-libglade2.0-cil
+ libgle3
+ libgle3-dev
+-libglib2.0-cil
+-libgmime-2.6-0
+-libgmime2.6-cil
+-libgmime-3.0-0
+-libgnome-2-0
+-libgnome2-0
+-libgnome2-bin
+-libgnome2-common
+-libgnome-bluetooth13
+-libgnomecanvas2-0
+-libgnomecanvas2-common
+-libgnome-desktop-3-17
+-libgnomekbd8
+-libgnomekbd-common
+ libgnome-menu-3-0
+-libgnomeui-0
+-libgnomeui-common
+-libgnomevfs2-0
+-libgnomevfs2-common
+-libgoa-1.0-0b
+-libgoa-1.0-common
+-libgpgme++2v5
+-libgpm2
+-libgpm2:i386
+ libgpod4
+ libgpod-common
+-libgraphicsmagick-q16-3
+-libgrilo-0.3-0
+-libgsm1
+ libgssapi3-heimdal
+ libgssapi3-heimdal:i386
+ libgssapi-krb5-2
+ libgssapi-krb5-2:i386
+ libgssdp-1.0-3
+-libgtk2.0-cil
+ libgtk2-perl
+ libgtk2-unique-perl
+-libgtkhex-3-0
+-libgtkmm-2.4-1v5
+-libgtkmm-2.4-dev
+-libgtkmm-3.0-1v5
+-libgtkmm-3.0-dev
+-libgtksourceview2.0-0
+-libgtksourceview2.0-common
+-libgtkspell0
+-libgtop-2.0-11
+-libgtop2-common
+-libgucharmap-2-90-7
+-libgudev-1.0-0
+-libgudev-1.0-0:i386
+ libgupnp-1.0-4
+ libgupnp-igd-1.0-4
+-libgusb2
+ libgutenprint2
+-libgweather-3-15
+-libgweather-common
+-libgxps2
+ libhcrypto4-heimdal
+ libhcrypto4-heimdal:i386
+-libhdf4-0-alt
+-libheif1
+ libheimbase1-heimdal
+ libheimbase1-heimdal:i386
+ libheimntlm0-heimdal
+@@ -679,337 +346,122 @@ libhpmud0
+ libhttrack2
+ libhx509-5-heimdal
+ libhx509-5-heimdal:i386
+-libhyphen0
+-libibus-1.0-5
+-libibus-1.0-5:i386
+-libibus-1.0-dev
+-libical2
+-libical3
+-libid3tag0
+-libidl-2-0
+ libiec61883-0
+ libiec61883-0:i386
+ libieee1284-3
+ libieee1284-3:i386
+ libijs-0.35
+-libimobiledevice6
+-libimobiledevice-utils
+-libindicator3-7
+-libindicator7
+ libip4tc0
+ libip6tc0
+-libiptc0
+ libirs160
+ libisc169
+ libisccc160
+ libisccfg160
+ libisc-export169
+-libiso9660-10
+-libisofs6
+-libiw30
+-libjansson4
+-libjavascriptcoregtk-1.0-0
+-libjavascriptcoregtk-3.0-0
+-libjbig0
+-libjbig0:i386
+-libjbig2dec0
+-libjbig-dev
+ libjemalloc1
+-libjpeg9
+ libjq1
+-libjs-jquery
+-libjsoncpp1
+-libjs-underscore
+ libjte1
+ libk5crypto3
+ libk5crypto3:i386
+-libkactivities6
+ libkate1
+-libkatepartinterfaces4
+-libkcmutils4
+-libkde3support4
+-libkdeclarative5
+-libkdecore5
+-libkdesu5
+-libkdeui5
+-libkdewebkit5
+-libkdnssd4
+-libkemoticons4
+-libkfile4
+-libkhtml5
+-libkio5
+-libkjsapi4
+-libkjsembed4
+ libklibc
+-libkmediaplayer4
+ libkmod2
+-libknewstuff3-4
+-libknotifyconfig4
+-libkntlm4
+-libkparts4
+-libkprintutils4
+-libkpty4
+ libkrb5-26-heimdal
+ libkrb5-26-heimdal:i386
+ libkrb5-3
+ libkrb5-3:i386
+ libkrb5support0
+ libkrb5support0:i386
+-libkrosscore4
+-libktexteditor4
+-libkworkspace5-5
+-libkxmlrpcclient4
+ liblangtag1
+ liblangtag-common
+ libldap-2.4-2
+ libldap-2.4-2:i386
+ libldap-common
+ libldb1
+-liblilv-0-0
+-liblist-moreutils-perl
+ libllvm4.0
+ libllvm4.0:i386
+-liblockfile1
+-liblockfile-bin
+ liblouis14
+ liblouis-data
+ liblqr-1-0
+ liblua5.2-0
+-liblua5.3-0
+ liblvm2app2.2
+ liblvm2cmd2.02
+ liblwres160
+-libmad0
+-libmad0:i386
+-libmagic1
+-libmagic-mgc
+-libmbim-glib4
+-libmbim-proxy
+-libmeanwhile1
+-libmessaging-menu0
+-libmetacity1
+ libmetis5
+-libmhash2
+ libminiupnpc10
+ libminizip1
+-libmlt++3
+-libmlt6
+-libmlt-data
+-libmm-glib0
+ libmms0
+-libmnl0
+ libmount1
+ libmount1:i386
+ libmount-dev
+-libmovit8
+-libmpdec2
+ libmpeg2-4
+-libmspack0
+-libmtdev1
+-libmtp9
+-libmtp-common
+-libmtp-runtime
+-libmusicbrainz5cc2v5
+ libmythes-1.2-0
+-libnatpmp1
+-libnautilus-extension1a
+ libncurses5
+ libncurses5-dev
+ libncurses5:i386
+ libncursesw5
+ libncursesw5-dev
+ libncursesw5:i386
+-libndp0
+ libnemo-extension1
+-libnetfilter-conntrack3
+-libnetpbm10
+ libnewt0.52
+ libnewt-dev
+ libnih1
+ libnih-dbus1
+-libnl-3-200
+-libnl-3-dev
+-libnl-genl-3-200
+-libnl-route-3-200
+-libnl-route-3-dev
+-libnm0
+ libnma0
+-libnm-glib4
+-libnm-glib-vpn1
+ libnm-gtk0
+-libnm-util2
+-libnotify4
+-libnotify-bin
+-libnpth0
+ libnspr4
+ libnspr4-dev
+ libnspr4:i386
+-libnss3
+-libnss3-dev
+-libnss3:i386
+ libnss-mdns
+-libnuma1
+-libnuma-dev
+-liboauth0
+-libodbc1
+-libodbc1:i386
+-libofa0
+ libonig4
+ liboobs-1-5
+-libopencore-amrnb0
+-libopencore-amrwb0
+-libopenexr22
+ libopenobex2
+ liborbit2
+ liborbit-2-0
+ libosp5
+ libossp-uuid16
+ libostyle1c2
+-libp11-kit-gnome-keyring
+ libpam0g
+ libpam0g-dev
+ libpam-cap
+-libpam-gnome-keyring
+ libpam-modules
+ libpam-modules-bin
+ libpam-runtime
+ libpam-systemd
+-libpangomm-1.4-1v5
+-libpangomm-1.4-dev
+ libpano13-3
+ libpaper1
+ libpaper-utils
+-libpcap0.8
+-libpcap0.8-dev
+-libpcap0.8:i386
+ libpcre16-3
+ libpcre3
+ libpcre32-3
+ libpcre3-dev
+ libpcre3:i386
+ libpcrecpp0v5
+-libpcsclite1
+-libpeas-1.0-0
+-libpeas-1.0-python2loader
+-libpeas-common
+-libpgm-5.2-0
+-libphonenumber7
+-libphonon4
+-libphonon4qt5-4
+ libpipeline1
+-libpkcs11-helper1
+-libplasma3
+-libplist3
+ libpolkit-agent-1-0
+ libpolkit-backend-1-0
+ libpolkit-gobject-1-0
+-libpolkit-qt-1-1
+-libportmidi0
+ libportsmf0v5
+ libpotrace0
+-libpq5
+-libprocps6
+ libproxy1-plugin-gsettings
+ libproxy1-plugin-networkmanager
+ libproxy1v5
+ libproxy1v5:i386
+ libproxy-tools
+-libpugixml1v5
+-libpwquality1
+-libpwquality-common
+ libpyside1.2
+-libpython2.7
+-libpython2.7-dev
+-libpython2.7-minimal
+-libpython2.7-stdlib
+-libpython-dev
+-libpython-stdlib
+-libqca2
+ libqjson0
+-libqmi-glib5
+-libqmi-proxy
+-libqpdf21
+-libqrencode3
+-libqt4-dbus
+-libqt4-dbus:i386
+-libqt4-declarative
+-libqt4-declarative:i386
+-libqt4-designer
+-libqt4-designer:i386
+-libqt4-dev
+-libqt4-dev-bin
+-libqt4-help
+-libqt4-network
+-libqt4-network:i386
+-libqt4-opengl
+-libqt4-opengl:i386
+-libqt4-qt3support
+-libqt4-qt3support:i386
+-libqt4-script
+-libqt4-script:i386
+-libqt4-scripttools
+-libqt4-scripttools:i386
+-libqt4-sql
+-libqt4-sql:i386
+-libqt4-svg
+-libqt4-svg:i386
+-libqt4-test
+-libqt4-test:i386
+-libqt4-xml
+-libqt4-xml:i386
+-libqt4-xmlpatterns
+-libqt4-xmlpatterns:i386
+-libqtassistantclient4
+-libqtcore4
+-libqtcore4:i386
+-libqtdbus4
+-libqtdbus4:i386
+-libqtgui4
+-libqtgui4:i386
+-libqtwebkit4
+-libqtwebkit4:i386
+-libraptor2-0
+ librarian0
+ librasqal3
+ libraw1394-11
+ libraw1394-11:i386
+-libraw16
+ librdf0
+-libre2-4
+ librecode0
+-librest-0.7-0
+ librhash0
+-librhythmbox-core10
+ libroken18-heimdal
+ libroken18-heimdal:i386
+-librpm8
+-librpmio8
+-librsvg2-2
+-librsvg2-2:i386
+-librsvg2-common
+-librsvg2-common:i386
+-librsync1
+-librtaudio6
+-libruby2.5
+ libsane-hpaio
+-libsasl2-2
+-libsasl2-2:i386
+-libsasl2-dev
+-libsasl2-modules
+-libsasl2-modules-db
+-libsasl2-modules-db:i386
+-libsasl2-modules:i386
+-libsbc1
+ libsdl-net1.2
+ libsdl-net1.2:i386
+-libsdl-sound1.2
+-libsdl-ttf2.0-0
+-libsdl-ttf2.0-0:i386
+-libseccomp2
+-libseccomp-dev
+-libsecret-1-0
+-libsecret-1-0:i386
+-libsecret-common
+ libselinux1
+ libselinux1-dev
+ libselinux1:i386
+@@ -1017,18 +469,10 @@ libsemanage1
+ libsemanage-common
+ libsepol1
+ libsepol1-dev
+-libserd-0-0
+-libserf-1-1
+ libsgmls-perl
+-libsgutils2-2
+-libshiboken1.2v5
+ libsidplay1v5
+ libsidplay2
+-libsignon-glib1
+ libsigsegv2
+-libslang2
+-libslang2-dev
+-libslang2:i386
+ libsmartcols1
+ libsmbclient
+ libsmbios-c2
+@@ -1037,115 +481,59 @@ libsnmp30
+ libsnmp30:i386
+ libsnmp-base
+ libsocket++1
+-libsolid4
+ libsonic0
+-libsord-0-0
+-libsoundtouch1
+-libsox3
+-libsox-fmt-alsa
+-libsox-fmt-base
+ libspandsp2
+-libspectre1
+-libspeechd2
+-libspeex1
+-libspeex1:i386
+-libspeexdsp1
+-libspeexdsp1:i386
+-libsqlite3-0
+-libsqlite3-0:i386
+-libsratom-0-0
+-libssh2-1
+-libssh2-1-dev
+ libstartup-notification0
+ libstdc++5:i386
+ libstemmer0d
+-libsubunit0
+-libsubunit-dev
+-libsuil-0-0
+ libsystemd0
+ libsystemd0:i386
+-libsz2
+ libtalloc2
+ libtdb1
+ libtdb1:i386
+ libteamdctl0
+-libtelepathy-glib0
+ libtevent0
+ libtheora0
+ libtheora0:i386
+-libthreadweaver4
+ libtidy5
+ libtinfo5
+ libtinfo5:i386
+ libtinfo-dev
+-libtorrent-rasterbar9
+-libtotem-plparser18
+-libtotem-plparser-common
+ libuchardet0
+ libudev1
+ libudev1:i386
+ libudev-dev
+ libudisks2-0
+ libunique-1.0-0
+-libupnp6
+ libupower-glib3
+ libusb-0.1-4
+-libusbmuxd4
+ libuser1
+ libustr-1.0-1
+ libuuid1
+ libuuid1:i386
+ libuuid-perl
+-libuv1
+-libvamp-hostsdk3v5
+-libvcdinfo0
+ libvde0
+ libvde-dev
+ libvdeplug2
+ libvdeplug-dev
+-libvisual-0.4-0
+-libvisual-0.4-0:i386
+-libvisual-0.4-plugins
+-libvolume-key1
+-libvte-2.91-0
+-libvte-2.91-common
+ libvte9
+ libvte-common
+ libwbclient0
+-libwebkitgtk-1.0-0
+-libwebkitgtk-3.0-0
+ libwind0-heimdal
+ libwind0-heimdal:i386
+ libwnck22
+-libwnck-3-0
+-libwnck-3-common
+ libwnck-common
+ libwrap0
+ libwrap0:i386
+ libx86-1
+-libxapp1
+-libxdo3
+-libxerces-c3.2
+-libxft2
+-libxft2:i386
+-libxft-dev
+ libxklavier16
+ libxnvctrl0
+-libxtables12
+ libyajl2
+-libyaml-0-2
+-libyaml-cpp0.5v5
+-libyelp0
+-libzbar0
+-libzeitgeist-2.0-0
+ libzephyr4
+-libzip4
+-linux-firmware
+ localechooser-data
+ lockfile-progs
+ login
+ logrotate
+-lp-solve
+ lsb-base
+ lsb-release
+ lshw
+@@ -1159,47 +547,25 @@ makedumpfile
+ man-db
+ manpages
+ manpages-dev
+-mawk
+-media-player-info
+-melt
+ menu
+-mesa-utils
+-metacity
+-metacity-common
+ mime-support
+ mlocate
+-mobile-broadband-provider-info
+-modemmanager
+ mount
+ mousetweaks
+-mscompress
+-mtools
+ mtr-tiny
+-mupdf
+-mysql-common
+ mythes-en-us
+-ncdu
+ ncurses-base
+ ncurses-bin
+ netbase
+ netcat-openbsd
+-netpbm
+ netplan.io
+-net-tools
+-network-manager
+ network-manager-gnome
+ network-manager-openvpn
+ network-manager-openvpn-gnome
+-network-manager-pptp
+-network-manager-pptp-gnome
+-nilfs-tools
+ nplan
+ ntp
+ ntpdate
+ obex-data-server
+-odbcinst
+-odbcinst1debian2
+-odbcinst1debian2:i386
+ openjade
+ openprinting-ppds
+ opensp
+@@ -1208,32 +574,19 @@ openssh-server
+ openssh-sftp-server
+ orca
+ os-prober
+-paperkey
+ passwd
+-patchutils
+ pbzip2
+ pcmciautils
+-phonon
+-phonon4qt5
+-phonon4qt5-backend-gstreamer
+-phonon-backend-gstreamer
+-phonon-backend-gstreamer-common
+-pinentry-gnome3
+-pinentry-qt
+ piuparts
+ piuparts-common
+ pkg-config
+-plasma-scriptengine-javascript
+ pm-utils
+ policykit-1
+ policykit-1-gnome
+ policykit-desktop-privileges
+-poppler-data
+ powermgmt-base
+-ppp
+ pppconfig
+ pppoeconf
+-pptp-linux
+ printer-driver-brlaser
+ printer-driver-c2esp
+ printer-driver-cups-pdf
+@@ -1248,147 +601,35 @@ printer-driver-ptouch
+ printer-driver-pxljr
+ printer-driver-sag-gdi
+ printer-driver-splix
+-procps
+ psmisc
+-pwgen
+-python
+-python2.7
+-python2.7-dev
+-python2.7-minimal
+-python3-apport
+-python3-asn1crypto
+-python3-babel
+-python3-blinker
+ python3-brlapi
+ python3-brlapi
+-python3-cairo
+-python3-certifi
+-python3-cffi-backend
+-python3-chardet
+ python3-commandnotfound
+-python3-configobj
+ python3-crypto
+-python3-cryptography
+ python3-cups
+-python3-cupshelpers
+ python3-dbus
+ python3-debconf
+-python3-debian
+-python3-decorator
+-python3-docutils
+ python3-gdbm
+-python3-gi
+-python3-gi-cairo
+-python3-icu
+-python3-idna
+-python3-jinja2
+-python3-jwt
+-python3-libxml2
+ python3-louis
+-python3-lxml
+-python3-mako
+-python3-markupsafe
+ python3-netifaces
+-python3-numpy
+-python3-oauthlib
+-python3-pexpect
+-python3-pil
+ python3-pip
+-python3-piston-mini-client
+-python3-problem-report
+-python3-psutil
+-python3-ptyprocess
+ python3-pyatspi
+-python3-pycurl
+-python3-pygments
+-python3-reportlab
+-python3-reportlab-accel
+-python3-requests
+-python3-requests-unixsocket
+-python3-roman
+-python3-scipy
+-python3-setproctitle
+-python3-sip
+-python3-six
+-python3-speechd
+-python3-tz
+-python3-urllib3
+ python3-virtkey
+ python3-xapian
+-python3-xdg
+-python3-xlib
+-python3-yaml
+-python-appindicator
+-python-asn1crypto
+-python-automat
+-python-babel-localedata
+-python-blinker
+-python-bzrlib
+-python-cairo
+-python-certifi
+-python-cffi-backend
+-python-chardet
+-python-cheetah
+-python-cliapp
+-python-compizconfig
+-python-configobj
+-python-constantly
+ python-crypto
+-python-cryptography
+ python-cups
+ python-dbus
+ python-dbus-dev
+-python-debian
+-python-dev
+-python-enum34
+-python-fasteners
+-python-feedparser
+-python-funcsigs
+-python-gconf
+-python-gi
+-python-gi-cairo
+-python-glade2
+-python-gnome2
+-python-gobject
+ python-gobject-2
+-python-gtk2
+ python-gtksourceview2
+-python-hyperlink
+-python-idna
+-python-incremental
+-python-ipaddr
+-python-jwt
+-python-keyring
+ python-ldb
+-python-libtorrent
+ python-libuser
+-python-libxml2
+-python-lockfile
+-python-lxml
+-python-mako
+-python-markupsafe
+-python-minimal
+-python-mock
+-python-monotonic
+-python-mutagen
+ python-netifaces
+-python-numpy
+-python-oauthlib
+-python-openssl
+ python-pam
+-python-paramiko
+-python-parted
+-python-pbr
+-python-pexpect
+-python-pil
+ python-pip
+ python-pip-whl
+-python-piston-mini-client
+-python-ptyprocess
+ python-pyatspi
+-python-pycurl
+ python-pyexiv2
+-python-pyinotify
+ python-pyside
+ python-pyside.phonon
+ python-pyside.qtcore
+@@ -1404,124 +645,41 @@ python-pyside.qttest
+ python-pyside.qtuitools
+ python-pyside.qtwebkit
+ python-pyside.qtxml
+-python-qt4-dbus
+-python-rencode
+-python-renderpm
+-python-renderpm
+-python-reportlab
+-python-reportlab-accel
+-python-requests
+ python-samba
+-python-secretstorage
+ python-serial
+-python-setproctitle
+-python-simplejson
+-python-sip
+-python-six
+ python-smbc
+ python-talloc
+ python-tdb
+-python-tk
+-python-twisted-bin
+-python-twisted-core
+-python-twisted-names
+-python-twisted-web
+-python-twodict
+-python-urllib3
+-python-utidylib
+ python-vte
+-python-wxgtk3.0
+-python-wxversion
+ python-xapian
+-python-xdg
+-python-xlib
+-python-yaml
+-python-zope.interface
+-qdbus
+-qpdf
+ qpdfview
+ qpdfview-djvu-plugin
+ qpdfview-ps-plugin
+-qt4-linguist-tools
+-qt4-qmake
+-qt-at-spi
+-qtchooser
+-qtcore4-l10n
+ radeontool
+ rarian-compat
+-rdesktop
+-reiserfsprogs
+ remote-tty
+ resolvconf
+ rfkill
+-rhythmbox
+-rhythmbox-data
+-rhythmbox-plugin-cdrecorder
+-rhythmbox-plugins
+-rpm2cpio
+-rpm-common
+ rsyslog
+ rtkit
+-ruby
+-ruby2.5
+-ruby2.5-dev
+-ruby-atk
+-ruby-cairo
+-ruby-cairo-gobject
+-ruby-dev
+-ruby-did-you-mean
+-ruby-gdk-pixbuf2
+-rubygems-integration
+-ruby-gettext
+-ruby-gio2
+-ruby-glib2
+-ruby-gobject-introspection
+-ruby-gtk2
+-ruby-json
+-ruby-locale
+-ruby-minitest
+-ruby-net-telnet
+-ruby-pango
+-ruby-power-assert
+-ruby-test-unit
+-ruby-text
+ samba
+ samba-common
+ samba-common-bin
+ samba-libs
+ sbsigntool
+-schroot
+-schroot-common
+-scons
+ scrollkeeper
+-seahorse
+ session-migration
+-shared-mime-info
+-simple-scan
+-smartmontools
+ smbclient
+ snap
+-sni-qt
+-socat
+ sound-theme-freedesktop
+-sox
+-sparse
+-speech-dispatcher
+-speech-dispatcher-audio-plugins
+ squashfs-tools
+ ssh-askpass-gnome
+-sshfs
+ ssl-cert
+-strace
+ sudo
+ syslinux
+ syslinux-common
+ syslinux-legacy
+ syslinux-utils
+-system-config-printer
+-system-config-printer-common
+-system-config-printer-gnome
+-system-config-printer-udev
+ systemd
+ systemd-container
+ systemd-sysv
+@@ -1529,21 +687,12 @@ system-tools-backends
+ sysvinit-utils
+ t1utils
+ tcpd
+-tcpdump
+ tdb-tools
+ telnet
+-thermald
+-tidy
+-tigervnc-common
+-tigervnc-viewer
+ time
+ tk8.6-blt2.5
+-tomboy
+ traceroute
+-transmission-common
+-transmission-gtk
+ ttf-ancient-fonts-symbola
+-ttf-ubuntu-font-family
+ ubuntu-drivers-common
+ ucf
+ udev
+@@ -1554,18 +703,13 @@ upower
+ ureadahead
+ usb-modeswitch
+ usb-modeswitch-data
+-usbmuxd
+ user-setup
+ util-linux
+ uuid
+ uuid-dev
+ uuid-runtime
+-valgrind
+ vbetool
+ vdpau-va-driver
+-vim-common
+-vim-tiny
+-vmdebootstrap
+ wamerican
+ watershed
+ wbritish
+@@ -1573,38 +717,18 @@ webhttrack
+ webhttrack-common
+ whiptail
+ winbind
+-wireless-regdb
+-wireless-tools
+ wmctrl
+ wodim
+-wordnet
+-wordnet-base
+ wpasupplicant
+ x11-apps
+ x11-session-utils
+ x11-utils
+ x11-xfs-utils
+ x11-xserver-utils
+-xapps-common
+-xautomation
+-xaw3dg:i386
+ xcalib
+ xdelta3
+-xdg-user-dirs
+-xdg-user-dirs-gtk
+-xdg-utils
+-xdotool
+-xfslibs-dev
+-xfsprogs
+ xinit
+ xinput
+ xorg-docs-core
+-xxd
+ yasm
+-yelp
+-yelp-xsl
+-zathura
+-zathura-pdf-poppler
+-zenity
+-zenity-common
+ zip

@@ -1,7 +1,7 @@
 Enhancement 1st Run -- General Notes
 ====================================
 
-* Almost 3,000 Bionic packages will be downloaded from Ubuntu repositories and
+* Over 700 Bionic packages will be downloaded from Ubuntu repositories and
   then installed, so have patience! On a dual-core i7 system with fast SSD it
   took about 90 mins in a virtual machine for this 1st run. It is essentially
   a full system upgrade, so takes a similar amount of time to complete.
@@ -17,4 +17,3 @@ Enhancement 1st Run -- General Notes
 
 * Accept the license that appears on screen during the upgrade if you want to
   install common TrueType fonts from a known big corporation (very useful).
-

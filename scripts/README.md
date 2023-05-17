@@ -2,10 +2,10 @@
 
 To enhance your own Xenial-based distribution with packages from newer Ubuntu series:
 
-* Copy all scripts from "base-enhancement" directory and all patches from "base-enhance-patches" directory into one location, eg. "~/Downloads" is a good choice.
+* Copy all scripts from "base-enhancement" and "enhance-scripts-initial" directories and all patches from "base-enhance-patches" directory into one location, eg. "~/Downloads" is a good choice.
 * See https://launchpad.net/~savoury1/+archive/ubuntu/ubuntu-enhanced for installation of the **ubuntu-enhanced** package that installs text configuration files into /etc/apt/ (to make packages from the newer Ubuntu series available, ie. Bionic/Cosmic/Disco/Eoan) as well as an **`apt-all`** command allowing easy installation of packages from newer series. Proceed to the next step after installing the xenial-enhanced package.
 * Run **`enhanced-packages-serena`** (or **`enhanced-packages-xenial`** if using a Xenial distribution other than Mint Serena MATE as the starting point) to create several custom packages used by the enhancement script in the next step.
-* Run **`enhancements-serena`** (or **`enhancements-xenial`**) which installs the required PPAs, upgrades and installs required packages, then calls **`enhancements-1st-run`** to do the main work of upgrading almost 3,000 packages to Bionic versions.
+* Run **`enhancements-serena`** (or **`enhancements-xenial`**) which installs the required PPAs, upgrades and installs required packages, then calls **`enhancements-1st-run`** to do the main work of upgrading over 700 packages to Bionic versions.
 * The **`enhancements-1st-run`** script will take some time! In testing, it took about 90 minutes in a virtual machine on an i7 processor with fast SSD. This is the one long part of these procedures and once done it is quick and easy to upgrade sub-components of the OS.
 * Once **`enhancements-1st-run`** completes it will drop back to the **`enhancements-serena`** (or **`enhancements-xenial`**) script for some final actions, including re-install of packages removed prior to the upgrade process (due version conflicts).
 * Reboot to your new "enhanced" Ubuntu "rolling release" distribution!
