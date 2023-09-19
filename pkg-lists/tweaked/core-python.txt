@@ -1,6 +1,6 @@
 - python-sip -- ppa:savoury1/python
 - python3-sip -- ppa:savoury1/python
-B python3-gdbm
+- python3-gdbm -- revert to Xenial version
 - libpython2.7-minimal -- ppa:savoury1/python
 - libpython2.7-stdlib -- ppa:savoury1/python
 - libpython2.7 -- ppa:savoury1/python
@@ -14,22 +14,22 @@ B python3-gdbm
 - python -- ppa:savoury1/python
 - python-dev -- ppa:savoury1/python
 - python-tk -- ppa:savoury1/python
-B libpyside1.2
-B python-pyside.qtcore
-B python-pyside.qtnetwork
-B python-pyside.qtwebkit
-B python-pyside.qtxml
-B python-pyside.qtgui
-B python-pyside.qtsql
-B python-pyside.qtsvg
-B python-pyside.qthelp
-B python-pyside.qttest
-B python-pyside.qtdeclarative
-B python-pyside.qtscript
-B python-pyside.qtopengl
-B python-pyside.phonon
-B python-pyside.qtuitools
-B python-pyside
+- libpyside1.2 -- revert to Xenial version
+- python-pyside.qtcore -- revert to Xenial version
+- python-pyside.qtnetwork -- revert to Xenial version
+- python-pyside.qtwebkit -- revert to Xenial version
+- python-pyside.qtxml -- revert to Xenial version
+- python-pyside.qtgui -- revert to Xenial version
+- python-pyside.qtsql -- revert to Xenial version
+- python-pyside.qtsvg -- revert to Xenial version
+- python-pyside.qthelp -- revert to Xenial version
+- python-pyside.qttest -- revert to Xenial version
+- python-pyside.qtdeclarative -- revert to Xenial version
+- python-pyside.qtscript -- revert to Xenial version
+- python-pyside.qtopengl -- revert to Xenial version
+- python-pyside.phonon -- revert to Xenial version
+- python-pyside.qtuitools -- revert to Xenial version
+- python-pyside -- revert to Xenial version
 - python-enum34 -- ppa:savoury1/python
 - python-six -- ppa:savoury1/python
 - python3-six -- ppa:savoury1/python
@@ -41,8 +41,8 @@ B python-pyside
 - python3-chardet -- ppa:savoury1/python
 - python-pycurl -- ppa:savoury1/python
 - python3-pycurl -- ppa:savoury1/python
-B python-xapian
-B python3-xapian
+- python-xapian -- revert to Xenial version
+- python3-xapian -- revert to Xenial version
 - python-yaml -- ppa:savoury1/python
 - python3-yaml -- ppa:savoury1/python
 - python-libxml2 -- ppa:savoury1/backports
@@ -55,19 +55,19 @@ B python3-xapian
 - python3-mako -- ppa:savoury1/python
 - python-debian -- ppa:savoury1/python
 - python3-debian -- ppa:savoury1/python
-B python-pip-whl
-B python-pip
-B python3-pip
-B python3-brlapi
-B python-gobject-2
+- python-pip-whl -- revert to Xenial version
+- python-pip -- revert to Xenial version
+- python3-pip -- revert to Xenial version
+- python3-brlapi -- revert to Xenial version
+- python-gobject-2 -- revert to Xenial version
 - python-gobject -- ppa:savoury1/python
 - python-gi -- ppa:savoury1/python
 - python3-gi -- ppa:savoury1/python
-B python-crypto
-B python3-crypto
-B python-dbus
-B python-dbus-dev
-B python3-dbus
+- python-crypto -- revert to Xenial version
+- python3-crypto -- revert to Xenial version
+- python-dbus -- revert to Xenial version
+- python-dbus-dev -- revert to Xenial version
+- python3-dbus -- revert to Xenial version
 - python-cffi-backend -- ppa:savoury1/python
 - python3-cffi-backend -- ppa:savoury1/python
 - python-numpy -- ppa:savoury1/python
@@ -76,13 +76,13 @@ B python3-dbus
 - python3-psutil -- ppa:savoury1/python
 - python-setproctitle -- ppa:savoury1/python
 - python3-setproctitle -- ppa:savoury1/python
-B python3-virtkey
+- python3-virtkey -- revert to Xenial version
 - python-cairo -- ppa:savoury1/python
 - python3-cairo -- ppa:savoury1/python
 - python-gi-cairo -- ppa:savoury1/python
 - python3-gi-cairo -- ppa:savoury1/python
-B python-cups
-B python3-cups
+- python-cups -- revert to Xenial version
+- python3-cups -- revert to Xenial version
 - python-pil -- ppa:savoury1/python
 - python3-pil -- ppa:savoury1/python
 - python-reportlab-accel -- ppa:savoury1/python
