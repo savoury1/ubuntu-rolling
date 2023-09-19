@@ -15,7 +15,7 @@ B ttf-ancient-fonts-symbola
 - font-manager -- ppa:savoury1/gtk-xenial
 - libgucharmap-2-90-7 -- ppa:savoury1/fonts
 - gucharmap -- ppa:savoury1/fonts
-B t1utils
+- t1utils -- ppa:savoury1/fonts
 - libfreetype6 -- ppa:savoury1/fonts
 - libfreetype6:i386 -- ppa:savoury1/fonts
 - libfreetype6-dev -- ppa:savoury1/fonts
@@ -38,9 +38,9 @@ B t1utils
 - libharfbuzz-dev -- ppa:savoury1/fonts
 B libeot0
 B libijs-0.35
-B libfontembed1
-B libpaper1
-B libpaper-utils
+- libfontembed1 -- revert to Xenial version
+- libpaper1 -- revert to Xenial version
+- libpaper-utils -- revert to Xenial version
 - gsfonts -- ppa:savoury1/graphics
 - libgs9-common -- ppa:savoury1/graphics
 - libgs9 -- ppa:savoury1/graphics
@@ -62,49 +62,49 @@ B qpdfview
 B qpdfview-ps-plugin
 B qpdfview-djvu-plugin
 - mupdf -- ppa:savoury1/backports
-B libcups2
-B libcups2:i386
-B libcupsmime1
-B libcupscgi1
-B libcupsimage2
-B libcupsimage2:i386
-B libcupsppdc1
-B cups-ipp-utils
-B cups-daemon
-B libcupsfilters1
-B libcupsfilters1:i386
-B cups-filters-core-drivers
-B cups-filters
-B cups-browsed
-B cups-common
-B cups-server-common
-B cups-ppdc
-B cups-client
-B cups-bsd
-B cups-core-drivers
-B cups
-B printer-driver-cups-pdf
-B libgutenprint2
-B printer-driver-gutenprint
-B openprinting-ppds
-B foomatic-db-compressed-ppds
-B libhpmud0
-B libsane-hpaio
-B hplip-data
-B hplip
-B printer-driver-hpcups
-B printer-driver-postscript-hp
-B printer-driver-pnm2ppa
-B printer-driver-pxljr
-B printer-driver-foo2zjs-common
-B printer-driver-foo2zjs
-B printer-driver-min12xxw
-B printer-driver-splix
-B printer-driver-brlaser
-B printer-driver-ptouch
-B printer-driver-c2esp
-B printer-driver-sag-gdi
-B system-config-printer-udev
-B system-config-printer-common
-B system-config-printer
-B system-config-printer-gnome
+- libcups2 -- revert to Xenial version
+- libcups2:i386 -- revert to Xenial version
+- libcupsmime1 -- revert to Xenial version
+- libcupscgi1 -- revert to Xenial version
+- libcupsimage2 -- revert to Xenial version
+- libcupsimage2:i386 -- revert to Xenial version
+- libcupsppdc1 -- revert to Xenial version
+- cups-ipp-utils -- revert to Xenial version
+- cups-daemon -- revert to Xenial version
+- libcupsfilters1 -- revert to Xenial version
+- libcupsfilters1:i386 -- revert to Xenial version
+- cups-filters-core-drivers -- revert to Xenial version
+- cups-filters -- revert to Xenial version
+- cups-browsed -- revert to Xenial version
+- cups-common -- revert to Xenial version
+- cups-server-common -- revert to Xenial version
+- cups-ppdc -- revert to Xenial version
+- cups-client -- revert to Xenial version
+- cups-bsd -- revert to Xenial version
+- cups-core-drivers -- revert to Xenial version
+- cups -- revert to Xenial version
+- printer-driver-cups-pdf -- revert to Xenial version
+- libgutenprint2 -- revert to Xenial version
+- printer-driver-gutenprint -- revert to Xenial version
+- openprinting-ppds -- revert to Xenial version
+- foomatic-db-compressed-ppds -- revert to Xenial version
+- libhpmud0 -- revert to Xenial version
+- libsane-hpaio -- revert to Xenial version
+- hplip-data -- revert to Xenial version
+- hplip -- revert to Xenial version
+- printer-driver-hpcups -- revert to Xenial version
+- printer-driver-postscript-hp -- revert to Xenial version
+- printer-driver-pnm2ppa -- revert to Xenial version
+- printer-driver-pxljr -- revert to Xenial version
+- printer-driver-foo2zjs-common -- revert to Xenial version
+- printer-driver-foo2zjs -- revert to Xenial version
+- printer-driver-min12xxw -- revert to Xenial version
+- printer-driver-splix -- revert to Xenial version
+- printer-driver-brlaser -- revert to Xenial version
+- printer-driver-ptouch -- revert to Xenial version
+- printer-driver-c2esp -- revert to Xenial version
+- printer-driver-sag-gdi -- revert to Xenial version
+- system-config-printer-udev -- ppa:savoury1/backports
+- system-config-printer-common -- ppa:savoury1/backports
+- system-config-printer -- ppa:savoury1/backports
+- system-config-printer-gnome -- ppa:savoury1/backports
