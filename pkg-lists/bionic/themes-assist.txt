@@ -35,7 +35,7 @@ B liblouis14
 B python3-louis
 B orca
 B gnome-orca
-B libbrlapi0.6
-B libbrlapi-dev
-B python3-brlapi
-B brltty
+- libbrlapi0.6 -- revert to Xenial version
+- libbrlapi-dev -- revert to Xenial version
+- python3-brlapi -- revert to Xenial version
+- brltty -- revert to Xenial version
