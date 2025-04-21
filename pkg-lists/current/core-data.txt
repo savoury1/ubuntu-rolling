@@ -28,7 +28,7 @@ B zip
 - p7zip-full -- ppa:savoury1/backports
 - p7zip-rar -- ppa:savoury1/backports
 - libzip4 -- ppa:savoury1/backports
--w libminizip1 -- ppa:savoury1/{backports,utilities}
+- libminizip1 -- ppa:savoury1/{backports,utilities}
 - libarchive13 -- ppa:savoury1/backports
 - libsnappy1v5 -- ppa:savoury1/backports
 - libsnappy-dev -- ppa:savoury1/backports
