@@ -9,7 +9,7 @@ if [ "$1" = "configure" ]; then
   codename="$(sed -n 's|UBUNTU_CODENAME=||p' /etc/os-release)"
 
   # space at end of everyseries var is significant for sub-string removal
-  everyseries="xenial bionic cosmic disco eoan focal groovy hirsute impish jammy kinetic lunar mantic "
+  everyseries="xenial bionic cosmic disco eoan focal groovy hirsute impish jammy kinetic lunar mantic noble "
   otherseries="$(echo "$everyseries" | sed 's/'"$codename"' //')"
 
   # if this is an unknown series then don't create any config files
@@ -24,7 +24,7 @@ if [ "$1" = "configure" ]; then
   repofile="/etc/apt/sources.list.d/official-package-repositories.list"
   # Bionic (and newer?) don't seem to have the old official repo file
   if [ ! -e "$repofile" ]; then repofile="/etc/apt/sources.list"; fi
-  mirror="$(sed -n 's|deb http://\(.*\)/ubuntu\(/*\) '"$codename"' main .*|\1|p' "$repofile")"
+  mirror="$(sed -n 's|deb https\?://\(.*\)/ubuntu\(/*\) '"$codename"' main .*|\1|p' "$repofile")"
   oldrel=old-releases.ubuntu.com
   pockets="main restricted universe multiverse"
 
@@ -39,7 +39,7 @@ if [ "$1" = "configure" ]; then
 
     # Use old releases server for series past end of support
     case "$series" in
-    cosmic | disco | eoan | groovy | hirsute | impish)
+    cosmic | disco | eoan | groovy | hirsute | impish | kinetic)
       server=$oldrel
       ;;
     *)
