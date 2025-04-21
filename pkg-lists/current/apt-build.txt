@@ -57,8 +57,8 @@ B sbsigntool
 - libdw-dev -- ppa:savoury1/backports
 - dwz -- ppa:savoury1/build-tools
 B libdisasm0
-B libllvm4.0
-B libllvm4.0:i386
+- libllvm4.0 -- not required
+- libllvm4.0:i386 -- not required
 - libllvm6.0 -- ppa:savoury1/llvm-toolchain
 - libllvm6.0:i386 -- ppa:savoury1/llvm-toolchain
 - libllvm7 -- superseded
