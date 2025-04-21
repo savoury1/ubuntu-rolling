@@ -113,8 +113,8 @@ B openjade
 - docbook-dsssl -- ppa:savoury1/build-tools
 - docbook-xml -- ppa:savoury1/build-tools
 - docbook-xsl -- ppa:savoury1/build-tools
-B highlight-common
-B highlight
+- highlight-common -- not required
+- highlight -- not required
 - gtk-doc-tools -- ppa:savoury1/build-tools
 B gnome-doc-utils
 B librarian0
