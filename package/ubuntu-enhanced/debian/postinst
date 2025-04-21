@@ -2,14 +2,25 @@
 
 set -eu
 
+remove_old_configs() {
+  rm /etc/apt/preferences.d/*-repositories-lo.*
+  rm /etc/apt/preferences.d/*-repositories-hi.*
+}
+
 if [ "$1" = "configure" ]; then
+
+  set -- /etc/apt/preferences.d/*-repositories-??.*
+  if [ -f "$1" ]; then
+    echo "Removing old configs as found in pre-0.15.0 packages"
+    remove_old_configs
+  fi
 
   # get series codename from /etc/os-release -- works on Ubuntu derivatives
   # (ie. Mint) provided the UBUNTU_CODENAME field exists in /etc/os-release
   codename="$(sed -n 's|UBUNTU_CODENAME=||p' /etc/os-release)"
 
   # space at end of everyseries var is significant for sub-string removal
-  everyseries="xenial bionic cosmic disco eoan focal groovy hirsute impish jammy kinetic lunar mantic noble "
+  everyseries="xenial bionic cosmic disco eoan focal groovy hirsute impish jammy kinetic lunar mantic noble oracular "
   otherseries="$(echo "$everyseries" | sed 's/'"$codename"' //')"
 
   # if this is an unknown series then don't create any config files
@@ -31,7 +42,7 @@ if [ "$1" = "configure" ]; then
   for series in $otherseries; do
     # create two pin files (one low at 50, one high at 990) for each series
     # and name hi value pin with .save extension so it is unused by default
-    repofile="/etc/apt/preferences.d/$series-repositories"
+    repofile="/etc/apt/preferences.d/enhanced-$series-repos"
     echo "Package: *" | tee "$repofile-lo.pref" "$repofile-hi.pref.save" >/dev/null
     echo "Pin: release n=$series*" | tee -a "$repofile-lo.pref" "$repofile-hi.pref.save" >/dev/null
     echo "Pin-Priority: 50" >> "$repofile-lo.pref"

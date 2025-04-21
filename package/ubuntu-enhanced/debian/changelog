@@ -1,3 +1,15 @@
+ubuntu-enhanced (0.15.0-1~16.04.sav0) xenial; urgency=low
+
+  * New release adding Oracular Oriole
+  * d/control: Update package description
+  * d/{postinst,postrm}: Rework maintscripts to add "enhanced-" prefix to pin
+      files in /etc/apt/preferences.d so that they occur prior to "official-*"
+      pin files (to prevent overriding low priority 50 with default of 500)
+    - Remove old pin files on upgrade from pre-0.15.0 versions
+  * d/copyright: Update years to 2024
+
+ -- Rob Savoury <savoury@savos.tech>  Mon, 29 Apr 2024 19:12:53 -0700
+
 ubuntu-enhanced (0.14.0-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Noble Numbat

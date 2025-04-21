@@ -9,7 +9,7 @@ if [ "$1" = "remove" ]; then
 
   # remove all config files created on package installation
   for series in $otherseries; do
-    repofile="/etc/apt/preferences.d/$series-repositories"
+    repofile="/etc/apt/preferences.d/enhanced-$series-repos"
     rm "$repofile-"??.*
     repofile="/etc/apt/sources.list.d/official-package-repos-$series.list"
     rm "$repofile"

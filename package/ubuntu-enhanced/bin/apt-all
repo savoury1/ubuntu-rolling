@@ -21,7 +21,7 @@ function restore() {
 
 pinpath="/etc/apt/preferences.d"
 pinfile=""
-repo_hi="repositories-hi.pref"
+repo_hi="repos-hi.pref"
 otherseries=("$(</etc/apt/otherseries)")
 series_num=0
 series_bad=N
@@ -29,7 +29,7 @@ series_bad=N
 # sanity check on /etc/apt/otherseries input
 for series in ${otherseries[@]}; do
   case "$series" in
-    xenial | bionic | cosmic | disco | eoan | focal | groovy | hirsute | impish | jammy | kinetic | lunar | mantic | noble)
+    xenial | bionic | cosmic | disco | eoan | focal | groovy | hirsute | impish | jammy | kinetic | lunar | mantic | noble | oracular)
       ((series_num++))
       ;;
     *)
@@ -37,17 +37,17 @@ for series in ${otherseries[@]}; do
       ;;
   esac
 done
-# must be exactly 12 (of 13 possible) series in /etc/apt/otherseries
-if [ "$series_bad" = "Y" ] || (( series_num != 13 )); then
+# must be exactly 14 (of 15 possible) series in /etc/apt/otherseries
+if [ "$series_bad" = "Y" ] || (( series_num != 14 )); then
   echo "Invalid configuration file: /etc/apt/otherseries !" ; exit
 fi
 
 for series in ${otherseries[@]}; do
   # if first arg matches valid series then set pinfile name
-  if [ "$1" == "$series" ]; then pinfile="$1-$repo_hi"; fi
+  if [ "$1" == "$series" ]; then pinfile="enhanced-$1-$repo_hi"; fi
   # ensure that no hi pin files for newer repos are in use before proceeeding
-  if [ -e "$pinpath/$series-$repo_hi" ]; then
-    sudo mv "$pinpath/$series-$repo_hi" "$pinpath/$series-$repo_hi.save" || exit
+  if [ -e "$pinpath/enhanced-$series-$repo_hi" ]; then
+    sudo mv "$pinpath/enhanced-$series-$repo_hi" "$pinpath/enhanced-$series-$repo_hi.save" || exit
   fi
 done
 

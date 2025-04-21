@@ -1,3 +1,8 @@
+0.15.0 / 29-Apr-2024
+
+  - Add new Oracular Oriole series to configuration
+  - Adapt "apt-all" script for "enhanced-" prefix on pin file names
+
 0.14.0 / 28-Oct-2023
 
   - Add new Noble Numbat series to configuration
