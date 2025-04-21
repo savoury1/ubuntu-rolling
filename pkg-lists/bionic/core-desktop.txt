@@ -32,8 +32,8 @@ B liborbit-2-0
 - libwxgtk3.0-gtk3-0v5 -- ppa:savoury1/backports
 - python-wxversion -- ppa:savoury1/backports
 - python-wxgtk3.0 -- ppa:savoury1/backports
-B libfltk1.3
-B libfltk-images1.3
+- libfltk1.3 -- ppa:savoury1/{backports,utilities}
+- libfltk-images1.3 -- ppa:savoury1/{backports,utilities}
 B libnewt0.52
 B libnewt-dev
 B whiptail
