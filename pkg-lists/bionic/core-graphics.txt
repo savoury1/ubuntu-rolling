@@ -83,8 +83,8 @@ B argyll
 - libexif12 -- ppa:savoury1/graphics
 - libexif12:i386 -- ppa:savoury1/graphics
 - libgdiplus -- ppa:savoury1/graphics
-B libpotrace0
-B libpano13-3
+- libpotrace0 -- ppa:savoury1/graphics
+- libpano13-3 -- ppa:savoury1/graphics
 - enblend -- ppa:savoury1/graphics
 - enfuse -- ppa:savoury1/graphics
 - libgraphicsmagick-q16-3 -- ppa:savoury1/graphics
