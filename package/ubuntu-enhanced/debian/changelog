@@ -1,3 +1,10 @@
+ubuntu-enhanced (0.16.0-1~16.04.sav0) xenial; urgency=low
+
+  * New release adding Plucky Puffin
+  * d/control: Update package description
+
+ -- Rob Savoury <savoury@savos.tech>  Sat, 09 Nov 2024 16:53:37 -0800
+
 ubuntu-enhanced (0.15.0-1~16.04.sav0) xenial; urgency=low
 
   * New release adding Oracular Oriole
