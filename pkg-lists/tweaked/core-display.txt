@@ -60,7 +60,7 @@ B vdpau-va-driver
 - libglu1-mesa:i386 -- ppa:savoury1/display
 - libglu1-mesa-dev -- ppa:savoury1/display
 - libglew2.0 -- ppa:savoury1/multimedia
-B freeglut3
+- freeglut3 -- superseded by libglut3.12 (ppa:savoury1/backports)
 B libgle3
 B libgle3-dev
 - libgles2-mesa -- ppa:savoury1/display
@@ -88,8 +88,8 @@ B libgle3-dev
 - libclutter-gst-3.0-0 -- ppa:savoury1/gtk-xenial
 - libclutter-gtk-1.0-0 -- ppa:savoury1/gtk-xenial
 - gir1.2-gtkclutter-1.0 -- ppa:savoury1/gtk-xenial
-B libchamplain-0.12-0
-B libchamplain-gtk-0.12-0
+- libchamplain-0.12-0 -- ppa:savoury1/gtk-xenial
+- libchamplain-gtk-0.12-0 -- ppa:savoury1/gtk-xenial
 - metacity-common -- ppa:savoury1/gtk-xenial
 - libmetacity1 -- ppa:savoury1/gtk-xenial
 - metacity -- ppa:savoury1/gtk-xenial
