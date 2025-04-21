@@ -49,7 +49,7 @@ B usb-modeswitch
 B libieee1284-3
 B libieee1284-3:i386
 B pcmciautils
-B hwdata
+- hwdata -- ppa:savoury1/{backports,virtualisation}
 B ubuntu-drivers-common
 - libfdt1 -- ppa:savoury1/virtualisation
 - libfdt-dev -- ppa:savoury1/virtualisation
