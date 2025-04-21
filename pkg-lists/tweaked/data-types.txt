@@ -46,7 +46,7 @@ B libexttextcat-2.0-0
 - libfreexl1 -- ppa:savoury1/backports
 - libe-book-0.1-1 -- ppa:savoury1/libreoffice{-6-4,-7-1}
 - libfreehand-0.1-1 -- ppa:savoury1/{backports,scribus}
-B snap
+- snap -- not required
 B libstemmer0d
 - libtracker-sparql-2.0-0 -- ppa:savoury1/backports
 - proj-data -- ppa:savoury1/backports
