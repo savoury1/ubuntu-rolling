@@ -53,8 +53,8 @@ B libip6tc0
 - ebtables -- ppa:savoury1/virtualisation
 B netbase
 B hostname
-B python-netifaces
-B python3-netifaces
+- python-netifaces -- leave at default version
+- python3-netifaces -- leave at default version
 B netplan.io
 B nplan
 B ntp
