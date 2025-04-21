@@ -1,6 +1,6 @@
 - dictionaries-common -- ppa:savoury1/backports
-B wbritish
-B wamerican
+- wbritish -- ppa:savoury1/backports
+- wamerican -- ppa:savoury1/backports
 - libaspell15 -- ppa:savoury1/backports
 - aspell -- ppa:savoury1/backports
 - aspell-en -- ppa:savoury1/backports
@@ -10,10 +10,10 @@ B wamerican
 - enchant -- ppa:savoury1/backports
 - libgtkspell0 -- ppa:savoury1/backports
 - libhyphen0 -- ppa:savoury1/backports
-B hyphen-en-us
+- hyphen-en-us -- ppa:savoury1/backports
 - wordnet-base -- ppa:savoury1/backports
 - wordnet -- ppa:savoury1/backports
-B libmythes-1.2-0
+- libmythes-1.2-0 -- ppa:savoury1/backports
 B mythes-en-us
 B liblangtag-common
 B liblangtag1
