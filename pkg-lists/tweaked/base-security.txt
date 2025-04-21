@@ -1,15 +1,15 @@
 - libkeyutils1 -- ppa:savoury1/virtualisation
 - libkeyutils1:i386 -- ppa:savoury1/virtualisation
 - keyutils -- ppa:savoury1/virtualisation
-F krb5-locales -- same version as libgssapi-krb5-2
-F libkrb5support0 -- same version as libgssapi-krb5-2
-F libkrb5support0:i386 -- same version as libgssapi-krb5-2
-F libk5crypto3 -- same version as libgssapi-krb5-2
-F libk5crypto3:i386 -- same version as libgssapi-krb5-2
-F libkrb5-3 -- same version as libgssapi-krb5-2
-F libkrb5-3:i386 -- same version as libgssapi-krb5-2
-F libgssapi-krb5-2 -- required by openssh-server
-F libgssapi-krb5-2:i386 -- same version as libgssapi-krb5-2
+B krb5-locales -- same version as libgssapi-krb5-2
+B libkrb5support0 -- same version as libgssapi-krb5-2
+B libkrb5support0:i386 -- same version as libgssapi-krb5-2
+B libk5crypto3 -- same version as libgssapi-krb5-2
+B libk5crypto3:i386 -- same version as libgssapi-krb5-2
+B libkrb5-3 -- same version as libgssapi-krb5-2
+B libkrb5-3:i386 -- same version as libgssapi-krb5-2
+B libgssapi-krb5-2 -- same version as libgssapi-krb5-2
+B libgssapi-krb5-2:i386 -- same version as libgssapi-krb5-2
 - libnettle6 -- ppa:savoury1/encryption
 - libnettle6:i386 -- ppa:savoury1/encryption
 - libhogweed4 -- ppa:savoury1/encryption

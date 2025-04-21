@@ -4,10 +4,10 @@ B passwd
 - apg -- ppa:savoury1/backports
 B user-setup
 - pwgen -- ppa:savoury1/backports
-F libattr1 -- same version as libattr1-dev
-F libattr1:i386 -- same version as libattr1-dev
-F libattr1-dev -- required by manpages-dev
-F attr -- same version as libattr1-dev
+B libattr1 -- same version as libattr1-dev
+B libattr1:i386 -- same version as libattr1-dev
+B libattr1-dev
+B attr -- same version as libattr1-dev
 B libacl1
 B libacl1:i386
 B acl
@@ -52,15 +52,10 @@ B libselinux1:i386
 B libselinux1-dev
 B libsemanage-common
 B libsemanage1
-F openssh-client -- same version as openssh-server
-F openssh-sftp-server -- same version as openssh-server
-F openssh-server -- libc6 2.31 breaks earlier versions
-F ssh-askpass-gnome -- same version as openssh-server
-F libcrypt1 -- required by libc6
-F libcrypt1:i386 -- required by libc6:i386
-F libcrypt-dev -- required by libc6-dev
-F libfido2-1 -- required by openssh-client
-F libcbor0.6 -- required by libfido2-1
+B openssh-client -- same version as openssh-server
+B openssh-sftp-server -- same version as openssh-server
+B openssh-server
+B ssh-askpass-gnome -- same version as openssh-server
 - libssh-4 -- ppa:savoury1/encryption
 - libssh-gcrypt-4 -- ppa:savoury1/encryption
 - libssh2-1 -- ppa:savoury1/encryption

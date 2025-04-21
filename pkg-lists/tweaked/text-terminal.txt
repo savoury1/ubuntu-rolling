@@ -41,8 +41,8 @@ B libgdbm5
 B libgdbm5:i386
 B libgdbm-compat4
 B libgdbm-compat4:i386
-F manpages -- same version as manpages-dev
-F manpages-dev -- older broken by libcrypt-dev
+B manpages -- same version as manpages-dev
+B manpages-dev
 B man-db
 B ed
 - sed -- ppa:savoury1/backports
