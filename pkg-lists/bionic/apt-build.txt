@@ -103,7 +103,7 @@ B libsgmls-perl
 B dh-make
 - dput -- ppa:savoury1/build-tools
 B deborphan
-B pkg-config
+- pkg-config -- ppa:savoury1/build-tools
 - pkg-kde-tools -- ppa:savoury1/build-tools
 B chrpath
 B debconf
