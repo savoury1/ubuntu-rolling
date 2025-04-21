@@ -43,7 +43,7 @@ B libdv4:i386
 B libmpeg2-4
 - libzvbi-common -- ppa:savoury1/multimedia
 - libzvbi0 -- ppa:savoury1/multimedia
-B libzbar0 -- newer Perl rebuild
+- libzbar0 -- ppa:savoury1/graphics
 - libaribb24-0 -- ppa:savoury1/multimedia
 B libuchardet0
 - libebml4v5 -- ppa:savoury1/multimedia
