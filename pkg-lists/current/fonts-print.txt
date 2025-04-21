@@ -8,7 +8,7 @@
 - fonts-mathjax -- ppa:savoury1/backports
 - libjs-mathjax -- ppa:savoury1/backports
 B fonts-orya-extra
-B fonts-noto-cjk
+- fonts-noto-cjk -- ppa:savoury1/fonts
 - ttf-mscorefonts-installer -- leave at default version
 B fonts-symbola
 B ttf-ancient-fonts-symbola
@@ -58,9 +58,9 @@ B libijs-0.35
 - poppler-data -- ppa:savoury1/backports
 - zathura-pdf-poppler -- ppa:savoury1/backports
 - zathura -- ppa:savoury1/backports
-B qpdfview
-B qpdfview-ps-plugin
-B qpdfview-djvu-plugin
+- qpdfview -- ppa:savoury1/backports
+- qpdfview-ps-plugin -- ppa:savoury1/backports
+- qpdfview-djvu-plugin -- ppa:savoury1/backports
 - mupdf -- ppa:savoury1/backports
 - libcups2 -- revert to Xenial version
 - libcups2:i386 -- revert to Xenial version
