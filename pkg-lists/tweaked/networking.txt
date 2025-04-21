@@ -98,7 +98,7 @@ B webhttrack
 - libupnp6 -- ppa:savoury1/backports
 B libgssdp-1.0-3
 B libgupnp-1.0-4
-B libgupnp-igd-1.0-4
+- libgupnp-igd-1.0-4 -- ppa:savoury1/gtk-xenial
 B libminiupnpc10
 - libnatpmp1 --  ppa:savoury1/{backports,utilities}
 - libdap25 -- ppa:savoury1/backports
