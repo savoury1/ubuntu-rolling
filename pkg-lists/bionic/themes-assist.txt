@@ -10,7 +10,7 @@ B sound-theme-freedesktop
 - libcanberra-gtk3-module -- ppa:savoury1/gtk-xenial
 - gnome-session-canberra -- ppa:savoury1/gtk-xenial
 B dmz-cursor-theme
-B hicolor-icon-theme
+- hicolor-icon-theme -- ppa:savoury1/{backports,gtk-xenial}
 B lubuntu-icon-theme
 B gnome-icon-theme
 B gnome-themes-standard
