@@ -13,9 +13,9 @@ B cron
 B rsyslog
 B logrotate
 B libustr-1.0-1
-B libffi6
-B libffi6:i386
-B libffi-dev
+- libffi6 -- ppa:savoury1/{backports,build-tools}
+- libffi6:i386 -- ppa:savoury1/{backports,build-tools}
+- libffi-dev -- ppa:savoury1/{backports,build-tools}
 - libfribidi0 -- ppa:savoury1/fonts
 - libnuma1 -- ppa:savoury1/backports
 - libnuma-dev -- ppa:savoury1/backports
