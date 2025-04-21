@@ -50,7 +50,7 @@ if [ "$1" = "configure" ]; then
 
     # Use old releases server for series past end of support
     case "$series" in
-    cosmic | disco | eoan | groovy | hirsute | impish | kinetic)
+    cosmic | disco | eoan | groovy | hirsute | impish | kinetic | lunar | mantic)
       server=$oldrel
       ;;
     *)
