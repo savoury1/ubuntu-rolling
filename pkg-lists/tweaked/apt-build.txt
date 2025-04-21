@@ -19,7 +19,7 @@ B libept1.5.0
 - apt -- ppa:savoury1/apt-xenial
 - apt-utils -- ppa:savoury1/apt-xenial
 - apt-transport-https -- ppa:savoury1/apt-xenial
-B apt-xapian-index
+- apt-xapian-index -- leave at default version
 - libpackagekit-glib2-18 -- ppa:savoury1/qt-xenial
 - gir1.2-packagekitglib-1.0 -- ppa:savoury1/qt-xenial
 - aptdaemon-data -- ppa:savoury1/apt-xenial
