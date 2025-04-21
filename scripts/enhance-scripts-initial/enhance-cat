@@ -20,7 +20,7 @@ echo
 echo ">>> Core Network <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install dns-root-data ca-certificates-java ssl-cert libproxy1v5 libproxy1v5:i386 libproxy-tools libproxy1-plugin-gsettings libproxy1-plugin-networkmanager iftop libip4tc0 libip6tc0 netbase hostname python-netifaces python3-netifaces netplan.io nplan ntp ntpdate telnet netcat-openbsd traceroute mtr-tiny libwrap0 libwrap0:i386 tcpd ftp libatm1 iproute2 ifupdown bridge-utils update-inetd libisc169 libdns1100 liblwres160 libisccc160 libisccfg160 libbind9-160 bind9-host libirs160 dnsutils libisc-export169 libdns-export1100 isc-dhcp-common isc-dhcp-client libsnmp-base libsnmp30 libsnmp30:i386 libsmi2ldbl libteamdctl0 resolvconf ethtool iw crda wpasupplicant rfkill b43-fwcutter pppconfig pppoeconf
+apt-all bionic install dns-root-data ca-certificates-java ssl-cert libproxy1v5 libproxy1v5:i386 libproxy-tools libproxy1-plugin-gsettings libproxy1-plugin-networkmanager iftop libip4tc0 libip6tc0 netbase hostname netplan.io nplan ntp ntpdate telnet netcat-openbsd traceroute mtr-tiny libwrap0 libwrap0:i386 tcpd ftp libatm1 iproute2 ifupdown bridge-utils update-inetd libisc169 libdns1100 liblwres160 libisccc160 libisccfg160 libbind9-160 bind9-host libirs160 dnsutils libisc-export169 libdns-export1100 isc-dhcp-common isc-dhcp-client libsnmp-base libsnmp30 libsnmp30:i386 libsmi2ldbl libteamdctl0 resolvconf ethtool iw crda wpasupplicant rfkill b43-fwcutter pppconfig pppoeconf
 echo
 echo
 echo ">>> Base Security <<<"
@@ -37,9 +37,6 @@ echo
 echo
 echo ">>> Core Python <<<"
 echo
-echo "=== Series: Bionic ==="
-apt-all bionic install python3-gdbm libpyside1.2 python-pyside.qtcore python-pyside.qtnetwork python-pyside.qtwebkit python-pyside.qtxml python-pyside.qtgui python-pyside.qtsql python-pyside.qtsvg python-pyside.qthelp python-pyside.qttest python-pyside.qtdeclarative python-pyside.qtscript python-pyside.qtopengl python-pyside.phonon python-pyside.qtuitools python-pyside python-xapian python3-xapian python-pip-whl python-pip python3-pip python3-brlapi python-gobject-2 python-crypto python3-crypto python-dbus python-dbus-dev python3-dbus python3-virtkey python-cups python3-cups
-echo
 echo
 echo ">>> GCrypt + GnuPG <<<"
 echo
@@ -47,7 +44,7 @@ echo
 echo ">>> Core Data <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install pbzip2 zip libminizip1 libaio1 libaio1:i386 libaio-dev librecode0 libonig4 libjq1 jq libqjson0 libfastjson4 libyajl2 libestr0 intltool librasqal3 librdf0 doc-base libosp5 opensp libostyle1c2 openjade highlight-common highlight gnome-doc-utils librarian0 rarian-compat scrollkeeper libtidy5 mime-support libdotconf0
+apt-all bionic install pbzip2 zip libaio1 libaio1:i386 libaio-dev librecode0 libonig4 libjq1 jq libqjson0 libfastjson4 libyajl2 libestr0 intltool librasqal3 librdf0 doc-base libosp5 opensp libostyle1c2 openjade gnome-doc-utils librarian0 rarian-compat scrollkeeper libtidy5 mime-support libdotconf0
 echo
 echo
 echo ">>> Python + Ruby + JS <<<"
@@ -62,25 +59,25 @@ echo
 echo ">>> Apt + Build <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install lsb-base lsb-release libept1.5.0 apt-xapian-index libnih1 libnih-dbus1 ureadahead yasm sbsigntool libdisasm0 libllvm4.0 libllvm4.0:i386 diffutils checkinstall makedumpfile libdebian-installer4 archdetect-deb libsgmls-perl dh-make deborphan pkg-config chrpath debconf debconf-i18n debconf-utils libdebconfclient0 python3-debconf xdelta3 dctrl-tools autodep8 debsums piuparts-common piuparts libconfig9 squashfs-tools
+apt-all bionic install lsb-base lsb-release libept1.5.0 libnih1 libnih-dbus1 ureadahead yasm sbsigntool libdisasm0 diffutils checkinstall makedumpfile libdebian-installer4 archdetect-deb libsgmls-perl dh-make deborphan chrpath debconf debconf-i18n debconf-utils libdebconfclient0 python3-debconf xdelta3 dctrl-tools autodep8 debsums piuparts-common piuparts libconfig9 squashfs-tools
 echo
 echo
 echo ">>> Themes + Assist <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install sound-theme-freedesktop dmz-cursor-theme hicolor-icon-theme lubuntu-icon-theme gnome-icon-theme gnome-themes-standard gnome-themes-extra gnome-themes-extra-data gnome-accessibility-themes mousetweaks cowsay fortunes-min fortune-mod python-pyatspi python3-pyatspi liblouis-data liblouis14 python3-louis orca gnome-orca libbrlapi0.6 libbrlapi-dev python3-brlapi brltty
+apt-all bionic install sound-theme-freedesktop dmz-cursor-theme lubuntu-icon-theme gnome-icon-theme gnome-themes-standard gnome-themes-extra gnome-themes-extra-data gnome-accessibility-themes mousetweaks cowsay fortunes-min fortune-mod python-pyatspi python3-pyatspi liblouis-data liblouis14 python3-louis orca gnome-orca
 echo
 echo
 echo ">>> Core Desktop <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install liborbit2 liborbit-2-0 libfltk1.3 libfltk-images1.3 libnewt0.52 libnewt-dev whiptail d-feet python-gtksourceview2 libstartup-notification0 libwnck-common libwnck22 gir1.2-wnck-1.0 devilspie menu libgnome-menu-3-0 gir1.2-gmenu-3.0 libdbusmenu-glib4 gir1.2-dbusmenu-glib-0.4 libdbusmenu-gtk3-4 libdbusmenu-gtk4 libbamf3-2 gir1.2-bamf-3 bamfdaemon indicator-application libzephyr4 gnome-color-manager gnome-session-bin libnemo-extension1 im-config session-migration system-tools-backends liboobs-1-5 gnome-system-tools folks-common libvte-common libvte9 python-vte
+apt-all bionic install liborbit2 liborbit-2-0 libnewt0.52 libnewt-dev whiptail d-feet python-gtksourceview2 libstartup-notification0 libwnck-common libwnck22 gir1.2-wnck-1.0 devilspie menu libgnome-menu-3-0 gir1.2-gmenu-3.0 libdbusmenu-glib4 gir1.2-dbusmenu-glib-0.4 libdbusmenu-gtk3-4 libdbusmenu-gtk4 libbamf3-2 gir1.2-bamf-3 bamfdaemon indicator-application libzephyr4 gnome-color-manager gnome-session-bin libnemo-extension1 im-config session-migration system-tools-backends liboobs-1-5 gnome-system-tools folks-common libvte-common libvte9 python-vte
 echo
 echo
 echo ">>> Core Hardware <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install libfwupd2 fwupd lshw powermgmt-base pm-utils libupower-glib3 upower gir1.2-upowerglib-1.0 acpid libcpufreq0 cpufrequtils time hddtemp hdparm iio-sensor-proxy laptop-detect radeontool irqbalance python-serial inputattach libusb-0.1-4 usb-modeswitch-data usb-modeswitch libieee1284-3 libieee1284-3:i386 pcmciautils hwdata ubuntu-drivers-common
+apt-all bionic install libfwupd2 fwupd lshw powermgmt-base pm-utils libupower-glib3 upower gir1.2-upowerglib-1.0 acpid libcpufreq0 cpufrequtils time hddtemp hdparm iio-sensor-proxy laptop-detect radeontool irqbalance python-serial inputattach libusb-0.1-4 usb-modeswitch-data usb-modeswitch libieee1284-3 libieee1284-3:i386 pcmciautils ubuntu-drivers-common
 echo
 echo
 echo ">>> Core Disks <<<"
@@ -98,43 +95,43 @@ echo
 echo ">>> Networking <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install libnma0 libnm-gtk0 network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome libcapi20-3:i386 libvde0 libvde-dev libvdeplug2 libvdeplug-dev libavahi-common-data libavahi-common-data:i386 libavahi-common3 libavahi-common3:i386 libavahi-glib1 libavahi-client3 libavahi-client3:i386 libavahi-core7 avahi-daemon avahi-utils avahi-autoipd ippusbxd cu remote-tty ufw libtdb1 libtdb1:i386 tdb-tools python-tdb libtalloc2 python-talloc libtevent0 libldb1 python-ldb libwbclient0 samba-libs libsmbclient python-samba samba-common samba-common-bin winbind smbclient samba python-smbc cifs-utils libnspr4 libnspr4:i386 libnspr4-dev libnss-mdns cvs libhttrack2 httrack webhttrack-common webhttrack libgssdp-1.0-3 libgupnp-1.0-4 libgupnp-igd-1.0-4 libminiupnpc10 libgeoclue0 geoclue geoclue-ubuntu-geoip
+apt-all bionic install libnma0 libnm-gtk0 network-manager-gnome network-manager-openvpn network-manager-openvpn-gnome libcapi20-3:i386 libvde0 libvde-dev libvdeplug2 libvdeplug-dev libavahi-common-data libavahi-common-data:i386 libavahi-common3 libavahi-common3:i386 libavahi-glib1 libavahi-client3 libavahi-client3:i386 libavahi-core7 avahi-daemon avahi-utils avahi-autoipd ippusbxd cu remote-tty ufw libtdb1 libtdb1:i386 tdb-tools python-tdb libtalloc2 python-talloc libtevent0 libldb1 python-ldb libwbclient0 samba-libs libsmbclient python-samba samba-common samba-common-bin winbind smbclient samba python-smbc cifs-utils libnspr4 libnspr4:i386 libnspr4-dev libnss-mdns cvs libhttrack2 httrack webhttrack-common webhttrack libgssdp-1.0-3 libgupnp-1.0-4 libminiupnpc10 libgeoclue0 geoclue geoclue-ubuntu-geoip
 echo
 echo
 echo ">>> Core System <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install coreutils debianutils ucf base-passwd makedev cron rsyslog logrotate libustr-1.0-1 libffi6 libffi6:i386 libffi-dev librhash0 libbsd0 libbsd0:i386 libbsd-dev bsdutils bsdmainutils libdb5.3 libdb5.3:i386 db5.3-util isoquery localechooser-data tk8.6-blt2.5 blt libunique-1.0-0 libossp-uuid16 uuid liblua5.2-0 java-common ltrace libsocket++1 bc dc libmetis5 libcap2 libcap2:i386 libcap2-bin libcap-dev libpam-cap libcap-ng0 libcap-ng-dev libgc1c2 libjemalloc1 libstdc++5:i386 libsigsegv2 libcwidget3v5 lockfile-progs libdbi1 iotop libfam0
+apt-all bionic install coreutils debianutils ucf base-passwd makedev cron rsyslog logrotate libustr-1.0-1 librhash0 libbsd0 libbsd0:i386 libbsd-dev bsdutils bsdmainutils libdb5.3 libdb5.3:i386 db5.3-util isoquery localechooser-data tk8.6-blt2.5 blt libunique-1.0-0 libossp-uuid16 uuid liblua5.2-0 java-common ltrace libsocket++1 bc dc libcap2 libcap2:i386 libcap2-bin libcap-dev libpam-cap libcap-ng0 libcap-ng-dev libgc1c2 libjemalloc1 libstdc++5:i386 libsigsegv2 libcwidget3v5 lockfile-progs libdbi1 iotop libfam0
 echo
 echo
 echo ">>> Fonts + Print <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install fonts-orya-extra fonts-noto-cjk fonts-symbola ttf-ancient-fonts-symbola t1utils libeot0 libijs-0.35 libfontembed1 libpaper1 libpaper-utils qpdfview qpdfview-ps-plugin qpdfview-djvu-plugin libcups2 libcups2:i386 libcupsmime1 libcupscgi1 libcupsimage2 libcupsimage2:i386 libcupsppdc1 cups-ipp-utils cups-daemon libcupsfilters1 libcupsfilters1:i386 cups-filters-core-drivers cups-filters cups-browsed cups-common cups-server-common cups-ppdc cups-client cups-bsd cups-core-drivers cups printer-driver-cups-pdf libgutenprint2 printer-driver-gutenprint openprinting-ppds foomatic-db-compressed-ppds libhpmud0 libsane-hpaio hplip-data hplip printer-driver-hpcups printer-driver-postscript-hp printer-driver-pnm2ppa printer-driver-pxljr printer-driver-foo2zjs-common printer-driver-foo2zjs printer-driver-min12xxw printer-driver-splix printer-driver-brlaser printer-driver-ptouch printer-driver-c2esp printer-driver-sag-gdi
+apt-all bionic install fonts-orya-extra fonts-symbola ttf-ancient-fonts-symbola libeot0 libijs-0.35
 echo
 echo
 echo ">>> Data Types <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install wbritish wamerican hyphen-en-us libmythes-1.2-0 mythes-en-us liblangtag-common liblangtag1 language-pack-en-base language-pack-en language-pack-gnome-en-base language-pack-gnome-en libexttextcat-data libexttextcat-2.0-0 snap libstemmer0d libfyba0 libgeotiff2
+apt-all bionic install mythes-en-us liblangtag-common liblangtag1 language-pack-en-base language-pack-en language-pack-gnome-en-base language-pack-gnome-en libexttextcat-data libexttextcat-2.0-0 libstemmer0d libfyba0 libgeotiff2
 echo
 echo
 echo ">>> Core Graphics <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install libaa1 libaa1:i386 libart-2.0-2 argyll-ref argyll libpotrace0 libpano13-3 libopenobex2 obex-data-server libexempi3 python-pyexiv2 liblqr-1-0
+apt-all bionic install libaa1 libaa1:i386 libart-2.0-2 argyll-ref argyll libopenobex2 obex-data-server libexempi3 python-pyexiv2 liblqr-1-0
 echo
 echo
 echo ">>> Media Devices <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install jmtpfs libgpod4 libgpod-common ifuse eject libcdparanoia0 libcdparanoia0:i386 cdparanoia libjte1 genisoimage cdrdao wodim libdvbpsi10 growisofs dvd+rw-tools libraw1394-11 libraw1394-11:i386 libavc1394-0 libavc1394-0:i386 libiec61883-0 libiec61883-0:i386 libbluetooth3 bluetooth libbluetooth-dev bluez bluez-obexd bluez-cups
+apt-all bionic install jmtpfs libgpod4 libgpod-common ifuse eject libcdparanoia0 libcdparanoia0:i386 cdparanoia libjte1 cdrdao libdvbpsi10 growisofs dvd+rw-tools libraw1394-11 libraw1394-11:i386 libavc1394-0 libavc1394-0:i386 libiec61883-0 libiec61883-0:i386 libbluetooth3 bluetooth libbluetooth-dev bluez bluez-obexd bluez-cups
 echo
 echo
 echo ">>> Core Display <<<"
 echo
 echo "=== Series: Bionic ==="
-apt-all bionic install libx86-1 vbetool vdpau-va-driver freeglut3 libgle3 libgle3-dev libchamplain-0.12-0 libchamplain-gtk-0.12-0
+apt-all bionic install libx86-1 vbetool vdpau-va-driver libgle3 libgle3-dev
 echo
 echo
 echo ">>> X11 Proto + XCB <<<"
