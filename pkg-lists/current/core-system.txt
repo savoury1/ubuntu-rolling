@@ -80,7 +80,7 @@ B libsocket++1
 - libmpdec2 -- ppa:savoury1/backports
 B bc
 B dc
-B libmetis5
+- libmetis5 -- no longer required (new suitesparse backport)
 - sparse -- ppa:savoury1/build-tools
 - libsuitesparseconfig5 -- ppa:savoury1/backports
 - libamd2 -- ppa:savoury1/backports
