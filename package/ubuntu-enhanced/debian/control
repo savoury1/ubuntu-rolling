@@ -21,7 +21,7 @@ Description: Ubuntu Enhanced (includes apt-all)
  .
  *** WARNING: EXPERIMENTAL SOFTWARE ***
  .
- Adds access to repositories for 15 other Ubuntu series to /etc/apt config
+ Adds access to repositories for 16 other Ubuntu series to /etc/apt config
  (with pref files used for pinning created in /etc/apt/preferences.d and list
  files used to give access to newer repositories in /etc/apt/sources.list.d).
  .
@@ -30,14 +30,14 @@ Description: Ubuntu Enhanced (includes apt-all)
  set for one user specified series other than the currently installed series.
  .
  So apt-all (making use of the usual "sudo apt-get install" command) gives the
- user easy access to packages from any of 16 Ubuntu series (Xenial, Bionic,
+ user easy access to packages from any of 17 Ubuntu series (Xenial, Bionic,
  Cosmic, Disco, Eoan, Focal, Groovy, Hirsute, Impish, Jammy, Kinetic, Lunar,
- Mantic, Noble, Oracular, or Plucky).
+ Mantic, Noble, Oracular, Plucky, or Questing).
  REMINDER: DO BE CAREFUL!!!
  .
  Also enhances other commands most especially apt-cache, as running "apt-cache
  policy PACKAGE(S)" will show all versions of the specified package(s) that are
- currently available in the 16 Ubuntu series (and all of their "pockets").
+ currently available in the 17 Ubuntu series (and all of their "pockets").
  .
  See homepage for details:
  .

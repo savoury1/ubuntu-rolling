@@ -1,3 +1,11 @@
+ubuntu-enhanced (0.17.0-1~16.04.sav0) xenial; urgency=low
+
+  * New release adding Questing Quokka
+  * d/control: Update package description
+  * d/copyright: Update years to 2025
+
+ -- Rob Savoury <savoury@savos.tech>  Thu, 24 Apr 2025 12:11:09 -0700
+
 ubuntu-enhanced (0.16.0-1~16.04.sav1) xenial; urgency=low
 
   * d/postinst: Switch Lunar and Mantic to old releases server
