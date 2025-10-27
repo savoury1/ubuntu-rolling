@@ -4,13 +4,13 @@
 - gir1.2-networkmanager-1.0 -- ppa:savoury1/gtk-xenial
 - libnm0 -- ppa:savoury1/gtk-xenial
 - network-manager -- ppa:savoury1/gtk-xenial
-B libnma0
-B libnm-gtk0
-B network-manager-gnome
+- libnma0 -- ppa:savoury1/gtk-xenial
+- libnm-gtk0 -- ppa:savoury1/gtk-xenial
+- network-manager-gnome -- ppa:savoury1/gtk-xenial
 - network-manager-pptp -- ppa:savoury1/gtk-xenial
 - network-manager-pptp-gnome -- ppa:savoury1/gtk-xenial
-B network-manager-openvpn
-B network-manager-openvpn-gnome
+- network-manager-openvpn -- ppa:savoury1/gtk-xenial
+- network-manager-openvpn-gnome -- ppa:savoury1/gtk-xenial
 - libgoa-1.0-common -- ppa:savoury1/gtk-xenial
 - libgoa-1.0-0b -- ppa:savoury1/gtk-xenial
 - gir1.2-goa-1.0 -- ppa:savoury1/gtk-xenial
