@@ -113,3 +113,4 @@ B libx11-guitest-perl -- newer Perl rebuild
 B libdevel-callchecker-perl -- newer Perl rebuild
 B libb-hooks-op-check-perl -- newer Perl rebuild
 - libdynaloader-functions-perl -- ppa:savoury1/perl-xenial
+B libtemplate-perl -- newer Perl rebuild

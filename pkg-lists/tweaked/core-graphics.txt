@@ -106,7 +106,7 @@ B python-pyexiv2
 - libraw16 -- superseded by libraw20
 - liblensfun-data-v1 -- ppa:savoury1/graphics
 - liblensfun1 -- ppa:savoury1/graphics
-B liblqr-1-0
+- liblqr-1-0 -- ppa:savoury1/graphics
 - dcraw -- ppa:savoury1/graphics
 - libgphoto2-l10n -- ppa:savoury1/graphics
 - libgphoto2-port12 -- ppa:savoury1/graphics
